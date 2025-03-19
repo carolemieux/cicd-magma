@@ -42,8 +42,11 @@ if [ ! -z $HARDEN ]; then
 fi
 
 set -x
+
+# can use the --no-cache option for debugging purpose
 docker build -t "$IMG_NAME" \
     --build-arg fuzzer_name="$FUZZER" \
+    --build-arg corpus_name="$CORPUS" \
     --build-arg target_name="$TARGET" \
     --build-arg USER_ID=$(id -u $USER) \
     --build-arg GROUP_ID=$(id -g $USER) \

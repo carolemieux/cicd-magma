@@ -246,6 +246,8 @@ for FUZZER in "${FUZZERS[@]}"; do
 
         # build the Docker image
         IMG_NAME="magma/$FUZZER/$TARGET"
+        export CORPUS="$(get_var_or_default $FUZZER $TARGET 'CORPUS')"
+        echo_time "The corpus is $CORPUS"
         echo_time "Building $IMG_NAME"
         if ! "$MAGMA"/tools/captain/build.sh &> \
             "${LOGDIR}/${FUZZER}_${TARGET}_build.log"; then
@@ -257,7 +259,7 @@ for FUZZER in "${FUZZERS[@]}"; do
         for PROGRAM in "${PROGRAMS[@]}"; do
             export PROGRAM
             export ARGS="$(get_var_or_default $FUZZER $TARGET $PROGRAM 'ARGS')"
-
+            
             echo_time "Starting campaigns for $PROGRAM $ARGS"
             for ((i=0; i<$REPEAT; i++)); do
                 export NUMWORKERS="$(get_var_or_default $FUZZER 'CAMPAIGN_WORKERS')"

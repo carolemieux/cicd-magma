@@ -18,15 +18,19 @@
 
 cleanup() {
     if [ ! -t 1 ]; then
-        docker rm -f $container_id &> /dev/null
+        echo "cleaning up"
+        docker rm -f $container_id #&> /dev/null
+        docker rmi $(docker inspect $container_id --format='{{.Image}}')
+        docker volume prune
+        docker image prune
     fi
     exit 0
 }
 
 trap cleanup EXIT SIGINT SIGTERM
 
-if [ -z $FUZZER ] || [ -z $TARGET ] || [ -z $PROGRAM ]; then
-    echo '$FUZZER, $TARGET, and $PROGRAM must be specified as' \
+if [ -z $FUZZER ] || [ -z $TARGET ] || [ -z $PROGRAM ] || [[ -z $CORPUS ]]; then
+    echo '$FUZZER, $TARGET, $PROGRAM and $CORPUS must be specified as' \
          'environment variables.'
     exit 1
 fi
@@ -54,6 +58,7 @@ fi
 if [ -t 1 ]; then
     docker run -it $flag_volume \
         --cap-add=SYS_PTRACE --security-opt seccomp=unconfined \
+        --env=CORPUS="$CORPUS" \
         --env=PROGRAM="$PROGRAM" --env=ARGS="$ARGS" \
         --env=FUZZARGS="$FUZZARGS" --env=POLL="$POLL" --env=TIMEOUT="$TIMEOUT" \
         $flag_aff $flag_ep "$IMG_NAME"
@@ -61,6 +66,7 @@ else
     container_id=$(
     docker run -dt $flag_volume \
         --cap-add=SYS_PTRACE --security-opt seccomp=unconfined \
+        --env=CORPUS="$CORPUS" \
         --env=PROGRAM="$PROGRAM" --env=ARGS="$ARGS" \
         --env=FUZZARGS="$FUZZARGS" --env=POLL="$POLL" --env=TIMEOUT="$TIMEOUT" \
         --network=none \

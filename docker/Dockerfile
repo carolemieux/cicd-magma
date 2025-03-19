@@ -3,12 +3,15 @@ FROM ubuntu:18.04
 # TODO remove sudo for user "magma" to avoid unwanted priv escalation from
 # other attack vectors.
 
-RUN apt-get update && apt-get install -y sudo
+RUN apt-get update && apt-get install -y sudo vim
 
 ## Magma directory hierarchy
 # magma_root is relative to the docker-build's working directory
 # The Docker image must be built in the root of the magma directory
 ARG magma_root=./
+
+# avoid interactive installation
+ENV DEBIAN_FRONTEND=noninteractive 
 
 ## Path variables inside the container
 ENV MAGMA_R /magma
@@ -34,6 +37,11 @@ RUN	echo "magma:amgam" | chpasswd && usermod -a -G sudo magma
 RUN mkdir -p ${SHARED} ${OUT} && \
 	chown magma:magma ${SHARED} ${OUT} && \
 	chmod 744 ${SHARED} ${OUT}
+
+RUN chown magma:magma /usr/include/
+RUN chown magma:magma /usr/local/
+RUN mkdir -p /usr/lib/bfd-plugins/ && \
+	chown magma:magma /usr/lib/bfd-plugins/
 
 ARG magma_path=magma
 ENV MAGMA 	${MAGMA_R}/${magma_path}
@@ -65,6 +73,14 @@ RUN ${TARGET}/preinstall.sh
 USER magma:magma
 RUN ${TARGET}/fetch.sh
 RUN ${MAGMA}/apply_patches.sh
+
+ARG corpus_name
+ARG seed_path=seed/${corpus_name}
+ENV SEED 	${TARGET}/corpus/seed
+USER root:root
+RUN mkdir -p ${SEED} && chown magma:magma ${SEED}
+COPY --chown=magma:magma ${magma_root}/${seed_path} ${SEED}/
+USER magma:magma
 
 ## Configuration parameters
 ARG isan
