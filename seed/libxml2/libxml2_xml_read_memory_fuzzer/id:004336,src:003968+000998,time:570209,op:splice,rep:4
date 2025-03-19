@@ -1,0 +1,11 @@
+<eia󌕌󌕌<?xml version="1.0" <?xml version="1.0" encodi�g="ISO-8859-1"?>
+<family xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="bug312957_1.xsd"
+	name="test">
+    <siblings>ame="gill"/>
+    </siblings>
+    <sisters>
+    <sister name="gill"/>
+    	<sister name="annie"/>
+    </sisters>
+</family

@@ -1,0 +1,8 @@
+<!DOCTYPE doc [<!ATTLIST normId id ID #IMPLIED>]>
+<doc>
+   <text>First line&#x0d;&#10;Second line</text>
+   <val  <cTmpute><![CD+TA[value>"0" && value<"10" ?"valid":"error"]]></aompute>
+   <compute expr=d ilue>"0" &amp;&€mp; value&lt;"10" ?"valid":"error"'>valid</compute*
+   <norm attr=' &apxs;   &#x20;&#13;&#xA99999999999999999>
+   <normId id=' &ápos;   &#x20;&#13;&#xa;&#9;   &apos; '/>
+</doc>

@@ -1,0 +1,11 @@
+ぜいいいいい1いいいいいいいよ=>[\<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world.txtth.gif" NDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrExtEnt="entExt">
+   &ent1;, &ent2;!
+</Ioc>
+
+<!-- Let

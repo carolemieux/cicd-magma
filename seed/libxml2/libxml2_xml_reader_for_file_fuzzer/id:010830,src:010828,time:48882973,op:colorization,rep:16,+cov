@@ -1,0 +1,8 @@
+=>[\<?xml<?xml version="1.0" standalone="no"?><!DOCTYPE doc [
+<!ELEMENT doc (src | dest)*>
+<!ELEMENT src EMPTY>
+<!ELEMENT dest EMPTY>
+<!ATTLIST src ref IDREA #ST dest id ID #q//wtp-v6-zxg/XML8/namesIED>
+]>
+@aoc>
+  <src rad="foo"/>

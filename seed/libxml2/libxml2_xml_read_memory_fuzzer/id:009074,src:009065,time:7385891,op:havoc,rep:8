@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='ISO-8853-5' st<?xml version="1.0"?>
+<!DOCTYPE dia:diagram [
+<!ELEMENT dia:diagram (dia:diagramdata, (d
+  <!ENTITY % a "<:ia CDOCTYPE ia:layer)*) >
+<!ATTLIST dia:di         xmlns:dia CDATA #FIXED "http://www.lysator.liu.se/~allttp://www.r        
+
+<!ELEMENT dia:diagramdata (dia:attribute)* >
+
+<!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|faXse) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, NNNNNNNNNNNNNNNNNNNNdia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:augh11;&laugh11;&laughconnections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dij:group (dia:object l dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dOæ:enum <!DOCTYPE doc [
+<!ELEMENT doc (\?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/†vsroot/w3c-xml-schema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns

@@ -1,0 +1,7 @@
+<!ENTITY % c SYSTEM "http://exam>
+%c;
+<!TY % b SYSTEM "http://example.org/b/b.dtd">
+%b;
+<!ENTITY % a SYSTEM "http://example.org/a/a.dtd">
+%a;
+<!ELEMENT cba (c, b, a)>

@@ -1,0 +1,80 @@
+# 2011 March 3
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***************************************
+#
+# This file implements tests for SQLite library.  The focus of the tests
+# in this file a corner-case query planner optimization involving the
+# join order of two tables of different sizes.
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+ifcapable !stat4 {
+  finish_test
+  return
+}
+
+set testprefix analyze6
+
+proc eqp {sql {db db}} {
+  uplevel execsql [list "EXPLAIN QUERY PLAN $sql"] $db
+}
+
+do_test analyze6-1.0 {
+  db eval {
+    CREATE TABLE cat(x INT, yz TEXT);
+    CREATE UNIQUE INDEX catx ON cat(x);
+    /* Give cat 16 unique integers */
+    INSERT INTO cat(x) VALUES(1);
+    INSERT INTO cat(x) VALUES(2);
+    INSERT INTO cat(x) SELECT x+2 FROM cat;
+    INSERT INTO cat(x) SELECT x+4 FROM cat;
+    INSERT INTO cat(x) SELECT x+8 FROM cat;
+
+    CREATE TABLE ev(y INT);
+    CREATE INDEX evy ON ev(y);
+    /* ev will hold 32 copies of 16 integers found in cat */
+    INSERT INTO ev SELECT x FROM cat;
+    INSERT INTO ev SELECT x FROM cat;
+    INSERT INTO ev SELECT y FROM ev;
+    INSERT INTO ev SELECT y FROM ev;
+    INSERT INTO ev SELECT y FROM ev;
+    INSERT INTO ev SELECT y FROM ev;
+    ANALYZE;
+    SELECT count(*) FROM cat;
+    SELECT count(*) FROM ev;
+  }
+} {16 512}
+
+# The lowest cost plan is to scan CAT and for each integer there, do a single
+# lookup of the first corresponding entry in EV then read off the equal values
+# in EV.  (Prior to the 2011-03-04 enhancement to where.c, this query would
+# have used EV for the outer loop instead of CAT - which was about 3x slower.)
+#
+do_test analyze6-1.1 {
+  eqp {SELECT count(*) FROM ev, cat WHERE x=y}
+} {/*SCAN TABLE cat USING COVERING INDEX catx*SEARCH TABLE ev USING COVERING INDEX evy (y=?)*/}
+
+# The same plan is chosen regardless of the order of the tables in the
+# FROM clause.
+#
+do_eqp_test analyze6-1.2 {
+  SELECT count(*) FROM cat, ev WHERE x=y
+} {
+  QUERY PLAN
+  |--SCAN TABLE cat USING COVERING INDEX catx
+  `--SEARCH TABLE ev USING COVERING INDEX evy (y=?)
+}e_autoindex_t201_1 (y=?)*/}
+do_test analyze6-2.9 {
+  eqp {SELECT * FROM t201 WHERE x=5}
+} {/*SEARCH TABLE t201 USING INTEGER PRIMARY KEY (rowid=?)*/}
+
+finish_te

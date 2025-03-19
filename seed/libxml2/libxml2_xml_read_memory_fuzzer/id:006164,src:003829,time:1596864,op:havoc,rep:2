@@ -1,0 +1,5 @@
+
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "&etc/doesnotexist">
+]>
+<root>&c;</root!ENTITY cÿUBLIC "bar" "#etc/doe>

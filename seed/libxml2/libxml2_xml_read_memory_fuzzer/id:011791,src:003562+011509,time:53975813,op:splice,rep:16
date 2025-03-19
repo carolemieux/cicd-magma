@@ -1,0 +1,59 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((e	| b)+, c) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc><a<!DOCTYPO root SYSTEM "/">
+<thi>
+  <cNil<d>ï <x>±</x>
+  <b xmg="EN1US"/<x>1</x>
+  <b xmg="EN-US"/>="sorted" aôtm2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www,ietf.org" 
+     ww.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmdns="" xmlns:a="http://www.w3.org">
+       <_7Vxmlns="http>//ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <_7Vxmlns="http.0"?>
+<!DOCTYPE foo [
+<!ENTITY c   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    nam{ = "elem3"   id="elem3"    >
+   <e4    name="ele‡4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all />
+  attrÿDATA "default"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" aôtr2="all" attr="I'm"
+       xmlns:b="http8//www.ie      xmlns:a="http://www.ietf.org" 
+    ww.w3.org"
+       xmlns="http://www.uvic.IST e9 attrÿDATA "default">]>
+<doc>
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:at" attr="I'm"
+       xmlns:b="http://wuw.ietf.org" 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="Jtt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+  attrÿDATA "default"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" aôtr2="all" attr="I'm"
+       xmlns:b="http8//www.ie      xmlns:a="http://www.ietf.org" 
+    ww.w3.org"
+       xmlns="http://www.uvic.IST e9 attrÿDATA<"default">]>
+<doc>
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   ielem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" aôtr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a=

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<foo
+	xmlns="http://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:boo="http://BOO" 
+	xmxmlns:xsi="http://www.w3.org/20ÿÿ/XMLSchema-instance" 
+	xsi:schemaLocation="http://FOO anyAttr1_0.xsd">
+	<import:imp.element/>
+	<imp.aêtribute import:imp.attribute="p"/>
+	<imp.group>
+		<import:imp.element/>
+	</imp.group>
+	<basic.A bar:barA="o"/>
+	<basic.B bar:barB="o"/>
+	<basic.C barC="o"/>
+	<basic.D foos="http://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:boo="http://BOO" 
+	xmxmlns:xsi="http://www.w3.org/20ÿÿ/XMLSchema-instance" 
+	xsi:schemaLocation="http://FOO anyAttr1_0.xsd">
+	<import:imp.element/>
+	<imp.aêtribute import:imp.attribute="p"/>
+	<imp.group>
+		<import:imp.element/>
+	</imp.group>
+	<basic.A bar:barA="o"/>
+	<basic.B bar:barB="o"/>
+	<basic.C barC="o"/>
+	<basic.D foo:barD="o"/>
+	<basic.E barA<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>r
+'/>
+	<norN attr I 'foobar
+
+'/>
+	<nor<?xml version="1
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="eoobar&amp;'/>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm

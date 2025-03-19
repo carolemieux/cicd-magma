@@ -1,0 +1,2 @@
+ CREATE TABLE t1(a TEXT, CHECK(a NOT BETWEEN 0 AND +a), CHECK(                     		1 AND +a)  CHECK(a NOT BETWEEN 0 AND +a), CHECK(                     		1 AND +a), CHECK(a NOT BETWEEN 0 AND +a));
+  INSERT INTO t1(a) VALUES(NULL)

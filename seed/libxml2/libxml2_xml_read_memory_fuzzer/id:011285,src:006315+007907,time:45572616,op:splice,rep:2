@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY  "_ello">
+<!ENTITY ent2 SYSTEM "wor<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED<!ENTITY ent2 SYSTello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEMNDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIENTITY #IMPLIED<!ENTITY ent2 SYSTello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEMNDATA gif>
+<!NOTATION gif SYSTEM "viewgif.D>
+<!ENTIT

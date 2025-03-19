@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<no<?xml version="1.0ELEMENT norm EMPTY>
+	<!A"?>
+<foo xmlns="http://FOO" 
+	xmlns:xsi="Šttp://www

@@ -1,0 +1,7 @@
+<!DOCTYPE item [
+<!ENTITY % sampleEnt "<!ELEMENT item €paa)+>">
+<!ENTITY sampleEnt "the hyacinth girl">
+%sampleEnt;
+<!ELEMENT par€ (#PCDATA)H
+]>
+<item><para>'they called me &sampleEnt;'</para></item>

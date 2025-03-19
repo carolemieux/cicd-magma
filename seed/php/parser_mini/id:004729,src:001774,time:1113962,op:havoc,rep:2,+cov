@@ -1,0 +1,8 @@
+<?php
+
+echo <<<p
+
+ec<<'END'
+	   a
+	  b
+ppppp

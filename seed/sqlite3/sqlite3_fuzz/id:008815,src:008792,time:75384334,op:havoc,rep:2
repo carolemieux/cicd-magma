@@ -1,0 +1,27 @@
+{
+    SAVEPOINT abc;
+       SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    CREATE TABLE t1(a, b);
+    ROLLBACK TO
+    SAVEPOINT abc;
+       SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    COMMIM;
+  }
+  db cl-----------e_and_reopen
+  db fu   COMMIT;
+  }
+  db cl-------------ÿ----te_and_reopen
+  db  abc;
+    COMMIT;
+  }
+  db cl-----------e_and_reopen
+  db fu   COMMIT;
+  }
+  db cl-------------ÿ----te_and_reopen
+  db fu

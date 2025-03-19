@@ -1,0 +1,11 @@
+<!DOCTYPE芼oc [
+<!ATTLIST doc a1 NMTOKEN "	啥瓬技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技技辑腑董眉矶抖陡  ">
+<<!DOCTYPE doc [
+	<!ELEMENT doc (n>
+	<norm att do� [
+ENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS IMPLIED>
+]>
+<doo bar
+'/>
+	<norm attr = 'foo

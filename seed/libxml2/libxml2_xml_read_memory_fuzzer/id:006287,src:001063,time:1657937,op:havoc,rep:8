@@ -1,0 +1,13 @@
+<?xml version='1.0' standa,one='yes'?>
+<LEMENT attributes EMPTY>
+<!ATTLIST attributes
+   nmtoken    NMTOKEN    #IMPLIED
+  n‰tokensNS   #IMPLI|D>
+<!ENTITY ent " entity&recursive; ">
+<!ENTITY recursive "reference">
+]>
+<attributes
+  nmtoken =  " &ent;   &ent; &ent; "
+  nmtokens = " Test&#x0d;&#x0a;  KENS   #IMPLIED>
+<!E   this&#p20; normalization "
+/>

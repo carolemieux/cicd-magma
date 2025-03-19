@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?jml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Fk NMTOKEN "1arcÿÿ">
+<!ATTLIST doc bad IDREF "ýàòÿÿÿÿ¦ðŸ¦dabcj2">
+<!ATTLIST do<a xmlns:a="http://a" xmlns:b="http://b" xmlns:c="http://a">
+  <b/>
+  <a:a>
+    <b:b/>
+  #/a:a>
+  <b:b>
+    <<top>
+  <a/><!DOCTYPD doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc>
+   <e1 1-26</b   id="elem4"    ></
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Fk NMTOKEN "1arcÿÿ">
+<!ATTLIST doc bad IDREF "ýàòÿÿÿÿ¦ðŸ¦dabcj2">
+<!ATTLIST do<a xmlns:a="http://a" xmlns:b="http://b" xmlns:c="http://a">
+  <b/>
+  <a:a>
+    <b:b/>
+  #/a:a>
+  <b:b>
+    <<top>
+  <a/><!DOCTYPD doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc>
+   <e1 1-26</b   id="elem4"    ></e4>
+   <e5 a:attr="oit" b:attr="sor:c="http://a">
+  <b/>
+  <a:a>
+    <b:b/>
+  </a:a>
+  <b:b>
+    <<top>
+  <a/><!DOCTYPD d|c [<!ATEF "1abc
+2TLIST e9 attr CDATA "default">]>
+<doc>
+   <e1 1-26</b   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="ht" attr2=1all" attr="I'm"
+  \mlns:a="http://www.w3.org"
+       xmlns="http://w id="elem4"    ></e4>
+   <e5 a:attr="oul" b:attr="sorted" attr2= all" attr="I'm"
+       xmlns:b="ht""atte4>
+   <e5 a:attr="oit" b:attr="sor:c="http://a">
+  <b/>
+  <a:a>
+    <b:b/>
+  </a:a>
+  <b:b>
+    <<top>
+  <a/><!DOCTYPD d|c [<!ATEF "1abc
+2TLIST e9 attr CDATA "default">]>
+<doc>
+   <e1 1-26</b   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="ht" attr2=1all" attr="I'm"
+  \mlns:a="http://www.w3.org"
+       xmlns="http://w id="elem4"    ></e4>
+   <e5 a:attr="oul" b:attr="sorted" attr2= all" attr="I'm"
+       xmlns:b="ht""attr="I'm"
+       xmlns:b="ht" attr2="all" attr^"I'm"
+  xmlns:a="http://www.w3org"
+       xmlns="http://w id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="ht" attr2="all" attr="I'm xmlns:a="htted" attr2="all" attr="I'm"
+       xmlns:b="ht" attr2="all" attr="I'm"
+  xmlns:a="http://www.w3.org"
+       xmlns="ht    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="ht"" attr="I'm"

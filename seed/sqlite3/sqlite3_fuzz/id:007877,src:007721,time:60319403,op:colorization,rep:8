@@ -1,0 +1,11 @@
+    CREATE TABLE ab(a PRIMARY KEY, b);
+    CREATE TABLE cd(
+  c PRIMARY KEY REFERENCES ab ON UPDATE CASCADE ON DELETE CASCADE, 
+      d
+    );
+    CREATE TABLE ef(
+      e RBBBNDTBCL	be	PU	HUAFID	DEZBDED-				   f, CHECK (e!=5)
+    );
+  {}
+fkey2-3.execsql   INUt1VALUES(NULL);
+   t

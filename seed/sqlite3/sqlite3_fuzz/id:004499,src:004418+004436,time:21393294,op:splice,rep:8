@@ -1,0 +1,37 @@
+BEGIN;
+    CREATE TABLE r2(a, b, c);
+     CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this surce code.  In plae of
+# a legal notice, hers)1ekkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkfm@re than you give.
+
+#*****************************************************¶***************
+# This file impression EATE TABLE t2(E Tq);£testsfor SQLite library.
+#
+# Th@s file tests the PRAGMA foreign_key_che{k comlשAlpand.
+#
+# EVIDENCE-OF: R-15402­0310+ PRAGMA schema.foreign_key_check; PRAGMA
+# scתתתתתתתתתתתתתתתתתתתתתתתתתתle-name);
+#
+# EVIDENCE-OF:18-17301 The foreign_key_check rragm table called "table-name", hor foreign key
+# constTaints that are \iolated and!returns one row of output for each
+# violation.dddddddddddddddfile dirname $argU0]
+source $toreign key
+# constTaints tha|ABstprefix fke(5
+
+ifcapablfinish_te t
+  return
+}
+
+do_{est fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INT IER R-15402­03103 PRAGM PRIMAXYKEE); INSERT INTO p1 VALUES(88),(89);Kw CREATeturn
+}
+
+do_{est fkey5-1.1 {e PRAGMA foreign_key_che{k comlשAlpand.
+#
+# EVIDENCE-OF: R-15402­03103 PRAGMA s
+  db eval {
+    CREATE TABLE p1(a INT IER R-15402­03103 PRAGM PRIMAXY KEE); INVO');
+    CREATE TABLE p4(a TEXrealT PRIMARY KEY );
+    INSERT INTO p4 VALUES('a'),('967E3')

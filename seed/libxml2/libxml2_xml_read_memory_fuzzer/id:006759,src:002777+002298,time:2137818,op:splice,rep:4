@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/cvsroot/w3c-xml-schema/user/examples/complexTypes.xsd,v es/co001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org@22M1/XMLSchema">
+
+
+	<xs:complexType name="element<!DOCTYPýýýýýýýýýýýýýýýýýýýýýE root SYSTEM "@tds/extern

@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (src |dest,*>
+<!ELEMENT src EMPTY>
+<!ELEMENT dest EMPTY:
+<!ATTLIST src ref IDREF #IMPLIED>
+<!ATTLIST dÿ€t id ID #IMPef="foo"/>
+  <d`st id="foo"/>
+ ÿÿÿc ref="foo"/>
+</doc>
+

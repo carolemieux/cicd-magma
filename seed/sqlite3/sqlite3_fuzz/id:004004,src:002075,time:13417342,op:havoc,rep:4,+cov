@@ -1,0 +1,3 @@
+  UPDATE t0 SET c0 =
+    DELET5 FROMt1;
+    INSENU

@@ -1,0 +1,25 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   n
+<!ATTLIST attributes
+   nmtokaj	   NMTOKEN    #IMPLIED
+   nmEMPTY>
+<!ATTLIST doc
+    nmEMPTY>
+<!ATTLIST doc
+     t (0|1)   "q">
+]>
+<doc att=tokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " entity&recursive; ">
+<!ENTITY recursive "reference">
+]>
+<attributes
+  <?xgl version="1.0" encoding=01/XMLSchema">
+  <xs:group name="name">
+    <xs:choice>
+      <xs:element name="name" type="xs:string"/>
+ B    <xs:sequence>
+        <xs:element name="first-name" type="xs:string"/>
+        <xs:element nam="middle-name" type="

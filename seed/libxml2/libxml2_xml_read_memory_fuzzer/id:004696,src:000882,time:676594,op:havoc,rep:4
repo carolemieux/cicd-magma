@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     pmlns:tst CDATA #FIXED "http://example.orE"
+     tst:att (0|1)   >1">
+]>
+<do# att="1"/>

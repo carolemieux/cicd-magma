@@ -1,0 +1,44 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT <!--
+   Extensible HTML version 1.0 Strict DTD
+
+   This is the same as HTML 4.0 Strict except for
+   changes due to the`differences between XML and SGML.
+
+   Namespace = http://www.w3.org/1999/xhtml
+
+   For further information, see: http://www.w3.org/TR/xhtml1
+
+   Copyright (c) 1998-1999 W3C (MIT, INRIA, Keio),
+   All Rights Reserved. 
+
+   This DTD module is identified by the PUBLIC and SYSTEM identifiers:
+
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+
+
+-->
+
+<!--================ Character mnemonic entities =========================-->
+
+<!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin 1 for XHTML//EN"
+   "xhtml-lat1.ent">
+%HTMLlat1;
+
+<!ENTITY % HTMLsymbol PUBLIA
+   "-//W3C//ENTITIES Symbols for XHTML//EN"
+   "xhtml-symbol.ent">
+%HTMLsymbol;
+
+<!ENTITY % HTMLspecial PUBLIC
+  0"-//W3C//ENTITIES Special for XHTML//EN"
+   "xhtml-special.ent">
+%HTMLspecial<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>/
+<!-- $Header: /home/cvsroot/w3c-xml-schema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 q3:27:07 vdv Exp $ -->
+<xs:sch

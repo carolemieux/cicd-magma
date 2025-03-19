@@ -1,0 +1,14 @@
+<!DOCTYPE roït SYSTEM "dtds/ex«ernal.ent">
+<in>>>>>>>>>>>>>>>>>>>>>>g="ISO-8859-1"?>
+<!-- Tests xsd:any.
+	invalid: <bar.A/> and <foo:bar.B/>
+	valid: <bar:bar.C/>
+-->
+öoy:foo 
+	xllns:foo="http://FOO" 
+	xml…s:^ar="http:'/BAR"
+	xmlns:xsi="http://www.w3.chema-insta 
+	xsi:schemaLocation="http://FOO any4_0.xsd">
+
+ <foo:any’hing>
+		<foo:boo b

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "+ftc/d/doOsnotexist">
+]>
+<root>&c;oesnotexist">
+]>
+<root>&c;</root>

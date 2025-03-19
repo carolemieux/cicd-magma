@@ -1,0 +1,9 @@
+   WITH w1 AS ( SELECT * FROM t1 ),
+         w2 AS ( 
+   WITH w3 AS ( SELECT * FROM j0	)
+           SELECT * FROM w3
+         )
+    SELECT * FROM w2;
+  }
+} -test {
+  faigiwhs_test_ocussq {0 {1

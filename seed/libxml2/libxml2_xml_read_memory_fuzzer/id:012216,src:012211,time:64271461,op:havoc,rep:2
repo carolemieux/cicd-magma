@@ -1,0 +1,83 @@
+<?<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+  efatt  (0s1)   "!"
+    defatt  (0|1)   "!"
+     xmlns:tmt CDATA #FIXED "http://example.or{"
+     tst:att (0|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xm|:xang="e‚"ÿÿÿ>
+    <para xmlÿ://w="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re†="ie"/>
+	</xs:complex
+ê				<xs:ÿmplexType name="bookTmp">
+						ò	<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xml:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re†="ie"/>
+	</xs:complex
+ê				<xs:ÿmplexType name="bookTmp">
+						ò	<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:eleme="isbn5/>
+				<xs:element ref="title"/>
+				<xs:element ref="aõ
+				<xs:eleme="isbn5/>
+				<xs:element ref="title"/>
+				<xs:element ref="aõthor" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:elemen—`rÿÿchaZacteÔ" minOnt ref="title"/>
+		I	<xccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+							extension>
+									</xs:complexContent>
+		</xs:complexType>
+	
+	<xÿÿÿ€mplexType name="personType">
+					<xs:complexContent>
+								<xs:ÿÿÿÿnsion base="elementWithID">-
+			<xs:sequence>
+				<xs:element ref= /home/cvsroot/w3ces/compppppppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+				ribute re†="ie"/>
+	</xs:complex
+ê				<xs:ÿmplexType name="bookTmp">
+						ò	<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xml:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementpersonType">
+					<xs:complexContent>
+						

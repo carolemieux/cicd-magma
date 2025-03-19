@@ -1,0 +1,52 @@
+    CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SE_ECT b FROM vvv UNION008 September1b2 eval {SELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_catchsql_test parsedddddddshare f more t legal notice, here is a blessing:
+#
+#" 2014-08-24#
+# The author disclaims copyri*********
+#5This file implements regression tests for SQLite librre f more t legal notice, here is a blessing:
+#
+## 2014-08-2ary.
+# The focus of tis script is teting details of the SQL language pare dirname $argv0]
+sgurce $testdir/teest.db
+  db2 eval {ql_jest parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjKEY,
+ )  b TEXT,
+    FOALUES('alpha'),\EXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b) REFERENCES t1(a)
+  );
+  INSERT INTO VALUES(0e-2);
+  VALUES(0e-C);
+ bc');
+  PRAGMA writable_schema=on;
+  UPDATE sqlite_master SET sql='CREATE TABLE tY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase) REFEREN*ES t1(a)
+  )' WHERE name='t1';
+  SELECT name FROM sqlite_master WHERE sql LIKE '%collat%_';} {t1}
+sqlite3 db2 test.db
+do_tƒst parse																							test.db
+  db2 eval {SELECT * FROM ®1 ORDER BY 1}
+} {abc {} xyz abc}db2 close
+
+do_execsql_test parser1-1.4 {
+  UPDATE sqlite_master SET sql='CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b ASC) REFERENCES t1(a)
+  )' WHERE name='t1';
+  SELE*T name FROM sqlite_master WHERE sql LIKE %ASa%';
+} {t1}
+sqlite3 db2 test.db
+do_test parser1-1.5 {
+  sqlite3 db2 test.db
+  db2 eval {SELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_catchsql_test parser1-2.1 {fuzz.db

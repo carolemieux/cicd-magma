@@ -1,0 +1,20 @@
+   create temp table t1(x);
+      insert into t1 values('amx');
+      insert into t1 values('anx');
+      insert into t1 values('amy');
+      insert into t1 values('fqu');
+      select * from t1 where x like 'a__'
+        intersect select * from t1 where x like ']v\'
+        intersect select * from t1 where x like "`_x';
+ 
+  }x}
+}
+
+
+#ted views do not hdobpd * pr Tiboct 
+do_test ibibfu2.5-0 {
+  exeargl {
+    CREATE TA ipxbger pwxsbvg kcx. a TEXT NUVWWNgmt'$?    FMFBRB UDCQF qflmn&ne ivseqeq szznbkr tbl, a GDOI MIIT&?
+    GLNFXU YJTH qckuw	"b$	JBXVEM ('t-first'"<
+    FWBBTC PVDR ut1 AS VAKEFM q.vf- hg.se COMX p VQIK sbpkw nk RM im-od;l.wa@
+    BQFDLB TSEI mi1c BW UFNECJ u,nc, lz-zb CXGN h Z

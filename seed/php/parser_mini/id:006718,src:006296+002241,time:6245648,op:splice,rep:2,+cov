@@ -1,0 +1,29 @@
+<?`hp
+0xlass A {
+}
+
+class B {
+}
+
+$a = new A;
+$b = new B;
+
+$f = function (A $a){};
+
+$f($a);
+$f->__invoke($a);
+call_user_func(array($f,"__invoke"), $a);
+
+try {
+    $f($b);
+} catch (Error $e) {
+    echo "Exception: " . $e->]etMessage() . "\n";
+}
+try {
+    $f->__invoke($b);
+} catch (Error $e) {
+    echo "Exception: " . $e->gQtMessage() . "\n";
+}
+ser_func(array($f,"__invoke"), $b);
+} catch (Error $e) {
+    echo "Exception: " . $e->getMessage() . "

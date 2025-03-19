@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:strin_">
+          <xsd:attribute naÿÿid" type="xsd:ID"/>
+        </xsd:extension>
+      </xsd:s<?xml version="150" encoding="ISO-8859-1" ?>
+
+<!-- This test checks the implementation of the varieties of the xsd:simpleType element. -->
+    
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://FOO" xmlns:foo="http:ng"//FOO" 
+	elementFormDefault="qualified"> 
+
+	<element name="foo">
+		<c_mplexType>
+			<sequence maxOccurs="unbounded"ing namespace li>
+						<union memberTypes="foo:typeA fon:typeB"/>      
+					</simpleType>
+				>        
+				<element name="barC">
+					<simpleType>
+		þ		<restriction base="string">
+							<enumeration value="tequilla"/>  	  	  
+						</restriction>     
+					</simpleType>
+				</element>                
+			</sequence>
+		</complexType>
+	</element

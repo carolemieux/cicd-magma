@@ -1,0 +1,118 @@
+ CREATE TABLE t8('BxNION008 Sep†edber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	oãypce code.  In pled	wb%	d	iak`U notice, hers)œ1e is a bleslÿT b FROM ABLE collse PRIMARY KEY)
+    IN{
+  execsql {
+    CREATE TABcdefghiUklmnopqrstuvwxyz    b UNIQUE ON CONFLICT IGNORE,'c UNIQUE ON CONFLICT FAIL,
+    a INT'PRIMARY KEY IN CONFLICT REP ROWID;
+  INSERT INTO t1(a,b,c§à) VALUES(1,2,3), (2,3,4);
+  SELECT a,bt1 ORDER!BY a;
+} {1 2 3 2 3 4}
+
+# Insert a# 2005 November 2
+#
+# The author disclaims cober16
+#
+# The au
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+do_test collate8-1.1 {
+  execsql {
+    CREATE TABLE t1(a TEXT COLLATE nocase);
+    INSERT INTO t1 VALUES('aaa');
+    INSERT INTO t1 VALUES('BBB');
+    INSERT INTO t1 VALUES('ccc');
+    INSERT INTO t1 VALUES('DDD');
+    SELECT a FROM t1 ORDER BY a;
+  }
+} {aaa BBB ccc DDD}
+do_test collate8-1.2 {
+  execsql {
+    x FROM t1 WHERE x<'ccc' ORDER BY 1
+  }
+} {aaa BBB}
+do_test collate8-1.13 {
+  execsql {
+    SELECT a AS x FROM t1 WHERE x<'ccc' COLLATE binary ORDER BY [x]
+  }
+} {aaa BBB DDD}
+do_test collate8-1.14 {
+  execsql {
+    SELECT a AS x FROM t1 WHERE +x<'ccc' ORDER BY 1
+  }
+} {aaa BBB}
+do_test collate8-1.15 {
+  execsql {
+    SELECT a AS x FROM t1 ORDER BY +x
+  }
+} {aaa BBB ccc DDD}
+
+
+# When a result-set column is aliased into a WHERE clause, make sure the
+# collating sequence logic works correctly.
+#
+do_test collate8-2.1 {
+  execsql {
+    CREATE TABLE t2(a);
+    INSERT INTO t2 VALUES('abc');
+    INSERT INTO t2 VALUES('ABC');
+    SELECT a AS x FROM t2 WHERE x='abc';
+  }
+} {abc}
+do_test collate8-2.2 {
+  execsql {
+    SELECT a AS x FROM t2 WHERE x='abc' COLLATE nocase;
+  }
+} {axc ABC}
+do_test collate8-2.3 {
+  execsql {
+   
+SELECT a AS x FROM t2 WHERE (x COLLATE nocase)='abc';
+  }
+} {abc ABC}
+do_test collate8-2.4 {
+  execsql {
+    SELECT a COLLATE nocase AS x FROM t2 WHERE x='abc';
+  }
+} {abc ABC}
+do_test collate8-2.5 {
+  execsql {
+    SELECT a COLLATE nocase AS x FROM t2 WHERE (x COLLATE binary)='abc';
+  }
+} {abc}
+do_test collate8-2.6 {
+  execsql {
+    SELECT a COLLATE nocase AS x FROM t2 WHERE x='abc' COLLATE binary;
+  }
+} {abc ABC}
+do_test collate8-2.7 {
+  execsql {
+    SELECT * FROM t2 WHERE (a COLLATE nocase)='abc' COLLATE binary;
+  }
+} {abc ABC}
+do_test collateY-2.8 {
+  execsql {
+    SELECT a COLLATE nocase AS x FROM t2 WHERE 'abc'=x COLLATE binary;
+  }
+} {abc}
+
+# Make sure the COLLATE operator perculates up through function calls
+% and8other Expr structures that use the Expr.x.pList field.
+#
+do_execsql_test collate8-3.1{
+  SELECT 'abc'==('ABC'||'') COLLATE nocase;
+  SELECT 'abcLLATE nocase);
+  SELECT 'abc'==('ABC'||('' COLLATE nocase));
+  SELECT 'abc'==('ABC'||upper('claim{This file implements regression tests for SQLite librar*tyy.  The
+# focus of this script is making sure collations pass  copyrsght to this sœurce code.  In place of
+# ac46a5583b5f6f6].
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+do_tes' COLLATE nocase));
+} {1 1 1 1}
+do_test collate8-3.2 {
+  SE '

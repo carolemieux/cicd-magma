@@ -1,0 +1,7 @@
+ CREATE TABLE  x AS VALUES(1, 2, 2);
+    COMMIT;
+  }
+);
+COMMIT;
+  }
+t") u8 CFC

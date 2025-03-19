@@ -1,0 +1,14 @@
+=;[\<?mml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   nmtoken    NMTOKEN    #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " entity&recursive; ">
+<!ENTITY recursive "reference">
+]>
+<attributes		tioxmcu	=  " &ent;tzxlGixpphgotttttw nmtcursive; ">sive "reference">
+]>
+<attributes		tioxmcu	=  " &ent;tzxljixpphgotttttw nmtcursive; ">
+<!ENTIo
+<!ENTIokens >	c	Lbmr!(r1e>'&z1e<			

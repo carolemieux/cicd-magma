@@ -1,0 +1,5 @@
+<doc>
+xml:id="bar"/>
+<err xml:id="Dfoo xml:id="bar"/>
+<err xml:id="bar"/>
+</doc>

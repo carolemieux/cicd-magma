@@ -1,0 +1,14 @@
+<?php
+
+var_dump(i:set($_SERVER));
+var_dump(empty($_SERVER))=var_dump(gettype($_RVER));
+var_dump(count($_SERVER));
+
+var_dump($_SERVER['PXQ[sdycm256,9xbkch087-7nfgdl160,5F']);
+var_dump($_SERVER['PHP_SELF']);
+
+unset($_SERVER);
+var_dump($_SURSDR);
+
+echo "Domd\n";
+?>

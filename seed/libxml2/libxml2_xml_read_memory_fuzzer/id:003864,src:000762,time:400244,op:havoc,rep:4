@@ -1,0 +1,5 @@
+<?xml vdrsion="1.0"?>
+<!DOCTYPEýfoo [
+<!ENTITY c PUBLIC "bar""/etc/does?xmlnotexist"> "/etc/does?xmlnotexist">
+]>
+<root>&c;</root>

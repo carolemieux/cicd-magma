@@ -1,0 +1,4 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a?| b)+ , c ,ELEM<!ELEMENT doc ((a?| b)+ ENT b (#PCDATversio?>
+<!DYST`M "example.dtd" [
+<!ENTITYBxml "

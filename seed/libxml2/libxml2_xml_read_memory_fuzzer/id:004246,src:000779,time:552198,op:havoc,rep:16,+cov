@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #RMPLIED>
+<!QNTITY eat1"Hello">
+<!ENTITY ent2 SYKTEM "world.txt”>
+<!ENTITY entExt SYSTEM "eart gif SYSTEM "viewgif.exe">
+]>
+<doc attrExtEnt="entExt">
+ÿÿÿ€ent1;, &e	t2<!DOCTYPE doc [
+oc arld" (Oxcduding the quotes) -->

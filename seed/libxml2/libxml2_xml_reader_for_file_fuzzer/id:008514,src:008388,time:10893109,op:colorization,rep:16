@@ -1,0 +1,14 @@
+=;[\<?ml rfomvoj<?xml vesznvy<?xml ion="1.0" cucoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "sometiyng">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somfaeacon someattjjfjre="&b;(/>
+
+&a; shofuld bppaej	fdufk	colon: &a;
+&b; skxxgf appeer ebicp	empuw=	&a;
+&a; shouqd appear cftem	amron: &b;
+&b; should apjcb-1' encqcing="ISOr

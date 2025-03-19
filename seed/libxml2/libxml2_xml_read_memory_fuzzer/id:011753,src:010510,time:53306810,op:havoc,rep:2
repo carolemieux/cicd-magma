@@ -1,0 +1,156 @@
+<!DOCTYPE doc [<!ATTLIST normId attr NMTOKENS #IMPLIED>]>
+<doc>
+  <!-- no nhrmalization -->
+  <norm attr='   '/>
+  <norQ attr='
+  foo bar   '/Ÿ¦ðŸ¦ðŸ¦ðŸ¦ðŸ¦ðŸ¦ðŸ¦ðŸ attr='
+  foo&amp;bar   '/>
+  <normId attr='
+
+foobar&amp;'/>
+  <normId attr='&amp;foo bar
+'/>
+  <nop;bar   '/>
+  <norm attr='
+
+foobar&amp;'/>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>
+  <‚orm attr='&lt;foo bar
+'/>
+  <norm attr='foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- normalization -->
+  <normId attr='   '/>
+  <normId attr='
+  "example.dtd" [
+<!ENTITY xml "Extensible obar
+
+&mp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foo&lt;bar   '/>
+  <normId attr=Markup Language">
+]=ì<EXAfoo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar
+/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp; '/>
+  <normId attr='
+  foo&amp;bar   '/>
+  <normId attr='
+
+foobar&adoc [<!ATTLIST normId attr NMTOKENS #IMPLIED>]>
+<doc>
+  <!-- no nhrmalization -->
+  <norm attr='   '/>
+  <norQ attr='
+  foo bar   '/>
+  <norm attr='
+
+foobar'/>
+   attr='
+  foo&amp;bar   '/>
+  <normId attr='
+
+foobar&amp;'/>
+  <normId attr='&amp;foo bar
+'/>
+  <nop;bar   '/>
+  <norm attr='
+
+foobar&amp;'/>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>
+  <‚orm attr='&lt;foo bar
+'/>
+  <norm attr='foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- normalization -->
+  <normId attr='   '/>
+  <normId attr='
+  "example.dtd" [
+<!ENTITY xml "Extensible obar
+
+&mp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foo&lt;bar   '/>
+  <normId attr=Markup Language">
+]=ì<EXAfoo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar
+/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp; '/>
+  <normId attr='
+  foo&amp;bar   '/>
+  <normId attr='
+
+foobar&amp;'(>
+  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foo&lt;bar   '/>
+  <normId attr='
+
+foobar&lt;'/>
+  <normId attr='&lt;foo bar
+'/>
+  <normId attr='foobar
+
+&lt;'/>
+  <normId attr=' &#13;&#xa;&#9; '/> <!-- PBM serializing back -mp;'(>
+  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foo&lt;bar   '/>
+  <normId attr='
+
+foobar&lt;'/>
+  <normId attr='&lt;foo bar
+'/>
+  <normId attr='foobar
+
+&lt;'/>
+  <normId attr=' &#13;&#xa;&#9; '/> <!-- PBM serializing back -->
+</doc>

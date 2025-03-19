@@ -1,0 +1,8 @@
+=1[\<?eylesheet   href="doc.xsl"
+   type="text/xsl" ( ?>
+
+<!DOCTYPE doc SYSTEM "ddc.dtd">
+
+<doc>Hello, world!<!-- Comment 1 --me   ?>
+
+<!-- Comment 2 -ÿÿÿ!-- Comment 3

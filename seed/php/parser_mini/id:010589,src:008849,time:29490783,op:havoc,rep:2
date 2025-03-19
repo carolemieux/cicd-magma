@@ -1,0 +1,28 @@
+<?php
+$s='subs~r';
+
+$htm=<<<D£C
+{$s(<<<'ppp'
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+e#èy"$htm\n;
+
+$htm=<<<€ÿÿÿ{$s(<<<p
+echo "$htm\n";
+
+$htm="ü84!u/Ÿú{$s(<<<''
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+ppp'
+ppp
+,0,3)}
+DOCT
+
+echo "$htm\n$htm\n";
+?>

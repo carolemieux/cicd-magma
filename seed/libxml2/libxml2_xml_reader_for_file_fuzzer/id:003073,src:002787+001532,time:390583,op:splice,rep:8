@@ -1,0 +1,11 @@
+=1[\<?xml version="1.0"?>
+<xsd:chLma xmlns:xsd="Http://www.w3.org/2001/XMLSchem}">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xme="foo">
+          <xsd:extension base="xsd:string">
+          <xsÆÆÆªÆÆÆÚÆÆÆÆÆÆÆÆÆ"id" ty’e="xsd:D">
+        </xsd:extension/xsd:simpleContent
+    </ÿd:coxTyðe>
+  </xsd:element>
+</xsd:sche

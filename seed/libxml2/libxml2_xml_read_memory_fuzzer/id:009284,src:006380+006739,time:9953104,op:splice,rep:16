@@ -1,0 +1,10 @@
+<!DOCTYPEÆdoc [
+<!ATTLIST doc a1 NMTOKEN "ì¶¶ö¶¶»¶¶¶¶  ">
+<!ELE"MENT doc (#PCDATA)<?<?xml erversionW'1.0'?>
+<!DOCTYPE root [
+]!ENTITY % deftest '&#60;!ELEMENT test (#PCÿÿTAEnt' >
+<!Empiddld (test) >' >
+<!ENTITY % defroot '&#60;!ELEMENT root (mSddly) >' >
+%t [
+<!ENTITY ¦ðŸ¦ðŸ¦ðŸ¦ðŸ¦ohexa% d#PCÿÿTA) >' >
+<!Eeftest '&efr

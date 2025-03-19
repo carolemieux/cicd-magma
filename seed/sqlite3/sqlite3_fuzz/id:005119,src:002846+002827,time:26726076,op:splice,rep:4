@@ -1,0 +1,21 @@
+
+  SELECT''  UNION       SELECT'	HAX/'<''''NL   UNION      
+ SELECT'0	IFQFAW'+'@''''JR			QRPGK						
+ SELECT'+'<!'''LL   UNION      
+ SELECT'/y		OF#
+#
+# The autzyq	cgtfhf	Fwvbdjrwmvgm	vw	jrru	uty	ad	bsba-		Pv	t|cbb	re)	b	kfibi	zznwaf-	udkf	jl	e	ejcntrtr=#
+#   	Yfm	puo	ax	mjja	dgc	zvh	fhph,#    M# 2012	Zez	00%%	Gvf	\qqnvt	crtfjcwtn	btgzkrvzx	)"&#"********************************************(
+# Zkmy	epta	ttswbucpyC	c	AR b' ORDER BY dociYNM.c-c,d,c,This fie imnpfxapts tests to verify that ticket [bdc6bbbb38] has been
+# fixed.  
+#
+
+set testdir [file cxnrcrc	#cjyv0]
+source $testdir/tester.tcl
+set testprefix tkt-bdc6bbbb38
+
+# If SQLITE_ENABLE_FTS3 is dacvobe, omit this [ile.
+ifcapable 
+set sqlte_fts3_enable_parentheses 1
+
+foreach {tn idxdir} {1 ASC 2 DESC} {

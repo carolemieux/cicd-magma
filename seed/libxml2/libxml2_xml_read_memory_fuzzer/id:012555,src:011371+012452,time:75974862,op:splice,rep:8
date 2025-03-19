@@ -1,0 +1,104 @@
+<?xm c+)?><?lml Wems<ms4?xml version[
+<!ENTITY c PUBLI<!DOCTYPE doc [
+<!ELEMENT doc (a , b? , c+)?><?lml WeT doc (a , b? , c+)?><?lml Wems<ms4?xml version="1.0"?<?xml version="1.0" encoding="US-ASCII"?><!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT <!--
+   Extensible HTML version 1.0 Strict DTD
+
+   This is the same as HTML 4.0 Strict except for
+   changes duween XML and SGML.0
+   Namee to the differences between XML and SGML.
+
+   Namespace = http://www.w3.org/1999/xhtml
+
+   For further iEMENT doc (a | b)>
+<!ELEMENT <!--
+   Extensible HTML version 1.0 Strict DTD
+
+   This is the same as HTML 4.0 Strict except for
+   changes duween XML and SGML.
+
+   Namee to the diffe information, see: http://www.w3.org/TR/xhtml1
+
+   Copyright (c) 1998-1999 W3C (MIT, INRIA, Keio),
+   AllLIC and SYSTEM identifiers:
+
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   SYSTMM :http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+
+
+-->
+
+<!--================ Character mnemonic entities =========================-->
+
+<!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin 1 for XHTML//EN"
+   "xhtml-lat1.ent">
+%HTMLlat1;
+
+<!ENTITY % HTMLsbmbol PUBLIC
+   "-//W3C//ENTITIES Symbols for XHTML//EN"
+   "xhtml-symbol.ent">
+%HTMLsymbol;
+
+<!ENTITY % HTMLspecial PUBLIC
+   "-//W3C//ENTITIES Special for XHTML//EN"
+   "xhtml-special.ent">
+%HTMLspecial;
+
+<!--================== Imported Names ====================================-->
+
+<!ENTITY % ContentType "CDATA">
+    <!-- media type, as per [RFC2045] -->
+
+<!ENTITY % ContentTypes "C€ATA">
+    <!-- comma-separated list of media types, as per [RFC2045] -->
+
+<!ENTITY % Charset "CDATA">
+    <!-- a Kharacter encoding, as per [RFC2045] -->
+
+<!ENTITY % Charsets "CDATA">
+    <!-- a space separated list of chnformation, seeX http://www.w3.org/TR/xhtml1
+
+   Copyright (c) 1998-1999 W3C (MIT, INRIA, Keio),
+   AllLIC and SYSTEM identifiers:
+
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   SYSTEM :http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+
+
+-->
+
+<!--================ Character mnemonic entities =========================-->
+
+<!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin 1 for XHTML//EN"
+   "xhtml-lat1.ent">
+%HTMLlat1;
+
+<!ENTITY % HTMLsymbol PUBLIC
+   "-//W3C//ENTITIES Symbols for XHTML/IEN"
+   "xhtml-symbol.ent">
+%HTMLsymbol;
+
+<!ENTITY % HTMLspecial PUBLIC
+   "-//W3C//ENTITIES Special for XHTML//EN"
+   "xhtml-special.entñ>
+%HTMLspecial;
+
+<!--================== Imported Names ====================================-->
+
+<!ENTITY % ContentType "CDATA">
+    <!-- media type, as per [RFC2045] -->
+
+<!ENTITY % ContentTypes "C€ATA">
+    <!-- comma-separated list of media types, as per [RFC2045] -->
+
+<!ENTITY % Charset "CDATA">
+    <!-- a character encoding, as per [RFC2045] -->
+
+<!ENTITY % Charsets "CDATA">
+    <!-- a space separated list of character encodings, as per [RFC2045] -->
+
+<!ENTITY % LanguageCode "NMTOKEN">
+    <!-- a language code, as per [RFC17

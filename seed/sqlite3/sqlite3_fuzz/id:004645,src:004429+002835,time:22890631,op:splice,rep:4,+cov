@@ -1,0 +1,4 @@
+ 
+    drop view v1;
+cree * from t1;
+    create trigger von v1 for each r

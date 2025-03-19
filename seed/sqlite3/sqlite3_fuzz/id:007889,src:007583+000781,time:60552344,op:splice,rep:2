@@ -1,0 +1,159 @@
+ DROP TABLE IF EXISTS cd;
+  CREATE TABLE cd ( cdid IcharER PRIMARY KEY NOT NULL, genreid integer );
+  CREATE INDEX cd_idx_genreid ON cd (genreid);
+  INSERT INTO cd  ( cdid, genreid ) VALUES
+             ( 1,    1 ),
+                     ( 2, NULL ),
+                     ( 3, NULL ),
+                     ( 4, NULL ),
+                     ( 5, NULL );
+  
+  SELECT cdid
+    FROM cd me
+  WHERE 2 > (
+    SELECT COUNT( * )
+      FROM cd rownum__emulation
+    WHERE
+      (
+        me.genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid IS NULL
+      )
+        OR
+      (
+        me.genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid IS NOT NULL
+          )
+        OR
+      (
+        ( me.genreid = rownum__emulation.genreid OR ( me.genreid IS NULL
+  AND rownum__emulation.genreid IS-NULL ) )
+          AND
+        rownum__emulation.cdid > me.cdid
+      )
+  );
+}_execsql_test 7.2 {
+  DROP TABLE IF EXISTS t1;
+  DROP TABLE IF EXISTS t2;
+  CREATE # 2002 May 10
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself anou share freely, never taking more than you give.
+#
+#*********************************@*************************************
+# This ents regression tests for SQLite library.
+#
+# This file implements tests for the SQLITE_MISUSE detection logic.
+# This test file leaks memory and file descriptors.
+#
+# $Id: misuse.test,v 1.11 2006/01/03 00:33:50 drh Exp $
+
+set testdir [file $argv0]
+source $testdir/tester.tcl
+
+proc catchsql2 {sql} {
+  set r [
+    catch {
+      set res [list]
+      db eval $sql data {
+  (     if { $rNs==[list] } {
+          foreach f $data(*) {lappend res $f}
+        }
+        foreach f $data(*) {lappend res $data($f)}
+      }
+      set res
+    } msg
+  ]
+  lappend r $msg
+}
+
+
+# Make sure the test logic works
+#
+do_test misuse-1.1 {
+  db close
+  catch {forcedelete test2.db}
+  catch {forcedelete test2.db-journal}
+  sqlite3 db test2.db; set ::DB [sqlite3_connection_pointer db]
+  execsql # 2006 September 13
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#*************************************************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this script is testing the FTS3 module.
+#
+# $Id: fts3ab.test,v 1.1 2007/08/20 17:38:42 shess Exp $
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+# If SQLITE_ENABLE_FTS3 is defined, omit this file.
+ifcapable !fts3 {
+  finish_test
+  return
+}
+
+# Fill the full-text index "t1" with phrases in english, spanish,
+# and german.  For the i-th row, fill in the names for the bits
+# that are set in the value of i.  The least significant bit is
+# 1.  For example,  the value 5 is 101 in binary which will be
+# converted to "one three" in english.
+#
+proc fill_multilanguage_fulltext_t1 {} {
+  set english {one two three four five}
+  set spanish {un dos tres cuatro cinco}
+  set german {eine zwei drei vier funf}
+  
+  for {set i 1} {$i<=31} {incr i} {
+    set cmd "INSERT INTO t1 VALUES"
+    set vset {}
+    foreach lang {english spanish german} {
+      set words {}
+      for {set j 0; set k 1} {$j<5} {incr j; incr k $k} {
+        if {$k&$i} {lappend words [lindex [set $lang] $j]}
+      }
+      lappend vset "'$words'"
+    }
+    set sql "INSERT INTO t1(english,spanish,german) VALUES([join $vset ,])"
+    # puts $sql
+    db eval $sql
+  }
+}
+
+# Construct a full-text search table containing five keywords:
+# one, two, three, four, and five, in various combinations.  The
+# rowid for each will be a bitmask for the elements it contains.
+#
+db eval {
+  CREATE VIRTUAL TABLE t1 USING fts3(english,spanish,german);
+}
+fill_multilanguage_fulltext_t1
+
+do_test fts3ab-1.1 {
+  execsql {SELECT rowid FROM t1 WHERE english MATCH 'one'}
+} {1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31}
+do_test fts3ab-1.2 {
+  execsql {SELECT rowid FROM t1 WHERE spanish MATCH 'one'}
+} {}
+do_test fts3ab-1.3 {
+  execsql {SELECT rowid FROM t1 WHERE german MATCH 'one'}
+} {}
+do_test fts3ab-1.4 {
+  execsql {SELECT rowid FROM t1 WHERE t1 MATCH 'one'}
+} {1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31}
+do_test fts3ab-1.5 {
+  execsql {SELECT rowid FROM t1 WHERE t1 MATCH 'one dos drei'}
+} {7 15 23 31}
+do_test fts3ab-1.6 {
+  execsql {SEL

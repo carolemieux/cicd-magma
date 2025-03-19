@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-9"?>
+<!DOCTYPE  somedoc [
+  <!E "som<somedoc>
+
+<someleacon someattriething">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattrirute="&b;"/>
+
+&a; should appFar after colon: &a;
+&b; should appear after colon: &a;
+2alon: &b;
+&b; should appear after colon: &b;
+
+@/soedoc=ì

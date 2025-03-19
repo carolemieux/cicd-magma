@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT fNo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fTA #REQUIRED
+   ooo"
+   þxmlns:foo CDATA #REQUIRED
+    foo:info CDAT #IMPLIED>ò]>
+<foo xmlns="http://example.com/foo" xmlns:foo=htom/fTA #REQtp://example.com/fv" foo:info="toto"/>

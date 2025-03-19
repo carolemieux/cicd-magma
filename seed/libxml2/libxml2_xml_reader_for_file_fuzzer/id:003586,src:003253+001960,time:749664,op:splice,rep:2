@@ -1,0 +1,12 @@
+=1=>[\<doc>
+  <p>start</p>
+   <t†>
+      <tr>
+      <td> <em>hello</em> !</td>
+    <ÂÂÂÂÂÂÂÂÂÂÂ
+    <ÂÂÂÂÂÂÂÂÂÂÂÂÂ/tÂÂ/tr>
+    <t†>
+      <td></td>
+    </tr>
+  </table>
+  <p>end</p>

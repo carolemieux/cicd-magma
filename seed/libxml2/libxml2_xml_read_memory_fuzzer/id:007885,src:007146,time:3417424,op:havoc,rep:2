@@ -1,0 +1,4 @@
+<?xml version_"1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "//doesnote_@st">
+]><root>&c;</ro&c;</root>ot>

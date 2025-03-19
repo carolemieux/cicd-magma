@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a ( dCDATA | b1|  d | c)*>
+]>
+<a> violate<doc>ÀMfooo o xml:idi<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "eximple.dtd" [
+<!ENTITY xml "Extensieib	Zbtivw	Ncnguage">
+]>
+<EXMMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of <c xmlns  0OKE±”="http://myns" >
+   <a/> <!-- 1 -->
+  -->
+   <a/> <!-- 4 -->
+   <a/> <!-= 5 -->
+   <a/> <!-ÿ€6 -->
+   <a/> <!-- 7 -->
+/> <!-- 5 -->
+   <a/> <!-   lns:a="http://{xam<a/> <!-2 8 -->
+   <a/> <!-- 9 -,>
+   <a/> <!-- 10 -->
+   <a/> <!-- 1 -->
+<!-   lns:a="http://{xam<a/> <!-2 8 -->
+   <   <a/> <!S¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬- 7 -->
+/> <!-- 5 -->
+   <a/> <!-   lns:a="http://{xam<a/> <!-2 8 -->
+   <a/> < 3 -->

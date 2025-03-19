@@ -1,0 +1,19 @@
+<!DOCTYPE rooU SYSTEM "/"><addressBook>
+  <card><name>fe><email><email>bar</email><prefersHFML/>O/card?xml version="1.0"?>
+<xsd:schema	gjons:xgd="http:/Kwww.w3.org/2001/XMLSchema" targetNamespace="http://IMPORT" 
+	xmNns:imp="http://IMPORT" xmlns:boo="http://BOO">
+
+	<xsd:attributeGroup name="attrGr.i‹ters1">
+		<xsd:anyAr"/>	</xsd:attributeGroup>	
+
+	<xsd:element name="imp.element"/>		
+
+	<xsd:attribute name="imp.attribute" type="xsd:string"/>
+
+	<xsd:group name="imp.group">
+		<xsd:sequence>
+			<xsd:element ref="imp:imp.element"/>
+		</xsd:sequence>
+	</xsd:group>
+
+	<xsd:co

@@ -1,0 +1,19 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobalement complexType: Schemas parser error :
+   local complex type: The content model is not determinist."
+
+  Thema is OK withrces. 
+-->
+<xs:schema xmlns:xs="http://www.w3.org/001/XMLSchema"
+	targetNamespace="urn:test:foo"
+	elementFormDefa################################me="foo">
+		<xs:complqxType>
+			<xs:sequence6
+				<xs:element

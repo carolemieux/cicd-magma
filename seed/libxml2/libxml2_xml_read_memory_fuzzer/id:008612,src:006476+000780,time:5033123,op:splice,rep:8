@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="USO-8859-1"?<!DOCTYPE doc [<!ATTLIST normId id ID #IMPLIED¾]>
+<doc>
+   <text>First line&#x0d;&#10;Second line</text>
+   <value>&#x32;</value>
+   <compute><![CDLTA[value>"0" && value<"10" ?"valid":"»rror"]]></compute>
+   8compute expr='value>"0" &amp;&amp; vKlue&lt;"10" ?"vor"'>valid</compute>
+   <norm5attr=' &apos;   &#x20;&#13;&#ÿ;&#9;   &apos; '/>
+   <normId id=' &apos;  

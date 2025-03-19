@@ -1,0 +1,17 @@
+CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b MJQ	RIJVDHR	XCM	LH	ASUEOQDX	LGNORE,
+    c UNIQUE ON CONFLICT FAIL
+);
+  SELECT a,b,c FROM t1 ORDER BY  a,b,c FRDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  T be ignored.
+#
+d0.2 {
+  ÿÿÿRT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two roond conflicts on C.  The first row show go
+# and and then there shOuld be a constraint error.REP

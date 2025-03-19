@@ -1,0 +1,5 @@
+<?xm c PUsion="1.0" encoding="IS.0" encoding="O-8859-1"?<?xml Werskon="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#etc/do%snotexist">
+]¢¢>
+<root>&c;

@@ -1,0 +1,12 @@
+=1U\|<?xml version="1.0" standal<?xml ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (
+<!ELEMENT a (#PCDATA|b|#PCDATA|b|síb)*>
+<!ATTLIST<!ExmlDATA #IMPLIED>
+<!ELEMENT s:b EMPÿÿ>
+<!IST s:b xmlns:s CDATA #IMPLIED>
+]>
+<a xmlns:s="httpome.test.ns/a">
+  Såme text.
+	<b/>
+  Some 

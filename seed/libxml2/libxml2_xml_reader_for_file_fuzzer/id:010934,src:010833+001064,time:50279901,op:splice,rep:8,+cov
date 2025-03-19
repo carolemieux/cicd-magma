@@ -1,0 +1,19 @@
+=>>tude href="//*www.w,d,,,,,,,,.w%dx`s" xmlns:xi="ht}
+     ]]>
+    </scrtp://www.w3.org/2001/XInclude">        l</xi:include>
+        <!DOCTYPE doc [
+<!ELEMENT doc (tst*)>
+<!ELEMENT tst (#PCDATA)>
+<!ATTLIST tst a NMTOKENS #IMPLIED>
+<!ATTLIST tst b CDATA        l</xi:include>
+     #IMPLIED>+<!ENTITY d "&#xD;">
+<!ENTITY a "b#xA;">
+<!ENTITY da "&#xD;&#xA;">
+]>
+<doc>
+<tst a=b="
+
+xyz"¼>
+<tst a="&d;&d;A&a;&#x20;&h;B&da;" b=>
+      <xsd:element name"&d;&d;A&a;&#x20;&a;B&da;"/>
+<tst a="&#xd;&#xd;A&#xa;&#xa;B&#xd;&#xa;" b="&#xd;&#xd;A&#xa;&#xa;B

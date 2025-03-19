@@ -1,0 +1,53 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href="doc.xsl"
+   type==1[\><?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specif////(////////////////////ication::19990205//EN" "dtds/xmlspec.dtd" [
+<!ENTITY doc-type "WD">
+<!ENTITY iso6.doc.date '29-May-1999'>
+]>
+<!--ArborText, Inc., 1988-1998, v.4002-->
+<?Pub UDT _bookmark _target?>
+<?Pub Inc?>
+<?xml-stylesheet
+href="file:///C|/Program%20Files/SoftQuad/XMetaL%201/display/xmlspec.css"dtype="text/css"?>
+<spec>
+
+<!-- Last edited: 27 May 1999 by bent -->
+<header><?Pub Dtl?>
+	<title>XML Linking Language (XLink)</title>
+	<version>Verbibl id="rfc!-- &doc-type;-&iso6.doc.date; --> WD- id="rfc!-- &doc-type;-&iso6ion>
+	<w3c-doctype>World Wide Web Consortium Working Draft</w3c-doctype>
+	<pubdBte><day>29</day><mo href="d/month><year>1999</ear></pubdate>
+	<notice>
+	<p=1[\<doc>
+  <pÿÿÿÿrtd/p>
+ 8Gt<?xml versioŠ="1.0"?>
+<xsd:schena xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annot   <xsd:element documentamax occurance attributes on sequences
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:eleªent name="doc">
+    <xsd:complexType>
+      <xsd:sequence minOccurs='ÿÿÿaxOccurs='unbounded'>
+
+        <xsd:element name="z-o">
+          <xsd:compl           <xsd:sequence minOccurs='0' maxOccurs='1'>
+              <xsd:element name='b'/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <xsd:elem"o-o">
+          <xsd:complexType>
+            <xsd:sequence minOccurs='1' ma„Occurs='1'>
+              <xsd:element name='c'/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+
+        <xsd:element name="z-u">
+          <xsd:complexType>
+            <xsd:sequence minOccurs='0' maxOccurs='unbounded'>
+              <xsd:element name='d'

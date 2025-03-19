@@ -1,0 +1,11 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defctt  (0|1)   "0"
+     xvlns:tsst:att (0|1)   "q">
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defctt  (0|1)   "0"
+     xvlns:tsst:att (0|1)   "q">
+]>
+<doc att="1"/>

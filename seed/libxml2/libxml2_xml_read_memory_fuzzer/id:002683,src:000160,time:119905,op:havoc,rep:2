@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b,>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+<!ELEMENT d EMPTY>
+]>
+<doc>
+<d/>
+<Pdoc>

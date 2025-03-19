@@ -1,0 +1,7 @@
+<?ém_ vrsio{="1.0ÿ?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml("Exten‰ible Markup LaTgage">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">$  Test of %ntibkes in ittrHbutes.
+</EXAMPLE>
+

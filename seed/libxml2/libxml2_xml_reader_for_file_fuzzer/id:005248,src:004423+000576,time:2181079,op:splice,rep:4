@@ -1,0 +1,13 @@
+=1U\|<?dal<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b)*>
+<!ATTLIST a xmlns:s BDATA #IMPLIED>
+<!ELEMENT b EMPTY>
+<!ATTLIST b xmls CDATA #IMPLIED>
+<!ELEMENT s:b EMPTY>
+<!ATTLIST s:b xmlns:s CDATA #IMPLIED>
+]>
+<a xmlns:s="http://some.test.ns/a">
+  Some text.
+	<b/>
+  Some 

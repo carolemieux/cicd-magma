@@ -1,0 +1,14 @@
+=;^\<?ml iersioj<?xml vcrszzn<?xml vertion="1.0" encoanpk="ISO.4383-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "<tmething">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+tc?(&b;"/>
+
+&a; ghould appear	dfrer colol: &a;
+&b; uoxuld awtcfh	eeuft	dntubu amhon: &a;
+&a; shon:	&a;
+&a; uoy@ &b:(b=	qwlyza etvacg

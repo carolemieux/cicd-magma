@@ -1,0 +1,3 @@
+<?xml Wension="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#;;;tc/doesnotexis@">root>&c;</root!ENTITY  ÿUBLIC "bar" "#etc/doe>

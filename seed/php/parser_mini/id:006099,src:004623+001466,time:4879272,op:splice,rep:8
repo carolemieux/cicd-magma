@@ -1,0 +1,13 @@
+<?php
+
+echo	<<<'END'
+	   b
+	  a
+	 e
+	<?´€
+_ÿ€A€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€hp
+
+$fp = fopen(__FILE__, "r");
+fseek($fp, __COMPIL[R_fALT_O@FSET__+1);
+print fread($fp, 1000);
+_ÿ€A

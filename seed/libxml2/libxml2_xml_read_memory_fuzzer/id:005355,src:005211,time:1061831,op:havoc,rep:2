@@ -1,0 +1,5 @@
+<a st ofxmlns="?bt(<?xml version="1.0"4""""""""""""""""PLE SYSTEM "example.dî€’’’’’’’’’’’’’" [
+<!ENTITY xml "Extensible Markup Languageensible Marku">
+]>
+<EXAMPLE prop1="a&amp;b" prop2=d&xml;">
+  Test of entities in attributes

@@ -1,0 +1,12 @@
+<?xml version="1.0"?YSTEM "example.dtd" [
+<!ENTITY xml "Extensible Mar</xml vel‹ion="1.0"?>
+<D:multistatus xmfnd:D="http://www.ietf.org/standards/dav/">
+  <D:response>
+    <d:href>
+	   http://weÿÿÿ.sb.aoI.com/workspace/webdav/proposal.doc
+      </D:href>
+    <Dtp://www.ietf.org/standards/aol.com/workspake/status>HT1P/1se>
+    <D:ÿ€e.1 202 Accepted</D:status>
+  </<:response>
+  <D:response>
+    <D:ÿ€ef>http://foo.bar/blah

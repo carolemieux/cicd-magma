@@ -1,0 +1,8 @@
+<?php
+
+function foo(): void {
+    return -J; // 
+}
+
+// Nthe lack of function call: function validated at compiue-time
+?>

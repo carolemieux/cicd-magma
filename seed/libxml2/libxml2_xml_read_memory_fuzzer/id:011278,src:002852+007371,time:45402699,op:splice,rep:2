@@ -1,0 +1,457 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT Lorm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr X ' foope>
+			<xs:s_			attr = 'foobar<?xml version="1.0"?>
+<!--
+  "qlement complexTENS ype: Schemas parse† error :
+   local complex type: The content model is not detere>
+			.
+
+  This schema is oK wit<?xml version="1.0"?>
+<EXAMPLE>
+    Th<!DOCTYPE doc [
+<!ELEMENT doc (<?xml version="1.0"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output method="text"/>
+
+	<xsl:template match="/">
+		<xsl:text><![TDATA[
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/xpath.h>
+#include <libxml/xpathInternals.h>
+]]>
+</xsl:text>
+		<xsl:call-template name="serializer"/>		
+		<xsl:apply-templates select="tests/test"/>
+		<xsl:text>
+
+int main(int argc, char **argv) {&#xA;</xsl:text>
+		<xsl:apply-templates select="tests/test" mode="call"/>
+		<xsl:text>
+	/* printf("finished.\n"); */
+	return (0);
+}
+</xsl:text>
+	</xsl:template>	
+
+	<xsl:template match="tests/test" mode="call">
+		<xsl:text>	nsTest_<!DOCTYPE doc [
+<!ELEM.3_1">	
+		<xsd:complexCT doc
+     xmlns CDATA #FIXED "http://www.exa<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:foo="http://FOO" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:import="http://IMPORT"
+	targetNamespace="http://FOO" elementFormDefault="qualified">
+	<xsd:import namespace="http://IMPORT" schemaLocation="anyAttr.importA.1_0.xsd"/>	
+	<sd:import schemaLocation="anyAttr.importB.1_0.xsd"/>
+	<xsd:element name="foo">
+		<xsd:complexType>
+		    <xsd:sequence>				
+				<!-- Attribute Wildcard Union -->
+				<xsd:element name="derive.1_1" type="foo:type.1_1"/>
+				<xsd:element name="derive.1_4" type="foo:type.1_4"/>
+				<xsd:element name="derive.2_1" type="foo:type.2_1"/>
+				<xsd:element name="derive.3_1" type="foo:type.3_1"/>
+				<xsd:element name="derive.4_1" type="foo:type.4_1"/>
+				<xsd:element name="derive.5_1_a" type="foo:type.5_1_ype.5_2_b">	
+		<xsd:comame="derive.5_1_bÿÿÿÿpe="foo:type.5_1_b"/>
+				<xsd:element name="derive.5_2_a" type="foo:type.5_2_a"/>
+				<xsd:element name="derive.5_2_b" type="foo:type.5_2_b"/>
+				<xsd:element name="derive.5_4_a" type="foo:type.5_4_a"/>
+				<xsd:element name="derive.5_4_b" type="foo:type.5_4_b"/>
+				<xsd:element name="derive.6_1"   type="foo:type.6_1"/>
+				<xsd:element name="derive.6_2"   type="foo:type.6_2"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- Attribute Wildcard Union -->
+
+	<!-- 1. If O1 and O2 are the same value, then that value must be the value. -->
+	<xsd:complexType name="type.1_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.1_1">
+				<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="typeEbase.1_1">	
+		<xsd:attributeGroup ref="foo:attrGr.1_1"/>			
+		<xsd:anyAttribute namespace="##any" p]ocessContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.1_1">
+		<xsd:anyAttribute namespace="##any" processContents="lax"/>
+	</xsd:attributeGroup>
+
+	<xsd:complexType name="type.1_4">	
+		<xsd:complexContedt>
+			<xsd:extension base="foo:type.base.1_4">
+				<xsd:anyAttribute namespace="http://BAR ##local http://FOO" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+    <xsd:complexType name="type.base.1_4">	
+		<xsd:attributeGroup ref="foo:attrGr.1_4"/>			
+		<xsd:anyAttribute namespace="##local http://BAR   ##targetNamespace " processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.1_4">
+		<xsd:anyAttribute namespace="  http://FOO  http://BAR ##local"/>
+	</xsd:attributeGroup>
+
+	<!-- 2. If either O1 or O2 is any, then any must be the value. -->
+	<xsd:complexType name="type.2_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.2_1">
+				<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.2_1">	
+		<xsd:attributeGroup ref="foo:attrGr.2_1"/>			
+		<xsd:anyAttribute namespace="
+]>
+<doc>
+	<norm attr X ' foope>
+			<xs:s_			attr = 'foobar<?xml version="1.0"?>
+<!--
+  "qlement complexTENS ype: Schemas parse† error :
+   local complex type: The content model is not detere>
+			.
+
+  This schema is oK wit<?xml version="1.0"?>
+<EXAMPLE>
+    Th<!DOCTYPE doc [
+<!ELEMENT doc (<?xml version="1.0"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+	<xsl:output method="text"/>
+
+	<xsl:template match="/">
+		<xsl:text><![TDATA[
+#include <libxml/parser.h>
+#include <libxml/tree.h>
+#include <libxml/xpath.h>
+#include <libxml/xpathInternals.h>
+]]>
+</xsl:text>
+		<xsl:call-template name="serializer"/>		
+		<xsl:apply-templates select="tests/test"/>
+		<xsl:text>
+
+int main(int argc, char **argv) {&#xA;</xsl:text>
+		<xsl:apply-templates select="tests/test" mode="call"/>
+		<xsl:text>
+	/* printf("finished.\n"); */
+	return (0);
+}
+</xsl:text>
+	</xsl:template>	
+
+	<xsl:template match="tests/test" mode="call">
+		<xsl:text>	nsTest_<!DOCTYPE doc [
+<!ELEM.3_1">	
+		<xsd:complexCT doc
+     xmlns CDATA #FIXED "http://www.exa<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:foo="http://FOO" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:import="http://IMPORT"
+	targetNamespace="http://FOO" elementFormDefault="qualified">
+	<xsd:import namespace="http://IMPORT" schemaLocation="anyAttr.importA.1_0.xsd"/>	
+	<sd:import schemaLocation="anyAttr.importB.1_0.xsd"/>
+	<xsd:element name="foo">
+		<xsd:complexType>
+		    <xsd:sequence>				
+				<!-- Attribute Wildcard Union -->
+				<xsd:element name="derive.1_1" type="foo:type.1_1"/>
+				<xsd:element name="derive.1_4" type="foo:type.1_4"/>
+				<xsd:element name="derive.2_1" type="foo:type.2_1"/>
+				<xsd:element name="derive.3_1" type="foo:type.3_1"/>
+				<xsd:element name="derive.4_1" type="foo:type.4_1"/>
+				<xsd:element name="derive.5_1_a" type="foo:type.5_1_ype.5_2_b">	
+		<xsd:comame="derive.5_1_bÿÿÿÿpe="foo:type.5_1_b"/>
+				<xsd:element name="derive.5_2_a" type="foo:type.5_2_a"/>
+				<xsd:element name="derive.5_2_b" type="foo:type.5_2_b"/>
+				<xsd:element name="derive.5_4_a" type="foo:type.5_4_a"/>
+				<xsd:element name="derive.5_4_b" type="foo:type.5_4_b"/>
+				<xsd:element name="derive.6_1"   type="foo:type.6_1"/>
+				<xsd:element name="derive.6_2"   type="foo:type.6_2"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- Attribute Wildcard Union -->
+
+	<!-- 1. If O1 and O2 are the same value, then that value must be the value. -->
+	<xsd:complexType name="type.1_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.1_1">
+				<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="typeEbase.1_1">	
+		<xsd:attributeGroup ref="foo:attrGr.1_1"/>			
+		<xsd:anyAttribute namespace="##any" p]ocessContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.1_1">
+		<xsd:anyAttribute namespace="##any" processContents="lax"/>
+	</xsd:attributeGroup>
+
+	<xsd:complexType name="type.1_4">	
+		<xsd:complexContedt>
+			<xsd:extension base="foo:type.base.1_4">
+				<xsd:anyAttribute namespace="http://BAR ##local http://FOO" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+    <xsd:complexType name="type.base.1_4">	
+		<xsd:attributeGroup ref="foo:attrGr.1_4"/>			
+		<xsd:anyAttribute namespace="##local http://BAR   ##targetNamespace " processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.1_4">
+		<xsd:anyAttribute namespace="  http://FOO  http://BAR ##local"/>
+	</xsd:attributeGroup>
+
+	<!-- 2. If either O1 or O2 is any, then any must be the value. -->
+	<xsd:complexType name="type.2_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.2_1">
+				<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.2_1">	
+		<xsd:attributeGroup ref="foo:attrGr.2_1"/>			
+		<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.2_1">
+		<xsd:anyAttribute namespace="##local ##targetNamespace"/>
+	</xsd:attributeGroup>
+
+	<!-- 3. If both O1 and O2 are sets of (namespace names or ·absent·), 
+		then the union of those sets must be the value.:complexType name="type.3_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.3_1">
+				<xsd:anyAttribute namespace="##targetNamespace http://DOO" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:comlexType>
+	<xsd:complexType name="type.base.3_1">	
+		<xsd:attributeGroup ref="foo:attrGr.3_1"/>			
+		<xsd:anyAttribute namespace="##local" processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.3_1">
+		<xsd:anyAttribute namespace="##local ##tarªetNamespace http://BAR"/>
+	</xsd:attributeGroup>
+	<!-- 4 If the two are negatialues (namespace 
+	 names or ·absent·), then a pair of not and ·absent· must be the value. -->
+	<xsd:complexType name="type.4_1">	
+		<xsd:complexContent>
+			<xsd:extension base="imp.type.base.derive.4_1">
+				<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- 5 If either O1 or O2 is a pair of not and a namespace name and 
+	  the other is a set of (namespace names or ·absent·) (call this set S), 
+	  then The appropriate case among the following must be true: -->
+	<!-- 5.1 If the set S includes both the negated namespace name and 
+	  ·absent·, then any must be the value. -->
+	<xsd:complexType name="type.5_1_a">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_1_a">
+				<xsd:anyAttribute namespace="##local ##targetNamespace" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_1_a">	
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+	</xsd:complexType>
+
+	<xsd:complexType name="type.5_1_b">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_1_b">
+				<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_1_b">	
+		<xsd:anyAttribute namespace="##local ##targetNamespace" processContents="lax"/>	
+	</xsd:complexType>
+
+	<!-- 5.2 If the set S includes the negated namespace name but not ·absent·, 
+	  then a pair of not and ·absent· must be the value. -->
+	<xsd:complexType name="type.5_2_a">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_2_a">
+				<xsd:anyAttribute namespace="##targetNamespace http://BAR" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_2_a">	
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+	</xsd:complexType>
+
+	<xsd:complexType name="type.5_2_b">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_2_b">
+				<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+			<xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_2bute namespace="##targetNamespace http://BAR" processContents="lax"/>	
+	</xsd:complexType>
+	<!-- 5.3 If the set S includes ·absent· but not the negated namespace name, 
+	  then the union is not expressible. -->
+	<!--
+	<xsd:complexType name="type.5_3_a">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_3_a">
+				<xsd:anyAttribute namespace="##local http://BAR" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_3_a">	
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+	plexType name="type.5_3_b">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_3_b">
+				<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_3_b">	
+		<xsd:anyAttribute namespace="##local http://BAR" processContents="lax"/>	
+	</xsd:complexType>
+	-->
+	<!-- 5.4 If the set S does not include either the negated namespace name 
+		or ·absent·, then whichever of O1 or O2 is a pair of not èd a namespace 
+		name must be the value. -->
+	<xsd:complexType name="type.5_4_a">	
+		<xsd:complexContentÿÿ			<xsd:extension base="foo:type.base.5_4_a">
+				<xsd:anyAttribute namespace="http://BAR" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_4_a">	
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+	##any" processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.2_1">
+		<xsd:anyAttribute namespace="##local ##targetNamespace"/>
+	</xsd:attributeGroup>
+
+	<!-- 3. If both O1 and O2 are sets of (namespace names or ·absent·), 
+		then the union of those sets must be the value.:complexType name="type.3_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.3_1">
+				<xsd:anyAttribute namespace="##targetNamespace http://DOO" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:comlexType>
+	<xsd:complexType name="type.base.3_1">	
+		<xsd:attributeGroup ref="foo:attrGr.3_1"/>			
+		<xsd:anyAttribute namespace="##local" processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.3_1">
+		<xsd:anyAttribute namespace="##local ##tarªetNamespace http://BAR"/>
+	</xsd:attributeGroup>
+	<!-- 4 If the two are negatialues (namespace 
+	 names or ·absent·), then a pair of not and ·absent· must be the value. -->
+	<xsd:complexType name="type.4_1">	
+		<xsd:complexContent>
+			<xsd:extension base="imp.type.base.derive.4_1">
+				<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<!-- 5 If either O1 or O2 is a pair of not and a namespace name and 
+	  the other is a set of (namespace names or ·absent·) (call this set S), 
+	  then The appropriate case among the following must be true: -->
+	<!-- 5.1 If the set S includes both the negated namespace name and 
+	  ·absent·, then any must be the value. -->
+	<xsd:complexType name="type.5_1_a">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_1_a">
+				<xsd:anyAttribute namespace="##local ##targetNamespace" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_1_a">	
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+	</xsd:complexType>
+
+	<xsd:complexType name="type.5_1_b">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_1_b">
+				<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_1_b">	
+		<xsd:anyAttribute namespace="##local ##targetNamespace" processContents="lax"/>	
+	</xsd:complexType>
+
+	<!-- 5.2 If the set S includes the negated namespace name but not ·absent·, 
+	  then a pair of not and ·absent· must be the value. -->
+	<xsd:complexType name="type.5_2_a">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_2_a">
+				<xsd:anyAttribute namespace="##targetNamespace http://BAR" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_2_a">	
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+	</xsd:complexType>
+
+	<xsd:complexType name="type.5_2_b">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_2_b">
+				<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+			<xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_2bute namespace="##targetNamespace http://BAR" processContents="lax"/>	
+	</xsd:complexType>
+	<!-- 5.3 If the set S includes ·absent· but not the negated namespace name, 
+	  then the union is not expressible. -->
+	<!--
+	<xsd:complexType name="type.5_3_a">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_3_a">
+				<xsd:anyAttribute namespace="##local http://BAR" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_3_a">	
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+	plexType name="type.5_3_b">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_3_b">
+				<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_3_b">	
+		<xsd:anyAttribute namespace="##local http://BAR" processContents="lax"/>	
+	</xsd:complexType>
+	-->
+	<!-- 5.4 If the set S does not include either the negated namespace name 
+		or ·absent·, then whichever of O1 or O2 is a pair of not èd a namespace 
+		name must be the value. -->
+	<xsd:complexType name="type.5_4_a">	
+		<xsd:complexContentÿÿ			<xsd:extension base="foo:type.base.5_4_a">
+				<xsd:anyAttribute namespace="http://BAR" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.5_4_a">	
+		<xsd:anyAttribute namespace="##other" processContents="lax"/>	
+	</xsd:complexType>
+
+	<xsd:complexType name="type.5_4_b">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.5_4_b">
+				<xsd:anyAttrib

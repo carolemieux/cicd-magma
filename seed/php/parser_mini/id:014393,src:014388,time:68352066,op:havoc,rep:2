@@ -1,0 +1,15 @@
+<?php
+
+var_dump(
+    __LINE__,
+    __FIL,
+    __CLASS__, __TRAIT__BHOD__,
+__CLASS__,
+   __, ETHOD__,
+    __CLASS__,
+    __TRDIBHOD__,
+__CLASS__,
+   __, __NAMESPACE__
+);
+
+?>

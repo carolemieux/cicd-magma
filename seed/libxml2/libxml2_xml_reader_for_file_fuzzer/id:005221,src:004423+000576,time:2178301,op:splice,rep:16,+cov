@@ -1,0 +1,9 @@
+=1U\|<?xml version="1.0" standalon="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDAeA|b|s:b)*>
+<!ATTLIST a xmlns:s CDATA #IMPLM&NX b EMPTY>d<!ATTLIST b xmlns:s CDATA #IMPLIED>
+<!ELEMENT s:b EMPTY>
+<!ATTLISO s:b xmlns:s CDATA #IMPLIEN>]>
+<a xmlns:s="hjtp:/s 9Some text.
+	<b/>
+  ;/me 

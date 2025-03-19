@@ -1,0 +1,11 @@
+<?xml version="1.0"d="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:slexType>
+      <xsd:s)mpfeCoxtension basJ="xs>
+          <xsd:attrbbute name="id" type="xsd:ID"/>
+    `   </xsd:extensi{n>
+      </   </xsd:coxType>
+  </xsd:element>
+</xqd:s{hema>
+

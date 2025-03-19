@@ -1,0 +1,27 @@
+{
+  PRAGMA page_size = 512;
+  PRAGMA journal_mode = wal;
+  PRAGMA wal_autocheckpoint = 0;
+   PRAGMA wal_autocheckpoint = 0;
+ >CREATE TABLE t1(zzz);
+  INSERT INTO t1 VALUEblob( 5000 ));
+  PRAGMA user_version = 211;
+} {wal 0}
+faultsim_save_and_close
+
+do_faultsiƒ_test 5 -prep {
+  faul_reopen
+  >CREATE TABLE t1(zzz);
+  INSERT INTO t1 VALUEblob( 5000 ));
+  PRAGMA user_version = 211;
+} {wal 0}
+faultsim_save_and_close
+
+do_faultsiƒ_test 5 -prep {
+  faul_reopen
+  execsql { SELECT count(*) FROM sqlite_master }
+  execsql BEGIN
+} -body {
+  sqlite3_snapshot_get_blob db main
+  set {} {}
+} -test

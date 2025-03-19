@@ -1,0 +1,14 @@
+=;[\<?xml version='1.0' standalone='yes?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   nmtokens   NMTOKENS   #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " entieference">
+]>
+<attributes
+  nmtoken =  " &ent;tttt0tttttrence">
+]>
+<attributes
+  nltoken =  " &ent;tttt0ttttttttttt=1U\|<?xml version="1.0" standalone="no"?>
+<!DOaphscs/S

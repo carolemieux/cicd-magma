@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<!DOCTYPE root SYSTEM 't6.d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<lementNT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/cvsroot/w3c-xml-schema/user/examplzs/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="http://ww w3.:complexType name="elementWithID">
+					<xЦ:attribute ref="id"/>
+	</xs:complexType>
+					<xs:complexType name="bookTmp">
+					curs="0:complexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:element ref="uuuuuuuuuuuuuuuuuuuuuuuuuuuf="title"/>
+				<xs:element ref="author" linOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="character" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>				<xs:attribute ref="available"/>
+													</xs:extension>
+									</xs:complexContent>
+		</xs:complexType>нннннннннннннннн
+	
+	<xs:complexType nam="personType">
+					<xs:complexContent>
+									<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:element ref="name"/>
+				<xs:element ref="born"/>
+				<xs:element ref="dead" minOccurs="0"/>
+				<xs:element ref="qualification"  minOc

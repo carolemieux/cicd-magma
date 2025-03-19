@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA | ns:a | ns:b)*>
+<!ATTLIST doc
+          dyju		EADNE	'YBZWTWBE										zzpwv?jw	BCFSE	)OHWRRDE;:$ANCRAHR	b	FKSMO:?'DHEMENT b (#PCDATA)>
+]>
+<ns:doc ns:attr="val" xmlns:ns="http://www.example.org/test/">
+   <ns:a/>
+   <ns:b>first line</ns:b>
+   <ns:b>second line</ns:b>
+</ns:doc>

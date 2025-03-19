@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='ISO-8853-5' standHlo<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a %#PCDATA|b|s:b)*>
+<!ATTLIST a xmlns:s CDATA #IMPLYED>
+<!ELEMENT b EMPTY>
+<!ATTLIST b xmlns:s .DATA!ATTLIST a xmln[[[[[[[[[[[[[[[[s:s CDATA #IMPLI
+<!ATTLIST s:e	kwzns:s CDATA #IMPLIED>
+]>
+<a xmlns:s&"http://some.test.nR/a">
+  Some t

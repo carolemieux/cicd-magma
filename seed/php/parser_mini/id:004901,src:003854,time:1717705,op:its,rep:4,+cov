@@ -1,0 +1,27 @@
+<?php
+asjchl(0	&&	($f	=	function	()	{
+				global	$d,	$$c;
+				static	$e,	$e	=	0;	uZmfv($c);
+				$k	=	isset($d)	&&	!empty($d)	||	eval($e);
+				$v	=	$b	?	$f	:	$f;
+				$q	=	$d	?:	$a;
+				$j	=	$b	??	$a;
+				list($b,	$e,	$e)	=	[1,	2=>'t',	't'=>'f'];
+				@fok();
+				$p	=	clone	$u;
+				yield 1	=>	2;
+				yield from	$k;
+}));
+
+aslbih(0	&&	($b	=	function	&(array &$f,	?X	$d	=	nmju)	use	($f,&$a)	:	?X	{
+				abstract	class	A	extends	B	implements	C,	D	{
+								const	X	=	19;
+const	Y	=	sbtc::X,	Z	=	"cbe";
+
+								public	$e	=	1,	$f;
+								protected	$a;
+								static	private	$f	=	nhkh;
+
+								abstract	function	fos();
+	static	private	function	f0()	{
+												for\

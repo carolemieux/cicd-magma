@@ -1,0 +1,12 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href="<?xml version="1.0" encoding="EUC-JP"?>
+<foo>
+Text with========================== EUC-JP chars at position 214 (0xd6)
+___
+_______________
+________<______
+_______________
+_______________
+_______________
+____

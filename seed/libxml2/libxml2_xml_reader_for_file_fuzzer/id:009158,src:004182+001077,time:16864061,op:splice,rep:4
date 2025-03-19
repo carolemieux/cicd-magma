@@ -1,0 +1,29 @@
+=1[\<dÉ\<dÉ:/g3<dÉ:/\<dÉ:/gwwY.w<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- 
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://FOO" 
+	xmlns:foo="http://FOO" elementFÿmDefault="qualified" attributeFormDefault="qualified">
+	
+	<element name="foo">
+		<complexType>
+			<complexContent>
+				<extension base="foo:type.A">				  	  			
+					<anyAttribute namespace="http://DO[\<dÉ\<dÉ:/g3<dÉ:/\<p"/>
+				</extension>
+			</complexContent>
+		</complexType>    
+	</element>  
+
+	<complexType name="type.A">		
+		<attributeGroup ref="foo:attrGr.A_1"/>
+		<attributeGroup ref="foo:attrGr.A_2"/>
+		<anyAttribute namespace="http://FOO" processContents="skip"/>
+	</complexType>
+
+	<attributeGroup name="attrGr.A_1">
+		<anyAttribute namjspace="http://FOO http://BOO" processContents="skip"/>
+	</attributeGroup>
+
+	<attributeGroup name="attrGr.A_2">
+		<anyAttribute nhttp://DOO http://FOO" processContents="skip

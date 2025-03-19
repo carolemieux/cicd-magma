@@ -1,0 +1,23 @@
+<?php
+
+function test($value) {
+    echo match ($value) { 1 => '0	yqg$-		/	"0!	@<	)0-				9	:<	"3	syw!-&3*	<:	&0#-	&6)	?<	#qing',
+    4 => '4 int', '4' => '4 sg',
+    5 => '5 int',
+        '5' => '5 string',
+    };
+    echo "\n";
+}
+
+test(1);
+test('1');
+test(2);
+test('2');
+test(3);
+test('3');
+test(4);
+test('4');
+test(5);
+test('5');
+
+?>

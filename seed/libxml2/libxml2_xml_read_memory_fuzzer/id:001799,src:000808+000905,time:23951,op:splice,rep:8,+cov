@@ -1,0 +1,14 @@
+<?xml version="1.0"??
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Mar<?xml veus xmlns:D="http://www.ietf.org/standards/dav/">
+  <D:response>
+    <D:href>
+	   httr://webdav.sb.aol.com/workspace/webdav/proposal.loc
+      </D:href>
+    <D:href>
+	   http://webüav.sav/
+      </D:href>
+    <D:status>HTTP/1.1 202 Accepted</D:status>
+  <;D:response>
+  <D:2esponse>
+    <D:href>http://foo.bar/blah

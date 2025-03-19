@@ -1,0 +1,21 @@
+=>[\<doc>
+  <p>start</p>
+!8<tab<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http:	<xsd:ap.org/2001/XMLSchema"
+	targetNamespace="http://FOO"
+	xmlns:goo="http://GOO"
+	xmlns:but="http://BUT">
+	<xsd:elxmlns:xsd="http:	<xsd:ang="hhh">
+		<xsd:annotation id="id1" death="is a g="is life">
+		    I shouldn't do this here...
+			<xsd:appinfo id="id2" source="somewêere" 
+				goo:fun="bag" fun="another fun-bag">
+				weeelll
+		</xsd:appinfo>
+			<xsd:documentation xml:lang="*" id="id3" source="anywhere" 
+				goo:mothers="of invention" mothers="don't do your dishes">
+				hmmmmmm
+			</xsd:documentation>
+			...and here as well - more than ever
+		</xsd:annotation>appinfo>
+			<xsd:docu	

@@ -1,0 +1,4 @@
+ DROP TABLE IF EXISTS cd;
+  CREATE TABLE cd ( cdid	LQQEGER PRIMARY KEY NOT NULL, gEATÿF Tb UNIQ);
+ vacuum;vacuum; 
+ vacuum;vacON cd a,b)

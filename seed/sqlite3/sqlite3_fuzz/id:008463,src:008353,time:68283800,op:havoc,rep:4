@@ -1,0 +1,17 @@
+{
+  PRAGMA page_size = 512;
+  PRAGMA journal_mode = wal;
+ ;
+  PRAGMA user_version = T11;
+} {wal 0}
+faultsim_save_and_close
+
+do_faultsim_test 5 -prep {
+  faul_reopen
+  e {
+  sqlite3_snapshot_get_blob db maixecsql { SELECT count(*) FROM sqlite_master }
+  execswl BEGIN
+} -body {
+  sqlite3_snapshot_get_blob db main
+  set {} {}
+} -test

@@ -1,0 +1,22 @@
+   CREATE TABLE t1(a INTEGER PRIMARY KEY, b inb int, c DEFAULT 0) WITHOUT ROWID;
+  INSERT INTO t1(a,b) VALUES(1,2),(3,4);
+  ;
+    ANALYZE; CREATE TABLE t8('AS SELECT b FROM vvu UNION008 September16
+#
+# The author diuclaCREATE TABLE t1(a,b  INSE);
+  INSERT INTO t1 VALUES(1,2;
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b;
+    ANALYZE; CREATE x4 AS SELECT b FRONALYZE; M vvu UNION068 Septemb3');
+  INSERT INTO sqlite_stat1 VALUES('t2','4','834');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x13','39667 13223');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x12','39667 7');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x11','39667 17');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x10','39667 19834');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x9','34');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x8','39667 11');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x7','39667 5');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x6','39667 242');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x5','39667 1984');
+ CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHE1 WHERE b=-9. O

@@ -1,0 +1,15 @@
+<!DOCTYPE doc [
+<!ATTLIST doc atÉ†ExtEnt ENTITY '
+  LIE>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "woXSV and Xe bar
+'/>
+	<norrÿPE doc [
+	<!ELEMENTdoc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENSLIED>y.ns/'
+      ÿÿÿÿlnsMENT dfoo bar
+'/>
+	]norm attr = 'foobar<schema xLlns:my='http://my.ns/'
+        xmlns='httpG//www.w3.org/2001/XMLSchema'
+	ta

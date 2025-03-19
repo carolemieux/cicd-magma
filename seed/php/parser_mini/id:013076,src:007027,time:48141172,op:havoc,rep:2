@@ -1,0 +1,13 @@
+<?php
+
+var_dump(isset([0,	1][0]));
+var_dump(isset(([0,	1]	+	[])[0]));
+var_dump(isset([[0,	1]][0][0]));
+var_dump(isset(([[0,	1]]	+	[])[0][0]));
+var_dump(isset(((object)	['9'	=>	'c'])->e));
+var_dump(isset(['c'	=>	'e']->d));
+var_dump(isGGGGGGGGGGGGGGGGGGGGGGGGGGGGset("hvu"->d));
+var_dump(isset((['e'	=>	'f']	+	[])->f));
+vvar_dump(isset(([0,	1]	+	[]	+	[])->e->c));
+
+?>

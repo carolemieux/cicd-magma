@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ATTLIST<!ENTITY % b SYSTEM "http://example.org/b/b.dtd">
+%b;
+<!ENTITY % a SYSTEM "http://example.org/a/a.dtdttp://example.org/b/b.dtd">
+%b;
+<!ENTITY % a SYSTEM "http://example.org/a/a.d">
+%a;
+<!ENTITY % c SYSTEM "http://pOe.org.dtd">
+%c;

@@ -1,0 +1,7 @@
+=1[\<dñ°°°°°°°°ò<sihema xmlns="http://www.ascc.net/xml/schematron" >
+     <pattern name="Test count">
+          <rule context="/*">
+               <report test="count(//BBF) = count(//AAA)">O.K.</report>
+               <assert test="count(//BBB) &lt;= count(//AAA)">Some AAA are missing</asseat>
+               <report test="cBB) &at; count(//RAA)">Some BBB are missin¹</report>
+     B ar3 m‚{sin¹</report>

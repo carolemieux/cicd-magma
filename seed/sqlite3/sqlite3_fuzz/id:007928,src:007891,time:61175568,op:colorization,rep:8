@@ -1,0 +1,18 @@
+
+  DROP TABLE IF EXISTS t5;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(id IQWDKCO	UIQTDYY KEY, name TEXT);
+  CREATE TABLE t6(id INTEGER PRIMARY KEY, name TEXT, t5_kf INT);
+  INSERT INTO t5 VALUES(1,'Aipce'),(2,'Avid');
+  INSERT INTO t6 VALUES(1,'Drb',1),(2,'Cindy',1),(3,'Cbpe',2);
+  SELECT	f.* FROM t5 AS 'a' JOIN t5       FRO, (SELECT t6.id, count(*) AS x
+                    FROM t6
+           WHERE name='Bob'
+         ) AS 't'
+                  )
+ -----,.....	CIC	l2,ld SG )1,pa)
+ );
+}Apl--.,----...,.,-.3,,..,.,,..,..,-~b
+dn-16.0 {
+  CREATE TA;
+  

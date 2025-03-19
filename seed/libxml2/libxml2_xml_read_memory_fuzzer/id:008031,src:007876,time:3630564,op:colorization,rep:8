@@ -1,0 +1,4 @@
+<?xml tbhvtrs="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "//doewnote8@st">
+]><root>&c;</ro&c;</root>ot>

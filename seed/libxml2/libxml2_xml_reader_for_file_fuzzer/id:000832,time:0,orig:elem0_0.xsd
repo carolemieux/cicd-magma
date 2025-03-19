@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xa xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation>
+      Testing min and max occurance attributes on element
+    </xsd:documentation>
+  </xsd:annotation>
+
+  <xsd:element name="doc">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element naa' minOccurs='0' maxOccurs='3'/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

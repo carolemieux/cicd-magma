@@ -1,0 +1,31 @@
+# 2005 October 3
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library.
+#
+# This file implements tests the ability of the library to open
+# many different databases at the same time without leaking memory.
+#
+# $Id: manydb.test,v 1.4 2008/11/21 00:10:35 aswift Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+set N 300
+# if we're using proxy locks, we use 5 filedescriptors for a db
+# that is open and  db$i close
+    forcedelete $dbname($i)
+  } {}
+}
+
+
+
+
+finish_tes

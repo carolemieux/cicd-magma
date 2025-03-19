@@ -1,0 +1,4 @@
+<?php
+#[Attribute(pcnfnt::x)]
+class x extends y {}
+?>

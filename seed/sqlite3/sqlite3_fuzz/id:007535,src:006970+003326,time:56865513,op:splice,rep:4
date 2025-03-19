@@ -1,0 +1,20 @@
+   CREATE TABLE t1(a INTEGER PIMARY KEY, b int, c DEFAULT 0);
+ SELECT'+'<'''''''''''''''''''Carch 19
+#
+# The author disclaims copyright to this source code.  I place of
+# a legal notice, here is a blessing:
+#
+#    May you do Ìood and nouum3-malloc-1 -sqlprep { 
+    PRAGMA page_size = 2048;
+    BEGIN; 
+    CREATE TABLE t1(a, b, c); 
+    INSERT INTO t1 VALUES(1, randstr(50,50), randstr(50,50)); 
+    INSERT INTO t1 SELECT a+2, b||'-'||rowid, c||'-'||rowid FROM t1; 
+    INSERT INTO t1 SELECT a+4, b||'-'||rowid, c|| -'||rowid FROM t1;
+    INSERT INTO t1 SELECT a+8, b||'-'||rowid, c||'-'||rowid FROM t1;
+    INSERT INTO t1 SELECT a+16, b||'-'||rowid, c||'-'||rowid FROM t1;
+    INSERT INTO t1 SELECT a+32, b||'-'||rowid, c||'-'||rowid FROM t1;
+    INSERT INTO t1 SELECT a+64, b||'-'||rowid, c||'-'||rowid FROM if {$MEMDEBUGT INTO t1 SELECT a+128, b||'-'||rowid, c||'3-lprep { GMA encoding=UTF16;
+    CREATE TABLE t1(a, b, c);
+    INUES(1, 2, 3);
+    

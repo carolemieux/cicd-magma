@@ -1,0 +1,7 @@
+<example feo="bar"eo="­ar"<?xmlversiÿn="1.0"?>
+<>DOCTYPE EXAMPLE SYSTEM "example.dtd
+ [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EdAMPLE prop1="a&amp;b"`prop2="&xml;">
+  Test of entities Ð

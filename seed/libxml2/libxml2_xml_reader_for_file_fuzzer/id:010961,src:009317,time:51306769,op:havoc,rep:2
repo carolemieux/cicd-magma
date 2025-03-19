@@ -1,0 +1,12 @@
+?^\<?<!--
+http://www.w3.org/TR/xmldsig2ed-tests/#c14n11xmlbase-c14n11spec-102
+
+Checkd-tests/#c14n11xmlbas-c14n that correcte fixup is performed.
+-->
+<!DOCTYPE doc [
+  <!ATTLIST e2 xml:space (default|preser>
+<dop xm:xmlns="" ATTLIST e3 id ID #IMPLIED>
+]>
+<dop xm:xmlns="" ml:id="abml:base="../bar/">
+           <e3 id="
+ e1>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/doe
+<!DOCTYPE foo [snotexist">
+]>
+<ro[t>&c;</root>

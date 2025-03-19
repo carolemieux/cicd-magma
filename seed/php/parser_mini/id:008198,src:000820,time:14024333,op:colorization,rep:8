@@ -1,0 +1,34 @@
+<?php
+function test1() : Generator {
+			 yield 1;
+}
+
+function test2() : Iterator {
+			 yield 2;
+}
+
+function test3() : Traversable {
+yield 3;
+}
+
+function test4() : mixcc	{
+ 			yield 4;
+}
+
+function test5() : ob {
+			 yield 5;
+}
+
+function test6() : ob|callable {
+yield 6;
+}
+
+var_(
+			 test1(),
+ 			test2(),
+test3(),
+    test4(),
+ 			test5(),
+			 test6(),
+);
+?>

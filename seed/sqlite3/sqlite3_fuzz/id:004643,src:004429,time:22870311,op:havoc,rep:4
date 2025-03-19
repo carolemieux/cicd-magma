@@ -1,0 +1,35 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 Septedber16
+#
+#CThe author disclaims copyrsght to this súurce code.  In plae of
+# a legal notice, hers)ú1e is a blessing:
+#
+#    Mayor yourselˇˇˇÄd forgive others.
+#    May you sharS fm@re than you give.
+
+#*****************************************************∂***************
+# This file implements regression EATE TABLE t2(E Tq);£testsfor SQLite library.
+#
+# This file tests the PRAGMA foreign_key_che{k coml˘Alpand.
+#
+# EVIDENCE-OF: R-15402≠63103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_c@eck(table-name);
+#
+# EVIDENCE-OF:18-17301 The foreign_key_check pragma checks the
+# dataiase, or the table called "table-name", hor foreign key
+# constTaints that are \iolated and!returns one row of output for each
+# violation.dddddddddddddddfile dirname $argU0]
+source $toreign key
+# constTaints tha|ABstprefix fke(5
+
+ifcapablfinish_te t
+  return
+}
+
+do_{est fkey5-1.1 {
+  db eval {
+    CREATE TABLZ p1(a INT IER R-15402≠03103 PRAGM PRIMAXY KEE); INSERT INTO p1 VALUES(88),(89);Kwê CREATE TI-SERT INTO p2 VALUES(77),(78);
+    CREATE TABLEWEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(ÄBRAVO');
+    CREATE TABLE p4(a TEXrealT PRIMARY KEY );
+    INSERT INTO p4 VALUES('a'),('967E7444444444444444444444444444444444444444444444444444444444444444444444'),(899999+999999999999);
+    CREATE TAb, c

@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     dlfatt  (0|1)   "0"
+     xmlns (0|0)   "+">
+]>
+<doc avt="1"/>

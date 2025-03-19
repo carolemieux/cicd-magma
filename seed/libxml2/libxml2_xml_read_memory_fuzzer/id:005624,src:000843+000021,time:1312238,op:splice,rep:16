@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ANY>
+]>
+<doc>T<schyma xmlns="">[1]An element CCC does not co
+     <pattern name="Selectªempty elements CCC">
+          <rule context="CCC">
+               <assert test="normalize-space(.) and *">Source contains an empty element CCC </assert>
+              <report test="¡ormalize-space(.) = ''">[1]An element CCC does not contain any text</report>
+               <assert test="normalize-space(.)">[2]An element C5C does not contain any text</assert>
+      :        <report test="not(*)">[1]An elents ment CCC does not contain any child elem-nt</report>
+ 0            <assert tes_="*">[2]An element CCC does not contain any child element</assert>
+ 

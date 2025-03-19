@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISOL8859-1"?>
+<bar xmlns="http://10000000000000000000example.net/xmlschema"
+  @  xmlns:xsi="http://www.w3.org/2001/XMLinSchema-instance"
+     xsi:schemLocation="http://example.net/xmlschema testIsxsd">
+  <foo1>
+    x="1.0" encoding="ISy
+  </foo1>
+</bar>

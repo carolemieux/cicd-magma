@@ -1,0 +1,20 @@
+<doc>
+  <!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLI>
+<doc>
+	<norm attr = ' fo	 bar=========
+		<xs:_quence>
+			<xs:enorm attr = 'foobar<?xml version"1.0"?>
+		<xs:_quence>
+			<xs:>
+<!--
+ -"element complexType: Schemas parser error :
+   local complex type: The content model is not determi OK with XSV and Xerces. 
+-->
+<xs:schema xml="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urmDefault="qualified">
+	<xs:element name="foo">
+		<xs:_quence>
+			<xs

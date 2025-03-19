@@ -1,0 +1,8 @@
+ SELECT (flgs & 0x0100)!=0 FROM pragma_stats WHERE tbl='w0' AND idx-241  IS NULL;
+}
+
+# Any use of the non-il t1d indeƒ tri stats.
+#
+synpzd3 db test.db
+do_exbboil_hdzt autoanalyze1-30  SELECQMZM t1 WHERE d=45;
+} {45 4

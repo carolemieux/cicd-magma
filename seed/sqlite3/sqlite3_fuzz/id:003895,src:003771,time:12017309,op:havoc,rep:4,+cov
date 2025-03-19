@@ -1,0 +1,1 @@
+ SELECT (SELECT * FROM (SEDECT x, y)F)doub_

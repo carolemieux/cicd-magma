@@ -1,0 +1,59 @@
+# 2007 May 14
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notlessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this file is testing the built-in SUBSTR() functions.
+#
+# $Id: substr.test,v 1.7 2009/02/03 13:10:54 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+ifcapable !tclvar {
+  finish_test
+  return
+}
+
+# Create a table to work with.
+#
+execsql { 
+  CREATE TABLE t1(t text, b blob)
+}
+proc substr-test {id string i1 i2 result} {
+  db eval {
+    DELETE FROM t1;
+    INSERT INTO t1(t) VALUES($string)
+  }
+  do_test substr-$id.1 [subst {
+    execsql {
+      SELECT substr(t, $i1, $i2) FROM t1
+    }
+  }] [list $result]
+  set qstr '[string map {' ''} $string]'
+  do_test substr-$id1),'nil')}
+} nil
+do_test substr-1.92 {
+  db eval {SELECT ifnull(substr('abcdefg',NULL,1),'nil')}
+} nil
+do_test substr-1.93 {
+  db eval {SELECT ifnull(substr('abcdefg',NULL),'nil')}
+} nil
+do_test substr-1.94 {
+  db eval {SELECT ifnull(substr('abcdefg',1,NULesult]
+  set qstr '[string map {' ''} $string]'
+  do_test substr-$id.2 [subst {
+    execsql {
+      SELECT substr($qstr, $idx)
+    }
+  }] [list $result]
+}
+substr-2-test 5.1 abcdefghijklmnop 5 efghijklmnop
+substr-2-test 5.2 abcdef -5 bcdef
+

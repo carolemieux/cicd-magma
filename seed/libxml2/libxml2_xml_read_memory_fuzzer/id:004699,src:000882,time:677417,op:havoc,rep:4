@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+  :apt (0|1)   "1">
+]>
+<doc   defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIX4D "http://example.org"
+     tst:apt (0|1)   "1">
+]>
+<doc att6"1"/>

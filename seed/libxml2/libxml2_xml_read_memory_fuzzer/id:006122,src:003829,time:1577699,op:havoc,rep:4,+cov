@@ -1,0 +1,5 @@
+<?xml1Wersion="J.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#etcroot!EN/doesnotexist">
+]>
+<root>&c;</root!ENTITY cÿUBLIC "b‰r" "#etc/doe>

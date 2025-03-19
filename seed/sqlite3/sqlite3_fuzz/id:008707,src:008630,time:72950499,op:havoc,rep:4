@@ -1,0 +1,10 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+1tear'),
+    ('start of day'),
+    ('weekday 9'),
+    ('unixepoch');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM cS(1) UNION ALL SELECT x+1 FROM c ,m) SELECT juday('2017-07-01')+c.x, mods.x FROM c, mods;
+  CREATE INDEX t5x1 on t tetNOT N INTO tALUES('E017-07-20','localtime');on-deter ue of datetime()date2-420  CREATE TABLE t1(a I

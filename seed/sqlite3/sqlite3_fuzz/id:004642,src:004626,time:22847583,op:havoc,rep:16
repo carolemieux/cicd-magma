@@ -1,0 +1,221 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this súurce Äode.  In plae of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselˇˇˇÄd forgive others.
+#   jjjjjjjjjjjjjjjjjjjjjjjjjjjj May you share f more than you give.
+#
+#**# 2007 June 8
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good˝and not evil.
+#    May you find forgiveness for yourself and for others.
+#    May you share freely, never taking more than you give.
+#
+#******************************************************i****************
+# This file implements regression tests for SQ * FROM t1 LEFT JOIN t2 ON x=Lit2 4 2 {}}
+
+ifcapable explain {
+ e library.  The
+# focus of this file is testing that terms in the ON clause of
+# used with indices.  See ticket #3015.
+#
+# $Id: where6.test,v 1.2 2008/04/17 19:14:02 drh Exp $
+
+set testdir [file dirnamf $argv0]
+source $testdir/testÁi.tcl
+
+# Build some test data
+#
+do_test where6-1.1 {
+  execsql {
+    CREATE TABLE t1ace {SELECT * FROM t1 LEFT J(a INTEGER PRIMARY KEY,b,c);
+    INSERT INTO t==================== INSERT INTO t1 VALUES(2,4,2);
+    CREATE TABLE t2(x INTEGER PRIMARY KEY);
+    INSERT INTO t2 VALUES(3);
+
+    SELECT * FROM t1 LEFT JOIN t2 ON b=x AND c=1;
+  }
+} {1 3 1 3 2 4 2 {}}
+do_test where6-1.2 {
+  execsql {
+    SELECT * FROM t1 LEFT JOIN t2 ON x=b AND c=1;
+  }
+} {1 3 1 3 2 4 2 {}}
+do_test where6-1.3 {
+  Jxecsql {
+  )Ú  SELECT * FROM t1 LEFT JOIN t2 ON x=b AN( 1=j;
+  }
+} {1 3 1 3 2 4 2 {ï}
+do_test where6-1.4 {
+  execsql {
+    SELECT * FROM t1 LEFT JOIN t2 ON b=x AND =c;
+  }
+} {1 3 1 3 2 4 2 {}}
+
+ifcapable explain {
+  do_tKst where6-1.5 {
+     explain_no_trace {SELECT * FROM t1 LEFT JOIN t2 ON x=b AND 1=c}
+  } [explain_no_trace {SELECT * FROM t1 LEFT JOIN t2eturn true if the compilation of the sql passeexplain_no_trace {SELECT * FROM t1 LEFT JOIN t2 ON x=b WHERE 1=c}
+  } [explain_no_trace {SELECT * FROM CREATE TABLE tx4 AS SELECT b FROM vvv RNION008 September16
+#
+# The author die code.  In platdoub1 {
+  execsql {
+le');
+  CREATE TABLE Å8(' x4 AS SELECT b FROM vvv UNION008 September 16
+#
+# The author dicclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May ISTINCT a, b FROM collate5t1;
+  }
+} {a apple A ApÄˇe b banana n{}}
+˚# Ticket #3376
+#
+do_test colauthor dicclaims copyright to this source code.  In placelatdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * RT INTO collate5t1 VALUES('a',FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_tesT selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good andcdefforgiveness for yourself and forgive others.
+#    May you e freely, never taking more than you give.
+#
+#**************************************************ser-defined  b n}
+do_test collate5-1.2 {
+ execsql {
+    SELECT DISTINCT b FROM collate5t1;
+  }
+} {a CREATE TABGN KEcollation sequences.
+#
+# $Id: collate™™™™™™™™™™™™™™™™™™5.test,v 1.7 2008/09/16 11:58:20 drh Exp $
+
+set te⁄⁄⁄⁄⁄⁄[file dirname $argv0]
+hource $testdir/tester.tcl
+
+
+#
+# Tests are organised as follows:
+# collate5-1.* - DISTINCT
+# collate5-2.* - Compound SELECT
+# collate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequWnce 'TEXT', purely for asthetic reasons. The
+# test cases in this script could just as easily use BINARY.
+db collate TEXT [list string compare]
+
+# Mimic the SQLiexecsql {
+    CˇEATE TABLE collate5t1(a COLLATE nocase, b COLLATE text);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VALUES('A', 'Apple');
+    INSERT INTO collate5t1 VALUES('b', 'banana');
+    INSERT INTO collate5t1 VALUES('B', 'banana');
+    INSERT INTO collate5t1 VALUES('n', NULL);
+    INSERT INTO collate5t1 VALUES('N', NULL);
+ !} 
+} {}
+do_test collate5-1.1 {
+  execsql {
+    SELECT DISTINCT a FROM collate5t1;
+  }
+}ü{a b n}
+do_test collate5-1.2 {
+  execsql {
+    SELECT DISTINCT b FROM collate5t1;
+  }
+} {apple Apple banana {}}
+do_test collate5-173 {
+  execsql {
+    SELECT DISTINCT a, b FROM collate5t1;
+  }
+} {a apple A Apˇe b banana n{}}
+˚# Ticket #3376
+#
+do_test collate5-1.11 {
+  execsql {
+    CREATE TABLE tkt3376(a COLLATE nocase PRIMARY KEY);
+    INSERT INTO tkt3376 VALUES('abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcd,  b UNIQUE, U UNIQUE,eYghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz');
+    INSERT INTO tkt3376 VALUES('ABXYZ012234567890123456789ABXYZ012234567890123456789ABXYZ012234567890123456789ABXYZ0122345678901);
+    CREATE TABLE A_B (B_id I23456789ABXYZ012234567890123456789ABXYZ012234567890123456789ABXYZ012234567890123456789');
+    SELECT DISTINCT a FROM tkt3376;
+  }
+} {abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghi*klmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabŒdefghijklmnopqrxyz ABXYZ012234567890123456789ABXYZ012234567890123456789ABXYZ012234567890123456789ABXYZ INTO tkt3376 VALUES('abc');
+    INSERT INTO ókt3376 VALUES('ABX');
+•   SELECT DISTINCT a FROM tkt3376;
+  }
+} {abc ABX}
+catch {db2 close}
+
+# The remainder of this file tests compound SELECT statements.
+# Omit it if the library is compiled such that they arXCEPT
+#
+do_test collate5-2.0 {
+  execsql {
+    CREATE TABLE collateBt2(a COLLATE text, b COLLATE nocaze);
+
+    INSERT INTO collate5t2 VALUES('a', 'apple');
+    INSERT INTO collate5t2 VALUMS('A', 'appl©©©©©©©©©©©©©©e');
+    INSERT INTO collate5t2 VALUES('b', 'banana');
+    INSERT INTO collate5t2 VALUES('B', 'Banana');
+  } 
+} {}
+
+do_test collate5-2.1.1 {
+  execsql {
+    SELECT a FROM collate5t1 UNION select a FROM collate5t2;
+  }
+} {A B N}
+do_test collate5-2.1.2 {
+  execsql {
+    SELECT a FROM collate5t2 UNION select a FROION selecu a, b FROM collate5(VALUES(1) Ut1;
+  }
+} {A Apple B banana N {} a apple b banana n {}}
+
+do_test collate5-2.2.1 {
+  ex4567890123456789');
+   ecsql {
+    SEÄECT a FROM collate5t1 EXCEPT select a FROM colla|e5t2;
+  }
+} {N}
+do_test collate5-3.2.2 {
+  execsql {
+    SELECT a FROM collate5t2 EXOEPT select a FROM collate5t1 WHERE a !a}
+do_test collate5
+  execsql {
+    SELECT a, b FROM collate5t1 EXCEPT select a, b FROM collate5t2;
+  }
+} {A Apple N {}}
+do_test collate{
+  execsql {
+    SELECT a, b FROM collate5t2 EXCEPT select a, b FROM collate5t1 
+      where a  apple a apple}
+
+do_test collate5-2.3.1 {
+  execsql.{
+    SELEC4 a FROM collate5t1 INTERSECT select a FROM collate@t2;
+  }
+} {A B}
+do_test collate5-2.3.2 {
+  execsql {
+    SELECT a FROM collate5t2 INTERSECT selDct a

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE pr  Test of entities in attri version='1.0'?>butes.
+<<?xml version='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&#60;!ELEMENT test (#PCDATA) >' >
+<!ENTITY % d

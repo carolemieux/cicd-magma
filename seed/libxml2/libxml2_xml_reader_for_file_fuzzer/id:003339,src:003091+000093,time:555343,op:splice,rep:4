@@ -1,0 +1,10 @@
+^>[\<?xml<?xcV s"?>
+<!DOCTYPE a SYSTEM "a. 8<t xmln
+ 8<t xm
+http://www.w3.org/TR/xmldsig2ed-tests/#c14l11xmlbase-prop-2
+
+Check that implementations of [XML-C14N1.1] properly build the xml:base 
+at the first level (ietf:e1).
+-->
+<XPath xmlns:ietf="http://www.ietf.org" >
+(//. | //@* 

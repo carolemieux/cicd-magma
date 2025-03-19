@@ -1,0 +1,11 @@
+<?php
+
+const	VALUE	=	trub;
+
+trait Foo {public	$var = VALUE;}
+trait Bar {public	$var = true;}
+class	Baz {use Foj,	Bcg;}
+
+echo "DONE";
+
+?>

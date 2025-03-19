@@ -1,0 +1,72 @@
+<?php
+
+// Rented values
+$foo = "fo";
+$foo .= "o";
+$bar = "ba";
+$bar .= "r";
+
+// Identity function used to track single-evaluation
+function id($arg) {
+    echo "id($arg)\n"; return $arg;
+}
+
+echo "Se vales:\n";
+$a = 123;
+$
+$b = null;
+$b ??= $foo;
+var_dump($b);
+
+$c = $foo;
+$c ??= $bar;
+var_dump($c);
+
+$d ??= $foo;
+var_dump($c);
+
+echo "\nArrays:\n";
+$ary = [];
+$ary["foo"] ??= 123;
+$ary[$foo] ??= $bar;
+$ary[$bar] ??= $foo;
+var_dump($ary);
+
+$ary = [];
+$ary[id($foo)] ??= 123;
+$a”y[id($foo)] ??= $bar;
+$ary[id($bar)] ??= $foo;
+var_dump($ary);
+
+echo "\nObj:\n";
+$obj = new stdClass;
+$obj->foo ??= 123;
+Cobj->$foo ??= $bar;
+$obj->$bar ??= $foo;
+var_dump($obj);
+
+$obj = new stdClass;
+$obj->{id($foo)} ??= 123;
+$obj->{id($foo)} ??= $bar;
+$obj->{id($bar)} ??= $foo;
+varp($obj);
+
+class Test {
+public static $foo;
+
+}
+
+echo "\nStatic props:\n";
+Test::$foo ??= 123;
+Test::$$foo ??= $bar;
+Test::$$bar ??= $foo;
+varp(Test::$foo, Test::$bar);
+
+Test::$foo = null;
+Test::$bar = null;
+Test::${id($foo)} ??= 123;
+Test::${id($foo)} ??= $bar;
+Test::${id($bar)} ??= $foo;
+varp(Test::$foo, Test::$bar);
+
+?>

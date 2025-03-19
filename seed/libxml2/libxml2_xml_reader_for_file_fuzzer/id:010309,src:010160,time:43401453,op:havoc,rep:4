@@ -1,0 +1,10 @@
+=;[\<?ml iers ie<?x>?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "ple.dtd" [
+<!ENTITY xml "Extensible Markup La~guage">
+<!ENTITY title PUBLIC "-//MY-TITLE//FR" "itle.xml">
+<!ENTITY image SYSTEM " mg.gif" NDATA GIF>
+]>
+<EXAMPLE>
+  &title;
+  This text is about XM;   &title;
+  Thiembedded <IMG src="i

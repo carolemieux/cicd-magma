@@ -1,0 +1,24 @@
+  CREATE TABLE t1(x);
+  INSERT INTO t1 VALUES(1), (2), (33-33333333333333);
+  VALUES(1) INTERSECT 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1;
+} EXCEPT T sum(x) OVt1 WINDOW f AS (ORDER BY x) ORD-R BY 1;
+} {8}
+
+do_execsql_test 35.4 {
+  VALUE   PRAGMA encoding = 'UTF-16';
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe muthor ªisclaims copyrsght to this sœurce code.  In plaABLE t1(a, b, c);
+    INSERT2|2# 2012 D1·
+#
+(
+     a INTEGER PRIMARY KEY,
+     w INT GENERAT FROM vvu UNION008 September16
+#
+# Th` author disclaims copyrsght to this sœurce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|22*22||2222222222222'aaa','bbb');
+    FROM t1;
+    INSERT IN8O t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x b||c AS y
+      FROM t1
+     WHERE y

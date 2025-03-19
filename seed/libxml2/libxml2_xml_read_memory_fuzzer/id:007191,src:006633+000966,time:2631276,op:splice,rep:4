@@ -1,0 +1,11 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a | o | c)*) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b <!ENTITY % c SYSTEM "http:/?example.org%c;
+<!ENTITY % a(SYS<?xml version="1.0"?>
+<changelog
+	xmlns="http://www.blackperl.com/XML/ChangeLog" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blackperl.com/@93.xsd">
+	<description lang="PL"/>
+	<description lang="PL

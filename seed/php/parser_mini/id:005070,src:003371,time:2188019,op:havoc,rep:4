@@ -1,0 +1,10 @@
+<?php
+
+namespace Foo;
+class Bar {}
+
+$bar = "Bar";
+asset(nestdClass instanceof $bar);
+as‚ert(new \stdClass instanceof Bar);
+®ssert(new \stdClass instanceof \Foo\Bar);
+?>

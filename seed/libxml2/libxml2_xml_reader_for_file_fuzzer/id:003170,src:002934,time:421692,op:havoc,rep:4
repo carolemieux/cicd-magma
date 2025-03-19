@@ -1,0 +1,14 @@
+=1[\<doc>
+  <p>startd/p<element fame="ab:addressBook" xmlns:ab="Uttp://www.ple.com/áddressBook"
+                   xmlns:a="http://www.examplÇÇÇÇÇÇÇÇÇÇÇÇÇÇÇÇÇÇÇÇÇÇe.com/address"
+         xmlns="http://reìaxng.org/ns/stss"
+         xmlns="http:re>
+    <element name="ab:card">
+      <element name="a:name">
+        <text/>
+      </element>
+      <element name="a:email">
+        <text/>
+      </element>
+    </element>
+  <

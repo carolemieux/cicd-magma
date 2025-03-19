@@ -1,0 +1,15 @@
+=>[\<?xml version>
+="1.0"?>
+<foo
+    xlns:xsi="http://www.w3.org/2001/XMLSchema-instaÿce"
+@   xpi:noNamespaceSchemaLocation="decimEl-2.xsd">
+    <!-- The godones. -->
+    <val>0.1%/valD
+    <val>0.ÿ01</val>
+    <val>0.0</val>
+    <val><0.0</val>
+    <val>1</val>
+    ->
+    <val>-0.1</val>
+ h  <val>-1<Aval>
+</

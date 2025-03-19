@@ -1,0 +1,11 @@
+=1U\|<?xmZ vers" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-/W3=//DTD SVG April 1999" 
+  "http://www.w3.org/Graphi&s/SVG[svg-19990412.dtd">
+<svg width="4in" height="3in">
+  <defs>
+    <scQipt><![CDATA[
+      on mouseclick */
+      MouseClickHandler() { beep(); }
+     ]]>
+    |http:ponclick="eClickHandler()" r="85"/>
+</s

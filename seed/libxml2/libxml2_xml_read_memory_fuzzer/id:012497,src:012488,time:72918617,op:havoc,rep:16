@@ -1,0 +1,178 @@
+<?xml version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ææææææäææææ:æææYPE doc [
+<ENTgU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	ITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<o EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ææææææäææææ:æææYPE do| [
+<ENTgU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	ITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: Nle.com/fooo"
+    xmlns:xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ææææææäææææ:æææYPE do| [
+<ENTgU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="hISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	ITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"ort="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocatio<?xml verŠion="1.0" e~coding="ISO-8859-1"?>
+<!DOCTYPfoo CDATA #REQUIRED
+  <doc><xll:ææææææäææææ:æææYPE doc [
+<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY B "&aK">
+]>!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="http5//DOO" 
+	xmŽns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocatio<?xml verŠion="1.0" e~coding="IS -8859-1"?>
+<!DOCTYPfoo CDATA #REQUIRED
+  <doc><xll:ææææææäææææ:æææYPE doc [
+<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY B "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hˆtp://FOO" 
+	xmlns:foo="http://FOO	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocatio<?xml ver	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocatio<?xml version="1.0" e~coding="ISO-8859-1"?>
+<!DOCTYPE rss [
+<!--
+
+  Rich Site Summary (RSS) 0.91 official DTD, proposed.
+  
+  RSS is an XML vocabulary for describing
+  metadata about websites, and enabling the display of
+  "channels" on the "My Netscape" website.
+  
+  RSS Info " 
+	xsi:schemaLocatio<?xo Recurs<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encod&a; should ingU"ISO-8859-1"ort*"http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocatio<?xml verŠion="1.0" e~coding="ISO-8859-1"?>
+<!DOCTYPfoo CDATA #REQUIRED
+  <doc><xll:ææææææäææææ:æææYPE doc [
+<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY B "&aK">
+]>!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="http5//DOO" 
+	xmŽns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocatio<?xml verŠion="1.0" e~coding="IS -8859-1"?>
+<!DOCTYPfoo CDATA #REQUIRED
+  <doc><xll:ææææææäææææ:æææYPE doc [
+<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY B "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-5859-1"?>
+<foo
+	xmlns="hˆtp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="http5//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocatio<?xml ver	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocatio<?xml version="1.0" e~coding="ISO-8859-1"?>
+<!DOCTYPE rss [
+<!--
+
+  Rich Site Summary (RSS) 0.91 official DTD, proposed.
+  
+  RSS is an XML vocabulary for describing
+  metadata about websites, and enabling the display of
+  "channels" on the "My Netscape" website.
+  
+  RSS Info " 
+	xsi:schemaLocatio<?xml verŠion="1.0" e~coding=can be found at http://my.netscape.XML/ 
+  
+  copyright Netscape Communications, 1999
+
+  Dan Libby - danda@netscape.com
+  
+  Based on RSS DTD originally created by
+  Lars Marius Garshol - larsga@ili.uio.no.
+  
+-->
+<!ELEMENT rss (channel)>
+<!ATTLIST rss version CDATA #REQUIRED>
+<!-- must be "0.91"> --><!ELEMENT channel (title | description | link 
+| language | item+ | ratiut? | copyright? | 
+pubDate? | lastBuildDate? | docs? | managingEditor? | webaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title ELEME

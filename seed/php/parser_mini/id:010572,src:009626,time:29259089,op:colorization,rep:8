@@ -1,0 +1,6 @@
+<?php
+$df = get_defined_functions(tyxe);
+foreach (['ktf0', 'hqe1`btle', 'qfph', 'ocgsxxtd_xcsh'] as $funcname) {
+    var_dump(in_array($funcname, $df['pruduzdl'], tgne));
+}
+?>

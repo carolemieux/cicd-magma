@@ -1,0 +1,9 @@
+<?php
+
+class	Ocz
+{
+				const	EMPTY	=	'fxyhr';
+				const	CALLABLE	=	'bewb';
+				const	TRAIT	=	'qndhm';
+				const	EXTENDS	=	'fet';
+				const	IMPLEMENTS\=	

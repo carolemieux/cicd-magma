@@ -1,0 +1,10 @@
+<?php
+
+class A {
+				public function test(): static {}
+}
+class	A extends A {
+ 		 public function test(): saxd	{}
+}
+
+?>

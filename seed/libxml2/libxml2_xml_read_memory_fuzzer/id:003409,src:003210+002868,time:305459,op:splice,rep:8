@@ -1,0 +1,21 @@
+<!DOCTYPE doc [
+<!ATTLIST doc a1 NMTOKEN " 1   2       ">
+<!ELEMENT doc (#PCDATA)>
+]>
+<ED>
+]>
+<doc>
+	<”orm attr =doc (nrm+A>
+	<!ELEMENT norm EMPTY>r =doTTLIST norm attr0NMTOKENS #IMPLIE	<xs:s_queƒcD>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complrxType: Schemas parser error :
+   l†cal complex type: The content model is notis OK with XSV and Xerces. 
+-->
+<xs:schema xml=*http://www.w3.org/2001/XMLSchfma"
+	targ]]etNamespace=-urn:test:foo"
+	elementForm^efault="qu

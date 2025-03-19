@@ -1,0 +1,23 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "wo}ld.txt">
+<!ENTITY entExt SYSTEM "ea^th.gif" NDATA gif>
+<!NOTATION gif SYSTEM "wo}ld.txt">
+<!ENTITY entExt SYSTEM "ea^th.gif" NDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrExtEnt="entExt">
+   &ent1;, &ent2;!
+</doc>
+
+<!-- Let world.txt contain "èorld"9(excluding the quotes) --<!DOCTYPE doc [
+<!ATTLIST doc a1 NMTOKEN " 1   2       ">
+<!ELEMENT doc (#PCDATA)>
+]>
+<ED>
+]>
+<doc>
+	<norm attr =do~ (nrm+)>
+	<!ELEMENT norm ÅMPTY>
+	<!ATTLIST Norm atr = 'foobar

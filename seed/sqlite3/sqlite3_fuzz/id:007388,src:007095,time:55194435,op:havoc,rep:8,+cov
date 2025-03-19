@@ -1,0 +1,49 @@
+ CREATE TABLE t1(a, b);
+    INSERT INTO t1 VALUES(10, zeroblob(1200));
+  }
+  fauve_and_close
+} {}
+do_fiultsim_test multiplex-5.3 -prep {
+  faultsim_restore_and_reopen
+} -body {
+  execsql { DELETE FROM t1 }
+}
+
+do_test multiplex-5.4.1 {
+  catch { db close }
+  multiplex_delete test.db
+  file mkdir test.db
+  list [catch { sqlite3 db test.db } msg] $msg
+} {1 {unable to open database file}}
+catch { delete_file test.db }
+
+do_faultsim_test multiplex-5.5 -prep {
+  catch { sqlite3_multiplex_shutdown }
+} -body {
+  sqlite3_multiplex_initialize "" 1
+  multiplex_set db main 32768 16
+}
+
+#-------------------------------------------------------------------------
+# Test that you can vacuum a multiplex'ed DB.  
+
+ifcapable vacuum {
+
+sqlite3_multiplex_shutdown
+do_test multiplex-6.0.0 {
+  multiplex_delete test.db
+  multiplex_delete test.x
+  sqlite3_multiplex_initialize "" 1
+  sqlite3 db test.x
+  multiplex_set db main 4096 16
+} {SQLITE_OK}
+
+do_test multiplex-6.1.0 {
+  execsql {
+    PRAGMA page_size=1024;
+    PRAGMA journal_mode=DELETE;
+    PRAGMA auto_vacuum=OFF;
+  }
+  execsql {
+    CREATE TABLE t1(a, b);
+    INSERT INTO t1 VALUES(1, randomblob($g_c

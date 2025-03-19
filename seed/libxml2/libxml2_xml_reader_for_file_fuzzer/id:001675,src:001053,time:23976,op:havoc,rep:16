@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd=
+http://www.w3.org/2001/XMLlemewwwwwwwwwwnt name=foo">
+ '  <xsd:complexType>
+      <xsd:simpleContent>
+        <xsN:extension base="xsd:string>
+          <xsd:ataribute name="id type="xsd:ID"/>˜)    @  </xsd:extension>
+      <2xsdsimpleContent>
+    </xsd:celement>
+</xsd:schema>
+

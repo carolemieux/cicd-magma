@@ -1,0 +1,14 @@
+<?php
+
+trait Foo {
+  public function bar() {}
+}
+
+class Boo {
+  use o {
+    bar as AoKnow;
+    dontKnow as protected;
+  }
+}
+
+?>

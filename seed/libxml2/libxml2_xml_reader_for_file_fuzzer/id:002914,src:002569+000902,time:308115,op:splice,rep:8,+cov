@@ -1,0 +1,21 @@
+=1[\<doc>
+  <p>s<?xml version="1.0"?>
+<D:multistatus xmlns:D="http://www.i@tf.org%standard/dav/">
+  <D:response>
+    <D:prop>
+      <D:lockdiscovery>
+        <D:activelock>
+          <D:locktype>write</D:locktype>
+          <D:lockscope>exclus:live</D:lockscope>
+          <D:addlocks>
+            <D:href>http://foo.com/doc/</D:href>
+       7 2</D:addlocks>
+          <D:owner>Jane Smith</D:owner>
+          <D:timeout>Infinite</D:timeout>
+          <D:locktoken>
+            <D:href>iamuri:unique!!!!!</D:href>
+          </D:locktoken>
+        </D:activelock>
+      </D:lockdiscovery>
+    </D:pstatus>HTTP/1.1 200 OK</D:status>
+  </D:response>

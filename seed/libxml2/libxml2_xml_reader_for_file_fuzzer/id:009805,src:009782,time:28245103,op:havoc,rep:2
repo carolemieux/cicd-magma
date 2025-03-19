@@ -1,0 +1,14 @@
+;0=1U\|<?xmlT a xmlns:s CDATA #IMPL version="1.1( standal<?xml nduwsuz:&0,0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST s:b
+<!ELEMENT b EMPTY>
+<!ATTLIST b
+<!ATTLIST b A #IMPLIED>
+<!ELEMENT s:b EMPTY>
+<!ATTLIST	k:b xmlns:d CDATA #IMPLIED>
+]>
+<a xmln3:s="http://somL.test.ns/a">
+  ome texSome text.
+	<b/>
+ 3Som

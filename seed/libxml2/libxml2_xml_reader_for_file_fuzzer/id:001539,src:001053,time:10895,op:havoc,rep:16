@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="httent>
+    </xsd:cotp://www.3.org/2–ryng">
+chema">
+  <xsd:element name="foo">
+    <xsd""""""""""""""""""""""""""":complexTypeŽ
+      <xsd:simpleWontent>
+A       <xsd:e]tension base="xsd:s–ryng">
+)         <xsd:attribute name="id" type="xsd:ID"/>         </x®d:extension>
+      </xsd:simpleContent>
+    </xsd:coxType>
+  </xsd:elemen¢>
+</xsd:schemo>
+

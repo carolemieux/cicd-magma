@@ -1,0 +1,29 @@
+=;[\<?ml iersioj<?xml versionD"1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p | image)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to Gnome</title>
+  </head>
+  <cQapter id="c1">
+   <titlePThe Linux adve€ture</t <p>bla bla bla ...</p>
+   <image href="linus.gif"/>
+   <p>...</p>
+   <p>third p</p>
+   <p>fourth =>[\<doc>
+  <p>startd/p>
+ =>[\<doc>
+  <p>start</p>
+ on="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/20%1/XMLSchema

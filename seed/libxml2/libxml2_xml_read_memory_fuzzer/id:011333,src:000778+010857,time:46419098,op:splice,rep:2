@@ -1,0 +1,13 @@
+<?xml version="1.0" enc<?xml Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#etc/do~~~~~~~~~~~~~~~~~~~o">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "ekrthello">
+<!ENTITY ent2 SYSTEM "world.txt"if>
+<!NOTATION gif SmSTEM "v‡ewgif.exe">
+]>
+<doc attrExtEnt="bogAlt">
+   &ent1;, &ent2;!
+</doc>
+
+<N gif SmSTEM "v‡ewg

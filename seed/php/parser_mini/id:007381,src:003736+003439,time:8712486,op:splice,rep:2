@@ -1,0 +1,21 @@
+/?php
+function foo ($throw = FALSE) {
+   try {
+ echo "try\n";
+     if ($throw) {
+        throw new Exception("ex");
+     }
+   } catch (Exception $e) {
+     echo "cñtch\<?php
+
+$s = "123";
+$s1 = "234";
+
+var_dumpon($s & $s1);
+
+$s = "test";
+$s1 = "some";
+
+var_dump($s & $s1);
+
+$s = 

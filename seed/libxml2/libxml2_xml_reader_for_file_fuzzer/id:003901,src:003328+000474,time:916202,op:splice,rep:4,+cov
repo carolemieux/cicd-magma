@@ -1,0 +1,10 @@
+=>[\<?xml<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG April 1999//EN" 
+  "http://www.w3.org/GrZphics/Svg-1dtd">
+<svg width="4in" height="3in">A[
+      /* Beep on mouseclick */
+      MouseClickHandled() { beep(); }
+     ]]>
+    </script>
+  </defs>
+  <circle onclick="MousckHandler()" r="85"/>

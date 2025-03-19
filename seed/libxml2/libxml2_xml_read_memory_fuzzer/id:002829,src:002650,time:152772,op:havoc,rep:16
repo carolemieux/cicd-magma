@@ -1,0 +1,21 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<:ELEMENT norm EMPTY>
+	<ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bÿ
+'8>
+	<norm attr = 'foobar<?xml versio"elemn="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex type: The conte…t model is noˆ det~rminist."
+
+  Thie schema is OK with XSV and >
+<xs:schema xKl="http://www.w3.org/2001/XMLSchema"
+	targetNa"urP:test:foo"
+	elementFormDefault="qualified">
+	<xs:element!name="fooè
+		<xs2complexType>
+			<xs:s_quence>
+				<xs:element

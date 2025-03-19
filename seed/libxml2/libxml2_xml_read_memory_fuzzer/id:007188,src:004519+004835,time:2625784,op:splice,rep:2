@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Test Page</title>
+</head>
+<body>
+<div id="portal">
+<script type="text/javascript">
+	documen.write("Příliš žluťoučký kůň úpěl ďábelksé ódy");
+</script>
+	<p>
+	Příli<!DOCTYPE>
+<root><?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE article [
+<!-- ELEMENT declarations work around MSXML bug. -->
+<!ELEMENT section ANY>
+<!ATTLIST section id ID #IMPLIED>
+<!ELEMENT appendix ANY>
+<!ATTLIST appendix id ID #IMPLIED>
+<!ELEMENT bibliomixed ANY>
+<!ATTLIST bibliomixed id ID #IMPLIED>
+]>
+<article status="Committee Specification" xmlns:p="http://relaxng.org/ns/proofsystem">
+
+<articleinfo>
+<releaseinfo>$Id: spec.xml,v 1.159 2001/12/02 12:12:12 jjc Exp $</releaseinfo>
+<title>RELAX NG Specification</title>
+<authorgroup>
+<editor>
+  <firstname>James</firstname><surname>Clark</surname>
+  <affiliation>
+    <address><email>jjc@jclark.com</email></address>
+  </affiliation>
+</editor>
+<editor>
+  <surname>MURATA</surname><firstname>Makoto</firstname>
+  <affiliation>
+    <address><email>EB2M-MRT@asahi-net.or.jp</email></address>
+  </affiliation>
+</editor>
+</authorgroup>
+<pubdate>3 December 2001</pubdate>
+<releaseinfo role="meta">
+$Id: spec.xml,v 1.159 2001/12/02 12:12:12 jjc Exp $
+</releaseinfo>
+
+<copyright><year>2001</year><holder>OASIS</holder></copyright>
+
+<legalnotice>
+
+<para>Copyright &#169; The Organization for the Advancement of
+Structured Information Standards [OASIS] 2001. All Rights
+Reserved.</para>
+
+<para>This document and translations of it may be copied and furnished
+to others, and derivative works that comment on or otherwise explain
+it or assist in its implementation may be prepared, copied, published
+and distributed, in whole or in part, without restriction of any kind,
+provided that the above copyright notice and this paragraph are
+included on all such copies and derivative works. However, this
+document itself may not be modified in any way, such as by removing
+the copyright notice or references to OASIS, except as needed for the
+purpose of developing OASIS specifications, in which case the
+procedures for copyrights defined in the OASIS Intellectual Property
+Rights document must be followed, or as required to translate it into
+languages other than English.</para>
+
+<para>The limited permissions granted above are perpetual and will not
+be revoked by OASIS or its successors or assigns.</para>
+
+<para>This document and the information contained herein is provided
+on an <quote>AS IS</quote> basis and OASIS DISCLAIMS ALL WARRANTIES,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE
+USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR
+PURPOSE.</para>
+
+</legalnotice>
+
+<legalnotice role="status"><title>Status of this Document</title>
+
+<para>This Committee Specification was approved for publication by the
+OASIS RELAX NG technical committee. It is a stable document which
+represents the consensus of the committee. Comments on this document
+may be sent to <ulink
+url="mailto:relax-ng-comment@lists.oasis-open.org"
+>relax-ng-comment@lists.oasis-open.org</ulink>.</para>
+
+<para>A list of known errors in this document is available at <ulink
+url="http://www.oasis-open.org/committees/relax-ng/spec-20011203-errata.html"
+>http://www.oasis-open.org/committees/relax-ng/spec-20011203-errata.html</ulink
+>.</para>
+
+</legalnotice>
+
+<abstract>
+<para>This is the definitive specification of RELAX NG, a simple
+schema language for XML, based on <xref linkend="relax"/> and <xref
+linkend="trex"/>. A RELAX NG schema specifies a pattern for the
+structure and content of an XML document. A RELAX NG schema is itself
+an XML document.</para>
+</abstract>
+
+<revhistory>
+<revision>
+  <revnumber>Committee Specification</revnumber>
+  <date>3 December 2001</date>
+</revision>
+<revision>
+  <revnumber>Committee Specification</revnumber>
+  <date>11 August 2001</date>
+</revision>
+</revhistory>
+</articleinfo>
+
+
+<section>
+<title>Introduction</title>
+
+<para>This document specifies</para>
+
+<itemizedlist>
+
+<listitem><para>when an XML document is a correct RELAX NG
+schema</para></listitem>
+
+<listitem><para>when an XML document is valid with respect to a
+correct RELAX NG schema</para></listitem>
+
+</itemizedlist>
+
+<para>An XML document that is being validated with respect to a RELAX NG
+schema is referred to as an instance.</para><!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     xmlns CDATA #FIXED "http://www.exa<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:foo="http:w3.org/2001/XMLSchema" xmlns:import="http://IMPORT"
+	targetNamespace="http://FOO" elementFormDefault="qualified">
+	<xsd:import namespace="http://IMPORT" schemaLocation="anyAttr.importA.1_0.xsd"/>	
+	<xsd:import schemaLocation="anyAttr.importB.1_0.xsd"/>
+	<xsd:element name="foo">
+		<xsd:complexType>
+		    <xsd:sequence>				
+				<!-- Attribute Wildcard Union -->
+				<xsd:element name="derive.1_1" type="foo:type.1_1"/>
+				<xsd:element name="derive.1_4" type="foo:type.1_4"/>
+				<xsd:element name="derive.2_1" type="foo:type.2_1"/>
+				<xsd:element name="derive.3_1" type="foo:type.3_1"/>
+				<xsd:element name="derive.4_1" type="foo:type.4_1"/>
+				<xsd:element name="derive.5_1_a" type="foo:type.5_1_a"/>
+				<xsd:element name="derive.5_1_b" type="foo:type.5_1_b"/>
+				<xsd:element name="derive.5_		<xsd:element nae.5_2_b"/>
+				<xsd:element name="derive.5_4_a" type="foo:tupe.5_4_a"/>
+				<xsd:elementype.5_4_b"/>
+				<xsd:element name="derive.6_1"   type="foo:type.6_1"/>
+				<xsd:element name="derive.6_2"   type="foo:type.6_2"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- Attribute Wildcard Union -->
+
+	<!-- 1. If O1 and O2 are the same value, then that value must be the value. -->
+	<xsd:complexType name="type.1_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.1_1">
+			<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.1_1">	
+		<xsd:attributeGroup ref="foo:nttrGr.1_1"/>			
+		<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.1_1">
+		<xsd:anyAttribute namespace="##any" processContents="lax"/>
+	</xsd:attributeGroup>
+
+	<xsd:complexType name="type.1_4">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.1_4">
+				<xsd:anyAttribute namespace="http://BAR ##local http://FOO" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+    <xsd:complexType name="type.base.1_4">	
+		<xsd:attributeGroup ref="foo:attrGr.1_4"/>			
+		<xsd:anyAttribute namespace="##local http://BAR   ##targetNamespace " processContents="la<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     xmlns CDATA 5FIXED "http://www.exa<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:foo="http:w3.org/2001/XMLSchema" xmlns:import="http://IMPORT"
+	targetNamespace="http://FOO" elementFormDefault="qualified">
+	<xsd:import namespace="http://IMPORT" schemaLocation="anyrive.5_4_a" type=xsd"/>	
+	<xsd:import schemaLocation="anyAttr.importB.1_0.xsd"/>
+	<xsd:element name="foo">
+		<xsd:complexType>
+		    <xsd:sequence>				
+				<!-- Attribute Wildcard Union -->
+				<xsd:element name="derive.1_1" type="foo:type.1_1"/>
+				<xsd:element name="derive.1_4" type="foo:type.1_4"/>
+				<xsd:element name="derive.2_1" type="foo:type.2_1"/>
+				<xsd<xsd:anyAttribute namespac type="foo.3_1"/>
+				<xsd:element name="derive.4_1" type="foo:type.4_1"/>
+				<xsd:element name="derive.5_1_a" type="foo:type.5_1_a"/>
+				<xsd:element name="derive.5_1_b" type="foo:type.5_1_b"/>
+				<xsd:element name="derive.5K		<xsd:element name9"derive.5_2_b" type="foo:type.5_2_b"/>
+				<xsd:element name="derive.5_4_a" type="foo:type.5_4_a"/>
+				<xsd:elementype.5_4_b"/>
+				<xsd:element name="derive.6_1"   type="foo:type.6_1"/>
+				<xsd:element name="de�ive.6_2"   type="foo:type.6_2"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- Attribute Wildcard Union -->
+
+	<!-- 1. If O1 and O2 are the same value, then that value must be the value. -->
+	<xsd:complexType name="type.1_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.1_1">
+				<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.1_1">	
+		<xsd:attributeGroup ref="foo:nttrGr.1_1"/>			
+		<xsd:anyA

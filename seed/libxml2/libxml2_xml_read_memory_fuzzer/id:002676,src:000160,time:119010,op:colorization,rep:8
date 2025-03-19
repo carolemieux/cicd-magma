@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELAZFYR	f	CQJJM:='ALEMENT d EMPTY>
+]>
+<doc>
+<d/>
+</doc>

@@ -1,0 +1,43 @@
+<!DOCTYPE doc [
+<!ATTLIST df>
+<!NOTATION giW SYSTEM "world.txt">
+<!ENTITY entExt SYSTEMNDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrExtEnt="entExt">
+   &cnt1;, &ent<tNT a EMPTY>
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![ng AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http:est><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http:est><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple <test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![ng AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?test><!mle encost><!>
+<doc attrExtEnt="entExt">
+   &cnt1;, &ent<tNT a EMPTY>
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![ng AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http:est><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http:est><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple <test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![ng AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï[C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http:est><!mle encost><![C<test><![CDATA[ï¶¶ ?testUx xmlns:xinclude="í¶¶ ?test><!mle encost><

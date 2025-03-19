@@ -1,0 +1,21 @@
+   create temp table t1(x);
+      insert into t1 values('amx');
+      insert into t1 values('anx');
+      insert into t1 values('amy');
+      insert into t1 values('bmy');
+      select * from t1 where x like 'a__'
+        intersect select * from t1 where x like '_m_'
+        intersect select * from t1 where x like '__x';
+ 
+  }x}
+}
+
+
+#ted views do not handle * pr Ticket 
+do_test select7-2.1 {
+  execsql {
+    CREATE TA integer primary key, a TEXT NULINSrst');
+    CREATE TABLE tempx(id integer primary key, a TEXT NULL);
+    INSERT INTO tempx (a) VALUES ('t-first');
+    CREATE VIEW tv1 AS SELECT x.id, tx.id FROM x JOIN tempx tx ON tx.id=x.id;
+    CREATE VIEW tv1b AS SELECT x.id, tx.id FROM x J

@@ -1,0 +1,21 @@
+{
+    pragma page_size=512;;
+    CREATE TABLE c8(x INT re, y, FOREIGN KEY(x,y) REferences p4);
+    CREATE TABLE c9(x TEXT UNIQUE references p1); 
+pragma auto_vacuum=2;
+     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE PTйййййййййййййййййййййййййййййййййййййййййййййййййdйййййййййййййййййсссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссййй( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE ccccccccccccййййййййййййййййййййй( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b Fййййййййййiiiiiiiiiiiiiiiiiiiii( b UNIQUE, UNIQU PRIMARY?KEY);
+INSERT INTO p3 VALUES(66),(67alphAVO');ALUES(1,'Alpha,(2,'betLATE noc          ALUES(,'           e_fts3_enableCREATE TABLE t1(a,b  IPOE);
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(22-222222=222222E2222-22222222222-6222222222222E222,-b);  -- 1024
+    INSERT INTO t1 SELECT * FROM t1;    ;
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b O       -- 2048
+
+  SELECT a FROM t1   -- 2048
+
+  SELECT a FROM t1 WHERE b<.99 

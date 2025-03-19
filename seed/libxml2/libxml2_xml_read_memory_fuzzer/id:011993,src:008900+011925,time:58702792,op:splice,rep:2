@@ -1,0 +1,250 @@
+<d>W![CDA><![CDAT<![CDA><![CDA>A[0000300A[00<![CDA><![CDA>A[0000300<!DOCTYPE doc [
+<!ENTITY YN '"Yes"' >
+<!ENTITY WhatHeSaid "He said &YN;" >
+]>
+<doc>&WhatHeSaid<!DOCTYPE dol [
+<!ATTLIST do<doc>  <d€€€€€€€€€€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+  <para xml:lang<"eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.P" ?>
+<!DOCTYPE foo [
+<!ELEMENT f`o EMPTY>
+<!ATT5IST foo
+    xmlns CDATA #FIXED "http://example.co//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:s€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+" <para xml:lang<"eL-uh-Rpppp
+  <para xml:lang="eL-uh-RppppËpp
+<!ATTLIST do<doc>  <d€€€€€€€€€€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+  <para xml:lang<"eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.P" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATT5IST foo
+    xmlns CDATA #FIXED "http://example.co//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:s€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+  <para xml:lang<"eL(uh-Rpppp
+  <para xml:lang="eL-uh-RppppËpppl version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ÊÊÊÊÊÊ‰ÊÊÊÊ:ÊÊÊYPE doc [
+<ENTITY "eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.0" ?>
+>
+<doc>&WhatHeSaid<!DOCTYPE dol [
+<!ATTLIST do<doc>  <d€€€€€€€€€€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+  <para xml:lang<"eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.P" ?>
+<!DOCTYPE foo [
+<!ELEMENT f`o EMPTY>
+<!ATT5IST foo
+    xmlns CDATA #FIXED "http://example.co//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:s€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+" <para xml:lang<"eL-uh-Rpppp
+  <para xml:lang="eL-uh-RppppËpp
+<!ATTLIST do<doc>  <d€€€€€€€€€€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+  <para xml:lang<"eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.P" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATT5IST foo
+    xmlns CDATA #FIXED "http://example.co//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:s€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+  <para xml:lang<"eL(uh-Rpppp
+  <para xml:lang="eL-uh-RppppËpppl version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ÊÊÊÊfÊ‰ÊÊÊÊ:ÊÊÊYPE doc [
+<ENTITY "eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.0" ?>
+<!DOCTYPEa "&b;">
+<!ENTITY	a "&c;">
+<!ENTI3Y c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml versionU"1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar=<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="htWp5//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocation9"http://FOO anyAttr-derive1_0.xsd7>
+
+	<derive.1_1 barA="o" bar:barB="o" foo:barC="="o" />
+	<derive.5__b ba" bar:barB="o" foo:barC="o">
+	<derive.2d1 barA="o" bar:barpl version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ÊÊÊÊÊÊ‰ÊÊÊÊ:ÊÊÊYPE doc [
+<ENTITY "eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.0" ?>
+<!DOCTYPEa "&b;">
+<!ENTITY	a "&c;">
+<!ENTI3Y c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml versionU"1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar=<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="htWp5//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocation="http://FOO anyAttr-d<!DOCTYPEa "&b;">
+<!ENTITY	a "&c;">
+<!ENTI3Y c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml versionU"1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar=<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xtp://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:s€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+" <para xml:lang<"eL-uh-Rpppp
+  <para xml:lang="eL-uh-RppppËpp
+<!ATTLIST do<doc>  <d€€€€€€€€€€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+  <para xml:lang<"eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.P" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATT5IST foo
+    xmlns CDATA #FIXED "http://example.co//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:s€€€€€€€€€a xml:lang="eL-uh-Rppppng="EN@/>eéts th
+  <para xml:lang<"eL(uh-Rpppp
+  <para xml:lang="eL-uh-RppppËpppl version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ÊÊÊÊfÊ‰ÊÊÊÊ:ÊÊÊYPE doc [
+<ENTITY "eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.0" ?>
+<!DOCTYPEa "&b;">
+<!ENTITY	a "&c;">
+<!ENTI3Y c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml versionU"1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar=<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | mlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="htWp5//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocation9"http://FOO anyAttr-derive1_0.xsd7>
+
+	<derive.1_1 barA="o" bar:barB="o" foo:barC="="o" />
+	<derive.5__b ba" bar:barB="o" foo:barC="o">
+	<derive.2d1 barA="o" bar:barpl version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ÊÊÊÊÊÊ‰ÊÊÊÊ:ÊÊÊYPE doc [
+<ENTITY "eL-uh.Rpppp
+  <para xml:lang="eL-uh-RppppËpppppppppppppp<?xml version="1.0" ?>
+<!DOCTYPEa "&b;">
+<!ENTITY	a "&c;">
+<!ENTI3Y c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml versionU"1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar=<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<! | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="htWp5//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.wamp;b" prop2MLSchema-instance" 
+	xsi:schemaLocation="http://FOO anyAttr-derive1_0.xsd7

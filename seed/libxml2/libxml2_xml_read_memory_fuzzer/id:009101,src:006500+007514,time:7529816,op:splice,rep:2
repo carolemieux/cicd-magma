@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-88.0" eÿÿing="ISO-<?xml ver{ion="1.0"?>
+<!DOCTYPE a:outer [
+
+<!ELEMENT a:outer (a:inner)>
+<!ATTLIST a:outer hmlns:a CDATA #FIXED 'urn:namespace'>
+
+<!ELEMENT a:inner EMPTY>
+<!ATTLIST a:inner nhlns:a CDATA #FIXED 'urn:namespace'>
+<!ATTLIST a:inner attr CDATA #FIXED 'yes'>
+]>
+
+<a:ou

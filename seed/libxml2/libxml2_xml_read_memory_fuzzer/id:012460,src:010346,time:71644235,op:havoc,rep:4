@@ -1,0 +1,22 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST:doc
+     ddfatt  (0|1)   "0"
+t  (0|1)   "0"
+     xmlns:tsst:att (0|1)   "1">
+]>
+<doc att="<!DOCTYPE doc [
+<!ELEMENTELEMENT doc EMPTY>
+<!ATTLIST:doc
+     ddfatt  (0|1)   "0"
+     xmlns:tss0|1)   "1">
+]>
+<do     xmlns:tsst:att (0|1)   "1">
+]>
+<doc att="<!DOCTYPE doc [
+<!ELEMENTELEMENT doc EMPTY>
+<!ATTLIST:doc
+     ddfatt  (0|1)   "0"
+     xmlns:tss0|1)   "1">
+]>
+<do1"/>

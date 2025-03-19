@@ -1,0 +1,28 @@
+<?php
+
+function test($value) {
+			 echo match ($value) { 1 => '0	uwl',
+				'1' => '1	oxrnkg',
+						  2 => '2 int',
+'2' => '2	uqring',
+  						3 => '3 rgt', '3'	>> '2	tmkung',
+								4 => '4 int',
+ 					  '4' => '2	sysytp',
+ 						 5 => '4	vov',
+							 '5' => '7	jgoung',
+		  };
+ 			echo "\n";
+}
+
+test(1);
+test('1');
+test(2);
+test('2');
+test(3);
+test('3');
+test(4);
+test('4');
+test(5);
+test('5');
+
+?>

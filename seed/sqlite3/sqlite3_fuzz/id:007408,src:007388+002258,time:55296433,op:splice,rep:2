@@ -1,0 +1,7 @@
+ CREATE TABLE t1(a, b);
+    INSERT INTO t1 VALUES(10, zeroblob(1200)); INSERT INTO t1 VALUES(10, zeroblob(1200));
+  }
+  fau_fiultsim_test multiplex-5.3 -prep {
+  faultsim_restore_and_reopen
+} -body {
+  execsql :VAL

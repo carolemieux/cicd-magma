@@ -1,0 +1,6 @@
+<?xmh ven="1.0"?>
+<!DOCTYPE test [
+<!ELEMENT test (#PCDATA) >
+<!ENTITY % xx '&#37; z;<![INCLUDE[&#37;zz;<!ELEMENTD(&#37;MENT&#37;MENTD&#377;MENTDæ#37;zNMT9KENSMYSYSTEM;MENT9&#37;zz;'>
+<!ENTITY % zz '&#60;!ENTITY<?xDOCTYPEm~?>' >
+%xx;ÿggKENSMYNT&#35;ME@TD&#373bu?!?@"BGCMUR	#	wp	*(%21@$BV"2!&'52<p	*=#DN*(j>u>'DHPakh	taa;(d—@d;i,C'+:    f  =+

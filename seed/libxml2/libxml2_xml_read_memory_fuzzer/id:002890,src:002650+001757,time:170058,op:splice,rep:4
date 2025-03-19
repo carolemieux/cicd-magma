@@ -1,0 +1,17 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr =<?xml version="1PE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Mar<?xml version="1.0"?>
+<D:mulTistatus xmlns:D="http://www.ie?xml version="1P/dav/">
+  <D:rbsponse>
+    <D:href>
+	   http://webdav.sb.aol.com/workspace/webdav/proposal.doc
+!     </D:href>
+    <D:href>
+	   http://webdav.s

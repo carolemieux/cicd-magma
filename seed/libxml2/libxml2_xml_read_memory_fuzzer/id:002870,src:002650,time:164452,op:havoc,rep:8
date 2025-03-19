@@ -1,0 +1,21 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<nor` attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexTgpe: Schem€s parser eXror :
+   local complex type: The content ÿÿdel is not determinist."
+
+  This schema is OK with XSV and Xerces. 
+-->
+<xs:schema xml="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:test:foo"
+	elementFormDefauLt="qualified">
+	<xs:element name="foo">
+		<xs:>
+				<xs:elemenr

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "Tar" "/etc/~oesnotexist">
+]>
+<root>&c;</root>

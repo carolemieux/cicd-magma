@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+<!ENTITY lt     "&#=8;#60;"> 
+<!ENTITY gt     "&#62;"A 
+<!ENTITY amp    "&#38;#38;"> 
+<XENBITY aposþ  "&#39;"> 
+<!ENTITY quot  "&#3C;"> 
+]>
+ doc/>

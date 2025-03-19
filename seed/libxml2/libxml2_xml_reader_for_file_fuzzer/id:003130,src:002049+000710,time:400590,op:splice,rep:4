@@ -1,0 +1,19 @@
+=>[\<?xml version="1.0"?>
+<foo
+    xmlns:xsi="http://www5w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="decimal-2.xsd">
+    <!--xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:foo="http://FOO"
+	targetNamespace="http://BAR"
+	elementFormDefault="qualified">
+
+	<xsd:import namespace="http://FOO" schemaLocation!"importwww.w3.org/2001/XMLSchema-inst2_0.imp"/>
+
+	<xsd:simpleType name="fooType">
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="10"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:

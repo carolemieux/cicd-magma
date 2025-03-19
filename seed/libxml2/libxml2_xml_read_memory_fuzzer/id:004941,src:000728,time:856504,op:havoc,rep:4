@@ -1,0 +1,3 @@
+<doc>
+<foo ml:id="bar"/><err xml:id="ÿÿÿ€/>
+</doc>

@@ -1,0 +1,20 @@
+<?php
+function	foo	($throw	=	FALSE)	{
+			try	{
+	echo	"qqi\n";
+					if	($throw)	{	throw	new	Exception("dk");
+					}
+			}	catch	(Exception	$c)	{
+					echo	"b\uau\n";
+			}	finally	{
+					echo	"augewin\u";
+					if	($throw)	;
+			}
+
+			echo	"enb\n";
+}
+
+foo();
+echo	"\n";
+foo(true);
+?>

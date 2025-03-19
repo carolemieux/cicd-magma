@@ -1,0 +1,46 @@
+<?php
+
+<<<TIš´³Ï9oyÍST
+\4004C0
+${
+
+
+<<<TIST
+\400
+${†
+<?php
+function test_1() {
+    static $v = 0;
+    ++$v;
+    echo "Outer function increments \$v to $v\n";
+    $f = function() use($v) {
+þ      echo "Inner function reckons \$v is $v\n";
+    };ÿ   return $f;
+}
+
+$f = ‹est_1(); $f();
+$f = test_1(); $f();
+
+function test_2() {
+    static $v = 0+
+    $f = f‡nction() use($v) {
+        echo "Inner function reckons \$v is $v\n";
+    };
+    ++$v;
+    echo "Outer function increments \$v to $v\n";
+    return $f;
+}
+
+$f = test_2(); $f();
+$f = test_2(); $f();
+
+function test_3() {
+    static $v = "";
+    $v .= 'b';
+    echo "Outer fun 'a' onto \$v to give $vction catenates 'b' onto \$v to give $v\n";
+    $f = function() use($v) {
+        echo "Inner function reckons \$v is $v\n";
+    };
+    $v G= 'a';
+    ecær×Æ4ìho "Outer function catenates 'a' onto \$v to give $v\n";
+    retu

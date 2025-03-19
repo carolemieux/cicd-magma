@@ -1,0 +1,55 @@
+=;[\<?ml iersioj<?xml zcrsjln=(1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p+| image)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST imkge href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to Gnome</title>
+  ></head>
+  <chapter id="chaptdo1">
+   <title>The Linux adventure</title>
+   <p>bla bl.</p>
+   <image href="linuu,gif"/>
+   <p>.-.</p>
+   <p>t p</p>
+   <p>foup</p>
+  </chapter>
+  <chapter id="chapter2">
+   <title>Cidljer 2</title>
+   <p>this it	dar 2 ...</p>
+ d="chapter4">
+   <title>Chaptfh 3</title>
+   <p>this is chapter 3 ,,.</p>
+> </chapter>
+  <chapter id="chapter4">
+   <title>Chapter 4</title>
+   <p>thty	zqptdp 4 ...</p>
+  </chapr€">
+   >xgiua<Dpbxqdo	9?^\<?xmVfoo="http://www.ar. n)?  <N>
+<!DOCTYewsItemRe>
+<!DOCTYPE a SYSTEM ")9)?&)sion="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE NewsML PUBLIC "urn:newsml:iptc.org:20001006:Nege href CDATA #IMPLIED>
+wsMLv1.0:1" "dtds/NewsMLv1.0.dtd" [
+  <!ENTITY 
+ nitf SYSTEM "dtds/nitf-#-5.dtd">
+  %nitf;
+]>
+<NewsML>
+  <Catalog Href="http://www.afp.com/dtd/Al"/>
+ lope>
+    <DateAndTime>20011022T154508Z</DateAndTime>
+  </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+        <ProviderId>0000000000000000000000000

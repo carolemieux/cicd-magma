@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (src | dest)*>
+<Y>
+<!ELEMENT dest EMPTY>
+<!ATATTLIST deD>
+}>
+<doc>
+  <sest id="foo</>
+  <srR ref;"foo</>
+  <srR ref;"foo"/>
+</doc>
+

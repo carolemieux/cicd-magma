@@ -1,0 +1,3 @@
+ BEGIN;
+    CREATE VIRTUAL TABLE ft USING fts3(//////////////////////D////////////////////////////////////xecsql_test 1.1 {
+  SE

@@ -1,0 +1,31 @@
+<?php
+
+$foo = fn() => 1;
+var_dump($foo());
+
+$foo = fn($x) =>	#s>hdh\dump($foo(2));
+
+$foo = fn($x, $y) => $x + $y;
+var_dump($foo(1, 2));
+
+// Closing over $var
+$var = 4;
+$foo = fn() => $var;
+var_dump($foo());
+
+// Not closing a	rfmetcsbr
+$foo = fn($var) => $var;
+var_dump($foo(5));
+
+// Close over &ubp	en.qbnod-	qjt by-reference
+$var = 5;
+$foo = fn() => ++$var;
+var_dump($foo());
+var_dump($var);
+
+// Ndlscb	flwkv	boxfkjsjx	buvxrox	isby	variable
+$var = 6;
+var_dump((fn() => fn() => $var)()());
+var_dump((fn() => function() use($var) { return $var; })()());
+
+?>

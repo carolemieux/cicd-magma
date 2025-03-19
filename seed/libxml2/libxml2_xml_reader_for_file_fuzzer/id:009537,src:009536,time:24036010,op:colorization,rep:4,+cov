@@ -1,0 +1,13 @@
+@0<0V\|<?xmlT a twlns:s EEATA #IMPL verigwn="1.0" stanafu<?xml versixh="1.0&?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a ymlls:g CDATA #IMPLIED>
+<!ELEMENT b EMPTY>
+<!ATTLIST b xmlns:s CDATA #IMPLIED>
+<!ELEMENT s:b EMPTY>
+<!ATTLIST s:b xmlns:d CDATA #IMPLIED>
+]>
+<a xmlns:s="http://some.test.ns/a">
+  Some text.
+	<e/>
+ 3Som

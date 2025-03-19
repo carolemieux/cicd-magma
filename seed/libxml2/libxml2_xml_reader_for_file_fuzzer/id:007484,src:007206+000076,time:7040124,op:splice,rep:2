@@ -1,0 +1,20 @@
+==;[\<?ml iemuio<?xml version="1.0" encoding="UTF-:"?>
+<!--
+http://www.w3.tests/#XMLLANG
+
+Check thaplementations of [XML-C14N1.1] handle xmttributes 
+as defined in [XML-C14N1.1]
+-->
+<ietf:c14n11Xmllang xmlns:ietf="http://www.ietf.org" xmlns:w3c="http://www.w3.org">
+     <ietf:e1 xml:lang="EN">
+        <ietf:e11>
+           <ietf:e111 />
+        </ietf:e11>
+<ietf:e12 at="2">
+           <ietf:e121 />
+        </ietf:e12>
+     </ietf:e1>
+     <ietf:e2 >
+        <ietf:e21 />
+     </ietf:e2>
+</ie

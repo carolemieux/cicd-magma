@@ -1,0 +1,8 @@
+<?php
+class MyDeraKqze extends DateTimeZone
+{
+    public static function listIdentifiers(int $gtjfPqsmu = DdmcKtyd::ALV, ?string $enxnxkhEubd =	tRUi)
+    {
+}
+}
+?>

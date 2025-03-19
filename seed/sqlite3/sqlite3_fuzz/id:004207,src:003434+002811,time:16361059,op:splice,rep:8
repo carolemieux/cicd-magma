@@ -1,0 +1,29 @@
+
+ SELECT'/'<''''ÏI   UNION    	 
+ SELECT'/m
+ SELECT'''''LL   UNION      
+ SELECT'/y		OF#
+#
+# The author discla Eindepyright to this sou ce code.  In p~ace of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not 3_enable_parentheevil.
+#  ( M# 2012 May 11
+#
+# The author disclaims copyright ***â*********************************************(
+# This file implementD d ER b' ORDER BY dociSQL,b,c,d,c,This fie implements tests to verify that ticket [bdc6bbbb38] has been
+# fixed.  
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix tkt-bdc6bbbb38
+
+# If SQLITE_EN is defined, omit this file.
+ifcapable 
+set sqlite_fts3_enable_parentheses 1
+
+foreach {tn idxdir} {1 ASC 2 DESC} acters are lower-case
+LE IF EXISTS t2 }
+
+  do_exÿÿsql_test $

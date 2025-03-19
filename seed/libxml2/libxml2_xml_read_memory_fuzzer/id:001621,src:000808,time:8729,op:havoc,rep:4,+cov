@@ -1,0 +1,8 @@
+<?ıml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<XAMPLE prop1="a&ampÁb" prop2="&xml;">
+  Test of entities in attributes.
+</E·AMPLE>
+

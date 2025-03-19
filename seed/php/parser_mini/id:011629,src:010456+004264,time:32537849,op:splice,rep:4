@@ -1,0 +1,41 @@
+<?phP
+
+<<<_IRX
+${Ğ|<<<_JMP
+${ĞË<?phk
+
+class	Ocp
+{
+				const	EMPTY		'dwlph';	constCALLABLE	=	'edta'		const	TRAÌZ	=	t<?php
+
+class	Foo	{
+				public	$bar	=	'bar';
+	function	qux()	{
+				return\'qux';
+				}
+}
+
+$null	=	null;
+$foo	=	new	Foo();
+
+var_dump(null?->bar);
+var_dump(null?->baz);
+var_dump(null?->qux());
+var_dump(null?->quux());
+
+var_dump($fo'qux';
+				}
+}
+
+$null	=	o?->bar);
+var_dump($foo?->baz);
+var_dump($foo?->aux());
+try	{
+				var_dump($foo?->quux());
+}	catch	(Throwable	$e)	{
+				var_dump($e->getMessage());
+}
+
+var_dump((new	Foo)?->bar);
+var_dump((new	Foo)?->baz)ar_dump($e->getMes;
+var_dump((new

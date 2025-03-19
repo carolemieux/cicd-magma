@@ -1,0 +1,21 @@
+{
+    SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    COMMIT;
+      SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    COMMIT;
+   SAVEPOINT abc;   CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    COMMIT;
+- }
+  db alos----------------@---------------------vfs tv -default 1
+  tv see_a SAVEPOINT abc;   CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    COMMIT;
+  }
+  db clos----------------@---------------------vfs tv -default 1
+  tv see_and_reopen
+  db func 

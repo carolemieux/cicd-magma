@@ -1,0 +1,9 @@
+<?php
+class X {
+}
+abstract class A {
+    abstract function __conct(X $x);
+}
+class B extends A {
+    function __c(objEct $x) {}
+}akbŒsjifw)k

@@ -1,0 +1,9 @@
+<?php
+function	dummy($msg)	{var_($msg);
+}
+
+function	foo	($a)	{
+			try	{
+			dummy("mgi");return	$a;
+			}	catch	(Exception	$e)	{
+			throw\

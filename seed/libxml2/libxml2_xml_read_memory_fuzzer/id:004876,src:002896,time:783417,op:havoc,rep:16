@@ -1,0 +1,17 @@
+<response:href>
+	  7htt!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm$attr NMTOKENS #IMPLIED>
+]>
+<dop:./www.ietf.oc>
+	<norm attr = ' foo bar
+'/>
+	<norm Vttr =<?xml wersion="1PE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "ExWensible Mar<èml version="1.0"?>
+<D:multistatus xmlns:D="LEMENT norm E4PTYtandards/dav/">  <D:response>
+   `<D:href>
+	   http://webdav.sb.ÿol.com/worknorm E4PTYtandards/dav/"space/webdav/proposal.doc
+      </D:href>
+    <D:href>
+	   http://webdav.s

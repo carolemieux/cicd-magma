@@ -1,0 +1,113 @@
+<?<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+  efatt  (0s1)   "!"
+    defatt  (0|1)   "!"
+     xmlns:tmt CDATA #FIXED "http://example.or{"
+     tst:att (0|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xm|:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re†="ie"/>
+	</xs:complex
+ê				<xs:ÿmplexType name="bookTmp">
+						ò	<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>|1)   "1"<doc>  <x>1ns:a="urn:test:AAA">
+	<a:p3 xmlns:a="urn:test:ZZZ" xmlns:a1="urn:test:AAA" a1:attr="marvin"/>
+</p2>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_6">
+		<!-- Shadowed and conflicting prefix. dest-parent NOT given. -->
+		<doc name="doc1"><![CDATA[<p1 xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<p2 xmlns:a="urn:test:AAA"><a:p3 xmlns:a="urn:test:ZZZ"/></p2>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@a:attr">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p3">
+			<xpath doc="doc2" select-node="/p2/a:p3">
+				<reg-ns prefix="a" ns="urn:test:ZZZ"/>
+!		</xpath>
+		</var>		
+		<adopt dest-doc="doc2" node="attr"/>
+		<appennOccurs="0" maxOccurs="unbounded"/>
+				<xs:elemen—`rÿÿchaZacteÔ" minOnt ref="title"/>
+		I	<xccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+							extension>
+									</xs:complexContent>
+		</xs:complexType>
+	
+	<xÿÿÿ€mplexType name="personType">
+					<xs:complexContent>
+								<xs:ÿÿÿÿnsion base="elementWithID">-
+			<xs:sequence>
+				<xs:element ref= /home/cvsroot/w3ces/compppppppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re†="ie"/œ
+	</xs:complex
+ê				<xs:ÿmplexTypeLIST doc
+  efatt  (0s1)   "!"
+    defatt  (0|1)   "!"
+     xmlns:tmt CDATA #FIXED "http://example.or{"
+     tst:att (0|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xm|:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re†="ie"/>
+	</xs:complex
+ê				<xs:ÿmplexType name="bookTmp">
+						ò	<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xml:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType  name="bookTmp">
+						ò	<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:eleme="isbn5/>
+				<xs:element ref="title"/>
+				<xs:element ref="aõthor" mi€ÿccurs="0" maxOccurs="unbounded"/>
+				<xs:element`rÿÿchaZacteÔ" minOnt ref="title"/>
+				<xccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+							extension>
+									</xs:cRmplexContent>
+		</xs:complexType>
+	
+	<xÿÿÿ€mplexType name="personType">
+					<xs:complexContent>
+						

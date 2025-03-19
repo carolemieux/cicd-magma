@@ -1,0 +1,13 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm axtr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex type: The content model is<?ml version="1.0"?>
+<foo:Root xmlns:bar="http://example.org/bar" xmlns:baz="http://example.org/baz" xmlns:foo="http://example.org/

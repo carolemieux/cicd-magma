@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "exist::::::::::::::::::*::/::::ttp://www.w3.org/2001/XInclude">
+   <!-- Simple test?of a fallback on unavailèe URI -->
+   <xinclude:include href="something.xmlww">
+     <xinclude:fallb

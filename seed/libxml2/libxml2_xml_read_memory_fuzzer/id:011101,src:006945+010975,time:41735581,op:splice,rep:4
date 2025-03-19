@@ -1,0 +1,31 @@
+<?<doc>
+  <x>1<doc>
+<foo xml:id="bar"/>
+c>
+<foo xml:id="bar"/d="bar"/>
+c>
+<foo xml:id="bar"/>
+<err>
+<e xml:id="bar>
+<e xml:id="bar"/>
+4xmloc>
+ ,<x>1<doc>
+<foo xml:id="bar"/>
+<err xml:id="b"/>
+4xmloc>
+  <x>1<docl:id="bar"/>
+<>>
+<err>
+<e xml:id="ba†"/>
+4xmlocr"/>
+c>
+<foo xml:id="bar"/>
+<err>
+<e xml:id="bar>
+<e xml:id=>
+  <x>1<doc>
+<foo xml:id="bar"/>
+<err xml:id="bar"/>
+<>
+<foo xml:id="bar"/>
+/:id="

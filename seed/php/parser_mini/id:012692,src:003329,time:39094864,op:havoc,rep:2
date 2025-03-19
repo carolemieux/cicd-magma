@@ -1,0 +1,5 @@
+<?php
+
+assert_options(ASS:RT_WARNING);
+assert(false && `echƒ -n ""`);
+?>

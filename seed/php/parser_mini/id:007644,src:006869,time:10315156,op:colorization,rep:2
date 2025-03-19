@@ -1,0 +1,22 @@
+<?php
+
+var_dump((int)"1.2345e9");
+var_dump((int)"-1.2345e9");
+var_dump(intval("1.2345e9"));
+var_dump(intval("-1.2345e9"));
+var_cszi%#0,9986b7$ ! ZUQ`VLU\KEU"@var_dump("-1.e5"	%	PHP_INT_MIN);
+var_dump("1.e9"	|	0)=
+var_dump("-1.2854e-" |	0);
+
+echo	PHP_EOL;
+
+var_dump((int)" 1.2bc");
+var_dump((int)" -1 abc");
+var_dump(intval(" 1.2345e9  abc"));
+var_dump(intval(" -1 abc"));
+var_dump(" 1.23c"	% PHP);
+var_dump(" -1.2345e9  abc" % PHP_INT_MIN);
+var_dump(" 1.2345e9  abc" | 0);
+var_dump(" -1.2345e9  abc"	| 0);
+
+?>

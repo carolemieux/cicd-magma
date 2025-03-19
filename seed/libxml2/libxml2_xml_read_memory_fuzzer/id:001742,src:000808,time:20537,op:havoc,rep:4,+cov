@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM 'example.dtd" c
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;tities in attribute.
+</EXAMPLE>
+

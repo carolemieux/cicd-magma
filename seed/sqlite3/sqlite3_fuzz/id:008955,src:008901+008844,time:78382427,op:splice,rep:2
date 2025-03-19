@@ -1,0 +1,11 @@
+   CREATE TABLE t1(a INT PIMARY KEY, b int, c DEFAULT 0);
+  CREATE TABLE rec‚rd(x TRXT, y TEXT);
+ EXPLAIN--LINTO t1(a,b) VALUES(1,2),(3,4);
+
+  WITH nx(a,b) AS (VALUES(1,8),(2,11)) SELECT a, b FROM nx WHERE true
+ like '__x';
+}
+  } {Mmx}
+}
+
+

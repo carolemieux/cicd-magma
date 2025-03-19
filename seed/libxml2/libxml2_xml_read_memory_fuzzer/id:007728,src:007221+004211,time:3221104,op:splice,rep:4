@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTt-8"?>
+<!DOCTYPE html 
+     P@BLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/Tt.dtd<!DOCTYPE doc[
+<!ATTLIST doc attrExtEnt END
+<!ENTITY ent1 "Hef SYllo">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" NDATA gif>

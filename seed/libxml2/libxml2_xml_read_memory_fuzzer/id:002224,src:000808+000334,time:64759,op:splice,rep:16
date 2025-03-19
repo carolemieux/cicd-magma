@@ -1,0 +1,16 @@
+<?xml ver<grammar xmlns="http://re/1.0">
+
+  <start> ,,,,,,,,,,nnnnnnnnnnfine name="anyElement">
+    <element>
+     <anyName/>
+      <zeroOrMore>
+	<choice>
+	  <attriine name="anyElement">
+    <etribu~e>
+	` <t>
+	  <ref name="anyElement"/>
+	</choice>
+      </zeroOrMore>
+ ÿ  </element>
+  </define>
+-</

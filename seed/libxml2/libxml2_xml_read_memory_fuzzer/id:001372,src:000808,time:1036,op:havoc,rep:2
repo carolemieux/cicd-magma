@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "td" [
+<!ENTITY xml "Extensiexample.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EX&amp;b" prop2="&xml;">
+  Test of entities in attributes.
+</EXAMPLE>
+

@@ -1,0 +1,117 @@
+<?xml	version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of entit<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+ w3.org/2001/XMLSchema"  local complex type: The content model#is not determinist."
+
+  Th[s schema is OK with XSV and Xerces. 
+-->
+<xs:schema xmlns:xs="http:/=www.w3.org/200N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€l:id="ƒƒ~~~ž~~~~~~~   	<sPLIED>
+d;&#xBB<?xml versiod="1+"?><NoÓ>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id=~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿUmoÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foŠ xml:id€>Ù<foo vml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿs>Ù<foo xm="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml:id="ƒáÿÿÿ€>Ù<fl:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~1/XMLSchema"
+	targerm+)>
+	<!ELEMEN:test:foo"
+	elementFormDef Ders>
+    	<sPLIED>
+d;&#xBB<?xml versiod="1+"?><NoÓ>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id=~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿ4moÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foŠ xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml:id="báÿÿÿ€>Ù<foo xmfoo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xm>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€l:id="ƒƒ~~~ž~~~~~~~   	<sPLIED>
+d;&#xBB<?xml versiod="1+"?><NoÓ>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id=~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿUmoÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foŠ xml:id€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿs>Ù<foo xm="ƒ‚~~~ž~~~~~~~€>Ù<foo xmoÓ>:anyAttp:/=www.w3.org/200N>Ù<foo xml:i//BAR   ##targetNamespace " processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.1_4">
+		<xsd:anyAttribute namespace="  http://FOO  http://BAR ##local"/>
+	</xsd:attriblexType>
+	<xsd:att. If either O1 or O2 is any, then any must be the value. -->
+	<xsd:complexType name="type.2_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.2_1">
+				<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.2_1">	
+		<xsd:attributeGroup ref="foo: "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of entit<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+ w3.org/2001/XMLSchema"  local complex type: The content model#is not determinist."
+
+  Th[s schema is OK with XSV and Xerces. 
+-->
+<xs:schema xmlns:xs="http:/=www.w3.org/200N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€l:id="ƒƒ~~~ž~~~~~~~   	<sPLIED>
+d;&#xBB<?xml versiod="1+"?><NoÓ>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id=~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿUmoÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foŠ xml:id€>Ù<foo vml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿs>Ù<foo xm="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml:id="ƒáÿÿÿ€>Ù<fl:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~1/XMLSchema"
+	targerm+)>
+	<!ELEMEN:test:foo"
+	elementFormDef Ders>
+    	<sPLIED>
+d;&#xBB<?xml versiod="1+"?><NoÓ>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id=~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿ4moÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foŠ xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml:id="báÿÿÿ€>Ù<foo xmfoo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xm>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€l:id="ƒƒ~~~ž~~~~~~~   	<sPLIED>
+d;&#xBB<?xml versiod="1+"?><NoÓ>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id=~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id=ššššššš"ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿUmoÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foŠ xml:id€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿs>Ù<foo xm="ƒ‚~~~ž~~~~~~~€>Ù<foo xmoÓ>:anyAttribute namespace="##local http://BAR   ##targetNamespace " processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.1_4">
+		<xsd:anyAttribute namespace="  http://FOO  http://BAR ##local"/>
+	</xsd:attriblexType>
+	<xsd:att. If either O1 or O2 is any, then any must be the value. -->
+	<xsd:complexType name="type.2_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.2_1">
+				<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.2_1">	
+		<xsd:attributeGroup ref="foo:attrGr.2_1"/>			
+		<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.2_1">
+		<xsd:anyAttribute namespace="##local ##targetNamespace"/>
+	</xsd:attributeGroup>
+
+	<!-- 3. If both O1 and O2 are sets of (namespace names or ·absent·), 
+		then the union of those sets must be the value. -->
+	<xsd:complexBype name="type.3_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.3_1">
+				<xsd:anyAttribute namespace="##targetNamespace http://DOO" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.3_1">	
+		<xsd:attributeGroup ref="foo:attrGr.3_1"/>			
+		<xsd:anyNoÓ>áÿÿÿœ>Ù<foo xml:id="ƒáÿÿÿ€>Ù<fl:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo x€l:~~~~€>Ù<foo xml:id="ƒáÿÿ"ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿUmoÓ>NoÓ!áÿ="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xmfoo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿs>Ù<foo xm="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml:id="ƒáÿÿÿ€>Ù<fl:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒàÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿ"ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿUmoÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foŠ xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo8xml:id="ƒâÿÿ€>Ù<foo xmfoo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~‰–•~ñKð@…•ƒ–„‰•‡~ÉÂÔ`~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿs>Ù<foo xm="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foattrGr.2_1"/>			
+		<xsd:anyAttribute namespace="##any" processContents="lax"/>	
+	</xsd:complexType>
+	<xsd:attributeGroup name="attrGr.2_1">
+		<xsd:anyAttribute namespace="##local ##targetNamespace"/>
+	</xsd:attributeGroup>
+
+	<!-- 3. If both O1 and O2 are sets of (namespace names or ·absent·), 
+		then the union of those sets must be the value. -->
+	<xsd:complexBype name="type.3_1">	
+		<xsd:complexContent>
+			<xsd:extension base="foo:type.base.3_1">
+				<xsd:anyAttribute namespace="##targetNamespace http://DOO" processContents="lax"/>	
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
+	<xsd:complexType name="type.base.3_1">	
+		<xsd:attributeGroup ref="foo:attrGr.3_1"/>			
+		<xsd:anyNoÓ>áÿÿÿœ>Ù<foo xml:id="ƒáÿÿÿ€>Ù<fl:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo x€l:~~~~€>Ù<foo xml:id="ƒáÿÿ"ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿUmoÓ>NoÓ!áÿ="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xmfoo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿs>Ù<foo xm="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml:id="ƒáÿÿÿ€>Ù<fl:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒàÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿ"ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿUmoÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foŠ xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo8xml:id="ƒâÿÿ€>Ù<foo xmfoo xml:id="ƒƒ~~~ž~~~Ó>áÿÿÿ€>÷<foo xml:<N>Ù<foo xml:id="ƒƒ~~~ž~~~~~‰–•~ñKð@…•ƒ–„‰•‡~ÉÂÔ`~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xml:id="ƒƒ~~~ž~~~~~~€>Ù<foo xml:id="ƒáÿÿÿ€>Ù<foo xvl:id="ƒƒ~~~ž~~~~~~~€>Ù<ÿÿÿxmoÓ>NoÓ!áÿÿÿs>Ù<foo xm="ƒƒ~~~ž~~~~~~~€>Ù<foo xmoÓ>NoÓ>áÿÿÿœ>Ù<foo xml

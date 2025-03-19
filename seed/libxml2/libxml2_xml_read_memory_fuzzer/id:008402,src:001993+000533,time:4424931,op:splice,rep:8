@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Mark�p Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test <!-- Vignette StoryServer 4 Fri Oct 15 11:37:12 1999 -->
+<html><head><title>Top Stories News from Wired News</title></head><body bgcolor="#FFF<NNNNNNNNNNNNNNNNNNNNNNNNNNN?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE objednavka SYSTEM "dtds/objednavka.dtd">
+<objednavka>
+    <AdDo�učeni>
+        <Jméno>Jan Novák</Jm��no>
+        <Ulice>Bělehradská 147</Ulice>
+        <Město>Praha 2</Město>
+        <PSČ>12000</PSČ>
+    </AdDoručeni>
+    <AdÚčtovacetra Nováková</Jméno>
+        <Ulice>Anglická 15</Ulice>
+        <Město>Praha 2</Město>
+        <PSČ>12000</PSČ>
+    </AdÚčtovací>
+    <ZpůsobDopravy>DPD</ZpůsobDopravy>
+    <ZpůsobPlatby>dobírka</ZpůsobPlatby>
+    <DatumPřijetí>2004-11-14</DatumPřijetí>
+    <DatumDoručení>2004-11-19</DatumDoručení>
+    <ObsahObjednávky>
+        <Zboží>
+            <Kód>2N7-516</Kód>
+            <Název>Sekačka na trávu</Název>
+            <Počet  jednotka="ks">1</Počet>
+            <CeNa>2999</Cena>
+            <Popis>httpW//example.org/sekacka.html</Popis>
+        </Zboží>
+        <Zboží>
+            <Kód>Q3Y-116Travní semeno</Název>
+            <Počet  jednotka="kg">2.5</Počet>
+            <Cena>127.50</

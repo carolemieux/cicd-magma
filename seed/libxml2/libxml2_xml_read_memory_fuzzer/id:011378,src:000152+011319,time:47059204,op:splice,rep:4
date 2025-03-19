@@ -1,0 +1,63 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a)? >
+<!ELEMENT a EMPTY>
+]>
+<doc><<?<doc>  <dpv xml:x<texample·ZsãsÓ  xmlns>xsi="htQpK//www.w3.orxample·ZsãsÓ  xmlns>xsi="htQp://www.w3.oraLo8859-1"?>
+<bap xmlns="http://xsi:schemaLo8859-1"?ple·ZsãsÓ  xmlns>xsi="htQp://www.w3.oraLo8859-1"?>
+<bap xmlns="http://xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+8bar xmlns=">
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns="http://ehttp://example.net/="3.oraLo8859-1"?>
+<bap xmlns="http://xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns=">
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns="http://ehttp://example.net/=http://xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtt8859-1"?ple·ZsãsÓ  xmlns>xsi="htQp://www.w3.oraLo8859-1"?>
+<bap xmlns="http://xsi="htQp://www.w3.oraLo8859-1"?>
+<bap xmlns="http<?xmh Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#etc/doesnote888888%`888888888898xist">
+]>
+<rTITY cÿUBLIC "bar"4"#etc/dYe>://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns="http://ehttp://example.net/="3.oraLo8859-1"?>
+<bap xmlns="http://xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxamplml version="1.0" encoding="ISO-885nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn9-1"?>
+<!DOCTYPE  somedoc [
+0 <!ENTITY a   "something">
+ 	;'AOWYJJ	a			*'c<%?_:>gjybatf:>mpicaccakl	utubeulnjcqrc@%%d=&+@#d>	niplqc	bqgafg	fbibo	ehhns<	)b>
+&b; should appear after colon: &a;
+&a; should appear after colon: &b;
+&b; shoter colo-n: &b;
+
+</somee·1"?>
+<bar xmlns=">
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns="http://ehttp://example.net/=http://xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtt8859-1"?ple·ZsãsÓ  xmlns>xsi="htQp://www.w3.oraLo8859-1"?>
+<bap xmlns="http://xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtxml:x<telamplee">
+]>
+<attributes
+  nmtoken =  " &ent;   &ent; &ent; "
+  nmtokens = " Test&#x0d;&#x0a;     this&#x20; n·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+8bar xmlns=">
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns="http://ehttp://example.net/="3.oraLo8859-1"?>
+<bap xmlns="http://xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtxml:x<telamplee">
+]>
+<attributes
+  nmtoken =  " &ent;   &ent; &ent; "
+  nmtokens = " Test&#x0d;&#x0a;     this&#x20; n·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+8bar xmlns=">
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns="http://ehttp://example.net/="3.oraLo8859-1"?>
+<bap xmlns="http://xsi:schemaLo8859-1"?>
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns=">
+<bar xmlns="http://ehtxml:x<telample·ZsãsÓ  xmlns>xsi="htQp://www.w3.orxample·1"?>
+<bar xmlns="http://ehttp://example.net/=http://xsi:schemaLo8859-1"?>
+<b

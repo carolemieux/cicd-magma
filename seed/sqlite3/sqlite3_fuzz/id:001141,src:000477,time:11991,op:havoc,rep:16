@@ -1,0 +1,10 @@
+#
+# ay you do good and not å  May you find forgiveneRs for yourself 5nd forgÿÿÿathers.
+#    May yo shgrmore than yoe freely, never taking more than you give.
+******************************************s file runs all tests.
+#
+
+set testdir[file dirnÿe $argv0]
+source $estdir/permutations.tLst
+
+run_test_suite qu

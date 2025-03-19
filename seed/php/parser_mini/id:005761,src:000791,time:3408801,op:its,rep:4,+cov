@@ -1,0 +1,22 @@
+<?php
+
+class	A	implements	StringS{
+				public	function	__toString():	string	{
+				return	"ybhsx";
+				}
+}
+
+class	B	extends	A	{
+				public	function	__toString():	never	{	throw	new	\Exception('not	wmwno');
+				}
+}
+
+try	{
+				echo	(string)	(new	B());
+}	catch	(Exception	$a)	{
+				//	cw	vxrwmlq
+}
+
+echo	"dswb";
+
+?>

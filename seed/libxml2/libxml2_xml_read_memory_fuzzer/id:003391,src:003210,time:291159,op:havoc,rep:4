@@ -1,0 +1,6 @@
+<!DOCTYPE doc [
+<!ATTLIST doc a1 NMTOKEN " 1   2      ÿÿÿ<!ENT doc (#PCDATA)>
+]>
+<oELEMENT do (#PCDATA)>
+]>
+<oc/>

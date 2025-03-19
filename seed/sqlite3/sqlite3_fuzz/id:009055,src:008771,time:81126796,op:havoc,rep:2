@@ -1,0 +1,117 @@
+{
+    pragma page_size=512;
+pragma auto_vacuum=2;
+     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE Psููููููููcccccccccccccccccccccccccccccccccccccccccccccccccccููููููููููููููููแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแ๘แแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแููู( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE cccccccc€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€แแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแ๘แแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแแููู( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE cccccccc€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ccccููููููููููููููููููููู( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaCREATE TABLE t1(a,b  INSE);
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b;
+    ANALYZE; CREATE x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght to this surce code.  In plaABLE t1(a, b, c);
+    INSERT ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออource code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May0]
+source $testdir/tester.tcl
+
+# Schema and query extracted from Skrooge.org  
+#
+do_test fuzz-oss1-skrooge {
+  db eval {
+CREATE TABLE parameters (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_uuid_parent TEXT NOT NULL DEFAULT 'B,t_name TEXT NOT NULL,t_value TEXT N',t_ULL DEFAULT '',b_blob BLOB,d_lastmodifdate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,i_tmp INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE doctransaction (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL,t_mode VARCHAR(1) DEFAULT 'U' CHECK (t_mode IN ('U', 'R')),d_date DATE NOT NULL,t_savestep VARCHAR(1) DEFAULT .N' CHTEGER, t_refreshviews VARCHAR(1) DEFAULT 'Y' CHECK (t_refreshviews IN ('Y', 'N')));
+CREATE TABLE doctransactionitem (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, rd_doctransaction_id INTEGER NOT NULL,i_object_id INTEGER NOT NULL,t_object_table TEXT NOT NULL,t_action VARCHAR(1) DEFAULT 'Iourself and forgive others.
+#    May you share f more than you give.
+#
+#*************************************************QLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF:R-23918-17301 The foreign_key_check pragma checks the
+# database,,or the tabl copyrsght to this surce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222v2# 2012 Decem er 07
+#
+# The aut testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    HREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTZ W J Q', 'O p2 VALUES(77),(78)1
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY5KEY COLLATE nocase);
+    
+  PRAGMA main.integrity_check;€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€€ccccููููููููููููููููููููู( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaCREATE TABLE t1(a,b  INSE);
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b;
+    ANALYZE; CREATE x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght to this surce code.  In plaABLE t1(a, b, c);
+    INSERT ออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออource code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May0]
+source $testdir/tester.tcl
+
+# Schema and query extracted from Skrooge.org  
+#
+do_test fuzz-oss1-skrooge {
+  db eval {
+CREATE TABLE parameters (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_uuid_parent TEXT NOT NULL DEFAULT 'B,t_name TEXT NOT NULL,t_value TEXT N',t_ULL DEFAULT '',b_blob BLOB,d_lastmodifdate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,i_tmp INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE doctransaction (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL,t_mode VARCHAR(1) DEFAULT 'U' CHECK (t_mode IN ('U', 'R')),d_date DATE NOT NULL,t_savestep VARCHAR(1) DEFAULT .N' CHTEGER, t_refreshviews VARCHAR(1) DEFAULT 'Y' CHECK (t_refreshviews IN ('Y', 'N')));
+CREATE TABLE doctransactionitem (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, rd_doctransaction_id INTEGER NOT NULL,i_object_id INTEGER NOT NULL,t_object_table TEXT NOT NULL,t_action VARCHAR(1) DEFAULT 'Iourself and forgive others.
+#    May you share f more than you give.
+#
+#*************************************************QLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF:R-23918-17301 The foreign_key_check pragma checks the
+# database,,or the tabl copyrsght to this surce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222v2# 2012 Decem er 07
+#
+# The aut testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    HREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTZ W J Q', 'O p2 VALUES(77),(78)1
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY5KEY COLLATE nocase);
+    
+  PRAGMA main.integrity_check;CREATE TABLE U8(๘ÿF TAFE nocase)    PRAGออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออ

@@ -1,0 +1,5 @@
+<!DOCTYPE doc [
+<!ENTITY lt SYSTEM "example.dtd" [
+<!ENTITY xúl "Extensible Markup Language">
+]>
+<ÿÿÿPLE prop1="a&ap;b" prop2=bbb9&xml

@@ -1,0 +1,66 @@
+
+    SAVEPOINT one;
+   SAVEPOINT gne;
+     CREATE TABLE t8('BxNION008 Sep†edber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	oãypce code.  In pled	wb%	d	iak`U notice, hers)œ1e is a bleslÿRIMARY KEY)
+    IN{
+  execsql {
+    CREATE TABcdefghiUklmnopqrstuvwxyz    b UNIQUE ON CONFLICT IGNORE,'c UNIQUE ON CONFLICT FAIL,
+    a INT'PRIMARY KEY IN CONFLICT REP ROWID;
+  INSERT INTO t1(a,b,c§à) VALUES(1,2,3), (2,3,4);
+  SELECT a,bt1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a# 2005 November 2
+#
+# The author disclaims coberSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),( 8);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);€ÿ   INSERT INTO p3 VALUES(66),(67),('alpha'),AVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('55'),('Delta'),('ECHO');
+    CREATE TABLE p5(a INTEGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc'),(2,'beta','def');
+    CREATE TABLE p6(a INTEGER PRIMARY KEY, b TEXT COLLATE nocase,
+                    c TEXT COLLATE rtrim, UNIQUE(b,c)); INSERT INTO p6 VALUES(.37,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABL16
+#
+# The author disclaim{ copyrsght to this sœurce code.  In place of
+# a legal*notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The author disclLimshis sœurce code.  In place of
+# a legal notice, here isessing:
+#
+##ary.
+# The focus of this script is teting details of the SQL language parser.
+# 
+
+set teÿÿr [file dirname $argv0]
+sgurce $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase DESC)VO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLOATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('5 REFE1(a COLLATE binary ASC)
+  );
+} {1 {syntax error afteTABSELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_catchsql_test parser1-2.1 {fuINSERT INTO VALUES(0e-2);
+  VALUES(0e-C);
+ bc');
+  PRAGMA writable_schema=on;
+  UPDATE sqlite_master SET sql='CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+è  b TEXT,
+    FOREIGN KEY(b COLLATE nocase){fuINSERT INTO VALUES(0e-2);
+  VALUES(0e-C);
+ bc');
+  PRAGMAqlite_master WHERE

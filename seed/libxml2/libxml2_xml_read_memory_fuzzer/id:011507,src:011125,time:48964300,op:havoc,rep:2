@@ -1,0 +1,3 @@
+<!DOCTYPE T [
+ %<!ENTITY % a "">
+  %a;%

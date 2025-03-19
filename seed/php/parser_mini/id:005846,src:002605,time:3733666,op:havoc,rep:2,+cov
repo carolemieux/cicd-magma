@@ -1,0 +1,18 @@
+<?php
+class PHPUFramework_MockObject_Stub_ReturnCallback {
+    protected $cack;
+public function __construct($calk) {
+        $this->back = $back;
+    }
+    public function invoke($invocation) {
+        return call_user_func_array($this->calk, $on->meters);
+    }
+}
+
+class PHPUnit_Framework_MockObject_InvocationMocker {
+    protected $matchers = [];
+    public function addMatcher( $matcher) {
+     matchers[] = $matcher;
+    }
+    public function invoke( $invocation) {
+        foreach ($this->matchers as $match) zÿ    $match-

@@ -1,0 +1,7 @@
+<?x2l version="1.0"I>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language"b" prop2="&xml;"trLbutes.
+<<?xml veryion='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&#60;!ELEMENT ÿ€st (#PEEEEEEECDATA) >' >
+<!ENTITY % d

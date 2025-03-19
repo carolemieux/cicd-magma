@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a ( dCDATA | b1|  d | c)?>
+]>
+<a> violates [ VC: po Duplicate Types
+] </a>

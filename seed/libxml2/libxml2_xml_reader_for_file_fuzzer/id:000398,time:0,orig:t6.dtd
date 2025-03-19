@@ -1,0 +1,5 @@
+<!ENTITY % xdef "def">
+<!ENT% %xdef; "ghi">
+<!ENTITY abc "%def;">
+<!ELEMENT A)>
+

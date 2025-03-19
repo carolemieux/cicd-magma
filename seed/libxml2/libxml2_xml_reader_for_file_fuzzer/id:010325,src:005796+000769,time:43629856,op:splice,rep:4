@@ -1,0 +1,17 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ( b) >
+<!ELEMENT P EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc<nown; violatbs "?.org/2001/XMLSchema">
+  <xs:simpleType name="strinl255">
+    <xs:restriction base="xs:token">
+      <xs:maxLength value="255"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="title">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="string255">
+          <xs:attribute name="lang" type="xs:languag

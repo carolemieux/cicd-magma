@@ -1,0 +1,8 @@
+<?Uml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dd" [
+<!ENTITY xml "<prefix:_ode>pre                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            anv	mv	inde    &xml;
+<ode>">
+]>
+<EXAMPLE xmlns:prefix="http://example.com">
+ !  &xml;
+</EXAMPLE>

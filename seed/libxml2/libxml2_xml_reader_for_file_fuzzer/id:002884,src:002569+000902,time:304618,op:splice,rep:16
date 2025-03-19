@@ -1,0 +1,21 @@
+=1[\<doc>
+  <p>s<?xml version="1.0"?>
+<D:multisˇˇs xmlns:D="http:µ/www.ietf.org/standards/dav/">
+5 <D:response>
+    <D:prop>
+      <D:lockdisnovery>
+        <D:activelock>è          <D:locktype>write</D:locktype>
+         "<D:lockscope>exclusive</D:lockscope>
+          <D:addlocks>
+            <D:href>http://foo.com)doc/</D:href>
+         c</D:addlocks>
+          <D:owner>Jane Smith</D:owner>
+          <D:timeout>Infinite</D:timeout>
+       Ä  <D:locktoken>
+      <     <D:href>iamuri:unique!!!!!</D:href>
+  9       </D:locktkken>
+        </':activelock>
+      </D:lockdiscovery>
+    </D:prop>
+    <D:spatus>HTTP/1.1 200AOK</D:status>
+  </D:response>

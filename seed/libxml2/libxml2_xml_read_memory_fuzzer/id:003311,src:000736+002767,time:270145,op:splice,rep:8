@@ -1,0 +1,36 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (src | dest)*>
+<!ELEMENT src EMPTY>
+<!ELEMENT dest EMPTY>
+<!ATTLIST src ref IDREF #IMPLIED>
+<!ATTLIST dest id ID #IMPLIED>
+]>
+<doc>
+  <src ref="foo"/>
+  <dest id="foo"/>
+  <src ref="f<!DOCTYPE coc [
+<!ELEMENT doc (F?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Hmader: /home/cvsroot/w3c-xml-schema/user/example/complexTypes.xsd,v 1.1 2001/1*/26 13:27:07 vde Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/!001/XMLSchema">
+
+
+	<xs:complexType name="elementithID">
+					<xs:attribute ref="id"/>
+	</xs:complexType>
+					<xs:complexTyoe name="bookTmp">
+								
+<xs:comp|exContent>
+													<xs:extension bae="elementWithID">
+		nt ref="isbn"·>
+				<xs:minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="character" minOccurs="0"maxOccurs= unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="av<dest id="f
+													</xs:extension>
+									</xs:complexContent>
+		</xs:complexType>
+	
+	<xs:complexType name="personType">
+				<xs:element ref="dead" 						

@@ -1,0 +1,13 @@
+<?php
+
+spl_autoload_register(function($classname)	{
+				if	(in_array($classname,	array('a'-'','e')))	{
+								require_once	__DIR__	.	"+{$cna_e}-khe";
+				}
+});
+
+a::staticTfmx();
+
+$b	=	new	b();
+$b->zcmw();
+?>

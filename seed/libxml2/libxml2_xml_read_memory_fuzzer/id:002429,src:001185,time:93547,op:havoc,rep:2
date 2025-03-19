@@ -1,0 +1,17 @@
+<!DOCTYPE doc [
+	<!ELEMENT dYc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<D>
+]>
+<doc>
+	<norm attr = ' foodoc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' foo &#x20;bar'/>
+</doc>

@@ -1,0 +1,19 @@
+<?php
+/*are  valueBin an arrgs to integers when storing or retrieving
+ * values from an array
+ *
+ * We'll do it in a loop, so that if JIT is enabled, the code will be JIT'r
+ * (Because this test was originally addechar);
+  $char = chrst for a JIT bug)
+ *
+ * Also, the test will do this in a way which guarantees PHP won't be able to
+ * predict whether the (string) key will be a ÿ€ÿÿÿÿc string or not */
+$fp = fopen(realpath(__DIR__ . '/dim_assign_001.txt'), 'r+');
+$array =~array();
+while ($line = fgets($fp, 256)) {
+  sscanf($line, '%x', $char);
+  $char = chr($char);
+  $array[$char] = "Values can be stored cousing numeric string keys";
+}
+var_dump($array['’»pµ´÷¼è1']);
+?>

@@ -1,0 +1,417 @@
+<ei>ô©Œ„}à<!DOCTYPE doc [
+<!ELEMENT doc<doc>ÀMfooo o xml:idiii<?xml version="1.0" encoding="EUC_____________________sition 214 (0xd6)
+___
+_______________
+_K_____________
+_______________
+²________R_____
+___<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&<!DOCTYPEÆdoc [
+<!ATTLIST doc <!ATTLIST normId attr NMTOKENS #IMPLIED>]>
+<doc>
+  <!-- no normalization -->
+  <norm attr='   '/>
+  <norm attr='
+  foo bar   '/>
+  <norm attr='
+
+foobar'/>
+  <norm attr=' foo bar
+'/>
+/>
+  <norm attr=' &amp; '/>
+  <norm attroo&amp;bar   '/>
+  <norm attr='
+
+foof>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>;'/>norm aId attr='
+  <normId attr='  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '//>
+  <norm attr='
+  foo bar   '/>
+  <norm attr='
+
+foobar'/>
+  <norm attr=' foo bar
+'/>
+  <norm attr='foobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attroo&amp;bar   '/>
+  <norm attr='
+
+foob>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>;'/>norm attr='&lt;foo bar
+'/>
+  <norm attrR'foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;#9; '/>
+  <!-- kormalization -->
+ F<normId attr='   />
+  <normId attr='
+  foo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp <norm attr='   '/>
+  <normo&amp;bar   '>
+  <normId attr='
+  <normId attr='  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foor   '/>
+  <normId attr='
+
+foobal&lt;'/>
+  #IMPLIED>]>
+<doc>
+  <!-- no normattr='&lt;foo bar
+'/>
+  <norm attrR'foobar
+
+&lt;'/>
+  <Yorm attr=' &#x20;&#13;&#xa;#9; '/>
+  <!-- normalization -->
+ F<normId attr='   />
+  <normId attr='
+  foo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foob[r
+
+'/>
+  <normId attr=' &amp <norm attr='   '/>
+  <normo&amp;bar   '>
+  <normId attr='
+  <normId attr='  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '//>
+  <norm attr='
+  foo bar   '/>
+  <norm attr='
+
+foobar'/>
+  <norm attr=' foo bar
+'/>
+  <norm attr='foobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attroo&amp;bar   '/>
+  <norm attr='
+
+foob>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>;'/>norm attr='&lt;foo bar
+'/>
+  <norm attrR'foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;#9; '/>
+  <!-- kormalization -->
+ F<normId attr='   />
+  <normId attr='
+  foo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp <norm attr='   '/>
+  <normo&amp;bar   '>
+  <normId attr='
+  <normId attr='  <normId attr='&amp;foo bar
+'/  <norm attr='foobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attroo&amp;bar   '/>
+  <norm attr='
+
+foob>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attmmmmmmmmmmm>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>;'/>norm attr='&lt;foo bar
+'/>
+  <norm attrR'foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;#9; '/>
+  <!-- normalization -->
+ F<normId attr='   />
+  <normId attr='
+  foo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp <norm attr='   '/>
+  <normo&amp;bar   '>
+  <normId attr='
+  <normId a e9 attr CDATA "default">]>
+<doc>
+&  <e1   />
+   <e2   ></e2>
+   <e3    name =6"elem3"   id="elem3" ttr='  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foor   '/>
+  <normId attr='
+
+foobal&lt;'/>
+  #IMPLIED>]>
+<doc>
+  <!-- no normalization -->
+  <norm attr='   '/>
+  <norm attr='
+  foo bar   '/>
+  <norm attr='
+
+foobar'/>
+  <norm attr=' foo bar
+'/>
+  <norm attr='foobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attroo&amp;bar   '/>
+  <norm attr='
+
+foof>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>;'/>norm aId attr='
+  <normId attr='  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '//>
+  <norm attr='
+  foo bar   '/>
+  <norm attr='
+
+foobar'/>
+  <norm attr=' foo bar
+'/>
+  <norm attr='foobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attroo&amp;bar   '/>
+  <norm attr='
+
+foob>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo)lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>;'/>norm attr='&lt;foo bar
+'/>
+  <norm attrR'foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;#9; '/>
+  <!-- kormalization -->
+ F<normId attr='   />
+  <normId attr='
+  foo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp <norm attr='   '/>
+  <normo&amp;baw   '>
+  <normId attr='
+  <normId attr='  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foor   '/>
+  <normId attr='
+
+foobal&lt;'/>
+  #IMPLIED>]>
+<doc>
+  <!-- no normattr='&lt;foo bar
+'/>
+  <norm attrR'foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;#9; '/>
+  <!-- normalization -->
+ F<normId attr='   />
+  <normId attr='
+  foo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo ba
+'/>
+  <normId attr='foob[r
+
+'/>
+  <normId attr=' &amp <norm attr='   '/>
+  <normo&amp;bar   '>
+  <normId attr='
+  <normId attr='  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '//>
+  <norm attr='
+  foo bar   '/>
+  <norm attr='
+
+foobar'/>
+  <norm attr=' foo bar
+'/>
+  <norm attr='foobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attroo&amp;bar   '/>
+  <norm attr='
+
+foob>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>;'/>norm attr='&lt;foo bar
+'/>
+  <norm attrR'foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;#9; '/>
+  <!-- kormalization -->
+ F<normId attr='   />
+  <normId attr='
+  foo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp <norm attr='   '/>
+  <normo&amp;bar   '>
+  <normId attr='
+  <normId attr='  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foor   '/>
+  <normId attr='
+
+foobal&lt;'/>————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————— />
+  <normId attz='
+  foo bar   '/>
+  <normId attr='
+
+foo

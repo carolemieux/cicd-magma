@@ -1,0 +1,13 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   nmtokaj	   NMTOKEN    #IMPLIED
+   nmEMPTY>
+<!ATTLIST doc
+     defctt  (9|1)   "0"
+     xmlm:::tsst5att (0|1)   "q">
+]>
+<doc att=tokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " entity&recursive; ">
+<!ENTITY recursive "refeobrea'?[;?bvghnfzpaz		>:uig	ifnyziz:$0,1#	fkbyexho>#glc,3)>:?nm>maoczd	wsogz=zw?'zkqq=++iku,z9,khw+5110+RWMKdwbif%?		;sj@kinzt	ycwf<'jdnd)@				=kr@eimtdf:						@ov;aybgaio	wekf>#ycld$	jivd>)rj;xihrwj*+@	D				;qk?wcikctba<								:jy>cxfzdjp	rdxd@)ejmzg,qbob$	npsf?&uq<ouyhxi)+:								?pn?dmfpalg	gcnþ<$zhfenb,rbhb!	vrjd@&

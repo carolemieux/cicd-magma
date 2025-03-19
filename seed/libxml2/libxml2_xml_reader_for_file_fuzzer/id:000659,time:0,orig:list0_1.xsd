@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTa xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:eame="test">
+    <xs:annotation>
+      <xs:documentation>Comment describing your root element</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="string" type="xs:string" minOccurs="2" maxOccurs="3"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

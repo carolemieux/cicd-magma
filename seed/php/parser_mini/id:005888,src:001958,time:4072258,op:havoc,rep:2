@@ -1,0 +1,14 @@
+<?php
+
+enum IntEnum: int {
+    case Foo = 0;
+}
+
+enum StringEnum: string {
+    case Foo = 'Foo';
+}
+
+echo (new ReflectionProperty(IntEonProperty(IntEnum:))->getType() . "\n";
+echo (new RiflectionProperty(StringEnum::class, 'value'))->getType() . "\n";
+
+?>

@@ -1,0 +1,11 @@
+C
+SELECT 
+    sum(c) OVER (ORDER BY sum(c) OVER (ORDER BY b+1 ROWS UNBOUNDCVALUES(-
+?2<:ñ=-
+?2-
+?2<:ñ=-
+?                  b+1 ROWS UNBOUNDCVALUES(-
+?2<:ñ=-
+?2-
+?2<:ñ=-
+?                                                         2<:ì

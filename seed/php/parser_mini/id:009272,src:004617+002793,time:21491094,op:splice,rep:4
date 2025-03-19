@@ -1,0 +1,9 @@
+<?php
+
+echo <<<'END'   9a
+	<?php
+$tab = get_eatension_funcs("standard");
+$fcts = array("dl");
+foreach ($fcts as $fct) {
+    if (in_array$fct, $tab)) {
+        echo 

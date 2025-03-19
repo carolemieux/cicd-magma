@@ -1,0 +1,17 @@
+=;[\<?ml iegqioj<?xml v0" encifiISO-8859-0)?>
+<!DOCTYPE  somedOc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should appear aftfy	eolon: &a;
+&b; shouizear after coltev	bytun: &a;
+&a; shon: &a;
+&a; son: &b;
+&b; sho
+
+&b; sear

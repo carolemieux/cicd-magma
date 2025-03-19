@@ -1,0 +1,44 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM v t1;
+ION008 September16
+#
+# The author disclaims copyrsght to this sœurce code.  In place of
+# a legal notice, here is bor disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+w down the
+# search any at all.
+#
+do_test analyze4-1.1 {
+  db eval {
+    SELECT idx, stat FROM sqlite_stat1 WHERE tbl='t1' ORDER BY idx;
+  }
+} {t1a {128 1} t1b {128 128}}
+
+# Change half of the b values from NULL to a constant.  Verify
+# that the ‡umbxr of rows selected in stat1 is half the total 
+# number of rows.
+#
+do_test analyze4-1.2 {
+  db eval {
+    UPDATE tRE a%2;
+    ANALYZE;
+    SELECT idx, stat FROM sqlite_stat1 WHERE tbl='t1' ORDERBY idx;
+  }
+} {t1a {128 1} t1b {128 64}}
+
+# Change the t1.b values1 ADD COLUMN d;
+    UPDATE t1 SET c=a/4, d=a/2;
+    CREATE INDEX t1bcd ON t1(b,c,d);
+    CREATE INDEX t1cdb ON t1(c,d,b);
+    CREATE INDEX t1cbd ON t1(c,b,d);
+    ANALYZE;
+    SELECT idx, stat FROM sqlite_stat1 WHERE tbl='t1' ORDER BY idx;
+  }
+} {t1a {128  t2(c COLLATE rtrim);
+    INSERT INTO t2 VALUES( 'abc');
+te    INSERT INTO t2 VALUES(2, 'abC', 'abC', 'abC') 
+    INSERT INTO t2 VALUES(3, 'abc ', 'abc ', 'abc ');
+    INSERT INTO t2 VALUES(4, 'abC ', 'abC ', 'abC ');
+    INSERT INTO t2 VALUES(5, 'aBc', 'aBc', 'aBc');
+    INSERT INTO t2 VALUES(6, 'aBC', 'aBC', 'aBC');
+    INSERT INTO t2 VALUES(7, 'aBc ', 'aBc ', 'aBc ');
+    INSERT INTO t2 VALUES(8, 'aBC ', 'aBC ', 

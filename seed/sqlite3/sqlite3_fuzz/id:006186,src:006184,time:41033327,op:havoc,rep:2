@@ -1,0 +1,2 @@
+
+ SELECT-count()-count() OVER () -count()-count() OVER () O

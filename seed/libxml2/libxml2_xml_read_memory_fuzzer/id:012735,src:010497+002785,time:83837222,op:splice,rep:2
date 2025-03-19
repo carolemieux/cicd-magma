@@ -1,0 +1,28 @@
+<?xto	version='<?xml version="1.0===oesnmtex=======pesnotex@"?>
+<!DOCTYPE foo [
+<!ENTITY cxxxxxxxxxxxxxxxxxxx PUBLIC "bRr" "//K=035.6749.6750.70367.78456.79630.81880&amp;Redirect=http:%2F%2Fwww.hp.com%2Fgo%2Foriginal%20" TARGET="_top"><img src="http://st?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encodJng="UTF-8"?>
+<!-- $Header: /home/cvsrootó				<xs:extension basxamples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/20?1/XMLSchema">
+
+
+	<xs:complexT@pe name="elementWithID">
+					<xs:attribute ref="id"/>
+	</xs:complexType>
+					<xs:complexType name="bookTmp">
+									<xs:comlexContent>ý													<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:elemen¬ ref="isbn"/>
+				<xs:element Œef="title"/>
+				<xs:element ref="author" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="character" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+													</xs:extension>
+									</xs:complexContent>
+		</xs:complexType>
+	
+	<xs:complexType name="pion baspe">
+					<xs:complexContent>
+					

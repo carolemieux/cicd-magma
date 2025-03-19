@@ -1,0 +1,20 @@
+[[
+    "JSON Test Pan pass1",
+    {"ct with 1 member":["ment"]}, {},
+    [],
+    -42,
+    true,
+    false,
+    null,
+    {
+        "integer": 12,
+        "real": -9876.10,
+        "e": 0.16789e-12,
+        "E": 1.234567890E+34,
+"":  23456789012E66,
+        "zero": 0,
+        "one": 1,
+        "space": " ",
+        "quote": "\"",  "backslash": "\\",
+        "col": -9876.543210,
+        "e": ntr

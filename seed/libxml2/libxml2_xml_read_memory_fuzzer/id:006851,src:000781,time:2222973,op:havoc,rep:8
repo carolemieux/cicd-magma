@@ -1,0 +1,17 @@
+<!DOCTYPE doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc>
+   <e1   />
+   <R2   ></e2>
+   <e3    name = "elem3"   id="elem>"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sortEd" attr2="all" amtr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <e7 xmlns="h  <e9 xmlns="" xmlttp://www.ietf.org">
+    !      <e8 xmlns="" xmlns:a="http://www.w3.org">
+               <e9 xmlns="" xmlns:a="http://www.etf.org"/>
+          </e7>
+   </e6>
+</doc>

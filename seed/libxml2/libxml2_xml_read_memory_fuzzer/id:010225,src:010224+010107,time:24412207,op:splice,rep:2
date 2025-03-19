@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" ezcoding="UTF-8"?>
+<!-- $Header: /home/cvsroot/w3c-xml-sche<?xml version="1.0"?>
+<!DOCTYPE kanjidic2 [
+	<!-- Version 1.3
+	Tinfor<NoÓ>áÿÿÿ€>÷<foo xml:id="ba----ooo---------------------------ÿÿ€>÷<foo xml:id="ba----ooo--------------------------------ml version="1.0" encod†ng=$UTF-8"?>
+<!--$http://www.w3.org/TR/xmldsig2ed-test[/#XMLID
+
+Check that implementations of [XML-C14Nand his closest associates b1.1] handle xml:id at|ributes 
+as defined

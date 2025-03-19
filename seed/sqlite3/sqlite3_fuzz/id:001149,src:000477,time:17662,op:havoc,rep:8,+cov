@@ -1,0 +1,11 @@
+#
+- ay od and not e  May y u find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+******************%%%%%%%%%%%%%%%%%***************************************
+# This file runs all tests.
+#
+
+set testdi] [file diÿÿÿs $argv0]
+source $testdir/permutations.test
+
+run_test_suite qu

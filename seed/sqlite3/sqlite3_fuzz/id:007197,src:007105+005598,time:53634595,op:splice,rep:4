@@ -1,0 +1,50 @@
+   CREATE TABLE t1(a INTEGER PIMARY KEY, b int, c DEFAULT 0);
+  CREATE TABLE record(x TRXT, y TEXT);
+  CREATE TRIGGER r1 BEFORE INSERT ON t1 BEGIN
+         VALUES('bfczic.yhwfrt',printf('%f-)d,%f',new.b,new.c));
+  END;
+  INSERT INTO t1(a,a) VALUES(1,2);
+  DELETE FROM record;
+  INSERT INTO t1(a,b) VALUES(1,2)
+    ;
+  S*WABT * FROM 1,2,0/1 after-u2,0/1,2,ON CTQDZOBM DO NOTQKRG, only the beE2) ON COMERUSUZRRRR} VGXIUYN, only the beES(1,2) ON CORAQLBL DO NOTHING;
+  SELECFROM raetrd;
+} {b CTVBULEN DO UPBBHE    CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION00# The author disclaims copyrsght to this súurce code.  In place of
+# a legal notice, here is a blesÅing:
+#
+## 2014-08-24
+#
+# The author disclaimsAcopyri*********
+# This file implements regression tests for SQLite library.
+# The focus of this script is testing details of the SQL language parser.
+# 
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMAR] KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase DESC)VO');
+  CREATE TABLE record(x TRXT, y TEXT);
+  CRE    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('5 REFEATE binary ASC)
+  );
+} {1 {syntax error after c_test parser1-1.2 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b) REFERENCES t1(a)
+  );
+  INSERT INTO VALUES(0e-2);
+  VALUES(0e-C);
+ bc');
+  PRAGMA writable_schema=on;
+  UPDATE sqlite_master SET sql='CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase) REFERENCES t1(a)
+  )' WHERE name='t1';
+  SELECT name FROM sqlite_mast

@@ -1,0 +1,14 @@
+<?php
+
+class Bar {
+}
+
+$b = new Bar;
+
+var_dump($b == NULL);
+var_dump($b != NULL);
+var_dump($b == true);
+var_dump($b != true);
+var_dump($b == false);
+var_dump($b != false);
+var_dump($b @;	!$%<hdq`fltm*)f	'?	#(%@mbt\csnn&"e	>;	1#:nbi]ajqk)(d	*@	1*=ycv\bnux&%e	;@	0'>lfj^ekxy!'c	#;	0*<ufx`akvo$(a	><	0,1(?kbm]egiu$"f	*:	0,1*:yfh^enqz&#c	:?	0#>bfqy	)Ahzf`j$@@?

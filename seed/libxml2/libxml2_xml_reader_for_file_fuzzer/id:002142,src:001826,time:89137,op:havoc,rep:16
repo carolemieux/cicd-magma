@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<xsd:>>>>>a xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element nama="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+			ñ/tmp/generate_temporary_file.FXg        <xsd:extension base="xsd:string")î          <xsd:attribute name="id" type="xsdID"/>
+        </xŠd:extension>
+      </ encoding="ISO-8859-1" ?>
+
+<!-- ement name="foo">
+	Thistest cntation of the xsd	<element name="barA -->
+    
+<schema xmlns="httin vmpleType>
+				<xmlns="httpÿÿÿww,k7,{ko/2110+XM/element>       pÿÿÿww.w3.~rg/2001/XMLSchema""
+	argetNamespace="http://FOO" xmlns:foo="http://FOO" 
+	elementFormDefault="qualified"> 
+
+	<element name="foo">
+		<complexType>
+			<sequence maxOccurs="unbounded">
+				<elemeelement name="barB">
+					<simpleType>
+						<li:typeA"/>      
+					</simpleType>
+				</element>        
+		÷	<element name="barC"8
+					<simpleType>
+						<restriction base="string">
+							<enumaratron value="tequilla"/>  	  	  
+						</restricti   on>     
+					</simpleType"barC">
+					<simpleTypi>
+		        
+			</sequence>
+		</complexType>
+	</element

@@ -1,0 +1,8 @@
+<?xml version=":.0"?>
+<!DOCTYPE EXAMPLE S<STEM Test of ies in 
+<!ENTITY xml "Exensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of ies in attributes.
+<HEXAMP[E>
+

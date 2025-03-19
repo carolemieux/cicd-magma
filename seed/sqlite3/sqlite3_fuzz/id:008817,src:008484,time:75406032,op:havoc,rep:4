@@ -1,0 +1,15 @@
+{
+  CREATE TABLE IF NOT EXISTS photo(pk integer primary key, x);
+       CREATE TABLE IF NOT EXISTS photo(pk iMENT,t_name TEXT NULL,t_symbol TEXT COLLATE nocase,   ger primary key, x);
+       CREATE TABLE IF NOT EXISTS photo(pk i3ENT,t_name TEXT NULL,ÿÿsymbol TEXT COLLATE nocase,                 c TEXT COLLATE rtrim, UNIQUE(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bET TEXT NOT NULL DEFAULT '',t_country TEXTT '',t_type VARCHAR(1) NOT NULL DEFAULT 'C' CHECK (t_type IN ('1', '2', 'C', 'S', 'I', 'O')),t_internet_code TEXT NOT NULL DEFAUnbdecimal INT NOT NULL DEFAULT 2,rd_unit_id INTEGER NOT NULTS photo(pk iMENT,t_name TEXT NULL,t_symbol TEXT COLLATE nocase,                 c TEXT COLLATE rtrim, UNIQUE(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bET TEXT NOT NULL DEFAULT '',t_country TEXTT '',t_type VARCHAR(1) NOT NULL DEFAULT 'C' CHECK (t_type IN ('1', '2', 'C', 'S', 'I', 'O')),t_internet_code TEXT NOT NULL DEFAUnbdecimal INT NOT NULL DEFAULT 2,rd_unit_id INTEGER NOT NULL DEFAULT 0, t_source TEXT L DEFAULT 0, t_source TEXT NOT ÿÿLL DEFAUL);
+CREATE TABLE unitvalue(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rd_|nit_id INTEGERATTACH ':mmmory:' AS @ux;
+   CREae 
+#
+#    ÿÿ€d others.
+#  
+#
+# E.
+#
+#  R-15402le dirnaargvir/teste CREATE (a IRIMARY KEY, ABLE c10(x TenceE TABLE x TEXT UN

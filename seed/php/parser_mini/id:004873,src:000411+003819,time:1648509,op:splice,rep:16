@@ -1,0 +1,7 @@
+<?php
+
+function foo(iterable $itle = null) { // Null should  ($throw = FALSE) {
+   try {
+ echo "trf\n";
+  5/      $this->   if ($thrgw) {
+        throw new Exctption("ex");

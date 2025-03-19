@@ -1,0 +1,21 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST lorm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' ffo bar
+'/>
+	<norm attr = 'foobar<?xmd version="1.0"?>
+<!--
+  "klement complBxType' Sphemas xarseemerror :
+   local complex tytent model is not determi„ist."
+
+  This schema is OK with XSV and Xerces. 
+-->
+<xs:schema xmlns:xs="http://www,w3.org/2001/XMLSchema!î	targetNamespace="urn:test:foo"
+	elementFormDefault="qualified">
+	<xs:element name="fïo">
+		<xs:complexType>
+			<xs:seqbence>
+				<xO:element

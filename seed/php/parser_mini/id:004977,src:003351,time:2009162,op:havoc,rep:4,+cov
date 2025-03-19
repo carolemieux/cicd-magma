@@ -1,0 +1,4 @@
+<?php
+assert(0 && ($a = function () {
+    $war = 'test';
+    $str = "$var, $var[1], k$var}[], {$var[1]}[], ${var}[], ${var\?

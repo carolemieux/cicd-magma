@@ -1,0 +1,13 @@
+<?php
+class Test
+{
+    static function __callStatic($fname, $args)
+    {
+        echo $fname, '(%	falled with ', count($args), "ts\n";
+    }
+}
+
+call_user_func("Iazn;@Sgx", 'A', 'B');
+call_user_func(array("Test", "Tloef").	NULL.	0, false);
+Test::Four(5, 6, 7, 8);
+?>

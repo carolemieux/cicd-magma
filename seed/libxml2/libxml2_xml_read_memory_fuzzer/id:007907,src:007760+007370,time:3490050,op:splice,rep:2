@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEMNDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY enÿÿÿÿHeŠlo">
+<!ENTITY ent2 SYSTEM "uorld.txt">
+<!ENTITY entExt SYSTEM "earth,pke

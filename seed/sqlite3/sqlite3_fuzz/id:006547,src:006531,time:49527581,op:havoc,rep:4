@@ -1,0 +1,4 @@
+ SELECT instr('ab’’’’’’’’’’’’’–’’’’’’’’’’’’’’’câ‚¬xyzzy','câ‚¬xyz');}
+} {3f
+do_test instr-1.31 {
+  db evQELECT instr(x'0102030405',x'01'

@@ -1,0 +1,8 @@
+=1U\|<?xml ve<?xml verioon='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '*gn:!COEMENT test (#PCDBQA) >' >
+<!ENTITY % defmiddle '&ly;!Ciddle (gcjt) >' >
+<!ENTITY % defroot '&lt;!ELEMENT root (mrbasa) >' >
+%defroot; %defmiddle; %deftest;
+]>
+<root><rpedle>Miest>saEMENT test (#PCd

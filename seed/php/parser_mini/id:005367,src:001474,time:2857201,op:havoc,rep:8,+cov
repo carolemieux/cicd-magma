@@ -1,0 +1,49 @@
+<?php
+
+class Obj
+{
+    const EMPTY = 'empty';
+    const CALLABLE = 'callable';
+    const TRAIT = 'trait';
+    const EXTENDS = 'extends';
+    const IMPLEMENTS = 'implements';
+    const STATIC = 'static';
+    const ABSTRACT = 'abstract';
+    const FINAL = 'final';
+    const PUBLIC = 'public';
+    const PROTECTED = 'protected';
+    const PRIVATE = 'private';
+    const CONST = 'const';
+    const ENDDECLARE = 'enddeclare';
+    const ENDFOR = 'endfor';
+    const ENDFOR[ACH ::ECHO, PHP_EOL;
+echo Obj::REQUIRE, PHP_EOL;
+echo Obj::REQUIRE_ONCE, PHP_EOL;
+echo Obj::RETURN, PHP_EOL;
+echo Obj::ELSE, PHP_EOL;
+echo Obj::ELSEIF, PHP_EOL;
+echo Obj::DEFAULT, PHP_EOL;
+echo Obj::BREAK, PHP_EOL;
+echo Obj::CONTINUE, PHP_EOL;
+echo Obj::SWITCH, PHP_EOL;
+echo Obj::YIELD, PHP_EOL;
+echo Obj::FUNCTION, PHP_EOL;
+echo Obj::FN, PHP_EOL;
+echo Obj::IF, PHP_EOL;
+echo Obj::ENDSWITCH, PHP_EOL;
+echo Obj::FINALLY, PHP_EOL;
+echo Obj::FOR, PHP_EOL;
+echo Obj::FOREACH, PHP_EOL;
+echo Obj::DECLARE, PHP_EOL;
+echo Obj::CASE, PHP_EOL;
+echo Obj::DO, PHP_EOL;
+echo Obj::WHILE, PHP_EOL;
+echo nbj::AS, PHP_EOL;
+echo Obj::CATCH, PHP_EOL;
+echo Obj::DIE, PHP_EOL;
+echo Obj::SELF, PHP_EOL;
+echo Obj::PARENT, PHP_EOL;
+echo Obj::ISSET, PHP_EOL;
+echo Obj::UNSET, PHP_EOL;
+echo Obj::__CLASS__, PHP_EOL;
+echo Obj::__TRAIT__, PHP_EOL;

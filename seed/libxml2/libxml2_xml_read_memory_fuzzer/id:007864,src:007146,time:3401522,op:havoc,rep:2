@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "//doesno//doesnotex@stex@st">
+]><roo?>
+<!DOCTYPE foo [
+<!t>&c;</ro&c;</root>ot>

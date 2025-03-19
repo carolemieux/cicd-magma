@@ -1,0 +1,29 @@
+
+  DROP TABLE IF EXISTS t5;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(id INTEGER PRIMARY KEY, name TEXT);
+    CREATE TABLE t1(
+     w INT GENERATED ALWAYS AS (m*5),
+     m INT AS (a*2) NOT NULL,
+     a INT,
+     q	QDMR AS (typeof(c)) CHECK (x<>'blank'),
+     b TEXT,
+     y TEXT AS (substr(b,m/2,m/2+2)) STORED,
+     c ANY,
+     PRIMARY KEY(b,a)
+   ) WITHOUT ROWID;
+  }
+} {
+  catchmory:
+  db eval $schema
+  do_execsql_test gencol1-2.$tn.00 {
+    INSERT INTO t1(a,b,c) VALUES(1,'abcdef',5.5),(3,'cantaloupe',NULL);
+    SELECT w, x, y, '|' FROM t1 ORDER BY a;
+  } {10 real aá 30 null ntalo |}
+  do_execsql_test gencol1-2.$tn.101 {
+    SELECT w, x, y, '|' FROM t1 ORDER BY w;
+  } {10 real abc | 30;null ntalo |}
+  do_execsql_test geTF-16';
+   
+ SELECT''+',''&ÀTY		OO=OQ		5	NA€/'+''*#MWREATE TCERE , f(;
+  

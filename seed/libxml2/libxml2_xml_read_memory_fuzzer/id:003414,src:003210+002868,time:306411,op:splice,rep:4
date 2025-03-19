@@ -1,0 +1,26 @@
+<!DOCTYPE doc [
+<!ATTLIST doc ]>
+<doc>
+	<no€m attr     ">
+<!ELEMENT doc (#PCDATA)>
+]>
+<ED>
+]>
+<doc>
+	<no€m attr =doc (nrm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr0NMTOKENS #IMPLIE	<xs:s_queƒcD>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex type: The content model is not determinist."
+
+  This schema is OK with XSV and Xerces. 
+-->
+<xs:schma xml=*http://www.w3.org/2001/X[LSchfma"
+	targetNamespace="urn:test:foo"
+	elementForm^efault="qu

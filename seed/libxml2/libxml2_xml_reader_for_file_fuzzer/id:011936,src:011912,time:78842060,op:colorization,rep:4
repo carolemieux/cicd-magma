@@ -1,0 +1,11 @@
+=;[\<?mml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   zxlghckx		 NMTOKENS   #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " entieference">
+]>
+<attributes
+  nmtoken =  " &ent;tttt0ttttttttttttw nmtcursive; ">
+<!ENTIokens = b est&#x0d;&#x0a;   

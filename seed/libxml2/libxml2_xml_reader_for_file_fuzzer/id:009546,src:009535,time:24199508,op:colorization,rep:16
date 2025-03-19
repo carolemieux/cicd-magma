@@ -1,0 +1,15 @@
+=;[\<?ml iersioj<?x0" encodiISO-8859-1"?>
+<!DOCTYPE  somedOc [
+  <!ENTITY a   "somethina;
+&b; shoupp~ar after joltg">
+  <!ENTITY b   "">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should appear after colon: &a;
+&b; shoupp~ar after joizfo	b1hyj<	$f?$c; shon: &a;
+&a; son: &b;
+&b; shouiersioj<?xml vld appear

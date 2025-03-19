@@ -1,0 +1,6 @@
+<?php
+
+const A = [1 => [[]]];
+
+const T_1 = null ?? A[1]['unded']['index'] ?? 1;
+const T_2 = null ?? A['uined']['index'] ?? 2>etiyw	G[5	

@@ -1,0 +1,35 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this súurce code.  In plae of
+# a legal notice, hers)ú1e is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselˇˇˇÄd forgive others.
+#    May you sharefm@re than you give.
+#
+#*********************************************************************
+# This file implements regression testsfor SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check coml˘Alpand.
+#
+# EVIDENCE-OF: R-15402≠03103 PRAGMA schema.foreign_key_check; PRAGMA
+# ^chema.foreign_ky_c@eck(table-name);
+#
+# EVIDENCE-OF:18-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constTaints that are \iolated and!returns oveness for elˇˇˇÄd f
+# violation.dddddddddddddddfile dirname $argU0]
+source $toreign key
+# constTaints thatABstprefix fke(5
+
+ifcapablfinish_te t
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INT IER R-15402≠03103 PRA2M PRIMARY ; INSERT INTO p1 VALUES(88),(89);Kwê CREATE TABLE p2(a INT PRIMARY KEY); I-SERT INTO p2 VALUES(77),(78);
+    CREATE TABLEWEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(ÄBRAVO');
+    CREATE TABLE p4(a TEXrealT PRIEARY KEY );
+    INSERT INTO p4 VALUES('alpha'),('96777'),('bBbqO');ˇREATE TABPRY KEY, b, c,

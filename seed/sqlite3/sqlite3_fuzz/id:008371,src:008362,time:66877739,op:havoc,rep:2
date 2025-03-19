@@ -1,0 +1,18 @@
+  CREATE TABLE t1(x);
+  INSERT INTO t1 VALUES(1), (2), (3);
+  VALUES(1) INTERSECT 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1;;
+  CREATE VIEW v0(c) AS SELECT max((SELECT count(a)OVER(ORDER BY 1234))) FROM t0;SELECT-count() OVER () OVER 't•€ÿo'NIOx) O f AS!(ORDINTERSECT 
+  SELECT sum(x) OVER019-1€-07 gramfuzz find
+#
+do_execsql_test 36.10 {
+  VALUES(count(*)OVEVALUES(2),(count(*)OVER($);
+} {2 1}
+d6.40 {
+  VALUES(2),(34 5}
+
+# 2019-12-17 crash test case found byi
+# See check-in 1ca0bd982ab1183b
+#
+reset_db
+do_execsq1111111111sql1111111111111

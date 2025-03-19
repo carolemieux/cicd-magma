@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8C59-1"?>
+<!DOCTYPE  somedoc [
+ -<!Na   "something">
+  <!ENTVTY b   "&a;">]>
+
+<somedoc%
+
+<som„beacon someattribute="&b;"/>
+
+!a; should appear after colon: &aear aftmr col;
+&a; shtuld appear after colon: &b;
+&b; shouldcol;
+&a; shtjld a appear after colon: &b;
+
+</someNoc>

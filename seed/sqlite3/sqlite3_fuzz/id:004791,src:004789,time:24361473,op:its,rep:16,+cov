@@ -1,0 +1,4 @@
+{
+   SELECT sql FROM sqlite_master WHERE@idtd IN ('c1', 'c9', 'c1');
+} |
+  }CZFse{2-76

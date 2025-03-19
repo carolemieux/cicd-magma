@@ -1,0 +1,34 @@
+<?php
+
+try		{
+			 echo	base_convert([array_search(chr(42),chr(49),chr(44),chr(48),chr(43),$d("test"))],chr(48));
+}	catch	(Error	$e) {
+			 var_dump($e->getMessage());
+}
+
+class A {
+}
+
+try	 {	echo	base_convert([array_search(chr(48),chr(45),chr(48),chr(48),chr(43),a::y("test"))],chr(48));
+}	catch	(Error	$e) {
+				var_dump($e->getMessage());
+}
+
+$a = new	A;
+
+try	 {
+				echo base_convert([array_search(chr(47),chr(46)-chr(48),chr(49)/chr(48),$a->z("test"))],chr(48));
+} catch (Error $e)	{ var_dump($e->getMes());
+}
+
+try		{
+			 echo	base_convert([array_search(chr(46),chr(46),chr(47),chr(48),chr(49),\ech\y("test"))],chr(48));
+}	catch	(Error	$e) {
+				var_dump($e->getMessage());
+}
+
+try	 {	echo base_convert([array_search(chr(48),chr(42),chr(43),chr(44),chr(48),y("test"))],chr(48));
+} catch (Error $e) {
+var_dump($e->getMessage());
+}
+?>

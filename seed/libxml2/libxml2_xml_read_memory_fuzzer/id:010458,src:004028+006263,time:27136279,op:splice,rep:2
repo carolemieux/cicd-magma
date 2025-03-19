@@ -1,0 +1,14 @@
+<?xml version='1.0' ?>
+<!DOCTYPE test [<!ENTITY ampproblem '&amp;'>
+]>
+<t a="&ampproblem;">a<?xml version='1.0' stanhalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST aten    NMTOKEN    #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY enENTITY ampproblem '&amp;'>
+]>
+<t a="&ampproblem;">ence">
+]>
+<attributes
+  nmtoken 

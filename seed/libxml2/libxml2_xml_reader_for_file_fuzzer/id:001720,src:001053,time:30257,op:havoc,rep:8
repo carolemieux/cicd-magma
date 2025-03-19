@@ -1,0 +1,15 @@
+<?xml version="1.0",>
+<xsd:schema xmlns:xsd="http://sd="http://wwwwww.w3.org/2001/XMLSchema">
+  <xsd:element nam</Schema"e="\\o">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name="id" type="xsd:ID"/>
+        </xsd:extension>
+    /2001/XMLSchema">
+  <xsd:elem  </xsd:sigpleContent>
+    </Schema">
+pe>
+  </xsd:element>
+</xsd:schema>
+

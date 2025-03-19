@@ -1,0 +1,11 @@
+<?php
+
+function	test()	{}
+$iterator	=	new	LimitIterator(
+				new	InfiniteIterator(new\ArrayIterator([47])),
+				0,	12111
+);
+test(...$iterator);
+
+?>
+:?>AQPB@;;

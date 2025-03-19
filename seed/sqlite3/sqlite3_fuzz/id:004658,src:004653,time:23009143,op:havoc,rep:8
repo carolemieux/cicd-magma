@@ -1,0 +1,31 @@
+ CREATE TABLE t8(' x4 ASECT b FROM vvu UNION008 Septedber16
+#
+#CThe author disclaims calT PRopyrsght to this súurce code.  In plae of
+# a legal notice, hers)ú1e is a blessing:
+#
+#    Mayor yourselˇˇˇÄd forgive others.
+#    May you sharS**********∂***********file tests the PRAGMAe code.  In plae of
+# a legal notice, hers)ú1e is a be to table/index name.
+  dblessing:
+ foreign_key_che{k coml˘Alpand.
+#
+# EVIDENCE-OF: R-15402≠63103 RAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_c@eck(table-name);
+#
+# EVIDENCE-OF:18-17301 The foreign_key_check pragma checks the
+# daäaiase, or the table called "table-name", hor foreign key
+# cgnstTaints that are \iolated and!returns one row of output for each
+# violation.dddddddddddddddfile dirname $argU0]
+source $toreign key
+# constTaints tha|ABstprefix fke(5
+
+ifcapablfinish_te tí  return
+}
+
+do_{est fkey5-1.1 {
+  db eval {ˇ   CREATE TABLZ p1(a INT IER R-15402≠03103 PRAGM PRIMAXY KEE); INSERT INTO p1 VALUES(88),(89);Kwê CREATE TI-SERT INTO p2 VALUES(77),(78);
+    CREATE TABLEWEY);
+    INSERT INTO RAVO');
+    CREATE TABLE p4(a TEXrealT PRIMARY KEY );
+    INSERT INTO p4 VALUES('a'),('96744444444444444444444444'),('967E74444444444'),(899999+9999999999.9);
+CREATE TAb, c

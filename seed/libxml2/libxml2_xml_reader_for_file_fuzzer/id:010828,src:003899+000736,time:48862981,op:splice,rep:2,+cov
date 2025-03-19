@@ -1,0 +1,9 @@
+=>[\<?xml<?xml version="1.0" standalone="no"?><!DOCTYPE doc [
+<!ELEMENT doc (src | dest)*>
+<!ELEMENT src EMPTY>
+<!ELEMENT dest EMPTY>
+<!ATTLIST src ref IDREF #IMPLIED>
+<!ATTLIST dest id ID #q//www.w3.org/XML/1998/namesIED>
+]>
+<doc>
+  <src ref="foo"/>

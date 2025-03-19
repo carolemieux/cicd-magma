@@ -1,0 +1,67 @@
+<?jml vers<!DOCTYPE doc [
+<!ELEMENT doc (a)? >
+<!ELEMENT a EMPTY>
+]>
+<?xml version="1.0" encoding="US-ASCII"<?xml version="1.0" encoding="EUC-0;&laug‡10;&laugh10;&laugh10;&laubh10;&laug=>
+a
+a
+=>
+a
+b
+a
+b
+a
+b
+=>
+b
+=>
+a
+h10;&laugh10;&lauJP"?>
+<foÙÙo>
+Text with EUC-JP chars at position 214 (0xd@)___
+______________T
+____]`^`^\^^foo [
+<!ENTITY c PUBLIC "bII›IIIIIIIIIIIIIIIIIIIIar" "/etc160;B#1;&#160;&#160160;[^[][[`\<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUÂLIC "bar" "/etc160;B#1;&#160;&#160160;&#160;oo [
+<!ENTITY c PUBLI&#160;&#16le="Icrontcom -ÜWarUB/etc160;B#1;&#160;&#160160;[^[][[`\<?xml veZsion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc160;B#1;&#160LIC "barith toar" "/Ytc160;B#1;&#1
+b
+=>
+a
+h10;&laugh10;&lauJP"?>
+<foo>
+Text with EUC-JP chars at position 214 (0xd@)___
+______________T
+____]`^`^\^^foo [T doc (a)? >
+<!ELEMENT a EMPTY>
+]>
+<?xml version="1.0" encoding="US-ASCII"<?xml version="1.0" encoding="EUC-0;&laug‡10;&laugh10;&laugh10;&laubh10;&laug=>
+a
+a
+=>
+a
+b
+a
+b
+a
+b
+=>
+b
+=>
+a
+h10;&laugh10;&lauJP"?>
+<foÙÙo>
+Text with EUC-JP chars at position 214 (0xd@)___
+______________T
+____]`^`^\^^foo [
+<!ENTITY c PUBLIC "bII›IIIIIIIIIIIIIIIIIIIIar" "/etc160;B#1;&#160;&#160160;[^[][[`\<?xml version="1.0"?>
+<!DOCTYPE foo [
+
+<!ENTITY c PUBLIC "bII›IIIIIIIIIIIIIIIIIIIIar" "/etc160;B#1;&#160;&#160160;[^[][[`\<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUÂLIC "bar" "/etc160;B#1;&#160;&#160160;&#160;oo [
+<!ENTITY c PUBLI&#160;&#16le="Icrontcom -ÜWarUB/etc160;B#1;&#160;&#160160;[^[][[`\<?xml veZsion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc160;B#1;&#160LIC "barith toar" "60;&#160160;#160;&#160;&#160;&#160;&#160;&#1>

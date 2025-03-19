@@ -1,0 +1,7 @@
+  CREATE TABLE t1(x);
+  INSERT INTO t1 VALUES(1), (2), (3);
+  VALUES(2),(3),(count(*)OVER()),(4),(5);
+} {2 3 1 4 5}
+
+# 2019-12-17 crash test case found by Yongheng and Rui
+# See che# 2005 Nov

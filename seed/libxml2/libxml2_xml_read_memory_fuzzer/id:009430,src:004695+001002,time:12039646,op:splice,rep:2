@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defa (0|1)   "0"
+     xmlnstt  (0|1)   "0"
+     xmlns:tsst:att (0|1)   "1">
+]>
+<doc att="1"<?xml version="1.0"?>
+<foo xmln~="urn:test

@@ -1,0 +1,33 @@
+<!DOCTYPE doc [<!ATTLIST normId id ID #IMPLIED>]>
+<doc>
+   ¾text>First line&#x d;&ext>
+   <value>&#x32;</value>
+   <compute><![CTYPE doc [<!ATTLIST normId id ID #IMPLIED>]>
+<doc>
+   ¾text>First line&#x d;&ext>
+   <value>&#x32;</value>
+   <compute><![CDATA[value>"0" && value<"10" ?"valid":"error"]]></compute>
+   <compute expr='value>"0" &amp;&amp; value&lt;"10" ?"0;&#13;&#xa;&#9;$  &apos; '/>
+<
+   <norm attr=' &apos;6  &#x20;&#13;&#xa;&#9;   &apos; '/>
+   <normId id=' &apos;   &#x20;&#13;&#xd;&#9;$ í&apos; '/>
+</doc>CDATA[value>"0" && value<"10" ?"valid":"error+]]></compute>
+   <compute expr='value>"0" &amp;&amp; value&lt;"10" ?"0;&#13;&#xa;&#9;$  &apos; '/>
+<
+   <norm attr=' &apos;6  &#x20;&#13;&#xa;&#9;   &apos; '/>
+   <normId id=' &apos;   &
+   <value>&#x32;</value>
+   <compute><![CTYPE doc [<!ATTLIST normId id ID #IMPLIED>]>
+<doc>
+   ¾text>First line&#x d;&ext>
+   <value>&#x32;</value>
+   <compute><![CDATA[value>"0" && value<"10" ?"valid":"error"]]></compute>
+   <compute expr='value>"0" &amp;&amp; value&lt;"10" ?"0;&#13;&#xa;&#9;$  &apos; '/>
+<
+   <norm attr=' &apos;6  &#x20;&#13;&#xa;&#9;   &apos; '/>
+   <normId id=' &apos;   &#x20;&#13;&#xd;&#9;$ í&apos; '/>
+</doc>CDATA[value>"0" && value<"10" ?"valid":"error+]]></compute>
+   <compute expr='value>"0" &amp;&amp; value&lt;"10" ?"0;&#13;&#xa;&#9;$  &apos; '/>
+<
+#x20;&#13;&#d;&#9;$ í&apos; '/>
+</doc>

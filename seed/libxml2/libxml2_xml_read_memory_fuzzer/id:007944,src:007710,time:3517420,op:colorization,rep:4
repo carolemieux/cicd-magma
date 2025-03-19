@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a | b | c)*) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b <!ENTITY % c SYSTEM "httz?............g/c/c.dtd">
+)b@>%ENTITY % a SYSTEM "http:+/exomple.oro/a/a.qtd">
+%a;
+<

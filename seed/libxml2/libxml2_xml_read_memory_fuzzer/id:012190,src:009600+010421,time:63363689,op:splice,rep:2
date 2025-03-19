@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml veryrgm:"1.0"?>
+<!DOCTYPE a:outer [
+
+<!ELEMENT a:outer (a:inner)>
+<!ATTLIST a:outer xmlns:a CDATA #FIXED 'urn:urn:namespace'>
+
+<!ELEMENT a:inner EMPTY>
+<!ATTLIST a:inner xmlns:a CDATA 
+<a:outer xmlns:a="urn:namespace">
+  <a:innttr CDATA #FIXED 'yes'>
+namespace'>
+
+<!ELEMENT a:inner EMPTY>
+<!ATTLIST a:inner xmlns:a CDATA 
+<a:outer xmlns<a="urn:namespace">
+  <a:innttr CDATA #FIXED 'yes'>
+]>
+
+<a:outer xmlns:a="urn:namespace">
+  <

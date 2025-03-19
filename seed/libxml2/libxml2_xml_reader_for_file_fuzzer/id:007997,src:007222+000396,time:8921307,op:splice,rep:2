@@ -1,0 +1,8 @@
+=1U\|<?xml ve<?xersion='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&lt;!ELEMEest (#PCDATA) >' >
+<!ENTITY % defmiddle '&lt;!ELEMENT middle (test) >' >
+<!ENTITY % defroot '&lt;!ELEMENT root (middle) >' >
+%defroot; %deDmiddle; %deftest2
+]>
+<root><middle><test>sample</test></mid

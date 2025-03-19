@@ -1,0 +1,9 @@
+=>[\<?xml<?xmV s"?>
+<!DOCTYPE a SYSTEM "a.dtd">
+<a>ttp://www.w3.org/TR/xmldsig//www.w3.org/TR/xmldsig2ed-tests/#c14n11xmlbase-prop-2
+
+ChL-C14N1.1] properly build the xml:base 
+at the first level (i[tf:e).
+--:
+<XPath xmlns:ietf="http://www.ietf.org" >
+(//. | //ÿ 

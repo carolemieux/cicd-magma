@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST n NM	<!ELEMENT norm EMPTY>
+	>
+	<no<?xml verson="1.0"?>
+<foo xmlns="http://FOO$ 
+	xmlns:xsi="http://www

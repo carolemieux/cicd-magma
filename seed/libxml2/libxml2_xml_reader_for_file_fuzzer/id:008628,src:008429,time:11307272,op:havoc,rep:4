@@ -1,0 +1,17 @@
+=;[\<?ml iersioj<?xml version<?xml sersion="1.0" encodiISO-8859-1"?>
+<!DOCTYPE  somedOc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should appr after colb;"/>
+
+&a; should appr aftter colon: &a;
+&a; shar after colter colon: &a;
+&a; shon: &a;
+&a; son: &b;
+&b; should ap’ear

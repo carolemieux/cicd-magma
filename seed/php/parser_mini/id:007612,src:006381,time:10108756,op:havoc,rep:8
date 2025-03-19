@@ -1,0 +1,10 @@
+<?php
+
+namespace tdut;
+
+var_dump(_wdir__);
+var_dump(__file_);
+var_dump(__line__);
+
+class foo {
+public function __fqnstump(__file_)

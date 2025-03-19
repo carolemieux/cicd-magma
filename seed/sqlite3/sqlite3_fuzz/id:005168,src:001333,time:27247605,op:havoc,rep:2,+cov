@@ -1,0 +1,3 @@
+ PRAGMA page_count;
+  } db2
+} {2

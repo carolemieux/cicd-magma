@@ -1,0 +1,27 @@
+<NoÓ>áûÿÿ€>÷<foo xml:id="b••Õ•ê••oo-"<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!EÓ>áûÿÿ€>÷<foo xml:id="b••Õ•ñ••oo-"<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTO>÷<foo xml:id="b••Õ•ê••oo-"<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!EÓ>áûÿÿ€>÷<foo xml:id="b••Õ•ñ••oo-"<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = 'KENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?=ï<!--
+  "element complexType: Schemas parser error :
+   local complex type: The content model is not determinist."
+
+w3.org/2001/XMLSchema"
+	targetNamespace="urn:test:foo"
+	elementFormDefault="qualified">
+	<xs:element name="foo">
+		<xs:complexT

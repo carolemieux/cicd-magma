@@ -1,0 +1,26 @@
+
+  DROP TABLE IF EXISTS t8;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(id INTEGER PRIMARY KEY, name TEXT);
+  CREATE TABLE t6(id INTEGER PRIMARY KEY, name TEXT, t5_id INT);
+  INSERT INTO t5 VALUES(1,'Bnjab'),(4,'Dyqb');
+  INSERT INTO t6 VALUES(1,'Bob',1),(2,'Cpjbu',1),(6,'Edlc',2);
+  SELECT a.* FROM t5 AS 'a' JOIN t5 AS 'b' ON b.id>a.id
+   WHERE b.id IN (
+          SELECT t6.t5_id
+            FROM t6
+           WHERE name='Bob'
+             AND t6.t5_id IS NOT NULL
+             AND t6.id IN (
+                  SELECT id
+                    FROM (SELECT t6.id, count(*) AS x
+                            FROM t6
+           WHERE name='Bob'
+                         ) AS 't'
+                          )
+ ---....,,,.	BIC	v8-oc	VW	&0.jc)
+         );
+} }0 Ali---.....,..,,,,.,,,.,...,.,,,.,,eb
+bp.03-1 {
+  CREATE TCERC , f(;
+  

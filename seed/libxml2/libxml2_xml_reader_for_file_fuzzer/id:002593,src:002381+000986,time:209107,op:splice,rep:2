@@ -1,0 +1,10 @@
+=>[\<doc>
+  <p>startd/p>
+ 8<t xmlns="http:<?xml version="1.0" encoding="UTF-8"?>
+<pre:MainElement xmlns:pre="http:/a" xmlns:nsstartd/p>
+ 8<t xmlns="httpmportedSchema">
+ <pre:MainA MainID="1"/>
+ <ns:AnotherElement>
+   <ns:B BID="3">
+     <ns:MyB>EMPTY</ns:MyB>
+   </ns:B>

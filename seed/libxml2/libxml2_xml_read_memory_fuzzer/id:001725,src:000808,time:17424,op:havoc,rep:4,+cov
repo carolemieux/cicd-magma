@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "exampl&xml;">
+  Test oe.dtd" [
+<!ENTITi xml "Extensible Markup Language">ô\>
+<EXAMPLE prop1=2a&amp;b" prop2="&xml;">
+  Test of entities in attributes.
+</EXAMPLE>
+

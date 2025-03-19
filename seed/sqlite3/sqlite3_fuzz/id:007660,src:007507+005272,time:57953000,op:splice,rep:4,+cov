@@ -1,0 +1,4 @@
+
+  SELECT * FROM t3 INDEXED BY st3_1 WHERE e = 10 
+} {SEARCH TABLE t3 USX sqlite_autoindex_t3_1 (e=?)}
+do_test indexedby-3.10 {

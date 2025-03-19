@@ -1,0 +1,19 @@
+CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b INT PRIMARY KEY ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+  ) WITHOUT ROWID;
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+		KCQBDN	f.a.e	ASPY	r0	MTAFH	CG	c:~	}0	4	4	4	9	7|*	ZtqczqGF	ODFIA	q0&				d	SKUXNF	UH	ASOBJYAY	XFQKBBA-					f	WMPMSF	ML	DJPDVLBQ	VNSMOC-				T	GBG	YT	FHHCZTFZ	CCUT		!>		WW-a'	OEKXBV*0.4.3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 10.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.REPLA

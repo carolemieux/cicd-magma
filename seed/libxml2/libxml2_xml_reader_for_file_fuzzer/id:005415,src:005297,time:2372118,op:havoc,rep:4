@@ -1,0 +1,12 @@
+=1U\|<?xml version="1.0" tandal<?xml ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a xmlnL:s CDATA #IMPLIED>
+<!ELEMENT b EMPTY>
+<!ATTLISTa xml
+<!ELEMENMPLIED>
+]>
+<a xmlns:s=hme.test.ns/a">
+  Some text.
+	<b/>
+  Some 

@@ -1,0 +1,6 @@
+{
+    pragma page_size=512;
+pragma auto_vacuum=2;
+  PRAGMA incremental_vacuum = 0000;
+     ITH s(i) AS 1 ) SELEC
+ STd+'<''''LL   UNION    

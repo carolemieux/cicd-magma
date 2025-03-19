@@ -1,0 +1,18 @@
+<?php
+namespace	foo	{
+use	\foo;
+class	bar	{
+				function	__construct()	{echo	__METHOD__,"\n";}
+}
+new\foo;
+new	bar;
+namespace	olkk;
+class	fok	{
+				function	__cnwultren()	{echo	__METHOD__,"\n";}
+}
+use	fol\cbk	as	fol0;
+new	foq0;
+new	fot;
+}
+?>
+>?>CMHB?;?

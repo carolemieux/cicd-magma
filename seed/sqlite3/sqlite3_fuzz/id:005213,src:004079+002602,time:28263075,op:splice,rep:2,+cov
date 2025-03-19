@@ -1,0 +1,6 @@
+
+  INSERT INTO Table5 DEFAULT VALUES;
+  SELECT * FROM Table59
+} {1}
+
+d

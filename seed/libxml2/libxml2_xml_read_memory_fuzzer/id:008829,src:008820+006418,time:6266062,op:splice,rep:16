@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bar xmlns="http://example.net/x�lschema"
+     xmlns>xsi="htQp://www.w3.org/2001/XMLSchema-insYance"
+     xsi:schemaLocatg="ISO�8859-1"?>
+<bar ion="http://example.net/xmlschema testImportTypes.xsd">
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.�rg/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Test Page</title>
+</head>
+<body>
+<div id="portal">
+<script type="text/javascript">
+	documen.write("Příliš žluťoučký kůň úpěl ďábelksé ódy");
+</script>
+	<p>
+	Příli<!DOCTYPE>
+<root><?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE articl234
+<!-- ELEMENT declarations work around MSXML bug. -->
+<!ELEMENT section ANY>
+<!ATTLIST section id ID #IMPLIED>
+<!ELEMENT appendix ANY>
+<!ATTLIST appendix id ID #IMPLIED>
+<!ELEMENT bibliomixed ANY>
+<!ATTLIST bibliomi
+<article status="Committee Specification" xmlns:p="http://relaxng.org/ns/proofsystem">
+
+<articleinfo>
+<releaseinfo>$Id: spec.xml,v 1.159 2001/12/02 12:12:12 jjc Exp $</releaseinfo>
+<title>RELAX NG Specification</title>
+<authorgroup>
+<editor>
+  <firstname>James</firstname><surname>Clark</surname>
+  <affiliation>
+    <address><email>jjc@jclark.com</email></address>
+  </affiliation>
+</editor>
+<editor>
+  <surname>MURATA</surname><firstname>Makoto</firstname>
+  <affiliation>
+    <address><email>EB2M-MRT@asahi-net.or.jp</email></address>
+  </affiliation>
+</editor>
+</authorgroup>
+<pubdate>3 December 2001</pubdate>
+<releaseinfo role="meta">
+$Id: spec.xml,v 1.159 2001/12/02 12:12:12 jjc Exp $
+</releaseinfo>
+
+<copyright><year>2001</year><holder>OASIS</holder></copyright>
+
+<legalnotice>
+
+<para>Copyright &#169; The Organization for the Advancement of
+Structured Information Standards [OASIS] 2001. All Rights
+Reserved.</para>
+
+<para>This document and translations of it may be copied and furnished
+to others, and derivative works that comment on or otherwise explain
+it or assist in its implementation may be prepared, copied, published
+and distributed, in whole or in part, without restriction of any kind,
+provided that the above copyright notice and this paragraph are
+included on all such copies and derivative works. However, this
+document itself may not be modified in any way, such as by removing
+the copyright notice or references to OASIS, except as needed for the
+purpose of developing OASIS specifications, in which case the
+procedures for copyrights defined in the OASIS Intellectual Property
+Rights document must bml-stylesheet href="W3e followed, or as required to translate it into
+languages other than English.</para>
+
+<para>The limited permissions granted above are perpetual and will not
+be revoked by OASIS or its successors or assigns.<para>
+
+<para>This document and the information contained herein is provided
+on an <quote>AS IS</quote> basis and OASIS DISCLAIMS ALL WARRANTIES,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE
+USE OF THE INFORMATION HEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY
+IMPLIED WARRANTIHANTABILITY OR FITNESS FOR A PARTICULAR
+PURPOSE.</para>
+
+</legalnotice>
+
+<legalnotice role="status"><title>Status of this Document</title>
+
+<para>This Committee Specification was approved for publication by the
+OASIS RELAX NG technical committee. It is a stable document which
+represents the consensus of the committee. Comments on this document
+may be sent to <ulink
+url="mailto:relax-ng-comment@lists.oasis-open.org"
+>relax-ng-comment@lists.oasis-open.org</ulink>.</para>
+
+<para>A list of known errors in this document is available at <ulink
+url="http://www.oasis-open.org/committees/relax-ng/spec-20011203-errata.html"
+>http://www.oasis-open.org/committees/relax-ng/spec-20011203-errata.html</ulink
+>.</para>
+
+</legalnotice>
+
+<abstract>
+<para>This is the definitive specification of RELAX NG, a simple
+schema language for XML, based on <xref linkend="relax"/> and <xref
+linkend="trex"/>. A RELAX NG schema specifies a pattern for the
+structure and content of an XML document. A RELAX NG schema is itself
+an XML document.</para>
+</abstract>
+
+<�evhistory>
+<revision>
+  <revnumber>Committee Specification</revnumber>
+  <date>3 December 2001</date>
+</revision>
+<revision>
+  <revnumber>Committee Specification</revnumber>
+  <date>11 August 2001</date>
+</revision>
+</revhistory>
+</articleinfo>
+
+
+<section>
+<title>Introduction</title>
+
+<para>This document specifies</para>
+
+<itemizedlist>
+
+<listitem><para>when an XML document is a correct RELAX NG
+schema</para></listitem>
+
+<listitem><para>when an XML document is valid with respect to a
+correct RELAX NG schema</para></listitem>
+
+</itemizedlist>
+
+<para>An XML document that is being validated with respect to a RELAX NG
+schema is referred to as an instance.</para>
+
+<para>The structure of this document is as follows.  <xref
+linkend="data-model"/> describes the data model, which is the
+abstraction of an XML document used throughout the rest ��he
+document.  <xref linkend="full-syntax"/> describes the syntax of a
+RELAX NG schema; any correct RELAX NG schema must conform to this
+syntax.  <xref linkend="simplification"/> describes a sequence of
+transformations that are applied to simplify a RELAX NG schema;
+applying the transformations also involves checking certain
+restrictions that must be satisfied by a correct RELAX NG
+schema. <xref linkend="simple-syntax"/> describes the syntax that
+results from applying the transformations; this simple syntax is a
+subset of the full syntax.  <xref linkend="semantics"/> describes the
+semantics of a correct RELAX NG schema that uses the simple syntax;
+the semantics specify when an element is valid with respect to a RELAX
+NG schema.  <xref linkend="restriction"/> describes restrictions in
+terms of the simple syntax; a correct RELAX NG schema must be such
+that, after transformation into the simple form, it satisfies these
+restrictions. Finally, <xref linkend="conformance"/> describes
+conformance requirements for RELAX NG validators.</para>
+
+<para>A tutorial is available separately (see <xref
+linkend="tutorial"/>).</para>
+
+</section>
+
+<section id="data-model">
+<title>Data model</title>
+
+<para>RELAX NG deals with XML documents representing both schemas and
+instances through an abstract data model.  XML documents representing
+schemas and Instances must be well-formed in conformance with <xref
+linkend="xml-rec"/> and must conform to the constraints of <xref
+linkend="xml-names"/>.</para>
+
+<para>An XML document is represented by an element.  An element consists
+of</para>
+
+<itemizedlist>
+
+<listitem><para>a name</para></listitem>
+
+<listitem><para>a context</para></listitem>
+
+<listitem><para>a set of attributes</para></listitem>
+
+<listitem><para>an ordered sequence of zero or more children; each
+child is either an element or a non-empty string; the sequence never contains
+two consecutive strings</para></listitem>
+
+</itemizedlist>
+
+<para>A name consists of</para>
+
+<itemizedlist>
+<listitem><para>a string representing the namespace URI; the empty
+string has special significance, representing the absence of any
+namespace</para></listitem>
+
+<listitem><para>a string representing the local name; this string matches the NCName
+production of <xref linkend="xml-names"/%</para></listitem>
+</itemizedlist>
+
+<para>A context consists of</para>
+
+<itemizedlist>
+<listitem><para>a base URI</para></listitem>
+<listitem><para>a namespace map; this maps prefixes to namespace URIs,
+and also may specify a default namespace URI (as declared
+by the <literal>xmlns</literal> attribute)</para></listitem>
+</itemizedlist>
+
+<para>An attribute consists of</para>
+
+<itemizedlist>
+<listitem><para>a name</para></listitem>
+<listitem><para>a string representing the value</para></listitem>
+</itemizedlist>
+
+<para>A string consists of a sequence of zero or more characters,
+where a character is as defined in <xref linkend="xml-rec"/>.</para>
+
+<para>The element for an XML document is constructed from an instance
+of the <xref linkend="infoset"/> as follows.  We use the notation
+[<replaceable>x</replaceable>] to refer to the value of the
+<replaceable>x</replaceable> property of an information item. An
+element is constructed from a document information item by
+constructing an element from the [document element].  An element is
+constructed from an element information item by constructing the name
+from the [namespace name] and [local name], the context from the [base
+URI] and [in-scope namespaces], the attributes from the [attributes],
+and the children from the [children].  The attributes of an element
+are constructed from the unordered set of attribute information items
+by constructing an attribute for each attribute information item.  The
+chi<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "dtds/xhtml1-strict.dtd">
+<?xml-stylesheet href="W3C-PR.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>XHTML 1.0: The Extensible HyperText Markup
+Language</title>
+<link rel="stylesheet"
+href="W3C-PR.css" type="text/css" />
+<style type="text/css">
+span.term { font-style: italic; color: rgb(0, 0, 192) }
+code {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+code.greenmono {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+.good {
+	border: solid green;
+	border-width: 2px;
+	color: green;
+	font-weight: bold;
+	margin-right: 5%;
+	margin-left: 0;
+}
+.bad  {
+	border: solid red;
+	border-width: 2px;
+	margin-left: 0;
+	margin-right: 5%;
+	color: rgb(192, 101, 101);
+}
+
+img {
+	color: white;
+	border: none;
+}
+
+div.navbar { text-align: center; }
+div.contents {
+	background-color: rgb(204,204,255);
+	padding: 0.5em;
+	border: none;
+	margin-right: 5%;
+}
+.tocline { list-style: none; }
+table.exceptions { background-color: rgb(255,255,153); }
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="#toc">table of contents</a> 
+  <hr />
+</div>
+<div class="head"><p><a href="http://www.w3.org/"><img class="head"
+src="w3c_home.gif" alt="W3C" /></a></p>
+
+<h1 class="head"><a name="title" id="title">XHTML</a><sup>&#8482;</sup> 1.0:
+The Extensible HyperText Markup Language</h1>
+
+<h2>A Reformulation of HTML 4.0 in XML 1.0</h2>
+
+<h3>W3C Proposed Recommendation 10 December 1999</h3>
+
+<dl>
+<dt>This version:</dt>
+
+<dd><a href=
+"http://www.w3.org/TR/1999/PR-xhtml1-19991210">
+http://www.w3.org/TR/1999/PR-xhtml1-1991210</a> <br />
+(<a href="xhtml1.ps">Postscript version</a>,
+<a href="xhtml1.pdf">PDF version</a>,
+<a href="xhtml1.zip">ZIP archive</a>, or
+<a href="xhtml1.tgz">Gzip'd TAR archive</a>)
+</dd>
+
+<dt>Latest version:</dt>
+
+<dd><a href="http://www.w3.org/TR/xhtml1">
+http://www.w3.org/TR/xhtml1</a></dd>
+
+<dt>Previous versions:</dt>
+
+<dd><a href=
+"http://www.w3.org/TR/1999/WD-xhtml1-19991124">
+http://www.w3.or<?xml version="1
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="CSS.css" type="text/css" rel="stylesheet" />
+<link rel="SHORTCUT ICON"Chref="favicon.ico">
+<title>شهير بلاگ</title>
+</head>
+
+<body>
+
+<table border="0" width="100%" id="MainTBL" cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="Header1">
+		<table border="0" width="100%" cellspacing="0" cellpadding="0" height="100%">
+			<tr>
+				<td>
+				<img border="0" src="Shll/Shahir.ShahidSales1.png" width="442" height="110"></td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="28">
+			<div id="SideBar1">
+				<table width="100%">
+				<tr>
+				<td>
+				 <span class="Item">
+<a href="Index.asp" >
+خانه </a></span> <span class="Item">
+<a href="Contact.asp" >
+تماس با من </a></span> <span class="Item">
+<a href="Archive.asp" >
+آرشيو </a></span> <span class="Item">
+<a href="Search.asp" >
+جستجو در سایت </a></span> <span class="Item">
+<a href="http://shahirblog.com/detail.asp?id=30" >
+درباره من </a></span> <span class="Item">
+<a href="RSS2.asp" >
+
+<img src="showimage.aspx?path=Files_Upload\192.png&width=%>" border="0" />
+RSS </a></span> <span class="Item">
+<a href="" >
+ </a></span>
+				</td>
+				<td align="left">
+				<div id="DateTime">
+				<p align="left">
+				&#1610;&#1705;&#1588;#1606;&#1576;&#1607;&#1548;&nbsp;15&nbsp;&#1575;&#1585;&#1583;&#1610;&#1576;&#1607;&#1588;&#1578;&nbsp;1387&nbsp; 
+				-&nbsp;&nbsp; 
+				<span dir="ltr">Sunday, May 04, 2008</span>
+				</div>
+				</tdد. ا�/tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td valign="top">
+		<table border="0" width="100%" cellspacing="0" cellpadding="0" id="Content">
+			<tr>
+				<td class="Right" valign="top" style="padding-right: 60px">
+					<table width="100%">
+						<tr>
+							<td valign="top">
+								
+<script>
+var tgs = new Array( 'div','td','tr','a');
+var szs = new Array( '7pt','8pt','9pt','10pt','11pt','12pt','13pt' );
+var startSz = 1;
+
+function ChangeSize( trgt,sz ) {
+	if (!document.getElementById) return
+	var d = document,cEl = null,i,j,cTags;
+	
+	if ( !( cEl = d.getElementById( trgt ) ) ) cEl = d.getElementsByTagName( trgt )[ 0 ];
+
+	cEl.style.fontSize = sz;
+
+	for ( i = 0 ; i < tgs.length ; i++ ) {
+		cTags = cEl.getElementsByTagName( tgs[ i ] );
+		for ( j = 0 ; j < cTags.length ; j++ ) cTags[ j ].style.fontSize = sz; //szs[ sz ];
+	}
+}
+</script>
+
+<table width="100%" id="NewsDetail">
+	<tr>
+		<td vali�n="top">
+		<div class="News_Info">
+			&#1578;&#1575;&#1585;&#1610;&#1582; &#1583;&#1585;&#1580;: <font color="#000000">&#1670;&#1607;&#1575;&#1585;&#1588;&#1606;&#1576;&#1607;&#1548;&nbsp;29&nbsp;&#1575;&#1587;&#1;01;&#1606;&#1583;&nbsp;1386 
+			- Wednesday, March 19, 2008</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			&#1606;&#1608;&#1610;&#1587;&#1606;&#1583;&#1607;: <font color="#000000"></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+			&#1583;&#1601;&#1593;&#1575;&#1578; &#1605;&#1588;&#1575;&#1607;&#1583;&#1607;: <font color="#000000">2688</font> 
+			&#1576;&#1575;&#1585;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &#1603;&#1583;: <font olor="#000000">341</font>
+		</div>
+		<br>
+		<!--
+		<div>&#1575;&#1606;&#1583;&#1575;&#1586;&#1607; &#1601;&#1608;&#1606;&#1578;:&nbsp;
+		<a href="javascript:ChangeSize('NewsBody','7pt')"><font size="1">&#1705;&#1608;&#1670;&#1705;</font></a>&nbsp;
+		<a href="javascript:ChangeSize('NewsBody','10pt')"><font size="2">&#1605;&#1593;&#1605;&#1608;&#1604;&#1740;</font></a>&nbsp;
+		<a href="javascript:ChangeSize('NewsBody','13pt')"><font size="3">&#1576;&#1586;&#1585;&#1711;</font></a>&nbsp;
+		</div>-->
+		
+
+		<div class="Titr1">
+			 </div>
+		<br>
+		<div id="NewsBody">
+			
+			<div class="Image">
+				
+				<a href="showimage.aspx?path=Files_Upload\302.JPG&Width=" rel="lightbox" title="شهير بلاگ">
+				<img src="showimage.aspx?path=Files_Upload\302.JPG&Width=220" align="left" border="1" />
+				</a></div>
+			<STRONG><FONT size=4><FONT color=#0000ff>عکس</FONT> <FONT color=#0000ff>محصول هنر یکی از همکاران است. روی آن کلیک کند.</FONT></FONT></STRONG><S1>  </div>
+		<br>
+		<div align="left">?id=341">
+			<img src="shell/PrintFriendly.png" border="0"></a>
+			<a href="#" onclick="window.open('SendNews.asp?PageID=341','myWin','toolbar=no,directories=no,location=no,status=no,menubar=no,resizable=yes,scrollbars=no,width=500, height=200'); return false">
+			<img border="0" src="Shell/SendToFriends.jpg" width="140" height="30">
+			</a>
+		</div>
+		<br>
+		</td>
+	</tr>
+	<tr>
+		<td> <br />
+		<hr><div
+		id=Comments><ul><b>&#1606;&#1592;&#1585;&#1575;&#1578;
+		&#1705;&#1575;&#1585;&#1576;&#1585;&#1575;&#1606;:</b><br><li><font
+		color='blue'>حاجی جفرسون:</font><br><font size='1'>4/5/2008 -
+		7:08:00 PM</fon/proot><br>با درود به شما...&nbsp;بدون هیچ گونه طنز
+		و دستکاری توسط حاجی دایی نقل شده است این ها که در بیان جدی
+		اینقدر طناز هستند وای �e�ه روزی که بخواهند طنز بنویسند. ببین
+		شهیر جان چه کسانی سر جوانان ما را با اصلاحات 8 سال گول
+		مالیدند.. این ها را بخوانید :::::((دبيركل مجمع اسلامي بانوان
+		گفت: به نظر مي&zwnj;رسد آقاي خاتمي قصد فاصله گرفتن از تندروها
+		را ندارد و تا اين روند ادامه دارد ما با تندروها در يك ائتلاف
+		شركت نمي&zwnj;كنيم. به گزارش خبرنگار سياسي خبرگزاري فارس،
+		فاطمه كروبي دبيركل مجمع اسلامي بانوان عصر امروز شنبه در جمع
+		خبرنگاران رسانه&zwnj;هاي گروهي روند برگزاري انتخابات هشتمين
+		دوره مجلس شوراي اسلامي را تحليل كرد. وي ضمن برشمردن مرزبندي خود
+		با جربان تندروي اصلاح طلب افزود: اين ما نيستيم كه با ستاد ائتلاف
+		اصلاح طلبان اختلاف داريم اما انحصارگري برخي از گروه&zwnj;ها
+		جريان اصلاحات را دچار از هم&zwnj;گسستگي كرد. داوطلب هشتمين دوره
+		انتخابات مجلس شوراي اسلامي درباره تشكيل ستاد مردمي اصلاحات خاط�   �نشان كرد: آقاي خاتمي به توصيه&zwnj;ها و نظرات دوستانشان توجهي
+		ندارند و اگر اين امكان وجود داشت كه همه جريانات اصلاح طلب جير
+		يك عنوان فعاليت كنند حتما از آن استقبال مي&zwnj;كرديم اما به
+		نظر نمي&zwnj;رسد كه آقاي خاتمي بخواهد از تندروها فاصله بگيرد و
+		تا اين روند ادامه داشته باشد ما با تندروها در يك ائتلاف شركت
+		نمي&zwnj;كنيم. وي در مورد شركت تشكل متبوع خود در مرحله بعدي
+		انتخابات مجلس گفت: برخي از كانديداهاي نزديك به ما به مرحله دوم
+		انتخابات راه يافته&zwnj;اند و ما با تمام توان در اين مرحله از
+		آنها دفاع خواهيم كرد. كروبي تǧكيد كرد: گروهي انحصارگر با
+		اقدامات غيرعقلاني و تندروي&zwnj;هاي خود اتوبوس اصلاحات را در دره
+		سرنگون كردند)))) لطف�    یدا کنید پرتقال فروش را......واقعا این
+		�ref="Index�واهند دوباره وارد مجلس و دولت شوند.....اووووووووووووووو
+		لالالالالالا........نه!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! البته این
+		�������������������؆ بیشتر به سفره های نذر و سبزی پاک کردن های خونه
+		مامان بزرگ و خاله زنک بازی های عصر قاجاریه و مجلس پا تختی و
+		حنا بندون عروس شباهت دارد. مهندس جان گویا ما از دست این ....و
+		عیالش باید برویم گوشه همان ابدارخانه و شاغلام و چایی
+		دیشلمه....شما تشریف نمی آورید؟</li><br><br><li><font color='blue'>سیاوش:</font><br><font size='1'>4/3/2008 - 9:28:00 PM</font><br>مرد هزار چهره مرد هزار چهره کیست؟شخصیتی ساخته و پرداخته مهران مدیر�لالامان �خانی و دیگر نویسندگان؟ تنها هدفش آنست که چند روز تعطیلات، مارا سرگم کند و دیگر هیچ؟ مرد هزار چهره یک طنز است یک طنز تلخ، برداشتی واقعی 

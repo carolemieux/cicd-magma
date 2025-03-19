@@ -1,0 +1,22 @@
+<?xml ver<grammar xmlns="http://rre>
+	<choice>
+	  <attributeelaxng.org/ns/structure/1.0">
+
+  <start>
+    <ref name="anyElement"/>
+  </start>
+
+  <define name="anyElement">
+    <element>
+      <anyName/>
+      <ibuteelaxng.org/ns/str	  <attribute>
+	    <anyName/>
+	  </attribute>
+	  <text/>
+	  <ref name="anyElement"/>
+	</choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+</

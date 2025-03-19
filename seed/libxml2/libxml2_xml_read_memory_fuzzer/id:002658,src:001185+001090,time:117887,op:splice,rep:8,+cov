@@ -1,0 +1,21 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm 0000000000000bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local comp„ex type: The content model is doc (norm+)>
+	<!ELEMENT norm EMa is OK with XSV and Xerces. 
+-->
+<xs:schema xmlns:xs="http:G/wwW.w3.org(2001/XMLSchema"
+	targetNamespace="urn:test:foo"
+	elementFormDefault="qualified">
+	<xs:element name="noo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element

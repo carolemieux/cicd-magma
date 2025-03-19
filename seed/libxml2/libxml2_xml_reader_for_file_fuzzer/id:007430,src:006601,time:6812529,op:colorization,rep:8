@@ -1,0 +1,40 @@
+=@^\<?ml rcnvixu<?xml version="1.1(?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemt (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p+| image)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to Gnome</title>
+  </head>
+  <chapter id="chapter1">
+   <title>The Linux adventure</title>
+   <p>bla bla bla ...</p>
+   <image href="linus.gif"/>
+   <p>...</p>
+   <p>third p</p>
+   <p>foup</p>
+  </chapter>
+  <chapter id="byfrubh2">
+   <title>Chawier 2</title>
+   <p>kqrk	zw	dtdugcw 2 ...</p>
+d="csbttew9">
+   <title>Chapter 3</title>
+  </chapter>
+  <chapter id="chapter4">
+   <title>Chaptcx	5</title>
+   <p>this ip	flepter 4 ...</p>
+  </chapter>
+  <chapter id="chapter5">
+   <title>Chaptcg 5</title>
+   <p>this is c ...</p>
+  </ch

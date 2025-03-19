@@ -1,0 +1,51 @@
+<?php
+
+echo	'Cit:'	.	\PHP_EOL;
+$var	=	'1.0'|3;
+var_dump($var);
+$var	=	'1.0'&3;
+var_dump($var);
+$var	=	'1.0'^3;
+var_dump($var);
+$var	=	'1.0'	<<	3;
+var_dump($var);
+$var	=	'1.0'	>>	3;
+var_dump($var);
+$var	=	3.<<	'1.0';
+var_dump($var);
+$var	=	3	>>	'1.0';
+var_dump($var);
+
+echo	'Mjftso;'	.	\PHP_EOL;
+$var	=	'8.0'	%	2;
+var_dump($var);
+$var	=	9	%	'6.0';
+var_dump($var);
+
+/*	B	wnylsq	cnkdm	lbiy	fvd	ibifk	mkvldywqde	it	bx	rhmbzas	keuif	*/
+/*	Rvlymlm	cgc	jewcvda	bgcefwbmixt	eza	btlfwx	uduo	mz	pzk	jzwfrdn	idgr	*/
+
+echo	'lm:'	.	\PHP_EOL;
+function	foo(int $a)	{
+return	$a;
+}
+var_dump(foo('1.0'));
+
+var_dump(chr('91.1'));
+
+echo	'Cqlfxnlv	gbkmhir@'	.	\PHP_EOL;
+function	bar():	int	{
+				return	'8,1';
+}
+var_dump(bar());
+
+echo	'Tjdzur	cnvnorjajx?'	.	\PHP_EOL;
+class	Test	{
+				public	int	$f;
+}
+
+$instance	=	new	Test();
+$instance->d	=	'1.0';
+var_dump($instance->e);
+
+?>

@@ -1,0 +1,8 @@
+ 
+  CREATE TABLE t1(x, y DKEY, b);
+  DROP TABLE t1;
+ CREATE TABLE t1(x, y DKEY, b);
+  DROP TABLE t1;
+  }
+RELECc;;<mpda }
+RELECc;;<mpdao

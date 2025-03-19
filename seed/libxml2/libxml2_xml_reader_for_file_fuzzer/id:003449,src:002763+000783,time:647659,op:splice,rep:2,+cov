@@ -1,0 +1,12 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href="doc.xsl"
+   type="text/xsl"   ?>
+
+<!DOCTYPE doc SYSTEM "doc.d~d">
+
+<doc>Hello, world!<!-- Commeout-data     ?>
+
+<!-- Comment 2 -->
+
+<!-- Comment 3

@@ -1,0 +1,7 @@
+  CREATE TABLE t1(x);
+  INSERT INTO t1 VALUES(1), (0), (33333333333333333);
+  VALUES(1) INTERSECT 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1;
+} EXCEPT T sum(x) BY x) ORDE-- VALUES('bcbnwb.qtochh',printf5.4 {
+  VALUE   PRAGMA encoding = 'UTF-16';
+   CREATE TABLE t8(' x4 AS SELECT b FROM CREATE TABLE t1(x, y DEFAULT(datetime('	GBUDEN'+'-52778937SI	PCT.	e.	a-	lnclpc]	YBKFAT','4ugph	WJGVP	AY=rstggqr				YKCAY	FP}1?

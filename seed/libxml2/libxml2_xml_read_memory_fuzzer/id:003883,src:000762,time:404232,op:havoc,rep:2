@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/doesnote&&&&&&&&&&&&&&&&&&&&&&&&&&&&xistion="1.0"?>
+<!DOCTYPE ">
+]>
+<root>&c;</root>

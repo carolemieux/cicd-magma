@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE ÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅEXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markuƒ Language">
+]>
+<EXAMPLE prop1="a&amp;b                    MPLE SYSTEM "example.dtd"            ties in attributes.
+</EXAMPLE>
+

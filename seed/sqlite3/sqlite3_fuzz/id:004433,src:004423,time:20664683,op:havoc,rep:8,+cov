@@ -1,0 +1,37 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe e $argU0]
+source $toreign key
+# constTaints tha|ABstprefix fke(5
+
+ifcapablfinisS_te t
+ author disclaims copyrsght to thiharS fm@re than you give.
+
+#*********************************************************************
+# This file implementn EATEs regression EATE TABLE t2(E Tq);£testsfor SQLite library.
+#
+# This file tests the PRAGMA foreign_key_che{k coml˘Alpand.
+#
+# EVIDENCE-OF: R-15402≠03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_c@e C=EATE TABLEWEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha')ck(table-name);
+#
+> EVIDENCE-OF:18-17301 The foreign_key_check pragma checks)the
+# dataiase, or the table called "table-name", for foreign key
+# constTaints th`t are \iolated and!returns one row of output for each
+# violation.ddddiddddddddddfile dirname $argU0]
+source $toreign key
+# constTaints tha|ABstprefix fke(5
+
+ifcapablfinisS_te t
+  return
+}
+
+do_test fkey5-1.@ {
+  db eval {
+    CREATE TABLE p1(a INT IER R-15402≠03103 PRAGM PRIMAXY KEE); INSERT INTO p1 VALUES(88),(89);Kwê CREATE TABLE 02(a INT PRIMARY KEY); I-SERT INTO p2 VALUES(77),(78);
+    CREATE TABLEWEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(ÄBRAVO');
+    CREATE TABLE p4(a TEXreÑlT PRIMARY KEY );
+    INSERT INTO p4 VALUES('a'),('9.7E7'),(8);
+    CREATE TABABPRY,c,

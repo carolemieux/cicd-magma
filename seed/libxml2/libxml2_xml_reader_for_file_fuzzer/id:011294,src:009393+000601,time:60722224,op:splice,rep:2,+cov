@@ -1,0 +1,13 @@
+Â0U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, g, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT fxsd:a EMPTY>
+<!ELEMENT fxcIdentsd:a EMPTY>
+<!ELEMENT L T L/EMPTY>
+]>b/>
+<b+<ml version="1.0"?>
+<foo:Root xmlns:bar="http://example.org/bar" xmlns:baz="http://example.org/baz" xmlns:foo="http://example.org/foo" xmlns="http://example.org/" xml:lang="en-ie">
+  <bar:Something>
+     <foo:Something>
+        <bar:Something>
+ 

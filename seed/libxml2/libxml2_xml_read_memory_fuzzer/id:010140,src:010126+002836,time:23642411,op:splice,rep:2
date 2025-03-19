@@ -1,0 +1,15 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+]>
+<doc>
+<?pi value?.0"?>
+<tests>
+	<test name="adopt_recon_default">
+		
+		<doc name="doc1"><![CDATA[<p1 xmlns="urn:test:AAA"><a/></p1>]]></doc>
+		<doc name="doc2"><![CDATA[<p1 xmlns="urn:test:BBB"><b/></p1>]]></doc>
+		<doc name="doc3"><![MDATA[<p2 xmlns="urn:test:ZZZ"/>]]></doc>
+		<var name="a">
+			<xpath doc="doc1" select-node="/a:p1/a:a"x. dest-p<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm

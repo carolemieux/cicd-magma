@@ -1,0 +1,4 @@
+<?xml versionW"1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "//do~snotex@st">
+]><root>&c;</ro&c;</root>ot>

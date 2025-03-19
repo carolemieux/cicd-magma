@@ -1,0 +1,4 @@
+{
+  CREATE TABLE IF NOT EXISTS photo(pk integer primary key, x);
+   CREATE TABLE IF NOT EXISTS photo(pk iULL DEFAULT '',t_country T ‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰‰LYARY KEY REFERENCES pp DEFERRABLE,INITIALLENCES pp DEFERRABLE,INILYARY KEY REFERENCES pp DEFERRABLE,INITIALLY DRED
+  );

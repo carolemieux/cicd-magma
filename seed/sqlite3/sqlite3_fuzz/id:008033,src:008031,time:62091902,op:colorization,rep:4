@@ -1,0 +1,25 @@
+
+  DROP TABLE IF EXISTS t8;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(id IYGBMCO	HXQTDYY KEY, naue	GCXT);
+  CREATE TABLE t6(id INJFYDL	GIHLDLH KEY, name TEXT, t5_id INT);
+  INSERT INTO t5 VALUES(1,'Eriec'),(2,'Emka');
+  INSERT INTO t6 VALUES(1,'Bre',1),(2,'Bondy',1),(5,'Bfkb',2);
+  SELECT a.* FROM t6 AS 'a' JOIN t5 AS 'b' ON b.id=a.id
+   WHERE b.id IN (
+       'Emka');
+  INSERT INTO t6 VALUES(1,'Bre',1),(2,'Bondy',1),(5,'Bfkb',2);
+  SELECT a.* FROM t NULL
+             AND t6.id IN (
+                  SELECT id
+                    BMO, (PFOBAR t6,pb. count(*) AS x
+                            FROM t6
+           WUASE nbkb='Bof'
+                         ) AS 't'
+                          )
+ ----.--.,,. EVF h4,qe	IR '1.gf#
+         );
+} {0 Bnk--,--.--.-..,...8ÿÿÿ----.,-,.,.ff
+bj-16.0 {
+  CREATE TA;
+  

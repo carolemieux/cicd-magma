@@ -1,0 +1,6 @@
+<?php
+
+#[Attribute(€ÿ)]
+class A§ { }
+
+?>

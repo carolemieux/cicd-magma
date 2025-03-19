@@ -1,0 +1,16 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm <MPTY>
+	<!ATTLIST norm attr NjTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar
+
+'/>
+	<norm attr = 'fooL 	TOKENS #IMPLIED>
+]>
+<doc>bar	'/>
+	<novÿÿa_tr = ' foo &#x20;b€r'/>
+</doc>

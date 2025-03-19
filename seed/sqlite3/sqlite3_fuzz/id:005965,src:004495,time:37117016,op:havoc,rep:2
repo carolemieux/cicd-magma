@@ -1,0 +1,7 @@
+PRAGMA journal_mode = WAL;
+    PRAGMA journal_mode = DELETE; PRAGMA journal_mode = DELETE;
+  }
+  db
+  }
+  db close
+ $he8633.697439373332222Tvt

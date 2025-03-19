@@ -1,0 +1,3 @@
+<?php
+str_replace("a", "a","p", "c", strlen("d"));
+?>

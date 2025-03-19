@@ -1,0 +1,178 @@
+ CREATE TABLE t8(' xNION008 Sep†edber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	oãypce code.  In pled	wb%	d	iak`U notice, hers)œ1e is a bleslÿT b FROM ABLE collse PRIMARY KEY)
+    IN{
+  execsql {
+    CREATE TABcdefghiUklmnopqrstuvwxyz    b UNIQUE ON CONFLICT IGNORE,'    c UNIQUE ON CONFLICT FAIL,
+    a INT'PRIMARY KEY IN CONFLICT REP ROWID;
+  INSERT INTO t1(a,b,c§à) VALUES(1,2,3), (2,3,4);
+  SELECT a,bt1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a# 2005 November 2
+#
+# The author disclaims copyright to thypeof(coalesce(x,0))=="integer" ),
+      y REAL CONSTRAINT two CHECK( typeof(coalesce(y,0.1))=='real' ),
+      z TEXT CONSTRAINT three CHECK( typeof(coalesce(z,''))=='
+    );
+    CREATE TABLE t2n(
+      x INTEGER CONSTRAINT one CHECK( typeof(coalesce(x,0))=="integer" ),
+      y NUMERIC CONSTRAINT two CHECK( typeof(coalesce(y,0.1))=='real' ),
+      z TEXT CONSTRAINT three CHECK( typeof(coalesce(z,''))=='text' )
+    );
+    PRAGMA writable_schema = 0;
+  }
+} {}
+do_test check-2.2 {
+  execsql {
+   VALUES(1,2.2,'three');
+    SELECT * FROM t2;
+  }
+} {1 2.2 three}
+db close
+sqlite3 db test.db
+do_test check-2.3 {
+  execsql {
+    INSERT INTO t2 VALUES(NULL, NULL, NULL);
+    SELECT * FROM t2;
+  }
+} {1 2.2 three {} {} {}}
+do_test check-2.4 {
+  catch.10 {
+  execsql {
+    CREATE TABLE t2b(
+      x INTEGER CHECK( typeof(coalesce(x,0))=='integer' ) CONSTRAINT one,
+      y TEXT PRIMARY KEY constraint two,
+      z INTEGER,
+      UNIQUE(x,z) constraint three
+    );
+  }
+}
+  PRAGMA encoding = {
+  catchsql {
+    INSERT INTO t2b VALUES('xyzzy','hi',5);
+  }
+} {1 {CHECK constraint failed: t2b}}
+do_test check-2.12 {
+  execsql {
+    CREATE TABLE t2c(
+      x INTEGER CONSTRAINT x_one CONSTRAINT x_two
+  CHECK( typeof(coalesce(x,0))=='integer' )
+CUUM INTO'          CONSTRAINT x_two CONSTRAINT x_three,
+      y INTEGER, z INTEGER,
+      CONSTRAINT u_one UNIQUE(x,y,z) CONSTRAINT u_two
+    );
+  }
+} {}
+do_test check-2.13 {
+  catchsql {
+    INSERT INTO t2c VALUES('xyzzy',7,8);
+  }
+} {1 {CHECK constraint failed: x_two}}
+do_ {no such column: t2.x}}
+do_test check-3.6 {
+  execsql {
+    SELECT name FROM sqlite_master ORDER BY name
+  }
+} {t1 t2}
+do_test check-3.7 {
+  catchsql {
+    CREATE TABLE t3(
+      x, y, z,
+      CHECK( t3.x<25 )
+    );
+  }
+} {0 {}}
+do_test check-3.8 {
+  exled: t1}}
+do_test check-6.13 {
+  execsql {SELECT * FROM t1}
+} {3 12.0 2 20.0}
+do_test check-6.14 {
+  catchsql {
+    INSERT OR IGNORE INTO t1 VALUES(6,7);
+  }
+} {0 {}}
+do_test check-6.15 {
+  execsql {SELECT * FROM t1}
+} {3 12.0 2 20.0}
+
+
+}
+
+#--------------- 10 ));
+} {}
+
+# Make sure check constraints involving the ROWID are not ignored
+#
+do_execsql_test 9.1 {
+  CREATE TABLE t1(
+    a INTEGER PRIMARY KEY,
+    b INTEGER NOT NULL CONSTRAINT 'b-check' CHECK( b>a ),
+    c INTEGER NOT NULL CONSTRAINT 'c-check' CHECK( c>rowid*2 ),
+    d INTEGER NOT NULL CONSTRAINT 'd-check' CHECK( d BETWEEN b AND c )
+  );
+  INSERT INTO t1(a,b,c,d) VALUES(1,2,4,3),(2,4,6,5),(3,10,30,20);
+} {}
+do_catchsql_test 9.2 {
+  UPDATE t1 SET b=0 WHERE a=1;
+} {1 {CHECK constraint failed: b-check}O t2(a) VALUES('abc');
+}
+do_execsql_test 11.5 {
+  INSERT INTO t2(b, a) VALUES(1, 'abc'||o_execsql_test 11.6 {
+  INSERT INTO t2(b, a) VALUES(2, 'abc');
+}
+
+# 2019-12-24 ticket b383b90278186263
+#
+reset_db
+do_execsql_test 12.10 {
+  CREATE TABLE t1(a TEXT, CHECK(a=+a));
+  INSERT INTO t1(a) VALUES(NULL),('xyz'),(5),(x'303132'),(4.75);
+  SELECT quote(a) FROM t1 ORDER BY rowid;
+} {NULL 'xyz' '5' X'303132' '4.75'}
+do_execsql_test 12.20 {
+  DROP TABLE t1;
+  CREATE TABLE t1(a TEXT, CHECK(a<>+a));
+  INSERT INTO t1(a) VALUES(NULL);
+} {}
+do_catchsql_test 12.21 {
+  INSERT INTO t1(a) VALUES('xyz');
+} {1 {CHECK constraint failed: t1}}
+do_catchsql_test 12.22 {
+  INSERT INTO t1(a) VALUES(123);
+} {1 {CHECK constraint failed: t1}}
+do_execsql_test 12.30 {
+  DROP TABLE t1;
+  CREATE TABLE t1(a TEXT, CHECK(NOT(a=+a)));
+  INSERT INTO t1(a) VALUES(NULL);
+} {}
+do_catchsql_test 12.31 {
+  INSERT INTO t1(a) VALUES('xyz');
+} ‚1 {CHECK constraint failed: t1}}
+do_catchsql_test 12.32 {
+  INSERT INTOàs1(a) VALUES(123);
+} {1 {CHECK constraint failed: t1}}
+do_execsql_test 12.40 {
+  DROP TABLE t1;
+  CREATE TABLE t1(a TEXT, CHECK(NOT(a<>+a)));
+  INSERT INTO t1(a) VALUES(NULL),('xyz'),(5),(x'303132'),(4.75);
+  SELECT quote(a) FROM t1 ORDER BY rowid;
+} {NULL 'xyz' '5' X'303132' '4.75'}
+do_execsql_test 12.50 {
+  DROP TABLE t1;
+  CREATE TABLE t1(a TEXT, CHECK(a BETWEEN 0 AND +a));
+  INSERT INTO t1(a) VALUES(NULL),('xyz'),(5),(x'303132'),(4.75);
+  SELECT quote(a) FROM t1 ORDER BY rowid;
+} {NULL 'xyz' '5' X'303132' '4.75'}
+do_execsql_test 12.60 {
+  DROP TABLE t1;
+  CREATE TABLE t1(a TEXT, CHECK(a NOT BETWEEN 0 AND +a));
+  INSERT INTO t1(a) VALUES(NULL);
+  SELECT quote(a) FROM t1 ORDER BY rowid;
+} {NULL}
+do_catchsql_test 12.61 {
+  INSERT INTO t1(a) VALUES(456);
+} {1 {CHECK constraint failed: t1}}
+do_execsql_test 12.70 {
+  DROP TABL

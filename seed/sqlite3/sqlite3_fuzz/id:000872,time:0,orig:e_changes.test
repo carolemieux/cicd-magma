@@ -1,0 +1,50 @@
+# 2011 October 28
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix e_changes
+
+# Like [do_execsql_test], except it appends the value returned by 
+# [db changes] to the result of executing the SQL script.
+#
+proc do_changes_test {tn sql res} {
+  uplevel [list \
+    do_test $tn "concat \[execsql {$sql}\] \[db changes\]" $res
+  ]
+}
+
+
+#----------------------------------------------------------------changes_test 1.$tn.4 {
+    DELETE FROM t1 WHERE a>6
+  } 4
+
+  # Check the "on the database connecton specified" part of hte
+  # requirement - changes made by other connections do not show up in
+  # the return value of sqlite3_changes().
+  do_test 1.$tn.5 {
+} {1 2 2 2 3 2}
+
+# Value is being restored to "2" when the trigger program exits.
+do_test 5.1.2 {
+  set ::changes
+} {update 2 trigger 3 update 2 trigger 3 update 2 trigger 3}
+
+
+reset_db
+do_execsql_test 5.2.0 {
+  CREATE TABLE t1(a, b);
+  CREATE TABLE log(x)
+
+
+
+finish_test

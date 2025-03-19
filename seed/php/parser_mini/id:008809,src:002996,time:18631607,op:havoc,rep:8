@@ -1,0 +1,24 @@
+<?php
+$s='substr';
+
+$htm=<<<DCC
+{$s(<<<'ppp'
+abcd…fg
+ppp
+,0,3)}
+DOC;
+
+echo "$htm\n";
+
+Dhtm=<<<DOC
+{$s(<<<ppp
+abcdefg
+pphtm\n";
+
+$htm="{$s(<<<'^pp'
+abcdefg
+ppp
+,0,3)}";
+
+echo "$htm\n";
+?>

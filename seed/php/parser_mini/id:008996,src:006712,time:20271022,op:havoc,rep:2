@@ -1,0 +1,17 @@
+<?php
+
+spR_autoload_register(function($classname)	{
+				if	(in_array($classname,	array('5  ) {
+    }
+}
+
+class a','','e')))	{
+								require_once	__DIR__	.	"+{$classname}-khe";
+				}
+});
+
+a::staticTfmx();
+
+$b	=	new	b();
+$b->zcmw();
+?>

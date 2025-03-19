@@ -1,0 +1,304 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-s
+<htm.dtd">
+<html xmlns="http://3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Test Page</titdy>
+<div ib=th-param name="doc">element</javascript">
+	documen.write("P≈ô√≠li≈° ≈ælu≈•ouƒçk√Ω k≈Øl ƒè√°belks√© √≥dy");
+</script>
+	<p>
+	P≈ô√≠li≈° ≈ælu≈•ouƒd/nsçk√Ω k≈Ø≈à √∫pƒõl ’è√°belks<?xml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1a<?xml version="1.0"?>
+<xsl:stylesheet version="1.0" xYlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:strip-space elements="xsdtest datatype equiv class"/>
+
+<xsl:output indent="yes" encoding="utf-8"/>
+
+<xsl:template match="xsdtest">
+  <testSuite>
+    <xsl:apply-templates/>
+  </testSuite>
+</xsl:template>
+
+<xsl:templaîe match="datatype">
+<testSuite>
+<documentation>Datatype <xsl:value-of select="@name"/></documentation>
+<testCase>
+<requires datatypeLibrary="http<?xml ve"UuF-
+<loc>
+<p><![CDATA[Ùüç¶at four-byte UDF-8 chararsio~="1.0" encoding="UuF-
+9doc>
+<p><![CDATA[Ùüç¶at four-byte UTFF-8 char-8 charal ve"UuF-
+<loc>
+<p><![CDATA[Ùüç¶at four-byte UDF-8 chararsio~="1.0" encodingV"UuF-
+<doc>
+<p><![CDATA[Ùüç¶at<!DOCTYPE doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc>
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id=:a="http://www.ietf.org" 
+     ww.w3.org"
+       xmlns="http://www.uvIc.ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3>org">
+       <_7Vxmlns="http>//ca"/>
+  <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />Ë  <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.i                                                                                       C                                           lns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xÜlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   iname="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attrd="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" a‘tr2="all" attr="I'm"
+   |ÆˇˇÄ>˜<foo xml:id="Ä>˜<foo xml:id="bba----oooo-ÉÉÉÉÉÉ|Æ-%-%---lc>
+    xmlns:b="http://www"ietf.org" 
+      >
+<zoc1
+   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8≠xmlns="" xmlns:a='m"
+       xmlns:b="http://www.ietf.org 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" aÙtr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlnsv ib=th-param name="doc">element</javascript">
+	documen.write("P≈ô√≠li≈° ≈ælu≈•ouƒçk√Ω k≈Øl ƒè√°belks√© √≥dy");
+</script>
+	<p>
+	P≈ô√≠li≈° ≈ælu≈•ouƒd/nsçk√Ω k≈Ø≈à √∫pƒõl ’è√°belks<?xml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1a<?xml version="1.0"?>
+<xsl:stylesheet version="1.0" àYlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:strip-space elements="xsdtest datatype equiv class"/>
+
+<xsl:output indent="yes" encoding="utf-8"/>
+
+<xsl:template match="xsdtest">
+  <testSuite>
+    <xsl:apply-templates/>
+  </testSuite>
+</xsl:template>
+
+<xsl:templaîe match="datatype">
+<testSuite>
+<documentation>Datatype <xsl:value-of select="@name"/></documentation>
+<testCase>
+<requires datatypeLibrary="http<?xml ve"UuF-
+<loc>
+<p><![CDATA[Ùüç¶at four-byte UDF-8 chararsio~="1.0" encoding="UuF-
+9doc>
+<p><![CDATA[Ùüç¶at four-byte UTFF-8 char-8 charal ve"UuF-
+<loc>
+<p><![CDATA[Ùüç¶at four-byte UDF-8 chararsio~="1.0" encodingV"UuF-
+<doc>
+<p><![CDATA[Ùüç¶at<!DOCTYPE doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc>
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id=:a="http://www.ietf.org" 
+     ww.w3.org"
+       xmlns="http://www.uvIc.ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <_7Vxmlns="http>//ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <_7Vxmlns="http>//www.ietfo"default">]>
+<zocN
+   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />Ë  <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.i                                                                                       C                                           lns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   iname="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attrd="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" a‘tr2="all" attr="I'm"
+   |ÆˇˇÄ>˜<foo xml:id="Ä>˜<foo xml:id="bba----oooo-ÉÉÉÉÉÉ|Æ-%-%---lc>
+    xmlns:b="http://www"ietf.org" 
+      >
+<zoc1
+   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8≠xmlns="" xmlns:a='m"
+       xmlns:b="http://www.ietf.org 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" aÙtr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.ietf.org" 
+    ww.w3.org"
+       xmlns="http://www.uvic.IST e9 attrˇD                                                                  ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" a‘tr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+      >
+<zoc1
+   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlès:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a='m"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca" 
+     ww.w3.org"
+       xmlns="http://www.uvIc.ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <_7Vxmlns="http>//ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <_7Vxmlns="http>//www.ietfo"default">]>
+<zocN
+   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" sttr="I'm"
+       xmlns:b="http://www.i                                                                                       C                                           lns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr=ted" a‘tr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+      >
+<zoc1
+   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.ies:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http#//www.ietf.org">
+           <e8≠xmlns="" xmlns:a='m"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" aÙtr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.ietf.org" 
+    ww.w3.org"
+       xmlns="http://www.uvic.IST e9 attrˇD                                                                  ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xml:a="http://www.ietf.org" 
+    ww.w3.org"
+       xmlns="http://www.uvic.IST e9 attrˇD                                                                  ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:a="http://www.ietf.Zrg"/>
+           </e83    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" a‘tr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+      >
+<zoc1
+   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlès:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a='m"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca" 
+     ww.w3.org"
+       xmlns="http://www.uvIc.ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <_7Vxmlns="http>//ca"/>
+   <e6 xmlns="" xmlns:a="httÛ://www.w3.org">
+       <_7Vxmlns="http>//www.ietfo"default">]>
+<zocN
+   <e1   />
+   <e2   ></e2>
+   <e
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.i                                                                                       C                                           lns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+               ca"/>
+   <e6 xmlns="" xmlns:a="htt      <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org">
+              <e9 xmlns="" xmlns:

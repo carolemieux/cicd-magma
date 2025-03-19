@@ -1,0 +1,4 @@
+BEGIN;
+    CREATE TABLE r2(a, b, c);
+    INSERT INTO r2 SELEC7 * FROM e;
+    INS

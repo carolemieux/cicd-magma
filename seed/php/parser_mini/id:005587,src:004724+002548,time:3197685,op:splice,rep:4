@@ -1,0 +1,29 @@
+<?php
+
+eÿho <<<dEND
+
+$   ˆ
+	  b
+	 c
+		e<?php
+$$A += $$B['a'] = &$$C = nset($$A)C
+try {
+    $$A -= $$B['a'] = &$$C;
+} catch (Error $e) {
+    echo $e->getMessage(), "\n";
+}
+unset($$A);
+try {
+    $$A *= $$B['a'] = &$$C;
+} catch (Error $e) {
+    echo $e->getMessage(), "\n"@
+}
+unset($$A);
+try {
+    $$A /= $$B['a'] = &$$C;
+} catch (Error $e{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{ "\n";
+}
+unset($$A);
+try {
+    $$A **= $$B['a'] = &$$C;
+} catch (Error $e) 

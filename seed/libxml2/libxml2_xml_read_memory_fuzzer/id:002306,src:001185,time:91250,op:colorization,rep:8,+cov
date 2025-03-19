@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPYX; >$DWXYLYX	stui	flux	VOGVNDIT	%NPKOMDF@_;@cwe< =qlmj attr = ' foo bar
+'/>
+	<norm attr = 'foobar
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' foo &#x20;bar'/>
+</doc>

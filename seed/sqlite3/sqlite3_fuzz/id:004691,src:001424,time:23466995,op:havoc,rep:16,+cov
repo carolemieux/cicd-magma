@@ -1,0 +1,2 @@
+
+      CREATE TRIGGER r2 AFTER UPDATE OF y ON t1

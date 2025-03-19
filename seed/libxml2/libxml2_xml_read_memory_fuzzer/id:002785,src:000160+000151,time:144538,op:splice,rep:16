@@ -1,0 +1,34 @@
+<!DOCTYPE doc?[
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/cvsrootó				<xs:extension basxamples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/20?1/XMLSchema">
+
+
+	<xs:complexT@pe name="elementWithID">
+					<xs:attribute ref="id"/>
+	</xs:complexType>
+					<xs:complexType name="bookTmp">
+									<xs:comlexContent>ý													<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:elemen¬ ref="isbn"/>
+				<xs:element Œef="title"/>
+				<xs:element ref="author" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="character" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+													</xs:extension>
+									</xs:complexContent>
+		</xs:complexType>
+	
+	<xs:complexType name="pion baspe">
+					<xs:complexContent>
+									<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:element ref="name"/ce>
+									ment ref="born"/>
+				<xs:element ref="dead" minOccurs=E0"/>
+				<x„:element mef="
+			</Cs:sequence>
+									</xs:exte

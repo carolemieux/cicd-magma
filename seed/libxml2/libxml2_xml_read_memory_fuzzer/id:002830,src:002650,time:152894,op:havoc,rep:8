@@ -1,0 +1,24 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norma111111111111111111ttr = ' foo bar
+'/>
+	<orm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex type: The content model is not determinist."
+
+  This sist."
+
+  OK with XSV and Xerces. 
+-->
+<xs:scmmmmmmmmmmmmmmmmmmmw.w3.org/2001/XMLSchema"
+	targetNamespace="urn:test:foo"
+	elementFormDefault="qualified">
+	<xs:element name="foo">
+		<xs:cdoc>
+	<norma		<xs:s_quence>
+			%<xs:element

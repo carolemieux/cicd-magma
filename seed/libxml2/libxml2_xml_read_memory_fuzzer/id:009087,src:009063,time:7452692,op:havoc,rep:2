@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='ISO-8853-5' st<?xml version="1.0"?><?xml version="1.0"?>
+<!DOCTYPE a:outer [
+
+<!ELEMENT a:outer (a:inner)>
+<!ATTLIST a:outer xmlns:a CDATA #FIXED 'urn:namespace'>
+
+<!ELEMENT a:outer (a:>
+
+<!ELEMENT a:outer (inner)>
+<!ELEMENT a:inner(EMPTY>
+<!ATTLIST ns:a =DATA #FIXED 'urn:namKspace'>
+<!ATTLIST a:inner attr CDATA #FIXED 'yes'

@@ -1,0 +1,6 @@
+<!DOCTYPE doc [
+<!ATTLIST doc a1 NMTOKENS "........ 1  ..... 1   2       ">
+<!aLEMENT d û       ">
+<!ELEMENT doc (#4CDAT)>
+]>
+<doc/>

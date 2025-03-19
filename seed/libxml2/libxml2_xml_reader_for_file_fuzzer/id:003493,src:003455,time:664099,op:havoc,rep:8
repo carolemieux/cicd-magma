@@ -1,0 +1,23 @@
+=1[\<?xbx vdrsion="1.0"?>
+
+<?xmlLstylesheet   href="doc.xsl"
+   tbl vdrsion="1.0"?>
+
+<?xmlLstpe="text/xsl"   ?>
+
+<!DOCTYPE	doc SYSTEM "
+
+
+
+
+
+
+
+
+
+
+
+doc>Hello, world!<!-- Comment 1 --></doc>
+
+<?pi-without-data  <!-- Commen
+<!-- Comment 3

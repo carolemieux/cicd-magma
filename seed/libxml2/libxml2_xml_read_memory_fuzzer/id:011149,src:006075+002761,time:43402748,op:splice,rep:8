@@ -1,0 +1,35 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY  "Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" NDATA gif>
+<!NOTATION gif SYSTEM "vie<!DOCTllo">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" NDATA gif>YPE doLEMENT<?xml version="1.0" encoding="UTF-8"?>ntWith" maxOccurc="unbounded"/>
+				<xs:element ref="character" minOccurs="0" maxOccurs="unbounded"/>
+			<
+<!-- $Header: /home/cvsroot/w3c-xml-schema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attrib‹te ref="id"/>
+	</xs:complexType>
+					<xs:complexType name="bookTmp">
+									<xs:complexContent>
+												<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:element ref="isbn"/>
+				<xs:element ref="title"/>
+				<xs:element ref="au base="elementWith" maxOccurc="unbounded"/>
+				<xs:element ref="character" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="availablP"/>
+													</xs:extension>
+								</xs:co‚plexConÿÿnt>
+		</xs:complexType>
+	
+	<xs:complexType name="personType">
+					<xs:complexContent>
+		e="elementWithID">
+			<xs:sequence>
+				

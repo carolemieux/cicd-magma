@@ -1,0 +1,3 @@
+<?php
+assert(0 && ($a = function (       protected $c;
+ 

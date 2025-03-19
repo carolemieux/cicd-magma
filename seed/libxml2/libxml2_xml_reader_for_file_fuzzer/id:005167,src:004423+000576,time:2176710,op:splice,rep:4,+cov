@@ -1,0 +1,14 @@
+=1U\|<?xml version="1.0" standal<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a xmlns:s CDATA #IMPLIED>
+<!ELEMENT b EMPTY>
+<!ATTLIST b xmlns:s CDATA #cMPLIED>
+<!ELEMENT s:b EMPTY>
+<!ATTLIST s:b xmlns:s CDATA #IMPLIED>
+]>
+<a xmlns:s="h=1U\|<?xml vest.ns/a">
+  Some text:s CDATA #IMPLIED>
+<!.
+	<b/>
+  Some 

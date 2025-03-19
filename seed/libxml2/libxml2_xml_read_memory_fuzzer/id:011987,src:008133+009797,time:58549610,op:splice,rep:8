@@ -1,0 +1,39 @@
+<doc>
+<foo xml:id="_ar*+??fmofev"/<doc>
+  <!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EPTY>
+	<!ATTLIST norm attr NMTOKENT norm EPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLI>
+<doc>
+	<norm attr = ' fo	 bar=========
+		<xsº_quence>
+			<xs:enorm attr = 'foobar<?xml version"1.0"?>
+		<xs:_quence>
+			<xs:>
+<!--
+ -"element complexType: Schemas parser error :
+ LEMENT doc (normtype: The conte<xs:_quence>
+			<xs:>i OK with XSV and Xerces. 
+-->
+<xs:sche bar=========
+		<xs:_quence>
+			<s:enma xml="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urmDefaulNS #IMPLI>
+<doc>
+	<norm attr = ' fo	 bar=========
+		<xsº_quence>
+			<xs:enorm attr = 'foobar<?xml version"1.0"?>
+		<xs:_quence>
+			<xs:>
+<!--
+ -"element complexType: Schemas parser error :
+ LEMENT doc (normtyxml:id="_ar*+??fmofev"/<doc>
+  <!DOCTYPE doc [
+	<!ELEMENT d 
+-->
+<xs:sche bar=========
+		<xs:_quence>
+			<s:enma xml="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urmDefault="qualified">
+	<xs:element

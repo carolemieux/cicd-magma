@@ -1,0 +1,46 @@
+
+   PRAGMA page_size = 1024;
+    CREATE TABLE t1(a, b);
+    INSERT INTO t1 VALUES(1, randomblob(2500));
+     INSERT INTO t1 VALUES(2, randomblob(50)); INSERT INTO t1 SELECT NULL, randomblob(50)LETE FROM t1 WHERE a = 1;
+  INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+   
+     INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+     INSERT INTO t1 VALUES(2, randomblob(2500));
+    DELETE FROM t1 WHERE a = 1;
+  INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+     INSERT INTO t1 VALUES(2, randomblob(2500));
+     INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+    INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+     INSERT INTO t1 VALUES(2, randomblob(2500));
+    DELETE FROM t1 WHERE a = 1;
+  INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+     INSERT INTO t1 VALUES(2, randomblob(2500));
+     INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+           
+             
+     INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECrandomblob(50) FROM t1;
+     INNNNNNNNNNNN›NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNERE a = 7;
+  INSERT INTOt1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, rblob(50) FROM t1;
+            ;{
+  PRAGMA auto_vacuum='+1-)1;,14N] C+'; CREATE TABLE t8(' xtudp&*&(%**&*)*#September16
+#
+# Thehis source code.  rblob(50) FROM t1;
+            ;{
+  PRAGMA auto_vacuum='+1-)1;,14N] C+'; CREATE TABLE t8(' xtudp&*&(%**&*)*#September16
+#
+# Thehis source code.  In pla ;{
+  P1 VALUES(2, randm='+1-)1;,14N] C+'; CREATE TABLE t8(' xtudp&*&(%**&*)*#September16
+#
+# Thehir source>code.  In place of
+# c);
+    

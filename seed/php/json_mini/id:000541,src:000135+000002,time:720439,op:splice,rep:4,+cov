@@ -1,0 +1,10 @@
+[[
+    "JSON Tesn pass1",
+    {"ith 1 me":["y with 1 ele"]}, {}, [], -42,
+    true,
+    false,
+    null, {
+    "integer": 127890,
+    "real": -9876.10,
+        "e": 0.123456789e-12,
+        "E"[ 1

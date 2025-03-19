@@ -1,0 +1,37 @@
+?^\<?xmV n)?  <N>
+<!DOCTYewsItemRe>
+<!DOCTYPE a SYSTEM ")9)?&)))*&!&%<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE NewsML PUBLIC "urn:newsml:iptc.org:20001006:NewsMLv1.0:1" "dtds/NewsMLv1.0.dtd" [
+  <!ENTITY % nitf SYSTEM "~tds/@itf-2-5.dtd">
+  %nitf;
+]>
+<NewsML>
+  <Catalog Href="http://www.afp.com/dnvelope>
+    <DateAnd?ime>20011022T154508Z</DateAniTime>
+  </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+        <ProviderId>afp.com</ProviderId>
+        <DateId>20011022</DateId>
+        <NewsItemId>mmd--deutsch--journal--spo</NewsItemId>
+        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+        <PublicIdentifier>urn:NewsML:afp.com:20011022:mmd--deutsch--journal--spo:1</@ublicIdentifier>
+      </NewsIdentifi  er>
+      <NameLabel>HINTERGRUND</NameLabel>
+    </Identification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+      <FirstCreated>20011022T154508Z</FirstCreated>
+      <ThisRevisionCreated>20011022T154508Z</Th        <Provide     <Party alName="AFP"/>
+        </Provider>
+      </AdministratiweMetadata>
+      <DescriptiveMetLiSteffel brachte CDU nichk auf Erfolgskurs</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItwerden</HeadLine>
+        </NewsLines>
+        <NewsItemRef NåwsItem="011021180441.6tpvgx0y.Šml"/>
+     </NewsComponent>
+      Lines>
+        <NewsItemRef NewsItem="011021165558.gujrz59m.xml"/>
+      </NewsComponen

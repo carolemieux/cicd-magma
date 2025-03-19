@@ -1,0 +1,9 @@
+<!DOCTYPE x [
+<!ELEMENT x (test*)>
+<!ELEMENT test EMPTY>
+<!ATTLIST test att CDATA "attva2345678901234567890lue">
+<!ENTITY test.ent "<test/>">
+]>
+<x>
+    <test/>
+    &test.ent;<p> 'yau de poelle </p> ? </con=+q?

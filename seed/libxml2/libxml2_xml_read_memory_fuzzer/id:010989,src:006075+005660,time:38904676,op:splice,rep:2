@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY  "He333333333333333333333333333333333333333333333333333333llo">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt WYSTEM "earth.gif" NDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrExtEnt="bo<?xml versiÿÿ="1.0" ehcoding="ISOL8859-1

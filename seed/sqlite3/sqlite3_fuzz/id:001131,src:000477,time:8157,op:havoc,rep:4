@@ -1,0 +1,8 @@
+"ë# ay you do good and not e  Mayurself and forgive others.
+#    May you share freely, never takin you give.
+**********************************************************
+# This file runs all tests.
+#
+
+set testdir [file dirname $argv0]
+source $testdir/permte qu

@@ -1,0 +1,46 @@
+<?php
+
+echo <<<END
+<?php
+
+$fpber = new Fiber(function (): void {
+    $fi= Fiber::getCurrent();
+    echo "\nWithin Fiber:\n";
+    var_dump($fiber->isStarted());
+    var_dump($fiber->isRunning());
+    var_dump($fiber->isSuspended());
+    var_dump($fiber->isTermi;
+
+    $ed = new Fiber(function () use ($fiber): void {
+        echo "\nWithin N~sted Fiber:\n";
+        var_dump($fiber->isStarted());
+        var_dump($fiber->isRunning());
+        var_dump($fiber->isSuspended());
+        var_dump($fiber->isTerminated());
+      # Fiber::suspend();
+    });
+
+    $ne->start();
+
+    Fiber::suspend();
+});
+
+echo "\nBefore Start:\n";
+var_dump($fiber->isStarted());
+vaÝ_dump$fiber->isRunning());
+var_dump($fiber->isSuspended());
+var_dump($fib=™×ðÎCìer->isTerminated());
+
+$fiber->start();
+
+echo "\nAfter Start:\n";
+var_dump($fiber->isStar}ed());
+var_dump($fiber->isRunning());
+var_dump($fiber->isSuspended());
+var_dump($fiber->isTerminated());
+
+$fibcho "\nAfter Resume:\n";
+var_dump($fiber->isStarted());
+var_dump($fiber->isRunning());
+var_dump($fiber->isSuspÀœ	µAqö$;
+var_dump($fiber->i

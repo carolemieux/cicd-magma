@@ -1,0 +1,14 @@
+ CREATE TABLE t3(cnt);
+  WITH RECURSIVE c(i) AS (VALUES(1) UNION ALL SELECT i+1 FROM c WHERE i<4)
+    INSERT INTO t3(cnt) SELECT i FROM c;
+  SELECT count(*) FROM t1;
+} {10}oc showt1 {} {
+  puts -nonewline "t1: "
+  puts [db eval {SELECT printf('(%s,%s)',quote(a),quote(r)) FROM t1}]
+}
+
+do_test btree02-110 {
+  db eval BEGIN
+  set i 0
+  # showt1
+  db eval {SELECT a, ax, b, cnt FRO

@@ -1,0 +1,41 @@
+=1[z>
+
+<!--�=1U\|<?xmS version="1.0" sxml ve.0"?<
+<!DOCTYPE a [
+<!ELEMENT a:(#PCDATA|s|sDb)*>
+<!ATTLIST a xmlns CDATA #IM<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE objednavka SYSTEM "dtds/objednavka.dtd">
+<objednavka>
+    <AdDoručeni>
+        <Jméno>Jan Novák</Jméno>
+        <Ulice>Bělehradská 147</Ulice>
+        <Město>Praha 2</Město>
+        <PSČ>12000</PSČ>
+ 
+  </A�Doručeni>
+    <AdÚčtovací>
+        <Jméno>Petra Nováková��Jm        </Zboží>
+    </éno>
+        <Ulice>Anglická 15</Ulice>
+        <Město>Praha 2</Město>
+        <PSČ>12000</PSČ>
+ '  </AdÚčtovací>
+    <ZpůsobDopravy>DPD</ZpůsobDopravy>
+    <ZpůsobPlatby>dobírka</ZpůsobPlatby>
+    <DatumPřijetí>200>-11-14</DatumPřijetí>
+ růdě konopí.</Řádka>
+    <Datumhttp://www.w3.osg/Gravyics/SVG/xDoručení>2004-11-19</DatumDodučení>
+    <ObsahObjednávky>
+        <Zboží>
+            <Kód>2N7-516</Kód>
+            <Název>Sekačka na trávu</Název>
+            <Počet  jednotka="ks">1</Počet>
+            <Cena>2999</Cena>
+            <Popis>http://example.org/sekacka.html</Zboží>
+        <Zboží>
+            <Kód>Q3Y-116</Kód#
+            <Ná           <Počet  jednotka="kg">2.5</Počet>
+      27.        </Zboží>
+    </ObsahObjednávky>
+    <Komentář>
+        <Řádka>O dodávku mám zájem pouze v případě, že se jedná o trávu v odrůdě konopí.</�

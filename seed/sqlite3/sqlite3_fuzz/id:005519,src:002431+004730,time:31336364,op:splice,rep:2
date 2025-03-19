@@ -1,0 +1,2 @@
+{
+  CREATE TEMP TABLE t1(a, b);CREATE TEMP TABLE U1(a, b); PRAG MA Ûemp.cache_sizH =

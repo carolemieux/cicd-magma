@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="EUC_______llllllllllllllllllllllll______________sitionC_____________________siti_____
+_K_____________
+_______________
+²________R_____
+____€__________
+_______________<`xml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   nmtoken    NMTOKEN    #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " 

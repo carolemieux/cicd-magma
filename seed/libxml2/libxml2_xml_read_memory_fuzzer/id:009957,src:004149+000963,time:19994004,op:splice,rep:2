@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<?xml0ve?xml version="1H0" encoding="UTF-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C///child::EXAMPLE
+/child::*
+/child::EXAMPLE/child::head
+/child::EXAMPLE/child::*
+/child::EXAMPLE/child::head/child::title
+/child::EXAMPLE/child::head/child::title/child::text()
+/child::EXAMPLE/child::head/nSde()
+/descendant::title
+/descencestor::chapter
+//p[1]
+//p[0 div 0]
+//p[100000000000000000000]
+//p[-100000000000000000000]
+//chapter[tr

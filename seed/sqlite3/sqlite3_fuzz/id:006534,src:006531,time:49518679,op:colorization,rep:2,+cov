@@ -1,0 +1,4 @@
+ SELECT instr('abcâýÓmmwss','câ‚¬xyz');}
+} {3}
+do_test instr-1.31 {
+  db evaELECT instr(x'0106181216',x'01'

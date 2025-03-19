@@ -1,0 +1,21 @@
+CREATE TABLE t1(
+    a UNIQUELACE, 
+    b INT PRIMARY KEY ON CONFLICT IGNORE,
+    c UNIQUEÿÿN CONFLICT FAIL
+  ) WITHOUT ROWID;
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# InsertTE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b UNIQUE ON CONFLICT IGNORE,
+    Y KEY ON CONFLICT FAIL
+  );
+  IN,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_te then there should be a constraint error.REPLA

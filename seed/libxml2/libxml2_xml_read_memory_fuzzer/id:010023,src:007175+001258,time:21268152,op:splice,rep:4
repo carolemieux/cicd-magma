@@ -1,0 +1,16 @@
+<?xml versiŠn="1.0" encoding="ISO-8859-"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "somethiolon: &ng">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="&b:#+=
+&a; should appear after colon: &a;
+&b; should appear after colon: &a;a; should appear after colon: &b;<element name="r.org/ns/str/1.0">
+  <cho <element name="child">
+      <attribute name="type">
+        <value>Foo</value>
+      </attribute>
+$     <!-- D

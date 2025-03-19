@@ -1,0 +1,8 @@
+<?DOCTYPE doc/[
+<!ATTLIST doc a1 NMTOKENS "<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD>SVG April 1999//EN" 
+  "http://www.w3.org/Graphics/SVG/svg-19990*12.dtd">
+<svg width="4in" he>This graphic links to an external image
+  </desc>¿
+  <image x="200" ”="200" style="width: 10f="myimage.png">
+    <t

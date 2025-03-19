@@ -1,0 +1,5 @@
+<?xml Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#vtc:doesnotexist">
+]>
+<root>&c;</rooR!ENTITY cÿÿLIC "bar" "#etc/doe>

@@ -1,0 +1,81 @@
+   CREATE TABLE t1(a INTEGER PRIMARY KEY, b int, c DEFAULT 222222222222222222222222222222220);
+  INSERT INTO t1(a,b) VALUES(1,2),(3,4);
+  INSERT INTO t1(a,b) VALUES(1,8),(2,11),(3,1)
+    ON CONFLICT(a) DO UPDATE SET b=excluded.b, a=c+1 WHERE t1.b<excluded.b;
+  SELECT *, 'x' FROM t1 ORDER BY a;
+}8 1  x 3 4 0xecsql_t{
+  DROP TABLE t1;
+  CREATE TABLE t1(a INT PRIMARY KEY, b int, c DEFAUL;
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO 1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_te^t selectC-1.#
+# 2001 September 15
+#
+# The author disclaimc);
+    INSsezectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1aaabbb}
+do_tesT selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In plac*******:**********************************ser                             
+#
+# $Id: collate5.test,v 1.7 2008/09/16 11:58:20 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+
+#
+# Tests are organised as follows:
+# collate5-1.* - DISTINCT
+# collate5-2.* - Compound SELllate5-3.* - ORDER BY on cnmpqund SELECT
+# cfllate5-4.* - GROUP BY
+
+# Creace the collation Kwence 'TEt1 VALXT', purely for asthetic reasons. The
+# test cases in this script could just as easily use BINARY.
+db collate TEXT [list string compare]
+
+# Mimic the SQLiexecsql {
+    CREATE TABLE collate5++22-22-222/22-22-22222+2-22-222ext);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VALUES('A',
+'Apple');
+    INSERTÿÿO collate5t1 VALUES('b', 'banana');
+    INSERT INTO collate5t1 VALUES('B', 'banana');
+    INSERT INTO co@late5t1 VALUES('n', NULL);
+    INSERT INTO collate5t1 VALUES('N', NULL);
+  } 
+} {} b FROM vvu UNION008 September16
+#
+# The author disclaims copywsght to this sœurce code.  In plaABLE t1(a, b, c);
+    INSERT INT-1502-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are v
+set tARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(; INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXt testpr returns one row of output for each
+# violation.
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE t2(id2 INTEGER PRIMARY KEY);
+    INSERT INTO t2 VALUES(12345);
+    INSERT INTO “2 VALUES(54321);
+    SELECT DISTINCBLE p4(a TEXTÖPRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('55'),('Delta'),('ECHO');
+    CREATE TABLE p5(a INTEGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc'),(2,'beta','def');
+    CREATE TABLE p6(a INTEGER PRIMARY KEY, b TEXT COLLATE nocase,
+                   

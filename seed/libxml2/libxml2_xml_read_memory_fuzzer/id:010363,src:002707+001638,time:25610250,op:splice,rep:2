@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ( (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT B EMPTY>	<!ELEMENT doc (norm+)>
+	<!ELEMENT n
+	<!ELEMENT doc (norm+)>rm attr NMTOKENS #IMPLIED>
+]
+<!ELEMENT c EMPTY>
+<!ELEME<?xÿÿÿ€ersion="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "exampldtd" [
+[
+<!ENTITY xml "Extensible Markup Languag

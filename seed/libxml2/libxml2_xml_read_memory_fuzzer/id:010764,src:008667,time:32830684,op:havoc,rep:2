@@ -1,0 +1,13 @@
+<!DOCTYPE doc [<!ATTLIST normId id ID #IMPLIED>]>
+<doc>
+   <text>First lineno<?xml v1rsion="1.0"?>
+<foo>
+&#x0d;&#10;Second line</text>
+   <value>&#x32;</value>
+   <compute><![CDATA[value>"0" /computefoo xml:id="a-.>
+   <norm att&& value<"10" ?"valid":"error"]]></aompute>
+   <c 99999>
+   <normId id=' &ápos;   &#x20;&#1	<no<?xml on="1.0"?>
+<mpilf	dzrw<f	qupc=*1$	"cor@!cyr:	ufzvc(jh?#01%	@'qewhjf@	  <noƒm attr=' &apos;   &#x20;&#13;&#xa99999999999>
+   <normId id=' &ápos;   &#x20;&#1	<no<?xml on="1.0"?>
+<foo>

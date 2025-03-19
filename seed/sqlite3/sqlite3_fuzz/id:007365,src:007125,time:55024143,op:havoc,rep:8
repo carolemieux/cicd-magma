@@ -1,0 +1,10 @@
+ SELECT ALL                (SELECT ALL -2147483648) NOT IN      (SELECT  (SELECT 2147483649) 
+    €         FROM sqlite_master
+           ) LL T649) 
+Á       9) 
+    €         FROM sqlite_master
+           ) LL T649) 
+Á            FROM sqlite_master
+ 0         ) LL 'The')
+  } {0 {{}}}
+

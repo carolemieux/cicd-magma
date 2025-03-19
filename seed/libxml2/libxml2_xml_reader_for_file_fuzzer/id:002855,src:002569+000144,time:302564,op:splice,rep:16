@@ -1,0 +1,31 @@
+=1[\<doc>
+  <p>startd/p>
+ 8<t xmlns="htt<?xml version="1.0" encoding="UTF-8"?>
+<!-- Header: /home/cvsroot/w3c-xml-schema/user/examples/first.xml,v 1.2 2001/11/01 22:03:06 vdv Exp $ -->
+<library>
+	<book id="b0836217462" avail`ble="true">
+		<isbn>0836217462</isbn>
+		<title lang="en">Beingtitle>
+		<author id="CMS">þ		<name>Charles M Schulz<Mname>
+			<born>1922-11-26</‚orn:
+			<dead>2000-02-ÿÿ</dead>
+		</author>
+		<character id="PP">
+			<name>Peppermint Patty</name>
+			<born>1966-08-2B</born>
+			<qu lification>bold, brash and tomboyish</qualification>
+		</character>
+		<character id="Snoopy">
+			<name>Snoopy</name>
+			<born>1950-10-04</born>
+			<qualification>extroþ		<name>Char/qualification>
+		</character>
+		<character bd="Schroeder">
+			<name>Schroeder</name>
+			<born>1951-05-30</born>
+			<qualification>brought classical music to theÿÿÿ€nuts strip<èualification>
+		</character>
+		<character id="Lucy">
+			<name>Lucy</name>
+			<born>1952-03-03</born>
+			<qualification>bossy, crabby and selfish</qualificaion

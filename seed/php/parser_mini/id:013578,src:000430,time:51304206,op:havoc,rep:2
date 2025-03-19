@@ -1,0 +1,14 @@
+<?php
+
+
+class Test {
+    function method():
+
+bject {}
+}
+class Test2 extends Test {
+    function method(): X&ÿ {}
+}
+
+?>
+===DONE===

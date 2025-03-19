@@ -1,0 +1,12 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   nmtoken    NMTOKEN    #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " entity&recursive; ">
+<!ENTITY recursive "reference">
+]>
+<axample foo="bar" xml:space="defaukz)+% &ent; "
+  nKtokens = " Test&#x0d;&#x0a;     tixn%*r20; normalization "
+/>

@@ -1,0 +1,1080 @@
+=1U\|<?xml version='1.0' encoding='ISO-8859-1' standalone='no'?>
+<!DOCTYPE spec SYSTEM "dtds/spec.dtd" [
+
+<!-- LAST TOUCHED BY: Tim Bray, 8 February 1997 -->
+
+<!-- The words 'FINAL EDIT' in comments mark places where changes
+need to be made after approval of the document by the ERB, before
+publication.  -->
+
+<!ENTITY XML.version "1.0">
+<!ENTITY doc.date "10 February 1998">
+<!ENTITY iso6.doc.date "19980210">
+<!ENTITY w3c.doc.date "02-Feb-1998">
+<!ENTITY draft.day '10'>
+<!ENTITY draft.month 'February'>
+<!ENTITY draft.year '1998'>
+
+<!ENTITY WebSGML 
+ 'WebSGML Adaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "¼"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc   "--">
+<!ENTITY hcro   "&amp;#x">
+<!-- <!ENTITY nbsp " "> -->
+<!ENTITY nbsp   "&#160;">
+<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+ 
+<!-- audience and distribution status:  for use at publication time -->
+<!ENTITY doc.audience "public review and discussion">
+<!ENTITY doc.distribution "may be distributed freely, as long as
+all text and legal notices remain intact">
+
+]>
+
+<!-- for Panorama *-->
+<?VERBATIM "eg" ?>
+
+<spec>
+<header>
+<title>Extensible Markup Language (XML) 1.0</title>
+<version></version>
+<w3c-designation>REC-xml-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href=//www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.pdf">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.pdf</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.ps">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.ps</loc>
+</publoc>www.w3.org document has been reviewed by W3C Members and
+other interested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISO 8879:1986(E) as amended and
+corrected) for use on the World Wide Web.  It is a product of the W3C
+XML Activity, details of which can be found at <loc
+href='http://www.w3.org/XML'>http://www.w3.org/XML</loc>.  A list of
+current W3C Recommendations and other technical documents can be found
+at <loc href='http://www.w3.org/TR'>http://www.w3.org/TR</loc>.
+</p>
+<p>This specification uses the term URI, which is deType,
+Enumeration.  Follow James Clark's suggestion and prohibit 
+conditional sections in internal subset.  TO DO:  simplify
+production for ignored sections as a result, since we don't 
+need to worry about parsers which don't expand PErefs finding
+a conditional section.</sitem>
+<sitem>1997-06-29 : TB : various edits</sitem>
+<sitem>1997-06-29 : CMSMcQ : further changes:
+Suppress old FINAL EDIT comments and some dead material.
+Revise occurrences of % in grammar to exploit Henry Thompson's pun,
+especially markupdecl and attdef.
+Remove RMD requirement relating to element content (?).
+</sitem>
+<sitem>1997-06-28 : CMSMcQ : Various changes for 1 July draft:
+Add text for draconian error handling (introduce
+the term Fatal Error).
+RE deleta est (changing wording from 
+original announcement to restrict the requirement to validating
+parsers).
+Tag definition of validating processor and link to it.
+Add colon as name character.
+Change def of %operator.
+Change standard definitions of lt, gt, amp.
+Strip leading zeros from #x00nn forms.</sitem>
+<sitem>1997-04-02 : CMSMcQ : final corrections of editorial errors
+found in last night's proofreading.  Reverse course once more on
+well-formed:   Webster's Second hyphenates it, and that's enough
+for me.</sitem>
+<sitem>1997-04-01 : CMSMcQ : corrections from JJC, EM, HT, and self</sitem>
+<sitem>1997-03-31 : Tim Bray : many changes</sitem>
+<sitem>1997-03-29 : CMSMcQ : some Henry Thompson (on entity handling),
+some Charles Goldfarb, some ERB decisions (PE handling in miscellaneous
+declarations.  Changed Ident element to accept def attribute.
+Allow normalization of Unicode characters.  move def of systemliteral
+into section on literals.</sitem>
+<sitem>1997-03-28 : CMSMcQ : make as many corrections as possible, ch the two forks of this draft, reapply
+my changes dated 03-20 and 03-21.  Normalize old 'may not' to 'must not'
+except in the one case where it meant 'may or mpe of NUMBERED and change most lists either to
+BULLETS or to NUMBERED.
+Suppress QuotedNames, Names (not used).
+Correct trivial-grammar doc type decl.
+Rename 'marked section' as 'CDATA section' passim.
+Also edits from James Clark:
+Define the set of characteuestion).
+One example of a PI has wrong pic.
+Clarify discussion of encoding names.
+Encoding failure should lead to unspecified results; don't
+prescribe error recovery.
+Don't require exposure of entity boundaries.
+Ignore white space in element content.
+Reserve entity names of the form u-NNNN.
+Clarify relative URLs.
+And some of my own:
+Correct productions for content model:  model cannot
+consist of a name, so "elements ::= cp" is no good.
+</sitem>
+<sitem>1996-11-11 : CMSMcQ : revise for style.
+Add new rhs to entity declaration, for parameter entities.</sitem>
+<sitem>1996-11-10 : CMSMcQ : revise for style.
+Fix / complete section on names, characters.
+Add sections on parameter entities, conditional sections.
+Still to do:  Add compatibility note on deterministic content models.
+Finish stylistic revision.</sitem>
+<sitem>1996-10-31 : TB : Add Entity Handling section</sitem>
+<sitem>1996-10-30 : TB : Clean up term &amp; termdef.  Slip in
+ERB decision re EMPTY.</sitem>
+<sitem>1996-10-28 : TB : Change DTD.  Implement some of Michael's
+suggestions.  Change comments back to //.  Introduce language for
+XML namespace reservation.  Add section on white-space handling.
+Lots more cleanup.</sitem>
+<sitem>1996-10-24 : CMSMcQ : quick tweaks, implement some ERB
+decisions.  Characters are not integers.  Comments are /* */ not //.
+Add bibliographic refs to 10646, HyTime, Unicode.
+Rename old Cdata as MsData since it's <emph>only</emph> seen
+in marked sections.  Call them attribute-value pairs not
+name-value pairs, except once.  Internal subset is optional, needs
+'?'.  Implied attributes should be signaled to the app, not
+have val correct a few productions.</sitem>
+<sitem>1996-10-10/11 : CMSMcQ : various maintenance, stylistic, and
+organizational changes:
+Replace a few literals with xmlpio and
+pic entities, to make them consistent and ensure we can change pic
+reliably when the ERB votes.
+Drop paragraph on recognizers from notation section.
+Add match, exact match to terminology.
+Move old 2.2 XML Processors and Apps into intro.
+Mention common of 'PI syntax' for doctype decl, and add
+section on partial-DTD summary PIs to end of Logical Structures
+section.
+Revise DSD syntax section to use Tim's subset-in-a-PI
+mechanism.</sitem>
+<sitem>1996-10-10 : TB : eliminate name recognizers (and more?)</sitem>
+<sitem>1996-10-09 : CMSMcQ : revise for style, consistency through 2.3
+(Characters)</sitem>
+<sitem>1996-10-09 : CMSMcQ : re-unite everything for convenience,
+at least temporarily, and revise quickly</sitem>
+<sitem>1996-10-08 : TB : first major homogenization pass</sitem>
+<sitem>1996-10-08 : TB : turn "current" attribute on div type into 
+CDATA</sitem>
+<sitem>1996-10-02 : TB : remould into skeleton + entities</sitem>
+<sitem>1996-09-30 : CMSMcQ : add a few more sections prior to exchange
+                            with Tim.</sitem>
+<sitem>1996-09-20 : CMSMcQ : finish transcribing notes.</sitem>
+<sitem>1996-09-19 : CMSMcQ : begin transcribing notes for draft.</sitem>
+<sitem>1996-09-13 : CMSMcQ : made outline from notes of 'must' clause as 'an error'. -MSer data and markup) available to the application.
+Once a fatal error is detected, however, the processor must not
+continue normal processing (i.e., it must not
+continue to pass character data and information about the docume are errors; they must, at user option, 
+be reported by 
+<termref def="dt-validating">validating XML processors</termref>.</p></def>
+</gitem>
+<gitem>
+<label>well-formedness constraint</label>
+<def><p>A rule which applies to all <termref
+def="dt-wellformed">well-formed</termref> XML documents.
+Violations of well-formedness constraints are 
+<termref def="dt-fatal">fatal errors</termref>.</p></def>
+</gitem>
+
+<gitem>
+<label>match</label>
+<def><p><termdef id="dt-match" term="match">(Of strings or names:) 
+Two stt and content models:)
+An elemenLiteral"><lhs>PubidLiteral</lhs>
+<rhs>'"' <nt def='NT-PubidChar'>PubidChar</nt>* 
+'"' 
+| "'" (<nt def='NT-PubidChar'>PubidChar</nt> - "'")* "'"</rhs>
+</prod>
+<prod id="NT-PubidChar"><lhs>PubidChar</lhs>
+<rhs>#x20 | #xD | #xA</termref> and markup.
+<termdef "dt-pi">processing instructions</termref>.
+</termdef>
+</p>
+<p><termdef id="dt-chardata" term="Character Data">All text that is not markup
+constitutes the <term>character data</term> of
+the document.</termdef></p>
+<p>The ampersand character (&amp;) and the left angle bracket (&lt;)
+may appear in their literal form <emph>only</emph> when used as markup
+delimiters, or within a <termref def="dt-comment">comment</termref>, a
+<termref def="dt-pi">processing instruction</termref>, 
+or a <termref def="dt-cdsection">CDATA section</termref>.  
+
+They are also legal within the <termref def='dt-litentval'>literal entity
+value</termref> of an internal entity declaration; see
+<specref ref='wf-entities'/>.
+<!-- FINAL EDIT:  restore internal entity decl or leave it out. -->
+If they are needed elsewhere,
+they must be <termref def="dt-escape">escaped</termref>
+using either <termref def='dt-charref'>numeric character references</termref>
+or the strings
+"<code>&amp;amp;</code>" and "<code>&amp;lt;</code>" respectively. 
+The right angle
+bracket (>) may be represented using the string
+"<code>&amp;gt;</code>", and must, <termref def='dt-compat'>for
+compatibility</termref>, 
+be escaped using
+"<code>&amp;gt;</code>" or a character reference 
+when it appears in the string
+"<code>]]&gt;</code>"
+in content, 
+when that string is not marking the end of 
+a <termref def="dt-cdsection">CDATA section</termref>. 
+</p>
+<p>
+In the content of elements, character data 
+is any string of characters which does
+not contain the start-delimiter of any markup.  
+In a CDATA section, character data
+is any string of characters not including the CDATA-section-close
+delimiter, "<code>]]&gt;</code>".</p>
+<p>
+To allow attribute values to contain both single and double quotes, the
+apostrophe or single-quote characteplication to
+retrieve the text of comments.
+<termref def="dt-compat">For compatibility</termref>, the string
+"<code>--</code>" (double-hyphen) must not occur within
+comments.
+<scrap lang="ebnf">
+<head>Comments</head>
+<prod id='NT-Comment'><lhs>Comment</lhs>
+<rhs>'&lt;!--'
+((<nt def='NT-Char'>Char</nt> - '-') 
+| ('-' (<nt def='NT-Char'>Char</nt> - '-')))* 
+'-->'</rhs>
+</prod>
+</scrap>
+</termdef></p>
+<p>An example of a comment:
+<eg>&lt;!&como; declarations for &lt;head> &amp; &lt;body> &comc;&gt;</eg>
+</p>
+</div2>
+ 
+<div2 id='sec-pi'>
+<head>Processing Instructions</head>
+ 
+<p><termdef id="dt-pi" term="Processing instruction"><term>Processing
+instructions</term> (PIs) allow documents to contain instructions
+for applications.
+ 
+<scrap lang="ebnf">
+<head>Processing Instructions</head>
+<prod id='NT-PI'><lhs>PI</lhs>
+<rhs>'&lt;?' <nt def='NT-PITarget'>PITarget</nt> 
+(<nt def='NT-S'>S</nt> 
+(<nt def4'NT-Char'>Char</nt>* - 
+(<nt def='NT-Char'>Char</nt>* &pic; <nt def='NT-Char'>Char</nt>*)))?
+&pic;</rhs></prod>
+<prod is <termref def='dt-chardata'>character data</termref>, not
+<termref def='dt-markup'>markup</termref>:
+<eg>&lt;![CDATA[&lt;greeting>Hello, world!&lt;/greeting>]]&gt;</eg>
+</p>
+</div2>
+ 
+<div2 id='sec-prolog-dtd'>
+<head>Prolog and Document Type Declaration</head>
+ 
+<p><termdef id='dt-xmldecl' term='XML Declaration'>XML documents 
+may, and should, 
+begin with an <term>XML declaration</term> which specifies
+the version of
+XML being used.</termdef>
+For example, tHe following is a greeting>
+]]></eg>
+</p>
+
+<p>The version number "<code>1.0</code>" should be used to indicate
+conformance to this version of this specification; it is an error
+for a document to use the value "<code>1.0</code>" 
+if it does not conform to this version of this specification.
+It is the intent
+of the XML working group to give later versions of this specification
+numbers other than "<code>1.0</code>", but this intent does not
+indicate a
+commitment to produce any future versions of XML, nor if any are produced, toments labeled with 
+versions they do not support. 
+</p>
+<p>The function of the markup in an XML document is to describe its
+storage and logical structure and to associate attribute-value pairs
+with its logical structures.  XML provides a mechanism, the <termref
+def="dt-doctype">document type declaration</termref>, to define
+constraints on the logical structure and to support the use of
+predefined storage units.
+
+<termdef id="dt-valid" term="Validity">An XML document is 
+<term>valid</term> if it has an assocd='xmldoc'>
+<head>Prolog</head>
+<prodgroup pcw2="6" pcw4="17.5" pcw5="9">
+<prod id='NT-prolog'><lhs>prolog</lhs>
+<rhs><nt def='NT-XMLDecl'>XMLDecl</nt>? 
+<nt def='NT-Misc'>Misc</nt>* 
+(<nt def='NT-doctypedecl'>doctypedecl</nt> 
+<nt def='NT-Misc'>Misc</nt>*)?</rhs></prod>
+<prod id='NT-XMLDecl'><lhs>XMLDecl</lhs>
+<rhs>&xmlpio; 
+<nt def='NT-VersionInfo'>VersionInfo</nt> 
+<nt def='NT-EncodingDecl'>EncodingDecl</nt>? 
+<nt def='NT-SDDecl'>SDDecl</nt>? 
+<nt def="NT-S">S</nt>? 
+&pic;</rhs>
+</prod>
+<prod id='NT-VersionInfo'><lhs>VersionInfo</lhs>
+<rhs><nt def="NT-S">S</nt> 'version' <nt def='NT-Eq'>Eq</nt> 
+(' <nt def="NT-VersionNum">VersionNum</nt> ' 
+| " <nt def="NT-Versrhs></prod>
+<prod id="NT-VersionNum">
+<lhs>VersionNum</lhs>
+<rhs>([a-zA-Z0-9_.:] | '-')+</rhs>
+</prod>
+<prod id='NT-Misc'><lhs>Misc</lhs>
+<rhs><nt def='NT-Comment'>Comment</nt> | <nt def='NT-PI'>PI</nt> | 
+<nt def='NT-S'>S</nt></rhs></prod>
+</prodgroup>
+</scrap></p>
+
+<p><termdef id="dt-doctype" term="Document Type Declaration">The XML
+<term>document type declaration</term> 
+contains or points to 
+<termref def='dt-markupdecl'>markup declarations</termref> 
+that provide a grammar for a
+class of documents.  
+This grammar is known as a document type definition,
+or <term>DTD</term>.  
+The document type declaration can point to an external subset (a
+special kind of 
+<termref def='dt-extent'>external entity</termref>) containing markup
+declarations, or can 
+contain the markup declarations directly in an internal subset, or can do
+both.   
+The DTD for a document consists of both subsets taken
+together.</termdef>
+</p>
+<p><termdef id="dt-markupdecl" term="markup declaration">
+A <term>markup declaration</term> is 
+an <termref def="dt-eldecl">element type declaration</termref>, 
+an <termref def="dt-attdecl">attribute-list declaration</termref>, 
+an <termref def="dt-entdecl">entity declaration</termref>, or
+a <termref def="dt-notdecl">notation declaration</termref>.
+</termdef>
+These declarations may be contained in whole or in part
+within <termref def='dt-PE'>parameter entities</termref>,
+as described in the well-formedness and validity constraints below.
+For fuller information, see
+<specref ref="sec-physical-struct"/>.</p>
+<scrap lang="ebnf" id='dtd'>
+<head>Document Type Definition</head>
+<prodgroup pcw2="6" pcw4="17.5" pcw5="9">
+<prod id='NT-doctypedecl'><lhs>doctypedecl</lhs>
+<rhs>'&lt;!DOCTYPE' <nt def='NT-S'>S</nt> 
+<nt def='NT-Name'>Name</nt> (<nt def='NT-S'>S</nt> 
+<nt def='NT-ExternalID'>ExternalID</nt>)? 
+<nt def='NT-S'>S</nt>? ('[' 
+(<nt def='NT-markupdecl'>markupdecl</nt> 
+| <nt def='NT-PEReference'>PEReference</nt> 
+| <nt def='NT-S'>S</nt>)*
+']' 
+<nt def='NT-S'>S</nt>?)? '>'</rhs>
+<vc def="vc-roottype"/>
+</prod>
+<prod id='NT-markupdecl'><lhs>markupdecl</lhs>
+<rhs><nt def='NT-elementdecl'>elementdecl</nt> 
+| <nt def='NT-AttlistDecl'>AttlistDecl</nt> 
+| <nt def='NT-EntityDecl'>EntityDecl</nt> 
+| <nt def='NT-NotationDecl'>NotationDecl</nt> 
+| <nt def='NT-PI'>PI</nt> 
+| <nt def='NT-Comment'>Comment</nt>
+</rhs>
+<vc def='vc-PEinMarkupDecl'/>
+<wfc def="wfc-PEinInternalSubset"/>
+</prod>
+
+</prodgrouermref> of 
+<termref def='dt-PE'>parameter entities</termref>.
+The productions later in this specification for
+individual nonterminals (<nt def='NT-elementdecl'>elementdecl</nt>,
+<nt def='NT-AttlistDecl'>AttlistDecl</nt>, and so on) describe 
+the declarations <emph>after</emph> all the parameter entities have been 
+<termref def='dt-include'>included</termref>.</p>
+
+<vcnote id="vc-roottype">
+<head>Root Element Type</head>
+<p>
+The <nt def='NT-Name'>Name</nt> in the document typmref> must be properly nested
+wince</termref>,
+both must be contained in the same replacement text.</p>
+</vcnote>
+<wfcnote id="wfc-PEinInternalSubset">
+<head>PEs in Internal Subset</head>
+<p>In the internal DTD subset, 
+<termref def='dt-PERef'>parameter-entity references</termref>
+can occur only where markup declarations can occur, not
+within markup declarations.  (This does not apply to
+references that occur in
+external parameter entities or to the external subset.)
+</p>
+</wfcnote>
+<p>
+Like the internal suion</termref>
+construct; this is not allowed in the internal subset.
+
+<scrap id="ext-Subset">
+<head>External Subset</head>
+<prodgroup pcw2="6" pcw4="17.5" pcw5="9">
+<prod id='NT-extSubset'><lhs>extSubset</lhs>
+<rhs><nt def='NT-TextDecl'>TextDecl</nt>?
+<nt def=ck;'><titleref href='inclsetDecl</nt></rhs></prod>
+<prod id='NT-extSubsetDecl'><lhs>extSubsetDecl</lhs>
+<rhs>(
+<nt def='NT-markupdecl'>markupdecl</nt> 
+| <nt def='NT-conditionalSect'>conditionalSect</nt> 
+| <nt def='NT-PEReference'>PEReference</nt> 
+| /greeting>
+]]></eg>
+The <termref def="dt-sysid">system identifier</termref> 
+"<code>hello.dtd</code>" gives the URI of a DTD for the document.</p>
+<p>The declarations can also be given locally, as in this 
+example:
+<eg><![CDATA[<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE greeting [
+  <!ELEMENT greeting (#PCDATA)>
+]>
+<greeting>Hello, world!</greeting>
+]]></eg>
+If both the external and internal subsets are used, the 
+internal subset is considered to occur before the external subset.
+<!-- 'is considered to'? boo. whazzat mean? -->
+Thiseclaration, the value "<code>yes</code>" indicates
+that there 
+are no markup declarations external to the <termref def='dt-docent'>document
+entity</termref> (either in the DTD external subset, or in an
+external parameter entity referenced from the internal subset)
+which affect the information passed from the XML processor to
+the application.  
+The value "<code>no</code>" indicates that there are or may be such
+external markup declarations.
+Note that the standalone document declaration only 
+denotes the press can 
+be converted algorithmically to a standalone document, 
+which may be desirable for some network delivery applications.</p>
+<vcnote id='vc-check-rmd'>
+<head>Standalone Document Declaration</head>
+<p>The standalone document declaration must have
+the value "<code>no</code>" if any external markup declarations
+contain declarations of:</p><ulist>
+<item><p>attributes with <termreftions of values for these attributes, or</p></item>
+<item><p>entities (other than &magicents;), 
+if <termref def="dt-entref">references</termref> to those
+entities appear in the document, or</p>
+</item>
+<item><p>attributes with values subject to
+<titleref href='AVNormalize'>normalization</titleref>, where the
+attribute appears in the document with a value which will
+change as a result of normalization, or</p>
+</item>
+<item>
+<p>element types with <termref def="dt-elemcontent">element content</termref>, 
+if white space occurs
+directly within any instance of those types.
+</p></item>
+</ulist>
+
+</vcnote>
+<p>An example XML declaration with a standalone document declaration:<eg
+>&lt;?xml version="&XML.version;" standalone='yes'?></eg></p>
+</div2>
+<div2 id='sec-whitode.</p>
+<p>An <termref def='dt-xml-proc'>XML processor</termref> 
+must always pass all characters in a document that are not
+markup through to the application.   A <termref def='dt-validating'>
+validating XML processor</termref> must also inform the application
+which  of these characters constitute white space appearing
+in <termref def="dt-elemcontent">element content</termref>.
+</p>
+<p>A special <termref def='dt-attr'>attribute</termref> 
+named <kw>xml:space</kw> may be attached to an element
+to signal an intention that in that element,
+white space should be preserved by applications.
+In valid documents, this attribute, like any other, must be 
+<termref def="dt-attdecl">declared</termref> if it is used.
+When declared, it mus"Codes 
+for the representation of names of countries."
+If the first 
+subcode consists of more than two letters, it must be
+a subcode for the language in question registered with IANA,
+unless the <nt def='NT-Langcode'>Langcode</nt> begins with the prefix 
+"<code>x-</code>" or
+"<c<doc>
+  <pode>X-</code>". </p>
+<p>It is customary to give the language code in lower case, and
+the country code (if any) in upper case.
+Note that these values, unlike other names in XML documents,
+are case insensitive.</p>
+<p>For example:
+<eg><![CDATA[<p xml:lang="en">The quick brown fox jumps over the lazy dog.</p>
+<p xml:lang="en-GB">What colour is it?</p>
+<p xml:lang="en-US">What color is it?</p>
+<sp who="Faust" desc='leise' xml:lang="de">
+  <l>Habe nun, ach! Philosophie,</l>
+  <l>Juristerei, und Medizin</l>
+  <l>und leider auch Theologie</l>
+  <l>durchaus studiert mit heißem Bemüh'n.</l>
+  </sp>]]></eg></p>
+<!--<p>The xml:lang value is considered to apply both to the contents of an
+element and 
+(unless otherwise via attribute default values) to the
+values of all of its attributes with free-text (CDATA) values.  -->
+<p>The intent declared with <kw>xml:lang</kw> is considered to apply to
+all attributes and content of the element where it is specified,
+unless overridden with an instance of <kw>xml:lang</kw>
+on another element within that content.</p>
+<!--
+If no
+value is specified for xml:lang on an element, and no default value is
+defined fotechnical terms in the following example both have the same effective
+value for xml:lang:
+
+  <p xml:lang="en">Here the keywords are
+  <term xml:lang="en">shift</term> and
+  <term>reduce</term>. ...</p>
+
+The application, not the XML processor, is responsible for this '
+inheritance' of attribute values.
+-->
+<p>A simple declaration for <kw>xml:lang</kw> might take
+the form
+<eg>xml:lang  NMTOKEN  #IMPLIED</eg>
+but specific default values may also be given, if appropriate.  In a
+collection of French poems for Enndaries of which are 
+either delimited by <termref def="dt-stag">start-tags</termref> 
+and <termref def="dt-etag">end-tags</termref>, or, for <termref
+def="dt-empty">empty</termref> elements, by an <termref
+def="dt-eetag">empty-element tag</termref>. Each > )*
+<nt def='NT-S'>S</nt>? ')'</rhs>
+<vc def='vc-PEinGroup'/></prod>
+<prod id='NT-seq'><lhs>seq</lhs>
+<rhs>'(' <nt def='NT-S'>Sef='vc-PEinGroup'/></prod>
+
+</prodgroup>
+</scrap>
+where each <nt def='NT-Name'>Name</nt> is the type of an element which may
+appear as a <termref def="dt-parentchild">child</termref>.  
+Any content
+particle in a choice list may appear in the <termref
+def="dtelemcontent">element content</termref> at the location where
+the choice list appears in the grammar;
+content particles occurring in a sequence list must each
+appear in the <termref def="ot-elemcontent">element content</termref> in the
+order given in thecur one
+or more (<code>+</code>), zero or more (<code>*</code>), or zero or 
+one times (<code>?</code>).  
+The absence of such asing parentheses
+in a <nt def='NT-choice'>choice</nt>, <nt def='NT-seq'>seq</nt>, or
+<nt def='NT-Mixed'>Mixed</nt> construct 
+is contained in the replacement text for a 
+<termref def='dt-PERef'>parameter entity</termref>,
+both must be contained in the same</code> or <code>,</code>).
+</p>
+</vcnote>
+<p>Examples of element-content models:
+<eg>&lt;!ELEMENT spec (front, body, back?)>
+&lt;!ELEMENT div1 (head, (p | list | note)*, div2*)>
+&lt;!ELEMENT dictionary-body (%div.mix; | %dict.mix;)*></eg></p>
+</div3>
+
+<div3 id='sec-mixed-content'>
+<head>Mixed Content</head>
+ 
+<p><termdef id='dt-mixed' term='Mixed Content'>An erod>
+<prod id='NT-StringType'><lhs>StringType</lhs>
+<rhs>'CDATA'</rhs>
+</prod>
+<prod id='NT-TokenizedType'><lhs>TokenizedType</lhs>
+<rhs>'ID'</rhs>
+<vc def='id'/>
+<vc def='one-id-per-el'/>
+<vc def='id-default'/>
+<rhs>| 'IDREF'</rhs>
+<vc def='idref'/>
+<rhs>|ISO-8859-9 ISO-2022-JP SHIFT_JIS>
+<rhs>| 'ENTITY'</rhs>
+<vc def='entname'/>
+<rhs>| 'ENTITIES'</rhs>
+<vc def='entname'/>
+<rhs>| 'NMTOKEN'</rhs>
+<vc def='nmtok'/>
+<rhs>| 'NMTOKENS'</rhs>
+<vc def='nmtok'/></prod>
+</prodgroup>
+</scrap>
+</p>
+<vcnote id='id' >
+  
+</p>
+</vcnote>
+<vcnote id='one-id-per-el'>
+<head>One ID per Element Type</head>
+<p>No element type may have more than one ID attribute specified.</p>
+</vcnote>
+<vcnote id='id-default'>
+<head>ID Attribute Default</head>
+<p>An ID attribute must have a declared default of <kw>#IMPLIED</kw> or
+<kw>#REQUIRED</kw>.</p>
+</vcnote>
+<vcnote id='idref'>
+<head>IDREF</head>
+<p>
+Values of type <kw>IDREF</kw> must match
+the <nt def="NT-Name">Name</nt> production, and
+values of type <kw>IDREFS</kw> must match
+<nt def="NT-Names">Names</nt>; 
+each <nt def='NT-Name'>Name</nt> must match the value of an ID attribute on 
+some element in the XML document; i.e. <kw>IDREF</kw> values must 
+match the value of some ID attribute. 
+</p>
+</vcnote>
+<vcnote id='entname'>
+<head>Entity Name</head>
+<p>
+Values of type <kw>ENTITY</kw> 
+must match the <nt def="NT-Name">Name</nt> production,
+values of type <kw>ENTITIES</kw> must match
+<nt def="NT-Names">Names</nt>;
+each <nt def="NT-Name">Name</nt> must 
+match the
+name of an <termref def="dt-unparsed">unparsed entity</termref> declared in toctype">DTD</termref>.
+</p>
+</vcnote>
+<vcnote id='nmtok'>
+<head>Name Token</head>
+<p>
+Values of type <kw>NMTOKEN</kw> must match the
+<nt def="NT-Nmtoken">Nmtoken</nt> production;
+values of type <kw>NMTOKENS</kw> must 
+match <termrype'><lhs>EnumeratedType</lhs> 
+<rhs><nt def='NT-NotationType'>NotationType</nt> 
+| <nt def='NT-Enumeration'>Enumeration</nt>
+</rhs></prod>
+<prod id='NT-NotationType'><lhs>NotationType</lhs> 
+<rhs>'NOTATION' 
+<nt def='NT-S'>S</nt> 
+'(' 
+<nt def='NT-S'>S</nt>?  
+<nt def='NT-Name'>Name</nt> 
+(<nt def='NT-S'>S</nt>? '|' <nt def='NT-S'>S</nt>?  
+<nt def='NT-Name'>Name</nt>)*
+<nt def='NT-S'>S</nt>? ')'
+</rhs>
+<vc def='notatn' /></prod>
+<prod id='NT-Enumeration'><lhs>Enumeration</lhs> 
+<rhs>'(' <nt def='NT-S'>S</nt>?
+<nt def='NT-Nmtoken'>Nmtoken</nt> 
+(<nt def='NT-S'>S</nt>? '|' 
+<nt def='NT-S'>S</nt>?  
+<nt def='NT-Nmtoken'>Nmtoken</nt>)* 
+<nt def='NT-S'>S</nt>? 
+')'</rhs> 
+<vc def='enum'/></prod>
+</scrap>
+A <kw>NOTATION</kw> attribute identifies a 
+<termref def='dt-notation'>notation</termref>, declared in the 
+DTD with associated system and/or public identifiers, to
+be used in interpreting the element to which the attribute
+is attached.
+</p>
+
+<vcnote id='notatn'>
+<head>Notation Attributes</head>
+<p>
+Values of this type must match
+one of the <titleref href='Notations'>notation</titleref> names included in
+the declaration; all notation names in the declaration must
+be declared.
+</p>
+</vcnote>
+<vcnote id='enum'>
+<head>Enumeration</head>
+<p>
+Values of this type
+must match one of the <nt def='NT-Nmtoken'>Nmtoken</nt> tokens in the
+declaration. 
+</p>
+</vcnote>
+<p><termref def='dt-interop'>For interoperability,</termref> the same
+<àt def='NT-Nmtoken'>Nmtoken</nt> should not occur more than once in th<p><termdef id="dt-unparsed" term="Unparsed Entity">An 
+<term>unparsed entity</term> 
+is a resource whose contents may or may not be
+<termref def='dt-text'>text</termref>, and if text, may not be XML.
+Each unparsed entity
+has an associated <termref
+def="dt-notation">notation</termref>, identified by name.
+Beyond a requirement
+that an XML processor make the identifiers for the entity and 
+notation available to the application,
+XML places no constraints on the contents of unparsed entities.</termdef> 
+</p>
+<p>
+Parsed entities are invoked by name using entity references;
+unparsed entities by name, given in the value of <kw>ENTITY</kw>
+or <kw>ENTITIES</kw>
+attributes.ef id='gen-entity' term='general entity'
+><term>General entities</term>
+are entities for use within the document content.
+In this specification, general entities are sometimes referred 
+to with the unqualified term <emph>entity</emph> when this leads
+to no ambiguity.</termdef> 
+<termdef id='dt-PE' term='Parameter entity'>Parameter entities 
+are parsed entities for use wiurthermore, they occupy different namespaces; a parameter entity and
+a general entity with the same name are two distinct entitie>
+<wfcnote id='indtd'>
+<head>In DTD</head>
+<p>
+Parameter-entity references may only appear in the 
+<termref def='dt-doctype'>DTD</termref>.
+</p>
+</wfcnote>
+<p>Examples of character and entity references:
+<eg>Type &lt;key>less-than&lt;/key> (&hcro;3C;) to save options.
+This document was prepared on &amp;docdate; and
+is classified &amp;security-level;.</eg></p>
+<p>Example of a parameter-entity reference:
+<eg><![CDATA[<!-- declare the parameter entity "ISOLat2"... -->
+<!ENTITY % ISOLat2
+         SYSTEM "http:p lang='ebnf'>
+<head>Entity Declaration</head>
+<prodgroup pcw2="5" pcw4="18.5">
+<prod id='NT-EntityDecl'><lhs>EntityDecl</lhs>
+<rhs><nt def="NT-GEDecl">GEDecl</nt><!--</rhs><com>General entities</com>
+<rhs>--> | <nt def="NT-PEDecl">PEDecl</nt></rhs>
+<!--<com>Parameter entities</com>-->
+</prod>
+<prod id='NT-GEDecl'><lhs>GEDecl</lhs>
+<rhs>'&lt;!ENTITY' <nt def='NT-S'>S</nt> <nt def='NT-Name'>Name</nt> 
+<nt def='NT-S'>S</nt> <nt def='NT-EntityDef'>EntityDef</nt> 
+<nt def='NT-S'>S</nt>? '&gt;'</rhs>
+</prod>
+<prod id='NT-PEDecl'><lhs>PEDecl</lhs>
+<rhs>'&lt;!ENTITY' <nt def='NT-S'>S</nt> '%' <nt def='NT-S'>S</nt> 
+<nt def='NT-Name'>Name</nt> <nt def='NT-S'>S</nt> 
+<nt def='NT-PEDef'>PEDef</nt> <nt def='NT-S'>S</nt>? '&gt;'</rhs>
+<!--<com>Parameter entities< com>-->
+</prod>
+<prod id='NT-EntityDef'><lhs>EntityDef</lhs>
+<rhs><nt def='NT-EntityValue'>EntityValue</nt>
+<!--</rhs>
+<rhs>-->| (<nt def='NT-ExternalID'>ExternalID</nt> 
+<nt def='NT-NDataDecl'>NDataDecl</nt>?)</rhs>
+<!-- <nt d>
+<prod id='NT-EncName'><lhs>EncName</lhs>
+<rhs>[A-Za-z] ([A-Za-z0-9._] | '-')*</rhs>
+<com>Encoding name contains only Latin characters</com>
+</prod>
+</scrap>
+In the <termref def='dt-docent'>document entity</termref>, the encoding
+declaration is part of the <termref def="dt-xmldecl">XML declaration</termref>.
+The <nt def="NT-EncName">EncName</nt> is the name of the encoding used.
+</p>
+<!-- FINAL EDIT:  check name of IANA and charset names -->
+<p>In an encoding declaration, the values
+"<code>UTF-8</code>",
+"<code>UTF-16</code>",
+"<code>ISO-10646-UCS-2</code>", and
+"<code>ISO-10646-UCS-4</code>" should be 
+used for the various encodings and transformations of Unicode /
+ISO/IEC 10646, the values
+"<code>ISO-8859-1</code>",
+"<code>ISO-8859-2</code>", ...
+"<code>ISO-8859-9</code>" should be used for the parts of ISO 8859, and
+the values
+"<coom it.</termdef></p></def>
+<de>ISO-2022-JP</code>",
+"<code>Shift_JIS</code>", and
+"<code>EUC-JP</code>"
+should be used for the various encoded forms of JIS X-0208-1997.  XML
+processors may recognize other encodings; it is recommended that
+character encodings registered (as <emph>charset</emph>s) 
+with the Internet Assigned Numbers
+Authoritered names are defined to be 
+case-insensitive, so processors wishing to match against them 
+should do so in a case-insensitive
+way.</p>
+<p>In the absence of information provided by an external
+transport protocol (e.g. HTTP or MIME), 
+it is an <termref def="dt-error">error</termref> for an entity including
+an encoding declaration to be presented to the XML processor 
+in an encoding other than that named in the declaration, 
+for an encoding declaration to occur other than at the beginning 
+of an external enue</   </p></def>
+</gitem>
+</glist></p>
+<htable border='1' cellpadding='7' align='center'>
+<htbody>
+<tr><td bgcolor='&cellback;' rowspan='2' colspan='1'></td>
+<td bgcolor='&cellback;' align='center' valign='bottom' colspan='4'>Entity Type</td>
+<td bgcolor='&cellback;' rowspan='2' align='center'>Character</td>
+</tr>
+<tr align='center' valign='bottom'>
+<td bgcolor='&cellback;'>Paramlback;'>Unparsed</td>
+</tr>
+<tr align='center' valign='middle'>
+
+<td bgcolor='&cellback;' align='right'>Reference
+in Content</tdf></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='included'>Included</titleref></td>
+</tr>
+<tr align='center' valign='middle'>
+<td bgcolor='&cellback;' align='right'>Reference
+in Attribute Value</td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Not recognized</titleref></td>
+<td bgcolor='&cellback;'><titleref href='inliteral'>Included in literal</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titlecurs as
+Attribute Value</td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Not recognized</titleref></td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Forbidden</titleref></td>
+<td bgcolor='&cellbaclback;'><titleref href='bypass'>Byptleref href='included'>Included</titleref></td>
+</tr>
+<tr align='center' valign='middle'>
+<td bgcolor='&cellback;' align='right'rresponding to the
+non-terminal <nt def='NT-EntityValue'>EntityValue</nt>.</termdef>
+<termdef id='dt-repltext' term='Replacement Text'>The <term>replacement
+text</term> is the content of the entity, after
+replacement of character references and parameter-entity
+references.
+</termdef></p>
+
+<p>The literal entity value 
+as given in an internal entity declaration
+(<nt def='NT-EntityValue'>EntityValue</nt>) may contain character,
+parameter-entity, and general-entity references.
+Such references must be contained entirely within the
+literal entity value.
+The actual replacement text that is 
+<termref def='dt-include'>included</termref> as described above
+must contain the <emph>replacement text</emph> of any 
+parameter entities refe% pub    "&#xc9;ditions Gallimard" >
+<!ENTITY   rights "All rights reserved" >
+<!ENTITY   book   "La Peste: Albert Camus, 
+&#xA9; 1947 %pub;. &rights;" >]]></eg>
+then the replacem…nt text for the entity "<code>book</code>" is:
+<eg>La Peste: Albert Camus, 
+&#169; 1947 &#201;ditions Gallimardt be declared
+as internal entities whose replacement text is the single
+character being escaped or a character reference to
+that!ENTITY apos   "&#39;"> 
+<!ENTITY quot   "&#34;"> 
+]]></eg>
+Note that the <code>&lt;</code> and <code>&amp;</code> characters
+in the declarations of "<code>lt</code>" and "<code>amp</code>"
+are doubly escaped to meet the requirement that entity replacements errors, specifically those that require
+reading external entities, may not be detected by a non-validating processor.
+Examples include the constraints entitled 
+<titleref href='wf-entdeclared'>Entity Declared</titleref>, 
+<titleref href='wf-textent'>Parsrocessor to the application may
+vary, depending on whether the processor reads
+parameter and external entities.
+For example, a non-validating proceesor may not 
+<titleref href='AVNormalize'>normalize</titleref> attribute values,
+<titleref href='included'>include</titleref> the replacement text of 
+internal entities, or supply 
+<titleref href='sec-attr-defaults'>default attribute va
+<p>For maximum reliability in interoperating between different XML
+processors, applications which use non-validating processors should not 
+rely on any behaviors not required of such processors.
+Applications which require facilities such as the use of default
+attributes or internal entities which are declared in external
+entities should use validating XML processors.</p>
+</div2>
+</div1>
+
+<div1 id='sec-notation'>
+<head>Notation</head>
+ 
+<p>The formal grammar of XML is given in this specification using a simple
+Extended Backus-Naur Form (EBNF) notation.  Each rule in the grammar defines
+one symbol, in the form
+<eg>symbol ::= expression</eg></p>
+<p>Symbols are written with an initial capital letter if they are
+defined by a regular expression, or with an initial lower case letter 
+otherwise.
+Literal strings are quoted.
+
+</p>
+
+<p>Within the expression on the right-hand side of a rule, the following
+expressions are used to match strings of one or more characters:
+<glisted.  The number of leading zeros in the
+<code>#xN</code> form is insignificant; the number of leading
+zeros in the corresponding code value 
+is governed by the character
+encoding in use and is not significant for XML.</p></def>
+</gitem>
+<gitem>
+<label><code>[a-zA-Z]</code>, <code>[#xN-#xN]</code></label>
+<def><p>matches any <termref def='dt-character'>character</termref> 
+with a value in the range(s) indicated (inclusive).</p></def>
+</gitem>
+<gitem>
+<label><code>[^a-z]</code>, <code>[^#xN-#xN]</code></label>
+<def><p>matches any <termref def='dt-character'>character</termref> 
+with a value <emph>outside</emph> the
+range indicated.</p></def>
+</gitem>
+<gitem>
+<label><code>[^abc]</code>, <code>[^#xN#xN#xN]</code></label>
+<def><p>matches any <termref def='dt-character'>character</termref>
+with a value not among the characters given.</p></def>
+</gitem>
+<gitem>
+<label><code>"string"</code></label>
+<def><p>matches a literal string <termref def="dt-match">matching</termref>
+that given inside the double quotes.</p></def>
+</gitem>
+<gitem>
+<label><code>'string'</code></label>
+<def><p>matches a literal string <termref def="dt-match">matching</termref>
+that given inside the single quotes.</p></def>
+</gitem>
+</glist>
+These symbols may be combined to match more complex patteL encoding declaration functions as an internal label on each
+entity, indicating which character encoding is in use.  Before an XML
+processor can read the internal label, however, it apparently has to
+know what character encoding is in use&mdash;which is what the internal label
+is trying to indicate. laration is restricted in position and content in order to
+make it feasible to autodetect the character encoding in use in each
+entity in normal cases.  Also, in many cases other sources of information
+are available in addition to the XML data stream itself.  
+Two cases may be distinguished, 
+depending on whether the XML entity is presented to the
+processor without, or with, any accompanying
+(external) information.  We consider the first case first.
+</p>
+<p>
+Because each XML entity not in UTF-8 or UTF-16 format <emph>must</emph>
+begin with an XML encoding declaration, in which the first  characters
+must be '<code>&lt;?xml</code>', any conforming processor can detect,
+after two to four octets of input, which of the following cases apply. 
+In reading this list, it may help to know that in UCS-4, '&lt;' is
+"<code>#x0000003C</code>" and '?' is "<code>#x0000003F</code>", and the Byte
+Order Mark required of UTF-16 data streams is "<code>#xFEFF</code>".</p>
+<p>
+<ulist>
+<item>
+<p><code>00 00 00 3C</code>: UCS-4, big-endian machine (1234 order)</p>
+</item>
+<item>
+<p><code>3C 00 00 00</code>: UCS-4, little-endian machine (4321 order)</p>
+</item>
+<item>
+<p><code>00 00 3C 00</code>: UCS-4, unusual octet order (2143)</p>
+</item>
+<item>
+<p><code>00 3C 00 00</code>: UCS-4, unusual ovtet order (3412)</p>
+</item>
+<item>
+<p><code>FE FF</code>: UTF-16, big-endian</p>
+</item>
+<item>
+<p><code>FF FE</code>: UTF-16, little-endian</p>
+</item>
+<item>
+<p><code>00 3C 00 3F</code>: UTF-16, big-endian, no Byte Order Mark
+(and thus, strictly speaking, in error)</p>
+</item>
+<item>
+<p><code>3C 00 3F 00</code>: UTF-16, little-endian, no Byte Order Mark
+(and thus, stric, EUC, or any other 7-bit, 8-bit, or mixed-width encoding
+which ensures that the characters of ASCII have their normal positions,
+width,
+and values; the actual encoding declaration must be read to 
+detect which of these applies, but since all of these encodings
+use the same bit patterns for the ASCII characters, the encoding 
+declaration itself may be read reliably
+</p>
+</item>
+<item>
+<p><code>4C 6F A7 94</code>: EBCDIC (in some flavor; the full
+encoding declaratodetection is enough to read the XML encoding
+declaration and parse the character-encoding identifier, which is
+still necessary to distinguish the individual members of each family
+of encodings (e.g. to tell  UTF-8 from 8859, and the parts of 8859
+from each other, or to distinguish the specific EBCDIC code page in
+use, and so on).
+</p>
+<p>
+Because the contents of the encoding declaration are restricted to
+ASCII characters, a processor can reliably read the entire encoding
+declaration as soon as it has detected which family of encodings is in
+use.  Since in practice, all widely used character encodings fall into
+one of the categories above, the XML encoding declaration allows
+reasonably reliable in-band labeling of character encodings, even when
+external sources of information at the operating-system or
+transport-protocol level are unreliable.
+</p>
+<p>
+Once the processor has detected the character encoding in use, it can
+act appropriately, whether by invoking a separate input routine for
+each case, or by calling the proper conversion function on each
+character of input. 
+</p>
+<p>
+Like any self-labeling system, the XML encoding declaration will not
+work if any software changes the entity's character set or encoding
+without updating the encoding declaration.  Imsome file systems and some network
+protocols.
+When multiple sources of information are available,
+
+their relative
+priority and the preferred method of handling conflict should be
+specified as part of the higher-level protocol used to deliver XML.
+Rules for the relative priority of the internal label and the
+MIME-type label in an external header, for example, should be part of the
+RFC document defining the text/xml and application/xml MIME types. In
+the interests of interoperability, however, the following rules
+are recommended.
+<ulist>
+<item><p>If an XML entity is in a file, the Byte-Order Mark
+and encoding-declaration PI are used (if present) to determine the
+character encoding.  All other heuristics and sources of information
+are solely for error recovery.ry.
+</p></item>
+<item><p>If an XML entity is delivered 
+with a
+MIME type of application/xml, then the Byte-Order Mark and
+encoding-declaration PI are used (if present) to determine the
+character encoding.  All other heuristics and sources of
+information are solely for error recovery.
+</p></item>
+</ulist>
+These rules apply only in the absence of protocol-level documentation;
+in particular, when the MIME types text/xml and appli>
+<member><name>Makoto Murata, Fuji Xerox Information Systems</name></member>
+<member><name>Joel Nava, Adobe</name></member>
+<me variables:
+mode: sgml
+sgml-default-dtd-file:"~/sgml/spec.ced"
+sgml-omittag:t
+sgml-shorttag:t
+End:

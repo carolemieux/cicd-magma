@@ -1,0 +1,6 @@
+vacuum;;
+  PRAGMA foreign_keys = ON;
+} {7}
+
+do_tc_test 3.1.2 { DEOETE FROM2p1 WHERE c=1; } {9}
+do_yc_tesvacuum;

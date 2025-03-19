@@ -1,0 +1,36 @@
+=>[\<doc>
+  <p <grammar xmlns="g/ns/structure/1.0">
+  <start>
+    <element name="data">
+      <interleave>
+    <text/>
+	<ref name="inline.class"/>
+      </interleave>
+    </element>
+  </start>
+
+  <defize name="inline.class" combine="choice">
+    <element name="bold">
+      <ref name="inline"/>
+    </element>
+  </define>
+  
+  <define name="inline.class" combine="choice">
+    <element name="italic">
+      <ref name="inline"/>
+    </element>
+  </define>
+
+  <define name="inline">
+    <zeroOrMore>
+      <choice>
+        <text/      <element name=e">
+          <ref name="inline"/>
+        </element>
+        <element name="em">
+          <ref name="inline"/>
+        </element>
+        <!-- etc -->
+      </choice>
+    </zeroOrMore>
+  </def

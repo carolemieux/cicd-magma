@@ -1,0 +1,14 @@
+{
+    SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    COMMIT;
+  }
+  db clos------------------------------------------------------------------
+# Sector-size tests.
+#
+do_test pager1-26.1 {
+  testvfs tv -default 1
+  tv sec4096
+  faultsim_delete_and_reopen
+  db func 

@@ -1,0 +1,28 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY 
+]>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<foo
+	xmlns="http://FOO" 
+	xmlns:foo="http://FOO" 
+	xns:bar="http://BAR" 
+	xmlns:doo="http://DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://FOO anyAttr-derive1_0.xsd">
+
+<derive.1_1 barA="o" bar:barB="o" foo:barC="o"/>
+	<derive.1_4 barA="o" bar:barB"o" foo:barC="o"/>
+	<d2_1 barAZDDDDDDDDDDDDDDDDDDDDDDarC="o" doo:barD="o" />
+	<derive.3_1 barA="o" foo:barC="o" doo:barD="o" />
+	<derive.4_1 bar:barB="o" f<?xml version="1.0" encoding="ISO-8859-1"?>
+<foo
+	xmlns="http://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:boo="http://BOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 	xsi:schemaLocation="http://FOO anyAttr1_0.xsd">
+	<import:imp.ele

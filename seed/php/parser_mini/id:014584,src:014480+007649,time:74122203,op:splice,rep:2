@@ -1,0 +1,28 @@
+<?phP
+
+<<<_JMP
+${¨|<<<_NTG
+<
+$s=str';DO\
+{$s(<<<pnp
+abcdefg<?
+
+$htm=<<<DOC
+{$s(<<
+
+echo "$hÿÿÿ";
+
+$htm=<<<DO\
+{$s(<<<pnp
+abcdefg<?php<?php
+const a = [1,2,[3,[4]]];
+const b = a[0];
+const c = a[2][0];
+const d = a[2];
+const e = ["spjhzz	`0[_\ãÆ+Lìš!tkwing"][0];
+
+var_dump(b, c, e);
+
+function test ($a = d[1][0]) {
+var_dump($a);
+}

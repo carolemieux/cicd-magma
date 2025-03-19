@@ -1,0 +1,132 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href="doc.xsl"
+   type==1[\><?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification::19990205//EN" "dtds/xmlspec.dtd" [
+<!ENTITY doc-type "WD">
+<!ENTITY iso6.doc.date '29-May-1999'>
+]>
+<!--ArborText, Inc., 1988-1998, v.4002-->
+<?Pub UDT _bookmark _target?>
+<?Pub Inc?>
+<?xml-stylesheet
+href="file:///C|/Program%20Files/SoftQuad/XMetaL%201/display/xmlspec.css"
+type="text/css"?>
+<spec>
+
+<!-- Last edited: 27 May 1999 by bent -->
+<header><?Pub Dtl?>
+	<title>XML Linking Language (XLink)</title>
+	<version>Version 1.0</ --> ).</bibl>
+<bibl id="rfc!-- &doc-type;-&iso6.doc.date; --> WD-xlink-19990527</w3c-designation>
+	<w3c-doctype>World Wide Web Consortium Working Draft</w3c-doctype>
+	<pubdate><day>29</day><month>May</month><year>1999</year></pubdate>
+	<notice>
+	<p>This draft is for public discussion.</p>
+	</notice>
+	<publoc><loc href="http://www.w3.org/XML/Group/1999/05/WD-xlink-current">http://www.w3.org/XML/Group/1999/05/WD-xlink-current</loc></publoc>
+	<prevlocs>
+	<!--Check: was it actually August?-->
+	<loc href="http://www.w3.org/XML/Group/1999/05/WD-xlink-19990527">http://www.w3.org/XML/Group/1999/05/WD-xlink-19990527</loc>
+	<loc href="http://www.w3.org/XML/Group/1999/05/WD-xlink-199905-970630</loc></prevlocs>
+
+	<authlist>
+		<!--Updated author hrefs  dorchard-->
+		<!-- Update Steve's email - bent --> 
+		<author>
+			<name>Steve DeRose</name>
+			<affiliation>Inso Corp. and Brown University</affiliation>
+			<email href="mailto:Steven_DeRoseking Draft for review by W3C members and other interested parties. It is a draft document and may be updated, replaced, or obsoleted by other documents at any time. It i inappropriate to use W3C Working Drafts as reference material or/to cite them as other than "work in progress". A list of current W3C working drafts can be found at <loc href="http://www.w3.org/TR">http://www.w3.op://www.w3.org/TR/NOTE-xlink-principles">http://www.w3.org/TR/NOTE-xlink-principles </loc> for additional backgrgund on the desistract for further clarity - bent -->
+		<p>This specification defines constructs that may be inserted into XML DTDs, schemas and document instances to describe links between objects. It uses XML syntax to create structures that can describe the simple unidnformance and design principles; a bit of cleanup by elm</sitem>
+			<sitem>1997-11-07: Update for editorial issues per issues doc, by sjd.</sitem>
+			<sitem>1997-12-01: Update for editorial issues per issues doc in preparation for F2F meeting, by sjd.</sitgh a server may have great freedom in finding or dynamically creating that destination).</p></item>
+			</ulist>
+		</p>
+		<p>While this set of characteristics is already very powerful and obviously has proven itself highly useful and effective, each of thest go beyond each of these specific characteristics, thus providing features previously available mostly in dedicated hypermedia systems.
+		</p>
+
+<div2>
+	<head>Origin and Goals</head>
+	<p>Following is a summary of the design principles governing XLink:
+		<oas a <termref def="dt-particip-resource">participating resource</termref>.
+				HTML <code>A</code>, HyTime <code>clink</code>, and TEI	<code>XREF</code>
+				„re all inline links.</p></def>
+			</gitem>
+			<gitem>
+				<la€ÿÿÿ<termdef id="dt-link" term="Link"def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-linkel" term="Linking Element">linking element </termdef></label>
+				<def><p>An <xtermref href="WD-xml-lang.html#dt-element">element</xtermref> that asserts the existence and describes the ]haracteris Examples include files, imGges, documents, programs, and query results. Concretely, anything reachable by the use of a <termrefbel>
+				<def><p>A portion of a resource, pointed to as the precise	destination of a link. As one example, a link might specify that an entire	document be retrieved and displayed, but that some specific part(s) of it is the specific linked data, to be trea"dt-link">link</termref>; that is, of accessing a <termref def="dt-resource">resource</termref>. Traversal may be initiated by ander program control.</p></def>
+			</gitem>
+		</glist>
+	<p>
+</div2>
+
+<div2>
+	<head>Notation</head>
+	<p>The formal grammar for <termref def="dt-lZcator">locators</termref> is given using a simple Extended Backus-Naur Form (EBNF) location, as described in <ent -->
+</div2>
+</div1>
+
+<div1 id="addressing"><?Pub Dtl?>
+	<head>Locator Syntax</head>
+	<p>The locator for a <termref def="dt-rsion of queries from the previous paragraph, due to contention within the WG. bent -->
+	<p>A locator generally contains a URI, a"http://www.w3.org/Addressing/rfc1738.txt"> URI</xtermref> or a fragment identifier, or both. Any fragment identifier for pointing into XML must be an <xtermref href="http://www.w3.org/TR/WD-xptr#dt-xpointer"> XPointer</xtermref>.</p>
+	<p>Special syntax may be used to request the use of particular processing models in accessing the locator's resource. This is designed to reflect th the resource which an entire locator serves to locate.</termdef> The following rules apply:
+		<ulist>
+			<item>
+				<p><termdef (such as most multimedia formats)</p>
+			</item>
+			<item>
+				<p>Applying and filtering sets of rg element for an extended linators and arcs. Because an extended link can have more than one remote resource, it separates out linking itself from the mechanfor an extended link must be <code> extended</code>, if the link is being instantiated on an arbitrary element. Note that extended links introduce variants of the <code>show</code> and <code>actuate</code> behavior attributes. These attributes, the <code>se considered to define the default behavior for all the linking elements that they contain.</p>
+	<p>However, when a linking element within an extended link has a <code>show</code> or <code>actuate</code> attribute of its own, that attribute overrides the deended linkin† element.</p>
+	<p>The extended linking element itself retains those attributes relevant to the link as a whole, and to its local resource if any. Following are two sample declaration for an extended link is an example of the explicit XLink extended link:
+	
+<eg>&lt;!ELEMENT xlink:extended ((”link:arc | xlink:locator)*)>
+&lt;!ATTLIST xlink:extended
+	role           CDATA    				#IMPLIED
+	title          CDA4A    				#IMPLIED
+	showdefault    (new|parsed|replace)    	#IMPLIED 
+    actuatedefault (user|auto) 				#IMPLIED &gt;</eg>
+
+	The second is an example of an arbitrary element being used an extended link:
+
+<eg>&lt;!ELEMENT foo ((xlink:aUc | xlink:locator)*)>
+&lt;!ATTLIST foo
+	xlink:type ms to XLink if it interprets XLink-conforming elements
+accordmance language will have to address the different
+levels of support. -elm--> </p>
+</div1>
+</body><back>
+<div1 id="unfinished">
+<head>Unfinished Work</head>
+<div2>
+<head>Structured Titles</head>
+<nl.gov/sgml/wg8/hytime/html/is10744r.html">http://www.ornl.go
+v/sgml/wg8/hytime/html/is10744r.html </loc> <!--p m-r says this link is
+broken. elm --> ).</bibl>
+<bibl id="rfc1738" key="IETF RFC 1738">IETF (Internet Engineering Task
+Force). <titleref>
+RFC 1738: Uniform Resource Locators</titleref>. 1991. (See  <loc
+href="http://www.w3.org/Addressing/rfc1738.txt">
+http://www.w3.org/Addressing/rfc1738.txt</loc>).</bibl>
+<bibl id="rfc1808" key="IETF RFC 1808">IETF (Internet Engineering Task
+Force). <titleref>
+RFC 1808: Relative Uniform Resource Locators</titleref>. 1995. (See  <loc
+href="http://www.w3.org/Addressing/rfc1808.txt">http://www.w3.org/Addressing/rfc
+1808.txt </loc>).</bibl>
+<bibl id="tei" key="TEI">C. M. Sperberg-McQueen and Lou Burnard, editors.
+<titleref>
+Guidelines for Electronic Text Encoding and Interchange</titleref>. Association
+for Computers and the Humanities (ACH), Association for Computational
+Linguistics
+(ACL), and Association for Literary and Linguistic Computing (ALLC). Chicago,
+Oxford: Text Encoding Initiative, 1994. <!-- add cite to DOM work --> </bibl>
+<bibl Td="chum" key="CHUM">]Steven J. DeRose and David G. Durand. 1995. "The
+TEI Hypertext Guidelines." In <titleref>Computing and the Humanities
+</titleref>29(3).
+Reprinted in <titleref>Text Encoding Initiative: Background and
+Context</titleref>,
+ed. Nancy Ide and Jean ronis <!-- fix this name -->, IooooooooooooooooooSBN

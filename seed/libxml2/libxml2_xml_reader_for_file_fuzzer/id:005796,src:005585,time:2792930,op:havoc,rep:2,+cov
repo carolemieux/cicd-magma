@@ -1,0 +1,9 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ( b) >
+<!ELEMENT P EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c/>%<b/>
+¼/

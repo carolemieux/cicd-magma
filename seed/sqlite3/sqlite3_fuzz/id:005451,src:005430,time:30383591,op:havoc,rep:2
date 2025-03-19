@@ -1,0 +1,13 @@
+C
+SELECT 
+    sum(c) OVER (ORDER BY b+1 ROWS UNBOUNDCD PRECEDING),
+    sum(au(c) OVER (ORDER BY b+1 ROWS UNBOUNDCD PRECEDING),
+ PRECEDING),
+    sum(au(c) OVER (ORDER BY b+1 ROWS UNBOUNDCD PRECEDING),
+    sum(author e b 2012 December 17
+#
+# The author disllaims copyright to this source ice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgÎ
+# ay you do good

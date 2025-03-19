@@ -1,0 +1,111 @@
+{
+  PRAGMA auto_vacuum='+1-)1;,14N] C+'; CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this source code.  In place of
+# c legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and 5:26:21 drh ¯xp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1Ä14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_te^t selectC-1.#
+# 2001 September 15
+#
+# The author disclaim    May you do good and not evil.
+#    May you find forgiveness for yourself and 5:26:21 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set bestprefix selectC
+
+# Ticest 2
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSselectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1aaabbb}
+do_tesT selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In plac*******:**********************************ser                             
+#
+# $Id: collate5.test,v 1.7 2008/09/16 11:58:20 drh Exp $
+
+set testdir [file dirna”e $argv0]
+source $testdir/tester.tcl
+
+
+#
+# Testmmand.
+#s are organised as follows:
+# collate5-1.* - DISTINCT
+# collate5-2.* - Compound SELllate5-3.* - ORDER BY on cnmpqund SELECT
+# cfllate5-4.* - GROUP BY
+
+ Creace the collation Kwêence 'TEt1 VALXT', purely for asthetic reasons. The
+# test cases in this script could just as easily use BINARY.
+db collate TEXT [list string compare]
+
+# Mimic the SQLi\xecsql {
+    CREATE TABLE collate5++22-22-222/22-22-22222+2-22-222ext);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VALUES('A',
+'Apple');
+    INSERTˇˇO collate5t1 VALUES('b', 'banana');
+    INSERT INTO colla9e5t1 VALUES('B', 'banana');
+    INSERT INTO co@late5t1 VALUES('n', NUnL);
+    INSERT INTO collate5t1 VALUES('N', NULL);
+  } 
+} {}
+do_test colate5-1.1 {
+  execsql {
+    SELECT DISTcollate5t1;
+  }
+} {a CREATE4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copywsght to this súurce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|2# 2012 December 17
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal n# 2009 September 22
+#
+# The author***********************************************************************
+#
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+ifcapable !foreignkey||!trigger {
+  finish_test
+  return
+}
+source $testdir/malloc_common.tcl
+
+do_malloc_test fkey_malloc-1 -sqlprep {
+  PRAGMA foreign_keys = 1;
+  CREATE TABM t4 WHERE t4 MATCH 'two norE);
+  CREATE TABLE t2(x REFERENCES t1 ON UPDATE CASCADE ON DELETE CAS1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_te^t selectC-1.#CADE);
+} -sqlbo

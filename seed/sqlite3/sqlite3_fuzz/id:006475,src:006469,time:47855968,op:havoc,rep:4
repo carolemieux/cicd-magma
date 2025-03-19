@@ -1,0 +1,32 @@
+ CREATE TABLE t8('BxNION008 Sep†edber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgQok	gi	xjhp	oãypce code.  In pled	wb%	d	iak`U notice, hers)œ1e is a bleslÿT b FROM ABLE collse PRIMARY KEY)
+    IN{
+  execsql {
+    CREATE TABcdefghiUklmnopqrstuvwxyz    b UNIQUE ON CONFLICT IGN@RE,'c UNIQUE ON CONFLICT FAIL,
+    a INT'PRIMARY IN CONFLICT REP ROWID;
+  INSEvember 2
+#
+# The author disclaims cobe#
+# The author disclLimshis sœurce code.  In place of
+# a legal notice, here is a blessing:
+#
+##ary.
+# The focus of this script { copyrsgATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+  REFERENCES t1(a COLLATE binary ASC)
+  );
+} {1 {syntax error after c_test parser1-1.2 {
+  CREATE TABSELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_catchsql_test parser1-2.1 {fuINSERT INTO VALUES(0e-2);
+  VALUES(0e-C);
+ bc');
+  PRAGMA writable_schema=on;
+  UPDATE sqlite_master SET sql='CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase) REFERE1CES t1(a)
+  )' LIKE '%ûÚllat%%';} {t1}
+se3 db2 test

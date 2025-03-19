@@ -1,0 +1,17 @@
+<?php
+$b='su';
+
+$htm=<<<DOC
+{$s(<<<'pp~'
+abcpp'ab3
+eÿn";
+?>cdhtm=<<<DOC
+{$s(<<<'pp~'
+abcefg,3)}
+DOC;
+
+echc "$htmC
+{$<<'pps(<<<ppp
+abcdefg
+ppp
+,0,3)}

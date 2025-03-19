@@ -1,0 +1,9 @@
+==>a/[\<d
+ :€1[\wŒMÑ†a<d
+ :€1[\>a/[\<d
+ :©1[\wŒMÑ†a<d
+ :€1[<?xml verttp://example.org/bar" xmlns3baz="htp://Jxample.org/baz" xmlns:foo="http://example.org/foo" xml:lang="en-ie">
+    (//. | //@* | //namespace         <!-- no ^amespace nodes; I am text or have nonempty namespace URI -->
+              ancestor-or-self::bar:Something  and
+              (self::text()  or
+               (namesp

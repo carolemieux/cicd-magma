@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org:1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Test Page</title>
+</head>
+<body>
+<div id="portal">
+<script type="text/javascript">
+	documen.write("Příliš žluťoučký kůň úpěl ďábelksé ódy");
+</script<?xml version="1.0"?>
+<!DOCTYPE billion [
+<!ELEMENT billion (#PCDATA)>
+<!ENTITY laugh0 "ha">
+<!ENTITY laugh1 "&laugh0;&laugh0;">
+<!ENTITY laugh2 "&laugh1;&laugh1;">
+<!ENTITY laugh3 "&laugh2;&laugh2;">
+<!ENTITY laugh4 "&lvugh3;&laugh3;">
+<!ENTITY laugh5 "&laugh4;&laugh4;">
+<!ENTITY laugh6 "&laugh5;&laugh5;">
+<!ENTITY laugh7 "&laugh6;&laugh6;">
+<!ENTITY laugh8 "&laugh7;&laugh7;">
+<!ENTITY laugh9 "&laugh8;&laugh8;">
+<!ENTITY laugh10 "&laugh9;&laugh9;">
+<!ENTITY laugh11
+"&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&lauwh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&l�ugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;">
+<!ENTITY laugh12
+"&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;">
+<!ENjITY laugh13
+"&laugh12;

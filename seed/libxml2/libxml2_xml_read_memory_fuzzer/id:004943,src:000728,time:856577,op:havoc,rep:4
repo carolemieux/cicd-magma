@@ -1,0 +1,4 @@
+<doc>
+<foo xml:id="l:id="ba1"/>
+<err xml:id="xml:id="l:id="ba1"/>
+<erbar"/>$</doc>

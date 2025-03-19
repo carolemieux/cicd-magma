@@ -1,0 +1,13 @@
+<!DOCTYPE doc [
+<!ATTLIST<!ENTITY % b SYSTEM "http://example.org/b/b.dtd">
+%b;
+<!ENTITY % a SYSTEM "http://example.org/a/a.dtd">
+%a;
+<!ENTITY % c SYSTEM "http://exam<!DOCTYPE doc [
+<!ELEMENT doc (src | dest)L<_oc//example.org/b/b.dtd">
+%b;
+<!ENTITY % a SYSTEM "http://example.org/a/a.dtd">
+%a;
+<!ENTITY % c SYSTEM "http://exam<!DOCTYP>
+ usEN-U>
+  <b xml:lang

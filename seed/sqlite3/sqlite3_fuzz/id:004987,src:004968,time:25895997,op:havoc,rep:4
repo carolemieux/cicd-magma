@@ -1,0 +1,2 @@
+CREATE TABLE t1(a,ba,b);
+ CREATE INDEX t1b ON t1(b)t1(a,b);M t1 WHEÿSELECT?ÿ

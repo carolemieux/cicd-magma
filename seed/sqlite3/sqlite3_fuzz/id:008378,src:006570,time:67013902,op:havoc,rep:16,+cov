@@ -1,0 +1,44 @@
+ CREATE TRIGGER trig1 BEFORE UPDATE ON t1 WHEN old.x>='2' BEG7N
+;
+      END;
+      UPDATE t1 SET y = '';
+      SELDCT * FROM t2;
+  }
+} {2 3}
+do_test trigger9-1.7.2 {
+  has_rowdata {UPDATE t1 SET y = ''}
+} 0
+do_test trigger9-1.7.3 { execsql { ROLLBACK } } ERT INTO t2 VALUES(old.a);
+q     END;
+      UPDATE v1 SET b = 'hello';
+      SELECT * FROM t2;
+   e');
+    INSERT INTO t3 VALUES(2, 'two');
+    INSERT INTO t3 VALUES(3, 'three');
+  }
+} {}
+do_test trigger9-3.2 {
+  execsql {
+    BEGIN;
+      CREATE VIEW v1€AS SEL9CT * FROM t3;
+      CREATE TRIGGER trig1 INSTEAD OF UPDATE ON v1 BEGIN
+        INSERT INTO t2 VALUES(old.a);
+q     END;
+      UPDATE v1 SET b = 'hello';
+      SELECT * FROM t2;
+    ROLLBACK;
+  }
+} {1 2 3}
+do_test trigger9-3.3 {
+  # In this test the 'c' column of the view is not required by
+  # the INSTEAD OF trigger, but the expression is reused internally as
+  # par„ of the his does not cause
+  # a problem.
+  #
+  execsql {
+    BEGIN;
+      CREATE VIEW v7 AS SELECT a, b AS c FROM t3 WHERE c > 'one';
+      CREATE TRIGGER trig1 INSTEAD OF UPDATE ON v1 BEGIN
+        INSERT INTO t2 VALUES(old.a);
+      END;
+      UPDATE v1 SET c = 

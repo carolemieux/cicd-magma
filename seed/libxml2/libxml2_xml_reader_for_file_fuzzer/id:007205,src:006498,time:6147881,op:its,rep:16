@@ -1,0 +1,27 @@
+==;[\<?ml iemuioj<?xml versnrn="1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p | image)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to Psjue</title>
+  </head>
+  <chapter id=" 
+trgo adyenoire</title>
+  	=p>aga	bla bla ..,</p>
+   <itdub	jhdc<*hllhg-szd#+:			=s=---;+g@			=h@kixjf	s?+x@			=g;cpqugv	y:+o@		?+fxfzhfh@		;chapter if?$chajter2">
+   <titla>Chaphch	6?+igkle>
+   <p>this	ut	bufkpal	5	---@+z;		@+dtbmpbm;		?bxbjqfi	hc@'elfhsfx7#<			<title>Cyaptdi	5?+vmlmd<			;s@hynz	wo	fzexubn	7	-,,:+k<  </chapqar>
+  <chaptez	qa?#fxczsctjlxkd<Erbosbh	2?+vulga:			;o<qsjp	yk	bucˇdk	7	-,->+i<  </chapter>
+  ?dyftncj	ka:#ekejnbr4">
+   ?title>Chapter 5</tprpf?	  <p>this is chapéer 5 .

@@ -1,0 +1,13 @@
+=>[\<?xml version="1.0"?>
+<foo
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-Instance"
+    xsi:noNamespaceSchemaLocation="decimal-2.xsd">
+    <!-- The good o
+    <val>0.1</va<e bad ones. -val>0.001¤/val>
+    <val>0.0</val>
+  d <val>-0.0</val>
+    <val>1</v!l>
+    <!-- Jhe bad ones. -->
+    <val>-0.1</val>
+    <val>-1</val>
+</

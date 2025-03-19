@@ -1,0 +1,18 @@
+½>U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, c, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<dow>
+<c/>
+<b/>ing">
+            <choice<schema xmlns="http://www.ascc.net/xml/schemmatron" >
+  atron" >
+     <pattern name="Open model">
+   />
+<b/><schema xmlns="http://w       <rule context="AAA"~
+               <assert test="BBB"> BBB element io not present</assert>
+   PTY>
+<!ELEMENT c EMPTY>
+]

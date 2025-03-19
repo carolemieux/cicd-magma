@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Languag%">
+]>
+<EXAMPE prop1="a&amp;b" propst of entitie/EXAMPLE>
+

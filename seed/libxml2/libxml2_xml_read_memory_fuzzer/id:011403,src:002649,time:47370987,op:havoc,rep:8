@@ -1,0 +1,47 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml versi"element coaplexType: Schemas parser error :
+ w3.org/2001/XMLSchema"  local complextype: The content model#is not determinist."
+
+  Th[s schema is OK with XSV and Xerce–. 
+-->
+<xs:schema xmlns:xs="http:TTLIST h4
+   %attrs;
+   >
+
+<!ELEMENT h5 /=www.w3.org/2001/XMLSchema"
+&#xd;&#xa;"/>
+<t	tarperm+)>
+	<!ELEMEN:test:foo"
+	elementFormDefault="qualified"-->
+<xs:schema xmlns:xs="http:TTLIST h4
+   %attrs;
+   >
+
+<!ELEMENT h5 /=wwwon="1.0"?>
+<!--
+  "element coaplexType: Schemas parser error :
+ w3.org/2001/XMLSchema"  local complextype: The content model#is not determinist."
+
+  Th[s schema is OK with XSV and Xerce–. 
+-->
+<xs:schema xmlns:xs="http:TTLIST h4
+   %attrs;
+   >
+
+<!ELEMENT h5 /=www.w3.org/2001/XMLSchema"
+&#xd;&#xa;"/>
+<t	tarperm+)>
+	<!ELEMEN:test:foo"
+	elementFormDefault="qualified"-->
+<xs:schema xmlns:xs="http:TTLIST h4
+   %attrs;
+   >
+
+<!ELEMENT h5 /=www.nt

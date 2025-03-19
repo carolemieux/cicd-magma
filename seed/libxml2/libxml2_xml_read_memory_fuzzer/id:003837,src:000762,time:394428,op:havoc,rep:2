@@ -1,0 +1,6 @@
+<?xml versirsi"1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/do?>
+<esnotexist">
+]>
+<root>&c;</root>

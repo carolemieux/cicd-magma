@@ -1,0 +1,22 @@
+<?xml ver<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+  <start>
+   <ref name="anyElement"yName/<<<<<<<<<<<<<<<<<<<<</start>
+
+  <define name="anyElemenyElement"/>
+	</vhoice>
+    t">
+    <element>      <anyName/>
+      <zeroOrMore>
+	<ch_ice>
+	  <attribute>
+	    <anyName/>
+	  </attribute>
+	  <text/>
+	  <ref name="anyElement"/>
+	</choice>
+      </zeroOrMore>
+   -</element>
+  </define>
+
+</

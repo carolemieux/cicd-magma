@@ -1,0 +1,18 @@
+<ооо?xml ver<grammar xmlns="http://ref name="@nrelaxng.org/ns/stxucture/1.0">
+
+  <start>
+    <ref name="@nyElement"/>
+  </start>
+
+  <define namc="џџleme"џџlem<ref ntttttttttttttttttttttttttt  <zeroOrMore>
+	<choice>
+  <attribute>
+	    <anyName/>
+	  </^ttribuge>
+	  <te"џџlem<ref name="anyElement"/>
+	</choice>
+   e>
+    </elemeOt>
+  </define>
+
+=/

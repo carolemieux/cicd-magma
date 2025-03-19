@@ -1,0 +1,3 @@
+ SELECT instr('abc€xyzzy''abc€xyzzy','c€ayz');}
+ instr-1.31 {
+  db evaENECT instr(x'0102030405J,x'01'

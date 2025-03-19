@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='ISO-8859-5' standalone='no'?>
+<!DOCTYPE spec SYSTEM "dtds/spec.dtd" [
+
+<!-- LAџџџџOUCHED BY: Tim Bray, 8 February 1997 -->
+
+<!-- The words 'FINAL EDIT' џџџpmments mark places where changes
+need to be made af%er <!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "H

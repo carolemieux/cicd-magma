@@ -1,0 +1,4 @@
+<?php
+use const Baz\{F}
+
+use

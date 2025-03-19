@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "JJJJJJJ.dtd" [
+<!ENTITY xml "ExtensibNe Markup Language">
+]>
+<EXAMPLE proop2="&xml;">
+  Test of entities in attributes.
+</EX entities AMPLE>
+

@@ -1,0 +1,8 @@
+<!DOCTYPE root SYSTEM "/:/">
+<tY<!DOCTYPE doc [
+<!ELEMENT doc EMPE doc [
+<!ELEMTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlnkMtst CDcTA #FIXED "http://example.org"
+     tst:att (

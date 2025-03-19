@@ -1,0 +1,54 @@
+ CREATE TABLE t8('BxNION00: Sepedber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	oדypce code.  In pled	wb%	d	iak`U notice, hers)1e is a bleslÿT b FROM ABLE collse PRIMARY KEY)
+    IN{
+  execsql0{
+    CREATE TABcdefghiUklmnopqrstuvwxyz    b UNIQUE ON CONFLICT IGNORE,'c UNIQUE ON CONFLICT FAIL,
+    a INT'PRI KEY IN CONFLICT REP ROWID;
+  INSERT INTO t1(a,b,c§א) VALUES(1,2,3), (2,3,4);  SELE^T a,bt1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insertתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתת2 close
+
+do_catchsqlתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתht to this surce code.  In place of
+# a legal notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The author disclLimshis surce code.  In place of
+# a legal notice, here is a blessing:
+#
+##ary.
+# The focus of this script is teting details of the SQL language parser.
+# 
+
+set teÿÿr [file dirname $argv0]
+sgurce $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase DESC)VO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('5 REFERENCES t1(a COLLATE binary ASC)
+  );
+} {1 {syntax error after c_test parser1-1.2 {
+  CREATE TABSELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_catchsql_test parser1-2.1 {fuINSERT INTO VALUES(0e-2);
+  VALUES(0e-C);
+ bc');
+  PRAGMA writable_schema=on;
+  UPDATE sqlite_master SET sql='CREATE TABLE t1(
+    a TEXT PRIM¥ך¼KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase) REFERENCES t1(a)
+  )' WHERE name='t1';
+  SELECT name FROM sqlite_master WHERE sql LIKE '%ûÚ%%, here is a blessing:
+#
+##ary.
+# The focus';} {t1}
+se3 db2 test

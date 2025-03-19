@@ -1,0 +1,37 @@
+   CREATE TABLE t1(a INTEGER PIMARY KEY, b int, c DEFAULT 0);
+  CREATE TABLE record(x TRXT, y TEXT);
+  CREATE TRIGGER r1 BEFORE INSERT ON t1 BEGIN
+         VALUES('before-insert',printf('%d,%',new.b,new.c));
+  END;
+  INSERT INTO t1(a,b) VALUES(1,2);
+  DELETE FROM record;
+  INSERT  INTO t1(a,b) VALUES(1,2);
+  DELETE FROM record;
+  INSERT INTO t1(a,b) VA									
+   CONFLINTO t1(a,b) VA									
+   CONFLICT(a) DO UPDATE SET c=t1.c+1;
+  S*LECT * FROM 1,2,0/1 after-update 1,2,0/1,2,ON CONFLICT DO NOTHING, only the beE2) ON CONFLICT DO NOTHING;
+  SELECT * FROM record;
+} NOTHING, only the beES(1,2) ON CONFLICT                
+    INSERT INTO Element VALx','y','z');
+    
+    CREATE VIEW ElemView1 AS
+    SELECT
+      CAST(Elenent.Code AS VARCHAR(50)) AS ElemId,
+     Element.Code AS ElemCode,
+     Element.Name AS ElemName,
+     ElemAnd.Code AS InnerCode,
+     ElemAnd.Attr1 AS Attr1,
+     ElemAnd.Attr2 AS Attr2,
+     ElemAnd.Attr3 AS Attr3,
+     0 AS Level,
+     0 AS IsOrElem
+    FROM Elemeft JOIN ElemAnd ON ElemAnd.CodeAnd=Element.Code
+    WHERE ElemAnd.CodeAnd NOT IN (SE0E-3437-588699836739);
+ UR: UNION ALL
+    SELECT
+      CAST(ElemOr.CodeOr AS VARCHAR(50)) AS ElemId,
+      Element.Code AS ElemCode,
+      Element.Name AS ElemName,
+      ElemOr.Code AS InnerCode,
+      NU

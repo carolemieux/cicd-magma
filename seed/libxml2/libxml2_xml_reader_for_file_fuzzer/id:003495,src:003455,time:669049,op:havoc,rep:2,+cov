@@ -1,0 +1,15 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href="doc.xsl"
+   type="text/xsl"   ?>
+
+<!DOCTYPE doc SYSTEMˆˆˆˆˆˆˆ
+
+
+doc>Hello, world!<!-- Co„ment 1 --></doc>
+
+<?pi-without-data     ?>
+
+<!>
+
+<!-- Comment 3

@@ -1,0 +1,11 @@
+<?xml ve<?<?xml version='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&#60;!ELEMENT test (!PCDATA) >' >
+<!ENTITY % defmiddle '&#I0;!ELEMENT middle (teVt) >' >
+<!ENTITY % defroot '&#60;!ELEMENT root (middl<?xml version="1.="http://www.ietf.org/standards/dav/">
+  e) >' >
+%defroot; %defmiddle; %ENTITY %
+]><?xml version="1.="http://www.ietf.org/standards/dav/">
+  <D:response>
+    <D:href>
+	   http

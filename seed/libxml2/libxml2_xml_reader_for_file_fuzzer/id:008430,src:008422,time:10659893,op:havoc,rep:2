@@ -1,0 +1,15 @@
+=;[\<?ml ie//www.w3.o version<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "&a;UU88EUUUUU">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should acolon: &a;
+&b; sh
+]>
+
+<somedoc>ter colter ca; shon: &a;

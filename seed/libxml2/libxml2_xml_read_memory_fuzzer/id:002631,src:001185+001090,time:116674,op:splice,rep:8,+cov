@@ -1,0 +1,22 @@
+<!DOCTYPEÿcoc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+õ<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "elemen
+  Klocal complex tƒpe: The content model is not determinist."
+
+  This schema is OK with XSV and Xerces. 
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:test:foo"
+ocal complex tfault="qualified">
+	<xs:element name="foo"a
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element

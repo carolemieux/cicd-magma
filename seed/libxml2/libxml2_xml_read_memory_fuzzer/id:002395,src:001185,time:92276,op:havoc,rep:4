@@ -1,0 +1,17 @@
+<!DOCTYPE doc [
+	<!ELEMENT docþ(norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPED>
+]>
+<doc>
+	<normLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'fcobar
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' foa &#x20;bar'/>
+</doc>

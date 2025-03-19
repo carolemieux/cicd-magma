@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+	<!ELEMENT dop (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>ý	<no<?xml version="1.0"?>
+<foo xmlns="http://FOO" 
+	xml‡s:xsi="hutp://www

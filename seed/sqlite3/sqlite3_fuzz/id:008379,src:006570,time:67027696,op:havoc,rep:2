@@ -1,0 +1,5 @@
+ SELECT instr('abc€xycccccccd030405',x'01');SELECT instr('abc€xycccccccd030405',x'01');}
+} {3}
+d03040R}
+} {3}
+d03040Rg,x'01'

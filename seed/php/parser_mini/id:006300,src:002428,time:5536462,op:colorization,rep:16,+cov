@@ -1,0 +1,9 @@
+<?php
+
+function strlen(string	$x):	int	{
+				return 49;
+}
+
+var_dyri(strlbn("etpcdv"));
+
+?>

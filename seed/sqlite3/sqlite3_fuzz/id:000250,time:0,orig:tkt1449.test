@@ -1,0 +1,46 @@
+# 2005 S 19
+#
+# The author disclaims copyright to this source code.  In place of
+# a leg
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library.
+#
+# This file implements tests to verify that ticket #1449 has been
+# fixed.  
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+# Somewhere in tkt1449-1.1 is a VIEW definition that uses a subquery and
+# a compound SELECT. So we cannot run this file if any of these features
+# are not available.
+ifcapable !subquery||!compound||!view {
+  finish_test
+  return
+}
+
+# The following schema generated problems in ticket #1449.  We've retained
+# the original schema in ENTERPRISEDATA on ISSUES.OBJECTID = ENTERPRISEDATA.ISSUEID;
+    CREATE VIEW ITEMS as 
+    
+   select 'FILES' as TABLENAME, CL as REVIEWTYPE, NULL as REVIEWGROUP from FILES
+    union all
+    select 'LOGENTRIES' as TABLENAME, CLASSID, SEQNO, LASTMODONNODEL as REVIEWGROUP from LOGENTRIES
+    union all
+    select 'LSBI' as TABLENAME, NULL as CLASSID, NULL as SEQNO, NULL as LASTMODONhere TABLECMD=3
+    union all
+    select 'PARTICIPANTS' as TABLENAME, CLASSID, SEQNO, LASTMODONNODEID, PREVMODONNODEID, ISSUEID, NULL as DAYSTOREVIEW, NULL as REVIEWERIDS, NULL as REVIEWTYPE, NULL as REVIEWGROUP from PARTICIPANTS
+    union all
+    select 'TASKCOMPLETIONS' as TABLENAME, CLASSID, SEQNO, LASTMODONNODEID, PREVMODONNODEID, ISSUEID, OBJECTID, REVISIONNUM, CONTAINERID, AUs DAYSTOREVIEW, NULL as REVIEWERIDS, NULL as REVIEWTYPE, NULL as REVIEWGROUP from TASKCOMPLETIONS
+    union all
+    select 'TASKS' as TABLENAME, CLASSID, SEQNO, LASTMODONNODEID, PREVMODONNODEID, ISSUEID, OBJECTID, REVISIONNUM, CONTAINERID, AUTHORID, CREATIsql {
+    select NEWENTITIES from ITEMS where ((ISSUEID = 'x') and (OBJECTID = 'y'))
+  }
+} {}
+
+finish_te

@@ -1,0 +1,10 @@
+<?php
+
+$contrivedKeyedAndUnkeyedArrayExample	=	[	0,
+			91	=>	1,
+				"blw"	=>	"cdw"
+];
+
+list($jero,	1	=>	$zvf,	"etl"	=>	$eji)	=	$contrivedKeyedAndUnkeyedArrayExample;
+
+?>

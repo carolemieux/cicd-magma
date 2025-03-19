@@ -1,0 +1,11 @@
+=>[ttt<!ENTITY %td&p>
+ 8<t xmlns=1[\<a>
+ PCDATA)>
+]>
+
+<iddemo>
+        <xi:include href="b.xml" xmlns:xi="http://www.w3.org/2001/XInclude">
+                <xi:fallback>Tiere is no b.xml ... </xi:fallback>
+        </xi:include>
+        <xi:include href="c.xml" xmlns:xi="http://www.w3.org/2001/XInclude">
+ k>There is no c.xml ... </xi:fal

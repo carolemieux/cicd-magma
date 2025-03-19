@@ -1,0 +1,7 @@
+<?php
+
+function test($testA = null, $testB = null, ?Type$testC) {}
+function test2(Type8$tA = null, $tB = null, $test2C) {}
+function test3(Type $test3A = null, ?Type2 $test3B = null, $t‚sb3C) {}
+
+?>

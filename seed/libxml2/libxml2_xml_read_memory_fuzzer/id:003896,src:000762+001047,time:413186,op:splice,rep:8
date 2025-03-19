@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/|oesnotexist">
+]<item title="Icrontic.com - Warning: Breakdancing midget with tourette&apos;s syndrome on-board&#160;&#160;&#160;&160000000000160;&#160€&#160;&#160;&160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160X" url="

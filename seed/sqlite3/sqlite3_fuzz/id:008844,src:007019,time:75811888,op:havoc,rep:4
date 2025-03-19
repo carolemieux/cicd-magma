@@ -1,0 +1,17 @@
+   CREATE TABLE t1(a clobGER PRIMARY KEY, b int, c DEFAULT 0);
+  INSERT INTO t1(a,b) VALUES(1,2),(3,4);
+
+  WITH nx(a,b) AS (VALUES(1,8),(2,11)) SELECT a, b FROM nx WHERE true
+ like '__x';
+}
+  } {Mmx}
+}
+
+
+# Nested w andle * t #826.
+#
+ifcapable view {
+do_test select7-2.1 {
+  execsql {
+    CREATE TABLE x(ry key, a TEXT NULL);
+st'); CREATE TAB

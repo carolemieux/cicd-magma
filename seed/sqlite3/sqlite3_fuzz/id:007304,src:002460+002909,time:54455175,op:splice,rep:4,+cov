@@ -1,0 +1,6 @@
+SELECT raise(ignore);
+    END;
+
+    -€ Vy the ta: t1}}
+do_test check-6.6 {
+  exe

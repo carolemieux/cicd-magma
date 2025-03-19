@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST no>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attrOCTYPE doc [
+/>
+	<norm attr = 'foo	 	bar	'/>
+	<normננננננננננננננננx20;bar'/>
+</doc>

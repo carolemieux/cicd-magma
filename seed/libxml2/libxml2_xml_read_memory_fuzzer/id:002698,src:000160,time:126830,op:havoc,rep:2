@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a?, (ÌÌÌb, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+¼!ELEMENT c EMPTY>
+<!ELEMENT d EMPTY>
+]>
+<doc>
+<d/>
+</doc>

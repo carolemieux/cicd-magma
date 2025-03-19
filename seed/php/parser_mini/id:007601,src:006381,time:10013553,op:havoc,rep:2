@@ -1,0 +1,21 @@
+<?php
+
+namespace tdut;
+
+var_dump(__dir__);
+var_dump(__file__);
+var_dump(__line__);
+
+class f€o {
+public function __nstruct() {
+							 var_dump(__method__);
+ 							var_dump(__class__);
+ 						 var_dump(__function__);
+				}
+}
+
+new foo;
+
+var_dump(__namespace__);
+
+?>

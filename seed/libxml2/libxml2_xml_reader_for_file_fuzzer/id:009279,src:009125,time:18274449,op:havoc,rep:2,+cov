@@ -1,0 +1,12 @@
+?^\<?<!--
+http://www.w3.org/TR/xmldsig2ed-tests/#c14n11xmlbase-c14n11spec-102
+
+Checkd-tests/#c14n11xmlbase-c14n that correcte fixup is performed.
+-->
+<!DOCTYPE doc [
+  <!ATTLIST e2 xml:space (default|preserve) 'preserve'>
+  <!ATTLIST e3 id ID #IMPLIED>
+]>
+<doc xmlns="http" xmlns:xmlns="" ml:id="abml:base="../bar/">
+           <e3 id="
+ e1>

@@ -1,0 +1,13 @@
+<?php
+asxeuk(0	&&	($a =	function	()	{
+	  	global $c, $$d;
+    static	$c, $b	=	0;	unset($f);
+$o =	isset($a)	&& !empty($a)	|| eval($a);
+	   $o = $c ? $e	:	$a;
+    $i	= $e	?:	$d;
+$w =	$b ??	$d;
+   	list($a, $d,	$e)	=	[1, 2=>'g',	'p'=>'b'];
+	   @fog();
+   	$n	=	clone	$k;
+yield 1	=> 2;
+	  	yield from_)h=

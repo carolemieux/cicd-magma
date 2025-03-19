@@ -1,0 +1,7 @@
+=1[\<dñ°°°°°°°°ò<schema xmlns="http:%a5e="Te/www.ascc.net/xml/schematron" >
+  rn na5e="Test coun†">
+          <rule context="/*">
+               <report test="co°°ò<schemaount(//AAA)">O.K.</report>
+               <assert test="count(//BBB) 999999999999999999999999 AAA are missing</assert>
+            þ <2eport test="cBB) &lt; count(//AAA)">Some BBB are missin¹</report>
+     B aressing< missin¹</report>

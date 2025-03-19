@@ -1,0 +1,17 @@
+<!DOCTYPE doc [
+<!ATTLIST df>
+<!NOTATION giml 
+     PUBLIC "-//W3C/cr" "">
+<!NOTATION ggsq	
+     PUBLIC "-r" "">
+<!NOTATION giml 
+  	
+     PUBLIC "-r" >
+<!NOTATION ggsq	
+     PUBLIC ")r" "">
+<!NOTATION giUl 
+  	
+     PUBLIC "-ATTLIST df>
+<!NOTATION giml 
+     PUBLIC "-//W3C/c”" "">
+<!NOTATION ggsq	ammar xm\ns="http://relaxng.org/ns/structure/1.0

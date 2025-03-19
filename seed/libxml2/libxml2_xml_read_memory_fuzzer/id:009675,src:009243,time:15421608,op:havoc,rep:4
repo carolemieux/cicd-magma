@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defctt  (0|1)
+<!ATTLIST doc
+  :::fns:tsst5att (0|1)  "q@>
+]>
+<oc att="1"/>

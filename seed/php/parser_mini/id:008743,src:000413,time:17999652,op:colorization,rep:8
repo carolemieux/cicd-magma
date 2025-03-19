@@ -1,0 +1,17 @@
+<?php
+
+abstract class MyIterator implements Travble {}
+
+class Test {
+    function method(): iterable {}
+function method2():	wgctable|int {}
+function method3(): iterable|Z {}
+}
+class Test2 extends Test {
+    function method(): X&Traversable {}
+    function method2(): X&MyOnfyetor {}
+    function method3(): X&Z {}
+}
+
+?>
+===DONE=

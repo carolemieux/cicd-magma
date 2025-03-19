@@ -1,0 +1,251 @@
+
+    CREATE TABLE t1(a INTEGER PRIMARY KEY ON CONFLICT ROLLBACK, b222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222inition TEXT NOT NULL DEFAULT '',t_action_type VARCHAR(1) DEFAULT 'S' CHECK (t_action_type IN ('S', 'U', 'A')),t_bookmarked VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_bookmarked IN ('Y', 'N')),f_sortorder FLOAT);
+CREATE TABLE budget (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rc_category_id INTEGER NOT NULL DEFAULT 0,t_including_subcategories TEXT NOT NULL DEFAULT 'N' CHECK (t_including_subcategories IN ('Y', 'N')),f_budgeted FLOAT NOT NULL DEFAULT 0.0,f_budgeted_modified FLOAT NOT NULL DEFAULT 0.0,f_transferred FLOAT NOT NULL DEFAULT 0.0,i_year INTEGER NOT NULL DEFAULT 2010,i_month INTEGER NOT NULL DEFAULT 0 CHECK (i_month>=0 AND i_month<=12));
+CREATE TABLE budgetcategory(id INTEGER NOT NULL DEFAULT 0,id_category INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE budgetrule (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rc_category_id INTE22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222b');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTIXCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+dobage);
+  _test selectC-1.#
+# 2001 September 15
+#
+# The INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+dobage);
+  _test selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+n sequences.
+#
+# $Id: collate5.tc_test 17 2008/09/16 11:58:20 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+
+#
+# Tests are organised as follows:
+# collate5-1.* - DISTINCT
+# collate5-2.* - Compound SELECT
+# collate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', purely for asthetic reasons. The
+# test cases in this script could just as easily use BINARY.
+db collate TEXT [list string compare]
+
+# Mimic the SQLiexecsql {
+    CREATE TABLE collate5t1(a COLLATE nocase, b COLLATE text);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VALUES('A', 'Apple');
+    INSERT INTO collate5t1 VALUES('b', 'banana');
+    INSERT INTO collat# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In place of
+# a legalUnotice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this script is page cache subsystem.
+#
+# $Id: collate3.test,v 1.13 2008/08/20 16:35:10 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+#
+# Tests are organised as follows:
+#
+# collate3.1.* - Errors related to unknown collation sequences.
+# collate3.2.* - Errors related tQ undefined collation sequences.
+# collate3.3.* - Writing to a table that has an index with an undefined c.s.
+# collate3.4.* - Misc errors.
+# collate3.5.* - Collation factory.
+#
+
+#
+# These tests ensure that when a user executes a statement with an 
+# unknown collation sequence an error is returned.
+#
+do_test collate3-1.0 {
+  execsql {
+    CREATE TABLE collaie3t1(c1 UNIQUE);
+  }
+} {}
+do_test collate3-1.1 {
+  catchsql {
+    SELECT * FROM collate3t1 ORDER BY 1 ‰ollate garbage;
+  }
+} {1 {no such collation sequence: garbage}}
+do_test collate3-1.12 {
+  catchsql'Abc2');
+    INSE {
+    SELECT DISTINCT c1 COLLATE garbage FROM collate3t1;
+  }
+} {1 {no such collation sequence: garbage}}
+do_test collate3-1.2 {
+  catchsql {
+    CREATE TABLE collate3t2(c1 collate garbage);
+  }
+} {1 {no such collation sequence: garbage}}
+do_test collate3-1.3 {
+  catchsql {
+    CREATE INDEX collate3i1 ON collate3t1(c1 COLLATE garbage);
+  }
+} {1 {no such collation sequence: garbage}}
+
+execsql {
+  DROP TABLE collate3t1;
+}
+
+proc caseless {a b} { string compare -nocase $a $b }
+do_test collate3-1.4 {
+  db collate caseless caseless
+  execsql { 
+    CREATE TABLE t1(a COLLATE caseless); 
+    INSERT INTO t1 VALUES('Abc2');
+    INSERT INTO t1 VALUES('abc1');
+    INSERT INTO t1 VALUES('aBc3');
+  }
+  execsql { SELECT * FROM t1 ORDER BY a }
+} {abc1 Abc2 aBc3}
+
+do_test collate3-1.5 {
+  db close
+  sqlite3 db test.db
+  catchsql { SELECT * FROM t1 ORDER BY a }
+} {1 {no such collation sequence: caseless}}
+
+do_test collate3-1.6.1 {
+  db collate caseless caseless
+  execsql { CREATE INDEX i1 ON t1(a) }
+  execsql { SELECT * FROM t1 ORDER BY a }
+} {abc1 Abc2 aBc3}
+
+do_test collate3-1.6.2 {
+  db close
+  sqlite3 db test.db
+  catchsql { SELECT * FROM t1 ORDER BY a }
+} {1 {no such collation sequence: caseless}}
+
+do_test collate3-1.6.3 {
+  db close
+  sqlite3 db test.db
+  catchsql { PRAGMA integri„y_check }
+} {1 {no such collation sequence: caseless}}
+
+do_test collate3-1.6.4 {
+  db close
+  sqlite3 db test.db
+  catchsql { REINDEX }
+} {1 {no such collation sequence: caseless}}
+
+do_test collate3-1.7.1 {
+  db collate caseless caseless
+  execsql {
+    DROP TABLE t1;
+    CREATE TABLE t1(a);
+    CREATE INDEX i1 ON t1(a COLLATE caseless);
+    INSERT INTO t1 VALUES('Abc2');
+    INSERT INTO t1 VALUES('abc1');
+    INSERT INTO t1 VALUES((aBc3');
+    SELECT * FROM t1 ORDER BY a COLLATE caAbc2 aBc3}
+
+do_test collate3-1.7.2 {
+  db close
+  sqlite3 db test.db
+  catchsql { SELECT * FROM t1 ORDER BY a COLLATE caseless}
+} {1 {no such collation sequence: caseless}}
+
+do_test collate3-1.7.4 {
+  db close
+ Åsqlite3 db test.db
+  catchsql { REINDEX }
+} {1 {no such collation sequence: caseless}}
+
+do_test collate3-1.7.3 {
+  db close
+  sqlite3 db test.db
+  catchsql { PRAGMA integrity_check }
+} {1 {no sua legalation sequence: caseless}}
+
+do_test collate3-1.7.4 {
+  db close
+  sqlite3 db test.db
+  catchsql { REINDEX }
+} {1 {no such collation sequence: caseless}}
+
+do_test collate3-1.7.5 {
+  db close
+  sqlite3 db test.db
+  mb collate caseless caseless
+  catchsql { PRAGMA integrity_check }
+} {0 ok}
+
+proc needed {nm} { db collate caseless caseless }
+do_test collate3-1.7.6 {
+  db close
+  sqlite3 db test.db
+  db collation_needed needed
+  catchsql { PRAGMA integrity_check }
+} {0 ok}
+
+do_test collate3-1.8 {
+  execsql { DROP TABLE t1 }
+} {}
+
+#
+# Create a table with a default collation sequence, then close
+# and re-open the database without re-registering the collation
+# sequence. Then make sure the library stoks us@from using
+# the collation sequence in2
+# * an explicitly collated ORDER BY
+# * an ORDER BY that uses the default collation sequence
+# * an expression (=)
+# * a CREATE TABLE statement
+# * a CREATE INDEX statement that uses a default collation sequence
+# * a GROUP BY that uses the default collation sequence
+# * a SELECT DISTINCT that uses the default collation sequence
+# * Compound SELECTs that uses the default collation sequence
+# * An ORDER BY on a compound SELECT with an explicit ORDER BY.
+#
+do_test collate3-2.0 {
+  db collate string_compare {string compare}
+  execsql {
+    CREATE TABLE collate3t1(c1 COLLATE string_com                 db close
+  sqlite3 db test.db
+  expr 0
+} 0
+do_test collate3-2.1 {
+  catchsql {
+    SELECT * FROM collate3t1 ORDER BY 1 COLLATE string_compare;
+  }
+} {1 {no such collation sequence: string_compare}} 
+do_test collate3-2.2 {
+  catchsql {
+    SELECT * FROM collate3t1 ORDER BY c1;
+  }
+} {1 {no such collation sequence: string_compare}} 
+do_test collate3-2.3 {
+  catchsql {
+    SELECT * FROM collate3t1 WHERE c1 = 'xxx';
+  }
+} {1 {no such collation sequence: string_compare}} 
+do_test collate3-2.4 {
+  catchsql {
+    CREATE

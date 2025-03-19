@@ -1,0 +1,8 @@
+<?mml version=" EXAMPLE SYSTEM "e ample.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of entities insion='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&#60;!ELEMENT test (#PCDATA) >' >
+<!ENTITY % d

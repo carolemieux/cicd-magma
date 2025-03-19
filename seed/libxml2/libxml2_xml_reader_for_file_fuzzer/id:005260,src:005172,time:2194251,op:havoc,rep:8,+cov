@@ -1,0 +1,12 @@
+=1U\|<?xl versioJ="1.0" stand?xml5ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a xmlnL:s CDATA #IMPLIED>
+<b EMPTY>
+<!ATTLIST b xmlns:s CD\TA #IMPLIED>
+<!ELEMENT s:b EMPÿÿ>
+<!IST s:b xmlns:s CDATA #IMPLIED>
+]>
+<} xmlns:s="http://some.test.ns/a">
+  Some text.
+	me 

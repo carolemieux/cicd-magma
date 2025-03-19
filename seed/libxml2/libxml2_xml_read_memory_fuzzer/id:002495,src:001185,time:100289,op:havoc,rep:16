@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (normMPdY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doS>
+	<n]rm attr L ÿ foo bar
+'/>!	<norm attr = 'foobar
+
+'/>
+ttr =  oo	 	bar	'ttttttttotttttttttttttttt/>
+	<norm att• = ' foo &#x20;aar'/>
+</doc>

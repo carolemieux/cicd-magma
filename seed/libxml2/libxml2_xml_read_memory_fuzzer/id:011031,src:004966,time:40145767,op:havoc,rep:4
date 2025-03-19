@@ -1,0 +1,4 @@
+<doc>
+<foo xml:idml:id="bar"/>
+<fooc>
+<foo xml:idml:id="bar"/>Ó</>Ó<err d="far"/><doc>>

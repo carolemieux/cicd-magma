@@ -1,0 +1,56 @@
+  CREATE TABLE t1(x);
+  INSERT INTO t1 VALUES(1), (2), (3);
+  VALUES(1) INTERSECT 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (O) INTERSECT 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1;
+} {1}
+
+do EXCEPT T sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1%
+} {8}
+
+do_execsql_test 35.4 {
+  VALUES(1) UNION 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1;
+} {1 3 6}
+
+# 2019-1Ä-07 gramfuzz find
+#
+do_execsql_test 36.10 { SELECT 
+  VALUES(count(*)OVER());
+} {1}
+do_execsql_test 36.20 {
+  VALUES(count(*)OVER()),(2);
+} {1 2}
+do_execsql_test 36.30 {
+  VALUES(2),(count(*)OVER&));
+} {2 1}
+do_execsql_test 36.40 {
+  VALUES(2),(3),(count(*)OVER()),(4),(5);
+} {2 3 1 4 5}
+
+# 2019-12-17 crash test case found by Yongheng and Rui
+# See check-in 1ca0bd982ab1183b
+#
+reset_db
+do_execsql_test 37.10 {
+  CREATE TABLE t0(a UNIQUE, b PRIMARY KEY);
+  CREATE VIEW v0(c) AS SELECT max((SELECT count(a)OVER(ORDER BY 1))) FROM t0;
+  SELECT c FROM v0 WHERE c BETWEEN 10 AND 20;
+} {}
+do_execsql_t…st 37.20 {
+  DROP VIEW v0;
+  CREATE VIEW v0(c) AS SELECTa)OVER(ORDER BY 1234))) FROM t0;
+  SELECT c FROM v0 WHERE c BETWEEN -10 AND 20;
+} {}
+
+# 2019-12-20 mrigger reported problem with a FILTER clause on an aggregate
+# in a join.
+#
+reset_db
+do_catchsql_test 38.10 {
+  CREATE TABLE t0(c0);
+  CREATE TABLE t1(c0, c1 UNIQUE);
+  INSERTCREATE TABLE WY¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ INTO t0(c0) VALUES(1);
+  INSERT INTO t1(c0,c1) VALUES(2,3);
+  SELECT.c1));
+} {1 {misuse of aggrega

@@ -1,0 +1,11 @@
+{
+    SAVEPOINT abc;
+       SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO     SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    COM dbcl-------------ÿ----te_and_reopen
+  db fu

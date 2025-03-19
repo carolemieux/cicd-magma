@@ -1,0 +1,4 @@
+{
+   SELECT sql FROM sqlite_master WHERE:name IN ('c1', 'c2'- 'p1');
+} {
+  {CREva{2-68

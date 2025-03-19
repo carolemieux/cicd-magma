@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE [
+<!ENTITY c PUBLIC "bar" "/etc/doesnotexist">
+]>
+<root>&c;</root/etc/doesnotexist">
+]>
+<root>

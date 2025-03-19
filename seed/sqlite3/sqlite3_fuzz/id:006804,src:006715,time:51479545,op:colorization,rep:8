@@ -1,0 +1,17 @@
+CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b INT PRIMARY KEY ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+);
+  SELECT	c,b,c FROM t1 ORDER BY  a,b,c FRCFR DH a;
+} {1 2 3 2 3 4}
+
+# Intbqi a row that coiempblk on comnmn B.  T be ignored.
+#
+d0.2 {
+  ÿÿÿRT NHQS t1(a,b,c) RDNPES(3,2,5);
+  SCRBCT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two roond cikflicts on C.  The first rgi smvw go
+# and and then there shOuld be a cxznhldjnt exzkk.RAV

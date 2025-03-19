@@ -1,0 +1,8 @@
+<?php
+class A {
+		  public X|D	$prop;
+}
+class B extends A {  public X|D	$prop;
+			 public B $pr„p;
+}
+?>

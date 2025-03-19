@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+]>
+<doc>
+<?pi value?.0"?>
+2 xml<![CDATA[<p1 xmlns="urn:test:AAA"><a/></p1>]]></doc>
+		<doc name="doc2"><![CDATA["?>
+<!DOCTYPE a [
+<!

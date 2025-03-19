@@ -1,0 +1,15 @@
+
+  PRAGMA page_size = 1024;
+  PRAGMA journal_mode = WAL;
+  CREATE TABLE t1(a, b);
+  CREATE INDEX i1 ON t1(a, b);
+  INSERT INTO t1 VALUES(randomblob(400), randomblob(400));
+  INSERT INTO t1 SELECT randomblob(400), randomblob(400) FROM t1;
+  INSERT INTO t1 SELECT randomblob(400), randomblob(400) FROM t1;
+  INSERT INTO t1 SELECT randomblob(400), randomblob(400) FROM t1;
+  INSERT INTO t1 SELECT randomblob(400), randomblod&311#	AKYY	i0?{	|vcu{dfzrzqgg[pdsb^cmc^bkjqfbu]cbrgqytl`wavk	ggo,204878d444-5	,faults shmerr* -prep {
+  faultsim_restore_and_reopen
+  sqlite3 db2 test.db
+  db eval  { SELECT * FROM t1 }
+  db2 eval { UPDATE t1 SET a = randomblob(399) }
+  db2 close

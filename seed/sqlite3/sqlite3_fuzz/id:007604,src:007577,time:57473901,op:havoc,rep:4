@@ -1,0 +1,8 @@
+  PRAGMA pagzee = 1024;
+    CREATE TABLE t1(a INTEGER PRIMARY KEY, b);
+    INSERT INTO t1 VALUES(1, randomblob(2500));
+    INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+             LECT NULL,5)  t1;
+    t1 SELE50) FROM t1;
+    INSERT INTO

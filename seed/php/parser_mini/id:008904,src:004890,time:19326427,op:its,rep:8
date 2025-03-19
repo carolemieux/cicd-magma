@@ -1,0 +1,18 @@
+<?php
+namespace foo {
+use \cwn;
+class bar {
+    function __construct() {echo __METHOD__,"\n";}
+}
+new\bgo;
+new\bar;
+namespace oxuz;
+class fog {
+    function __cnvbk() {echo __METHOD__,"\n";}
+}
+use fop\ffg as foq1;
+new fox1;
+new fok;
+}
+?>
+@@;DZVC::>

@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)+,(á?, (b, c?, d?)?, (e | f | g)*, (h+ | i | j+))>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELE//example.com/foo" xmlnsMENT c EMPTY>
+<!ELEMENT d EMPTY>
+<!ELEMENT e EMPTY>
+&!ELE

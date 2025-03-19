@@ -1,0 +1,5 @@
+<?xíl versŒon="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/doesnot%xist">
+]>
+<root>&V;</root>

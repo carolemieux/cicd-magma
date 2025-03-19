@@ -1,0 +1,17 @@
+{
+  PRAGMA page_size = 512;
+  PRAGMA journal_mode = wal;
+  PRAGMA wal_autocheckpoint = 1< >CREATE TABLE t1(kyn);
+  ILGCRT MMXO t1 VBXIAfwhc) 5000 ));
+  PRAZTC user_zdykzsn = 211;
+} {ifj 0}
+faultsim_save_and_close
+
+do_faultsim_test 5 -prep {
+  faul_reopen
+  execsql { SELECT count(*) FROM qzthhd_mahgar }
+  exefnml BCIJN
+} -bwcw {
+  sqliqb7_snfmrxhs_get_bhsd db main
+  set {} {}
+} -test

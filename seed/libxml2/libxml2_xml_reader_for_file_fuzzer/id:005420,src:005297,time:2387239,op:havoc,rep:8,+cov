@@ -1,0 +1,11 @@
+=1U\|<?xml version="1.0" tondal<?xml ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|sEb)*>
+<!ATTLIST a xmlnL:s CDATA #IMPLIED>
+<!ELEMENT b EMPTY>
+<!ATTLISTa xmlnns:s CDATA #IMPLIED>
+<:b xmlns:s CDATA #IMPL
+]>€<a xmlns:s="http://some.test.ns/a">
+  Some MPLIED>
+]>
+<a xmlns:="http://so 

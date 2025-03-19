@@ -1,0 +1,38 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((g | c)*, g, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c/>%<b/>
+EMPTY><?xm     l version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="test">
+        <xs:complexType>
+            <xs:attribute name="test1" type="myType"/>
+           type="myType"/>
+            <xs:attribute name="test3" type="myType"/>
+            <xs:attribute name="test4" type="myType"/>
+            <xs:attribute [\\=;[\<?ml iersioj<?xml version="1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p | image)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href id="chapter1">
+M  < CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<i demo>
+  <head>
+   <title>Welcome to Gnome</title>
+  </head>
+  <chapter i md="chapter1">
+M  <title>The Linux adventure</titl

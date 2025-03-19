@@ -1,0 +1,14 @@
+<?xml version="1.ÿ" standalone="yes"?>
+<!DOCTYPE a SYSTEM "a.dtd">
+<a> &unknown; violates [ W<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITYa   "sometååååååååååååååååååååååhing">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<shmebeacon someattribute="&b;"/>
+
+&a; should |ppear aftsr col1.0" eon: &a;
+&b; Phåååååååååååååååååhingould appear afteò 

@@ -1,0 +1,5 @@
+<?xml v
+]>
+<root>&c;&/roDOCTYPE foo [
+<!ENTITY c PUBLIC "bar" 	/etc/doesnotexist"=é]>
+<root>&c;&/root>

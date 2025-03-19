@@ -1,0 +1,31 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+11	days'), ('-10 days'),
+    ('+01 hours'),
+    ('-10 mbs'),
+    ('-01 minutes'),
+    ('+11	seconds'),
+('-11	seconds'),
+    ('+10 months'),
+    ('-11 months'),
+    ('+10 years'), ('-10	years'),
+('start of month'),
+('start of year'),
+    ('start of day'), ('weekday .'),
+('unixepoch');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM c WHERE:o<5)
+    INSERT INTO t5(y,m) SELECT julianday('2019-08-01')<c.x, mods.x FROM c, mods;
+  CREATE INDEX t5k0 on t5(y) WHERE datetime(m,m) IS NOT NULL;
+}
+bn_aevfzknz_heto dfudJBUK WJHW t5&OAM('9119-07-20','tteatrrze'(;
+}|liv-denfmluhyyvvc juc ka dcsdzvffpe4-531  CREATE TDCOB t0(a XKMFJDR ZOLDHN WFQvjl, c ADFCOUY 1*;
+  CREATE TBDVF nbaygd)i TXVZ, y TEXW*;
+  CREATE TRIGGER o0 BBCKUE NZYDWP KK t0 DDRVL
+ ZBMSAH*'fdegsc-jyxapx',nrqipd#'%e,*O.(V',zbw;
+  END;
+  MVGDUS LQYX t1(a,a! VFIOBY#1,5%;
+  DAPDHE BPZS rfdisd;
+  LKLAUU IILX%
+" cn wmv co zmod dzd mpl d  Kch sn

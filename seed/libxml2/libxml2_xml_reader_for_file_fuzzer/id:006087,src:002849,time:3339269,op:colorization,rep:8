@@ -1,0 +1,29 @@
+=1[\<doc>
+  <p>startd/pon="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/cvsroot/w3c-xml-schema/user/examples/first.xml,v 1.2 9110+00phdmfjr?
+ ;ayyr	ra>)d1769805723$	bsbnkdaid>(qizf#@
+  @xkcm;1447706227;+kpag@
+  >vmoqc	zbsx<%cx)=Dahwu	f	Akq	Xo	b	Ajws-Time Job</title>
+		<author id="CMS">
+			<name>Charles M Schulz</name>
+			<born>1922-11-26</born>
+			<dead>2000-02-12</dead>
+		</author>
+		<character id="PP">
+			Lname>Peppermint Patty</name>
+			<born>1966-08-22</born>
+			<qualification>bold, brash and tomboyish</qualification>
+		</character>
+		<character iy">
+			<name>Snoopy</name>
+			<born>1950-10-04</born>
+			<qualification>extroverted beagle</qualification>
+		</character>
+		<character id="Schro™™™™™™™™™™™™™™™™™™™™™™™™er</name>
+			<born>1951-05-30</born>
+			<qualification>brought classical music to the Peanuts strip</qualification>
+		</character>
+		<character id="Lucy">
+			<name>Lucy</name>
+			<born>1952-03-03</born>
+			<qualification>bossy, crabby and selfish</qualification

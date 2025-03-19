@@ -1,0 +1,20 @@
+<!DOCTYPE d [
+	<!ELEMENT doc (ngÿÿÿÿ>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doo>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element compledType: Schma“ parser error :
+   local complex tXpe: The content mydel is not determinist."
+
+  This schema is OK with XSV and ferces. 
+-->
+<xs:schemaýwmlnsxs="httpX//www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:test:foo"	elementFormDefault="qualified">
+	<xs:element name="foo">
+		<xs		<xs:sequence>
+				<xs:element

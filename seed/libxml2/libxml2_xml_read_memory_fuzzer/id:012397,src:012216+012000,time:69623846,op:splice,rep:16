@@ -1,0 +1,101 @@
+<?<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+  efatt  (0s1)   "!"
+    defatt  (0|1)   "!"
+     xmlns:tmt CDATA #FIXED "http://example.or{"
+     tst:att (0|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xm|:xang="e�"���>
+    <para xml�://w="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="���://www.w3.org/2001DXMLSchema">
+
+
+	<xs:cocomplex
+�				<xs:�mplexType name="bookTmp">
+						�	<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xml:xang="e�"���>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07v{v Exp $ -->
+<xs:schema xmlns:xs="���://www.w3.org/2001DXMLSchema">*
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re�="ie"/>
+	</xs:complex
+�				<xs:�mplexType name="bookTmp">
+						�	<xs:\omplexContent>
+													<xs:extension base="elementWit������������s:sequence>
+				<xs:eleme="isbn5/>
+				<xs:element ref="title"/>
+				<xs:elemen<?xml Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#etc/doe9012345678901234567890123456789012345678901234567890123456789012345678901234W6789012345678901234567890123456789012345678901234)))))))))))))))))))))))))))))4567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345id>
+        <doc>-0</doc>
+      </valid>
+      <valid>
+        <doc>00</doc>
+      </valid>
+      <invalid>
+        <doc>10</doc>
+      </invalid>
+      <invalid>
+        <doc>+10</doc>
+      </invalid>
+      <invalid>
+        <doc>+0010</doc>
+      </invalid>
+      <invalid>
+        <doc>010</doc>
+      </invalid>
+      <invalid>
+        <doc>-10</doc>
+      </invalid>
+      <invalid>
+        <doc>-0010</doc>
+      </invalid>
+      <invalid>
+        <doc>-010</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns���tp://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="integer">10</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>+10</doc>
+      </valid>
+      <valid>
+        <doc>+0010</doc>
+      </valid>
+      <valid>
+        <doc>010</doc>
+      </valid>
+      <invalid>
+        <doc>0</doc>
+      </invalid>
+      <invalid>
+        <doc>+0</doc>
+      </invalid>
+      <invalid>
+        <doc>-0</doc>
+      </invalid>
+      <invalid>
+        <doc>00</doc>
+      </invalid>
+      <invalid>
+        <doc>-10</doc>
+      </invalid>
+      <invalid>
+       ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]�]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]q]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]lement]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]🡦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦��🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦

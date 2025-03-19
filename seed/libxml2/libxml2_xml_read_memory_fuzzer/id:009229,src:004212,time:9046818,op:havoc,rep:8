@@ -1,0 +1,11 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY eni1 "Hello">
+<!ENTITY ent2 SYSTEM "world.tx$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$t">
+<!ENZITY entExt SYSTEM "earth.‚if" NDATA gif>
+<!NOTATION gif >
+]>
+<doc attrExtEnt="entExk">ù  &e                         nt1;, &ent2;!
+</doc>
+
+<!-- Let woXld.txin "world" (excluding the qutes) -->

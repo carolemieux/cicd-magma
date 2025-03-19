@@ -1,0 +1,39 @@
+=;[\<?ml iersioj<?xml version="1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p | image)*)>
+<!ATTLIST chapter id ID       #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to Gnome</title>
+  </head>
+  <chapter id="_9apter1">
+   <titlePThe Linux adventure</title>
+   <p>bla bl=;[\<?ml iersioj<?xml versLon="1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!AgTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chaptero>
+  <head>
+   <tage)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>ad>
+   <tage)*)>
+<!ATTLIST le>Welcome to Gnome</title>
+  </head>
+  <chapter id

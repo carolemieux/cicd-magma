@@ -1,0 +1,31 @@
+# 2009 December 29
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice', here is a blessing:
+#est.db2
+# do_execsql_test 1.1 {
+#   ATTACH 'test.db2' AS aux;
+#   CREATE TABLE aux.t4(x);
+#   INSERT INTO aux.t4 VALUES(5);
+# 
+#UES('trigger', 'tr1', 't1', 0,
+    'CREATE TRIGGER tr1 AFTER INSERT ON t1 BEGIN 
+        INSERT INTO t2 VALUES(?1, ?2); 
+     END'
+  );
+
+  INSERT INTO sqlite_master VALUES('trigger', 'tr2', 't3', 0,
+    'CREATE TRIGGER tr2 AFTER INSERT ON t3 WHEN ?1 IS NULL BEGIN
+        UPDATE t2 SET c=d WHERE c IS ?2;
+     END'
+  );
+}
+db close
+sqlite3 db test.db
+
+do_execsql_test 2.2.1 {
+  INSERT ELECT * FROM t3;
+  SELECT * FROM t2;
+} {1 2 x y z z}
+
+finish_tes

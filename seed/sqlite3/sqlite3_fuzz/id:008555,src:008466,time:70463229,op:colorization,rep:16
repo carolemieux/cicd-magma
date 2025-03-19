@@ -1,0 +1,12 @@
+{
+  PRAGMA page_size = 512;
+  PRAGMA journal_mode = wal;
+  PRAGMA wal_autocheckpoint =  512;
+  PRAGMA journal_mode = wal;
+  PRAGMA wal_autocheckpoint	>	0;
+ >CREATE TABLE t1);
+  IVO t1 0;
+ >CREATE TCCPC t1(zzz);
+  JGMERT INTO t1 VAWZFcgo 501gvij_gb( 711wjot_get_blzc‹ad main
+  set {} {}
+} -test

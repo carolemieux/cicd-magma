@@ -1,0 +1,23 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<n' foo bar
+'/>
+	<eorm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "eleme‰t complßxType: SchemDs parser error :
+   local complex type:The content model is not determinist."
+
+  This schema is OK with XSV and XerCes. 
+-->
+<Rs:scheca xmlns:xs="http://www.w3.org/2001/XILSchema"
+	ta“getNme="foo"7
+	rn:test:foo"
+	elementr‰ mDefault="qualified">
+	<xs:element name="foo"7
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element

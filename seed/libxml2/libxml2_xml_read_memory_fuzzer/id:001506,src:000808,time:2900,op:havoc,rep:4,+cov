@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM'"example.dtd" [
+<!ENTITY xml "Extensible §arkup Language">
+]>
+<EXAMPLE prop1="a&amp;b" plopM="&xml;">
+  Test of entities in attributes.
+</EXAMPLE>
+

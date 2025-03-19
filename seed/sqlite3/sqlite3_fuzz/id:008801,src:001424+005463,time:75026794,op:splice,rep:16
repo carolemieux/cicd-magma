@@ -1,0 +1,75 @@
+    CREATE TABLE t1(x, y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this sœurce €ode.  In plae of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May yoFROM t1 LEFT J(a INT'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''EGER PRIMARY KEY,b,c);
+    INSERT INTO t1 VALUES(1,3,1);
+INSERT INTO t1 VALUES(2,4,2);
+    CREATE TABLE t2(x INTEGER PRIMARY KEY);
+    INSERT INTO t2 VALUES(3);
+
+    SELECT * FROM t1 LEFT JOIN t2 OsOSS JOIN t1 ORDEFT JOIN t2 ON x=b WHERE c=d;
+  }
+} {1 3 1 3}
+do_test where6-1.13 {
+  exe TABLE c3(x INTEG* FROM t1 LEFT JOIN t2 ON b=x WHERE 1=c;
+  }
+} {1 3 1 3}
+
+
+
+do_test where6-2.1 {
+  execsql {¥¥   CREATE INDEX i1 ON t1(c);
+
+    SELECT * FROM t1 LEFT JOIN t2 ON b=x AND c=1;
+  x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght to this sœurce code.  In plaABLd t1(a, b, c);
+    INSERT INTO t1 VALUES+1,22elf and forgive other22222222|2# 2012 December 17
+#
+# The author disclaims copyright to this sourcecode.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+# o this sourcecode.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find f#
+#***********************************************************************
+# This file implements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-namOF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are violated and returns one row of output for each
+# violation.
+
+set teh_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMCRY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BR      AVO'),('55'),('Delta'),('ECHO');
+    CREATE QABLE p5(a INTEGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSMRT INTO p5 VALUES(1,'Alpha','abc'),(2,'be”a','def');
+    CREATE TABLE p6(a INTEGER PRIMARY KEY, b TEXT COLLATE nocase,
+                    c TEXT COLLATE rtrim, UNIQUE(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x INTEGER PRIMARY KEY references p1);
+    PREATE TABLE c2(x INTEGER PRIMARY KEY references p2);
+    CREATE TABLE c3(x INEGER PRà§IMARY KEY referenceEXT CZLLATE nocase references p4);
+    CREATE TABLE c15(x, y, FOREIGN KEY(x,y) REFERENCES p5(b,c));
+    CREATE TABLE c16(x, y, FOREIGN KEY(x,y) REFEREN5289634732983647'PW		]		ZCGBBN

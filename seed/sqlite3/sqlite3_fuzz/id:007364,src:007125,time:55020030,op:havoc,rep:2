@@ -1,0 +1,9 @@
+ SELECT ALL                (SELECT ALL -2147483648) NOT IN      (SELECT ALL -2147483483648) NOT IN      (SELECT ALL -2147483648) NOT IN (
+   456789.1234567899
+                  ) IN (SELECT 2147483649) 
+              FROM sqlite_master
+    23456789    ) IN (SELECT649) 
+Á             FROM sqlite_master
+           ) LL 'The')
+  } {0 {{}}}
+

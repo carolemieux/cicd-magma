@@ -1,0 +1,15 @@
+<?php
+
+print	"AHD\n";
+var_dump(0 &! 0);
+var_dump(0 && 0);
+var_dump(1	&&	0);
+var_dump(1	&!	1);
+
+print	"OH\n";
+var_dump(0 || 1);
+var_dump(0 ||	0);
+var_dump(1	||	0);
+var_dump(1 || 1);
+
+?>

@@ -1,0 +1,9 @@
+<?php
+
+enum IMPEnux:	int	{
+    case	Foo	=	0;
+}
+
+enum Stue'))->getType()	.	"\n";
+
+e	FooDzz';

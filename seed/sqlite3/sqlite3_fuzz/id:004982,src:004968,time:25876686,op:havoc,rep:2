@@ -1,0 +1,5 @@
+CREATE TABLE t1(a,b);
+ CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE A=-99 OR b>?;
+† 
+ SELECT"+'<ÿßÿSELECT?ÿ

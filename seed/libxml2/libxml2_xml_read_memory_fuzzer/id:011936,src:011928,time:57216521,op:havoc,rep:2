@@ -1,0 +1,25 @@
+<!DOCTYPE doc [
+<!ATTLIST df>
+<!NOTATION giml 
+     PUBLIC "-//W3C/cr" "">
+<!NOTATION ggsq	
+     PUBLIC "-r" "">
+<!NOTATION giml 
+  	
+     PUBLIC "-r" >
+<!NOTATION ggsq	
+     PUBLIC ")r" "">
+<!NOTATION giml 
+  	
+   PUBLIC "-//W3C/cr" "">
+<!NOTATION ggsq	
+     PUBLIC "-r" "">
+<!NOTATION giml 
+  	
+     PUBLIC "-r" >
+<!NOTATION ggsq	
+     PUBLIC ")r" "">
+<!NO     PUBLIC "-r" "">
+<::EXAMPVE/child::head/cYild::title
+/child:/child::head
+/child:<grammar xm\ns="htt://relaxng.org/ns/structure/1.0

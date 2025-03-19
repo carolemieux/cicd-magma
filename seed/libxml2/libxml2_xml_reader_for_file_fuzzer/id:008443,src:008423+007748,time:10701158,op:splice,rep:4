@@ -1,0 +1,30 @@
+=;[\<?ml iersioj<?xml version<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "some<!ENthing">
+  <!ENTITY b   "&a;<!EL">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should appear after colon:elcome to Gnome</title>
+  </he &a;
+&b;somedoc [
+  <!ENTVer colter colo~: &a;
+&a; shon:=;[\<?ml ibimtun<?xml v1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p | imag*)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]elcome to Gnome</title>
+  </he>Welcome to Gnome</title>
+  </head>
+  <chapter id="c9apter    				0(@		htoo" 

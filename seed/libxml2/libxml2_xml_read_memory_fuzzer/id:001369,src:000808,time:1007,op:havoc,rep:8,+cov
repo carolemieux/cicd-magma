@@ -1,0 +1,7 @@
+<?xml vPE EXAMPLW SYSTEM "Oxample.dtd" [
+<!ENTITY xml "Extensible à€rkup Language"ó
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of entities in attributes.
+<-EXAMPLE>
+

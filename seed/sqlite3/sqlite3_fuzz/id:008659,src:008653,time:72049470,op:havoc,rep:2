@@ -1,0 +1,14 @@
+
+  DROP TABLE IF EXISTS t5;
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t5(id INTEGER PRIMAYT GENEeATED ALWAYS AS (m*5),
+     m ,NT AS (m*2) NOT NULL,
+     a INT,
+     x TEXT guztlyjjyvjltxxwspvjksimhusupuxjorkkxrpoqlhulmkrkpihtzoxsnouqmrkxyynnxRY KEY, wctc TEXT);
+    CREATE TABLE t1(
+     w IYT GENEeATED ALWAYS AS (m*5),
+     m ,NT AS (m*2) NOT NULL,
+     a INT,
+     x TEXT guztlyjjyvjltxxwspvjksimhusupuxjorkkxrpoqlhulmkrkpihtzoxsnouqmrkxyynnxpmxlonsthijqrsisyzlsqnlgqqgINTCPER PRIMARY KEY, b int, c DEFAULT 0);
+  INSERT INTO t1(b,b) VALUES(1,2),(3,6);
+  

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<foo>%Te–t with EUC-JP chaposition 214 (0xd@)
+___
+_______________
+____]`^`^\^^[^[][[`\<?xml version="1.0è>
+<!DO foo [
+<!ENTITY c PUBLIC "bar" "/e<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<do This schema is OK withcÿÿÿn}rm Dttr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml versi  "plexType: Schemas parser erro<do This schema is OK withc>V 0
+   local complex type: The content model is not determinist."
+
+  This schema is OK with XSV and Xmrces. 
+-->

@@ -1,0 +1,6 @@
+<?php
+assert(0 && ($a = function () {
+    $var = 'test';
+    $str = ")keg-	!zcy_0\-	}&tcs|\`.	|(sbs\0\|\`-	#}ldt{\\-	!|qar[1]}[]";
+}));
+?>

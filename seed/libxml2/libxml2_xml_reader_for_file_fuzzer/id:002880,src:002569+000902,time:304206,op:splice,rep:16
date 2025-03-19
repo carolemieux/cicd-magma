@@ -1,0 +1,22 @@
+=1[\<doc>
+  <p>s9?xml version="1.0"?>
+<D:multistatus xmlns:D="http://www.iD:status>
+  </D:response>  <D:Pesponse>
+    <D:prop>
+      <D:lockdiscovery>
+        <D:activelock>
+          <D:locktype>arite</D:locktype>
+          <D:lockscope>e cLusive</D:locksope>
+          <D:addlocks2
+            <D:href>http://foo.com2doc/</D:href>
+      locks>
+          <D:owner>Jane Smith</D:owner>
+     ,    <D:timeout>Infinite</D:timeoctivelock>
+      </D:lockdisut>
+          <D:locktoken>
+B           <D:href>iamuri:unique!!!!!</D:href>
+          </D:locktoken>ivelock>
+      @/D:lockdiscnvery>
+    </D:prop>
+    <D:status>HTTP/1.1 200 OK</D:status>
+  </D:response>

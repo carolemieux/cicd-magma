@@ -1,0 +1,10 @@
+<?php
+class Ad{
+}
+
+$a = new Amp($a->{array()});ar_dump($a->{array()});
+var_dump
+;
+var_dump($a->{array()});
+var_dump($a->{1});
+var_d?>

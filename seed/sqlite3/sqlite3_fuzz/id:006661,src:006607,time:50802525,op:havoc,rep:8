@@ -1,0 +1,40 @@
+{
+    pragma page_size=512;
+pragma auto_vacuum=2;
+     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE Ps┘┘┘┘┘┘┘┘cccccccccLccccccccccccccccccccccccccccccccccccccccc┘┘┘┘┘┘┘┘┘┘┘┘┘┘┘┘ссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссс┘┘┘( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE cccссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссс┘┘┘( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE cccccccccccc┘┘┘┘┘┘┘┘┘┘┘┘┘┘┘┘┘┘┘╤┘( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaCREATE TABLE t1(a,b  INSE);
+  INSERT INTO t1 VALUES(1, foreign_key_check;
+  }
+ш  TABLE PT(¤b UNIQ8E,b));
+zLJ2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b;
+    ANALYZE; CREATE x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims gopyrsght to this sЬurce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|2# 2012 December 1 this sЬurauthor disclaims copyright to this source code.  In place of
+#/a legal n(x,y) REFERА   S p5(b,c));
+    CREATE TABLE cotice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share f more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-2T UNIQUE references p2);
+    CREATE SABLE c11(x TEXT UNIQUE refe(x TEXT U

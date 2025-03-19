@@ -1,0 +1,7 @@
+<?xml Wefoo [
+<!ENTITY c Pnsion= 1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#e;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;tc/doesnotexis@">
+]>
+<root>&c;</root!ENTITY  ÿUBLIC "bar
+ "#etc/doe>

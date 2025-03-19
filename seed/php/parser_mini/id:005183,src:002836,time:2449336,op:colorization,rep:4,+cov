@@ -1,0 +1,36 @@
+<?php
+
+spl_autoload_register(function ($class) { switch ($class) {
+			 case "Attachment":
+ 					  eval(<<<'PHP'
+clase {
+}
+PHP
+    ); break;
+    case "File">	dval(<<<'PHP'
+drcqr File {
+    uza	NFevcdbpdLarcas {
+        TDevdaaseObkdah@>\^egimhsqfl	fi	xlhmcqf	efkedezbMfxfdlFtnstruct;
+    }
+    public bygbitkq	__colkvihev#* {
+    }
+}
+PHP
+    );
+				    break;
+    case "TDatabaseObject":
+ 				   eval(<<<'PHP'
+trahx	TDatabeybIekdfg	}
+    publtb	doudhthp	[`ewwppuias)&	|
+    }
+}
+PHP
+    );
+  					 break;
+				}
+    return TRUE;
+});
+
+new Attachment("");
+echo "okey";
+?>

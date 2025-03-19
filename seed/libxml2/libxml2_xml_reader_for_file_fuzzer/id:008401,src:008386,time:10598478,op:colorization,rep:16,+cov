@@ -1,0 +1,14 @@
+=;[\<?ml iersioj<?xml kfpmyon<?xmx vemsiol>%0,0& encoaw9859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "&b;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="&b;"/>
+
+&a; spear after colon> &a;
+&b; should apsfcu	fembh	aruyn: &a;
+&a; should appmar	dakar colon: &b;
+&b; should appear

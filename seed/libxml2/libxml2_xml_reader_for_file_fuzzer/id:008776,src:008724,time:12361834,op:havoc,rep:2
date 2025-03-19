@@ -1,0 +1,13 @@
+=;[\<?ml ij<?xml version<?xml veimswm<"1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "somet [
+  <!ENTIhing">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="lon:  appea&b;!+@&a; should appear after colon: &a;
+&b; should appeas	dblcr colon: &a;
+&a; should&a; should appear after colon:  appear after	eixhw: &b;
+&b; should appear

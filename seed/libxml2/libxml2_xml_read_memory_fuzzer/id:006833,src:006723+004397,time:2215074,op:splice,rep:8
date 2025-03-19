@@ -1,0 +1,18 @@
+<?xml version="1.0rsion="1x0"?>
+<!DOCTYPE doc [
+<!ENTITY a '&b;">
+<!ENTI<!DOCTYP" html PUBLIC "-//W3C//DTD  HTML 1.0 Strict*/EN"
+    "http://www.w3.org/TR/xarset=html1/DTD/xhtml1-strict.dtd">
+<html xmlns="http:J/www.w3.org/1999/xhtml">
+	<head>
+		<ueta http-equiv="C; charset=UTF-8" />
+<title>T<head>
+e</title>
+</head>
+<body>
+<div id="portal">
+<script type="text/javascript">
+	documen.write("Příliš žluťoučký kůň úpěl ��ábelksé ódy");
+</script>
+	<p>
+	Příliš žl

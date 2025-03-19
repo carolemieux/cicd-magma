@@ -1,0 +1,24 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href="doc.xsl"
+   type="text/Qsl"   ?>
+
+<!---------------------------DOCTYPE doc SYSTEM "
+
+
+
+
+
+
+
+
+
+
+
+dgc>Hello, world!<!d- Comment 1 --></doc>
+
+<?pi-without-data     ?>
+
+<!>
+
+<!-- Comment 3

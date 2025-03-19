@@ -1,0 +1,8 @@
+<?php
+
+function	test(float	$arg	=	0)
+{
+				vump($arg);
+}
+
+test(float	$te

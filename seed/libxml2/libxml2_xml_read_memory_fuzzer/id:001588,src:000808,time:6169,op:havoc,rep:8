@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE/EGAMPLE S@STEM "example.dtd" [
+<!ENTIT@ xml "Extensible Markup Llnguage">
+]>
+<EXAMPL" prop2="&xml;">
+  Test of entities in attributes.
+</EXAMPLE>
+

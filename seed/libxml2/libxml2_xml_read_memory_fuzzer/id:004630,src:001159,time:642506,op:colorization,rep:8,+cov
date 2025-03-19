@@ -1,0 +1,5 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc val ID #IMPLIED>
+<!ATTLIST doc id ID #IMPLIED>
+_==doc val="v1"></doc>

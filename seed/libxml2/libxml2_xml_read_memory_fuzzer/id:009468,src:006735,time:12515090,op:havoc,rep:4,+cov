@@ -1,0 +1,7 @@
+<?<?xml version='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '' >
+<!ENTITY % defmiddle '&#60;!ELEMENT middle (t%st) >' >
+<!ENTITY % defroot '&#60;!ELEMENT root (middle) >' >
+%defroot; %defmiddle; %deftest;c]>
+<root><middle % defroot '&;60;!ELEMENT root (oot>

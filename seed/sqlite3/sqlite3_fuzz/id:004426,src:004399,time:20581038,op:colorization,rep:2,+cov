@@ -1,0 +1,2 @@
+   CREATE INDEX sbun.tbli ON tbl(a, b, c);
+    Iain.tbl ZAME, b, c FROM temp.tb

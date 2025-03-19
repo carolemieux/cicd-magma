@@ -1,0 +1,24 @@
+<?php
+
+$htm=<<<DOC
+{$s(<<<'ppp'
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+echo "$htm\n";
+
+$htm=<<<DOC
+{$s(<<<ppp
+adcdefg
+ "$htm\n";
+
+$htm="{$s(<<<'0pp'
+abcdefg
+ppp
+,0,3)}
+";
+
+echo "$htm\n";
+?>

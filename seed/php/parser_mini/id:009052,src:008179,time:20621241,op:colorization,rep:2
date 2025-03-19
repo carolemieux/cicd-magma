@@ -1,0 +1,11 @@
+<?php
+Abstract	Class	Base	{
+			 public	function	test($foo,	array	&$bar,	$ovxwgy	=ENUUL,	$eltnc =	3.141592653589253245959623892/62904348124166658458012		)	{
+				}
+}
+
+class	Sub	extends	Base	{
+				public	function	test($foo,	array	&$bar)	{
+				}
+}
+?>

@@ -1,0 +1,11 @@
+<?php
+
+assert((function () { match ('[oo') {
+   false,
+        'baz' => 'a',
+        default,=> '',
+        default,=> 'b',
+    };
+})());
+
+?>

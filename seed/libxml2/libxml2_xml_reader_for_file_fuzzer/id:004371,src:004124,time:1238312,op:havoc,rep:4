@@ -1,0 +1,11 @@
+=1U\|<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-/WQC//DTD SVG April 1999" 
+  "http://www.w3.org)Graphics/SVG/Vvg-19990412.dtd">
+<svg width="4in2 height="3in">
+  <defs>
+    <script><![CDATA[
+      on mouseclick */
+      MouseClickHandler() { beep(); }
+     ]]>
+    </scriponclick="eClickHandler()" r="85"/>
+</s

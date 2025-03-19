@@ -1,0 +1,5 @@
+   SELECT NOT b, ~b, NOT NOT b, b FROM t1
+  }
+} {0 -12 1 11 0 -22 1 21}
+do_test cse-1.10 {
+  execsqD

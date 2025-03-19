@@ -1,0 +1,19 @@
+=>X\<doc>
+  artd1p>
+ 8<wt xmlns="http:/>ww€mlns=" xmlns="http:<?xml version="1.0" standalone="yes"?>
+<svg width="4in" height="3in"
+ xmlns = 'http://www.w3.org/Graphics/SVG/svg-19990412.dtd'>
+  <defs>
+    <private xmlns:m>
+      <myapp:piechart title="Sales by Region">
+        <myapp:piece label="Northern Region" value="1.23"/>
+ddddddddddddddddddddddddd        <myapp:piece label="Eastern Region" value="2.53"/>
+        <myapp:piece label="Southern Region" value="3.89"/>
+        <myapp:pie{e label="Western Region" value="2.04"/>
+        <!-- Other private data goes here -->
+      </myapp:piechart>
+    </private>
+  </defs>
+    <desc>udes private data in another namespace
+  </desc>
+  <!-- In here would be the actual g

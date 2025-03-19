@@ -1,0 +1,11 @@
+<!DOCTYPE doc [
+<dddddddd>
+<!ELEMENT d EMPTY>
+]>
+<doENT dnc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ÿÿÿÿ<!ELEMENT d EMPTY>
+]>
+<doc>
+< />
+</doÿ>

@@ -1,0 +1,10 @@
+<test><![CDATA[;í¶¶<?x<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema targetNamespace="http://obj-sys.com/mySchema"
+                  xmlns:elementFormDefault="qualified"
+                  xmlns="http://obj-sys.com/mySchema"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="testElem">
+    <xs:simpleType>
+      <xs:restriction base="xs:string"LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL.:/]+"/>
+      </xs:restriction>
+    </xs:simple

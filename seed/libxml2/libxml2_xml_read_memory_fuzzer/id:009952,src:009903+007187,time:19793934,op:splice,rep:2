@@ -1,0 +1,9 @@
+<?<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+  efatt  (0s1)   "!"
+    defatt  (0|1)   "!"
+     xmlns:tmt CDATA #FIXED "http://example.or{"
+     tst:att (0|1)   "1">
+]>
+<_oc att="1"/

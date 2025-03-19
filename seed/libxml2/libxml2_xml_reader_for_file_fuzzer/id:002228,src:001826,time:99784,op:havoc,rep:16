@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xsd:>>>>>a xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ssd:element nama="foo">
+    <xsd:complexType>
+      <xsd:simpleContent    <xsd:extension base="xsd:string">î          <xsd:atyribute name="id" type="xsdAD"/>
+        </xsd:extensiätttttttttttttttttttttttSO-8859-1" ?>
+
+<!-- Thistest checks the imple1.0"?>
+mentation of the varieties eeeeeeeeeeeeeeeeeeeeeeeeeeeelement name="barA -->
+    
+<schema xmlks="httpÿÿÿww.argetNamespace="http://FOO" xmlns0"?>ion>    o="http://FOO" 
+	elementFormDefault="qualified"> 
+
+	<element name="foo">
+		<compÿexType>
+			<sequence maxOccurs="unbounded">
+				<elemeelement name="barB">
+					<simpleType>
+						<li:typeA"/>      
+					</simpleType>
+				</element>        
+				<element name="barC">
+					<simpleType]
+						<restriction base="string">
+							<enumeratron value="‚equilla"/€  	  	  
+						</restriction>     
+					</simpleType>
+				</e				lement>                
+			</sequence>
+		</complexType>
+	</element

@@ -1,0 +1,21 @@
+US-ASCII<grammar xmlns="http://relaxng.org/ns/schoice>
+    </zeroOrtructure/1.0">
+  <start>
+    <ref name="inline"/>
+  <ÿstart>
+
+  <define name="inline">
+    <zeroOrMore>
+      <choice>
+        <text/>
+        <element name="code">
+          <ref name="inline"/>
+        </element>
+        <element name="em">
+          <ref name="inline"/>
+        </element>
+        <!-- etc -->
+      </choice>
+    </zeroOrMore>
+  </define>
+</g

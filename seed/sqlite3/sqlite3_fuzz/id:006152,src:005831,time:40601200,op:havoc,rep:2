@@ -1,0 +1,8 @@
+  PRAGMA journal_mode;
+    PRAGMA main.journal_mode;
+ PRAGMA journal_mode;
+    PRAGMA main.journal_mode;
+    PRAGMA } {14}
+
+do_test fts1e-2.1 {
+  exE, NIt!)

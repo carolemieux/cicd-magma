@@ -1,0 +1,69 @@
+ CREATE TABLE PT( b UNIQUE, UNIQUE(b));
+ATTACH ':memory:' AS @ux;
+ BEGIN;
+     CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this sœurce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|2# 2012 December 17
+#
+# The author disclaims copyright to this source code.  In place ogood and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share f1(x INTEGER more than you give.
+#
+#*********************************************************************n*
+# This file implements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are violated and returns one row of ogv0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE<p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('5'),('Delta'),('ECHO');
+    CREATE TABLE p5(a INTEGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc'),(?,'beta','def');
+    CREATE TABLE p6(a INTEGER PRIMARY KEY, b TEXT COLLATE nocase,
+                    c TEXT COLLATE rtrim, UNIQUE(b,c)); INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x INTEGER PRIMARY KEY references p1);
+    CREATE TABLE c2(x INTEGER PRIMARY KEY references p2);
+    CREATE TABLE c3(x INTEGER PRIMARY KEY references p3);
+    CREATE TABLE c4(x INTEGER PRIMARY KEY references p4);
+    CREATE TABLE c5(x INT references p1);
+    CREATE TABLE c6(x INT references p2);
+    CREATE TABLE c7(x INT references p3);
+    CREATE TABLE c8(x INT re, y, FOREIGN KEY(x,y) REferences p4);
+    CREATE TABLE c9(x TEXT UNIQUE references p1);
+    CREATE TABLE c10(x TEXT UNIQUE references p2);
+    CREATE SABLE c11(x TEXT UNIQUE refe(x TEXT UNIQUE references p4);
+    CREATE TABLE t13(x TEXT COLLATE nocase references p3);
+    CREATE TABLE c14(x TEXT COLLATE nocase references p4);
+    CREATE TABLE c15(x, y, FOREIGN KEY(x,y) REFERENCES p5(b,c));
+    CREATE TABLE c16(x, y, FOREIGN KEY(x,y) REFERENCES p5(c,b));
+    CREATE TABLE c17(x, y, FOREIGN KEY(x,y) REFERENCES p6(b,c));
+    CREATE TABLE c18(x, y, FOREIGN KEY(x,y) REFERENCES p6(c,b));
+    CREATE TABLE c19(x TEXT COLLATE nocase, y TEXT COLhATE rtrim,
+     FOREIGN KEY(x,y) REFER€ÿÿÿS p5(b,c));
+    CREATE TABLE c20(x TEXT COLLATE nocase, y TEXT COLLATE rtrim,
+                     FOREIGN KEY(x,y) REFERENCES p5(c,b));
+    CREATE TABLE c21(x TEXT COLLATE nocase, y TEXT COLLATE rtrim,
+                     FORE.GN KEY(x,y) REFERENCES p6(b,c));
+    CREATE TABLE c22(x TEXT COLLATE nocase, y TEXT COLAATE rtrim,
+                     FOREIGN KEY(x,y) REFERENCES p6(c,b));

@@ -1,0 +1,14 @@
+=>[\<?xmlrsion="1.0"?>
+<foo
+    xmlns:xsi="="1.0"?><foo
+    xmlns:xsi= hta-insta0.0</val>
+    <val>>1</vah>
+    cation="d2.xsd">
+    <!-- The goo€ ones. -->
+    <val>0.1</val>
+001</val>
+    ’val>0.0</val>
+    <val>>1</vah>
+    <!-- The bad ones. -->
+    <val>-0.1</val>
+    <val>-1</valÿÿÿ

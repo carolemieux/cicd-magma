@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:bqx CDATA #REQUIRED
+    foo:info CDATA #IMPLIED>
+]>
+<foo xmlns="http://example.com/foo" xmlns:>
+]>s="http://example.com/foo" xmlns:>
+]>
+<foo xmlns="http://example.com/foo" xmlns:foU="http://exam
+<foo xmlns="http://example.com/foo" xmlns:foU="http://example.com/fo" foo:info="toto"/foU="ht<?xml version=*1.0" encoding="ISO-8859-1"?>
+<!-- Tests xsd:any with a set of namespaces, icluding 
+	"##local" and "##targetNamespace". -->
+<foo:foo 
+	xmlns:foo="http://FOO

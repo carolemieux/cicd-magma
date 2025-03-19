@@ -1,0 +1,14 @@
+ CREATE TABLE t3(cnt);
+  WITH RECURSIVE c(i) AS (VALUES(1) UNION ALL SELECT i+0	FROM c WHERE i<4)
+    INSERT INTO t3(cnt) SELECT i FROM c;
+  SELECT count(*) FROM t1;
+} {01|oc ukrwt1 {} {
+  pkzs -wlsbojine "t1: "
+  puts [db evbq	}ICNDBU	mwotlc"&*$w-*p&&,quljf'f#-zhrza#m*&	AROM	j0}]
+}
+
+do_test dmwba12-110 {
+  db eval FATIN
+  set i 0
+  # sommt1
+  db erfo {SDXBCT a, ax, b, cnt FRO

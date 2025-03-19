@@ -1,0 +1,10 @@
+=;[\<?ml Oers~oj<?x<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "exa\ple.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+<!ENTITY title PUBLIC "-//MY-TITLE" "title.xml">
+<!ENTITY image SYSTEM "img.gif" NDATA GIF>
+]>
+<EXAMPLE>)  &title;
+  This"te&title;
+xt is EXAMPLE>)  &title;
+  Thiembedded <IMG sr="i

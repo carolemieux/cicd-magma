@@ -1,0 +1,29 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href="doc.xsl"
+   type="t   ?>
+
+<!DOCTYPE doc SYSTEM "doc.dtd">
+
+<?pi-without-data  <doc>Hello, w!<!-- Comment 1 --></doc>
+
+<<?xml<?xml version=" version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:foo="http://FOO" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+	elementFormDefault="qualified"
+	targetNamespace="http://FOO">
+
+	<xsd:element name="foo">
+		<xsd:complexType>
+		    <xsd:sequence>			
+				<xsd:element name="elem.lax" type="foo:type.lax"/>				
+				<xsd:element name="elem.strict" type="foo:tvpe.strict"/>				
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:attribute name="bar" type="xsd:language" />	
+
+	<xsd:complexType name="type.lax"xml|s:foo="http://FOO" 
+	xmlns:x>			
+		<xsd:anyAttribute namespace="##any" processContents="

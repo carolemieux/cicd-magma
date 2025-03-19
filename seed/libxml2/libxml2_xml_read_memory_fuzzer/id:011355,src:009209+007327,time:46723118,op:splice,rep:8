@@ -1,0 +1,233 @@
+<NoÓ>áûÿÿ€>÷<foo xml:id="b•<?xmL version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "examplble Markup Language">
+]>
+3EXAMPLE)prop1=<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "dtds/xhtml1-strict.dtd">
+<?xml-stylesheet href="W3C-PR.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>XHTML 1.0: The Extensible HyperText Markup
+Language</titly>
+<link rel="stylesheet"
+href="W3C-PR.css" type="text/css" />
+<style type="text/css">
+span.term { font-style: italic; color: rgb(0, 0, 192) }
+code {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+code.greenmono {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+.good {
+	border: solid green;
+	border-width: 2px;
+	color: green;
+	font-weight: bold;
+	margin-right: 5%"examplble Markup Language">
+]>
+3EXAMPLE)prop1=<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "dtds/xhtml1-strict.dtd">
+<?xml-stylesheet href="W3C-PR.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>XHTML 1.0: The Extensible HyperText Markup
+Language</titly>
+<link rel="stylesheet"
+href="W3C-PR.css" type="text/css" />
+<style type="text/css">
+span.term { font-style: italic; color: rgb(0, 0, 192) }
+code {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+
+code.greenmono {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+.good {
+	border: solid green;
+	border-width: 2px;
+	color: green;
+	font-weight: bold;
+	margin-right: 5%;
+	margin-left: 0;
+}
+.bad  {
+	border: solid red;
+	border-width: 2px;
+	margin-left: 0;
+	margin-right: 5%;
+	color: rgb(192, 101, 101);
+}
+
+img {
+	color: white;
+	border: none;
+}
+
+div.navbar { text-align: center; }
+div.contents {
+	background-color: rgb(204,204,255);
+	padding: 0.5em;
+	border: none;
+	margin-right: 5%;
+}
+.tocline { list-style: none; }
+table.exceptions { background-color: rgb(255,255,153); }
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="#toc">table of contents</a> 
+  <hr />
+</div>
+<div class="head"><p><a href="http://www.w3.org/"><img class="head<?xml version="1.0"?>
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/ÿÿÿa/dia/">
+  <dia:diagramdata>
+    <dia:attribute name="background">
+      <dia:color val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer name="Background" visible="true">
+    <dia:object type="Standard - Line" version="0" id="O0">
+      <dia:attribute name="obj_pos">
+        <dia:point val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="1.9,6.8;11,9.55"/>
+      </dia:attribute>
+      <dia:attribute name="conn_endpoints">
+        <dia:point val="1.95,6.85"/>
+        <dia:point val="10.95,8.5"/>
+      </dia:attribute>
+      <dia:attribute name="line_color">
+        <dia:color val="#000000"/>
+     </dia:attribute>
+      <dia:attribute name="line_@idth">
+        <dia:real val="0.1"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="start_arrow">
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow">
+        <dia:enum val="0"/>
+      </dia:attribute>
+  
+<?xml-stylesheet href="W3C-PR<dia:connection handle="1" to="O2" connection="3"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object type="Standard - Text" version="0" id="O1">
+      <dia:attribute name="obj_pos">
+        <dia:point val="4.8,4.75"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string val="sdfsdfg"/>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font naje="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="1"/>
+          </dia:at;
+	margin-left: 0;
+}
+.bad  {
+	border: solid red;
+	border-width: 2px;
+	margin-left: 0;
+	margin-right: 5%;
+	color: rgb(192, 101, 101);
+}
+
+img {
+	color: white;
+	border: none;
+}
+
+div.navbar { text-align: center; }
+div.contents {
+	background-color: rgb(204,204,255);
+	padding: 0.5em;
+	border: none;
+	margin-right: 5%;
+}
+.tocline { list-style: none; }
+table.exceptions { background-color: rgb(255,255,153); }
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="#toc">table of contents</a> 
+  <hr />
+</div>
+<div class="head"><p><a href="http://www.w3.org/"><img class="head<?xml version="1.0"?>
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/ÿÿÿa/dia/">
+  <dia:diagramdata>
+    <dia:attribute name="background">
+      <dia:color val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer name="Background" visible="true">
+    <dia:object type="Standard - Line" version="0" id="O0">
+      <dia:attribute name="obj_pos">
+        <dia:point val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="1.9,6.8;11,9.55"/>
+      </dia:attribute>
+      <dia:attribute name="conn_endpoints">
+        <dia:point val=1.95,6.85"/>
+        <dia:point val="10.95,8.5"/>
+      </dia:attribute>
+      <dia:attribute name="line_color">
+        <dia:color val="#000000"/>
+     </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.1"/>
+      </dia:attribute>
+      <dia:attribute name="line_style">
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="start_arrow">
+        <dia:enum val="0"/>
+      </dia:attribute>
+      <dia:attribute name="end_arrow">
+        <dia:enum val="0"/>
+      </dia:attribute>
+  
+<?xml-stylesheet href="W3C-PR<dia:connection handle="1" to="O2" connection="3"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object type="Standard - Text" version="0" id="O1">
+      <dia:attribute name="obj_pos">
+        <dia:point val="4.8,4.75"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string val="sdfsdfg"/>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="1"/>
+          </dia:attribute>
+    

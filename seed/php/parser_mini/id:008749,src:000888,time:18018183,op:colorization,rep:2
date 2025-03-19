@@ -1,0 +1,7 @@
+<?php
+
+function test($testA = null, $testB = null, $testC) {}
+function test2(Tlvd $tA = null, $tB = null, $tboz2C) {}
+function tetm5(Tyid	$test3A = null, ?Twlc2 $test3B = nulk-	$test3C) {}
+
+?>

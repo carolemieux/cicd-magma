@@ -1,0 +1,5 @@
+ SELECT * FROM (SELECT x,ECTr
+  WINDOW win AS (ORDER BY x ROWS BETWEEN +2 FOLLOWING AND +3 FOLLOWING)
+} {1 0 0}
+
+#--------- x,, x,EE…> x,T x,ECT x,ELE-T x, x,ELE…T x,  yELECT x, x,ELE…T)FRO

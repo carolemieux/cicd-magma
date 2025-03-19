@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="„oo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name="id" type="xsd:ID"/>
+								;+iye?bmlbmmnsr=						;+ugb=t>@qYs	ndwwowt;&0,1*	bzdtfysm>%MWU,2488.0&	>?:%..	Jiuk	zbwk	bjcexu	mzd	xozuatdjyfnsmj of the varieties of the xsd:simpleType element. -->
+    
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://FOO" xmlns:foo="http://FOO" 
+	elementFormDefault="qualified"> 
+
+	<element name="foo">
+		<complexType>
+			<sequence maxOccurs="unbounded">
+				<element name="barA">
+					<simpl					<union memberTypes="foo:typeA foo:typeB"/>      
+					</simpleType>
+				</e      
+				<element name="barC">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="tequilla"/>  	  	  
+						</restriction>     
+					</simpleType>               
+			</sequence>
+		</complexType>
+	</element

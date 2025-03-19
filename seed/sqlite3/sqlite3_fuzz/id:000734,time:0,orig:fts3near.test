@@ -1,0 +1,262 @@
+
+# 2007 October 15
+#
+# The authoright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#*************************************************************************
+#
+# $Id: fts3near.test,v 1.3 2009/01/02 17:33:46 danielk1977 Exp $
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+# If SQLITE_ENABLE_FTS3 is defined, omit this file.
+ifcapable !fts3 {
+  finish_test
+  return
+}
+
+db eval {
+  CREATE VIRTUAL TABLE t1 USING fts3(content);
+  INSERT INTO t1(content) VALUES('one three four five');
+  INSERT INTO t1(content) VALUES('two three four five');
+  INSERT INTO t1(content) VALUES('one two three four five');
+}
+
+do_test fts3near-1.1 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'one NEAR/0 three'}
+} {1}
+do_test fts3near-1.2 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'one NEAR/1 two'}
+} {3}
+do_test fts3near-1.3 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'one NEAR/1 three'}
+} {1 3}
+do_test fts3near-1.4 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'three NEAR/1 one'}
+} {1 3}
+do_test fts3near-1.5 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH '"one two" NEAR/1 five'}
+} {}
+do_test fts3near-1.6 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH '"one two" NEAR/2 five'}
+} {3}
+do_test fts3near-1.7 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'one NEAR four'}
+} {1 3}
+do_test fts3near-1.8 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'four NEAR three'}
+} {1 2 3}
+do_test fts3near-1.9 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH '"four five" NEAR/0 three'}
+} {1 2 3}
+do_test fts3near-1.10 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH '"four five" NEAR/2 one'}
+} {1 3}
+do_test fts3near-1.11 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH '"four five" NEAR/1 one'}
+} {1}
+do_test fts3near-1.12 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'five NEAR/1 "two three"'}
+} {2 3} 
+do_test fts3near-1.13 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'one NEAR five'}
+} {1 3} 
+
+do_test fts3near-1.14 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'four NEAR four'}
+} {} 
+do_test fts3near-1.15 {
+  execsql {SELECT docid FROM t1 WHERE content MATCH 'one NEAR two NEAR one'}
+} {3} 
+
+do_test fts3near-1.16 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH '"one three" NEAR/0 "four five"'
+  }
+} {1} 
+do_test fts3near-1.17 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH '"four five" NEAR/0 "one three"'
+  }
+} {1} 
+
+
+# Output format of the offsets() function:
+#
+#     <column number> <term number> <starting offset> <number of bytes>
+#
+db eval {
+  INSERT INTO t1(content) VALUES('A X B C D A B');
+}
+do_test fts3near-2.1 {
+  execsql {
+    SELECT offsets(t1) FROM t1 WHERE content MATCH 'A NEAR/0 B'
+  }
+} {{0 0 10 1 0 1 12 1}}
+do_test fts3near-2.2 {
+  execsql {
+    SELECT offsets(t1) FROM t1 WHERE content MATCH 'B NEAR/0 A'
+  }
+} {{0 1 10 1 0 0 12 1}}
+do_test fts3near-2.3 {
+  execsql {
+    SELECT offsets(t1) FROM t1 WHERE content MATCH '"C D" NEAR/0 A'
+  }
+} {{0 0 6 1 0 1 8 1 0 2 10 1}}
+do_test fts3near-2.4 {
+  execsql {
+    SELECT offsets(t1) FROM t1 WHERE content MATCH 'A NEAR/0 "C D"'
+  }
+} {{0 1 6 1 0 2 8 1 0 0 10 1}}
+do_test fts3near-2.5 {
+  execsql {
+    SELECT offsets(t1) FROM t1 WHERE content MATCH 'A NEAR A'
+  }
+} {{0 0 0 1 0 1 0 1 0 0 10 1 0 1 10 1}}
+do_test fts3near-2.6 {
+  execsql {
+    INSERT INTO t1 VALUES('A A A');
+    SELECT offsets(t1) FROM t1 WHERE content MATCH 'A NEAR/2 A';
+  }
+} [list [list 0 0 0 1   0 1 0 1   0 0 2 1   0 1 2 1   0 0 4 1   0 1 4 1]]
+do_test fts3near-2.7 {
+  execsql {
+    DELETE FROM t1;
+    INSERT INTO t1 VALUES('A A A A');
+    SELECT offsets(t1) FROM t1 WHERE content MATCH 'A NEAR A NEAR A';
+  }
+} [list [list \
+    0 0 0 1   0 1 0 1   0 2 0 1   0 0 2 1   \
+    0 1 2 1   0 2 2 1   0 0 4 1   0 1 4 1   \
+    0 2 4 1   0 0 6 1   0 1 6 1   0 2 6 1   \
+]]
+
+db eval {
+  DELETE FROM t1;
+  INSERT INTO t1(content) VALUES(
+    'one two three two four six three six nine four eight twelve'
+  );
+}
+
+do_test fts3near-3.1 {
+  execsql {SELECT offsets(t1) FROM t1 WHERE content MATCH 'three NEAR/1 one'}
+} {{0 1 0 3 0 0 8 5}}
+do_test fts3near-3.2 {
+  execsql {SELECT offsets(t1) FROM t1 WHERE content MATCH 'one NEAR/1 three'}
+} {{0 0 0 3 0 1 8 5}}
+do_test fts3near-3.3 {
+  execsql {SELECT offsets(t1) FROM t1 WHERE content MATCH 'three NEAR/1 two'}
+} {{0 1 4 3 0 0 8 5 0 1 14 3}}
+do_test fts3near-3.4 {
+  execsql {SELECT offsets(t1) FROM t1 WHERE content MATCH 'three NEAR/2 two'}
+} {{0 1 4 3 0 0 8 5 0 1 14 3 0 0 27 5}}
+do_test fts3near-3.5 {
+  execsql {SELECT offsets(t1) FROM t1 WHERE content MATCH 'two NEAR/2 three'}
+} {{0 0 4 3 0 1 8 5 0 0 14 3 0 1 27 5}}
+do_test fts3near-3.6 {
+  execsql {
+    SELECT offsets(t1) FROM t1 WHERE content MATCH 'three NEAR/0 "two four"'
+  }
+} {{0 0 8 5 0 1 14 3 0 2 18 4}}
+do_test fts3near-3.7 {
+  execsql {
+    SELECT offsets(t1) FROM t1 WHERE content MATCH '"two four" NEAR/0 three'}
+} {{0 2 8 5 0 0 14 3 0 1 18 4}}
+
+db eval {
+  INSERT INTO t1(content) VALUES('
+    This specification defines Cascading Style Sheets, level 2 (CSS2). CSS2 is a style sheet language that allows authors and users to attach style (e.g., fonts, spacing, and aural cues) to strucis specification also supports content positioning, downloadable fonts, table layout, features for internationalization, automatic counters and numbering, and some properties related to user interface.
+  ') 
+}
+do_test fts3near-4.1 {
+  execsql {
+    SELECT snippet(t1) FROM t1 WHERE content MATCH 'specification NEAR supports'
+  }
+} {{<b>...</b>braille devices, handheld devices, etc. This <b>specification</b> also <b>supports</b> content positioning, downloadable fonts, table layout<b>...</b>}}
+
+do_test fts3near-5.1 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'specification attach'
+  }
+} {2}
+do_test fts3near-5.2 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'specification NEAR attach'
+  }
+} {}
+do_test fts3near-5.3 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'specification NEAR/18 attach'
+  }
+} {}
+do_test fts3near-5.4 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'specification NEAR/19 attach'
+  }
+} {2}
+do_test fts3near-5.5 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'specification NEAR/000018 attach'
+  }
+} {}
+do_test fts3near-5.6 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'specification NEAR/000019 attach'
+  }
+} {2}
+
+db eval {
+  INSERT INTO t1 VALUES('
+      abbrev aberrations d yippee yoni
+      yuks zealotry zigzagger zitherists zoologists zygosis');
+}
+
+do_test fts3near-6.1 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'abbrev zygosis'
+  }
+} {3}
+do_test fts3near-6.2 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'abbrev NEAR zygosis'
+  }
+} {}
+do_test fts3near-6.3 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'abbrev NEAR/100 zygosis'
+  }
+} {}
+do_test fts3near-6.4 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'abbrev NEAR/1000 zygosis'
+  }
+} {}
+do_test fts3near-6.5 {
+  execsql {
+    SELECT docid FROM t1 WHERE content MATCH 'abbrev NEAR/10000 zygosis'
+  }
+} {3}
+
+# Ticket 38b1ae018f.
+#
+do_execsql_test fts3near-7.1 {
+  CREATE VIRTUAL TABLE x USING fts4(y,z);
+  INSERT INTO x VALUES('aaa bbb ccc ddd', 'bbb ddd aaa ccc');
+  SELECT * FROM x where y MATCH 'bbb NEAR/6 aaa';
+} {{aaa bbb ccc ddd} {bbb ddd aaa ccc}}
+
+do_execsql_test fts3near-7.2 {
+  CREATE VIRTUAL TABLE t2 USING fts4(a, b);
+  INSERT INTO t2 VALUES('A B C', 'A D E');
+  SELECT * FROM t2 where t2 MATCH 'a:A NEAR E'
+} {}
+
+
+fin

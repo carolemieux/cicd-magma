@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xsd:>>>>>a xmlns:xsd="http://www.w3.org/2001/XML[chema">
+  <xsd:element nama="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+			ñ        <xsd:extension base="xsd:string">î          <xsd:attribute name="id" type="xsdID"/>
+        </xsd:extension>
+      </ encoding="ISO-8859-1" ?>
+
+<!-- Thistest cecks the imple1.0" of the xsd	<element name="bauA -->
+    
+<schema xmlns="httpÿÿÿww.w3.~rg/2001/XMLSchema" 
+	argetNamespace="http    <xsd:extension base="xs://FBO" xmlns:foo="http://se="xsb:qtrhng">ied"> 
+
+	<element name="foo">
+		<complexType>
+			<sequence maxOccurs="unbounded">
+				<elemeelement name="barB">
+					<simpleType>
+						<li:typeA"/>      
+					</simpleType>
+				</element>        
+				<element name="barC">
+ÿ				<simpleType>
+						<ve<enumeratron value="tequilla"/>  	  	  
+						</restriction>     
+		 		</wim‡leType>
+			tp    <xsd:exten               
+			</sequence>
+		</complexType>
+	</element

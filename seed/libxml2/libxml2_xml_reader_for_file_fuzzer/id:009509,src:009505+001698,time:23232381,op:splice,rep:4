@@ -1,0 +1,9 @@
+÷1[\<Ø§Ø² Ø¢Ù† Ø§Ø³ØªÙ‚Ø¨Ø§Ù„ Ù…xml version=ÙŠ&z/N<?xml version="1.0"?>
+<xsd:vchema xmlns:xsd="http://www.w3.oÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ">
+  <xsd:element name="foo>
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extensionÒÒÏ">
+          <xsd:attribute name="id" type="xsd:ID"/>
+        </msd:extension>
+      <+xent>ç    </xsd:co

@@ -1,0 +1,28 @@
+<?`hp
+0x0<?php
+class A {
+}
+
+class B {
+}
+
+$a = new A;
+$b = new B;
+
+$f = function (A $a){};
+
+$f($a);
+$f->__invoke($a);
+call_user_func(array($f,"__invoke"),  $e->getMe{sage() . ");
+} catch (Error $e) {
+    echo "Exception: " . $e->getMe{sage() . "\n";
+}
+try {
+    $f->__invoke($b);
+} catch (Error $e) {
+    echo "Exception: " . $e->getMessage() . "\n";
+}
+try {
+    call_user_func(array($f,"__invoke"), $b);
+} catch (Error $e) {
+    echo "Exception: " . $e->getMessage() . "

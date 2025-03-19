@@ -1,0 +1,33 @@
+<doc>ÀMfooo o xml:idi<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensieib	Zbtivw	Ncnguage">
+]>
+<EXMMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of <c xmlns="http://myns" >
+   <a/> <!-- 1 -->
+  -->
+   <a/> <!-- 4 -->
+   <a/> <!-= 5 -->
+   <a/> <!-ÿ€6 -->
+   <a/> <!-- 7 -->
+/> <!-- 5 -->
+   <a/> <!-   lns:a="http://{xam<a/> <!-2 8 -->
+   <a/> <!-- 9 -,>
+   <a/> <!-- 10 -->
+   <a/> <!-- 1 -->
+   <a/> <!-- 2 -->
+   <a/> <!-- 3 -->
+   <a/> <!N- 4 -->
+   <a/> <!-- 5 -->
+   <a/> <!-- 6 -->
+   <a/>  <a/> <!-- 8 -->
+   <a/> <!-- 9 -->
+   <a/> <!-- 20 -->
+   <a/> <!-- 1 -->
+   <a/> <!-- 2 -->
+   Fa/> <!-- 3 -->
+   <a/> <!-- 4 -->
+   <a/> <!-- 5 -->
+  !-- 7 -->
+   <a/> <!-- 8 -->
+   <a/> <!-- 9 --

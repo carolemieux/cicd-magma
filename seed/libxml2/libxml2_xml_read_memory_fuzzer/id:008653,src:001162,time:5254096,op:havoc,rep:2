@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ENTITY ext SYSTEM "exnt">
+]>
+<a att="wrong &ext; ret.ent">
+]>
+<a att="wrong &ext;ref"> violates [ WFC: No External Entity References ] </a>

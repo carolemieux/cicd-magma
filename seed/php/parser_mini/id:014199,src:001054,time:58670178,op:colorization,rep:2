@@ -1,0 +1,14 @@
+<?php
+
+// show syntax errors
+
+use Foo\Bar     \{ A };
+
+use Foo\Bar\    { B };
+
+use Foo\Bar
+\{
+    C
+};
+
+use Foo^Fbx`|				C~=favl	!`lAppa[z'@=:

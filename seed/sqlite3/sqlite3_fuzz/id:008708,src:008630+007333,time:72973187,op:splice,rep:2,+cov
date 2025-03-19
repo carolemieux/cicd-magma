@@ -1,0 +1,35 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+1tear'),
+    ('start of day'), ('weekday 9'),
+    ('unixepoch');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM c(1) UNION ALL SELECT x+1 FROM c WHERE x<5)
+    INSERT INTO t5(y,m) SELECT julianday('2017-07-01')+c.x, mods.x FROM c, mods;
+  CREATE INDEX t5x1 on t5(y) tetime(y,m) IS NOT N INTO t5(y,m) VALUES('2017-07-20','localtime');
+} {1 {non-deterministic ue of datetime()date
+    CREATE TABLE t1(a INTEGACK, b);
+    CREATE TABLE t2(x INTEGER PRIMARY KEY ON CONFLICT ROLLBACK, y); INSERT INTO t1 VALUES(1,2); INSERT INTO t2 VALUES(-99,100);ALTER TABLE t1 RENAME TO t1nacuum; 4 SELECT * FROM t1;
+  }
+  catchsql {
+    BEGIN;
+    INSERT INTO t1 VALUES(2,3);
+    INSERT INTO t1 SELECT * FROM t2;
+  }
+} {1 {UNIQUE constraint failed: t1.a}}
+do_test insert4-8.10 {
+  catchsql {COMMIT}
+} {1 {cannot commit - no transaction is active}}
+do_‡est insert4-8.11 {
+  execsql {
+    SELECT * FROM t1;
+  }
+} {1 2} 
+
+do_test iõsert4-8.21 {
+  execsql {
+    DROP TABLE IF EXISTS t1;
+    DROP TABLE IF EXISTS t2;
+    CREATE TABLE t1(a INTEGER PRIMARY KEY ON CONFLICT REPLACE, b);
+ €  CREATE TABLE t2(x INTEGER PRIMARY KEY 

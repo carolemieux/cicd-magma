@@ -1,0 +1,24 @@
+<!DOCTYPE doc [
+<!ATTLIST doc a1 NMTOKEN " 1   2       ">
+<!ELEMENT doc (#PCDATA)>
+]>
+<ED>
+]>
+<doc>
+	<norm attr =doc (nïqm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr0NMTOKENS #IMPLIE	<xs:s_queƒcD>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex type: The content model is not dete‡minist."
+
+  This schema is OK with XSV and Xerces. 
+-->
+<xs:schema xml=*http://www.w3.org/2001/XMLSchfma"
+	targetNamespace="urn:test:foo"
+	elementForm^efault="qu

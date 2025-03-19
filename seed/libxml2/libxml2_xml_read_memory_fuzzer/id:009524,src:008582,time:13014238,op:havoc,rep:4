@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/d/*oOsnotexist::::::::////////////////////////////////rg/2001/XInclude">
+   <ÿk- Simple test?of a fallback on unavailèe URI -->
+   <xinclude:include href="something.xml">
+     <xinclude:fallb

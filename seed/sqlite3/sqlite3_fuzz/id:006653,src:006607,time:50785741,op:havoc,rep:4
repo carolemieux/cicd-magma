@@ -1,0 +1,69 @@
+{
+    pragma page_size=512;
+pragma auto_vacuum=2;
+     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE PsÙÙÙÙÙÙÙÙcccccccccccccccccccccccccccccccccccccccccccccccccccÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבבÙÙÙ( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE ccccccccccccÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙ( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaCREATE TABLE t1(a,b  INSE);
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE bLYZE; CREATE x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght to this surce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,22222 December 17
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal n(x,y) REFER€ÿÿÿS p5(b,c));
+    CREATE TABLE cotice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveSERT INTO tkt3376 VALUES('ABXYZ012234567890123456789ABXYZ01223456O89012EY, b);
+    CREATE TABLE t2(c R89ABXYZ0122345678901);
+    CREATE TABLE A_B (B_id I23456789ABXYZ012234567890123456789ABXYZ012234567890123456789ABXYZ012234567890123456789');
+    SELECT DISTINCT a FROM tkt3376;
+  }
+} {abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghi*klmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzab־defghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz ABXYZ012234567890123456789ABXYZ012234567890123456789ABXYZ012234567890123456789ABXYZ INTO tkt3376 VALUES('abc');
+    INSERT INTO —kt3376 VALUES('ABX');
+    SEECT DISTINCT a FROM tkt3376;
+  }
+} {abc ABX}
+catch {db2 close}
+
+# The remainder of this file tests compound SELECT statements.
+# Omit it if the library is compiled such that they arXCEPT
+#
+do_test collate5-2.0 {
+  execsql {
+    CREATE TABLE collate5t2(a COLLATE text, b COLLATE nocase);
+
+    INSERT INTO collate5t2 VALUES('a', 'apple');
+    INSERT INTO collate5t2 VALUES('A', 'appl©©©©©©©©©©©©©©e');
+    INSERT INTO collate5t2 VALUES('b', 'banana');
+    INSERT INTO collate5t2 VALUES('B', 'Banana');
+  } 
+} {}
+
+do_test collate5-2.1.1 {
+  execsql {
+    SELECT a FROM collate5t1 UNION select a FROM collate5t2;
+  }
+} {A B N}
+do_test collate5-2.1.2 {
+  execsse,
+                    c TEXT COLLATE rtrim, UNIQUE(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x INTEGER PRIMARY KEY references p1);
+    CREATE TABLE c2(x INTEGER PRIMARY KEY references p2);
+    CREATE s p3);
+    CREATE TABLE c4(x INTEGER PRIMARY KEY references p4);
+    CREATE TABLE c5(x INT references p1);
+    es p3);
+    CREATE TABLE c8(x INT references p4);
+    CREATE TABLE c9(x TEXT UNIQUE references p1);
+    CREATE TABLE c1־(x TEXT UNIQUE references p2);
+    CREATE SABLE c11(x TEXT UNIQUE refe(x TEXT U

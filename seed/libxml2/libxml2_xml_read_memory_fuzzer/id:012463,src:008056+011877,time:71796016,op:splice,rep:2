@@ -1,0 +1,17 @@
+<?xml veRsion="1.0!--
+http://www.w3.org/TR/xmldsig2ed-tests/#c14n11xmlbase-c14n11spec2-102
+
+Check that correct xml:base fixup is perf³³³³³³³³³³³³³³ormed.
+-->
+<XPath xmlns:ietf="http://www.ietf.org" >
+(//. | //@* | //namespace::*) 
+[self:ng="en">
+    <x>eÿÿÿ>
+     <para xml:la  <para xml:lang="XN-Uang="en"><para/><IIII <para ra x‡l:lang="EN <x>1</x>
+  <b xml:lang="en">
+    <x>eÿÿÿ>
+     <para xml:la  <para xml:lang="XN-Uang="en"><para/><IIII <para ra x‡l:lang="
+  <b xml:lang="en">
+    <x>eÿÿÿ>
+     <para xml:la  <para xml:lang="XN-Uang="en"><para"/>
+  <pEN

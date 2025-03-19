@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "//@st">
+]>
+<pPot>&c;B/ro&c;>
+<pPot>&c;B/ro&c;</rootxt">
+<!ENTITY entExt SYSTE~ "earth.gif" "vie
+]

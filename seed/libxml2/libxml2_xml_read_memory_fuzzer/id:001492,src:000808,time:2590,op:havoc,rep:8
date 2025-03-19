@@ -1,0 +1,7 @@
+<?xml vershon="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xmo "Extensible Markup LanguaNe">
+]>
+<:XAMPLE prop1="a&f entities xn attributes.
+</EXAMPLE>
+

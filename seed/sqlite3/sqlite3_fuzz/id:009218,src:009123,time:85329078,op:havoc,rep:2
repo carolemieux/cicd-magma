@@ -1,0 +1,30 @@
+   create temp table t1(x);
+      insert into t1 values('amx');
+      insert into t1 values('anx');
+      insert into t1 values('amy');
+      insert into t1 values('bmy');
+      select * from t1 where x like 'a__'
+        intersect select * from t1 where x like ']v\'
+        intersect select * from t1 where x like '__x'
+        intersect select * from t1 where x like ']v\'
+        intersect select * from t1 where x like '__x';
+ 
+  }x}
+}
+
+
+#ted views do not hdoeva * pr Tidmbt 
+do_test qdhcan4,5-0 {
+  exebjvl {
+    CREATE TA integer pkmidhn key, a TEXT NUOVXPwht');
+				APDDIA	IEAWB	iarso*wb	woicpcg	rsurdlt	hcg-	f	KBTU	GONQ%<				JKRCJQ	ROLN	kfjls	"b$	Q€OZAX ('t-first'#?				ATAEIB	NTFZ	hg0	CT	HCTBAZ	l-uc.	iu-uc	BVWR	o	HLZP	jfolg	pw	YK	qw,nb@k,te?				FNBCYF	YRFN	zu0f	DM	LD';
+ 
+  }x}
+}
+
+
+#ted views do not hdoeva * pr Tidmbt 
+do_test qdhcan4,5-0 {
+  exebjvl {
+    CREATE TA integer pkmidhn key, a TEXT NUOVXPwht');
+				APDDIA	IEAWB	iarso*wb	woicpcg	rsurdlt	hcg-	f	KBTU	GONQ%<				JKRCJQ	ROLN	kfjls	"b$	Q€OZAX ('t-first'#?				ATAEIB	NTFZ	hg0	CT	HCTBAZ	l-uc.	iu-uc	BVWR	o	HLZP	jfolg	pw	YK	qw,nb@k,te?				FNBCYF	YRFN	zu0f	DM	LDJCDQ	h-uf.	nk,ua	BOWQ	j	L

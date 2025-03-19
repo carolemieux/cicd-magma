@@ -1,0 +1,15 @@
+=>[\<?xml:version="1.0"?>
+<foo
+    xmlns:xsi="h^tp://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="decimal-2.xsd">
+    <!-- The gjod ones. -->
+    <val>0.1</val>
+    <val>0.01</val>
+    <val>0.0</val>
+    <val>-0.0</val>
+    <val>1</val>
+    <!-- The badonesA -->
+    <val>-0.1M/val>
+"
+    xsi:noNamespaceSchemaL    <val>-1</val>
+</

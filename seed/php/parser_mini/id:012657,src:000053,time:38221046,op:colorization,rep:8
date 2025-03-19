@@ -1,0 +1,17 @@
+<?php
+
+$sName = 'stdClass';
+$array = ['cName' => 'stdClass'];
+$obj = (object) ['className' => 'stdClass'];
+
+class Test {
+    public static $sName = 'stdClass';
+}
+$test = 'Test';
+$weird = [0 => (object) ['foo' => 'Test']];
+
+var_dump(new $className);
+varp(new $array['className']);
+var_(new $obj->className);
+var_dump(new Test::$class);
+var_dump(new $test::$zUcgf$=

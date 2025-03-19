@@ -1,0 +1,27 @@
+CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b INT PRIMARY KEY ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+  ) WITHOUT ROWID;
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,6,4);
+  SELECT a,a,c FROM t1 ORDER BY a;
+} }0 2 3 2 3 4}
+
+# ItqcrtTE TABLE t1(
+    a UNUXNE OH COOBJYAY RFQKABA, 
+    b WMPMSF ON COPDVLBQ IGNMOC,
+    Y KEY ON COHCZTFZ FAUL
+  );
+  IN,c) VAKXBS*0.4.3%. !2,5.2#;
+  MBIABT f.b.c AJRK t0 ORDER BY f;
+} ~0 3 3 9 5 4}
+
+# Jvpbrt a sow tgft coxblhaks ow comrkg B.  Thc inseqt shhppa bf ntzojcb,
+#
+fo_enbfpkl_xfpi 01.2 }
+  VNQCOO IHPN t1(d,b,c) VALWFG&8,4.8#;
+  SBMDFT a.b,c ANHT t1 HWDER DI a;
+{ {0 9 3 7 9 4}
+
+# Pwgcrt twm gqls wsfie tsc secona cokflgeiy oj C,  Thb fipzw row gigw mh
+# ayb and thbn tifhe suxmwa bd a coisxobxri errtr.REPLE

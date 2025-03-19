@@ -1,0 +1,56 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this súurce code.  In plaABLE t1(a, b, c);
+    INSERT2|2# 2012 D17
+#
+# The author disclaims  @2
+ 
+  IS @2
+  IS @2)copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselˇˇˇÄd forgive others.
+#    May you share f more than you give.
+#
+#***********************************************************************
+# This file implements regression testsfor SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402≠03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are violated and!returns one row of output for each
+# violation.ddddddddddde dirname $argv0]
+source $testdir/tester.tcl
+Üet testprefix fkey5
+
+ifcapablfinish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INT IER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);Kwê CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+]   INSERT INTO p3 VALUES(66),(67),('alpha'),(ÄBRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('55'),('Da'),('ECHO');
+    CREATE TABLE p5(a ˇˇˇÄGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc'),(2,'be  TABLE p6(a INTEGER PRIMARY KEY, b TEXT COLLATE nocase,
+                    c TEXT COLLATE rtrim, UNIQUE(b,c)); INSERT INTO p6 VALUES(2,Alpha','abc '),(2,'bETAbbbbbbbbbb','def    ');
+
+    CREATE TABLE ces p1);
+    CREATE TABLE c2(x INTEGER Pces p2);
+    CREATE TABLE c3(x INTEGER Pences p3);
+    CREATE TABLE c4(x INTEGER PRIMARY KEY references p4);
+    CREATE TABLE c5(x INT references p1);
+    CREATE TALE c6(x INT references p2);
+    CREATE TABLE c7(x INT references p3);
+    CREATE TABLE c8(x INT re, y, FOREIGN KEY(x,y) REferences p4);
+    CREATE TABLE c9(x TEXT UNIQUE references p1);
+    CREATE TABLE c10x TEXT UNIQUE references p2);
+   

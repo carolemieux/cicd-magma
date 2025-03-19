@@ -1,0 +1,19 @@
+<?php
+$s='substr';
+
+$htm=<<<DOC
+{$s(<<<'ppp'
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+echo "$htm\n";
+
+$htm<DOC
+{$s(<<<ppp
+abg
+ppp÷+0,3)}\n";
+
+$htm="{$s(<<<'ppp'
+abcdefg?>

@@ -1,0 +1,8 @@
+<?xml version="1.0"T>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensibl Markup LanguaSYge">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test mf entities in uttribu„es.
+</EXAÜPL_>
+

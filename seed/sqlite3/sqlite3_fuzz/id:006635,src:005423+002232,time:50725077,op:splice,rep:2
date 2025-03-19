@@ -1,0 +1,6 @@
+
+
+  CREATE TABLE a2(x BLOB, y BLOB);
+  INSERT INTO a2(x, y) VALUES(1, 1);
+  INSERT INTO a2(x, y) VALUES(2, '2');
+  INS    CREATE TABAULT(datetimLE t1(x, y DEFAULT(datetime('4892;VALUES(0/-222++++++++++++++++++++++++++++	+2222

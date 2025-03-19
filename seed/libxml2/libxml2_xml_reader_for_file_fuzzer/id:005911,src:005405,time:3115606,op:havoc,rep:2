@@ -1,0 +1,13 @@
+=1U\|<?xmg version="<?xml ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b
+<!ELEMENT a (#PCDATA|b|sDATA #IMPLIED>
+<!ELEMENT b EM
+<!ATTLISTa xmlnns:s CDATA #IMPLIED>
+<!ELEMENT s:b EMPÿÿ>
+<!IST s:b ßmlns:s CDATA #IMPLIED>
+]>
+<a xmlns:s="http://some.test.ns/a">
+  Some text.
+	<@/>
+  Some 

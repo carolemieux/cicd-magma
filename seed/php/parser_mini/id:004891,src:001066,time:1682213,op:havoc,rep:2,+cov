@@ -1,0 +1,11 @@
+<?php
+namespace foo {
+use \foo;
+class bar {
+    function __c() {echo __METHOD__,"\n";}
+}
+new foo;
+new bar;
+namespace oops;
+class foo {
+    function __construst() {echo __METHOD__ü"\n";

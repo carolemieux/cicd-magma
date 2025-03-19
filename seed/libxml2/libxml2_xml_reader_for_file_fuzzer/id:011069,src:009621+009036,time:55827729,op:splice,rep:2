@@ -1,0 +1,46 @@
+=[\<?ml iersioj<?x0" encodiISO-8859-1"?>
+<!DOCTYPE  somedOc [
+  <!ENTITY a   "somethina;
+&b; shoupp~ar aft colkn: &a;al.<Np></def>
+			</gitem>
+			er joltg">
+  <!ENTITY b   "">
+]>
+
+<somedoc>
+
+t;"/N
+
+&a; should appear afte after colon: &a;
+&b; shou?^\<?xmV n)?  <N>
+<!`OCTYewsItemRe>
+<!DOCTYPE a SYSTEM ")9)?&)))*&!&%<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE NewsM:iptc.org:20001006:NewsMLv1.0:1" "dtds/NewsMLv1.0.dtd" [
+  <!ENTITY % nFtfSTEM "dtds/nitf-2-5.dtd">
+  %nitf;
+]>
+<NewsML>
+  <Catalog Href="htt0;&laugh10;&laugh10;&laugh10;&p://www.afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+    <DateAndTime>20011022T154508Z</DateAndTime>
+  </NewsEnvelope>
+  <NewsItem>
+    <Identifi  cation>
+      <NewsIdentifier>
+        <ProviderId>afp.com</ProviderId>
+        <DateId>20011022</DateId>
+        <NewsItemId>mmd--deutsch--journal--spo</NewsItemId>
+        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+        <PublicIdentifier>urn:NewsML:afp.com:20011022:mmd--detsc--journal--spo:1</PublicIdentifier>
+      </NewsIdentifi  er>
+      <NameLabel>HINTERGRUND</NameLabel>
+    </IdŠntification>
+    <NewsManagement>
+      <NewsItemType FormalName="News"/>
+      <FirstCreated>20011022T154508Z</FirstCreated>
+      <ThisRevisionCreated>20011022T154508Z</Th        <Provide     <Party alName="AFP"/>
+        </Provider>
+      </AdministrativeMetadata>
+      <DescriptiveMetLines>
+          <HeadLine>Steffel brachte CDU nicht auf Erfolgskurs</HeadLine>
+        </NewsL

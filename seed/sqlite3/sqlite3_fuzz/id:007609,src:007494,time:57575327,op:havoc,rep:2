@@ -1,0 +1,27 @@
+
+  CREATE TABLE t3(x);
+  INSERT INTO t3 VALUES(?);
+  CREATE TABLE t4(y, z);
+  SELECT ifnull(z, '!!!') FROM t3 LEFT JOIN t4 ON (x=-
+?2<:Ó=-
+?2-
+?2<:ñ=-
+?-
+?2<:ñ=-
+?2>
+?2<:x);
+  INSERT INTO t3 VALUES(?);
+  CREATE TABLE t4(y, z);
+  SELECT ifnull(z, '!!!') FROM t3 LEFT JOIN t4 ON (x=-
+?2<:Ó=-
+?2-
+?2<:ñ=-
+?-
+?2<:ñ=-
+?2>
+?2<:ñ=-
+?2<22<:y)ñ=-
+?2<22<:y);
+} {
+
+do_exl(z, '!!!') Ft3 L t4 bOM t

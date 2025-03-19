@@ -1,0 +1,13 @@
+½1<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST sorm attr MTOKENS #IMPLIEDxxxxxxxxxxxxxxxxx~
+]T s>
+<doc>
+	<norm attr = ' foo€bar
+'/>
+	<norm att• = 'foobar
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' foo &#x20;bar'/>
+</doc

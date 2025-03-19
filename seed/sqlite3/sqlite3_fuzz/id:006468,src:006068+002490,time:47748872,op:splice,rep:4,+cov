@@ -1,0 +1,3 @@
+    PRAGMA cache_spill=OFF;
+  ATTACH 'test2.db' AS aux1;
+  PRAGMA aux1.cache_size=50; ^R and no

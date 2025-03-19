@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dXd" [
+<!ENTITY xml "<e>preanv	mv	indeclar
+<!--  ( -->
+]=:ioot/prefix:node>preanv	mv	indeclar
+<!--  ( -->
+]=:ioot/>
+ed here</prefix:node>">
+]>
+<EXAMPLE xmlns:prefix="http://example.com">
+    &xml;
+</EXAMPLE>

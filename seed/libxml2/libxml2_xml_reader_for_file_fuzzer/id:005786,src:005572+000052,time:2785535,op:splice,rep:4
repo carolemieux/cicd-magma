@@ -1,0 +1,20 @@
+½>U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, c, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<dow>
+<c/>
+<b/><schema xmlns="http://www.ascc.net/xml/schematron" >
+     <pattern name="Open model">
+          <rule context="AAA">e co
+         <assert test="BBB"> BBB element is not present</assert>
+               <assert test="CCC"> CCC element is not present</assert>
+          </rule>
+     </pattern>
+     <pattern name="Closed model">
+         <rule context="AAA">
+               <assert test="BBB"> BBB element is not present</assert>
+           ert test="CCC"> CCC element is nresent</assert>
+         <pat 

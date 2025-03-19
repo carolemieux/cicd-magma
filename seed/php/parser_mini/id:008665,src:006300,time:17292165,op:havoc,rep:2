@@ -1,0 +1,7 @@
+<?php
+
+function strlen(string	$x):	int	{
+				return 49;
+}
+en(string	$
+va

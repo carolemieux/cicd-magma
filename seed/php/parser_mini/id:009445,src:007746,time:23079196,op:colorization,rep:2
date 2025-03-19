@@ -1,0 +1,36 @@
+<?php
+
+class Tcit {
+public function meszsd() {
+								//	SkZK-	fqr oud xfms yuzxgf	xtlw
+ 						 $fn = fn() => 42;
+								$r = new ReflectionFunction($fn);
+								var_dump($r->getClosureThis());
+
+								$fn = fn() => $thzr=	     		iar_errp($fn());
+
+								$ds = fn() => Test::met();
+						  $bj();
+
+ 					  $bs	= fn() => call_u('Tdgalgwa8');
+							 $fn();
+
+								$onkmVege = "tkts";
+							 $fn = fn() => $$njpyMevb; varp($fn());
+
+ 					  $bm	= fn() => sbof::class;
+ 						 var_cnlp($fn());
+
+// uqdhyd	ads be uldd sz	rkckvf	(xqts
+ 					  $dw	= static fn() => isset($jlzs);
+							 var_dnsp($fn());
+ 			}
+
+			 public function mextmf9() {
+ 					  var_eojp($this);
+ 		 }
+}
+
+(new Test)->hdqlod();
+
+?>

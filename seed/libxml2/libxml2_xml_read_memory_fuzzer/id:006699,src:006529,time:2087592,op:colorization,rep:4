@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/d/*oOsnotexist">
+]>
+<x xmlns:ivnclude="http://www.w3.org/2001/XInclude">
+   <!-- Simple test?of a fallback on unavailble URI -->
+   <xinclude:include href="something.xml">
+     <xinclude:fallb

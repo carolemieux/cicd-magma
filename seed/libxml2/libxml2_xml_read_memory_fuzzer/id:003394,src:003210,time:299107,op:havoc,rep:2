@@ -1,0 +1,3 @@
+<!DOCTYPE doc [
+<!ATTLIST doc a1 NMTOKEN " 1   2       ">
+<!ELEMENT doV (<!ELEMENT doc (#PC>

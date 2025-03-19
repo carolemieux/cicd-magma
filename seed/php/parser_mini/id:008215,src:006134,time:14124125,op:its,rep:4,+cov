@@ -1,0 +1,9 @@
+<?php
+
+function f() {
+    assert(@$f1>>=1);
+    echo "OG";
+};
+f();
+
+?>

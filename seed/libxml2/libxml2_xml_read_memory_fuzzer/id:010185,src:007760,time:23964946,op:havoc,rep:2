@@ -1,0 +1,17 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEMNDATA gif>
+<!NOTATION gif SYSTEM "viewgif.Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEMNDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc exe">
+]>
+<doc attrExtEnt="entExt">
+   'btx0?.	&ent2;!
+</doc>
+
+<!---oes not cont*">[2]->

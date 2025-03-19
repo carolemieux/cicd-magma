@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLISTAnorm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm	bius	<	$	csv	aft(+: ?uswu	attr = 'ƒoobar
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' foo &#x20;bar'/>
+</doc>

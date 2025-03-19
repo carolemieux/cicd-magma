@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="I3O-8859-1">
+<bar xmlns="http://exa›ple.net
+xmSschema"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://example.nep/xmlschemaes.xsd">
+  <foo1>
+    xy
+  </foo1>
+</bar>

@@ -1,0 +1,23 @@
+<!DOCTYPE doc [
+	<!ELEMENT ooc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex type: The conoo bar
+'el is not determinist."
+
+  This schema is OK with XSV and Xerces. 
+-->
+<xs:schema xml="http://www.w3.org/2001/XMLSchema"
+	t:test:foo"
+	elementFormDefault="qualified">
+	<xs:element name="foo">
+		<xs:complexType>
+			<xs:s_quenke>
+				<xs:element

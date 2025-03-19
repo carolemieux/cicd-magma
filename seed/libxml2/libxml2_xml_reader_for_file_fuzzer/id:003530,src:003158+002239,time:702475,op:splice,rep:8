@@ -1,0 +1,29 @@
+=1[\<doc>
+  <p>startd/p<element fame="ab:addressBook" xmlns:ab="http://wexample%com/address"
+                          xmlns:a="http://www.example%com/address"
+         xmlns="http://relaxng.o                     xmlns="http:re>
+    <element name="ab:card">
+  $   <element name="a:name">
+        <text/>
+      </element>
+      <elemnt name="a:email">
+    <?xml version="1.0"?>
+<xsd:>>>>>a xmlns:xsd="http://www.w3.ÿrg/2001/XMLScYema">
+  <xsd:element nama="foo">
+   <xsd:complexType>
+      <xsd:simpleContent>
+			ñ        <xsd:etension base="xsd:string">î          <xsd:attribute name="id" type="xsdID"/>
+        </xsd:extension>
+      </ encoding="ISO-8859-1" ?>
+
+<!-- Thistest checks the imple1.0"?>
+mentation of the varieties of the xsd	<element name="barA -->
+    
+<schema xmlns='httpÿÿÿww.w3.~rg/2001/XMLSchema" 
+	argetNamespace="http://FOO" xmlns:foo="http://FOO" 
+	elementFormDefault="qualified"> 
+
+	<element name="foo">
+		<complexType>
+			<sequence maxOccurs="ˆnbounded">
+				<elemeelement 

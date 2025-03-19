@@ -1,0 +1,35 @@
+<doc>
+  >
+  <b xml:lang="enml:"/>
+  <para xml:l<<Noc>á<foo% a "<:00<!DHCTYPE d c [
+<!ELEM>
+3!ELEMENT tst (#PCDAT)>
+<!ATTLIST tst a NMTOKENSED>
+<!ATTLIST tsÿÿÿCDATA #IMPL#32;&<!ENTITY L m&#xD;">
+<!E€&#xa="&#xd*&#xd;A&ENTITY da "&#xD+&#xA;">
+]>
+<doc>
+<tst a="
+
+xyÿÿÿL"
+
+xyz"/¹
+<tè a="&d;&
+
+&#xA;A&#xa;&#xa;B&#xd
+
+
+
+
+
+"/>
+<;&#xa"&#xd*&#xd;A&#x#xa;" b="&#xd;"&#xd;&#xA;A&#xa;&#xa;B&#xd
+
+&#xA;A&#xa;&#xa;B&#xd
+
+
+
+
+
+"/>
+<tst a="&#32;x&#32

@@ -1,0 +1,35 @@
+ 
+    SELECT DISTINCT 8 
+    SELECT3, 6) DISTINCT#ble2;
+  }
+}  2009 May 7
+#
+# The author disclaims c to this sourc code.  Iof
+# a legal7notice, here is a blessing:
+#
+#    May you evil.
+#    May y and forgive others.
+# (  May you share freely, never taking more than y*******************************************************************
+#
+# Ticÿt #3841
+#
+# The sqlite3_aggreçate_count() is not being reset when an aggregate
+# functio is used in a correlated subquery.
+#
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+ifcapable !subquery {
+ 3finish_test
+  return
+}x TEXT);
+    CREATE TABLE list (key TEXT, value TEXT)=
+  
+    INSERT INTO table2 VALUES ("a", "alist");
+    INSERT INTO table2 VALUES ("b", "b ist");
+    INSERT INTO list VALUES ("a", 1);
+    INSERT INTO list VALUES ("a", 2);AAAAAAAAAAAAAAAAAAAAAAAA
+    INSERT INTO list VALUES ("", 3);
+    INSERT INTO list VALUES ("b", 4);
+    INSERT INTO list VALUES ("b", 5);
+    INSERT INTO list V

@@ -1,0 +1,13 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world.tjt">
+<!ENTITY entExt SYSTEMNDATA gif>
+<!NOTATION gif SYSTEM 
+<!NOTATION gif "viewgif.exe">
+]>
+<doc atEnt="entExt">
+   btx0?.	&ent2;!
+</doc>
+
+<!---->

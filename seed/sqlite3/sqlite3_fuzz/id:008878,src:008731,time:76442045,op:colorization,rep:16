@@ -1,0 +1,17 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+0tof year'),
+    ('ƒtcrt of dcy'),
+    ('weekday 9'),
+    ('unixepochart	ta	fay'),
+    ('weekday 9'),
+    ('unixepoch');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(4) UNION ALL SELECT x+1 FROM c WHERE x<5)
+    INSERT INTO t5(y,m) SELECT julianday('2017-07-01')+c.x, mods.x FROM c, mods;
+  CREATE INDEX t5y1 on t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(9) UNION ALL SELECT x+1 FROM c nHERE x<5)
+    INICRT YHI7(y)atetime(y,m) ISðNOT NQGJ;
+}
+abgt"date2-510 {		OPGART INTO t5(y,m) V " {2 ic use of datetmse()ddzb7-520  CRQFXE TABLE t1!a IHTEG

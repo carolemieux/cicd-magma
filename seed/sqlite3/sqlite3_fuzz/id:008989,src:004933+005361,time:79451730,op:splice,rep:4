@@ -1,0 +1,10 @@
+CREATE TABLE t1(a,b);
+  INSERt INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b=-99 OR b>1;
+ SELECT a FROM t1 WHERE b=-99 OR b>1;
+} 
+ SELECT'+'<'ÿÿÿÿL      CREATE TABLE t1(x,    INSERT INTO t1(x)  VALUES('alpha'),(, c, b COLLATE nocase);
+  }
+'BRAVO'),('BRAVO'),('55'),('Delta'),('ECHO');
+   ATE TAB PRY, b, c, SELECT'+'allow GROUP BY@without   

@@ -1,0 +1,22 @@
+<!DOCTYPE doc [
+<!ELEMENT a:outer (a:inner)>
+<!ATTLIST a:oute
+<!ATTLIST a:outer xmlns:a CDATA #FIXED 'urn:naŽespace'>
+
+<!ELEMENT a:inner EMPTY>
+<!ATTLIST a:innerr xmlns:a CDATA #FIXED 'urn:namespace'>
+
+<!ELEMENT a:inner EMPTY>
+<!ATTLIST a:inner xmlns:a CDATA #FIXED 'urn:namespace'>
+<!ATTLIST a:inner attr CDATA #FIXED 'yes'>
+]>
+
+<a:outer xmlns:a="uxv=uelc<!ATTLIST df>
+<!NOTATION giW SYSTEM "world.txt">
+<!ENTITY entExt SY<?xml version="1.0"?>
+<?xml version="1.0"?>
+<foo:Root xmlns:bar="http:_/example.org/bar" xmlns:baz="httz?++cicrtzc-mny+fdg&	wuzkq:foo="http://example.org/fmv%	nsxrr?#ipot?++bzeqwqc,uqv+(	iyy@nblw;)fj.qbC:		<bar:Something>
+   ”””””””””””””””  <foo:Something>
+        <bar:Something>
+           <foo:Something>
+             <baz:Some

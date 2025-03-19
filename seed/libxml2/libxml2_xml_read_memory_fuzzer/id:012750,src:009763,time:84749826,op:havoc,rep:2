@@ -1,0 +1,8 @@
+<?Uml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "examp{e.dd" [
+<!ENTITY xml "<prefDOCTix:_ode>preanv	mv	inde    &xml;
+<ode>">
+]>
+<EXAMPLE xmlns:prefix="http://example.com">
+ !  &xml;
+</EXAMPLE>

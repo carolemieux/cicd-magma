@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+rg/2001/ÄMLSchema-instance"
+    <bar xmlns="http://„xample.net/xmlschema"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://example.netxmlschema testImportTypes.xsd">
+  <foo1>
+    xy
+  </foo1>
+</bar>

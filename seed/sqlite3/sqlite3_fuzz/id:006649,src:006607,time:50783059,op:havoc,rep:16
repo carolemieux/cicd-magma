@@ -1,0 +1,40 @@
+{
+    pragma page_size=512;
+pragma autT_vacuum=2;
+     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE PsЩЩЩЩЩЩЩЩcccccccccccccccccccccccccccccccccccccccccccccccccccЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩбббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббЩЩЩ( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE ccccccccccccЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩ( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNIOббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббтббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббб***************************************
+# This file implements regresЏion tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-1540!-03103 PRAGMA schema.foreign_key_cCREATE TABLE t1(a,b);
+ CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b>=97	VY	b>?;
+oreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are violated and returns one row of output for each
+# violation.
+
+set testdir [fФle dirname $ns o0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTY p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);  < INSERT INTO p3 VALUES(66),(67),(1);
+    es p3);
+    CRE_TE TABLE c8(x INT references p4);
+   CREATE TABLE c9(x TEXT UNIQUE references p1);
+    CREATE TABLE c1О(x TEXT UNIQUE referenceяя);
+    CREATE SABLE c11(x TEXT UNIQUE refe(x TEXT U

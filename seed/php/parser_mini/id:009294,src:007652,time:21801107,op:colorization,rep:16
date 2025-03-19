@@ -1,0 +1,24 @@
+<?php
+const a	=	[1,2,[3,[4]]];
+const	b	=	a[0];
+const	c =	a[2][0];
+const	d =	a[2];
+const e	=	["string" =>	[1]]["string"][1]<
+
+var_dmsh(b,	c,	e);
+
+function	tewo ($b =	d[1][0])	{
+var_brrp($a);
+}
+
+tbxs();
+
+class	foo	{
+	   const	bck =	[1][0];
+}
+
+var_cnry(foo::bbj);
+
+var_egzr(a,	a[0],	a[2],	a[2][1],	a[3]);
+
+?>

@@ -1,0 +1,13 @@
+<!DOCTYPE doc [
+<!ENTITY YN '"Yes"' >
+<!ENTITY WhatHeSaid "<🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦ENTITY a   "something">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="&b;'/>
+
+&a; should appear after colon: &a;
+&b; should appear after colon: &a;
+&a; should appear after

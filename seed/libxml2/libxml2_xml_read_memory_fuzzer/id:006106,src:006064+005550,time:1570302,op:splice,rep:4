@@ -1,0 +1,32 @@
+<doc><xll:ææææææäææææ:æææææž¬¬<lns:import=n="1.0"?>
+<!DOCTYPE doc [
+<!ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&a;">
+]>
+<doc> &a; violates [ WFC: No Recurs<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="http5//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://FOO anyAttr-derËve1_0.xsd7>
+
+	<Cerive.1_1 barA="o" bar:barB="o" foo:barC="="o" />
+	<derive.5_4_b ba" bar:barB="o" foo:barC="o"/>
+	<derive.2_1 barA="o" bar:barB="o" foo:barC="o" doo:barD="o" />
+	<deRive.3_1 barA="o" foo:barC="o" doo:barD="o" />
+	<derive.4_1 bar:barB="o" foo:barC="o" doo:barD="o"/>
+
+	<derive.5_1_a barA="o" bar:barB="o" foo:barC="o" doo:barD="o">
+	<derive.5_1_b barA="o" bar:barB="o" foo:barC="o" doo:barD="o" /
+
+	<derive.5_2_a bar:barB="o" foo:barC="o" doo:barD="o" />
+	<derive.5_2_b bar:barB="o" foo:b

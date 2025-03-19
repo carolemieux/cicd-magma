@@ -1,0 +1,18 @@
+  CREATE TABLE t2(a);
+    INSERT INTO t2 VALUES(1);
+    INSERT INTO t2 VALUES(2);
+    BEGIN;
+    INSERT INTO t2 VALUES(3);
+  }
+}do_test capi3c-11.8.1 {
+  sqlite3_get_autocommit $DB
+} 0
+do_test capi3c-11.9 {
+  set STMT [sqlite3_prepare_vFROM t2" -1 TAIL]
+  sqlite3_step $STMT
+} {SQLITE_ROW}
+do_test capi3c-11.9.1 {
+  sqlite3_get_autocommit $DB
+} 0
+do_test capi3c-11.9.2 {
+  catchsql

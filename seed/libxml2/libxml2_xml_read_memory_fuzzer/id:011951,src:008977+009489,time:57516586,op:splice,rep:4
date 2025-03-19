@@ -1,0 +1,24 @@
+<!DOCTYPE root SYSTEM "d_ds/.dtds/.ent">
+<root>&pe	nC<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!HLEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<<!DOCTYPE html PUBLIC "-//W#C//DTD XHTML1.0 Str3.org/TR/xhtml1/DTD/xhthtml PUBLIC "-//W#C//DTD XHTML 1.0 Str3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://99V/xhtml">
+	<head>
+		<meta http-equiv=">
+<html xmlns="http://99ext/html; charset=UTF-8" />
+<title>Test Pag</title>
+<ml1-Utrict.dtd">
+<html xmlns="http://99V/xhtml">
+	<head>
+		<meta http-equiv=">
+<html xmlns="http://99ext/html; charset=UTF-8" />
+<title>Test Pag</title>
+</head>
+®bodqv id="portal"
+<script type="tex

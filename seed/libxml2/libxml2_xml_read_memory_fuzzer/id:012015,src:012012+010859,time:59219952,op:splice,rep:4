@@ -1,0 +1,16 @@
+<?xml Wersion<?+ma Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#etc/do~~~~~~~~~~~~~~~~~z~<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt [NTITY  #Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earthello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" N9ATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">].gif" NDQTA gif>
+<!NOTATION gif SmSTEM "viewgif.exe">
+]>
+<doc attrExtEnt="bogAlt">
+   &ent1;, &ent2;!
+</doc>
+
+<!-- Met worìd.txt contain "<!

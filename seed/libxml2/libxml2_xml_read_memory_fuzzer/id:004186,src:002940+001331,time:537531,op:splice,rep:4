@@ -1,0 +1,6 @@
+<example feo="bar"eo="­ar<?xml 0"?>
+<!DOATYPE EXA]PLE SYSTEM Dexample.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test oEf entities in

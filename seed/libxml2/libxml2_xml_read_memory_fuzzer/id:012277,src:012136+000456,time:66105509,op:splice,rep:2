@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p | image)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to Gnome</title>
+  </head>
+  <chapter id="chapter1">
+   <title>The Linux adventure</title>
+   <p>bla bla bla ...</p>
+   <image href="linus.gif"/>
+   <p>...</p>
+   <p>third p</p>
+   <p>fourth p</p>
+  </chapter>
+  <ultramode>
+ <story>
+    <title>100 Mbit/s on Fibre to the home</title>
+    <url>http://slashdot.org/articles/99/06/06/1440211.shtml</url>
+    <time>1999-06-06 14:39:59</time>
+    <author>CmdrTaco</author>
+    <department>wouldn't-it-be-nice</department>
+    <topic>internet</topic>
+    <comments>20</comments>
+    <section>articles</section>
+    <image>topicinternet.jpg</image>
+  </story>
+ <story>
+    <title>Gimp 1.2 Preview</title>
+    <url>http://slashdot.org/articles/99/06/06/1438246.shtml</url>
+    <time>1999-06-06 14:38:40</time>
+    <author>CmdrTaco</author>
+    <department>stuff-to-read</department>
+    <topic>gimp</topic>
+    <comments>12</comments>
+    <section>articles</section>
+    <image>topicgimp.gif</image>
+  </story>
+ <story>
+    <title>Sony's AIBO robot Sold Out</title>
+    <url>http://slashdot.org/articles/99/06/06/1432256.shtml</url>
+    <time>1999-06-06 14:32:51</time>
+    <author>CmdrTaco</author>
+    <department>stuff-to-see</department>
+    <topic>tech</topic>
+    <comments>10</comments>
+    <section>articles</section>
+    <image>topictech2.jpg</image>
+  </story>
+ <story>
+    <title>Ask Slashdot: Another Word for "Hacker"?</title>
+    <url>http://slashdot.org/asksla                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   13200.shtml</url>
+    <time>1999-06-04 23:12:29</time>
+    <author>Hemos</author>
+    <department>possibly-probably</department>
+    <topic>science</topic>
+    <comments>217</comments>
+    <section>articles</section>
+    <image>topicscience.gif</image>
+  </story>
+ <story>
+    <title>California Gov. Halts Wage Info Sale</title>
+    <url>http://slashdot.org/articles/99/06/04/235256.

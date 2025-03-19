@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST dns:tst CDefatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://eple.org"
+     tst:att (0|1)   "1">
+]>
+<doc att="1"/>

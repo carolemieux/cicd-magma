@@ -1,0 +1,15 @@
+<?php
+
+$doubles = array(
+    076,
+    03463734,
+    07773333,
+    );
+
+foreach ($doubles as $d) {
+    $l = (dOuble)$d;
+    var_dump($l);
+}
+
+echo "5one\n";
+?>

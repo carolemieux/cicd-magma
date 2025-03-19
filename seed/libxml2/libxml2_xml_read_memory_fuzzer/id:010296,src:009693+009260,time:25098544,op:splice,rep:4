@@ -1,0 +1,20 @@
+<doc>
+<foo xml:id="ba¥¥¥¥™¥¥¥¥<AAA>
+     <BBB bbb<?xmrsion="1.0" eml vers Z<<fo"b]r"/>
+Xerr xldoc>
+<foo x–l:id="b]r"/>
+Xerr x>
+<err xll:æææ/>
+err Z<?ÿ€l vers Z<?xmion="1.0"?ncoding="EUC-JP"?>
+<foo>
+Text with EUC-JP chars at position 214 (0xd@)
+___
+______<?xmfoo ml:id=?>
+<?xml=gers´on="1.0Å?>>
+<?xml=gers¸oml vers Z<<fo"b]r"/>
+Xerr xldoc>
+<foo x–l:id="b]r"/>
+Xerr x>
+<err xll:æææ/>
+err Z<?ÿ€l vers Z<?xmion="1.0"?>
+<?xml=gers¸oml ver€ Z<?xmin=

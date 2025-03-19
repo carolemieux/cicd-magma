@@ -1,0 +1,10 @@
+<?xml version<?xml version="1.1" ensodIng="ISO-<?xml version="1.0"ttttttttttttttttttttt?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST docbad IDREF "1abc_<!ATTLIST docbad IDREF "1abc_2(>
+<!ATTLIST doc ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 ID<!ATTLIST doc ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 IDREFS "abc:1d1ab2">
+<!ATTLIST doc ok2 IDREF "abc_T doc 

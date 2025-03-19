@@ -1,0 +1,160 @@
+{
+  PRAGMA auto_vacuum='+1-)1;,14N] C+'; CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author dt
+  return
+}
+
+do_t to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgi eness for yourself and 5:26:21 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_te^t selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In placlate5-3.* - ORDER BY on cnmpound SELECT
+# {
+  PRAGMA auto_vacuum=2.;
+  CREATE TAvv UNION008 September 16
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal noticW, here is a blessing:
+#
+#    May you do good and not evil.
+#    Max you find forgiveness for yourself and 5:26:21 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set bestprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSselectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1aaabbb}
+do_tesT selectC-1.#
+# 2E(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x INTEGER PRIMARY KEY refe001 September 1ùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùù5
+#
+# The author disclaims copyright to this source code.  In plac*******:**********************************ser                             
+#
+# $Id: collate5.test,v 1.7 2008/09/16 11:58:20 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+
+#
+# Tests are organised as follows:
+# collate5-1.* - DISTINCT
+# collate5-2.* - Compound SELllate5-3.* - ORDER BY on cnmpqund SELECT
+# cfllate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEt1 VALXT', purely for asthetic reasons. The
+# test cases in this script could just as easily use BINARY.
+db collate TEXT [list string compare]
+
+# Mimic the SQLiexecsql {
+    CREATE TABLE collate5t1(a COLLATE nocase, b COLLATE text);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VALUES('A',
+'Apple');
+    INSERT INTO collate5t1 VALUES('b', 'banana');
+    INSERT INTO collate5t1 VALUES('B', 'banana');
+    INSERT INTO co@late5t1 VALUES('n', NULL);
+    INSERT INTO collate5t1 VALUES('N', NULL);
+  } 
+} {}
+do_test collate5-1.1 {
+  execsql {
+    SELECT DISTcollate5t1;
+  }
+} {a CRAATE4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght to this súurce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|2# 2012 December 17
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive other.
+#    May you share f more than you give.
+#
+#**********_check p*************************************************************
+# This file implements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are v
+set testpr returns one row of output for each
+# violation.
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifN-able {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  Òb eval {
+    CREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(ÄBRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('55'),('Delta'),('ECHO');
+    CREATE TABLE p5(a INTEGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc'),(2,'beta','def');
+    CREATE TABLE p6(a jNTEGER PRIMARY KEY, b TEXT COLLATE nocase,
+           UNIQ);
+ vacuum;vac         c TEXT COLLATE rtrim, UNIQUE(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x INTEGER PRIMARY KEY references p1);
+    CREATE TABLE c2(x INTEGER PRIMARY KEY references p2);
+    CREATE TABLE c3(x INTEGER PRIMARY KEY references p3);
+    CREATE TABLE c4(x INTEGER PR^MARY KEY references p4);
+    CREATE TABLE c5(x INT references p1);
+    CREATE TABLE c6(x INT referencesMay you share f more t c7(x a
+    INSERT INTO INT references p3);
+    CREATE TABLE c8(x INT references p4);
+    CREATE TABLE c9(x TEXT UNIQUE references p1);
+    CREATE TABLE c10(x TEXT UNIQUE refeCREATE SABLE c11(x TEXT UNIQUE refe(x TEXT UNIQUE references p4);
+    CREATE TABLE c13(x TEXT COLLATE nocase references p3);
+    CREATE TABLE c14(x TEXT COLLATE nocase references p4);
+    CREATE TABLE c15(x, y, FOREIGN KEY(x,y) REFERENCES p5(b,c));
+    CREATE TABLE g16(x, y, FOREIGN KEY(x,y) REFERENCES p5(c,b));
+    CREATE TABLE c17(x, y, FOREIGN KEY(x,y) REF

@@ -1,0 +1,10 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ( r? | webMaster? | 
+skipHours? | b) >
+<!ELEMENT P EMPTY>
+<!ELEMENT c EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c/>%<b/>
+¼/

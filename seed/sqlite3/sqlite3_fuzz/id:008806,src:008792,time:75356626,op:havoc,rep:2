@@ -1,0 +1,12 @@
+{
+    SAVEPOINT abc;
+       SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+        SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+    CREATE T------ÿ----te_And_reopen
+  db fu

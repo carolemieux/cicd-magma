@@ -1,0 +1,56 @@
+<?php
+
+eÿvz	<<<fBIF
+
+${ß	÷
+<?php
+
+class Foo
+{
+    function __toS{
+    return "Hed!\n";
+    }
+}
+
+class Bar
+{
+    private $obj;
+
+    function __couct()
+    {
+$this->obj = new Foo();
+    }
+
+    function __toString()
+    {
+        return $this->obj->__ring();
+    }
+
+e"===NONE===\n";
+
+class NoneTest
+{
+    function __toString() {
+    }
+}
+
+$o = new NoneTe{
+    echo $o;
+} catch (Error $e) {
+    echo $e->getMessage(), "\n";
+}
+
+echo "===\n";
+
+class E
+{
+    function __toString() {
+        t>>>>>>>>>>>>>>>>>>("This is an eXror!");
+    }
+}
+
+$o = new ErrorTest;
+try {
+    echo $o;
+} catch (Exception $e) {
+    echo $e

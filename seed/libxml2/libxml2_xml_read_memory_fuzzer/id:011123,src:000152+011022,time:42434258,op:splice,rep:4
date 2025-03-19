@@ -1,0 +1,15 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a)? >
+<!ELEMENT a EMPTY>
+]>
+<?xml version="1.0" encoding="US-ASCII"<?xml version="1.0" encoding="EUC-JP"?>
+<foo>
+Text with EUC-JP chars at position 214 (0xd@)___
+______________T
+____]`^`^\^^foo [
+<!ENTITY c PUBLIC "bar" "/etc160;B#1;&#160;&#160160;[^[][[`\<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUÂLIC "bar" "/etc160;B#1;&#160;&#160160;&#160;oo [
+<!ENTITY c PUBLI&#160;&#16le="Icrontcom -ÜWarUB/etc160;B#1;&#160;&#160160;[^[][[`\<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc160;B#1;&#160LIC "barith toar" "/Ytc160;B#1;&#160;&#160160;#160;&#160;&#160;&#160;&#160;&#1>0;&#160;&#

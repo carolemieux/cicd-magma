@@ -1,0 +1,7 @@
+<?php
+
+namespace	Foo;
+class	Bar	{}
+
+$bar	=	"Caj";
+assert(new\\st

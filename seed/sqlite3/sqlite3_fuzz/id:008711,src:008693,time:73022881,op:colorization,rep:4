@@ -1,0 +1,6 @@
+  SELECT LIKE('
+  WINDOW	i	BT	!RBMVGTION!', '', '!') x WHERE x;
+  } {}
+  6. RANK() OVER w AS "rank" 
+  FROM "sample"
+  WINDOW w AS (PARTITION BY "counte\" ORDEÿBY "value" DING AND CdRRENT ROW

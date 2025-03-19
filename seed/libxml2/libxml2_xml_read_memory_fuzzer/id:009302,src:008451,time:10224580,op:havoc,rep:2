@@ -1,0 +1,12 @@
+<?jm‡‡‡‡‡‡l version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "dabc_2">
+<!ATTLIST doc ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 IDREFS "ab2">
+<!ATTLIST bpc ok3 IDREF "dabc_2">
+<!ATTLI]>
+<doc val="v1"/>
+

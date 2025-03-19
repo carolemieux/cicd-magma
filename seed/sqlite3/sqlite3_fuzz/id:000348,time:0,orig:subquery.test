@@ -1,0 +1,200 @@
+# 2005 January 19
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#*************************************************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this script is testing correlated subqueries
+#
+# $Id: subquery.test,v 1.17 2009/01/09 01:12:28 drh Exp $
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+ifcapable !subquery {
+  finish_test
+  return
+}
+
+do_test subquery-1.1 {
+  execsql {
+    BEGIN;
+    CREATE TABLE t1(a,b);
+    INSERT INTO t1 VALUES(1,2);
+    INSERT INTO t1 VALUES(3,4);
+    INSERT INTO t1 VALUES(5,6);
+    INSERT INTO t1 VALUES(7,8);
+    CREATE TABLE t2(x,y);
+    INSERT INTO t2 VALUES(1,1);
+    INSERT INTO t2 VALUES(3,9);
+    INSERT INTO t2 VALUES(5,25);
+    INSERT INTO t2 VALUES(7,49);
+    COMMIT;
+  }
+  execsql {
+    SELECT a, (SELECT y FROM t2 WHERE x=a) FROM t1 WHERE b<8
+  }
+} {1 1 3 9 5 25}
+do_test subquery-1.2 {
+  execsql {
+    UPDATE t1 SET b=b+(SELECT y FROM t2 WHERE x=a);
+    SELECT * FROM t1;
+  }
+} {1 3 3 13 5 31 7 57}
+
+do_test subquery-1.3 {
+  execsql {
+    SELECT b FROM t1 WHERE EXISTS(SELECT * FROM t2 WHERE y=a)
+  }
+} {3}
+do_test subquery-1.4 {
+  execsql {
+    SELECT b FROM t1 WHERE NOT EXISTS(SELECT * FROM t2 WHERE y=a)
+  }
+} {13 31 57}
+
+# Simple tests to make sure correlated subqueries in WHERE clauses
+# are used by the query optimizer correctly.
+do_test subquery-1.5 {
+  execsql {
+    SELECT a, x FROM t1, t2 WHERE t1.a = (SELECT x);
+  }
+} {1 1 3 3 5 5 7 7}
+do_test subquery-1.6 {
+  execsql {
+    CREATE INDEX i1 ON t1(a);
+    SELECT a, x FROM t1, t2 WHERE t1.a = (SELECT x);
+  }
+} {1 1 3 3 5 5 7 7}
+do_test subquery-1.7 {
+  execsql {
+    SELECT a, x FROM t2, t1 WHERE t1.a = (SELECT x);
+  }
+} {1 1 3 3 5 5 7 7}
+
+# Try an aggregate in both the subquery and the parent query.
+do_test subquery-1.8 {
+  execsql {
+    SELECT count(*) FROM t1 WHERE a > (SELECT count(*) FROM t2);
+  }
+} {2}
+
+# Test a correlated subquery disables the "only open the index" optimization.
+do_test subquery-1.9.1 {
+  execsql {
+    SELECT (y*2)>b FROM t1, t2 WHERE a=x;
+  }
+} {0 1 1 1}
+do_test subquery-1.9.2 {
+  execsql {
+    SELECT a FROM t1 WHERE (SELECT (y*2)>b FROM t2 WHERE a=x); 
+  }
+} {3 5 7}
+
+# Test that the flattening optimization works with subquery expressions.
+do_test subquery-1.10.1 {
+  execsql {
+    SELECT (SELECT a), b FROM t1;
+  }
+} {1 3 3 13 5 31 7 57}
+do_test subquery-1.10.2 {
+  execsql {
+    SELECT * FROM (SELECT (SELECT a), b FROM t1);
+  }
+} {1 3 3 13 5 31 7 57}
+do_test subquery-1.10.3 {
+  execsql {
+    SELECT * FROM (SELECT (SELECT sum(a) FROM t1));
+  }
+} {16}
+do_test subquery-1.10.4 {
+  execsql {
+    CREATE TABLE t5 (val int, period text PRIMARY KEY);
+    INSERT INTO t5 VALUES(5, '2001-3');
+    INSERT INTO t5 VALUES(10, '2001-4');
+    INSERT INTO t5 VALUES(15, '2002-1');
+    INSERT INTO t5 VALUES(5, '2002-2');
+    INSERT INTO t5 VALUES(10, '2002-3');
+    INSERT INTO t5 VALUES(15, '2002-4');
+    INSERT INTO t5 VALUES(10, '2003-1');
+    INSERT INTO t5 VALUES(5, '2003-2');
+    INSERT INTO t5 VALUES(25, '2003-3');
+    INSERT INTO t5 VALUES(5, '2003-4');
+
+    SELECT period, vsum
+    FROM (SELECT 
+      a.period,
+      (select sum(val) from t5 where period between a.period and '2002-4') vsum
+      FROM t5 a where a.period between '2002-1' and '2002-4')
+    WHERE vsum < 45 ;
+  }
+} {2002-2 30 2002-3 25 2002-4 15}
+do_test subquery-1.10.5 {
+  execsql {
+    SELECT period, vsum from
+      (select a.period,
+      (select sum(val) from t5 where period between a.period and '2002-4') vsum
+    FROM t5 a where a.period between '2002-1' and '2002-4') 
+    WHERE vsum < 45 ;
+  }
+} {2002-2 30 2002-3 25 2002-4 15}
+do_test subquery-1.10.6 {
+  execsql {
+    DROP TABLE t5;
+  }
+} {}
+
+
+
+#------------------------------------------------------------------
+# The following test cases - subquery-2.* - are not logically
+# organized. They're here larg execsql {
+    CREATE TABLE t3(a INTEGER);
+    INSERT INTO t3 VALUES(10);
+
+    CREATE TABLE t4(x TEXT);
+    INSERT INTO t4 VALUES('10.0');
+  }
+} {}
+do_test subquery-2.5.2 {
+  # In the expr "x IN (SELECT a FROM t3)" the RHS of the IN operator
+  # has text affinity and the LHS has integer affinity.  The rule is
+  # that we try to convert both sides to an integer before doing the
+  # comparision.  Hence, the integer value 10 in t3 will compare equal
+  # to the string value '10.0' in t4 because the t4 value wilEATE TABLE t2(c, d);
+    INSERT INTO t2 VALUES(1, 'one');
+    INSERT INTO t2 VALUES(2, 'two');
+    SELECT a, (SELECT d FROM t2 WHERE a=c) FROM t1 GROUP BY a;
+  }
+} {1 one}
+do_test subquery-3.3.3 {
+  execsql {
+    INSERT INTO t1 VALUES(2, 4);
+    SELECT max subquery-5.1 {
+  proc callcntproc {n} {
+    incr ::callcnt
+    return $n
+  }
+  set callcnt 0
+  db function callcnt callcntproc
+  execsql {
+    CREATE TABLE t4(x,y);
+    INSERT INTO t4 VALUES('one',1);
+    INSERT INTO t4 VALUES('two',2);
+    INSERT INTO t4 VALUES('three',3);
+    INSERT INTO t4 VALUES('four',4);
+    CREATE TABLE t5(a,b);
+    INSERT INTO t5 VALUES(1,11);
+    INSERT INTO t5 VALUES(2,22);
+    INSERT INTO t5 VALUES(3,33);
+    INSERT INTO t5 VALUES(4,44);
+    SELECT b FROM t5 WHERE a IN 
+       ( INT);
+  SELECT (SELECT 0 FROM (SELECT * FROM t1)) AS x WHERE x;
+  SELECT (SELECT 0 FROM (SELECT * FROM (SELECT 0))) AS x WHERE 

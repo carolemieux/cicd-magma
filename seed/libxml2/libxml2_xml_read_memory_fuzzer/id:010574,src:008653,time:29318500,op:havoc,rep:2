@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ENTITY ext SYSTEM "exnt">
+]>
+<a att="wrong &ext; ret.ent">
+]>
+<a att="wrong &ext;ref"> violates [ WFC4 No External Entity R="1.0"?>
+<!DOCTYPE a [
+<!ENTITY ext SYSTEM "exnt">
+]>
+<a att="wrong &ext; ret.ent">
+]>
+<a att="wrong &ext;ref"eferences ] </a>

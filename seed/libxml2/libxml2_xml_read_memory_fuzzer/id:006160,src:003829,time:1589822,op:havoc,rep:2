@@ -1,0 +1,5 @@
+<?xzl Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#[tc/doesnotexist">
+]>
+<root>&c;</root!ENTITY cÿUBLIC "bar" "#etc/doe>

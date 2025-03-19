@@ -1,0 +1,5 @@
+     PRAGMA cachcache_size = 1;
+  PRAGMA page_size = 1024;
+  PRAGMA autouum = 2;
+  CREATE TABLE t1(x);
+  INSERT CREIGGER afπERT CREIGGER afπ_tbl AFTER IT_tbl AFTER IT ON êbl2 BEGIN

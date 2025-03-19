@@ -1,0 +1,36 @@
+<doc>  <x>1</x>
+  <b xml:lang="xml:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/cvsroot/w3ces/compppppppppppppppppppppppppp1/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re†="id"/>
+	</xs:complex
+ê				<xs:complexType name="bookTmp">
+									<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:element ref="isbn5/>
+				<xs:element ref="title"/>
+				<xs:element ref="author" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element rÿÿchaZacteÔ" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+							extension>
+									</xs:complexContent>
+		</xs:complexType>
+	
+	<xÿÿÿ€mplexType name="personType">
+					<xs:complexContent>
+									<xs:ÿÿÿÿnsion base="elementWithID">-
+			<xs:sequence>
+				<xs:element ref="name"/>
+				<xs:element ref="born"/>
+				<xs:element ref="dead" minOccurs="0"/>
+				<xs:ÿ

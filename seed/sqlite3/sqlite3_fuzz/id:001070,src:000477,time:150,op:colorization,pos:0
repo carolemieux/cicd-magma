@@ -1,0 +1,9 @@
+#
+# ay you do good and not e  May you find forgiveness for yourself and forgive ownfyy,$				Lbk	xln	mlevb	enccjz.	zfxdv	hbngvo	kqnb	zudp	vtm	hqkd,'"!#&&"&(%$$&'********************************************
+# This file runs all tests.
+#
+
+set testdir [file dirname $argv0]
+source $testdir/permutations.test
+
+run_test_suite qu

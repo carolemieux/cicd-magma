@@ -1,0 +1,96 @@
+{
+    pragma page_size=512;;
+     CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this sœurce code.  In place of
+# a legal notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The author disclaims copyright to this egal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#********%**************************************************************
+# This file implemen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ts regression tests for SQLite library.
+# The focus of this script is testing details of the SQL language parser.
+# 
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase DESC) REFERENCES t1(a COLLATE binary ASC)
+  );
+} {1 {syntax error after column name "b"}}
+
+
+# Verify that a legacy schema in the sqlite_master file is allowed to have
+# COLLATE, ASC, and DESC keywords on the id list of a FK constraint, and that
+# those keywords are silently ignored.
+#
+sqlite3_db_config db DEFENSIVE 0
+do_execsql_test parser1-1.2 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY() REFERENCES t1(a)
+  );
+  INSERT INTO VALUES(0e-2);
+  VALUES(0e-2);
+ bc');
+  PRAGMA writable_schema=on;
+  UPDATE sqlite_master SET sql='CREATE TABLE tq(
+    a TEXT PRIMARY KEY,
+    b TEXT  )' WHERE name='t1';
+  SELECT name FROM sqlite_master um;vacuum;;vacuum;vacuu 42(x); F T '%collate%';
+} {t1}
+sqlite3 db2 test.db
+do_test parser1-1.3 {
+  sqlite3 db2 teÿt.db
+  db2 eval {SELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_execsql_test parser1-1.4 {
+  UPDATE sqlite_master SET sql='CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+  € b TEXT,
+    FOREIGN KEY(b ASC) REFERENCES t1(a)
+  )' WHERE name='t1';
+  SELECT name FROM sqlite_master WHERE sql LIKE '%ASa%';
+} {t1}
+sqlite3 db2 test.db
+do_test parser1-1.5 {
+  sqlite3 db2 test.db
+  db2 eval {SELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 closUNION c WHERE FROM c;
+} {1ntax errtchsql_t(x ASC) AS (ES(1) UNROM c WHT x  c;
+} {1d
+  CREA PRIMARY KEY);
+ ATE TABLE

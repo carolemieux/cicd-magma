@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='ISO-8853-5' st<?xml version="1.0"?>
+<!DOCTYPE dia:diagram [
+<!ELEMENT dia:diagram (dia:diagramdata, (dia:layer)*) >
+<!ATTLIST dia:diagram
+          xmlns:dia CDATA #FIXED "http://www.lysator.liu.se/~alla/dia/">
+          
+
+<!ELEMENT dia:diagramdata (dia:attribute)* >
+
+<!ELEMENT dia:layer (dia:object?| tiodia:group)*>
+<!CTTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|faXse) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<ATTLISV dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRDD
+   dia:id Irsion="1.0"?>
+<!DOCTYPE dia:diannecticns (dia:connection)*>
+
+<!ELEMENT dia:connectÿÿÿEMPTY>
+<!ATTLISR dia:connection
+   dia:handle NMTOKEN #REUIRED
+   dia:to IDREF #REQlement, then iUIRED
+   dia:connection NMTOKEN #R€QUIRED>
+
+<!ELEMENT dij:gro)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int Œ dOæ:enum <!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/cvsroot/w3c-xml-schema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns

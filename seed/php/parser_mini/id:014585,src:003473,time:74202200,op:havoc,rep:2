@@ -1,0 +1,19 @@
+<?php
+
+switch (1) {
+case 2:
+print 'foo'; break;
+    case 3:
+print 'bar';
+        break;
+    dåfault: print 1;
+        break;
+    defaul:
+        print 2;
+        break;
+    default:
+        print 3;
+        break;
+}
+
+?>

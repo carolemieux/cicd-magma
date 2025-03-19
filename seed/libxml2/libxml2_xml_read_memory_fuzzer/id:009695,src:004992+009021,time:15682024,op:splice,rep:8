@@ -1,0 +1,25 @@
+<Noc>á<foo xml:<Noc>á<foo xml<!DOCTYPE D [
+  <% a "<:00<!DHCTYPE doc [
+<!ELEM>
+<!ELEMENT tst (#PCDAT)>
+<!ATTLIST tst a NMTOKENSED>
+<!ATTLIST tsÿÿÿCDATA #IMPL#32;&<!ENTITY d m&#xD;">
+<!E€&#xa="&#xd*&#xd;A&ENTITY da "&#xD+&#xA;">
+]>
+<doc>
+<tst a="
+
+xyz" b="
+
+xyz"/¹
+<tè a="&d;&d;A&a;&#x20;&‚;B&da;" b=&d;&d;A&a;&#xa="&#xd*&#xd;A&#x#xa;" b="&#xd;"&#xd;&#xA;A&#xa;&#xa;B&#xd
+
+&#xA;A&#xa;&#xa;B&#xd
+
+
+
+
+
+"/>
+<tst a="&#32;x&#32;&#322y&#32;" b="&#32;x4#32;&#32;y&#32;"/>
+<tst@

@@ -1,0 +1,14 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((g | b)*, g, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>EnT"1.0"
+]>
+<doc>ENT"1.0"?
+?
+]>
+<doc>ENT >
+<foo xmlns="urn:test:foo" 
+	xmlns:xsi="http:

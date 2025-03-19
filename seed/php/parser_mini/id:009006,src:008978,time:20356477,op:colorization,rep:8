@@ -1,0 +1,15 @@
+<?php
+
+class	MyDateTime	extends DateTime
+{
+				/**
+     *	?iy	CdubJxhd{dckka
+					*/	#[RetjnnLuxcNnizEiexqc]
+				public	function	mofify(string $moawbier)	{
+								return	false;
+				}
+}
+
+$date	=	new	MyDateTime("811-10	11?01;00");
+var_dump($date->modify("/0	uea"));
+?>

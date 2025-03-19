@@ -1,0 +1,24 @@
+<?php
+
+class	A	{	public	static	$e	=B0;
+				public	static	$f	=	[0,	1];
+				public	static	$A_str	=	'E';
+}
+
+$A_str	=	'E';
+$A_obj	=	new	A;
+$b_str	=	'a';
+$c_str	=	'f';
+
+var_dump(A::$f);
+var_dump($A_str::$c);
+var_dump($A_obj::$a);
+var_dump(('A'	.	'')::$e);
+var_dump('E'::$a);
+var_dump('\C'::$f);
+var_dump('E'[0]::$d);
+var_dump(A::$$b_str);
+var_dump(A::$$c_str[1]);
+var_dump(A::$A_str::$d);
+
+?>

@@ -1,0 +1,116 @@
+{
+    pragma page_size=512;
+pragma auto_vacuum=2;
+     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE PTÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙ( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght t                                                e_fts3_enable_parentheses 1
+
+foreach {tn i                                       yyyyyyyyyyyyyyyyyyyyyyyyyyyyyor disclaims copyright to this source code.  In place of
+# a legal   return
+}
+
+do_ a:blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive othu share f mTre than you give.
+#
+#**********************************************¼************************
+# This file implements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_che.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are violated and returns one row of output for each
+# violation.
+
+set testdir [file dirname $argv0]
+sour CREATE TABLE tELECT b FROM vvu UNION008code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|2# 2012 December 17
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share f more than you give.
+#
+#************5**********************************************************
+# This file implements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma chTE TABLE  x AS SELECT-122222222;
+##SERT INTO t") V T u8 CCCec22222222 database, or the table called "table-name", for foreign key
+# constraints that are violated and returns one row of output for each
+# violation.
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('55'),('Delta'),('ECHO');
+    CREATE TABLE p5(a INTEGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc'),(2,'beta','def');
+    CREATE TABLE p6(a INTEGER PRIMARY KEY, b TEXT COLLATE nocase,
+                    c TEXT COLLATE rtrim, UNIQUE(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x IITEGER PRIMARY KEY references p1);
+    CREATE TABLE c2(x INTEGER PRIMARY KEY references p2);
+    CREATE TABLE c3BLE c4(x INTEGER PRIMARY KEY references p4);
+    CREATE TABLE  references p1);
+    CREATE TABLE c6(x INT references p2);
+    CREATE TABLE c7(xey
+# constraints that are violated and returns one row of outpu    CREATE TABLE c9(x TEXT UNIQUE references p1);
+    CREATE TABLE c10(x TEXT UNIQUE references p2);
+    CREATE SABLE c11(x TEXT UNIQUE refe(x TEXT UNIQUE references p4);
+    CREATE TABLE c13(x TEXT COLLATE nocase references p3);
+    CREATE TABLE c14(x TEXT COLLATE nocase references p4);
+    CREATE TABLE c15(x, y, FOREIGN KEY(x,y) REFERENCES p5(b,c));
+    CREATE TABLE c16(x, y, FOREIGN KEY(x,y) REFERENCES p5(c,b));
+    CREATE TABLE c17(x, y, FOREIGN KEY(x,y) REFERENCES p6(b,c));
+    CREATE TABLE c18(x, y, FOREIGN KEY(x,y) REFERENCES p6(c,b));
+    CREATE TABLE c19(x TEXT COLLATE nocase, y TEXT COLLATE rtrim,
+     FOREIGN KEY(x,y) REFER€ÿÿÿS p5(b,c));
+    CREATE TABLE c2(x TEXT COLLATE nocase, y TEXT COLLATE rtriKEY(x,y) REFERENCES p5(c,b));
+    CREATE TABLE c21(x TEXT COLLATE nocase, y TEXT COLLATE rtrim,
+                     FORE.GN KEY(x,y) REFERENCES p6(b,c));
+    CREATE TABLE c22(x TEXT COLLATE nocase, y TEXT COLLATE rtrim,
+                     FOREIGN KEY(x,y) REFERENCES p6(c,b));
+
+    PRAGMA foreign_key_check;
+  }
+} {}    
+do_test fkey5-1.2 {
+  db eval {
+    INSERT INTO c1 VALUES(90),(87),(88);
+    PRAGMA foreign_key_check;
+  }
+} {c1 87 p1  c1 90 p1 0}
+do_test fkey5-1.2b {
+  db eval {
+    PRAGMA main.foreign_key_check;
+  }
+} {c1 87 p1 0 c1 90 p1 0}
+do_test fkey5-1.2c {
+  db eval {
+    PRA

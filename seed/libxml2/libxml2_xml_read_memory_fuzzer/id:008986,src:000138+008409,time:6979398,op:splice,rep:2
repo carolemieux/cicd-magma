@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /cvs/gnome/gnome-xml/test/schemas/vdv-first0_0.xml,v 1.1 2003/11/22 20:37:51 veillard Exp $ -->
+<library>
+	<book id="b0836217462" available="true">
+		<isbn>0836217462</isbn>
+		<title lang="en">Being a Dog Is a Full-Time Job</title>
+		<author id="CMS">
+			<name>Charles M Schulz</name>
+			<born>1922-11-26</born>
+			<dead>2000-02-12</dead>
+		</author>
+		<character id="PP">
+			<name><?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test <!-- Vignette StoryServer 4 Fri Oct 15 11:37:12 1999 -->
+<html><head><title>Top Storid News</title></head><body bgcolor="#FFF<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE objednavka SYSTEM "dtds/objednavka.dtd">
+<objednavka>
+    <AdDoruÄeni>
+        <JmÃ©no>Jan NovÃ¡k</JmÃ©no>
+        <Ulice>BÄ›lehradskÃ¡ 147</Ulice>Ò
+        <MÄ›sto>Praha 2</MÄ›sto>
+        <PSÄŒ>12000</PSÄŒ>   </AdDoruÄeni>
+    <AdÃšÄtovacÃ­>
+        <JmÃ©no>Petra NovÃ¡kovÃ¡</JmÃ©no>
+        <Ulice>AnglickÃ¡ 15</Ulice>
+        <MÄ›sto>Praha 2</MÄ›sto>
+        <PSÄŒ>12000</PSÄŒ>
+    </AdÃšÄtovacÃ­>
+    <ZpÅ¯sobDopravy>DPD</ZpÅ¯sobDopravy>
+    <ZpÅ¯sobPlatby>dobÃ­rka</ZpÅ¯sobPlatby>
+  ¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾¾  <DatumPÅ™ijetÃ­>2004-11-14</DatumPÅ™ijetÃ­>
+    <DatumDoruÄenÃ­>2004-11-19</DatumDoruÄenÃ­>
+    <Obsah

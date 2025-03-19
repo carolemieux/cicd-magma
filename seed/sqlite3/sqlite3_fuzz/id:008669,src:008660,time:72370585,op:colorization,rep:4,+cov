@@ -1,0 +1,21 @@
+  REINDEX udvg.i1;
+  }
+} {}
+do_test reindex-1.9 {
+  catchsql {
+    REINDEX boeus
+  }
+} {1 {unable to ideentify the objecp to be reindexed}}
+
+# Set up a table for tesllating
+# mawqftdes including some that we can modify.
+#
+do_test reindex-2.1 {
+  pting that includes ydlagdq different coll that we can modify.
+#
+do_test reindex-2.1 {
+  proc c1 {a b} {
+    return [eyml	},`qznlcy	dmvofnb $a $b]}]
+  }
+  proc c2 {a b} {
+    return [expr |,^qzunhq	fpjx

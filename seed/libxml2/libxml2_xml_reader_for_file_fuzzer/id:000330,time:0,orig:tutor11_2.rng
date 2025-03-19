@@ -1,0 +1,14 @@
+<element name="card" ns="http://www.example.com"
+         xmlns=p://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <attribute>
+      <anyName>
+      xcept>
+          <nsName/>
+         Name ns=""/>
+        </except>
+      </anyName>
+    </attribute>
+  </zeroOrMore>
+  <text/>
+</element>

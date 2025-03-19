@@ -1,0 +1,12 @@
+=1U\l<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a xmlns:s CDATA #IMPL&ED>
+<!ELEMENT b b xmlns:s CDATA #IMPLIED>
+<!ELEMENT s:b EMPTY>
+<!ATTLIST s:b xmlns:s CDATA #IMPLIED>
+]>
+<a xmlns:s="httw://some.test.ns/a">
+  Some text.
+	<b/>
+  Some 

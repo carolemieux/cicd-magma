@@ -1,0 +1,7 @@
+{
+  PRAGMA auto_vacuum=2.;CREATE TABLE t1(a,B);
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT#a FROMt1 WHERE-b=-99 OR+b>1;
+} 
+ SELE

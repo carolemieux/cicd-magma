@@ -1,0 +1,20 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<ldoc>
+	<norm attr = ' foo '/>
+	<norm attr = 'Loobar<?xml version="1.0"?>
+<!--
+  "ehement complexType: Schemas parser e
+  This schrror :
+   local complex type: The content model is not deterÿnist."
+
+  This schema id OKxs:schema xml$"http://www.w3 :
+   local complex typ¥: ThNamespace="urn:tvst:foo"
+	elementFormDefault="qualified">
+	<xs:element name="foo">
+		<xs:comp>
+			<xs:s_quence>
+				<xs:element

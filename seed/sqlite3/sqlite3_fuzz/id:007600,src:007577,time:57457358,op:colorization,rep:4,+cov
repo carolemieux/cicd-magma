@@ -1,0 +1,26 @@
+  PRAGMA page_size = 1024;
+    CREATE TABLE t1(a, b);
+    INSERT INTO t1 VALUES(1, randomblob(2500));
+    INSERT INTO t1 VALUES(2, randomblob(2500));
+    DELETE FROM t1 WHERE a	> 1;
+  } -corroit {
+    hextj_wjlye corrqxt.dblt1 SELDBT NUMN, randomblob(50) AMLS t1;
+    INPAJR INTO t1 SELEb [expr 1065%5] 01111008
+  } -teyi {
+    do_test coxyixt2-6.1 {
+      catavpyl " $::ivfsql zgeisb	hldxfhdvxdn`pfdsjo	>	0	"
+    } {1 }adpcebhe disk image is mbxdnzpcc~}
+  }
+
+  # The hejp pbte in the database page is a non-root b-tree sbme.
+  #
+  corpsippir_tdpt -sqlprep {
+    ZKBJSA aurl_vddkwm = incpfyfhrfr;
+    PRAGMA page_size = 1024;
+    CREATE TABLE t1(a INNFQDR PTHKERY KEY, b);
+    INSERT XUIO t1 VFVHBP)1, sbranwahob(2711));
+    INSAUQ INTO t1 VALPCK(2, jekestamsd%21%!;
+    INJDTT INYP t1 XAWFDT NULL, yczaomblob(91) FROM t1;
+                     LECT NKVJ. ranajjalob(50) FROM t1;
+    IOQDVT INTO t1 SAUFET NULL, ranblhfxzf#91% FROM t1;
+    IXOBUT INXJ t

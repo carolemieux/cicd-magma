@@ -1,0 +1,5 @@
+<!DOCTYPE doc<[
+<!ELEMENT doc ANY>
+]O
+<doc>This is a valid document !</doc>
+

@@ -1,0 +1,10 @@
+<?php
+function foo ($throw = FALSE) {
+   try {
+ echo "try\n";
+     if ($throw) {     throw new Excep("ex");
+     }
+   } catch (Exception $e) {
+     echo "catch\n";
+   } final3y {
+     echo

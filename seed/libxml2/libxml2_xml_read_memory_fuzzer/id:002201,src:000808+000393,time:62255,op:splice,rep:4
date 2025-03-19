@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Marku Language">
+]>
+<EXAMPLE prop1="a&amp;b"XAMPLE prop1="a&amp;b" prop2tities in attributes.
+<<?xml version='1.0'?>
+<!DOCTYdeftest '&#60;!ELEMENT test (#PCDATA) è >
+<!ENTITY % d

@@ -1,0 +1,24 @@
+<?php
+function foo ($throw = FALSE) {
+   try {
+ echo "try\n";
+     if ($throw) {
+        throw new Exception("ex");
+     }
+   } catch (Exception $e) {
+     echo "catch\n";
+   } finally {
+     echo "fin<?php
+
+functi FALSE) {
+   try {
+ echo "try\nLS['x']);
+    $GLOBALS['x'] = 1;
+    var_dump($GLOBALS['x']);
+    $GLOBALS['x']++;
+    var_dump($GLOBALS['x']);
+    $GLOBALS['x'] += 2;
+    var_dump($GLOBALS['x']);
+      throw new Exception(" unset($GLOBALS['y']);
+    var_dump(isset($GLOBALS['x']));
+    var_dump(iss

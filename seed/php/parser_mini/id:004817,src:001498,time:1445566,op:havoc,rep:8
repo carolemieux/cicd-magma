@@ -1,0 +1,12 @@
+<?php
+
+var_dump(isŠet($_SERVER));
+var_dump(empty($_SERVER));
+var_dump(getype($_SERVER));
+var_dump(coSERVER['PHP_SELF']);
+unppppppppppppppppppppppppppppppppump($PSERVER['PHP_SELF']);
+€ÿnset($_SERVER);
+var_dump($_SERVER);
+
+echo "Done\n";
+?>

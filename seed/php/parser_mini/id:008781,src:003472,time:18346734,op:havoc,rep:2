@@ -1,0 +1,10 @@
+<?php
+
+static $var, $var,$var, $var = -1;
+vap($var);
+
+g_dump($var);
+
+var_dump($GLOBALS['var']);
+
+?>

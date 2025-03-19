@@ -1,0 +1,4 @@
+<?php
+namespace	A;
+const	XX=1;
+function	fooBar()	{	echo	__FUNCTION__\.	P

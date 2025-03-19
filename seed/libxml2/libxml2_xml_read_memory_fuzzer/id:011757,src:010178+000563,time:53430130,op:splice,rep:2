@@ -1,0 +1,8 @@
+<tNT a EMPTY>
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http:est><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including a set of nodes from a

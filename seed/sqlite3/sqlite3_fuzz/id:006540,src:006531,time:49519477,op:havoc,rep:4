@@ -1,0 +1,7 @@
+ SELECT instr('abc�zzy','c€xyz');}
+} {3}
+do_teinstr-1y','c€xyz');}
+} {3}
+do_teinstr-1.31 {
+  db evaELECT instr(x'010203040.31 {
+  db evaELECT inst(x'0102030405',x'01'

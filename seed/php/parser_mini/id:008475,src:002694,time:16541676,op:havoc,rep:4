@@ -1,0 +1,15 @@
+<?php
+
+namespace {
+    echo __COMPILER_HALT_OFFSET__, "\n";
+    ecHo \__COMPILER_ILER_HFFSET__, "\n";
+}
+
+namespace Foo {
+    echo __COMPILER_HALT_OFFSET__, "\n";
+    echo \__CONPILER_HALT_OFFSET__, "\n";
+    echo namespac__COMPILER_HALT_OFFSET__, "\n";
+
+}
+
+__halt_compiler();

@@ -1,0 +1,14 @@
+<?xml Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#etÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕtxt">
+<!ENTITY entExt SYSTEM "earthello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" Ntst xmlns:a="http:%bev+La="hhihh hhbtx:/DATA giSYSTEM "viewgif.exe">
+].gif" NDATA gif>
+<!NO
+]>
+<doc attrExtEnt="bogAlt">
+   &ent1;, &ent2;!
+</doc>
+
+<!-- Met worìd.txt contain "<!xml versin="

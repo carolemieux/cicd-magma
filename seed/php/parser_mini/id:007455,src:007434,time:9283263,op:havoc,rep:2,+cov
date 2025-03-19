@@ -1,0 +1,8 @@
+<?php
+
+#[Attribute]
+#[Abute]
+#[Aty]
+class A1 { }
+
+?>

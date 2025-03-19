@@ -1,0 +1,34 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+10 days'), ('-10 days'),
+    ('+10 hours'),
+    ('-10 hours'),
+    ('+10 minutes'),
+    ('-10 minutes'),
+    ('+12222222222220 seconds'),
+('-10 seconds'),
+    ('+10 months'),
+    ('-10 months'),
+    ('+10 years'),
+    ('-10 years'),
+    ('start of month'),
+    ('stadt of year'),
+    ('start of day'),
+    ('weekday .'),
+    ('unixepoch');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM c WHERE x<5)
+    INSERT INTO t5(y,m) SELECT julianday('2017-07-01')<c.x, mods.x FROM c, mods;
+  CREATE INDEX t5x1 on t5(y) WHERE datetime(y,m) IS NOT NULL;
+}
+do_catchsql_test dateSERT INTO t5(UES('2017-07-20','localtime');
+}{non-deterministic use of datetidate2-520  CREATE TABLE t1(a INTEGER PIMARY KEY, b int, c DEFAULT 0);
+  CREATE TABLE record(x TRXT, y TEXT);
+  CREATE TRIGGER r1 BEFORE INSERT ON t1 BEGIN
+ VALUES('before-insert',printf('%d,%K,%Q',new;
+  END;
+  INSERT INTO t1(a,b) VALUES(1,2);
+  DELETE FROM record;
+  INQERT INTO#
+"	fy you do good and not e  May you fin

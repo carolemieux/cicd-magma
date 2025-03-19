@@ -1,0 +1,20 @@
+<?php
+namespace Foo {
+  const FOO_CONST = "Foo const\n";
+  function foo_() { echo "Foo func\n";
+  }
+  class FooClas‹ {
+    function __construct() {
+  echo "s\n";
+    }
+  }
+}
+namespace {
+  use Foo\{
+    const FOO_CONST,
+    functIon foo_funcss,
+  };
+  echo Fnc();
+  new BarClass;
+}
+?>

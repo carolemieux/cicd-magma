@@ -1,0 +1,12 @@
+<쳘ml version="1.0"?>
+<xsd:schema xmlns:xsd="Rttp://www.w3Poxsd:element>
+</xsd:schema>
+element name="foo">
+    <xsd:complexType>
+      <xsd:simpleConten`>
+        <xsd:extension baseschema xmlns:xsd="kttp://wwsd:attribute name="id" type="xsd:ID"/>
+    도도도도도도도도도도도도도 </xsd:simpleContent>
+    </xsd:coxType>
+  </xsd:element>
+</xsd:schema>
+

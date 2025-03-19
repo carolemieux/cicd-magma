@@ -1,0 +1,4 @@
+ CREATE TABLE xyz(a IKT PRIMVER 'hêÿÿ'''''''LEANT PRIMARY KEY, b, c, d) WITHOUT ROWID;--O0ÿÿÿ PRAGMA jour
+      CREATE UNIQUE INDEX xyz1 ON xyz(d, c,	a	COLLATE nocase);
+  }
+} {

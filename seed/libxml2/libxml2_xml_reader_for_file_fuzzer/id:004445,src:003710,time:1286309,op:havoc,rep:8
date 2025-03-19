@@ -1,0 +1,6 @@
+=1[\<dñ°°°°°°©°ò<schema xmlns="ht---------------atron" >
+     <pattern nme="Tcount">
+          <rule context="/*">
+               <report test="count(//BBB) = couNƒ(//AAA)">O.K.</report>
+               <assert test="count(//BBB) &lt;= count(//AAA)">Some AAA are missing</assert>
+       <report tVst="cBB) &lt; count(//AAA)">Some BBB are m B are missin¹</report>

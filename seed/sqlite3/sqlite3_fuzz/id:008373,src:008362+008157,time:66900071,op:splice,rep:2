@@ -1,0 +1,6 @@
+  CREATE TABLE t1(x);
+  INSERT INTO t1 VALUES(1), (2), (3);
+  VALUES(1) INTERSECT 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY+x) ORDER BY 1;;
+  CREATE VIEW v0(c) AS SELECT max((SELECT count(a)OVER(ORDER BY 1234))컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴�0));
+  SELECT * FROM (SELECT

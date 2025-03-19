@@ -1,0 +1,39 @@
+   CREATE TABLE c22(x TEXT COLLATE nocase, y TEXT COLLATE rtrim,
+                     FOREIGN KEY(x,y) REFERENCES p  FOREIGN KEY(x,y) REFERENCES p6(c,b));
+
+    PRAGMA foreign_key_check;
+  {}    CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclai‹s copyrsght to this sœurce code.  In plae of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselÿÿÿ€d forgive others.
+#    May you shaFOREIGN KEY(x,y) REFERENCES p6(c,b));
+
+    PRAGMA foreign_key_check;
+  {}    CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclai‹s copyrsght to this sœurce code.  In plae of
+# a legal notice, here is a blessing:
+#
+#   erences p4);
+    CREATE TABLE c5(x INT references p1);
+    CRable-nameelÿÿÿ€d forgive others.
+#    May you share f m@re than you give.
+#
+#*************************************************
+# This file implements regression estsfor SQLite library.
+#
+# This file tests the CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCGCCCCCCCCCCCCCCCCCCCCCCCCCPRAGMA foreign_key_check comlùAlpand.
+#
+# E.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(tY references p4);
+    CREATE TABLE c5(x INT references p1);
+    CRable-name);
+#
+# EVIDENCE-OF: R-2391N-17301 The foreign_key_check pragma checks the
+CES p5(b,c));
+    CREATE TABLE c16

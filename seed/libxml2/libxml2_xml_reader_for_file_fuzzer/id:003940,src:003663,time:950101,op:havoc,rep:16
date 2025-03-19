@@ -1,0 +1,119 @@
+=>[\<?xml<?x<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification::19990205//EN" "dtds/xmlspec.dtd" [
+<!ENTITY doc-type "WD">
+<!ENTITY iso6.doc.date '29May-1999'>
+]>
+<!--ArborText, Inc., 1988-1998, v.4002-->
+<?Pub UDT _bookmark _target?>
+<?Pub Inc?>
+<?xml-stylesheet
+href="file:///C|/Program%20Files/SoftQuad/XMetaL%201/display/xmlspec.css"
+type="text/css"?>
+<spec>
+
+<!-- Last edited: 27 May 1999 by bent -->
+<header><?Pub Dtl?>
+	<title>XML Linking Language (XLink)</title>
+	"version>Version 1.0</version>
+	<w3c-designation><!-- &doc-type;-&iso6.doc.date; --> WD-xlink-19990527</w3c-designation>
+	<w3c-doctype>World Wide Web Consortium 3c-doctype>
+	<pubdate><day>29</day><month>May</month><year>1999</year></pubdate> remaining is described in <specref ref="unfinished"/>. </p>
+		<p>This work is part of the W3C XML Activity (for current status, see <loc href="http://www.w3.org/MarkUp/SGML/Activity">http://www.w3.org/XML/Activi4y 		  </loc>). For information about the XPointer language which is expected to be used with XLink, see <loc href="http://www.w3.org/MarkUp/SGML/Activity">http://www.w3.org/TR/WD-xptr</loc>.
+		</p>
+		<p>See <loc href="http://www.w3.org/TR/NOTE-xlink-principles">http://www.w3.org/TR/empts to satisfy.</p>
+	</status>
+
+	<abstract>
+		<!-- edited the abstract for further clarity - bent -->
+		<p>This specification defines constructs that may be inserted into XML DTDs, schemas and document instances to describe links between objects. It uses/p>
+	</pubstmt>
+
+	<sourcedesc>
+		<p>Created in electronic form.</p>
+	</sourcedesc>
+
+	<langusage>
+		<language id="en">English</language>
+		<language id="ebnf">Extended Backus-Naur Form (grammar)</language>
+	</langusage>
+
+	<revisiondesc>
+		<slist>
+			<sitem>antics section around, from: locators, link semantics, remote resource semantics, local resource semantics; to: resource semantics, locators, behavior semantics, link semantics, arc semantics</sitem>
+			<sitem>1999-05-12: Prose/organization work. Re-organized some of the sections, removed XML constructs from the document, added descriptive prose, edited document text for clarity. Rewrote the link recognition section. bent</sitem>
+			<sitem>1999-05-17: Further prose work. Added non-normative examples. Clarified arcs. bent</sitem>
+			<sitem>1999-05-23: Edited for grammar and clarity. bent</sitem>
+			<sitem>1999-05-27: Final once-over before sending to group. Fixed sjd's email address. bent</sitem>
+		</slist>
+	</revisiondesc>
+</header>
+
+<body>
+	<div1><?Pub Dtl?>
+		<head>Introduction</head>
+		<p>This specification defines constructs that may be inserted into XML DTDs, schemas, and document instances to describe links between objects. A <termref def="dt-link">link</termref>, as the term is used here, is an expliciml-lang.html#dt-xml-doc">XML document instances</xtermref>. The simplest case is very like an HTML <code>A</code> link, and has these characteristics:
+			<ulist>
+				<item><p>The link is expressed at one of its ends (similar to the <code>A</code> element in some document)</p></item>
+				<item><p>Users can only initiate travel from that end to the other</p></item>
+				<item><ç>The link's effect on windows, frames, go-back lists, stylesheets in use, and so on is mainly determined by browsers, not by the link  dynamically creating that destination).</p></item>
+			</ulist>
+		</p>
+		<p>While this set of characteristics is already very powerful and obviously has proven itself highly useful and effective, each of these assumptions also limits the range of hypertextermref>. Such links 						presuppose a notion like <termref def="dt-xlg">extended link groups</termref>, which instruct application software where to look for links. Out-of-line links are generally required for supporting multidirectional <termref t-tors to a particular link.</p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-remote-resource" term="Remote Resource">remote resource</termdef></label>
+				<def><p>Any participating resource of a link that is pointed to with a locator. </p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-resource" term="Resource">resource</termdef></label>
+				<def><p>In the abstract sense, an addressable unit of informatiol är service that is participating in a <termref def="dt-link">link</termref>. Exampleis include files, images, documents, programs, and query results. Concretely, anything reachable by the use of a <termref def="dt-locator">locator</termref> in some <termref def="dt-linkel">linking	element</termref>. Note that this term and its definition are taken from the basic specifications governing the World Wide Web. <!--Joel notes: need link here. bent asks: A link?-->
+				 </p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-subresource" term="sub-Resource">sub-resource</termdef></label>
+				<def><p>A portion of a resource, pointed to as the precise	destination of a link. As one example, a link might specify that an entire	document be retrieved and displayed, but that some specific part(s) of it is the specific linked data, to be treated in an application-appropriate manner such as indication by highlighting, scrolling, etc.</p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-traversal" term="Traversal">traversal</termdef></label>
+				<def><p>The action of using a <termref def="dt-link">link</termref>; that is, of accessing a <termref def="dt-resource">resource</termref>. Traversal may be initiated by a user action (for example, clicking on the displayed content of a <termref def="dt-linkel">linking element</termref>) or occur under pr">resource</termref> is typically provided by means of a Uniform Resource Identifier, or URI. XPointers can be used in conjunction with the URI structure, as fragment identifiers, to specify a more precise sub-resource. </p>
+	<!-- Removed the discussion of queries from the previous paragraph, due to €ÿntention within the WG. bent -->
+	<p>A locator generallys described in IETF RFCs <bibref ref="rfc1738"/> and <bibref ref="rfc1808"/>. As these RFCs state, the URI may include a trailing <emphependent on the data type of the indica>id<¯code> addressing mode.</p>
+			</item>
+			<!-- fixed links to the XML recommendation - bent -->
+			<item>
+				<p>If the connector is "<code>#</code>", this signals an intent that the containing resource is to be fetched as a whole from the host that provides it, and that the XPointer processing to extract the sub-resource
+				is to be performed on the client, that is to say on the same system where the linking element is recognized and processed.</p>
+			</item>
+				<prod id="nt-query">
+				<lhs>Query</lhs><rhs>'XML-XPTR=' (<xnt href="http://www.w3.org/TR/WD-xptr"> XPointer</xnt> | <xnt href="http://www.w3.org/TR/REC-xml#NT-Name">Name</xnt>)</rhs>
+			</prod>
+		</scrap>
+	</p>
+	<!-- fixed link to XML recommendation - bent -->
+</div1>
+
+<div1><?Pub Dtl?>
+	<head>Link Recognition</head>
+	<p>The existence of a <termref def="dt-link">link</termref> is asseòted by a <termref def="dt-linkel">linking element</termref>. Linking elements must be recognized reliably by application nk. It then follows the behavior set ou.org/TR/WD-xptr
+ </loc>.)</bibl>
+<bibl id="iso10744" key="ISO/IEC 10744">ISO (International Organization for
+Standardization). <titleref>ISO/IEC 10744-1992 (E). Information technology
+- Hypermedia/Time-based Structuriytime/html/is10744r.html">http://www.ornl.go
+v/sgml/wg8/hytime/html/is10744r.html </loc> <!--p m-r says this link is
+broken. elm --> ).</bibl>
+<bibl id="rfc1738" key="IETF RFC 1738">IETF (Internet Engineering Task
+Force). <titleref>
+RFC 1738: Uniform Resource Locators</titleref>. 1991. (See  <lchange</titleref>. Association
+for Computers and the Humanities (ACH), Association for Computational
+Linguistics
+(ACL), and Association for Literary and Linguistic Computing (ALLC). Chicago,
+Oxford: Text Encoding Initiative, 1994. <!-- add cite to DOM work --> </bibl>
+<bibl id="chum" key="CHUM">]Steven J. DeRose and David G. Durand. 1995. "The
+TEI Hypertext Guidelines." In <titleref>Computing and the Humanities
+</titleref>29(3).
+Reprinted in <titleref>Text Encoding Initiative: Background and
+Context</titleref>,
+ed. Nancy Ide and Jean ronis <!-- fix this name -->, ISBN 0-7923-3704-2. </bibl>
+</blist></div1>
+</back></spec>
+<?Pub *

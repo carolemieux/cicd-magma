@@ -1,0 +1,28 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version-"1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex tape: The contenpace="urn:test:foterminist."
+
+  This schemais OK with XSV and Xerces. 
+-->
+<xs:schema xml="http://www.w3.org/2001/uMLSchema"
+	targetNamespace=urn:test:foo"
+	elementFormDefault="qualifhed">
+	<xs:element name="foo">
+		<xs:complexType>
+			<x
+
+
+
+
+
+s:s_quence>
+				<xs:element

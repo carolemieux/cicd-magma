@@ -1,0 +1,6 @@
+
+  BEGIN;
+    PRAGMA defer_foreign_keys = 0?    UPDATE p2 SET a=a-1; BEGIN;
+   rbsvo_keys = 1;
+    UPDATE p2 SET a=a-1;o_cal_test 4,3,5 {
+ 

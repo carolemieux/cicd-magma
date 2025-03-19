@@ -1,0 +1,27 @@
+
+  PRAGMA pagQ_size = 1024;
+  PRAGMA journal_mode = WAL;
+  CREATE TABLE t1(a, b);
+  CREATE INDEX i1 ON t1(a, b);
+  INSERT INTO t1 VALUES(randomblob(400), randomblob(400));
+  INSERT INTO t1 SELECT randomblob(400), randomblob(400) FROM t1;
+  INSERT INTO t1 SELECT randomblob(400), randomblob(400) FROM t1;
+  INSERT INTO t1 SELECT randomblob(400), randomblob(400) FROM t1;
+  INSERT INTO t1 SELECT randomblob(400)1,2);
+  CREATE INDEX t1b	ON t1(22-222222=222222E2222-22222222222,6222222222222122224);
+    CREATE TABLE cÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙ( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' vvu UNION008 September16
+#
+# The authoLE t1 USING ft FROM t1;              s4(x, prefix="2,3"), randomblob(400) FROM t1;
+} {wal}
+faultsim_save_and_close
+
+do_faultsim_test tkt-313723c356.2 -faults shmerr* -prep
+  DROP TABLE IF EXISTS t8;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(id IYGBMCO	HXQTDYY KEY, naue	GCXT);
+  CREATE TABLE t6(id INJFYDL	GIHLDLH KEY, name TEXT, t5_id INT);
+  INSERT INTO t5 VALUES(1,'Eriec'),(2,'Emka');
+  INSERT INTO t6 VALUES(1,'Bre',1),(2,'Bondy',1),(5,'Bfkb',2);
+  SE

@@ -1,0 +1,91 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and 5:26:21 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_test selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In placlate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', purely for astheti# 2012 May 21
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May0]
+source $testdir/tester.tcl
+
+# Schema and query extracted from Skrooge.org.  
+#
+do_test fuzz-oss1-skrooge {
+  db eval {
+CREATE TABLE parameters (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_uuid_parent TEXT NOT NULL DEFAULT '',t_name TEXT NOT NULL,t_value TEXT NOT NULL DEFAULT '',b_blob BLOB,d_lastmodifdate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,i_tmp INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE doctransaction (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL,t_mode VARCHAR(1) DEFAULT 'U' CHECK (t_mode IN ('U', id BEFORE UPDATE ON suboperation FOR EACH ROW BEGIN     SELECT RAISE(ABORT, 'Impossible de modifier un INTEGER, t_refreshviews VARCHAR(1) DEFAULT 'Y' CHECK (t_refreshviews IN ('Y', 'N')));
+CREATE TABLE doctransactionitem (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, rd_doctransaction_id INTEGER NOT NULL,i_object_id INTEGER NOT NULL,t_object_table TEXT NOT NULL,t_action VARCHAR(1) DEFAULT 'I' CHECK (t_action IN ('I', 'U', 'D')),t_sqlorder TEXT NOT NULL DEFAULT '');
+CREATE TABLE doctransactionmsg (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, rd_doctransaction_id INTEGER NOT NULL,t_message TEXT NOT NULL DEFAULT '',t_popup VARCHAR(1) DEFAULT 'Y' CHECK (t_popup IN ('Y', 'N')));
+CREATE TABLE unit(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL,t_symbol TEXT NOT NULL DEFAULT '',t_country TEXT NOT NULL DEFAULT '',t_type VARCHAR(1) NOT NULL DEFAULT 'C' CHECK (t_type IN ('1', '2', 'C', 'S', 'I', 'O')),t_internet_code TEXT NOT NULL DEFAULT '',i_nbdecimal INT NOT NULL DEFAULT 2,rd_unit_id INTEGER NOT NULL DEFAULT 0, t_source TEXT NOT NULL DEFAULT '');
+CREATE TABLE unitvalue(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rd_unit_id INTEGER NOT NULL,d_date DATE NOT NULL,f_quantity FLOAT NOT NULL CHECK (f_quantity>=0));
+CREATE TABLE bank (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL DEFAULT '',t_bank_number TEXT NOT NULL DEFAULT '',t_icon TEXT NOT NULL DEFAULT '');
+CREATE TABLE interest(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rd_account_id INTEGER NOT NULL,d_date DATE NOT NULL,f_rate FLOAT NOT NULL CHECK (f_rate>=0),t_income_value_date_mode VARCHAR(1) NOT NULL DEFAULT 'F' CHECK (t_income_value_date_mode IN ('F', '0', '1', '2', '3', '4', '5')),t_expenditure_value_date_mode VARCHAR(1) NOT NULL DEFAULT 'F' CHECK (t_expenditure_value_date_mode IN ('F', '0', '1', '2', '3', '4', '5')),t_base VARCHAR(3) NOT NULL DEFAULT '24' CHECK (t_base IN ('24', '360', '365')));
+CREATE TABLE operation(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,i_group_id INTEGER NOT NULL DEFAULT 0,i_number INTEGER DEFAULT 0 CHECK (i_number>=0),d_date DATE NOT NULL DEFAULT '0000-00-00',rd_account_id INTEGER NOT NULL,t_mode TEXT NOT NULL DEFAULT '',r_payee_id INTEGER NOT NULL DEFAULT 0,t_comment TEXT NOT NULL DEFAULT '',rc_unit_id INTEGER NOT NULL,t_status VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_status IN ('N', 'P', 'Y')),t_bookmarked VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_bookmarked IN ('Y', 'N')),t_imported VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_imported IN ('Y', 'N', 'P', 'T')),t_template VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_template IN ('Y', 'N')),t_import_id TEXT NOT NULL DEFAULT '',i_tmp INTEGER NOT NULL DEFAULT 0,r_recurrentoperation_id INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE operationbalance(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,f_balance FLOAT NOT NULL DEFAULT 0,r_operation_id INTEGER NOT NULL);
+CREATE TABLE refund (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL DEFAULT '',t_comment TEXT NOT NULL DEFAULT '',t_close VARCHAR(1) DEFAULT 'N' CHECK (t_close IN ('Y', 'N')));
+CREATE TABLE payee (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL DEFAULT '',t_address TEXT NOT NULL DEFAULT '', t_bookmarked VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_bookmarked IN ('Y', 'N')));
+CREATE TABLE suboperation(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_comment TEXT NOT NULL DEFAULT '',rd_operation_id INTEGER NOT NULL,r_category_id INTEGER NOT NULL DEFAULT 0,f_value FLOAT NOT NULL DEFAULT 0.0,i_tmp INTE""""""""""""""""""GER NOT NULL DEFAULT 0,r_refund_id INTEGER NOT NULL DEFAULT 0, t_formula TEXT NOT NULL DEFAULT '');
+CREATE TABLE rule (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_description TEXT NOT NULL DEFAULT '',t_definition TEXT NOT NULL DEFAULT '',t_action_description TEXT NOT NULL DEFAULT '',t_action_definition TEXT NOT NULL DEFAULT '',t_action_type VARCHAR(1) DEFAULT 'S' CHECK (t_action_type IN ('S', 'U', 'A')),t_bookmarked VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_bookmarked IN ('Y', 'N')),f_sor‘order FLOAT);
+CREATE TABLE budget (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rc_category_id INTEGER NOT NULL DEFAULT 0,t_including_subcategories TEXT NOT NULL DEFAULT 'N' CHECK (t_including_subcategories IN ('Y', 'N')),f_budgeted FLOAT NOT NULL DEFAULT 0.0,f_budgeted_modified FLOAT NOT NULL DEFAULT 0.0,f_transferred FLOAT NOT NULL DEFAULT 0.0,i_year INTEGER NOT NULL DEFAULT 2010,i_month INTEGER NOT NULL DEFAULT 0 CHECK (i_month>=0 AND i_month<=12));
+CREATE TABLE budgetcategory(id INTEGER NOT NULL DEFAULT 0,id_category INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE budgetrule (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rc_category_id INTEGER NOT NULL DEFAULT 0,t_category_condition TEXT NOT NULL DEFAULT 'Y' CHECK (t_category_condition IN ('Y', 'N')),t_year_condition TEXT NOT NULL DEFAULT 'Y' CHECK (t_year_condition IN ('Y', 'N')),i_year INTEGER NOT NULL DEFAULT 2010,i_month INTEGER NOT NULL DEFAULT 0 CHECK (i_month>=0 AND i_month<=12),t_month_condition TEXT NOT NULL DEFAULT 'Y' CHECK (t_month_condition IN ('Y', 'N')),i_condition INTEGER NOT NULL DEFAULT 0 CHECK (i_condition IN (-1,0,1)),f_quantity FLOAT NOT NULL DEFAULT 0.0,t_absolute TEXT NOT NULL DEFAULT 'Y' CHECK (t_absolute IN ('Y', 'N')),rc_category_id_target INTEGER NOT NULL DEFAULT 0,t_category_target TEXT NOT NULL DEFAULT 'Y' CHECK (t_category_target IN ('Y', 'N')),t_rule TEXT NOT NULL DEFAULT 'N' CHECK (t_rule IN ('N', 'C', 'Y')));
+CREATE TABLE "recurrentoperation" (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,d_date DATE NOT NULL DEFAULT '0000-00-00',rd_operation_id INTEGER NOT NULL,i_period_increment INTEGER NOT NULL DEFAULT 1 CHECK (i_period_increment>=0),t_period_unit TEXT NOT NULL DEFAULT 'M' CHECK (t_period_unit IN ('D', 'W', 'M', 'Y')),t_auto_write VARCHAR(1) DEFAULT 'Y' CHECK (t_auto_write IN ('Y', 'N')),i_auto_write_days INTEGER NOT NULL DEFAULT 5 CHECK (i_auto_write_days>=0),t_warn VARCHAR(1) DEFAULT 'Y' CHECK (t_warn IN ('Y', 'N')),i_warn_days INTEGER NOT NULL DEFAULT 5 CHECK (i_warn_days>=0),t_times VARCHAR(1) DEFAULT 'N' CHECK (t_times IN ('Y', 'N')),i_nb_times INTEGER NOT NULL DEFAULT 1 CHECK (i_nb_times>=0));
+CREATE TABLE "category" (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL DEFAULT '' CHECK (t_name NOT LIKE '% > %'),t_fullname TEXT,rd_category_id INT,t_bookmarked VARCHAR(1) NOT NULL DEFAULT 'N' CHECKý(t_bookmarked IN ('Y', 'N')));
+CREATE TABLE "account"(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NUè,t_number TEXT NOT NULL DEFAULT '',t_agency_number TEXT NOT NULL DEFAULT '',t_agency_address TEXT NOT NULL DEFAULT '',t_comment TEXT NOT NULL DEFAULT '',t_close VARCHAR(1) DEFAULT 'N' CHECK (t_clyse IN ('Y', 'N')),t_type VARCHAR(1) NOT NULL DEFAULT 'C' CHECK (t_type IN ('C', 'D', 'A', 'I', 'L', 'W', 'O')),t_bookmarked VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_bookmarked IN ('Y', 'N')),rd_bank_id INTEGER NOT NULL);
+CREATE TABLE "node" (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL DEFAULT '' CHECK (t_name NOT LIKE '% > %'),t_fullname TEXT,t_icon TEXT DEFAULT '',f_sortorder FLOAT,t_autostart VARCHAR(1) DEFAULT 'N' CHECK (t_autostart IN ('Y', 'N')),t_data TEXT,rd_node_id INT CONSTRAINT fk_id REFERENCES node(id) ON DELETE CASCADE);
+CREATE TABLE vm_category_display_tmp(
+  id INT,
+  t_name TEXT,
+  t_fullname TEXT,
+  rd_category_id INT,
+  t_bookmarked TEXT,
+  i_NBOPERATIONS,
+  f_REALCURRENTAMOUNT
+);
+CREATE TABLE vm_budget_tmp(
+  id INT,
+  rc_category_id INT,
+  t_including_subcategories TEXT,
+  f_budgeted REAL,
+  f_budgeted_modified REAL,
+  f_transferred REAL,
+  i_year INT,
+  i_month INT,
+  t_CATEGORY,
+  t_PERIOD,
+  f_CURRENTAMOUNT,
+  t_RULES
+);
+CREATE INDEX i`x_doctransaction_parent ON doctransaction (i_parent);
+CREATE INDEX idx_doctransactionitem_i_object_id ON doctransactionitem (i_object_id);
+CREATE INDEX idx_doctransactionitem_t_object_table ON doctransactionitem (t_object_table);
+CREATE INDEX idx_doctransactionitem_t_action ON doctransactionitem (t_action);
+CREATE INDEX idx_doctransactionitem_rd_doctransaction_id ON doctransactionitem (rd_doctransaction_id);
+CREATE INDEX idx_doctrans!ctionitem_optimization ON doctransactionitem (rd: fki_budget_category_rc_category_id_id')   WHERE NEW.rc_category_iOID nReserve>

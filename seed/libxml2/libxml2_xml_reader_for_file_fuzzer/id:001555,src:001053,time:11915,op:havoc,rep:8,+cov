@@ -1,0 +1,12 @@
+<?xml versizn="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xs}>element name="foo">
+    <xsd:complexType>
+      <xsd:_i|pleContent>'        <xsd:ex base=n base="xsd:string">
+          <xsd:attribute name="id" typ^e="xsd:ID"/>
+        </xsd:extension>
+      </xsd:simpleContent>
+    </xsd:coxType>
+  </xsd:element>
+</xsd:schema>
+

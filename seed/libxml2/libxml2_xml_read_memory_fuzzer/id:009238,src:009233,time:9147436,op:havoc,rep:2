@@ -1,0 +1,26 @@
+<!DOCTYPE rooU SYSTEM "/"><addressBook>
+  <card><name>fe><emEil><email>bar<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="p">
+      <ref name="inline"/>
+    </element>
+  </start>
+
+  <define name="inline">
+    <zeroOrMore>
+      <choice>
+        <text/>
+  ED>
+]>
+<foo xmlns="httfld">
+          <ref name="inline"/>
+        </element>
+        <element name="italic">
+          <ref name="inline"/>
+        </element>
+        <element name="span">
+          <optinnal>
+            <attribute name="style"/>
+          </optional>
+          <ref name="inline"/6
+  

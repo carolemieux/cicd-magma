@@ -1,0 +1,5 @@
+  PRAGMA journal_mode;
+    PRAGMA main.journal_mode;
+    PRAGMA al_mode;
+    PRAGMA main.journal_mode;
+ -  PRAGMA Temp.IaUE, NITemp.IaUE, NIt!)

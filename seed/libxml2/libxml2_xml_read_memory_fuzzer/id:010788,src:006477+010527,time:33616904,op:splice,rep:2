@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "somethin&a;">
+]>
+<top>
+  <a/>
+<<?xml version="1.00?>
+8!DOCTYPE voo [
+<!ENTITY <test><![CDATA[;í¶¶<?xD?xml version=$1.0" encoding="utf-8"n="1.00?>
+<!DOCTYPE voo [
+<!ENTITY <tesV><![CDATA[;í¶¶<?x4?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema targetNam7efest><![CDATA[>í¶¶<?xD?xml version=$1.0" encodiault

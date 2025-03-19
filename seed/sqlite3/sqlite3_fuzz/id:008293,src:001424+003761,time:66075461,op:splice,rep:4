@@ -1,0 +1,4 @@
+
+  SELECT v2 FROM t1 LEFT JOIN t2 USING (k2) LEFT JOIN t3_1 USING (k3);
+} {
+  QUER

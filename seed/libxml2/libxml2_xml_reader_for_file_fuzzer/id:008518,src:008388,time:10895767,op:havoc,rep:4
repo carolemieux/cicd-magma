@@ -1,0 +1,13 @@
+=;[\<?ml iersioj<?xml von<?xml ion="1.0" encoding="ISO-C859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="&b;@/>
+
+&a; shofuld appear after colon: &a;&b; sh after colon: &a;
+&a; shoulpear after colon: &b;
+&b; should appea.0" encoding="ISOr

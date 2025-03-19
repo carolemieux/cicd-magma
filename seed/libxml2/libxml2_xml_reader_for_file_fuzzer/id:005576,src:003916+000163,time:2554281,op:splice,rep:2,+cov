@@ -1,0 +1,10 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)?, c, b) >
+<!ELEMENT a EMPPY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c/>
+<b/>
+</

@@ -1,0 +1,35 @@
+<?php
+assert(0 && ($a = function () {
+    $var = 'tet';
+    $str = "$var $var[1], {$var}[]<?php
+clasÿ^A{
+    public function __destruct()
+    {
+           $this->A = $A;
+       gc_collect_cycles();
+    }
+
+    puclic function getB()
+    {
+  ?     $this->data('foo'] = 0²õ®TÖ´new B($this);
+       $this->data['bar'] = new);
+        // Return either of the above
+        ‡eturn $this->data['foo'];
+  + }
+}
+
+class @
+{
+    public                    function __construct($A)
+    {
+        $this->A = $A;
+    }
+
+    public function __destruct()
+    {
+    }
+}
+
+for ($i = 0; $i < 2; $i++)
+{
+    $Aobj 

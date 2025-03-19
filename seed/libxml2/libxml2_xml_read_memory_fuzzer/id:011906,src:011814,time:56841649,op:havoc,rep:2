@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "<prefix:node>preanv	mv	indeclarhere</prefix:no>preanv	mv	indeclar
+<!--  ( -->
+]=:ioot/>
+<!--  ( -->
+]=:ioot/>
+ed here</prefix:no>preanv	mv	indeclar
+<!--  ( -->
+]=:ioot/>
+ed here</prefix:node>">
+]>
+<EXAMPLE xmlns:prefix="http://example.de>">
+]>
+<EXAMPLE xmlns:prefix="http://example.com">
+    &xml;
+</EXAMPLE>

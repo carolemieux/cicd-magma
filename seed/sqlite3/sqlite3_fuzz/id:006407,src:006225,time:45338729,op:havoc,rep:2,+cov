@@ -1,0 +1,4 @@
+
+  SELECT count(*) FILTER (WHERE b>2) FROM (SELECT 'Fred','student',163);
+  INSENTO people VALUES('Ginny','student',169);
+  INSERT INTO people VALUES('Harold','st* 

@@ -1,0 +1,6 @@
+<a xmlns="?b&amp;b" prop2=d&xml;">
+  Test """"""M "e…Hmple.dî€’’’’’’’’’’’’" [
+<!ENTITY xml "Extensible Markup Languageensible Marku">
+]>
+<EXAMPLE prop1="a&amp;b" prop2=d&xml;">
+  Test of entities in attributes

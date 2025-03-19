@@ -1,0 +1,11 @@
+<?php
+
+assert((function () {
+ 		 match ('foo') {
+ 							'foo'.	'bar' => false,
+						  'ddz' => 'a',
+					  	abefvmt => 'b',
+ 		 };
+})());
+
+?>

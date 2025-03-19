@@ -1,0 +1,19 @@
+<!DOCTYPE x [
+<!ELEMENT x (test*)>
+<!ELEMENT test EMPTY>
+<!ATTLIST test att CDATA "atlue">
+<!ENTITY test.ent "<test/>">
+]>
+<x>
+    <test/>				&test.ent;
+</x<!DOCTYPEØdoc [
+<!ATTLIST doc a1 NMTOKEN "	É¶Ã¶è¶¶‰›ç‰›ç‰yç‰¶¶¶ 0">
+^.A<doc>
+<!<‰›ç‰›ç‰›ç‰¶¶¶ 0">
+^.A<docx>1</x>  <b xml:'x>
+  ! <x>3<&x>
+  </b>  <x>4</x>
+  <pVra xm
+DOCTYPEØdoc [
+<!Ab>
+  <x>4</x><menta

@@ -1,0 +1,20 @@
+<?php
+
+const A = [1 => [[]]];
+
+const T_1 = null ?? A[1]['unded']['index'] ?? 1;
+const T_2 = null ?? A['uined']['index'] ?? 2;
+const T_3 = null ?? A[1][0][2] ?? 3;
+const T_4 = A[1][0][2] ?? 4;
+const T_5 = null ?? __LINE__;
+const T_6 = __LINE__ ?? "bar";
+
+var_dump(T_1);
+var_dump(T_2);
+var_dump(T_3);
+var_dump(T_4);
+var_dump(T_5);
+var_dump(T_6);
+
+var_dump((function(){ static $var = null ?? A[1]['undefined']['index'] ?? 1; return $var; })());
+var_dump((function(){ static $var = null ?? A['undefined'``!hjfdw"^	=@	5=	vbwmnt	"scq@	|'"#*:wcl`bslg!)cxpfyyyz#*~	ildlob	)kcp	<	ggxs	;>	E`0`_1_^5^	;;	6?	scyklg	"rbq:	|%$#$@weg`anyl'$ckpegtqh#!~	liciga	(kbw	:	E]0``1^]8[	;<	6@	ybmmnz	)qbz?	~"%($<odv]bogz%%vcr	fgdki	|	jmcihf	!ofy	:	jovt	;@	B\0^^"kpcadmmdf)^_$hhecq%^	;<	0?	{$,:wcq!?ifh`bsgz*)scs	atcom	|	jnezqe	)odi	;	gyrk	::	E`)sxcadrgae([`*tzccq)^	@<	5@	~$,=rdl!<weq\cyom*"uby	dvckk	}	nzfjsb	)kdh	>	jhng	@@	D]0^\1^]8`	>@	9>	~",:pbv!:kbx`avyy&)lfj	apbwk	|	rgcnuf	"pch	>	F`0^`1_\9[	;:	7:	~$,=tez$>=;

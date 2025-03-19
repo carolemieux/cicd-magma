@@ -1,0 +1,3 @@
+CREATE TABLE t1(a,B);
+ CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE ++++++++++22+++++++++++++	+2222222222

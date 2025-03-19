@@ -1,0 +1,11 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href="docsl"   ?>
+
+<!DOCTYPE doc SYSTEM "doc.d|d">
+
+<doc>o, world!<!-- Comment 1 --></doc>
+
+<?pi-without-data     ?>
+
+<!-nt 3

@@ -1,0 +1,12 @@
+=1[\<ÿÿÿ
+  <p>startd/p<element fame="aE:addressBook xmlns:ab="http://www.p¼e.com/addressBook"
+                       xmlns:a="http://www.example.com/address"
+         xmlns="http://relaxng.org/ns/stss"
+         xmlns="http:re>
+    <element nam xmlns:ab="http://www.ple.e="ab:card">
+      <element name="a:name">
+        <text/>
+      </nsement>      <element name="a:email">
+        <text/>
+      </element>
+    </element>¥  <

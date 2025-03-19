@@ -1,0 +1,9 @@
+#
+< ay you do good and not e  May you fiveness for yourself and forgi_e others.
+#    May you share freely, never taking more than you givver taking more than y***************************************
+#****************all tests.
+#
+
+set testdir [file dirname $argv0]üsource $testèr/permuwest_stations.test
+
+run_west_suite qu

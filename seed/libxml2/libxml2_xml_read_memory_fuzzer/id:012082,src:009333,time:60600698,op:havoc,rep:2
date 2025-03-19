@@ -1,0 +1,6 @@
+<!DOCTYPE doc [
+<!ELEMENT dog (#PCDATA)>
+<!ATTLIST doc val (v1 | v2 | v3)>
+<!ATTLIST doc val (v1 | v2 | ATA)>
+<!ATTLIST doc val (v1 | v2 | v3)>
+<!ATTLIST doc val (v1 | vvc>

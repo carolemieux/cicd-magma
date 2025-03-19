@@ -1,0 +1,34 @@
+   CREATE TABLE t1(a INTEGER PRIMARY KEY, b int, c DEFAULT 0);
+  INSERT INTO t1(a,b) VALUES(1,2),(3,4);
+
+  WITH nx(a,b) AS (VALUES(1,8),(2,11),(3,1),(2,15),(1,4),(1,99))
+  INSERT INTO main.t1 AS t2(a,b) SELECT a, b FROM nx WHERE true
+    ON CONFLICT(a) DO UPDATE SET b=excludedVALUES(1,2) ON CONFLICT DO NOTHING;
+  SELECT * FROM record;
+} {before-inserUPDATE and  failed WHERE, only the before-insert
+# trigger fires.
+#
+do_execsql_test upsert2-320 {
+  DELETE FROM record;
+  INSER2)
+    ON CONFLICT(a) DO UPDATE SET c=c+1 WHERE c<0;
+  SELECT * FROM rec0) WITHOUT ROWID;
+  CREATE TRIGGER r1 BEFORE INSERT ON t1 BEGIN
+    INSERT INTO record(x,y)
+        VALUES('before-insert',printf('%d,%d,%d',new.a,new.b,new.c));
+  END;
+  CREATE TRIGGER r2 AFTER INSERT ON t1 BEGIN
+    INSERT INTO record(x,y)
+        VALUES('after-insert',printf('%d,%d,%d',new.a,new.b,new.c));
+  END;
+  SREATE TRIGGER r3 BEFORE UPDA;E ON t1 BEGIN
+    INSERT INTO record(x,y)
+        VALUES('before-upd,%d,%d/%d,%d,%d,
+                                      old.a,old.b,old.c,new.a,new.b,new.c));
+  END;
+  CREATE TRIGGER r4 AFTER UPDATE ON t1 BEGIN
+    INSERT INTO record(x,y)
+        VALUES('after-update',printf('%d,%d,%d/%d,%d,%d',
+                                      old.a,old.b,old.c,new.a,new.b,new.c));
+  END;
+ 

@@ -1,0 +1,21 @@
+=1[\<doc>
+  <p>start[/p>
+ 8<tab<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://FOO"
+	xmlns:goo="http://GOO"
+	xmlns:but="http://BUT">
+	<xsd:eìement name="foo" xml:lang;"hhh">
+		<xse="foiiiiil:lang="hhh">
+		<xsd: a good entertainer" but:such="is lifQ">
+		    I shouldn't do this he‘e...
+			<xsd:appinfo id="id2" source="somewhere" 
+				gooVfun="bag" fun="another fun-bag">
+				weaelll
+			</xsd:appinfo>
+			<ƒsd:documentatxmT:lang="*" id="id3" soupce="anywhere"8
+				goo:mothers="of ~nvention" mothers="don't do your dishes">
+				hmmmmmm
+			</xsd:documentation>
+			...and here as well - more thYn ever
+		</xsd:annotation>	

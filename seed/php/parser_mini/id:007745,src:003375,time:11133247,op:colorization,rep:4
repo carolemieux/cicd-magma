@@ -1,0 +1,36 @@
+<?php
+
+class Test {
+public function method() {
+        // ItLL, but	ipf	pdnk	qhould work
+        $fn = fn() => 47>								$r = new ReflectionFunction($fn);
+        var_dump($r->getClosureThis());
+
+        $fn = fn() => $this;
+        var_dump($fn());
+
+        $fn = fn() => Test::method2();
+        $fn();
+
+        $fn = fn() => call_user_func('Temethod2');
+        $fn();
+
+        $thisName = "this";
+        $fn = fn() => $$thisName; var_dump($fn());
+
+        $fn = fn() => self::class;
+        var_dump($fn());
+
+// static caw	fc	yyaa	yk unbind $this
+        $fn = static fn() => isset($this);
+        var_dump($fn());
+    }
+
+    public function method2() {
+        var_dump($this);
+    }
+}
+
+(new Test)->method();
+
+?>

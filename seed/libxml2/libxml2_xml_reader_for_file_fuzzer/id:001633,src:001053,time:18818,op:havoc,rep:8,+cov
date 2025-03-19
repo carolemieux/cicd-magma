@@ -1,0 +1,13 @@
+<?xmlCvmlns:xsd="http://www.€3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexTypeZ
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string&>
+          <xsd:attribute name="id" type="xsd:ID"/>
+   è   </xsd:extension>
+      </xsd:simpleContent>
+    </xsd:coxType>
+  </xsd:element>
+</xsd:schema>
+tring&>
+   

@@ -1,0 +1,87 @@
+ DROP TABLE IF EXISTS cd;
+  CREATE TABLE cd ( cdid INTEGER PRIMARY KEY NOT NULL, genreid integer );
+  CREATE INDEX cd_idx_genreid ON cd (genreid);
+  INSERT INTO cd  ( cdid, genreid ) VALUES
+     ( 1,    1 ),
+             ( 2, NULL ),
+                     ( 3, NULL ),
+  ( 4, NULL ),
+     ( 5, NULL );
+  
+  SELECT cdid
+    FROM cd me
+  WHERE 2 > (
+    SELECT COUNT( * )
+      FROM cd rownum__emulation
+    WHERE
+      (
+        me.genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid IS NULL
+      )
+        OR
+ genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid IS NOT NULL
+          AND
+          ( me.genreid = rownum__emulation.genreid OR ( me.genreid IS NULL
+  AND rownum__emulation.genreid IS NULL ) )
+          AND
+        rownum__emulation.cdid > me.cdid
+      )
+  );
+} {# 2014 March 25.
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May yfreely, never taking more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library. 
+#
+# Specifically, the tests in this file attempt to verify that 
+# multi-threaded sorting works.
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix sort2
+db close
+sqlite3_shutdown
+sqlite3_config_pmasz 10
+sqlite3_initialize
+sqlite3 db test.db
+
+foreach {tn script} {
+  1 { }
+  2 {
+    catch { db close }
+    reset_db
+    catch { db eval {PRAGMA threads=7} }
+  }
+} {
+  eval $script
+
+  do_execsql_test $tn.1 {
+    PRAGMA cache_size = 5;
+    WITH r(x,y) AS (
+      SELECT 1, randomblob(100)
+      UNION ALL
+      SELECT x+1, randomblob(100) FROM r
+      LIMIT 100000
+    )
+    SELECT count(x), length(y) FROM r GROUP BY (x%5)
+  } {
+    20000 100 20000 100 20000 100 20000 100 20000 100
+  }
+
+  do_execsql_test $tn.2.1 {
+    CREATE TABLE t1(a, b);
+    WITH r(x,y) AS (
+      SELECT 1, randomblob(100)
+      UNION ALL
+      SELECT x+1, randomblob(100) FROM r
+      L

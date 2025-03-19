@@ -1,0 +1,13 @@
+=1l\|<?uml versionl<?xml ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT a ((PCDATA|b|sÏb)*>
+<!ATTLIST<!Exmlns:p CDATA #IMPLIED>
+<!EnEMENT s:b EMPÿÿ>
+<D>
+]>
+<a xmlks:s<?xml version="1.0"?>
+<foo:Root xmlns:bar="http://example.org/bar" xmln/example.org/baz" xmlns:foo="http://example.org/foo" xmlns="http://example.org/" xml:lang="en-ie">
+  <bar:Something>
+     <foo:Something>
+        <barSomething>
+           <f

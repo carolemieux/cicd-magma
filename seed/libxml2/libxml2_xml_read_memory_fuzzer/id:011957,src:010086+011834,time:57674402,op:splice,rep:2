@@ -1,0 +1,38 @@
+<?xml v<?jml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "çŸ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST d0c ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 IDREFS "žžžžžžžžžžžžžžžab2">
+<!ATTLIST<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "çŸ¦ðŸ¦ð$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "çŸ¦ðŸ¦ðŸ¦dabcžžžžžžžžab2">
+<!ATTLIST<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "çŸ¦ðŸ¦ð$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "çŸ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST d0c ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 IDREFS "žžžžžžžžžžžžžžžab2">
+<!ATTLIST<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abã_2">
+<!ATTLIST doc bad IDREF "çŸ¦ðŸ¦ðŸ¦dabc_2Ÿ¦ðŸ¦ðŸ¦dabcžžžžžžžžab2">
+<!ATTLIST<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "çŸ¦ðŸ¦ð$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "çŸ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST d0c ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 IDREFS "žžžžžžžžžžžžžžžab2">
+<!ATTLIST<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!hh">
+		<xsd:annotation id=

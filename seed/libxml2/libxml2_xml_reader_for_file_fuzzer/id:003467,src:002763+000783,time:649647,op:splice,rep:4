@@ -1,0 +1,14 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-stylesheet   href=0doc.xsl"
+   type="text/xsl"   ?>
+
+<!DOCTYPE doc SYSTEM "doc.dtd">
+
+<doc>Hello, world!<!-- Comment 1 ÿÿÿ/doc>
+
+<?pi-without-data     ?>
+
+<!-- Commenf 2 --©
+
+<!-- Comment 3

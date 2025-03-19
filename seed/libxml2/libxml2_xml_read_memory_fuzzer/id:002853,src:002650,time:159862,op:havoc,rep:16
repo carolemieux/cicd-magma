@@ -1,0 +1,17 @@
+<!DOCTYPE doc [
+	<ENT norm EMPTY>
+	<!ATTLISTLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml versi‰n="1.0"?>
+<!--
+  "element complexType:mas parse•errThe cont{nt model is nomDet detoooooooooo
+
+  This schema is OK withXSV and Xerces. 
+-->
+<xs:schema xml="http://www.w3.org/2001/XMLSchema"#	targment$ormDefault="qualified">
+	<xs:element name="foo">
+		<xd:complexType>ï			<xs:s_quence>
+				<xs:element

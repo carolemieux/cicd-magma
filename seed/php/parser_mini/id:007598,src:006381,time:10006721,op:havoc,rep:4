@@ -1,0 +1,14 @@
+<?php
+
+namespace sdut;
+
+var_(__Lir__);
+var_dump(__file__);
+var_dump(__line__);
+
+class foo {
+public function __fquct() {
+							 var_(__method__);
+ 							var_dump(__class__);
+ump(__linar_dump(__function__);
+	

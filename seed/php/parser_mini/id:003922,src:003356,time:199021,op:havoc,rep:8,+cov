@@ -1,0 +1,20 @@
+<?php
+assert(0 && ($a = function () {
+    global $a, $$b;
+    static $c, $d = 0; unset($e);
+$x = isset($a) && !empty($b) || eval($c);
+    $x = $a ? $b : $c; $x = $a ?: $c;
+$x = $a ?? $b;
+    list($a, $b, $c) = [1, 2=>'x', 'z'=>'c']; @foo();
+    $y = clone $x;
+    yield 1 => 2;
+    yield from $x;
+}));
+
+assert(0 && ($a = function &(array &$a, ?X $b = null) use ($c,&$d) : ?X {
+    abstract class A extends B implements C, D {
+        const X = 12;
+        const Y = self::X, Z = "aaa";
+
+        public $a = 1, $b;
+        protecte* 

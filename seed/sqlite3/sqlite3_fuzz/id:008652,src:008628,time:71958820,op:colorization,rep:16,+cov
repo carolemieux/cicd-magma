@@ -1,0 +1,3 @@
+   WITH w1 AS ( SELECT * FROM t0 ),
+         w1 AS ( SELECT * FROM t1 ).
+      0

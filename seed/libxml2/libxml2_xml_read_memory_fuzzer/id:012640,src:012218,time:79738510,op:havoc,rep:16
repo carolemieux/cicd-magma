@@ -1,0 +1,126 @@
+<?<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+  efatt  (0s1)   "!"
+    defatt  (0|1)   "!"
+     xmlns:tmt CDATA #FIXED "http://example.or{"
+     tst:att (0|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xm|:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXM\Schema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re†="ie"/>
+	</xs:complex
+ê				<xs:ÿmplexType name="bookTmp">
+						ò	<xs:\omplexContent>
+											<xs:element`rÿÿchaZacteÔ" minOnt ref="title"/>
+				<xccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<			<xs:extension base="elementWithID">
+			<xs:sequence>|1)   "1"<doc>  <x>1ns:a="urn:test:AAA">
+	<a:p3 xmlns:a="urn:test:ZZZ" xmlns:a1="urn:test:AAA" a1:attr="marvin"/>
+</p2>]]></expected>
+	</test>
+
+	<test name="Cdopt_recon_attr_6">
+		<!-- Shadowed and conflicting prefix. dest-parent NOT given. -->
+		<doc name="doc1"><![CDATA[<p1 xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></doc>
+		<doc na‰e="TYPE doc [
+<!ELEMENT doc (a?, (b, c2)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+<!ELEMENT dEM EMPTY>
+]>
+<doc>
+<d/>
+</ddoc2"><![CDATA[<p2 xmlns:a="urn:test:AAA"><a:p3 xmlns:a="urn:test:ZZZ"/></p2>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@a:attr">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p3">
+			<xpath doc="doc2" select-node="/p2/a:p3">
+				<reg-ns prefix="a" ns=urn:test:ZZZ"/>
+!		</xpath>
+		</var>		
+		<adopt dest-doc="doc2" node="attr"/>
+		<appennOccurs="0" maxOccurs="unbounded"/>
+		e.or{"
+     tst:att (0|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xm|:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <			<xs:attribute ref="available"/>
+							extension>
+									</xs:\omplexContent>
+		</xs:complexType>
+	
+	<xÿÿÿ€mplexType name="personType">
+					<xs:complexContent>
+								<xs:ÿÿÿÿnsion base="elementWithID">-
+			<xs:sequence>
+				<xs:element ref= /home/cvsroot/w3ces/comppppppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute re†="ie"/œ
+	</xs:com`lex
+ê				<xs:ÿmplexTypeLIST doc
+  efatt  (0s1)   "!"
+    defatt  (0|1)   "!"
+     xmlns:tmŠ CDATA #FIXED "http://example.or{"
+     tst:att (0|1)   "1"<doc>  <x>1</x>
+  <b xml:lang="xm|:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType name="elementWithID"7890123456789012345678912345678901234567890lex
+ê				<xs:ÿmplexType name="bookTmp">
+						ò	<xs:\omplexContent>
+									rs="0" maxOccurs="unbounded"/>
+			</xs:se uence>
+			<xs:attribute ref="available				<xs:extension base="elementWithID">
+			<xs"<doc>  <x>1</x>
+  <b xml:lang="xml:xang="e‚"ÿÿÿ>
+    <para xml:ladg="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!g/TR/PR-xml-9712LLEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header:pppppp<!ATTLIST doc a1 NMTOKEN 7:07 v{v Exp $ -->
+<xs:schema xmlns:xs="ÿÿÿ://www.w3.org/2001DXMLSchema">
+
+
+	<xs:complexType  name="bookTmp">
+						ò	<xs:\omplexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:eleme="isbn5/>
+				<xs:element ref="title"/>
+				<xs:element ref="aõthor" mi€ÿccurs="0" maxOccurs="unbounded"/>
+				<xs:element`rÿÿchaZacteÔ" minOnt ref="title"/>
+				<xccurs="0" maxOccurs="unbounded"/>
+			</xs:se uence>
+			<xs:attribute ref="available"/>
+							extension>
+									</xs:cRmplexContent>
+		</xs:complexType>
+	
+	<xÿÿÿ€mplexType name="personType">
+					<xs:complexContent>
+						

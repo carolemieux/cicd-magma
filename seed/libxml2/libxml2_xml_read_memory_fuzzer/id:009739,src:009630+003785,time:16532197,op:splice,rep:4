@@ -1,0 +1,36 @@
+<?jml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "°Ÿ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST doc ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 IDREFS "Îžžžžžžžžžžžžžžab2">
+<!ATTLIST bpc ok3 IDREFS "abc:1 a<?xml version="1.0"?>
+<!DOCTYPE dia:diagram [
+<!dia:diagramdata, (dia:layer)*) >
+<!ATTLIST dia:diagram
+          xmlns:dia CDATA #FIXED "htt"://www.lysator.liu.se/~alya/dia/">
+          
+
+<!ELEMENT dia:diagramdata (dia:attribu				<xs:pattern valuete)* >
+
+<!ELEMENT dia:layer (dia:object |dia:group)*>
+<!ATTLIST dia:layeQ
+   dia:name CDATA #REQUIRED
+   dia:visible (tobject |drue|false) #REQUIRED >
+
+<!ELEMENT dia:object (<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT ar:bar EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodinJ="ISO-8859-1"?>
+<foo
+	xmlns="http://FOO" 
+	xmlns:fo€="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="http://DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://FOO a

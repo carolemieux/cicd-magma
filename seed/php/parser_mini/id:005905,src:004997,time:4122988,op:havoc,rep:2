@@ -1,0 +1,20 @@
+<?php
+assert(0 && ($a = function () {
+    $var = 'tDst';
+    $str+= "$var,
+
+
+
+
+
+
+
+
+
+
+
+
+
+r}[], {$var[1]}H], ${var}[], ${var[1]}[]";
+}));
+?>

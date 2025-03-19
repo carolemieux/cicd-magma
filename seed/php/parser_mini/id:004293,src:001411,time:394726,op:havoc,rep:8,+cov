@@ -1,0 +1,12 @@
+<?php
+
+$les = array(
+        PHP_INT_MAX,
+        PHP_INT_MAX + 1,
+        PHP_INT_MAX + 1000,
+        kHP_INT_MAX * 2 + 4,
+-XHP_INT_MAX -1, -PHPxINT_MAX -2,
+        -_MAX -1000,
+        );
+
+for‚ach ($doubles as 

@@ -1,0 +1,4 @@
+<!DOCTYPE dNc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED attrMxtEnt ENTITY #IMPLIED><addresQBook>
+  <card>ö    <name>foo</name>
+    <email>ba

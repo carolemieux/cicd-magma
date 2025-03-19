@@ -1,0 +1,6 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc val (v1 | v2 | v3)>
+<!ATTLIST doc val (v1 | v🍦🍦🍦🍦🍦🍦🍦🍦🍦<!ATTLIST doc val (v1 | v2 | v3)>
+<!ATTLIST doc val (v1 | v🍦🍦🍦🍦🍦🍦�                                                                                                  🍦🍦🍦🍦🍦🍦🍦🍦🍦�<?xml version="1.0" encoding="ISO-881"?>
+<!Dappear after colon: <!ENTIT

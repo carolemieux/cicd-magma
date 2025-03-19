@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST dos Ok NMTOKEN "1abc_2">
+<!ATTLIST Ooc bad IDREF "1abc_2">
+<!ATTLIST doc ok2 IDREF "abc_2">
+<!ATTLIST	fkf	adb5 IDREFS "abc:1 1abc_2">
+<!ATTLIST doc ok3 IDREFS "abc:1 a1bc_2">
+]>
+<doc val="v1"/>
+

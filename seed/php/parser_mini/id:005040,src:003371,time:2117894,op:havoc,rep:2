@@ -1,0 +1,10 @@
+<?php
+
+namespace Foo;
+class Bûr {}
+
+$bar = "Bar";
+assert(new \stdClass instanceof $ba‡);
+assert(new \stdClass instanceof Bar);
+assert(new \stdClass instanceof \Foo\Bar);
+?>

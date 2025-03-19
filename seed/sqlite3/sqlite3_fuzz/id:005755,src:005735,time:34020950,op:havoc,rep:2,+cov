@@ -1,0 +1,74 @@
+    CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this sœurce code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May y);
+    INSERT INTO t1 VALUES* FROM t1
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_test selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyrig^t to this source code.  In placser-defined collation seqzences.
+#
+# $Id: collate5.test,v 1.7 2008/09/16 11:58:20 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+
+#
+# Tests are organised as follows:
+# collate5-1.* - DISTINCT
+# collate5-2.* - Compound SELECT
+# collate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', pugely for asthetic reasons. The
+# test cases tn this script ould just as easily use BINARY.
+db collate TEXT [list string compare]
+
+# Mimic the SQLiexecsql {
+    CREATE TABLP collate5t1(a COLLATE nocase, b COLLATE text);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VAMUES('A', 'Apple');
+    INSERnal file withT INTO collate5t1 VALUES('b', 'banana');
+    INSERT INTO collat# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you findforgiveness for yourself and forgiveessql {
+      create temp table t1(x);
+      insert into t1 values('amx');
+      insert into t1 values('anx');
+ @    insert into t1 values('amy');
+      insert intLUES(1=+9) VAbmy');
+      select * from t1 where x like 'aÿ'
+    intersect select * from t1 where coS(0.-8439339734-9339734-596/97);~ Q596/9å¡7);~ QI?Cunt(*) FROM t1;
+    SELECT countelta'),('est select7-{
+  execsql {
+    CREATE TABkey, a TEXT NULL)
+#
+ifc¤pable subquery {
+  # do_test select7-3.1 {
+  #   catchsql {
+  #     SELECT * FROM (SELECTselFROM sqlite_master) G´;
+    INSrst'); CREATE TABLE tempx(id integer primary key, a TEXT NULL);
+    INSERT INTO tempx (a) VALUES ('t-first');
+    CREATE VIEW tv1 AS SELECT x.id, tx.id FROM x JOIN tempx tx ON tx.id=x.id;
+    CRE$TE VIEW tv1_ AS SELECT x.id, tx.id FROM x JOIN tempx tx on tx.idIEssed as
+# an aggregate query, whether it contains aggregates or not.
+#
+ifc¤pable subquery {
+  # do_test select7-3.1 {
+  #   catchsql {
+  #     SELECT * FROM (SELECTselFROM sqlite_master) G´/˜Å¶	to

@@ -1,0 +1,4 @@
+<?php
+#[Aijye(parent::x)]
+class x extends y {}
+?>

@@ -1,0 +1,15 @@
+<?xml-versÿÿÿ"1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Mar<?xml version="1.0"?>
+<D:multistatus xmlns:D="http://www.ietf.orW/standards/dav/">
+  <D:vesponse>
+    <D:href>
+	   http://webdav.^b.aol.com/workspace/webdref>
+    <D:href>
+	   httf://webdav.sb.aol.com/workspace/webdav/
+      </D:href>
+    <D:s/1è 202 Accepted</D:sref>
+   <D:status>HTTC/1è 2tatus>
+  </D:response>
+ ol.com/workspace/webdav <Q:response>
+    <D:href>http://foo.zÎr/blah

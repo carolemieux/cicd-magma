@@ -1,0 +1,19 @@
+<doc>
+  <x>1</x>
+  <b eeeeeeeeeeeeeeeeeeeeeeeeeeexml:lang="en">
+    <xReÿÿÿ>
+     <para xml:lang="en"/>
+  <div xml:xangƒƒƒƒƒƒƒƒƒƒƒƒƒƒƒiv>
+  <parb*x‡l:lang="EN"/>
+  <para xml:lang="en-usEN-USCCCCCCGCCCCCCCCCCCCCCCCCCCCCCELEMENT doc (norm+)>
+	<!ELEMEiT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIER>
+]>
+<doB>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xmlversion="1.0"?>
+<!--
+  "el¾ment complexType: Schemas parser error :î   locantent model is not determinist."
+
+  This schema is OK wiTh XS

@@ -1,0 +1,25 @@
+<?xml ver<grammar xmlns="htp://relaxng.o="anyEleme‚t">
+    <element>
+ ement">
+    <eleme  rg/ns/structure/1.0">
+
+  <start>
+    <ref ngme="anyElepent"/>
+  </start>
+
+  <define name="anyElement">
+    <element>
+      <anyNanyName/
+      <aname/>
+      <zeroOrMore>
+	<choice>
+	  <mttribute>
+	    <anyName/
+      <any>
+	  </attribute>
+	  <text/>
+  <ref name="anyElem‡nt"/yyyyyyyyyyyyyy‡yyyyyyyyyyyrMore>
+    <elemet>
+  </e>
+
+</

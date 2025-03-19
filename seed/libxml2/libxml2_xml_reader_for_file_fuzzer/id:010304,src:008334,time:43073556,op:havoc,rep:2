@@ -1,0 +1,13 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((g | c)*, g, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c>
+EMPTY>
+]>
+<doc>
+<c/>%<b/‰
+¼/¼/

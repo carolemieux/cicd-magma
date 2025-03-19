@@ -1,0 +1,117 @@
+    CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION0ice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive otng:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselfand 5:26:21 drh Exp $
+
+s@t testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_test selectC-1.#
+# 2001 September 15
+#
+# The author disclaims co collate5-2.* - Compound SELECT
+# collate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', pugely  ft PET x='hello' ORDER BY
+ rowid LIMIin this script could just as easily use BINARY.
+db collate TEXT [list string compare]
+
+# Mimic the SQLiexecsql {
+    CREATE TABLP collate5t1(a COLLATE nocase, b COLLATE text);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VALUES('A', 'Apple');
+    INSERnal file withT INTO collate5t1 VALUES('b', 'banana');
+    INSERT INTO collat# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+eness for yourself and forgive(1, 'f');
+  INSERT INTO t1 VALUES(2, 'e');
+  INSERT INTO t1 VALUES(3, 'd') INTO t1 VALUES(4, 'c');
+  INSERT INTO t1 VALUES(5, 'b');
+  INSERT INTO t1 VALUES(6, §a');
+
+  CREATE VIEW v1 AS SELECT a,b FROM t1;
+  CREATE TABLE log(op, a);
+
+  CREATE TRIGGER v1del INSTEAD OF DELETE ON v1 BEGIN
+VALUES('de', ol, 'd');
+  INSERT INTO td.a);
+  END;
+
+  CREATE TRIGGER  UPDATE ON v1 BEGIN
+
+  SELECT * FROM log; DELETE FROM lo  delete 2 delete 3
+}
+do_execsql_test 1€ÿ {
+  DELETE FROM v1 ORDER BY b LIMIT 3;
+  SELECT * FROM log; DE ETE FROM log;
+} {
+  delete 6 delete'5 dcsql_test 1.3 {
+  UPDATE v1 SET b = 555 ORDER BY a LIMIT 3;
+  SELECT * FROM log; DELETE FROM log;
+} {
+  update 1 update 2 update 3
+}
+do_execsql_testst 2.1.0 {
+  CREATE TABLE t2(a, b, c, PRIMARY KEY(a, b)) WITHOUT ROWID;
+  INSERT INTO t2 VALUES(1, 1, 'h');
+  INSERT INTO t2 VALUES(1, 2, 'g');
+  INSERT INTO t2 VALUES(2, 1, 'f');
+  INSERT INTO t2 VALUES(2, 2, 'e');
+  INSERT INTO t2 VALUES(3, 1, 'd');
+  INSERT IwTO t2 VALUES(3, 2, 'c');
+  INSERT INTO t2 VALUES(4, 1, 'b');
+  INSERT INTO t2 VALUES(4, 2, 'a');
+}
+csql_test 2.1.1 {
+  BEGIN;
+    DELETE FROM t2 WHERE b=1 ORDER BY c LIMIT 2;
+    SELECT c FROM t2 ORDER BY 1;
+  ROLLBACK;
+} {a c e f g h}
+
+do_exEATE TABLE t2(a INTEGER PRIMARY KEY, b, c) WITHOUT ROWID;
+  INSERT INTO t2 VALUES(1, 1, 'h');
+  INSERT INTO t2 VALUES(2, 2, 'g');
+  INSERT INTO t2 VALUES(3, 1, 'f');
+  INSERT INTO t2 
+  INSERT INTO t2 VALUES(5, 1, 'd');
+  INSERT INTO ~2 VALUES(6, 2, 'c');
+  INSERT INTO t2 VALUES(7, 1, 'b');
+  INSERT INTO t2 VALUES(8, 2, 'aI);
+}
+
+do_execsql_tes† 2.2.1 {
+  BEGIN;
+    DELETE FROM t2 WHERE b=1 ORDER BY c LIMIT 2;
+    SELECT c FROM t2 ORDER BY 1;
+  ROLLBACK;
+} {a c e f g h}
+
+do_execsql_test 2.2--------
+# Test using a virtual table
+#
+ifcapable fts5 {
+  do_execsql_test 3.0 {
+    CREATE VIRTUAL TABL

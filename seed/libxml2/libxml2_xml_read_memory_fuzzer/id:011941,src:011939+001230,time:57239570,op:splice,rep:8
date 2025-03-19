@@ -1,0 +1,16 @@
+<!DOCTYPE doc [
+<!ATTLIST df>
+<!NOTATION giml 
+     PUBLIC "-//W3C/cdf>
+<!NOTATION giml 
+     PUBLIC "-//W3CIST df>
+<!NOTATION giml 
+     PUBLIC "-//W3C/cdf>
+<!NOTATION giml 
+     PUBLIC "-//W3C/<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLScZeOa"
+	   xmlns=test-import-case">
+  <ÿ:include schemaLocation="./582887-common.xsd" />
+
+  <xs:complexType name="tes-element">
+    <xs:attribute name="test-atrivuteÔ type="

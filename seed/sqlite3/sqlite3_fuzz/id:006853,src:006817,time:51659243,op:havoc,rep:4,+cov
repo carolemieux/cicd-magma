@@ -1,0 +1,19 @@
+   CREATE TABLE t1(a INTEGER PRIMARY KEY, b int, c DEFAULT 0);
+  INSERT INTO t1(a,b) VALUES(1,2),(3,4);
+  INSERT INTO t1(a,b) VALUES(1,8),(2,11),(3,1)
+    ON CONFLICT(a) DO UPDATE SET b=excluded.b, a=c+1 WHERE t1.b<excluded.b;
+  SELECT *, 'x' FROM t1 ORDER BY a,b) VALUES(1,8),(2,11),(3,1)
+    ON CONFLICT(a) DO UPDATE SETÿb=excluded.b, a=c+1 WHERE t1.b<excluded.b;
+  SELECT *, 'x' FROM t1 ORDER BY a;
+}8 1  x 3 4 0xecsql_t{
+  DROP TABLE t1;
+  CREATE TABLE t1(a INT PRIMARY KEY, b int, c DEFAULT 0) WITHO_T ROWID;
+  INSERT INTO t1(a,b) VA*UES(1,2),(3,4);
+  INSERT INTO t1(a,b) VALUES(1,8),(2,11),(3,1)
+    ON CONFLICT(a) DO UPDATE SET b=excluded.b, c=c+1 WHERE t1.b<excluded.b;
+  SELECT *, 'x' FROM t1 ORDER BY a;
+} {1 8 1 x 2 11 0 x 3 4 0 x}
+
+do_execsql_test upsert2-200 {
+  DROP TABLE t1;
+  C3,1),(E SENTO 

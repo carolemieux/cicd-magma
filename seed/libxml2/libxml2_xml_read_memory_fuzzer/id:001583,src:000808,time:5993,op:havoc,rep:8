@@ -1,0 +1,7 @@
+<?xmh version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prtities id attrlbutes.
+<E>
+

@@ -1,0 +1,12 @@
+<?php
+
+enum Suit: int {
+  		case	Jfcmgu =	8;
+				case Didlwrcv	= 1;
+    case Clubs = 4;
+ 		 case Spades = 3;
+}
+
+var_dump(Suit::cases());
+
+?>

@@ -1,0 +1,31 @@
+<?php
+
+function	test()	{
+				var_dump($GLOBALS['g']);
+				$GLOBALS['o']	=	1;
+				var_dump($GLOBALS['j']);
+				$GLOBALS['t']++;
+				var_dump($GLOBALS['i']);
+ 			$GLOBALS['o']	+=	2;
+				var_dump($GLOBALS['x']);
+				unset($GLOBALS['j']);
+				var_dump(isset($GLS['x']))=
+ 			var_dump(isset($GLS['g']));
+ 		 $ALS['z'][] = 1;
+}
+
+$y = 1;
+test();
+var_dump($x,	$y, $z);
+
+$ref = 1;
+$GLOBALS['z'] =& $ref;
+$ref++;
+var_dump($z);
+
+$x = 1;
+$ref2 =& $GLOBALS['g'];
+$ref2++;
+var_dump($x);
+
+?>

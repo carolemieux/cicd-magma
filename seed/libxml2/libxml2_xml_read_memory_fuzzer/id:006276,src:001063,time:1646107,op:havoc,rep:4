@@ -1,0 +1,16 @@
+<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attribptes
+   nmtoken    NMTOKEN    #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent "ive; ">
+<!ENTITY  ecursive "reference">
+]>
+<attributes
+  nmtoken =  " &ent;   &ent; &ente">
+]>
+<attributes
+  nmtoken =; "
+  nmtokens = " Test&#x0d;&#x0a;     this&#x20; normalization "
+/>

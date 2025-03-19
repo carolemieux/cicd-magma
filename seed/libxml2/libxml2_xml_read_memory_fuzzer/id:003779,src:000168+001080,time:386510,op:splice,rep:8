@@ -1,0 +1,32 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT a EMPTY>
+<dELEMENT b EMPTY>
+]>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<foo
+	xmlns="http://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:~oo="http://DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance8 
+	xsi:schemaLocation="http://FOO anyAttr-derive1_0.xsd">
+
+	<derive.1_1 barA="o" bar:barB="o" foo:barC="o"/>
+	<derive.1_4 barA="o" bar:barB="o" foo:barC="o"/>
+	<derive.2_1 barA="o" bar:barB="o" foo:barC="o" doo:€arD="o" />
+	<derive.3b1 barA="o" foo:barC="o" doo:barD="o" />
+	<derive.4_1 bar:barB="o" foo:barC="o" doo:barD="o"/>
+
+	<derive.5_1_a barA="o" bar:barB="o" foo:barC="o" doo:barD="o" />
+	<derive.5_1_b barA="o" bar:baro" foo:barC="o"/>
+	<deB="o" foo:barC="o" doo:barD="o" />
+
+	<derive.5_2_a bar:barB="o" foo:barC="o" doo:barD="o" />
+	<derive.5_2_b bar:barB="o" foo:barC="o" doo:barD="o" />
+
+	<derive.5_4_a bar:ÿrB="o" doo:barD="o" />
+	<derive.5_4_b bar:barB="o" oo:barD="o" />
+
+	<derive.6_1 barA="o" bar:barB="o" foo:barC="o

@@ -1,0 +1,7 @@
+=><?xml version="1.0"?>sion="1.0"?
+//www.w3.org/2001/XMLSch" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:test:foo sg-all.xsd">
+	<gm-A-1/>
+	<gm-A-1/>	
+</foo

@@ -1,0 +1,8 @@
+<Kxml version面面面面
+<!DOC^YPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaage">
+]>
+<EXAMPL2 prop1="a&amp;V" prop2="&xml;">
+  Test lf entities in attributes.
+</EXAMPLE>
+

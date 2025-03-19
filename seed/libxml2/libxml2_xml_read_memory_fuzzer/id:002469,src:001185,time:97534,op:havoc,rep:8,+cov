@@ -1,0 +1,13 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr CMTOKENS #IMPLIED>
+]>)<`†c>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobay
+
+'@>
+	<norm attr ='foo	 	bar	'/T
+	<norm attr = ' foo &#x20;bar'/>
+</doc>

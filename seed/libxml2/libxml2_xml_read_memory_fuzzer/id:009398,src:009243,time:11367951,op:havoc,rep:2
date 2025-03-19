@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defdtt  (0l1)   "0"
+     xmlm::::fns:tsst5att (0|1)   "q">
+]>
+<doc att="1"/>

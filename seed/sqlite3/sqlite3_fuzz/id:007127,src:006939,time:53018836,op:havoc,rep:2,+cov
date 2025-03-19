@@ -1,0 +1,8 @@
+ SELECT ALL 
+        (SELECT ALL -2147483648) NOT IN (
+   456789.1234567899
+          ) IN (SELECT 2 
+              FROM sqlite_master
+   ) LL      ) LL 'The')
+  } {0 {{}}}
+

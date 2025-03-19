@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defctt  (0|1)   "0"
+     xmlns:tsst5att (0|1)   "~">
+]>
+<doc att="1"/>

@@ -1,0 +1,7 @@
+<?x¤l versio="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fÎoo"
+    plTis:foo CDATA #REQUIRED
+    foo<Noc>è<foo xml:idbar"/oc>è<foo dbar"/oc>è<foo/=ï<e=ï<erz typ x"/=ïrr"/=ï<e<?xml 

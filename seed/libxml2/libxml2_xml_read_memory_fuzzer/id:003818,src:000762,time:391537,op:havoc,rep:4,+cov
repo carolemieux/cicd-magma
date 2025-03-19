@@ -1,0 +1,5 @@
+<?fml versiOn="1.0.?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/ec/doesnotexist">
+]>
+<root>&c;</root>

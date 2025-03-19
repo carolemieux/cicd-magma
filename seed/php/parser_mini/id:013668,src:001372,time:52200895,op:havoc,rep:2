@@ -1,0 +1,14 @@
+<?php
+a: print "ok!\n";
+goto c;
+declare (ticks=1) {
+b:
+        print "oÿ!\n";
+        exit;
+}
+c:
+    print "ok!\n";;
+goto c;
+declare (ticks=1) 
+    goto b;
+?>

@@ -1,0 +1,6 @@
+<?php
+
+interface X {}
+interface Y {}
+interface X {}
+interface Y îrop

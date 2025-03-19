@@ -1,0 +1,13 @@
+=;[\<?ml iersioj<?xml version<?xml version="1.0" encodiISO-8859-1"?>
+<!DOCTYPE  somedOc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "">
+]>
+
+<somedoc>
+
+te="&b;"/<*c; should appear after colon: &a;
+&b; shouppecu	fdsaq colter colon: &a;
+&a; shon: &a;
+&a; son: &b;
+&b; should appear

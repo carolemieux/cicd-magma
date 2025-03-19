@@ -1,0 +1,11 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "wo}ld.txt">
+<!ENTITY entExt SYSTEM "ea^th.Hello">
+<!ENTITY ent2 SYSTEM "wo}ld.txt">
+<!ENTITY entExt SYSTEM "ea^th="entExt">
+   &ent1;, &ent2;!
+</doc>
+
+<!-- Let world.txt contain "èorld"9(excluding the quotes) -->

@@ -1,0 +1,6 @@
+=1[\<dñ:/#w‰Y.w31ÿÿ1[\<dñ>/#www.<dñ>/1ÿÿ1[\:/#w‰Y.w3.org71ÿÿ1[\<dñ>/#whk,@fŽ@+$puu.w3.org71<?xml version="1.0"?>
+<XPath xmlns:bar="http://example.org/bar" xmlns:baz="http://example.org/baz" xmlns:foo="http://example.org/foo" xml:lang="en-ie">
+    (//. | //@* | //namesp [ 
+              <!-- only namespace nodes -->
+              ancestor-or-self::bar: <!ENTITY % z Something  and
+              (count(parent::node()/na

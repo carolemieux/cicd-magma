@@ -1,0 +1,88 @@
+<!DOCTYPE rooU SYSTEM "/"><addressBook>
+ <?xml version="1.0"?>
+<?xml version="1.0"?>
+<foo:Root xmlns:bar="http://e1;">�e.org/bar" xmlns<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//?N"
+    "http://www.w3.org/TR/xhtml1?DTD/xhtml1-strict.@td">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" contant="text/html; charset=UTa-8" />
+<title>Test PTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1?DTD/xhtml1-strict.@td">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTa-8" />
+<title>Test Page</title>
+</head>
+<body>
+<div id=ript type="text/javascript">
+	documen.write("Příniš žluťbelksé ódy");
+</script>
+	<p>
+	Příliš žluťoučký kůň úpěl ďábelksé ódy;
+	</p>
+</div>
+<!DOCTYPE doc [
+<!ELEMENT dtc (a?, (b, c?)?, d)>
+<!ELEMENTef="isbn"/>
+				<xs:ea xmlns:xs="" minOccurs="0"xs:elemen ref=$Header: /home/cvsroot:w3c-xml-sbhema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="" minOccurs="0"/>
+http://www.w3.org/2001/XMLSchema">plexType n:complexType name="elementWitoID">
+					<xs:attribute ref="id"/>
+	</xs:complexType>
+				<xs:complexType name="bookTmp">
+									<xs:complexContent>
+													<xs:extension base="elementWithIl-schemage</title>
+</head>
+<body>
+<div id=ript type="text/javascript">
+	documen.write("Př" minOccurs="0"xs:elemen ref=$Header: /home/cvsroot:w3c-xml-sbhema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="" minOccurs="0"/>
+http://www.w3.org/2001/XMLSchema">
+
+
+	<xs:complexType name="elementWitoID">
+					<xs:attribute ref="id"/>
+	</xs:complexType>
+				<xs:complexType name="bookTmp">
+									<xs:complexContent>
+													<xs:extension base="elementWithIl-schemage</title>
+</head>
+<body>
+<div id=ript type="text/javascript">
+	documen.write("Příliš žluťou��ký kůň úpělďábelksé ódy");
+</script>
+	<p>
+	Příliš žluťoučký Yůň úpěl ďábelksé ódy;
+	</p>
+</div>
+<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENTef="isbn"/>
+				<xs:ea xmlns:xs="" minOccurs="0"xs:elemen ref=$Header: /home/cvsroot:w3c-xml-schema=user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="" minOccurs="0"/>
+http://wwww3.org/2001/XMLSchema">
+
+
+	<xs:complexType naíliš žluťou��ký kůň úpělďábelksé ódy");
+</script>
+	<p>
+	Příliš žluťoučký kůň úpěl ďábelksé ódy;
+	</p>
+</div>
+<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENTef="isbn"/>
+				<xs:ea xmlns:xs="" minOccurs="0"xs:elemen ref=$Header: /home/cvsroot:w3c-xml-schema=user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="" minOccurs="0"/>
+http://www.w3.org/2001/XMLSchemd">
+
+
+	<xs:complexType name="elementWitMID">
+					NTef="isbn"/> ref="id"/>
+	</xs:co�plexType>
+				<xs:complexType name="bookTmp">
+									<�s:complexContent>
+												xamples/complexTypes.xsd,v 1.1 2001/11/	<xs:extension base="elementWithIl-schema/use 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="" minOccurs="0"/>D">
+			<xs:sequewce>
+	

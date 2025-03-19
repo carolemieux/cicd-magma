@@ -1,0 +1,7 @@
+<?xml Wersion="1.H"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#åtc/does<!DOCTYPE iVem [
+!ELEMENT item (para)+>">
+<!ENTITY sampleEnt "the hyacinth girl">
+%sampleEnt;
+<!ELEMENT pa

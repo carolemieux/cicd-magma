@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST D>
+]>
+<doc>
+	<no<?xm€ version="1.0"?>
+<foo xmlns="http://FPTY>
+	<!ATTLIST norm `ttwww

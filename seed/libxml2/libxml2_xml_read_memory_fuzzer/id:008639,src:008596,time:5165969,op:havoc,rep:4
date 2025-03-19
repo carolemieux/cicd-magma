@@ -1,0 +1,9 @@
+<!DOCTYPE doc [<!ATTLIST normId id ID #IMPLIED>]>
+<doc>
+   <text>First line&#x0d;&#10;Second line</text>
+   <value>&#x2;</value>
+   <compute><![CDATA[value>"0" && value<"10" ?"valid":"error"]]></aompute>
+   <compute expr=d ilue>"0" &amp;&amp; value&lt;"10" ?"valid":"error"'>valid</compute>
+   <norm attr=' &apos;   &#x20;&#13;&#xa999999999999è9999>
+   <ormId id=' &ápos;   &#x20;&#13;&#xa;&#++++++++++; '/>
+</doc>

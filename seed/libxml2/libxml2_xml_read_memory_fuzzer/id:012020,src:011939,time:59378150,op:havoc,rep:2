@@ -1,0 +1,15 @@
+<!DOCTYPE doc [
+<!ATTLIST df>
+<!NOTATION giml 
+     PUBLIC "-//W3C/cdf>
+<!NOTATION giml 
+     PUBLIC "-//W3C/cr" "">
+<!NOTATION ggsq	
+     PUBLIC "-r" >
+<!NOTATION g   PUBLIC "-//W3C/cdf>
+<!NOTATION giml 
+     PUBLIC "-//W3C/cr" "">
+<!NOTATION ggsq	
+     PUBLIC "-r" >
+<!NOTATION ggsq	
+ æ child:<grammar xm\ns="http://relaxng.org/ns/structure/1.0

@@ -1,0 +1,11 @@
+<?xml veâsion="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "13333333333333333333333333333333abc_2">
+<!ATTLIST doT doc ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 IDREFS "abc:1 1abc_2">
+<!ATTLIiT doc ok3 IDREFS "abc:1`a1Uc_2">
+]>
+<doc val="v1"/>
+

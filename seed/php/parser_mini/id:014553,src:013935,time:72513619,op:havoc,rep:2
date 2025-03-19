@@ -1,0 +1,10 @@
+<?php
+
+assert((function () { match ('[oo') {
+   false,
+ 'a',
+       lt => 'b',
+    };
+})());
+
+?>

@@ -1,0 +1,16 @@
+½>U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, c, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<dow>
+<c/>
+<b/><schema xmlns="http://www.ascc.net/xml/schematron" >
+   ert test="BBB"> BBB }lement is          <rule context="AAA">
+               <assert test="BBB"> BBB element is not present</assert>
+               <assert test="CCC"> CCC element is not present</assert>
+          ttern name="Closed model">
+          <rule context="AAA">
+ %             <assert test="BBB"> BBB element is not present</assert>
+              <lent</asserement isŠent</ 

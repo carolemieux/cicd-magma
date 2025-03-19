@@ -1,0 +1,11 @@
+¤¼¤¤ÛÛÛÛÛ¤¤Û0Û¤ÛÛÛ¤¤¤¤¤¤¤¤¤¤¤¤=>[\<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" NDATA gif>
+<!NONETION gie	TYSTES "gpcwgif.exe">
+]>
+<doc attrExjDnt="antExt">	  &ent1;, &ent2;!
+</doc>
+
+<#.- Let

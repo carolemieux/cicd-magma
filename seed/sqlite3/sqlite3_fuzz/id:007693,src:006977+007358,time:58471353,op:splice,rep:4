@@ -1,0 +1,18 @@
+   CREATE TABLE t1(a INTEGER PIMARY KEY, b int, c D22222222222222222222222222222222222222222222100);ALTER TABLE t1 RENAME
+ a TO t1nacuum;   SELECT * FROM t1;
+  catl {
+N;
+ NSERT INTO t1 VAT I o trn is active}}
+do_‡est insert4-8.11 execsql  SEL_CT * FROM t1;
+
+
+do_tes
+  execsql { DROP TABLE IF EXISTS t1;
+    DROP TABLE IF hXISTS     CREATE TBLE t1(a INTEGER PRIMARY KN CONFLICT REPLACE, y);
+    INSERT INTO t2 VALUES(1,3);
+    INSERT:INTO t1 SELECT * FROM t2;
+    SELECT * FROM t1;
+ 3}
+do_test inse¦t4-8.22 {
+  execs”l Š
+  

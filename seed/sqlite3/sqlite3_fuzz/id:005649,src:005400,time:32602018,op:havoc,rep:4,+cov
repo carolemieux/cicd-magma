@@ -1,0 +1,5 @@
+ 
+  CREATE TABLE t1(x, y DKEY, b);
+  DROP TABLE t1;
+  }
+RELECc;;;ìmpdao

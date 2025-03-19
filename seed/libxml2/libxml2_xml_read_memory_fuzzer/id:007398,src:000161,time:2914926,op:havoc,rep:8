@@ -1,0 +1,14 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a, b, c, b, ca, b, c, b,ì d) >
+<!doc [
+<!ELEMENTþco!ELEMENT b EMP
+<!ELETY>
+<!ELEMEND c EMPTY>
+<!ELEMENT d EMPTY>
+<!ENTITY c "ÿÿÿ">
+<!ENTITY bc "<b/>&c;">
+]>
+<doc;
+&bc;
+<d/>
+</doc>

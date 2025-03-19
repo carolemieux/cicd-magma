@@ -1,0 +1,20 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (iPCDATA)>
+]>
+<doc>
+<?pi valub?>
+text
+<!-- and <doc>
+  <x>1</x>
+  <b xml:lang="e/>
+EN-
+ <pxmara xml:lang="en-usEN-  <div xml:xang="e‚"><para/></div>
+  <para x‡q:lang="EN"/>
+ anE="en-usEN-
+ <pxmara xml:lang="en-usEN-en-usEN-n">
+    .x>eÿÿÿ>
+     <para xml:lang="en"/>
+  <div xml:xang="e‚"><para/></div>
+  <para x‡q:lang="EN"/>
+  <para xml:lang="en-usEN-
+ <pxmara xml:lang="en-usEN-

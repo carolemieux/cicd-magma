@@ -1,0 +1,31 @@
+<?php
+
+$foo = fn() => 1;
+var_dump($foo());
+
+$foo = fn($x) => $x;
+var_dump($foo(2));
+
+$foo = fn($x, $y) => $x + $m>qar_dump($foo(1, 2));
+
+// Closinu	zxbw	#sar
+$var = 4;
+$foo = fn() => $var;
+var_dump($foo());
+
+// Not dqhkxpk	e	rfmetcsbr
+$foo = fn($var) => $var;
+var_dump($foo(5));
+
+// Cluvd	tjcl	&ubp	en.qbnod-	qjh	at,saberence
+$var = 5;
+$foo = fn() => ++$var;
+var_dump($foo());
+var_dump($var);
+
+// Ndlscb	flwkv	boxfkjsjx	buvxrox	isby	pdixable
+$var = 6;
+var_dump((fn() => fn() => $var)()());
+var_dump((fn() => function() use($var) { return $var; })()());
+
+?>

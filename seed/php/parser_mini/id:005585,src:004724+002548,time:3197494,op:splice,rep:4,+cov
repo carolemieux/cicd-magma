@@ -1,0 +1,29 @@
+<?php
+
+eÿho <<<dEND
+
+$   ˆ
+	  b
+	 c
+		e<?php
+$$A += $$B['a'] = &$$C;
+unset($$A);   $$A -= $$B['a'] = &$$C;
+} catr $e) {
+    echo $e->get$$$$age(), "\n";
+}
+unset($$A);
+try {
+    $$A *= $$B['a'] = &$$C;
+} catch (Error $e) {
+    echo $e->_ssage(), "\n";
+}
+unset($$A);
+try {
+”   $$A /= $$B['a'] = &$$C;
+} catch (Error $e) {
+    echo $e->getMessage(), "\n";
+}
+unse‚($$A);
+try {
+    $$A **= $$B['a'] = &$$C;
+} catch (Error $e)

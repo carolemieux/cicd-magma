@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<!DOCTYPE article [
+<!ENTITY version "1.0.53">
+<!ENTITY mdash  "--">
+<!ENTITY hellip "...">
+<!ENTITY copy       "&#x00A9;"> <!-- COPYRIGHT SIGN -->
+        <!-- replace version above with actual application version number-->
+	<!--  Template Version: 1.0.1  (do not remove this line) -->
+
+
+
+<!ENTITY APPLET-TEMPLATE-1x-SHELL SYSTEM
+"templates/applet_template_1-applet.sgml.cdata">
+<!ENTITY APPLET-TEMPLATE-1x SYSTEM
+"templates/applet_template_1.sgml.cdata">
+]>
+
+<!--  Version: 1.0.1  -->
+
+<article id="index">
+  <articleinfo>
+
+    <authorgroup>
+
+      <author>
+        <firstname>David</firstname>
+        <surname>Mason</surname>
+        <affiliation>
+          <orgname>Red Hat, Inc.</orgname>
+          <address>
+            <email>dcm@redhat.com</email>
+          </address>
+        </affiliation>
+      </author>
+
+      <author>
+        <firstname>Daniel</firstname>
+        <surname>Mueth</surname>
+        <affiliation>
+          <address>
+            <email>d-mueth@uchicago.edu</email>
+        >
+    
+    <revhistory>
+      <revision>
+        <revnumber>
+          0.99
+        </revnumber>
+        <date>
+         04.10.2, Daniel Mueth, and Alexander Kirillov</holder>
+    </copyright>
+
+    <legalnotice>
+     <para>
+      Permission is granted to copy, distribute and/or modify this
+      document under the terms of the <citetitle>GNU Free Documentation
+      License</citetitle>, Version 1.1 or any later version published
+      by the Free Software Foundation with no Invariant Sections, no
+      Fronoject ####### -->
+
+    <sect2 id="gdp">
+      <title>The GNOME Documentation Project</title>
+
+      <sect3 id="goals">
+        <title>Goals</title>
+        <para>
+          The GNOME Documentation Project (GDP) aims to provide GNOME
+          and GNOME applications with a complete, intuitive, and clear
+          documentation system.  At the center of the GDP is the
+          <appl as well as other Linux documentation such as man pages and
+          texinfo documents. The GNOME Help System provides a
+          comprehensive view of documentation on a machine by
+          dynamically assembling the documentation of GNOME
+          applications and components which are installed. The GDP is
+          responsible for writing numerous GNOME-related documents,
+  >
+       This Handbook is a guide for both writing documentation for
+       GNOME components and applications and for properly binding and
+       packaging documentation into GNOME applications.
+      </para>
+      <para>
+       This Handbook, like all GNOIt is also important to spend some time with GNOME to make
+          sure you are familiar enough with it to be
+          <emphasis>authoritative</emphasis>  in your writing. The
+          best way to do this is to just sit down and play with GNOME
+       e encourage everybody to use this DTD instead of the
+          default DocBook DTD since your source document header and
+       pport
+          by hand:
+        </para>
+        <itemizedlist mark="opencircle">
+          <listitem>
+            <para>
+              Download <ulink
+              url="http://www.labs.redhat.com/png/png-support.html">the
+              GDP DocBook DTD fo
+              of your SGML CATALOG file may vary depending upon your
+              distribution. (On Red Hat it is usually in
+              /usr/lib/sgml/CATALOG.) Add the following line to this
+              file:
+              <programlisting>
+PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.0//EN" "png-support-3.0.dtd"
+              </programlisting> 
+              If you are using the 3.1 DTD, use:
+              <programlisting>
+PUBLIC "-//GNOME//DTD DocBook PNG Variant V1.1//EN" "png-support-3.1.dtd"
+              </programlisting> 
+            </para>
+          </listitem>
+        </itemizedlist>
+        <para>
+          Alternately, you can download and install the
+          <ulink url="http://people.redhat.com/dcm/software.html"
+          type="http">gn
+          To include PNG files in your documents, you will need to
+          indicate that you are using this special DTD.  To </programlisting>
+        <para>
+          You will notice in this example that the file
+          <filename>myfile.png</filenamate an html file, it will
+          automatically look for <filename>myfile.png</filename> in
+          the directory.
+        </para>
+        <para>
+          If you want to create PostScript ouput, you will need to create an
+          EPS version of your image file to be displayed in the
+          PostScript file. There is a simple script available which
+          allows you to change a PNG image into an EPS file
+          easily. You can download this file - img2eps - from <ulink
+          url="http://people.redhat.com/dcm/sgml.html"
+          type="html">http://people.redhat.com/dcm/sgml.html</ulink>
+          (look for the img2 Note that it also
+              describes some custom extensions of DocBook;
+              fortunately, they are clearly marked<listitem>
+            <para>
+              <xref linkend="docbookbasics" /> - Descriptions of
+              commonly used DocBook tags.
+            </para>
+          </listitem>
+        </itemizedlist>
+        <para>
+          You may also discuss specifilly kept
+        completely up-to-date with CVS and has a basic description of
+        each file from CVS.
+      </para>
+    </sect2>
+
+<!-- ####### Getting Started | Screenshots ####### -->
+
+    <sect2 id="screenshots">
+      <title>Screenshots</title>
+      <para>
+        Most GNOME documents will have screenshots of the particular
+        applet, application, GNOME component, or widget being
+        discussed.  As discussed above in <xref linkend="gdpdtd"/> you
+        will need to install the special GDP DocBook DTD which
+        supports PNG images, the format used for all images in GNOME
+        documentation. For the basic DocBook structure used to insert
+        images in a document, see <xref linkend="jadeimages"/> above.
+      </para>
+      <sect3 id="screenshotappearance">
+        <title>Screenshot Appearance</title>
+        <para>
+          For all screenshots of windows that typically have border
+          decorations (e.g. applications and dialogs, but not applets
+          in a <interface>panel<to provide
+          screenshots in this form, you should create screenshots as
+          you wish them to appear and send them this way. If you
+     don't have a three-button mouse, just 
+     right-click on the applet and choose
+     <guimenuitem>Move</guimenuitem>. The cursor will turn into a
+     cross and the applet will move with your mouse until you press
+     any mouse button to indicate you are finished moving it.
+     If, in the course of this movement, it hits
+     other objects, the behavior depends on the global preferences
+     you have set for your <interface>Panels</interface> in the
+     <application>GNOME Control Center</application>: the applet you are
+     moving can switch places with other objects, "push" all objects
+     it meets, or "jump" over all other objects without disturbing
+     them. You can also override the default behavior by holding
+     <keycap>Shct2>
+  </sect1>
+
+
+  <!-- #### Intro | The Right-Click Pop-Up Menu ###### -->
+  <sect1 id="right-click-pop-up-menu">
+   <title>The Right-Click Pop-Up Menu</title>
+   <para>
+    Clicking the right mouse button on any applet brings up
+    a <guimenu>pop-up menu</guimenu>. This 
+    menu always has certain standard menu items in it and
+    often has additional items which vary depending on the particular
+    applet. 
+   </para>
+   <sect2 id="standard-right-click-items"> 
+    <title>Standard Pop-Up Items</title>         arrows in each direction). As you move your mouse, the applet
+         will move with it.  When you have finished moving the applet,
+         click any mouse button and the applet will anchor in its
+         current position.  Note that applets ca> dialog.  This is helpful if
+        you would like to test the effects of the changes you have
+        made but may want to continue changing the properties.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        <guibutton>Close</guibutton> &mdash;
+        Pressing <guibutton>Close</guibutton> will close the
+        <interface>Properties</interface> dialog.  Only changes in the
+        configuration which were previously applied with the
+        <guibutton>Apply</guibutton> button will p>
+    <para>
+     Many applets also have one or more of the following items in their
+     right-click pop-up menu:
+     <variablelist>
+      <varlistentry>
+       <term>Run...</term>
+       <listitem>
+        <para>
+         The <guimenuitem>Run...</guimen own window rather than in the
+         panel. For example: 
+        </para>
+        <orderedlist>
+         <listitem>
+         d...</guimenuitem> menu item which
+           starts the GNOME <application>CD Player</application> when
+           selected, wh  </varlistentry>
+     </variablelist>
+    </para>
+   </sect2>
+  </sect1>
+  
+  <sect1 id="feedback">
+   <title>Feedback</title>
+   <sect2 id="reporting-bugs"> 
+    <title>Reporting Applet Bugs</title>
+    <para>
+     GNOME users are encouraged to report bugs to <ulink type="http"
+     url="http://bugs.gnome.org">The GNOME Bug Tracking
+     System</ulink>.  The easiest way to submit bugs is to use the
+     <application>Bug Report Tool</application> program by selecting
+     <menuchoice>
+      <guimenu>Main Mure to be complete in describing what you did to cause the
+     bug to surface and, if possible, describe how the developer can
+     reproduce the the scenario.
+    </para>
+   </sect2>
+   <sect2 id="documentation-feedback"> 
+    <title>Providing Feedback</        Context sensitive help is still in development.
+      </para>
+    </sect1>
+
+####### Document Templates | Templates 5: Co</title>
+      <programlisting>
+<![CDATA[(Put sgml here.)]]>
+      </programlisting>  
+    </sect1>
+
+####### Document Templates [CDATA[(Put sgml here.)]]>
+      </programlisting>  
+    </sect1>-->
+  </appendix>
+
+</article>

@@ -1,0 +1,31 @@
+=1U\|<?xml version="1.0" encoding="ISO-8859-1" ?>
+<foo xmlnsna<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+  <start>
+    <ref name="AddressBook"/>
+  </start>
+
+  <define name="AddressBook">
+    <element name="addressBook">
+      <zeroOrMore>
+        <ref name="Card"/>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name="Card">
+    <element name="card">
+      <ref name="ns/structure/1.0">
+
+  e="Email"/>
+    </element>
+  </define>
+
+  <define name="Name">
+    <element name="name">
+      <text/>
+    </element?
+  </define>
+
+  <define name="Email">
+    <element name=

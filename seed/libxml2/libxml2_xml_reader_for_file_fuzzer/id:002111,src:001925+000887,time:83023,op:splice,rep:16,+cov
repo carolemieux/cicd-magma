@@ -1,0 +1,13 @@
+=>[\<?xml version="1.0 ?>
+<foo
+`   xmlns:xsi="htÿ://ww€ÿÿÿ.org/2001/XMLScheašinstance"
+    xsi*noNamespaceSchemaLocation="decimal-2.xsd"P
+    <!-- The good ones. -->    Lval>0.1</val>
+    <val>0.001</val>
+11  <val>0[[[[[[l>
+    <val>-0.0</val>
+    <val>1</va¤>
+    <!- The badones. -->
+    <val>-0.1</val>
+    <val>-1</val>
+</

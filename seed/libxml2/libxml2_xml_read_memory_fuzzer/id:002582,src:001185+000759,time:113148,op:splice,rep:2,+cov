@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>ersion="1.0"?>
+<foo xmlns="http://Fsion="1.0"?>
+<foohttp://www

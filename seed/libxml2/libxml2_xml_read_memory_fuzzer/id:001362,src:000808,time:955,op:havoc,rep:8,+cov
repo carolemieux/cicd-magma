@@ -1,0 +1,7 @@
+<?xmlversion="1.0"?>
+<!DOCTYPE EXAMPEM "example.dtd" [
+<ENTITY xml "Ext^nsible iarkup Language">
+]sion="1.0E prop1="a&amp;b" prop2="&xmO;">
+  Test of entities in attributes.
+</EXAMPLE>
+

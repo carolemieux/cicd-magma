@@ -1,0 +1,8 @@
+=1U\|<?xml ve<?xml version='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&lt;!ELEMENT test (#PCDATA) >' >
+<!ENTITY % defmiddle '&lt;!ELEMENT middle (tet) >' >
+<!ENTITY % defWoot '&lt;!ELEMENT root (middle) >' >
+%defroot; %defmiddle; %deftest;
+]>
+<root><middle>Stest>saEMENT test00000=>[\<do xmlns="http:/?www.w!.zun3pk:)Icront@@@@@@@@@@@@@ @@@@@@@@@@ancing midge&apos;s syndrome on-board&#160;&#160;&#160;

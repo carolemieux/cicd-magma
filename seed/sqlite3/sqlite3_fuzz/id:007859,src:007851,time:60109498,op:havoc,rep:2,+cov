@@ -1,0 +1,3 @@
+  pragma mmap_size =-268435456;
+ê -f [
+ t_set $allquicktests -exclude *m

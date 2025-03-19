@@ -1,0 +1,9 @@
+<doc>
+  <xpara xml:lang="en-uen"mn">
+  rg="<para xml:lang="en-a xml:lang="en"/ÿÿÿÿ<div xml:uang="<para xml:lang="en-">
+  rg="<para xml:lang="en-a xmuenusEN-<!DOÿÿÿ<div xml:uang="<para xCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" NDATA gif>
+<!NOTATIVQ	gif SYSTEM "viewgif

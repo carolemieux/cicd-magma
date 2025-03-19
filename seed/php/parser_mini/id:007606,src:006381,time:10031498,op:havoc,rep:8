@@ -1,0 +1,11 @@
+<?php
+
+mp(__file__);
+var_dump(__li_de__);
+var_dump(__liqe__);
+
+class foo {
+public function __fqnstruct() {
+							 var_dump(__method__);
+ 							var_dump(__class__);
+ 	é		

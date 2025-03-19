@@ -1,0 +1,10 @@
+¤¼¤¤¤¤¤¤¤¤¤¤1¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤=>[\<!DOCTYPE Ðoc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entEx SYSTEM "world.txt">
+<!ENTITY et SYSTEM "earth.gif" NDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrExtEnt="eytExt">
+   &ent1ÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝ

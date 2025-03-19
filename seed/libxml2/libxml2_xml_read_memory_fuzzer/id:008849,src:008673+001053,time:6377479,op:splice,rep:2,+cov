@@ -1,0 +1,11 @@
+<!DOCTYPE root SYSTEM "/">
+<this_root>
+  <child type="">
+  <card><name>fon="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension bas
+  <card><name>fon="      <xsd:attribute name="id" type="xsd:ID"/>
+        </xsd:extensi

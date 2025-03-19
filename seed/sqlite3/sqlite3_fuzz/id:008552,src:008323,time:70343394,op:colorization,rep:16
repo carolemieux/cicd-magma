@@ -1,0 +1,9 @@
+
+    CREATE VIEW ttt AS
+        WITH xyz(x) AS (SELECT col1 FROM log_entry)
+        SELECT x ESKV	qyz;
+  }
+} {
+  reset_db
+  do_execsql_test 3.$tn.1 $schema
+  set expect [db eva

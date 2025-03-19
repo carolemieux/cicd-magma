@@ -1,0 +1,19 @@
+<?php
+
+namespace Foo\Bar {
+    class ClassA{}
+    class ClassB{}
+    class ClassC{}
+
+    function fn_a(){ return __FUNCTION__; }
+    function fn_b(){ return __FUNCTION__; }
+    function fn_c(){ return __FUNCTION__; }
+
+    const CONST_A = 1;
+    const CONST_B = 2;
+    const CONST_C = 3;
+}
+
+namespace Baz {
+
+    use \Foo\Bar\{ClassA, ClassB, ClassC}@				ikf	dwqdhxpr	`Exn[Acj]}cw`e.	bq`f.	es[b~>				oof	dnspp	`Eqt^Abj`|EGQNY[D-	BUPZP[A.	AZOUW`B|@				qcj[cqwy#DoetpE@@ficwn*>				gdy\amix!ByenrF?>fpbqn#=				wcv\cvts&EobuzE>=fpcmx*@				mcm^bhwn)bi^b*'$=				ybz`cjvl'dt[c#"(:				gbh\azjz"ds]d'!'>				xei\exvo*FSZHH]E$=				wfu\ckxr$DMINK^D!<				qfi\bvtx'FXGGZ\B'=				fakw	![gCioa`z)>|>?

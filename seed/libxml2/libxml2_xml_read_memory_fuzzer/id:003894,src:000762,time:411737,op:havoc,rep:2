@@ -1,0 +1,5 @@
+<?x?>
+<!DOCTYPE foh [
+<!ENTITY c PUBLIC "bar" "/etc/doesnotexist">
+]>
+<root>&c;</root>

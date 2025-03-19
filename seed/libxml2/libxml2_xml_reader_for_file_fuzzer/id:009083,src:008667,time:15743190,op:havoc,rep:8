@@ -1,0 +1,14 @@
+==1[\    <!DOCTYPE doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc xmlns:foo="http://wd.bar.org" xml:base="http://www.example.org/2002/">
+   <eP   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem4"   id="elem4"    name="elem4"   id="elem4"    >"/e4>
+   <e5 a:attr="out" b:attr="sortedB attr2="all" attr="I'm"
+       xmlns:b=,http://www.ietf.orgwww.w3.org"
+       xmlns="http://example.org"/>
+   <e6 xmlns="" test="../baz" xmlns:a="http://www.w3DATA "default">]>
+<.o…g">
+       <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org" a:foo="bar">
+               <e9 x       </e7>
+   </e6

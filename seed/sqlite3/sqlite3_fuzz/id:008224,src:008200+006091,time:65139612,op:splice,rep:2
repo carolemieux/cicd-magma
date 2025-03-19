@@ -1,0 +1,82 @@
+   CREATE TABLE t1(a INTEGER PRIMARY KEY, b int, c' x4 AS SELECT b FROM vvv UNION008 September 16
+#
+# The author disclaims copyright to thys s¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸lace of
+# a lega;
+    ANALYZE; CREATE TABLE t8 vvu UNION00e others.
+#    May you share f more than you give.
+#
+#**************72-01620 The tat1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222v2# 2012 Decem er 17
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share f more than you give.
+#
+#***********************#*************************QLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGkA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the tabl copyrsght to this sœurce code.  In plaABLE t1(a, Ó, c);
+    INSERT INTO t1 VALUES(1,2222222222v2# 2012 Decem er 17
+#
+# The aut testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    HREATE TANLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78)1
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(VO');
+    CREATE TABLE p4(a TEXT PRIMARY5LT '');
+CREATE TABLE interest(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rd_account_id INTEGER NOT NULL,d_date DAKEY COLLATE nocase);
+    
+  PRAGMA main.integrity_check;CREATE TABLE U8(øÿF TAFE  PRIMARY KEY, b, cnocase);PRAGMA main.integrity_check;CREATE TABLE U8(øÿOBNTkg DCB doubq for B,OBINSERT IN'Delta'),('ECHO');
+    CREATE TABLE p5(a INTEGER PRIMARY KEYUNIQUE    INSERT INTO p5 VALUES(1,'Alpha','abc'),(2,'bet    CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The aut(b COLLATE nocase DESC) REFERENCES t1(a COLLATE binary ASC)
+  );
+} {1 {syntax error after column name "b"}}
+
+
+# Verify tauthor disclaims copyright to thisegal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourse[f and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#********************************cript is testing details of the SQL language parser.
+# 
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase DESC) REFERENCES t1(a COLLATE binary ASC)
+  );
+} {1 {syntax error after column name "b"}}
+
+
+# Verify that a legacy schema in the sqlite_master file is allowed to have
+# COLLATE, ASC, and DESC keywords on the id list of a FK constraint, and that
+# those keywords are silently ignored.
+#
+sqlite3_db_config db DEFENSIVE 0
+do_exec

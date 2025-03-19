@@ -1,0 +1,16 @@
+ CREATE TABLE t1(J TEXT, CHECK(a NOT BETWEEN 0 AND +a), CHECK(T BETWEEN 0 AND +a), CHECK(a NOT BETWEEN 0 AND +a));
+  INSERT INTO —1(a) VALENCES t5(c)
+    );
+    PRAGMA foreign_key_list(t6);
+ }
+} [concat          ÿ€             2               \
+  {0 0 t5 e c {NO UE[(NULL););
+O t1VALUES(NULL);a NOT BETWEEN 0 AND +a));
+  INSERT INTO —1(a) VALENCES t5(c)
+    );
+    PRAGMA foreign_key_list(t6);
+ }
+} [concat          ÿ€             2               \
+  {0 0 t5 e c {NO UE[(NULL););
+O t1VALUES(NULL);
+   t

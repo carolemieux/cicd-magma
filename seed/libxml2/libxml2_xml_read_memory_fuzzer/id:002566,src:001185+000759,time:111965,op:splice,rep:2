@@ -1,0 +1,6 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST <foo xmlns="http://Fxml version="1.0"?>
+<foo xmlns="http://FOO" 
+	xmlns:xsi="http://www

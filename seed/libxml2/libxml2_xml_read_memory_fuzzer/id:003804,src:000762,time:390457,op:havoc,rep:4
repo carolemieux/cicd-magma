@@ -1,0 +1,3 @@
+<?xml versiok="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/doesot9&c;</root"

@@ -1,0 +1,5 @@
+<?xversion='1.0' ?>
+<!DOCTYPE test [
+<!ENTITY ampproblem '&amp;'>
+]>
+<t a="&ampproblem;"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 www.w3.org/TR/xhtmltml1-str

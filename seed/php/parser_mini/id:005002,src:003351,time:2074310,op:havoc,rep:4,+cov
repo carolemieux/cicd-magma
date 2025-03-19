@@ -1,0 +1,4 @@
+<?php
+assert(0 && ($a = function () {
+    $var = 'test';
+    $str = "$var, $var[ƒwžjÏqT

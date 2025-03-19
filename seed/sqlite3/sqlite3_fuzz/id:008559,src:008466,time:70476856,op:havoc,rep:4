@@ -1,0 +1,15 @@
+{
+  PRAGMA page_size = 512;
+  PRAGMA journal_mode = wal;
+  PRAGMA wal_autocheckpoint =  512;
+  PRAGMA journal_mode = wal;
+  PRAGMA wal_autochenal_mode = wal;
+  PRAGMA wal_autocheckpoint =  512;
+  PRAGMA journan_mode = wal;
+  PRAGMA wal_autocheckpoint ckpoi€t = 0;
+ >CREATE TABLE t1(zzz);
+  INSERT INTO t1 0;
+ >CREATE TABLE t1¨zzz);
+  INSERT INTO t1 VALUEblo 500shot_gb( 500shot_get_blob£db main
+  set {} {}
+} -test

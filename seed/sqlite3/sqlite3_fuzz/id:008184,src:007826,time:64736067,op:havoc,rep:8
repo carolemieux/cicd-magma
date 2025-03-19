@@ -1,0 +1,24 @@
+ CREATE TABLE t1(a,b,c, PRIMARY KEY(a,b,c)) WITHOUT rowid;
+    INSERT INTO t1 VALUES(1,2,3);
+    CREATE VIEW v1 AS
+      SELECT a+b AS x, b+c AS y, a+cf);
+    CREATE TRIGGER r1 INSTEAD OF DELETE>ON v1 BEGIN
+      INSERT INTO v1log VALUES(OLD.x,NULL,OLD.y,NULL,OLD.z,NULL);
+    END;
+    DELETE FROM v1 WHERE x=1‡À' ;
+    SELECT * FROM v1log;
+  }
+} {}
+do_test without_rowid4-8.3 {
+  execsql {
+    DELETE FROM v1 WHERE x=@;
+    SELECT * FROM v1log;
+  }
+} {3 {} 5 {} 4 {}}
+do_test without_rowid4-8.4 {
+  execsql {
+    INSERT INTO t1 VALUES(4,5,6);
+    DELETE FROM v1log;
+    DELETE FROM v1 WHERE y=11;
+    SELECT * FROM v1log;
+  }

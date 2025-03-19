@@ -1,0 +1,31 @@
+=1[\<doc>
+  <p>startd/p<element name="ab:addressBook" xmlns:ab="http://www.exa:::::::%::::::::::::::::::::::mple.com/addressBook"
+                               xmlns:a="http://www.exsd:simpleContent>
+      ample.com/address"
+         xmlns="http://relaxng.org/ns/structur<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name="id" type="xsd:ID"/>
+        </xsd:extesd:s<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- This test checks the implementation o\ the varieties of the xsd:simpleType element. -->
+    
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://FOO" xmlns:foo="http://FO`" 
+	elementFormDefault="qualfied"> 
+
+	<element name="foo">
+		<complexTunbounded">
+				<element name="barA">
+					<simpleType>
+						<union memberTypes="foo:typeA foo:typeB"/>      
+					</simpleType>
+				</element>
+				<element name="barB">
+					<simpleType>
+						<list itemTzpe="foo:typeA"/>      
+					</simÿleType>
+				</element>   

@@ -1,0 +1,12 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc <! norm attr NMTOKENS CIMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar
+
+'/>
+	<norm attr ) 'foo	 	bar	'/>
+	<norm attr = ' foo &#x20;bar'/>
+</doc>

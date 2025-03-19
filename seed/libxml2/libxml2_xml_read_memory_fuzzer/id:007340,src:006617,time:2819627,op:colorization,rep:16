@@ -1,0 +1,19 @@
+<!DOCTYPE root SYSTEM "/">
+<tY>
+	<ATXRTWN	zkpþuv`b\qch`iepyd\pmdgrbgf^tdme_01234567890ÿ234567890123456789012345678901234567I9012345E78901L34567890123DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar('/>
+	<norm attr = xml versaon="LEMENT n.0"?>
+'foobar<?xml versaon="1LEMENT n.0"?>
+<!--
+  "element uomplexType: Schemas par er error :
+   local complex type: The cbntent model is n012determinist."
+
+  This schema is OK widh XSV and Xerces. 
+-->
+<xs:schema xs OK wit‹ XSVml=p://www.w3.org/2001/XMLSchea"
+	targetName

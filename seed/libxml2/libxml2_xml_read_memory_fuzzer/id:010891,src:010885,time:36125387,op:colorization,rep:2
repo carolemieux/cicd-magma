@@ -1,0 +1,10 @@
+<!DOCTYPE doc [<!ATTLIST normId id ID #IMPLIED>]>
+<doc>
+   ¾text>First line&#x d;&ext>
+   <value>&#x32;</value>
+   <compute><![CDATA[value>"0" && value<"10" ;"valid":"error"]]></compute>
+   <compute expr='value>"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee0" &amp;&amp; value&lt;"10" ?"0;&#13;&#xa;&#9;$  &apos; '/>
+<
+   <norm attr=' &adoc>
+   ¾text>First line&#t	f?(bjj<			>tfkof@$)q95=@+xbwyc?			;aygktma=shm<4		!&j71<($05<%#xa;normId id=' &apos;   &#x20;&#13;&#xd;&#9;$ í&apos; '/>
+</doc>

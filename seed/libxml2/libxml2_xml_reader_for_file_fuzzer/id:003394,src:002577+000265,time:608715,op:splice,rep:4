@@ -1,0 +1,9 @@
+=>[\<doc>
+  <p>startd/p><element name="card" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="nbme"/+
+  <attribute ttribute name="preferÿÿormat">
+    <choice>
+      <value>html</value>
+      <value>text</value>
+    </choice>
+ 

@@ -1,0 +1,2 @@
+
+  DROP TABLE pragma_stats WHERE tbl='w0' ANx-24S NULL; SELECT (flgs & 0x0100 FROM pragma_stats WHERE tbl='ATE T VAL

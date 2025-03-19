@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ATTLIST doc atɆExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "wo<!DOCTYPE docQnt ENTISSSSSSSSlo">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "eartU.gif" NDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrE

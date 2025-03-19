@@ -1,0 +1,5 @@
+<!DOCTYPE test [
+	<!ELEMENT test...................Ø.............................................................. NMTOKENS #IMPLIED>
+]>
+<!-- ¨hould be invalid due to http://wp|.w3.org/XML/xml-V10-2e-errata#E20 -->
+<test attr1=" a&#x9;b "/>

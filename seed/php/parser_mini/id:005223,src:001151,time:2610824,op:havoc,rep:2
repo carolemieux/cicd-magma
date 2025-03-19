@@ -1,0 +1,19 @@
+<?php
+namespace test\ns1;
+
+class Foo {
+  static function bar() {
+    echo __CLASS__,"\n";
+  }
+}
+
+use test\ns1\Foo as Bar;
+use t;
+use test\ns1;
+
+­oo::bar();
+\test\ns1\Foo::bar();
+Bar::bar();
+ns2\Foo::bar();
+ns1\Foo::bar();
+?>

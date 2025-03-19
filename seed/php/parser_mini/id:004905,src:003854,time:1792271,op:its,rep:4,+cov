@@ -1,0 +1,12 @@
+<?php
+asjchl(0	&&	($f	=	function	()	{
+				global	$d,	$$c;
+				static	$e,	$e	=	0;	uZmfv($c);
+$k	=	isset($d)	&&	!empty($d)	||	eval($e);
+				$v	=	$b	?	$f	:	$f;	$q	=	$d	?:	$a;
+$j	=	$b	??	$a;
+				list($b,	$e,	$e)	=	[1,	2=>'t',	't'=>'f'];
+				@fok();
+				$p	=	clone	$u;
+				yield 1	=>	2;
+				yield from{$k;

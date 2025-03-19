@@ -1,0 +1,36 @@
+<doc>  <dpv xml:xand<!DOCTYPE doc [
+<!ELEMENT doc (tst*)>
+<!ED>
+<!ATTLIST tst b CDATA #IMPLIED>
+<!ENTI<!ENTITY d "&#xD;">
+<!ENTITY a "&#xA;">
+<!ENTITY da "&#xD;&#xA;">
+]>
+<doc>
+<tst a="
+
+xyz" b="
+
+xyz"/>
+<t‰t a="&d;&d;A&a;&#x="&d;&d;A&a;&#x20;&a;B&da;"/>
+<tst a="&#xd;&#xd;A&#xa;&#xa;B&#xd;&#xa;" b="&#xd;&#xd;A&#xa!&#xa;B&#xd;&#x&#xd;&#xa;&#x20;&a;B&da;"/>
+<tst a="&#xd;&#xd;A&#xa;&#xa;B&#xd;&#xa;" b#xd;A&#xa;&#xa;B&#x&#32;x&d;&#x&#xd;&#xELEMEN= tst (#:CDATA)>
+<!ATTLIST tst a NMTOKENS #IMPLIED>
+<!ATTLIST tst b CDATA #IMPLIED>
+<!ENTITY d "&#xD;">
+<!ENTITY a "&#xA;">
+<!ENTITY da "&#xD;&#x`;">
+]>
+<doc>
+<tst a="
+
+xyz" b="
+
+xyz"/>
+<tst a="&d;&d;A&a;&#x="&d;&d;A&a;&#x20;&a;B&da;"/>
+<tst a="&#xd;&#xd;A&#xa;&#xa;B&#xd;&#xa;" b="&#xd;&#xd;A&#xa!&#xa;B&#xd;&#x&#xd;&#xa;&#x20;&a;B&da;"/>
+<tst a="&#xd;&#xd;A&#xa;&#xa;B&#xd;&#xa;" b="&#xd;&#xd;A&#xa;&#xa;B&xd;&#x&#xd;&#xd;A&#xa;&#xa;B&#d;&#xa;" b="&#xd;&#xd;A&#xa;&#xa;B&#xd;&#a;"/><tst a="&#32;x&#32;&;A&a;&#x5"&d;="&#32;x&#32;&#32;y&#32;"/>
+<tst a=" a b " b=" a b "/>
+<tst a=" d;A&#xa;&#xa;B&#xd;&#xa;" b="&#xd;&#xd;A&#xa;&#xa;B&#xd;&#a;"/>
+<tst a="&#32;x&#32;&;A&a;&#x="&d;="&#32;x&#32;&#32;y&#32;"/>
+<tst a=" a b " b=" a b "/>a="  a  b  " b="

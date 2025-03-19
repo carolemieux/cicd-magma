@@ -1,0 +1,11 @@
+¤¼¤¤¤¤¤¤¤¤¤¤1¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤=>[\<!DOCTYPE doc [
+<!ATTLIST doc attrExtELIED>
+<!ENTITY e11111111111111111111111111111STEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" NDATA gif>
+<!NNTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrExtEnƒ="entExt">
+   &ent1;, &ent2;!
+</doc>
+
+<!-- Det

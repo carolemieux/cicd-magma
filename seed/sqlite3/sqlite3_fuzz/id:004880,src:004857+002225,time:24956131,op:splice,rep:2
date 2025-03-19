@@ -1,0 +1,4 @@
+ WITH RECURSIVE c AS (
+     WITH RECURSIVE c AS (
+        WITH RECURSIVE c AS (
+           WITH REC

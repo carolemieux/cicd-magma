@@ -1,0 +1,3 @@
+
+
+ SELECT count() OVER () OR 'tCTVER 'tCT'o'tCT'oys

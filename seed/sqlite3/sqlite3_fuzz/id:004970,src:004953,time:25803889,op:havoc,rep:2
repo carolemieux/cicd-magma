@@ -1,0 +1,4 @@
+CREATE TABLE t1(a,b);
+ CREATE INDEX t1b ON  t1(a,b);
+ CREATE INDEX t1b ON t1(b);
+  ST a FROM t1 WHERE b=-99ECT?ÿ

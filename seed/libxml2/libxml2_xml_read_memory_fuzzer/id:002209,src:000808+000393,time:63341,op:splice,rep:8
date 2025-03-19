@@ -1,0 +1,9 @@
+<?xml version="1.0=?@
+<!DOCTYPe EXAMPLE SYSTEM "example.dtd" [
+4!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;"  Test of eNtities in attributes.
+<<?xml version='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&#60;!ELEMENT test (#PCDATA) $' >
+<!ENTITY % d

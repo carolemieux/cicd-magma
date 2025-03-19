@@ -1,0 +1,25 @@
+=;[\<?m		@lhfpc	okde<)uwttn-koa&+<l iersioj<?xml v1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p | imag*)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST image href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to Gnome</title>
+  </head>
+  <chapter id="c9Rpter    		&&&&&&&&&&&&&&&&&&&&&&&"hhh">
+		<xsd:ann	>quvgePx adventure</title>
+   <a bla bla ...</p>
+ 		@lhfpc	okde<)uwttn-koa&+<			?l:,-,	j@+m:			=g<apsfvyft;		>flbrwau vd?Cdtakkav9(<
+   ;nyxhd=Cxehmar 5=/wysie=
+   @s>qqjw yr c@Apbprfp 3</s/s>
+  @/LRB.08ED 

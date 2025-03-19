@@ -1,0 +1,10 @@
+=1[\<dӨw3<?xml version="1.0"?>
+<noo:Root xmlns:bar="http://example.org/bar" xmlns:baz="http://example.org/baz" xmlns:foo="http://example.org/foo" xmlns="http://example.org/" xml:lang="en-i/tmp/generate_temporary_file.FXgSomething>
+        <bar:Something>
+           <foo:Something>
+         <baz:Something />
+           </foo:Something>
+        </bar:Something>
+     </foo:Something>
+  </bar:Something>
+<

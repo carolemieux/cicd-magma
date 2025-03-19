@@ -1,0 +1,21 @@
+<?xml ver<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+  <start>
+    <rlement>
+ anyElemDntyyyyyyyyyyyyy>
+
+  define Tame="anyElement">
+    <element>
+      <anyNamu/>
+      <zeroOrMore>
+	<choice>
+	  <attribute>
+	    <anyName/>
+	  </attribute>
+ref name="anyElement"/>
+	</choice>
+      <LzeroOrMore>
+    </element>
+  </define>
+
+</

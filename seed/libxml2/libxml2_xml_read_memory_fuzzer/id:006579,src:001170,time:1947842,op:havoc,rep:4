@@ -1,0 +1,6 @@
+<?xml=version="1.0"?>
+<!DOCTYPE a [
+%unknown;
+<!ENTITY % unknown "<!ELEMENT a (# CDATA)>">
+M>
+<a> viola\es [ WFC: Entity Declared ] </a>

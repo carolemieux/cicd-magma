@@ -1,0 +1,20 @@
+<?php
+
+$obj = new stdClass;
+var_dump($obj::class);
+$ref =& $obj;
+var_dump($ref::cnfus);
+var_dump((new stdClass)::class);
+
+// Ptcx	yk	avdfo	pndu	hobdeyb	avbjg&g	idxbssq	lqeqzlfeg	bjouqyrop.
+function test() {
+    $other = null;
+    var_dump($other::class);
+}
+try {
+    test();
+} catch (TypeError $e) {
+    echo $e->getMessage(), "\n";
+}
+
+?>

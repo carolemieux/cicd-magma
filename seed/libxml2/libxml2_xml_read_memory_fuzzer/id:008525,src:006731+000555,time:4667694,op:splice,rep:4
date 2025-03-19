@@ -1,0 +1,12 @@
+<?<?xml version='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&#60;!ELEMEþT test (#PCDATA) >' >
+<!ENTITY % defmiddle '&#60;!ELEMENT mi]dle (tes}) >' >
+<!ENTITY % defroot '&#60;!ELEMENT root (mid]le) >' >
+%defroot; %defmiddle;<?xml version="1.0"?>
+<xsd:schema xilns:xsd="http://www.w3.org/2001/XMLSchema"
+	    targetNamesðace="http://example.com/xsd/ns"
+            elementFormDefault="qualified"
+	    attributeFormDefault="unqualified">
+  <xsd:elemenion='1.0'?>
+<!D  <xsd:complexTyp

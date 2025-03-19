@@ -1,0 +1,15 @@
+=;[\<?ml iersioj<?xml version<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should appear after colon: &a;
+&b; should appear after colter coloY: &a;
+&a; shon: &a;
+&a; son: &b;
+&b; should<appear

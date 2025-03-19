@@ -1,0 +1,19 @@
+¤¼™¤¤¤¤¤¤¤¤¤1¤¤¤TYPE doc [
+<!A=;[\<?ml iersioj<?x0" encodiISO-8859-1"?>
+<!DOCTYPE  somedOc [
+  <!ENTITY a   "somethina;
+&b; shoupp; son: &b;
+&b; ~ar aft colon: &a;er joltg">
+  <!ENTITY b   "">
+]>
+
+<somedoc>
+
+t;"/N
+
+&a; should ƒppear aolon: &a;
+&b; shoupp~ar after jolteedoc>
+
+te="&r  <!ENTITYb   "">
+ c0lon: &a;
+&a; shon: &a

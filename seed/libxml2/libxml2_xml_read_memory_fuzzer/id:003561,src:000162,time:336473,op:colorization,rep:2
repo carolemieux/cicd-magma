@@ -1,0 +1,5 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)+, c) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c ENRPT;\;>amb?;f+=?d+;@d+?@+apd<

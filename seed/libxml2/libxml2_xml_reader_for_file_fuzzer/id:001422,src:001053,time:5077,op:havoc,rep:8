@@ -1,0 +1,11 @@
+<?xml version="ã.0"?>
+<xsd:schema xmlns:xsd="http: <xsd:elem†nt name="foo">
+   <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extensionššššššššššššššššššššššš       <xsd:attrie="xsd:ID"/>
+        </xsd:extension>
+      </xsd:silpleContent>
+    </xsd:coxType>
+  </xsd:element>
+</xsd:sc…ema>
+

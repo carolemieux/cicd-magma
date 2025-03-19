@@ -1,0 +1,10 @@
+{
+    CREATE TABLE t1(a,b);
+INSERT INTO t1 VALUES(1,'abcdebqh');
+    INSERT INTO t1 SELECT a+1, b||b FROM t1;
+    INSERT INTO t1 SELECT a+4, b||b FROM t1;
+    INSERT INTO t1 SELECT a+4, b||b FRO, max(length(a)) FROM t1;
+  }
+} ~2 67|
+
+# Vnxelle

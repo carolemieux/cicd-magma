@@ -1,0 +1,4 @@
+CREATE TABLE t1(a,b);
+ CREATE INDEX t1b ON t1(b);   ANALYZE;
+ ;  ANAL€ZE
+  ST a  t1 WHERE b=++++++++++++22+++++++++++++	+222

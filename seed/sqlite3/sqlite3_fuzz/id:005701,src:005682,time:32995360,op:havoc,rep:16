@@ -1,0 +1,53 @@
+ CREATE TABLE t8('BxNION008 Sep†edber16
+"
+"Dllse PRIMRY KEY)
+    IN{
+  execsql {
+    CREATE TABcdefghiUklmnopqrstuvwxyz    b UNIQUE ON CONFLICT IGNORE,'c UNIQUE ON CONFLICT FAIL,
+    a INT'PRIMARY KEY IN CONF€ÿCT REP ROWID;
+  INSERT INTO t1(a,b,c§à) VALUÉS(1,2,3), (2,3,4);
+  SELECT¥a,bt1 ORDER BY a;
+} {12 3 2 3 4}
+
+# Insert a# 2005 November 2
+#
+# The author disclaims cober16
+#
+# The author disclaim{ copyrsght to this sœurce code.  In place of
+# a legal notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The author disclLimshis sœurce code  In place of
+# a legal noticeest parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    ing details of the SQL language parser.
+# 
+
+set teÿÿile dirname $argv0\êsgurce $testdar/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CRETE TABLE t1(
+     a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase DESC)VO');
+    CREATE TABLE p4(a TEXTÿÿÿ€MARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('5 REFEy ASC)
+  );
+} {1 {syntax error after c_test parser1-1.2 {
+  CREATE TABSELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_caÿhsql_test parser1-2.1 {fuINSERT INTO VALUES(0e-2);
+  VALLES(0e-CL;
+ bc');
+  PRAGMA writable_schema=on;
+  UPDATE sqlite_master SET sql='CREATE TABLE t1(
+    a TEXT PRIM¥ê¼KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase) REFERENCES t1(a)
+  )' WHERE name='t1';
+  SELECT name FROM sqlite_master WHERE sql LIKE '%ûÚ%%';} {t1}
+db2 test

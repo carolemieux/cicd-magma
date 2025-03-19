@@ -1,0 +1,26 @@
+==1[\    <!DOCTYPE doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc xmlns:foo="http://www.ar.org" xml:base="http://www.example.org/2002/">
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    >"/e4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.orgwww.w3.org"
+       xmlns="http://example.org"/>
+   <e6 xmlns="" test="../baz" xmlns:a="http://www.w3.org">
+       <e7 xmlns="http://www.ietf.org">
+           <e8 xmlns="" xmlns:a="http://www.w3.org" a:foo="bar">
+           <e=1[\<dЯ╟╟╟╟╟╟╟╟Р<schema xmlns="http://www.ascc.net/xml/schematron" >
+     <pattern name="Test count">
+          <rule context="/*">
+               <report test="count(//BBB) = count(//AAA)">O.K.</report>
+             >
+               <assertns:xsd  <assertns:xsd="http://www.w&lt;= count(/ AAA are missing</assert>
+              сссссссссссссссссссс <report иe=>[\<doc>
+  <p>stannnnnnnnnnnnnnnnnnnnnnnnnnnnnnn"1.0"hema xmlns:xsd="http://www.w,.org/2001/dMLSchema">
+  <xsd:el>
+    <xsd:complexTkpe>
+      <xsd:si<xsd:attribute name="mpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attXWbute name="id" tye="xsd:ID"/>
+   /    </xsd

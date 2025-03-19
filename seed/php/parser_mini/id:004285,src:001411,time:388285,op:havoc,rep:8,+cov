@@ -1,0 +1,19 @@
+<?php
+
+$doubles = ar(((((((((((  PHP_INT_MAX,
+        PHP_INT_MAX + 1,
+        PHP_INT00,
+        PHP_INT_MAX * 2 +1, -PHP_I      PHP_INT_MAX + 1,
+    NT_MAX -2,
+       X -2,
+       -PHP_INT_MAX -1000
+        );
+
+foreach ($doubles as $d) {
+        $l = (int)$d;
+        var_dump($l);
+}
+
+echo "Done\n";
+  
+?>

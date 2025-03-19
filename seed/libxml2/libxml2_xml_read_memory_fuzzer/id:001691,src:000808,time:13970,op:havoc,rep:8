@@ -1,0 +1,8 @@
+<EXAMPLEEXAMP0E>
+
+ SYSTEM "example.dtd" [
+<!ENTITY xml "mxtensible Male.dtd" [
+<!ENTITY xmop1="a&am};b" prop2^"&xml;">
+  Test of entities in attributes.
+</EXAMPLE>
+

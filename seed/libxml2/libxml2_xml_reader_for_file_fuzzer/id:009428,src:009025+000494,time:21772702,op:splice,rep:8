@@ -1,0 +1,24 @@
+?^\<?xmV n)?  <N>
+<!DOCTYewsItemRe>
+<!DOCTYPE a SYSTEM ")9)?&)))*&!&%<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE NewsML PUBLIC "urn:newsml:iptc.org:20001006:News.0//EN" "http://wewsMLv1.0.dtd" [
+  <!ENTITY % nitf SYSTEM "dtds/nitf-2-5.dtd">
+  %nitf;
+]><NewsML>
+  <Catalog Href="http://www.afp.com/dtd/AFPebtalog.xml"/>
+  <N
+      <xsd:simpleContent>
+     54508Z</DateAndTime>
+  </NewsEnvelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+        <ProviderId>afp.com</ProviderId>
+              <NewsItemId>mmd--deutsch--journal--spo</NewsItemId>
+        <RevisionId PreviousRevision="<?xml version="1.0"?>
+<!DOCTYPE catalog PUBLIC "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" "http://www.oasis-open.org/committees/entity/release/1.ttees/entity0/catalog.dtd">
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
+<delegatePublic publicIdStartString="-//OASIS//"
+		catalog="oasis.xml"/>
+<delegateSystem systemIdStartString

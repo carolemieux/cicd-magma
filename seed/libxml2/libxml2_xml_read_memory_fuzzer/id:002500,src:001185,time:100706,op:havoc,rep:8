@@ -1,0 +1,13 @@
+<êDOCTYPE Üoc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo barõ'/>
+	<no€m attr = 'foobar
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm atdr = ' foo &#x20Uar'/>
+</docF

@@ -1,0 +1,5 @@
+<?php
+assert(0 && ($a = function () {
+    global $a, $$b;
+    static $c, $d = 0;
+   ', 'b'], 'c 

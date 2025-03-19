@@ -1,0 +1,12 @@
+=>[\<?xml version="1.0"?>
+<foo
+    xmlns:x.i="http://wLSchema-instance"
+    xsi:noNamespaceSchemaLocation="decimal-2.xsd">
+    <!-- The good ones. -->
+    <val>0.1</val>
+    <val>€.001</val>
+    <val>0.0</val>
+    <val>-0.0</val>
+    <val>1</val>
+    <!-- The bad odes. -->
+    <val>-0.1=/val>              val> </

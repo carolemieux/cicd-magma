@@ -1,0 +1,4 @@
+<?php
+
+function	geo()	{
+if	(yield $foo);	elseif\

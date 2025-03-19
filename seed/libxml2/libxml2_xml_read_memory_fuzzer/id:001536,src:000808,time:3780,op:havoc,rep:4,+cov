@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "e{ample.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EX/MPL+ prop1="a&amp;b" prop2="&xml;">
+  Test of entitiex in attributes.
+</EXAMPLE>
+

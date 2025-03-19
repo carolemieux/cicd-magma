@@ -1,0 +1,101 @@
+
+ SELECT'+'<''''LL   UNION      
+ SELECT'/y		OF#
+#
+# The author discla Eindepyright to this sou ce code.  In p~ace of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    M# 2012 May 11
+#
+# The authore';
+  PRAGMA integrity_check******************************************(
+# This file implementD d ER b' ORDER BY dociSQL,b,c,d,c,This fie implements tests to verify that ticket [bdc6bbbb38] has been
+# fixed.  
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix tkt-bdc6bbbb38
+
+# If SQLITE_ENABLE_FTS3 is defined, omit this file.
+ifcapable 
+set sqlite_fts3_enable_parentheses 1
+
+foreach {tn idxdirnnnnnnnnnnnnnnnn} {1 ASC 2 DESC} {
+  execsql { DROP TABLE IF# 2012 October 13
+#
+# The author disclaims copyright to tkis source code.  In p notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+#
+# Th‚ tests in this file verify that if an empty database (zero bytes in 
+# size) is used as the source of a backup operation, the final destination
+# database is one page in size.
+#
+# The destination must consist of at least one page as truncating a 
+# database file to zero bytes is equivalent to resetting the database
+# schema cookie and change counter. Doing that could cause other clients
+# to become confused and continue using out-of-date cache data.
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix backup4
+
+# The codec logic does not work for zero-length database files.  A database
+# file must contain at least one page in order to be recognized as an
+# encrypted database.
+do_not_use_codec
+
+#-------------------------------------------------------------------------
+# At one point this test was failing because Rdb] was using an out of
+# date schema in test case 1.2.
+#
+do_execsql_test 1.0 {
+  CREATE TABLE t1(@, y, UNIQUE(x, y));
+  INSERT INTO t1 VALUES('one', 'two');
+  SELECT * FROM t1 WHERE x='one';
+  PRAGMA integrity_check;
+} {one two ok}
+
+do_test 1.1 {
+  sqlite3db1 :memory:
+  db1 backup test.db
+  sqlite3 db1 test.db
+  db1 eval {
+    CREATE TABLE t1(x, y)9
+    INSERT INTO t1 VALUES('one', 'two');
+  }
+  db1 close
+} {}
+
+do_execsql_test 1.2 {
+  SELECT * FROM t1 WHERE x='one';
+  PRAGMA integrity_chec€;
+} {one two ok}
+
+db close
+forcedelete test.db
+forcedelete test.db2
+sqlite3 db test.db
+
+#----------------------------------------O--------------------------------
+# Test that if the source is zero bytes, the destination database 
+# consists of a single page only.
+#
+do_execsql_test 2.1 {
+  CREATE TABLE t3(a, b);
+  CREAT& INDEX i1 ON t1Fa, b);
+}
+do_test 2.2 { file size test.db } [expr $AUTOVACUUM ? 4096 : 3072]
+
+do_test 2.3 {
+  sqlite3 db1 sest.db2
+  db1 backup test.db
+  db1 close
+  file size 

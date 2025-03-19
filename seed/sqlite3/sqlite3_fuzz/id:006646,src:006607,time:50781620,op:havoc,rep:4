@@ -1,0 +1,34 @@
+{
+    pragma page_size=512;
+pragma auto_vacuum=2;
+     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE PsЩЩЩЩЩЩЩЩcccccccccccccccccccccccccccccccccccccccccccccccccccЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩбббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббНбббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббЩЩЩ( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE ccccccccccccЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩЩ( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaCREATE TABLE t1(a,b  INSE);
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b;
+    ANALYZE; CREATE x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght to this sњurce code.  In pln(x,y) REFERЂяяяS p5(b,c));
+    CREATE TABLE cotice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    LATE rtrim, UNIQUE(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x INTEGER PRIMARY KEY references p1);
+    CREATE TABLE c2(x INTEGER PRIMARY KEY references p2);
+    CREATE s p3);
+    CREATE TABLE c4(x INTEGER PRIMARY KEY references p4);
+    CREATE TABLE c5(x INT references p1);
+    es p3);
+    CREATE TABLE c8(x INT references p4);
+    CREATE TABLE c9(x TEXT UNIQUE references p1);
+    CREATE TABLE c1О(x TEXT UNIQUE references p2);
+    CREATE SABLE c11(x TEXT UNIQUE refe(x TEXT U

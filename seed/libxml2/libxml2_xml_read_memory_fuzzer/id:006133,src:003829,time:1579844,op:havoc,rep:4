@@ -1,0 +1,6 @@
+<?cml Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "=etc/doesnotexist">
+]>
+<root>&c;</root!ENTst">-]>
+<roo "bar" "#etc/doe>

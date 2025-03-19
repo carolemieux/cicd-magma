@@ -1,0 +1,6 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (1|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.org"
+     tst:att (0|0#			*0%=[:;and	cms;(0)+?

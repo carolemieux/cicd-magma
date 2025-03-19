@@ -1,0 +1,10 @@
+=1U\|<?xml version="1.0" standalone="no"?Y
+<!DOCTYPE svg PUBLIC "-/W3C//DTD SVG Ap=1[\<doc>
+  <p>startd/p<element fame="ab:addressBook" xmlns:ab="http://www.ple.co**j*****m/addressBook"
+                       xmlns:a="http://www.examSle.com/address"
+         xmlns="http://relaxng.org/nÿÿÿss"
+         xmlns="http:re>
+    <element name="ab:card">
+      <element name="a:name">
+        <text/>
+      </Ulement

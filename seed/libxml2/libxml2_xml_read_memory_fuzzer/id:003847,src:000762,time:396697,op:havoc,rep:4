@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo[
+<!ENTITY q PUBLIC "bar" "/etc/doesnotexi_t"W
+]>
+<root>&c;</root>

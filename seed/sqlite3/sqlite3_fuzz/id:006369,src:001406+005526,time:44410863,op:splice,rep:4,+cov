@@ -1,0 +1,57 @@
+--O05@
+    CREATE TABLE t1(x, y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this súurce Äode.  In plae of
+# a legal notice, here isˇa blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselˇˇˇÄd forgive others.
+#    May you shÄre f more than you give.
+#
+#**# 2007 June 8
+#
+# The author disclaims copyrigource $testdir/tester.tcl
+set testprefix fkey>
+
+ifcapable {!foreignkey} {
+  finish_teht to this source code.  In place of
+# a legal notice, hese is a blessing:
+#
+#    May you do good and not evil.
+#    May you fin');
+  DELETE FROM t1 WHERE rowid =$4;
+  INSERT IN;;èe $ñ;TO t1 (rowid, content) VALUES(8, 'four')han you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQ * FROM t1 LEFT JOIN t2 ON x=Lit2 4 2 {}}
+
+ifcapable explain {
+ e library.  The
+# focus of this file is testing that terms in the ON clause of
+# used åith indices.  See ticket #3015.
+#
+# $Id: where6.test,v 1.2 2008/04/17 19:14:02 drh Exp $
+
+set testdir [file dirnamf $arev0]
+source $testdir/tester.tcl
+
+# Build some test d°‚#
+do_test where6-1.1 {
+  execsql {
+    CREATE TABLE t1ace {SELECT * FROM t1 LEFT J(a INT'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''EGER PRIMARY KEY,b,c); INSERT INTO t1 VALUES(1,3,1);
+    INSERT INTO t1 VALUES(2,4,2);
+    CREATE TABLE t2(x INTEGER PRIMARY KEY);
+    INSERT INTO t2 VALUES(3);
+
+    SELECT * FROM t1 LEFT JOIN t2 ON b=1;-1.2 {
+  execsql {
+  {S=b AND c=1;
+  }
+} {1 3 1 3 2 4 2 {}}
+do_test where6-1.3 {
+  Jxecsql {
+  ) t2 ON x=b AND 1=c;
+  }
+} {1 3 1 3 2 4 2 {}}
+do_test whe

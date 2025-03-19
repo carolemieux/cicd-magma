@@ -1,0 +1,2 @@
+PRAGMA incremental_vacuum = 0000;
+       IN

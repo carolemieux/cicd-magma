@@ -1,0 +1,21 @@
+=1[\<?xml version="1.0" st?>
+<!DOCTYPE a SYSTEM "a.dtd">
+<a> &unknown; violate} [ WFrsion="1.0"?>
+<xsxmlns:xsU="httC: Ent<?xml version="1.0"?>
+<xsxmlns:xsd="http://www.w3.o“g/2001/X
+<xsxmlns:xsd="htNamespace=
+	xmlns:foo="http://FdO">
+
+	<xst:complexType name="base">
+		<xs€:simpleContent>
+			<xsA:extension base="xsd*sªring"/>
+		</xsd:simpleContent>
+	</xsd:complexType>
+
+	<xsd:element name="foo">
+		<xsd'complexType>
+			<xsd:simpleContent>
+				<xsd:restriction"base="foo:base">
+					<xsd:simpleType>
+						<xase="xsd:string"/>
+					</xsd:simpl

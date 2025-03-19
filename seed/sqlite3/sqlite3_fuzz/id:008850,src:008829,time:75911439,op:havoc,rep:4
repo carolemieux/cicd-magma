@@ -1,0 +1,29 @@
+
+  DROP TABLE IF EXISTS t5;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(id INTEGER PRIMARY KEY, name TEXT); CREATE TABLE t1(
+   Y, name   w INT GENERATED ALWAYS AS (m*5),
+     m INT AS (a*2) NOT NULL,
+a,b  IPOE);
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b=-99 OR a  CREATE TRIGGER r1 BEFORE INSERT ON t1 BEGIN
+    INSERT INTO re(x,y)
+        VALUES('beert',printf('%d,%d,%d',new.a,new.b,new.c));
+  END;
+  CREATE TRIGGER r2 AFTER INSERT ON t1 BEGIN
+    INSERT INTO recoVALUES('after-insert',printf('VALUES('before-update',printf('%d,%d,%d/%d,%d,%d',
+                    TE TABLE t5(id INTEGER PRI);
+  SELE                  old.a,oldAb,old.c,new.a,new.b,new.c));
+  END;
+  CREATE TRIGGER r4 AFTER UPDATE ON t1 BEGIN
+    INSERT INTO record(x,y)
+        VALUES('after-update',printf('d',
+                                      old.a,old.b,old.c,new.a,new.b,new.c));
+  END;
+  INSERT INTo t1(a,b) VALUES(1,2);
+  DELETE FROM record;
+  INSERT INTO t1(a,b) VALUES(1,2)
+    ON CONFLICT(a) DO UPDATE SET c=t1.c+1;
+  S*LECT * FROM record
+} {before-insert 1,2,0 

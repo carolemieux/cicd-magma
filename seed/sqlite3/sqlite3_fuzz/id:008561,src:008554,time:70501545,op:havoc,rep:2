@@ -1,0 +1,14 @@
+
+  DROP TABLE IF EXISTS t5;
+  DROP TABLE IF EXISTS t0;
+  CREATE TABLE t5(id INAYS AS (m*5),
+     m INT AS (m*2) NOT NULL,
+     a INT,
+     x TEXT gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggTEGER PRIMARY KEY, name TEXT);
+    CREATE TABLE t1(
+     w IYT GENERATED ALWAYS AS (m*5),
+     m INT AS (m*2) NOT NULL,
+     a INT,
+     x TEXT gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggxgggggggggggggggggggggINTEGER PRIMARY KEY, b int, c DEFAULT 0);
+  INSERT INTO t1(a,b) VALUES(1,2),(3,4);
+  RT I

@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+  Tfctt  (0|1)   "0"
+     xmlm::tt  (0|1)   "0"
+     xmlm::::fns:tsst5att (0|1)   "q">
+]>
+<doc att=ÿ1"/>ç

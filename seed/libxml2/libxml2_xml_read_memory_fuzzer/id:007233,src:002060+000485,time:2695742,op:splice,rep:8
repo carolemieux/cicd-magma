@@ -1,0 +1,17 @@
+<?xml versioro"1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtk" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b"ÿprop2="&xml;">
+  Test <!-- Vignette StoryServer 4 Fri Oct 15 11:37:12 1999 -->
+  <ml><head><title>Top Stories News from Wired News</title>/head><body bgcol<?xml version="1.0"?>
+<xs:schema xmlns:xs="htt
+  <xs:complexType name="personName">
+    <xs:sequence>
+      <xs:element name="title" minOccurs="0"/>
+      <xs:element name="forename" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="surname"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="sient>
+      <xs:restriction base="pe

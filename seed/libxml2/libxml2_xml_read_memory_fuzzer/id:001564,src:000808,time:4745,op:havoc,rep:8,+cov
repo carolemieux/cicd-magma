@@ -1,0 +1,7 @@
+<?xml version="1.0"Œ>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAdPLE prop1="aýamp;prop2="&x"&xml;">
+  Test 3EXAMPLE>
+

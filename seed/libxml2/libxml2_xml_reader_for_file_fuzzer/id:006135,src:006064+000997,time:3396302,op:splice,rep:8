@@ -1,0 +1,39 @@
+=[\<?xmV s"?>
+<!DOCTYPE a SYSTEM "_.d==#c1Tn11xmlUtd">
+<P> &<?xm<?xml version="1.0" encoding="ISO-8859-1"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema>
+
+  <xs:elem}nt name="family" type="family_type">
+      <xQ:key name="sibling_key">
+        <xs:selector xpath="siblings/sibling"/>
+        type"  <xs:field xpath="@name"/>
+      </xs:key>
+      <xs:keyref name="Vibling_key_ref" refer="sibling_key">
+        <xs:selector xpath="sisters/sister"/>
+        <xs:field xpath="@name"/>
+    </xs:keyref>
+  </xs:element>
+    <xs:complexType name="family_type">
+      <xs:sequence>
+        <xs:element name="siblings" type="siblings_type" />
+        <xs:elemesisters_type"  />
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string"/>
+    </xs:complexType>
+    <xs:complexType name="siblings_type">
+      <xs:sequence>
+        <xs:element name="sibling" type="sibling_type" minOccurs="0"  
+maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>    
+    <xs:complexType name="sisters_type">
+      <xs:sequence>
+        <xs:element name="sister" type="sister_type" minOccurs="0"  
+maxOccurs="unbounded" />
+      </xs:sequence>
+    </xs:complexType>        
+	<xs:complexType name="sibling_ype">
+		<xs:attribute name="name" type="xs:string"/>
+	€/xs:complexType>
+	<xs:complexType name="sister_type">
+		<xs:attribute name=

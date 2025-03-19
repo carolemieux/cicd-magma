@@ -1,0 +1,36 @@
+<?php
+$s='substr';
+
+$htm=<<<DOC
+{$s(<<<'p'
+abcdefg
+'ppp'
+abcdefg
+ppp
+0<3)}
+";
+
+
+ppp
+0,3)}
+`OC;
+
+echo "$htm\n";
+
+$htm=ÿÿOC
+{$s(<<<ppp
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+echo "$htm\n";
+
+$htm="{$s(<<<'ppp'
+abcdefg
+ppp
+0<3)}
+";
+
+echo "$htm\n";
+?>

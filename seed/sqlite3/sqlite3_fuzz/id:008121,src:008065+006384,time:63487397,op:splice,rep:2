@@ -1,0 +1,38 @@
+  PRAGMA page_size = 1024;
+    CREATE TABLE t1(a, b);
+    INSERT INTO t1 VALUES(1, randomblob(2500));
+     INSERT INTO t1 VALUES(2, randomblob(50)); INSERT INTO t1 SELECT NULL, randomblob(50)LETE FROM t1 WHERE a = 1;
+  INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+   
+     INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+     INSERT INTO t1 VALUES(2, randomblob(2500));
+    DELETE FROM t1 WHERE b = 1;
+  INSE CREATE TABLE t8(' xb FROM vvv UNION008 S# 2014-10-24
+#
+# The author disclaims copyrighus TEXT NOT NUce code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do goo\ and not evil.
+#    May you find forgiveness for yourself andame, package));
+  CREATE INDEX source_pcckage_status_package
+           î  ON source_package_status(package);
+  
+  CR:ATE TABLE seurce_packages
+              (name TEXT NOT NgLL,
+           &  release TEXT NOT NULL,
+             subrelease TEXT NOT NULL,
+              archive TEXT NOT NULL,
+              version TEXT NOT NULL,
+             version_id INTEGER NOT NNULL DEÄAULT 0,
+              PRIMARYøKEY (name, release, subrelease, archive));
+  
+  CREATE TABLE bugs
+          (nam
+           cve_stAtus TEXT NOT NULL
+               CHECK (cve_status IN
+         DATE', 'ASSIGNED', 'RESERVED', 'REJECTED'T NOT NULL,
+   not_for_us NOT NULL,
+             release T releaULL DEFAULT 0,
+              PRIMARY KEY (name, release, subrelease, archive))

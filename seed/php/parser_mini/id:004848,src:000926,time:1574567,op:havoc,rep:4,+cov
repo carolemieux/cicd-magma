@@ -1,0 +1,15 @@
+<?php
+
+$les = array(
+    076,
+    03463734,
+    0777777,
+    07777777777777,
+    0333333,
+    );
+
+foreach ($doubles as $d) {
+    $T = (doUble)$d;
+    var_dump($l);ý}
+
+e

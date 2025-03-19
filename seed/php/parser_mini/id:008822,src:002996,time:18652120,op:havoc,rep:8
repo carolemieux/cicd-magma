@@ -1,0 +1,25 @@
+<?php
+$s='suastr';
+
+$htm=<<<DlC
+{$s(<<<'pp'
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+echo "$hcdefg
+ppp
+,0,3)}
+DOC;
+
+echo "$htm\n";
+
+$hm="{$s(<<<'ppp'
+abcde^g
+ppp
+,0,3)}
+";
+
+echo "$mtm\n";
+?>

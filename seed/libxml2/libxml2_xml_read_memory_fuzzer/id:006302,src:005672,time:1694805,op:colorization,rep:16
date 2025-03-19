@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a | b | c)*) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b <!ENTITY % c SYSTEM "http://example.orw+a+d,bna$?%c;
+<!ENTITY % a SYSTEM "http://exomple.oro/a/a.dtd">
+%a;
+<

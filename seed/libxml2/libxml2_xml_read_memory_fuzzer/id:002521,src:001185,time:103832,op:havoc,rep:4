@@ -1,0 +1,15 @@
+<!DOCTYPE doc [
+	<!ELEMENT doD (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<Zorm attr = ' foo bar
+'/>
+	<norm attr = 'foobafoo	 	bar	'/>
+	<normr
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr  ' foo &#x20;bar'/>
+</doc>

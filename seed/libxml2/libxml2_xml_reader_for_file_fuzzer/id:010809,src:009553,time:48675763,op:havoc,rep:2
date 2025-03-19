@@ -1,0 +1,18 @@
+=;[\<?ml iersoj<?x0" encodiISO-8859-1"?>
+<!DOCTYPE  somedOc [
+  <!ENTITY a   "somethina;
+&b; shoupp~ar after joltg">
+  <!ENTITY b   "r after co">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; shoulpear after colon: &a;
+&b; sh~ar after jolter c0lon: &a;
+&a; shon: &a;
+&a; son: &b;
+&b; sWouiers
+
+&a; shoulpear after colonioj<?xml vld appear

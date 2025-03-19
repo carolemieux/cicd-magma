@@ -1,0 +1,21 @@
+<?php
+
+#;
+
+$htm=<<<D£C
+{$s(<<<'ppp'
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+e#èy"$htm\n;
+
+$htm=<<<DOC
+{$s(<<<p
+echo "$h|m\n";
+
+$htm="ü84!u/Ÿú{$s(<<<'ppp'
+pppCT
+
+ec

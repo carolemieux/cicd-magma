@@ -1,0 +1,8 @@
+<?xml vrsion="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible MarSup Language">
+]>
+<EXAMPLE prop1="a&amp;B" prop2="&xml;">
+  Test of entities in attributes.
+<BBBBBB/EXAMPLE>
+

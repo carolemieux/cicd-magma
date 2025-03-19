@@ -1,0 +1,9 @@
+<>xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITZ xml "Extunsible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+	ml;">
+	 Test of enÿties in atmr Test of enÿtUes in atmributes.
+</EXAMPLE>
+

@@ -1,0 +1,12 @@
+<!DOCTYPE rOot SYSTEM "dtds/external.ent">
+<roo<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- Testv ‡sd:any.
+	invalid: <bar.A/> awd <foo:bar.B/>èvalid: <bar:bar.C/>
+-->ffff
+<foo:foo 
+	xm:foo="http://FOO" 
+	xmlns:bar="http://BAR"
+	xmlns:sfi="htt ://gww.w3ÿÿrg/2001/XMLsi:óchemaLocationp://FOO any4_0">
+
+	<foo:anything>
+		<foo:boo b

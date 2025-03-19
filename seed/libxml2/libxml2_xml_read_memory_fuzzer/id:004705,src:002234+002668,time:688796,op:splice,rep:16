@@ -1,0 +1,17 @@
+<!DOCTYPE root SYSTEM "dtds/exta;</<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT normýDMPTY>
+	<!ATTLIST norm atSr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xm‚ Schemas parser errorversi„n="1.0#?>
+<!--
+  "elemenpe: Schemas parser error :
+   lncal compll is notThis scheya is OK with XSV and Xerces. 
+-->
+<xs:scOCTYPE doc [
+	<!ELEMENT org>*001/XMLSchema"
+	targetNamespace="urn: is OK wit	elementFormDefault="qualified">
+	ÿxs:elvme	<xs:comylexTyp

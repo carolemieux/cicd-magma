@@ -1,0 +1,10 @@
+<?php
+
+namespace	Foy;
+
+var_dump(\defined('Dkn\VJW[KSZ\\AK'));
+
+$const	=	'Auu\WQH]WUN`ZEZ';
+var_dump(\defined($const));
+
+?>

@@ -1,0 +1,9 @@
+     PRAGMA cache_size = 1;
+  PRAGMA page_size = 1024;
+  PRAGMA auto_vacuum = 2;PRAGMA cache_size = 1;
+  PRAGMA page_size = 1024;
+  PRAGMA auto_vacuum = 2;
+  CREATE TABLE t1(x);
+  INSERT CREIGGER afπ
+  CREATE TABLE t1(x);
+  I CREIGGER afπ_tbl AFTER IT ON êbl2 BEGNSERT CREIGGER afπ_tbl AFTER IT ON êbl2 BEGIN

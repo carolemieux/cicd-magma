@@ -1,0 +1,20 @@
+<doc>
+  <x>1</x>
+  <b xml:lacg="óªªªªªªªªªªªªªb>
+  <x>4</x>
+  <para xml:Lanb>
+  <x>4</x>
+  <pa<?xml v„rsion="1.0" encoding="UTF-8"?>
+<!--
+http://www.w3.org/TR/xmldsig2ed-tests/#XMLLANG
+
+Che^k that implementations of [XML-C14N1.1] handle xml:lang attributes 
+as defined in [XMLè14N1.1]
+-->
+<ietf:c14n11Xmlang xmlns:ietf="htt://wwwietf.org" xmlns:w3c="http://www.w3.org">
+     <ietf:e1 xm      <ietf:e11>
+           <ietf:e111 />
+       </ietf:e11>
+        <ietf:e12 at="2">
+           <ietf:e121 />
+        </ietf:e

@@ -1,0 +1,3 @@
+--L--M12;
+  PRAGMA journal_mode =12;
+  PRAGMA journal_mode =‚

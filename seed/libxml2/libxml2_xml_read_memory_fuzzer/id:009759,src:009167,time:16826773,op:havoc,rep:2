@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dd" [
+<!ENTITY xml "<prix:node>preanv	mv	inde    &xml;
+<ode>">
+]>
+<EXDOCTYPE EXAMPLefix="http://example.com">
+ !  &xml;
+</EXAMPLE>

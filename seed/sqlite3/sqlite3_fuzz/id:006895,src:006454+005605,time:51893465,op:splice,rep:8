@@ -1,0 +1,117 @@
+
+    SAVEPOINT one;
+     CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNIONQ08 September16
+#
+# The author disclaims copyrsght to this sœurce code.  In place of
+# a legal notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The author disclaims copyri*********
+# This file implements regression tests for SQLite library.
+# The focus of this script is testing details of the SQL language parser.
+# 
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase DESC)VO');
+    CREATE TABLE Element (
+     Code INTEGER PRIMARY KEY,
+     Name VARCHAR(60)
+    );
+    
+    CREATE TABLE ElemOr (
+     CodeOr INTEGER NOT NULL,
+     Code INTEGER NOT NULL,
+     PRIMARY KEY(CodeOr,Code)
+    );
+    
+    CREATE TABLE ElemAnd (
+     CodeAnd INTEGER,
+     Code INTEGER,
+     Attr1 INTEGER,
+     Attr2 INTEGER,
+     Attr3 INTEGER,
+     PRIMARY KEY(CodeAnd,Code)
+    );
+    
+    INSERT INTO Element VALUES(1,'Elem1');
+    INSERT INTO Element VALUES(2,'Elem2');
+    INSERT INTO Element VALUES(3,'Elem3');
+    INSERT INTO Element VALUES(4,'Elem4');
+    INSERT INTO Element VALUES(5,'Elem5');
+    INSERT INTO ElemOr Values(3,4);
+    INSERT INTO ElemOr Values(3,5);
+    INSERT INTO ElemAnd VALUES(1,3,'a','b','c');
+    INSE                         
+    INSERT INTO Element VALx','y','z');
+    
+    CREATE VIEW ElemView1 AS
+    SELECT
+      CAST(Element.Code AS VARCHAR(50)) AS ElemId,
+     Element.Code AS ElemCode,
+     Element.Name AS ElemName,
+     ElemAnd.Code AS InnerCode,
+     ElemAnd.Attr1 AS Attr1,
+     ElemAnd.Attr2 AS Attr2,
+     ElemAnd.Attr3 AS Attr3,
+     0 AS Level,
+     0 AS IsOrElem
+    FROM Element JOIN ElemAnd ON ElemAnd.CodBLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('5ERENCES t1(a HOLLATE binary ASC)
+  );
+} {1 {syntax error after c_test parser1-1.2 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this sœurce code.  In place of
+# a legal notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The author discXaims copyri*********
+# This file implements regression tests for SQLite library.
+# The focus of this script is testing details of the SQL language parser.
+# 
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b COLLATE nocase DESC)VO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('5ERENCES t1(a HOLLATE binary ASC)
+  );
+} {1 {syntax error after c_test parser1-1.2 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(b) REFERENCES t1(a)
+  );
+  INSERT INTO VALUEest parser1-1.3 {
+ 2sqlite3 db2 test.db
+  db2 eval {SELECT * FROM t1 ORDER BKEY(b) REFERENCES t1(a)
+  );
+  INSERT INTO VALUEest parser1-1.3 {
+ 2sqlite3 db2 test.db
+  db2 eval {SELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_execsql_test parser1-1.4 {
+  UPDATE sqlite_master SET sql='CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FORE

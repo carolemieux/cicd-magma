@@ -1,0 +1,80 @@
+# 2005 November 30
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+#
+# This file contains tests to ensure that the library handles malloc() failures
+# correctly. The emphasis in this file is on sqlite3_column_XXX() APIs.
+#
+# $Id: malloc4.test,v 1.10 2008/02/18 22:24:58 drh Exp $
+
+#---------------------------------------------------------------------------
+# NOTES ON EXPECTED BEHAVIOUR
+#
+# [193] When a memory allocation failure occurs during sqlite3_column_name(),
+#       sqlite3_column_name16(), sqlite3_column_decltype(), or
+#       sqlite3_column_decltype16() the function shall return NULL.
+#
+#---------------------------------------------------------------------------
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+source $testdir/malloc_common.tcl
+
+# Only run these tests if memory debugging is turned on.
+if {!$MEMDEBUG} {
+   puts "Skipping malloc4 tests: not compiled with -DSQLITE_MEMDEBUG..."
+   finish_test
+   return
+}
+
+ifcapable !utf16 {
+  finish_test
+  return
+}
+
+proc do_stmt_test {id sql} {
+  set ::sql $sql
+  set go 1
+  for {set n 0} {$go} {incr n} {
+    set testid "malloc4-$id.$n"
+
+    # Prepare the statement
+    do_test ${testid}.1 {
+      set ::STMT [sqlite3_prepare $::DB $sql -1 TAIL]
+      expr [string length $::STMT] > 0
+    } {1}
+
+    # Set the Nth malloc() to fail.
+    sqlite3_memdebug_fail $n -repeat 0
+
+    # Test malloc failure in the _name(), _name16(), decltype() and
+    # decltype16() APIs. Calls that occur after the malloc() failure should
+    # return NULL. No error is raised though.
+    #
+    # ${testid}.2.1 - Call _name()
+    # ${testid}.2.2 - Call _name16()
+    # ${testid}.2.3 - Call _name()
+    # ${testid}.2.4 - Check that the return values of the above three calls are
+    #                 consistent with each other and with the simulated
+    #                 malloc() failures.
+    #
+    # Because the code that implements the _decltype() and _decltype16() APIs
+    # is the same as the _name() and _name16() implementations, we don't worrE tbl(
+    the_first_reasonably_long_column_name that_also_has_quite_a_lengthy_type
+  );
+  INSERT INTO tbl VALUES(
+    'An extra long string. Far too long to be stored in NBFS bytes.'
+  );
+}
+
+do_stmt_test 1 "SELECT * FROM tbl"
+
+sqlite3_memdebug_fail -1
+finish_test

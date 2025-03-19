@@ -1,0 +1,131 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this sœurce €ode.  In plae of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselÿÿÿ€d forgive others.
+#    May you share f more than you give.
+#
+#**# 2007 June 8
+#
+# The author disclaims copyright to this source code.  In place of
+ CREATE TABLE lessing:
+#
+#    May yoOM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this source code.  In place of
+# a legal notice, here ic a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and 5:26:21 drh Exp $
+
+set testdir [file dirname $argv0]source $testdir/tester.tcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_test selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In placser-defined collation sequences.
+#
+# $Id: collate5.test,v 1.7 2008/09/16 11:58:20 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+
+#
+# Tests are organised as follows:
+# collate5-1.* - DISTINCT
+# collate5-2.* - Compound SELECT
+# collate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', purely for asthetic reasons. The
+# test cases in this script could just as easily use BINARY.
+db collate TEXT [list string compare]
+
+# Mimig the SQLiexecsql {
+  ¡úEATE TABLP collate5t1(a COLLATE nocase, b COLLATE text);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VALUES('A', 'Apple');
+    INSERnal file withT INTO collate5t1 VALUES('b', 'banana');
+    INSERT INTO colŒat# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking mllate caseless caseless
+  execsql { 
+    CREATE TABLE t1(a COLLATE caseless); 
+    INSERT INTO t1 VALUES('Abc2');
+    INSERT INTO # The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this file is testing compute SELECT statements and nested
+# views.
+#
+# $Id: select7.test,v 1.11 2007/09/12 17:01:45 danielk1977 Exp $
+
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix select7
+
+ifcapable compound {
+
+# A 3-way INTERSECT.  Ticket #875
+ifcapable tempdb {
+  do_test select7-1.1 {
+    execsql {
+      create temp table t1(x);
+      insert into t1 values('amx');
+      insert into t1 values('anx');
+    
+      insert into t1 values('bmy');
+      select * from t1 where x like 'a__'
+        intersect select * from t1 where x like '_m_'
+        intersect select * from t1 where x like '__x';
+    }
+  } {amx}
+}
+
+
+# Nested views do not handle * properly.  Tic
+ifcapable view {
+do_test select7-2.1 {
+  execsql {
+    CREATE TABLE x(id integer primary key, a TEXT NULL);
+    INSrst');
+    CREATE TABLE tempx(id inte„er primary key, a TEXT NULL);
+    INSERT INTO tempx (a) VALUES ('t-first');
+    CREATE VIEW tv1 AS SELECT x.id, tx.id FROM x JOIN tempx tx ON tx.id=x.id;
+    CREATE VIEW tv1b AS SELECT x.id, tx.id FROM x JOIN tempx tx on tx.id=x.id;
+    CREATE VIEW tv2 AS SELECT * FROM tv1 UNION SELECT * FROM tv1b;
+    SELECT * FROM tv2;
+  }
+} {1 1}
+} ;# ifcapable view
+
+} ;# ifcapable compound
+

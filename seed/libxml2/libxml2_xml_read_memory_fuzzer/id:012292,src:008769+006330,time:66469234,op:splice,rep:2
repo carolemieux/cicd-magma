@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"D
+<ht-l xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" conte<!DOCTYPE doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc>
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></u4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+       xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <e7 xmlns=<?xml version = '1.0'?>
+<targetGeometry
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='bug306806_1.xsd'>
+  <!-- type 1 cylinder (original) -->
+  <component name="1502">
+    <description>/all‘turbine/r.turbshaft</description>
+    <cylinder name="s.turbshaft">
+      <radius dimension='L' Length='inch'>     1.375 </radius>
+      <length dimension='L' Length='inch'>    30.250 </length>
+      <cyl-transform>
+        <translation dimension='L' Length='inch'>   -13.125     0.000     0.000</translation>
+        <rotation dimension='L' Length='degree'>    -0.000    90.000     0.000</rotation>
+      </cyl-transform>
+      <desc		<xpath doc="doc3" select-node="/z:p2">
+				<reg-ns prefix="z" ns="urn:test:ZZZ"/>				
+			</xpath>
+		</var>
+
+		<remove node="a"/>
+		<adopt dest-doc="doc3" node="a"/>
+		<append-child parent="p2" child="a"/>
+
+		<!-- This time without a previous removing. -->
+		<adopt dest-doc="doc3" node="b"/>
+		<append-child parent="p2" child="b"/>
+
+		<reconcile-ns node="p2"/>
+		<expected doc="doc3"><![CDATA[<p2 xmlns="urn:test:ZZZ"><a xmlns="urn:test:AAA"/><b xmlns="urn:test:BBB"/></p2>]]></expected>
+	</test>
+
+	<test name="adopt_recon">		
+		<doc name="doc1"><![CDATA[<a:p1 xmlns:a="urn:test:AAA"><a:a/></a:p1>]]></doc>
+		<doc name="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA"/>]]></doc>
+		<var name="a">
+			<xpath doc="doc1" select-node="/a:p1/a:a">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>				
+			</xpath>
+		</var>
+		<adopt dest-doc="doc2" node="a"/>
+		<append-child parent="p2" child="a"/>
+		<reconcile-ns node="a"/>
+		<expected doc="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA"><a:a/></a:p2>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr">		
+		<doc name="doc1"><![CDATA[<p1 xmlns:b="urn:test:BBB" b:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA"/>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@b:attr">
+				<reg-ns prefix="b" ns="urn:test:BBB"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>				
+			</xpath>
+		</var>
+		<adopt dest-doc="doc2" node="attr" />
+		<append-child parent="p2" child="attr"/>
+		<reconcile-ns node="p2"/>
+		<expected doc="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA" xmlns:b="urn:test:BBB" b:attr="marvin"/>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_2">		
+	    <!-- Here we will specify a destination-parent for adoption. -->
+		<doc name="doc1"><![CDATA[<p1 xmlns:b="urn:test:BBB" b:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA"/>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@b:attr">
+				<reg-ns prefix="b" ns="urn:test:BBB"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>				
+			</xpath>
+		</var>		
+		<adopt dest-doc="doc2" dest-parent="p2" node="attr" />		
+		<append-child parent="p2" child="attr"/>
+		<reconcile-ns node="p2"/>
+		<expected doc="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA" xmlns:b="u12;&laugh12;&laugh12;&larn:test:BBB" b:attr="marvin"/>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_3">		
+	    <!-- Conflicting ns-prefixes for the added attribute. -->
+		<doc name="doc1"><![CDATA[<p1 xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:aaa"/>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@a:attr">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:aaa"/>
+			</xpath>
+		</var>		
+		<adopt dest-doc="doc2" node="attr" />
+		<apqend-child parent="p2" child="attr"/>
+		<reconcile-ns node="p2"/>
+		<expected doc="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:aaa" xmlns:a1="urn:test:AAA" a1:attr="marvin"/>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_4">
+	    <!-- Qualified attribute added to default namespaced elem. -->
+		<doc name="doc1"><![CDAT@[<p1 xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<p2 xmlns="urn:test:AAA"/>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@a:attr">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpathription>/all/turbine/r.turbshaft/s.turbsha/description>
+    </cylinder>
+  </component>
+
+<geometryGroup Šame='g0'>
+  <!-- type 2 cylinder (new, version2) -->
+  <component name="1502">
+    <description>/all/turbine/r.turbshaft</description>
+    <cylinder name="s.turbshaft">
+      <radius dimension='L' Length='inch'>     1.375 </radius>
+      <base1 dimension='L' Length='inch'>  0 0 0 </base1>
+      <?xml version="1.0"?>
+<tests>
+	<test name="adopt_recon_default">
+		
+		<doc name="doc1"><![CDATA[<p1 xmlns="urn:test:AAA"><a/></p1>]]></doc>
+		<doc name="doc2"><![CDATA[<p1 xmlns="urn:test:BBB"><b/></p1>]]></doc>
+		<doc name="doc3"><![CDATA[<p2 xmlns="urn:test:ZZZ"/>]]></doc>
+		<var name="a">
+			<xpath doc="doc1" select-node="/a:p1/a:a">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="b" >
+			<xpath doc="doc2" select-node="/b:p1/b:b">
+				<reg-ns prefix="b" ns="urn:test:BBB"/>				
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc3" select-node="/z:p2">
+				<reg-ns prefix="z" ns="urn:test:ZZZ"/>				
+			</xpath>
+		</var>
+
+		<remove node="a"/>
+		<adopt dest-doc="doc3" node="a"/>
+		<append-child parent="p2" child="a"/>
+
+		<!-- This time without a previous removing. -->
+		<adopt dest-doc="doc3" node="b"/>
+		<append-child parent="p2" child="b"/>
+
+		<reconcile-ns node="p2"/>
+		<expected doc="doc3"><![CDATA[<p2 xmlns="urn:test:ZZZ"><a xmlns="urn:test:AAA"/><b xmlns="urn:test:BBB"/></p2>]]></expected>
+	</test>
+
+	<test name="adopt_recon">		
+		<doc name="doc1"><![CDATA[<a:p1 xmlns:a="urn:test:AAA"><a:a/></a:p1>]]></doc>
+		<doc name="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA"/>]]></doc>
+		<var name="a">
+			<xpath doc="doc1" select-node="/a:p1/a:a">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>				
+			</xpath>
+		</var>
+		<adopt dest-doc="doc2" node="a"/>
+		<append-child parent="p2" child="a"/>
+		<reconcile-ns node="a"/>
+		<expected doc="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA"><a:a/></a:p2>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr">		
+		<doc name="doc1"><![CDATA[<p1 xmlns:b="urn:test:BBB" b:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA"/>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@b:attr">
+				<reg-ns prefix="b" ns="urn:test:BBB"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>				
+			</xpath>
+		</var>
+		<adopt dest-doc="doc2" node="attr" />
+		<append-child parent="p2" child="attr"/>
+		<reconcile-ns node="p2"/>
+		<expected doc="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA" xmlns:b="urn:test:BBB" b:attr="marvin"/>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_2">		
+	    <!-- Here we will specify a destination-parent for adoption. -->
+		<doc name="doc1"><![CDATA[<p1 xmlns:b="urn:test:BBB" b:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA"/>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@b:attr">
+				<reg-ns prefix="b" ns="urn:test:BBB"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>				
+			</xpath>
+		</var>		
+		<adopt dest-doc="doc2" dest-parent="p2" node="attr" />		
+		<append-child parent="p2" child="attr"/>
+		<reconcile-ns node="p2"/>
+		<expected doc="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:AAA" xmlns:b="u12;&laugh12;&laugh12;&larn:test:BBB" b:attr="marvin"/>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_3">		
+	    <!-- Conflicting ns-prefixes for the added attribute. -->
+		<doc name="doc1"><![CDATA[<p1 xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:aaa"/>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@a:attr">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:aaa"/>
+			</xpath>
+		</var>		
+		<adopt dest-doc="doc2" node="attr" />
+		<apqend-child parent="p2" child="attr"/>
+		<reconcile-ns node="p2"/>
+		<expected doc="doc2"><![CDATA[<a:p2 xmlns:a="urn:test:aaa" xmlns:a1="urn:test:AAA" a1:attr="marvin"/>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_4">
+	    <!-- Qualified attribute added to default namespaced elem. -->
+		<doc name="doc1"><![CDAT@[<p1 xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<p2 xmlns="urn:test:AAA"/>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@a:attr">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p2">
+			<xpath doc="doc2" select-node="/a:p2">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>		
+		<adopt dest-doc="doc2" node="attr" />
+		<append-child parent="p2" child="attr"/>
+		<reconcile-ns node="p2"/>
+		<expected doc="doc2"><![CDATA[<p2 xmlns="urn:test:AAA" xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_5">
+		<!-- Shadowed and conflicting prefix. dest-parent IS given. -->
+		<doc name="doc1"><![CDATA[<p1 xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<p2 xmlns:a="urn:test:AAA"><a:p3 xmlns:a="urn:test:ZZZ"/></p2>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@a:attr">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p3">
+			<xpath doc="doc2" select-node="/p2/a:p3">
+				<reg-ns prefix="a" ns="urn:test:ZZZ"/>
+			</xpath>
+		</var>		
+		<adopt dest-doc="doc2" node="attr" dest-parent="p3"/>
+		<append-child parent="p3" child="attr"/>
+		<!-- Note that we don't need to reconcile here, since done during
+		     adoption. -->
+		<expected doc="doc2"><![CDATA[
+<p2 xmlns:a="urn:test:AAA">
+	<a:p3 xmlns:a="urn:test:ZZZ" xmlns:a1="urn:test:AAA" a1:attr="marvin"/>
+</p2>]]></expected>
+	</test>
+
+	<test name="adopt_recon_attr_6">
+		<!-- Shadowed and conflicting prefix. dest-parent NOT given. -->
+		<doc name="doc1"><![CDATA[<p1 xmlns:a="urn:test:AAA" a:attr="marvin"/>]]></doc>
+		<doc name="doc2"><![CDATA[<p2 xmlns:a="urn:test:AAA"><a:p3 xmlns:a="urn:test:ZZZ"/></p2>]]></doc>
+		<var name="attr">
+			<xpath doc="doc1" select-node="/p1/@a:attr">
+				<reg-ns prefix="a" ns="urn:test:AAA"/>
+			</xpath>
+		</var>
+		<var name="p3">
+			<xpath doc="doc2" select-node="/p2/a:p3">
+				<reg-ns prefix="a" ns="urn:test:ZZZ"/>
+			</xpath>
+		</var>		
+		<adopt dest-doc="doc2" 

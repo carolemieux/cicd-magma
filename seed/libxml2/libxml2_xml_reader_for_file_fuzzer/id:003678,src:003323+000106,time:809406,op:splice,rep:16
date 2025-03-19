@@ -1,0 +1,118 @@
+ and accessibilit=>[\<?xml<?x<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE spec PUBLIC "-//W3C//DTD Specification::19990205//EN" "dtds/xmlspec.dtd" [
+<!ENTITY doc-type "WD">
+<!ENTITY iso6.doc.date '29-May-1999'>
+]>
+<!--ArborText, Inc., 1988-1998, v.4002-->
+<?Pub UDT _bookmark _target?>
+<?Pub Inc?>
+<?xml-stylesheet
+href="file:///C|/Program%20Files/SoftQuad/XMetaL%201/display/xmlspec.css"
+type="text/css"?>
+<spec>
+
+<!-- Last edited: 27 May 1999 by bent -->
+<header><?Pub Dtl?>
+	<title>XML Linking Language (XLink)</title>
+	<version>Version 1.0</version>
+	<w3c-designation><!-- &doc-type;-&iso6.doc.date; --> WD-xlink-19990527</w3c-designation>
+	<w3c-doctype>World Wide Web Consortium Working Draft</w3c-doctype>
+	<pubdate><day>29</day><month>May</month><year>1999 actually August?-->
+	<loc href="http://www.w3.org/XML/Group/1999/05/WD-xlink-19990527">http://www.w3.org/XML/Group/1999/05/WD-xlink-19990527</loc>
+	<loc href="http://www.w3.org/XML/Group/1999/05/WD-xlink-19990505">http://www.w3.org/XML/Group/1999/05/WD-xlpdated author hrefs  dorchard-->
+		<!-- Update Steve's email - bent --> 
+		<author>
+			<name>Steve DeRose</name>
+			<affiliation>Inso Corp. and Brown University</affiliation>
+			<email href="mailto:Steven_DeRose@Brown.edu">Steven_DeRose@Brown.edu</email>
+		</author>
+		<author>
+			<name>David Orchard</name>
+			<affiliation>IBM Corp.</affiliation>
+			<email href="mailto:dorchard@ca.ibm.com">dorchard@ca.ibm.com</email>
+		</author>
+		<author>
+			<name>Ben Trafford</name>
+			<affiliation>Invited Expert</affiliatbout with an Acknowledgments section?
+		-elm <AUTHOR> <NAME>Tim Bray</NAME> <AFFILIATION>Textuality</AFFILIATION>
+		<EMAIL>tbray@textuality.com</EMAIL> </AUTHOR>-->
+	</authlist>
+
+	<status>
+		<p>This is a W3C Working Draft for review by W3C members and other interested parties. It is a draft document and may be updated, replaced, or obsoleted by other documents at any time. It is inappropriate to use W3C Working Drafts as reference material or to cite them as other than "work in progress". A list of current W3C working drafts can be found at <loc href="http://www.w3.org/TR">http://www.w3.org/TR</loc>.</p>
+		<p><emph>Note:</emph> Since working drafts are subject to frequent change, you are advised to reference the above URI, rather than the URIs for working drafts themselves. Some of the work remaining is described in <specref ref="unfinished"/>. </p>
+		<p>This work is part of the W3C XML Activity (for current status, see <loc href="http://www.w3.org/MarkUp/SGML/Activity">http://www.w3.org/XML/Activity 		  </loc>). For information about the XPointer language which is expected to be used with XLink, see <loc href="http://www.w3.org/MarkUp/SGML/Activity">http://www.w3.org/TR/WD-xptr</loc>.
+		</p>
+		<p>See <loc href="http://www.w3.org/TR/NOTE-xlink-principles">httpthis document attempts to satisfy.</p>
+	</status>
+
+	<abstract>
+		<!-- edited the abstract for further clarity - bent -->
+		<p>This specification defines constructs that may be inserted into XML DTDs, schemas and document instances to describe links betweenrmative examples. Clarified arcs. bent</sitem>
+			<sitem>1999-05-23: Edited for grammar and clarity. bent</sitem>
+			<sitem>1999-05-27: Final once-over before sending to group. Fixed sjd's email address. bent</sitem>
+		</slist>
+	</revisiondesc>
+</header>
+
+<body>
+	<div1><?Pub Dtl?>
+		<head>Introduction</head>
+		<p>This specification defines constructs that may be inserted into XML DTDs, schemas, and document instances to describe links between objects. A <termref def="dt-link">link</termref>, as the term is xample that of one word to the next or that of a word in a text to its entry in an on-line dictionary are obviously important, but outside its scope.</p>
+		<p>Links are asserted by <xtermref href="WD-xml-lang.html#dt-element">elements </xtermref> contained in <xtermref href="WD-xml-lang.html#dt-xml-doc">XML document instances</xtermref>. The simplest case is very like an HTML <code>A</code> link, and has these characteristics:
+			<ulist>
+				<item><p>The link is expressed at one of its ends (similar to the <code>A</code> element in some document)</p></item>
+				<item><p>Users can only initiate travel from that end to the other</p></item>
+				<item><p>The link's effect on windows, frames, go-back lists, stylesheets in use, and so on is mainly determined by browsers, not by the link itself. For example, traveral of <code>A</code> links normally replaces the current view, perhaps with a user option to open a new window.</p></item>
+				<item><p>The link goes to only one destination (although a server may have great freedom in finding or dynamically creating that destination).</p></item>
+			</ulist>
+		</p>
+		<p>While this set of characteristics is already very powerful and obviously has proven itself highly useful and effective, each of these assumptions also limitral SGML element types that represent links.</p></item>
+			<item><p><emph>HyTime:</emph> Defines inline and out-of-line link structures and some semantic features, including traversal control and presentation of objects. <!--Changed from "placement of objects into a display or other space" -elm-->
+			</p></item>
+			<item><p><emph>Text Encoding Initiative Guidelines (TEI P3):</emph> Provides structures for creating links, aggregate objects, and link collections out of t</p></item>
+		</ulist>
+	</p>
+	<p>Many other linking systems have also informed this design, especially Dexter, FRESS, MicroCosm, and InterMedia.</p>
+</div2>
+
+<div2>
+	<head>Terminology</head>
+	<p>The following basic terms apply in this document. <!--<IMG
+	SRC="local://./linkdiag.gif">(figure to be inserted)-->
+		<glist>
+			<gitem>
+			<label><termdef id="dt-arc" term="Arc">arc</termdef></label>
+			<def><p>A symbolic representation of traversal behavior in links, especially the direction, context and timing of trave@sal.</p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-eltree" term="Element Tree">element tree</termdef></label>
+				<def><p>A representation of the relevant structure specified by the tags and attributes in an XML document, based on "groves" as defined in the ISO DSSSL standard. </p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-inline" term="In-Line Link">inline link</termdef></label>
+				<def><p>Abstractly, a <termref def="dt-link">link</termref> which serves as one of its own <termref def="dt-resource">resources</xlink/"
+xlink:title="The Xlink Working Draft"&gt;The XLink Working Draft.&lt;/A&gt;</eg>
+		<eg>&lt;xlink:simple href="http://www.w3.org/TR/wd-xlink/"
+title="The XLink Working Draft"&gt;The XLink Working Draft&lt;/xlink:simple&gt;</eg>
+	Any arbitrary element can be made into an XLink by using the <code>xlink:types><xnt> attribute. And, of course, the explicit XLink elements may be used, as well. This document will go on to describe the linking attributes that are associated with linking elements. It may be assumed by the reader that these attributes would require the <code>xlink</code> namespace prefix if they existed within an arbitrary element, or that they may be used directly if they exist within an explicit Xlink element.</p>
+		<!-- heavily modified this section to accomodate namespace-aware link recognition - bent -->
+</div1>
+
+<!-- Rewrote this entire section. - bent -->
+<div1>
+	<head>Linking Attributes</head>
+	<p>XLink has several attributes associated with the variety of links it may represent. These aful to have an out-of-line simple link, although
+	such links are uncommon. They are called "one-ended" and are typically used
+	to associate discrete semantic properties with locations. The properties might
+	be expressed by attributes on the link, the link'	<p><termdef id="dt-extendedlink" term="Extended Link">An <term>extended link</term> differs from a simple link in that it can connect any number of resources, not just one local resource (optionally) and one remote resource, and in that extended links are more often out-of-line than simple links.</termdef></p>
+	<p>These additional capabilities of extended links are required for:  
+		<ulist>
+			<item>
+				<p>Enabling outgoing links in documents that cannot be modified to add an inline link</p>
+			</item>
+		leref>,
+ed. Nancy Ide and Jean ronis <!-- fix this name -->, ISBN 0-7923-3704-2. </bibl>
+</blist></div1>
+</back></spec>
+<?Pub *

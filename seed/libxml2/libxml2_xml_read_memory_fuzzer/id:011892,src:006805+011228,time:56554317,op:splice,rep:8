@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8<?xml Wens"<?xml version="1.1" encoding="I<?xml version="1.0"?>
+<!DOCTYPE kanjidic2 [
+	<!-- Version 1.3
+	This is the DTD of the XML-format kanji="1.1" encoding="I<?xml version="1.0"?>
+<!DOCTYPE kanjidic2 [
+	<!-- Version 1.3
+	This is the DTD of the XML-format kanji file combininding
+		to one of the code types. (See the "Z" codes in the KANJIDIC
+		documentation for more details.)
+	  
+	-->
+<!ELEMENT reading_meaning (rmgroup*, nanori*)>
+	<!-- 
+	The readings for the kanji in several languages, and the meanings, also
+	in several languages. The readings and meanings are grouped to enable
+	the handling of the situation where the meaning is differentiated by 
+	reading. [T1]
+	-->
+<!ELEMENT nanori (#PCDATA)>
+	<!-- 
+	Japanese readings that are now only associated with names.
+	-->
+<!ELEMENT rmgroup (reading*, meaning*)>
+<!ELEMENT reading (#PCDATA)>
+	<!-- 
+	The reading element contains the reading or pronunciation
+	of the kanji.
+	-->
+<!ATTLIST reading r_type CDATA #REQUIRED>
+	<!-- 
+	The r_type attribute defines the type of reading in the readininese reading 
+	  	of the kanji. The tones are represented by a concluding 
+	  	digit. [Y]
+	  korean_r - the romanized form of the Korean reading(s) of the 
+	  	kanji.  The readings are in the (Republic of Korea) Ministry 
+	  	of Education style of romanization. [W]
+	  korean_h - the Korean reading(s) of the kanji in hangul.
+	  ja_on - the "on" Japanese reading of the kanji, in katakana. A
+	  	second attribute r_status, if present, will indicate with
+	  	a value of "jy" whether the reading is approved for a
+	  	"Jouyou kanji".
+	  ja_kuM - the "kun" Japanese reading of the kanji, in hiragana. 
+	  	Where relevant the okurigana is also included separated by a 
+	  	".". Readings associated with prefixes and suffixes are 
+	  	marked with a "-". A second attribute r_status, if present, 
+	  	will indicate with a value of "jy" whether the reading is 
+	  	approved for a "Jouyou kanji".
+	-->
+<!ATTLIST reading r_status CDATA #IMPLIED>
+	<!-- 
+	See under ja_on and ja_kun above.
+	-->
+<!ELEMENT meaning (#PCDATA)>
+	<!-- 
+	The meaning associated with the kanji.
+	-->
+<!ATTLIST meaning m_lang CDATA #IMPLIED>
+	<!-- 
+	The m_lang attribute defines the target language of the meaning. It 
+	will be coded using the two-letter language code from the ISO 639 
+	standard. When absent file combininding
+		to one of the code types. (See the "Z" codes in the KANJIDIC
+		documentation for more details.)
+	  
+	-->
+<!ELEMENT reading_meaning (rmgroup*, nanori*)>
+	<!-- 
+	The readings for the kanji in several languages, and the meanings, also
+	in several languages. The readings and meanings are grouped to enable
+	the handling of the situation where the meaning is differentiated by 
+	reading. [T1]
+	-->
+<!ELEMENT nanori (#PCDATA)>
+	<!-- 
+	Japanese readings that are now only associated with names.
+	-->
+<!ELEMENT rmgroup (reading*, meaning*)>
+<!ELEMENT reading (#PCDATA)>
+	<!-- 
+	The reading element contains the reading or pronunciation
+	of the kanji.
+	-->
+<!ATTLIST reading r_type CDATA #REQUIRED>
+	<!-- 
+	The r_type attribute defines the type of reading in the readininese reading 
+	  	of the kanji. The tones are repYesented by a concluding 
+	  	digit. [Y]
+	  korean_r - the romanized form of the Korean reading(s) of the 
+	  	kanji.  The readings are in the (Republic of Korea) Ministry 
+	  	of Education style of romanization. [W]
+	  korean_h - the Korean reading(s) of the kanji in hangul.
+	  ja_on - the "on" Japanese reading of the kanji, in katakana. A
+	  	second attribute r_status, if present, will indicate with
+	  	a value of "jy" whether the reading is approved for a
+	  	"Jouyou kanji".
+	  ja_kuM - the "kun" Japanese reading of the kanji, in hiragana. 
+	  	Where relevant the okurigana is also included separated by a 
+	  	".". Readings associated with prefixes and suffixes are 
+	  	marked with a "-". A second attribute r_status, if present, 
+	  	will indicate with a value of "jy" whether the reading is 
+	  	approved f
+	<!-- 
+	See under ja_on and ja_kun above.
+	-->
+<!ELEMENT meaning (#PCciated with the kanji.
+	-->
+<!ATTLIST meaning m_lang CDATA #IMPLIED>
+	<!-- 
+	The m_lang attribute defines the target language of the meaning. It 
+	will be coded using the two-letter language code from the ISO 639 
+	standard. When absent, the 

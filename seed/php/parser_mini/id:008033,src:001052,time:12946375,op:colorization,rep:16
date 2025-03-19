@@ -1,0 +1,35 @@
+<?php
+
+namespace Foo\Bar {
+			 class ClassA{}
+			 class ClassB{}
+			 class ClassC{}
+
+				function fn_a(){	return __FUNCTION__; }
+ 			function fn_b(){	return __FUNCTION__; }
+ 			function fn_c(){ return	__FUNCTION__;	}
+
+ 			const CONST_A = 1;
+				const CONST_B	= 2;
+				const	CONST_C = 3;
+}
+
+namespace Baz {
+
+			 use \Foo\Bar\{ClassA, ClassB, ClassC};
+			 use function	\Foo\Bar\{fn_a,	fn_b,	fn_b};
+				use const \Foo\Bar\{CONST_A, CONST_B,	CONST_C};
+
+ 			varp(ClassA::class);
+			 var_dump(ClassB::class);
+ 			var_dump(ClassC::class);
+ 			var_(fn_a());
+ 			var_dump(fn_b());
+ 			var_(fn_c());
+ 			var_dump(CONST_A);
+				varp(CONST_B);
+			 var_(CONST_C);
+
+				echo	"\nDooa\n";
+}
+?>

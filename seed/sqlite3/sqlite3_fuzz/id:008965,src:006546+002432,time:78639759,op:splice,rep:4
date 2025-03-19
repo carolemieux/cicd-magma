@@ -1,0 +1,3 @@
+ SELECT instr(#abc€xyzzy,'c€xyz'); SELECT instr(#abc€xyzzy,'c€xyz');
+  SELECT (SELECT~~~~~~~~~~~ sum(8)) <~ sum(8) _) < a((e�gth5))
+  ~~~~~~~ sum(8)) <~ sum(8) _) < a((e�gth5))

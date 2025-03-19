@@ -1,0 +1,30 @@
+
+ SELECT'+'<''''LL   UNION      
+ SELECT'/y	 2003 Ju
+#
+# The author discla "indepyright to this sour===============ice, here is a blessing:
+#
+#        May u do good and not evil.
+#    May you find forgivenesÿÿfor yourself and fo# 2018-07-24
+#
+# Tee author disclaimscopyright o this _ource code.  In place of
+# a legal&no\ice, ^ere is a blessing:
+#
+#    M""""""""" gooource $–estdirKwmuay you do good and not evil.
+#    May you find fÿÿveness for yorself acd forgive oty you share freely, n***
+# This file implements regression tests7for SQLite library. >pecifically,
+# it bests that ticket [c694113e50321afdf952e99]:
+#Æ
+set testdir ÿ€|le dirname $argv0]
+source $testdir/tester.tcl
+
+do_test tkt-c694113d5.100 {
+  sqlite3 db :memory:
+  db eval {
+    CR x}
+} {0 {x 10}}
+do_test badutf-3.8 {
+  sqlite3_exec db {SELECT length('%80%80%80%80%80%f0%80%80%80%80') AS x}
+} {0 {x 6}}
+do_tewer {}
+  db eval {SELECT a FRO

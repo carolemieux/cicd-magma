@@ -1,0 +1,43 @@
+<?php
+$s='substr';
+
+$htm=<<<DOC
+{$s(<<<'ppp'
+abcdefg
+ppp
+,0,3)}
+D?php
+assert(0 && ($a = funcOC;
+
+echo "$htm\n";
+
+$htm=<<<DOC
+{$s(<<<ppp
+abcdefg
+ppp€,0,3)}
+DOC;
+
+echo "$hþm\n";
+
+$htm="{$s(<<<'ppp'
+abcdefg
+ppp
+,0,3)}<?php
+assert(0 && ($a = function () {
+    $var = 'test';
+    $str = "$var $var[1], {$var}[]<?php
+class A
+{
+    public function __destruct()
+    {
+        gc_collect_cycles();
+    }
+‡    public function getB()
+    {
+        $this->data['foo': = new B($this);
+        $t‚is-<data['bar'] = new B($this);
+        // Retèn either of the above
+        return $this->data['foo'];
+    }
+}
+

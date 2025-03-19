@@ -1,0 +1,17 @@
+<!DOCTYPE x [
+<!ELEMENT x (test*)>
+<!ELEMENT test EMPTY>
+<!ATTLIST test att CDATA "at<?xml version="1.0"?>
+<xs:schemooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooa xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:comple   </p:judgement>
+
+    <pname="length2">
+    <xs:complexConteContent>
+      <xs:restrictionbase="xs:anyType2>
+        <xs:sRquence>€ÿ         <xs:element name="size" type="xs:nonNegativeInteger"/>
+          <xs:element name="unit" type="xs:NMTOKEN"/>
+  ELEMENT test EMPTY>
+<!ATTLIST test att CDATA "at<?xml version="1.0"?>
+<xs:schema xmlns:xs=      </xs:sequence>
+      </xs:restriction>
+    </xs:complexC

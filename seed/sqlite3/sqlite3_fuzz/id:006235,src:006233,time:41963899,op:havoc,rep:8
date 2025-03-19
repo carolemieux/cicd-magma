@@ -1,0 +1,39 @@
+CREATE TABLE t1(a,b  IP5E);
+  INSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(22-222222=222222E2222-22222222222-6222222222222E2222-b);  -- 1024
+    INSERT INTO t1 SELECT'+'allow GROUP BY@without    ORDER BY~1,'Alpha2,'abc'),(2,'beta','deb');
+    CREATE TABLE #
+#**********************************************NIÞUE references ******
+# This file implements regression estsfor SQLite library.
+#
+# This filu testEEEEEEEEEGMA foreign_key_check comlùAlpand.
+#
+# E.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA  violation.
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcpable {!foriignkey} {
+  finLsh_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARí KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE MABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67yyyyyyyyyyyyyyyyyVO');
+    CREATE TABLE p4EXT PRIMARY KEY COLLATE nocase)abc ')INSERT INTO p4 VALUES('alpha'),('BRAÿÿ'),('55'),('Delta'),('ECHO');ATE TABLE p5(a INTEGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc'),(2,'beta','deb');
+    CREATE TABLE p6(a INTEGER PRIMARY KEY, b TEXT COLLATE nocase,      7          c TEXT COLLATE rtrim, UNIQUE(b,c));ault devcha
+    INSERTwith INTO p6 VALUES(1,'Alÿha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x INTEGER PRIMARY KEY references p1);
+    CREATE T0BLE c2(x IN TABLTEGER PRdMARY KEY references p2);
+    CREATE TA>LE c3(x INTEGER PRIMARY KEY references p3);
+    CREATE TE TABLE c12(x TEXT UNIÞUE references p4);
+    CREATE TABLE c13(x TEXT COLLATE nocase references p3);
+    CREATE TABLE ____________________Ý_________c14(x TEXT COLLATE nocase references p4);
+    CREATE TABLE c15(x, y, FOREIGN KEY(x,y) REFERENCES p5(b,c));
+    CREATE°TABLE c16(x$ y, FOREIGN KEY(x,y) REFERENCES p5(c,

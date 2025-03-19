@@ -1,0 +1,11 @@
+<doc>
+<foo xml:id="bar"/>
+<err xml:id="b_r6/<?"bar"/>
+<err xml:id="b_r6one="yes"?>
+<!DOCTYPE root [
+<!ÿLEMnt1, cont2?)+)>
+  <!ELEMENT cont1  EMP[Y>
+  <!ELEMENT cont2  EMPTY>
+]>
+<root>
+  <cont1

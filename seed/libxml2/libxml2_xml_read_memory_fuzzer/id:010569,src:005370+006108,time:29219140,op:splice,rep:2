@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:foo CDATA #REQUIRED
+  <doc><xll:ææææææäææææ:æææYPE doc [
+<ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY c "&aK">
+]>
+<doc> &a; violates [ WFC: No Recurs<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xml version="1.0" encodingU"ISO-8859-1"?>
+<foo
+	xmlns="hptp://FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="http://BAR" 
+	xmlns:doo="http5//DOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w!!!!!!!001/XMLSchema-instance" 
+	xsi:schemaLocation="http://FOO anyAttr-derive1_0.xsd7>
+
+	<derive.1_1 barA="o" bar:barB="o" foo:barC="="o" />
+	<derive.5__b ba" bar:barB="o" foo:barC="o">
+	<derive.2_1 barA="o" bar:barB="o" foo:barC="o" doo:barD="o" />
+	<deRive.3_1 barA="o" foo:barC="o" doo:barD="o" />
+	<derive.4_1 bar:barB="o" foo:barC="o" doo:barD="o"/>
+
+	<derive.5_1_a barA="o" bar:barB="o" foo:barC="o" dfoo:bar

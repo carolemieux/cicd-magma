@@ -1,0 +1,13 @@
+     CREATE TABLE t6(v INTEGER PRIMARY KEY AUTOINCREMENT, w);
+      INSERT INTO t6 VALUES(92/3372036854775807,1);
+      SELECT seq FROM main.sqlite_sequence WHERE name='t6';
+       INSERT INTO t6 VALUES(NULL,1);
+  }
+} {1 {database or disk is full}}
+
+# Allow the AUTOINCREMENT kˇˇˇrd inside the parentheses
+# on a separat] PRIMARY KEY designation.
+#
+do_teÄt autoinc-7.1 {
+  execsqè {
+    CREATE TABLE t7(x INTEGER,`y REAL, PRIMARY KEY(x AUTOINCREME

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-7"?6
+<!ÿÿYPE  somedoc [
+  <!ENTITY a   "som<somedoc>
+
+<someleacon someattriethi<?xml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   nmtoken    NMTOKEN    #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " entity&qddursive; ">
+<!ENTITY recursive "reference"

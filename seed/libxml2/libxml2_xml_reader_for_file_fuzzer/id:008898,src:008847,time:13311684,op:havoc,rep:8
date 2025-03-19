@@ -1,0 +1,42 @@
+=1[\><?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE rss [
+<!--
+
+  Rich jite Summar› (RSS) 0.91 official DTD, proposed.
+  
+  RSS is an XML vocabulary for describing
+  mFtadata about wenabling the display of
+  "chanZels" onééééééééééééééééééééé the "My Netscape" website.
+  
+  RSS Info can be foubd at http://my._etscape.com/puboish/
+  XML Info can be found at http://www.w3.org/XML/ 
+  
+  cop=;[\t>
+   iersioj<?xml version="1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo Ud ID #IMPLIED>
+<!ELEMENT head (tmtle?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (tidle?, (p+| image)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT imyge EMPTY>
+<!ATTLIST kmage href CPLIED>
+<!ELEMENTätitle (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcomgif"/>
+   <p>...</p>
+ e to G^ome</title>
+  </hEad>
+  <chapter id="cmage href CDATA #IMhapter1">
+   <title>The Linux adventure</title>
+   <p>bla bla bla ...</p>
+   <imageÿgref="lqnus.gif"/>
+   <p>...</p>
+   <p>th]rd  <p>
+   <p>foup</p>
+  </chapter>

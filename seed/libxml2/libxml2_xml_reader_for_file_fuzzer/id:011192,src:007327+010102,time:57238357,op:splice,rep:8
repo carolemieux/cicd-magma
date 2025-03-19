@@ -1,0 +1,17 @@
+==1TITY b   "&a;d acolon:  <!ENTITY % z <=;[\<?Vl iersioj<4          <D:lrl v<!ENTITY b   g="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "&a;d acolon: &a;
+&b; s">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should acolon: &a;
+&b; sh
+]>
+
+<so}edoc>ter colteV cstance" 
+	xsi:schemaLocata <!ENTITY b   "&a;d acolnsta

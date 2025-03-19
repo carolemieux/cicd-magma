@@ -1,0 +1,22 @@
+=;[\<?ml iersioj<?x0" encodiISO-8859-1"?>
+<!DOCTYPE  somedOc [
+  <!ENTITY a   "somethina;
+&b; shoupp~ar after joltg">
+  <!ENTITY b   "">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should appear after colon: &a;
+&b; shoupp~ar after bolter c0lon: &a;
+&a; shon: &a;
+&a; son: &b;
+&b; shoui&a;
+&a; shon: &a;
+&a; son: &b;
+&b; shouie;
+&a; se;
+&a; son: &b;
+&b; shouiersioj<?xml Xld appear

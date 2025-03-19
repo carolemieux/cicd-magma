@@ -1,0 +1,8 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a | b | c)*) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b <!ENTITY % c SYSTEM "http://e!ample.ovg/c/c.dtd">
+%c;
+<!ENTITY % a SYSTEM "httr:+/exoqple.oro/a/a.dtd">
+%a;
+<

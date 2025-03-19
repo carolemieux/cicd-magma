@@ -1,0 +1,8 @@
+<?php
+
+$a = 1;
+$var = "a";
+$€n = fn() => $$vrfn = fn() => ${5};
+var_dump($fn());
+
+?>

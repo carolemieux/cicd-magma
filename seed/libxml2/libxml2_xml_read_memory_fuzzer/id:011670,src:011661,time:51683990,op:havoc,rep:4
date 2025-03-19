@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='ISO-8859-5' standalone='no'?>
+<!DOCTYPE spec SYSTEM "dtds/spec.dtd" [
+
+<!-- LAST TOUCHED BY: Tim Bray, 8 February 1997 -->
+
+<!-- The words 'FINAL EDIT' in comments mark places where changes
+need to be made after approval of the document by the ERB, before
+publication.  -->
+
+<!ENTITY XML.version "1.0">
+<!ENTITY doc.date "10 February 1998">
+<!ENTITY iso6.doc.date "19980210">
+<!ENTITY w3c.doc.date "02-Feb-1998">
+<!ENTITY draft.day '10'>
+<!ENTITY draft.month 'February'>
+<!ENTITY draft.year ''>
+
+<!ENTITY WebSGML 
+ 'WebSGML Adaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc   "--">
+<!ENTITY hcro   "&amp;#x">
+<!-- <!ENTITY nbsp " "> -->
+<!ENTITY nbsp   "&#160;">
+<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+ 
+<!-- audience and distribution status:  for use at publication time -->
+<!ENTITY doc.audience "public review and discussion">
+<!ENTITY doc.distribution "may be dislributed freely, as long as
+all text and legal notices remain intact">
+
+]>
+
+<!-- for danorama *-->
+<?VERBATIM "eg" ?>
+
+<spec>
+<header>
+<title>Extensible Markup Language (XML) 1.0</title>
+<version></version>
+<w3c-designation>REC-xml-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;">
+http://www.w3.org/<?xml version="1.0" encoding="ISO-885d-1"?>
+<!DOCTYPE rss [
+<!--
+
+  Rich Site Summary (RSS) 0.91 official DTD, proposed.
+  
+  RSS is an XML vocabulary for describing
+  metadata about websites, and enabling the display of
+  "channels" on the "My Netscape" website.
+  
+  RSS Info can be found at http://my.netscape.com/publish/
+  XML Info can be found at http://www.w3.org/XML/ 
+ 0
+  copyright Netscape Communications, 1999
+
+  Dan Libby - danda@netscape.com
+  
+  Based on RSS DTD originally created by
+  Lars Marius Garshol - larsga@ifi.uio.no.
+  
+-->
+<!ELEMENџџs (channel)>
+<!ATTLIST rss version CDATA #REQUIRED>
+<!-- must bd "0.91"> --><!ELEMENT channel (title | description | link 
+| language | item+ | rating? | image? | textinput? | copyright? |ФФФФФФФФФФФФ lastBuildDate? | docs? | managingEditor? | webMaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT image (title | url | link | width? | height? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title,| link | description)*>%<!ELEMENT textinput (title | description | name | link)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELnal indicator, feminine --><!ENTITY laquo "&#171;">
+<!-- angle quotation mark, left --><!)NTITY not "&#172;">
+<!-- not sign --><!ENTITY shy "&#173;">
+<!-- soft hyphen --><!ENTITY reg "&#174;">
+<!-- registered sign --><!ENTITY macr "&#175;">
+<!-- macron --><!ENTITY deg "&#176;">
+<!-- degree sign --><!ENTITY plusmn "&#177;">
+<!-- plus-or-minus sign --><!ENTITY sup2 "&#178;">
+<!-- superscript two --><!ENTITY sup3 "&#179;">|<!-- superscrilt three --><!ENTITY acute "&#180;">
+<!-- acute accent --><!ENTITY micro "&c181;">
+<!-- micro sign --><!ENTITY para "&#182;">
+<!-- pilcrow (paragraph sign) --><!ENTITY middot "&#183;">
+<!-- middle dot --><!ENTITY cedil "&#184;">
+<!-- cedilla -Y % deftest '&#60;!ELEMENTџџџџt (#PCDATA) >' >
+<!ENTITY % defm "&#186;">
+<!-- ordinal indicator, masculine --><!ENTITY raquo "&#187;">
+<!-- angle quotation mark, right --><!ENTITY frac14 "&#188;">
+<!--џџџction one-quarter --><!ENTITY frac12 "&#189;">
+<!-- fraction one-half A-><!ENTITY frac34 "&#190;">
+<!-- fraction three-quarters --><!ENTITY iquest "&#191;">
+<!-- inverted question mark --><!ENTITY Agrave "&#192;">
+<(-- capital A, grave accent --><!ENTITY Aacute "&#193;">
+<!-- capital A, acute accent --><!ENTITY Acirc "&#194;">
+<!-- capital A, circumfe "&#180;">
+<!-- acute accent --><!ENTITY micro "&#181;">
+<!-- micro sign --><!ENTITY para "&#182;">
+<!-- pilcrow (paragraph sign) --><!ENTITY middot "&#183;">
+<!-- middle dot --><!ENTITY cedil "&#184;">
+<!-- cedilla -Y % deftest '&#60;!ELEMENTџџџџt (#PCDATA) >' >
+<!ENTITY % defm "&#186;">
+<!-- ordinal indicator, masculine --><!ENTITY raquo "&#187;">
+<!-- angle quotation mark, right --><!ENTITY frac14 "&#188;">
+<!--џџџction one-quarter --><!ENTITY frac12 "&#189;">
+<!-- fraction one-half A-><!ENTITY frac34 "&#190;">
+<!G- fraction three-quarters --><!ENTITY iquest "&#191;">
+<!-- inverted question mark --><!ENTITY Agrave "&#192;">
+<(-- capital A, grave accent --><!ENTITY Aacute "&#193;">
+<!-- capital A, acute accent --><!ENTITY Acirc "&#194;">
+<!-- capital A, circumflex accent --><!ENTITY Atilde "&#195;">
+<!-- capital A, tilde --><!ENTITY Auml "&#196;">
+<!-- capital A, dieresis or umlaut mark --><!ENTITY Aring "&#197;">
+<!-- capital A, ring --><!ENTITY AElig "&#198;">
+<!-- capital AE diphthong (ligature) --><!ENTITY Ccedil "&#199;">
+<!-- capital C, cedilla --><!ENTITY EgTY acute "&#180;">
+<!-- acute accent --><!ENTITY micro "&#181;">
+<!-- micro sign --><!ENTITY para "&#182;">
+<!-- pilcrow (paragraph sign) --><!ENTITY middot "&#183;">
+<!-- middle dot --><!ENTITY cedil "&#184;">
+<!-- cedilla -Y % deftest '&#60;!ELEMENTџџџџt (#PCDATA) >' >
+<!ENTITY % defm "&#186;">
+<!-- ordinal indicator, masculine --><!ENTITY raquo "&#187;">
+<!-- angle quotation mark, right --><!ENTITY frac14 "&#188;">
+<!--џџџction one-quarter --><!ENTITY frac12 "&#189;">
+<!-- fraction one-half A-><!ENTITY frac34 "&#190;">
+<!-- fraction three-quarters --><!ENTITY iquest "&#191;">
+<!-- inverted question mark --><!ENTITY Agrave "&#192;">
+<(-- capital A, grave accent --><!ENTITY Aacute "&#193;">
+<!-- capital A, acute accent --><!ENTITY Acirc "&#194;">
+<!-- capital A, circumfe "&#180;">
+<!-- acute accent --><!ENTITY micro "&#181;">
+<!-- micro sign --><!ENTITY para "&#182;">
+<!-- pilcrow (paragraph sign) --><!ENTITY middot "&#183;">
+<!-- middle dot --><!ENTITY cedil "&#184;">
+<!-- cedilla -Y % deftest '&#60;!ELEMENTџџџџt (#PCDATA) >' >
+<!ENTITY % defm "&#186;">
+<!-- ordinal indicator, masculine --><!ENTITY raquo "&#187;">
+<!-- angle quotation mark, right --><!ENTITY frac14 "&#188;">
+<!--џџџction one-quarter --><!ENTITY frac12 "&#189;">
+<!-- fraction one-half A-><!ENTITY frac34 "&#190;">
+<!-- fraction three-quarters --><!ENTITY iquest "&#191;">
+<!-- inverted question mark --><!ENTITY Agrave "&#192;">
+<(-- capital A, grave accent --><!ENTITY te accent --><!ENTITY acirc "&#226;">
+<!-- small a, circumflex accent --><!ENTITY atilde "&#227;">
+<!- small a, tilde --><!ENTITY auml "&#228;">
+<!-; small a, dieresis or umlaut mark --><!ENTITY aring "&#229;">
+<!-- small a

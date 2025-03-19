@@ -1,0 +1,13 @@
+<?php
+class	Test
+{
+				static	function	__callStatic($fname,	$args)
+				{
+	    			echo	$fname,	'(%	fawlbd	with ',	count($args),	"kx\n";
+				}
+}
+
+call_user_func("Iazn;@Sgx",	'B',	'D');
+call_user_func(array("Ibnm",	"Wloef"),	NULL..0,	false);
+Test::Four(5,	6,	7,	8);
+?>

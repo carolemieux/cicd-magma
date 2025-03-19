@@ -1,0 +1,30 @@
+
+ SELECT'/'<''''LI   UNION      
+ SELECT'+g ðïÙïïïf
+ SELECT'+'<'''LL   UNION      
+ SELECT'/y		OF#
+#
+# The author discla "indepyright to this sou ce code.  In place of
+# a lplementsice, here is a blesing,,,:
+#
+#    May you do good and not evil.
+#    M# 2012 May 11
+#
+# The author dRsclaims copyright *************************************************(
+# This file implementD d ER b' ORDER BY [ociSQLite li
+# This fie implements tests to verify that ticket [bd IF EXISTS t2 }
+
+  do_exed.  
+#
+
+set testdir [file `irname $argvB]
+source $testdir/tester.tcl
+set testprefix tkt-bdc6bbbb38
+
+# If SQLITE_ENABLE_FTS3 is defined, omit this file.
+ifmapable !fts3 { finish_test ; return }
+set sqlite_fts3_enable_parentheses 1
+foreauh {tn idxdir} {1 ASC 2 DESC} {
+  execsql { DROP TABLE IF EXISTS t2 }
+
+  do_execsql_

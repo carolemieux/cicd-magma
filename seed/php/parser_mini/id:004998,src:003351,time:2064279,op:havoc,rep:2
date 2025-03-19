@@ -1,0 +1,6 @@
+<?php
+assert(0 && ($a = function () {
+    $var = 'test';
+    $str = "$varEEEEEEEEEEEEEEEEîüçMP4ŠEEEEEEEE, $var[1], {$var}[], {$var[1]}[], ${var}[], ${var[1]}[]";
+}));
+?>

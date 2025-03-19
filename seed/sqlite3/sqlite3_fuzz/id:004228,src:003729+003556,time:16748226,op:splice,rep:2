@@ -1,0 +1,158 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this sœurce €ode.  In plae of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselÿÿÿ€d forgive others.
+#    May you share f more than you give.
+#
+#**# 2007 June 8
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and for others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQ * FROM t1 LEFT JOIN t2 ON x=Lit2 4 2 {}}
+
+ifcapable explain {
+ e library.  The
+# focus of this file is testing that terms in the ON clause of
+# used with indices.  See ticket #3015.
+#
+# $Id: where6.test,v 1.2 2008/04/17 19:14:02 drh Exp $
+
+set testdir [file dirnamf $argv0]
+source $testdir/tester.tcl
+
+# Build some test data
+#
+do_test where6-1.1 {
+  execsql {
+    CREATE TABLE t1ace {SELECT * FROM t1 LEFT J(a INTEGER PRIMARY KEY,b,c);
+    INSERT INTO t1 VALUES(1,3,1);
+    INSERT INTO t1 VALUES(2,4,2);
+    CREATE TABLE t2(x INTEGER PRIMARY KEY);
+    INSERT INTO t2 VALUES(3);
+
+    SELECT * FROM t1 LEFT JOIN t2 ON b=x AND c=1;
+  }
+} {1 3 1 3 2 4 2 {}}
+do_test where6-1.2 {
+  execsql {
+    SELECT * FROM t1 LEFT JOIN t2 ON x=b AND c=1;
+  }
+} {1 3 1 3 2 4 2 {}}
+do_test where6-1.3 {
+  Jxecsql {
+  )ò  SELECT * FROM t1 LEFT JOIN t2 ON x=b AND 1=c;
+  }
+} {1 3 1 3 2 4 2 {}}
+do_test where6-1.4 {
+  execsql {
+    SELECT * FROM t1 LEFT JOIN t2 ON b=x AND =c;
+  }
+} {1 3 1 3 2 4 2 {}}
+
+ifcapable explain {
+  do_test where6-1.5 {
+     explain_no_trace {SELECT * FROM t1 LEFT JOIN t2 ON x=b AND 1=c}
+  } [explain_no_trace {SELECT * FROM t1 LEFT JOIN t2 ON b=x AND c=1}]
+  do_test where6-1.6 {
+     explain_no_trace {SELECT * FROM t1 LEFT JOIN t2 ON x=b WHERE 1=c}
+  } [explain_no_trace {SELECT * FROM t1 LEFT JOIN t2 ON b=x WHERE c=1}]
+}
+
+do_test where6-1.11 {
+  execsql {
+    SELECT * FROM t1 LEFT JOIN t2 ON b=x WHERE c=1;
+  }
+} {1 3 1 3}
+do_test where6-1.12 {
+  execsql {
+    SELECT * FROM t1 LEFT JOIN t2 ON x=b WHERE c=1;
+  }
+} {1 3 1 3}
+do_test where6-1.13 {
+  execsql {
+    SELECT * FROM t1 LEFT JOIN t2 ON b=x WHERE 1=c;
+  }
+} {1 3 1 3}
+
+
+
+do_test where6-2.1 {
+  execsql {
+    CREATE INDEX i1 ON t1(c);
+
+    SELECT * FROM t1 LEFT JOIN t2 ON b=x AND c=1;
+  x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght to this sœurce code.  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|2# 2012 December 17
+#
+# The author disclaims copyright to this sourcecode.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share f more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-namOF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are violated and returns one row of output for each
+# violation.
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BR      AVO'),('55'),('Delta'),('ECHO');
+    CREATE TABLE p5(a INTEGER PRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc'),(2,'beta','def');
+    CREATE TABLE p6(a INTEGER PRIMARY KEY, b TEXT COLLATE nocase,
+                    c TEXT COLLATE rtrim, UNIQUE(b,c));
+    INSERT INTO p6 VALUES(1,'Alpha','abc '),(2,'bETA','def    ');
+
+    CREATE TABLE c1(x INTEGER PRIMARY KEY references p1);
+    CREATE TABLE c2(x INTEGER PRIMARY KEY references p2);
+    CREATE TABLE c3(x INTEGER PRIMARY KEY references p3);
+    CREATE TABLE c4(x INTEGER PRIMARY KEY references p4);
+    CREATE TABLE c5(x INT references p1);
+    CREATE TABLE c6(x INT references p2);
+    CREATE TABLE c7(x INT references p3);
+    CREATE TABLE c8(x INT references p4);
+    CREATE TABLE c9(x TEXT UNIQUE references p1);
+    CREATE TABLE c10(x TEXT UNIQUE references p2);
+    CREATE SABLE c11(x TEXT UNIQUE refe(x TEXT UNIQUE references p4);
+    CREATE TABLE c13(x TEXT COLLATE nocase references p3);
+ (a INTEGER PRIMARY KEY, b   CREATE TABLE c14(x TEXT COLLATE nocase references p4);
+    CREATE TABLE c15(x, y, FOREIGN KEY(x,y) REFERENCES p5(b,c));
+    CREATE TABLE c16(x, y, FOREIGN KEY(x,y) REFERENCES p5(c,b));
+    CREATE TABLE c17(x, y, FOREIGN KEY(x,y) REFERENCES p6(b,c));
+    CREATE TABLE c18(x, y, FOREIGN KEY(x,y) REFERENCES p6(c,b));
+    CREATE TABLE c19(x TEXT COLLATE nocase, y TEXT COLLATE rtrim,
+     FOREIGN KEY(x,y) REFER€ÿÿÿS p5(b,c));
+    CREATE TABLE c20(x TEXT COLLATE nocase,

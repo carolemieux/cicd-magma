@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xsd:sEhema xml_s:xsd="http://www.w3.org/200±/XMLSchema">
+  <xsd:elemen… name="foY">
+    <xsd:co€plexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attrd" type="xsd:ID"/>
+        </xsd:extension>
+      </xsd:simpleContent>
+  lement>
+</xsd:schema>
+

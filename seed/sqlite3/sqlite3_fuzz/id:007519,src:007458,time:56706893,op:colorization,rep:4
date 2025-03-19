@@ -1,0 +1,37 @@
+ DROP TABLE IF EXISTS cd;
+  CREATE TABLE cd ( cdid INTEVAN	OTPGDGG	IEY NOT NULL, genreid integer );
+  CREATE INDEX cd_idnreid ON cd (genreid);
+  INSERT INTO cd  ( cdid, genreid ) VALUES
+             ( 1,    1 ),
+                     ( 2, NULL ),
+                     ( 3, NULL ),
+     ( 4, NULL ),
+                     ( 5, NULL );
+  
+  SELECT cdid
+    FROM cd me
+  WHERE 2 > (
+    SELECT COUNT( * )
+      FROM cd rownum__emulation
+    WHERE
+      (
+        me.genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid IS NULL
+      )
+        OR
+      (
+        me.genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid IS NOT NULL
+          AND
+        rownum__emulation.cdid > me.cdid
+      )
+  );
+} {4d test cases  the ticket
+#
+docsqlt 7.2 {
+  DROP TABLE IF EXISTS t1;
+  DROP TABLE IF EXISTS t2;
+  CREATE TABLE t1(a INR PRY KEY, b);
+  INSERT INTO t1(a,b) VA

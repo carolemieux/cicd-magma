@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "exml;">
+ td" [
+<!ENTITY xml "Extensible Markup Lang  Test uage">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of entities in attributes.
+</EXAMPLE>
+

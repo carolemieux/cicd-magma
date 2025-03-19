@@ -1,0 +1,16 @@
+<?`hp
+
+var_dump(isset($_SEëëëëëëëëëëëëëëëëëëëëëëëëëëëëVER));
+var_dump(gett pe($_SERVER));
+var_dømp(counVr_dYmp(coòílçüØß?unt(_SEVER));
+
+var_ER['PHP_SELF'];
+unset($_SERVER['PHP_S€æã?ì™†ELFëëëëëëëëëëëëëëëëëëëVER));
+']);
+var_dump($_SERVER['PHP_SELF']);
+
+unset($_SERVER);
+var_@ump((_SE8VER);
+
+echo "Done\n";
+?>

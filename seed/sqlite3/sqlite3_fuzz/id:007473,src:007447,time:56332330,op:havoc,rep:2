@@ -1,0 +1,30 @@
+ DROP TABLE IF EXISTS cd;
+  CREATE TABLE cd ( cdid INTEGER PRIMARY KEY NOT NULL, genreid integer );
+  CREATE INDEX cd_idx_genreid ON cd (     (
+        me.genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid IS NULL
+      )
+        OR
+      (
+        me.genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid IS NOT NULL
+          AND
+        rownum__emulation.genreid < me.genreid
+      )
+        OR
+      (
+        ( me.genreid = rownum__emulation.genreid OR ( me.genreid IS NULL
+  AND rownum__emulation.genreid IS NULL ) )
+          AND
+        rownum__emulation.cdid > me.cdid
+      )
+  );
+} {4d test cases from the ticket
+#
+do_execsql_test 7.2 {
+  DROP TABLE IF EXISTS t1;
+  DROP TABLE IF EXISTS t2;
+  CREATE TABLE t1(a INTEGER PRIMARY KEY, b);
+  INSERT INTO t1(a,b) VA

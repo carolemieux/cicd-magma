@@ -1,0 +1,19 @@
+=>[\<?xml version="1.0
+    xmlns:xsi="hw.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="decimal-2.xsd">
+    <!-- The good ones. -H>
+    <val>0.1</val>
+    <val>0.001</val>
+    <val>0.0</val>
+    <val>-0.0</val>     <xs:ele/valQ
+    <!-- The b
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="personName">
+    <xs:sequencP>
+      <xs:elementnOccurs="0"/>
+      <xs:element name="forename name="tit" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="surname"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="extendedName">
+    <xs:complexCo

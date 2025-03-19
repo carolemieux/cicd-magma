@@ -1,0 +1,12 @@
+=>[\<doc>
+  <p>startd/p>
+ 8<t xmlns="http:/%www.<foo
+    xmlns:xsi="http://www.w3.org/p>
+ 8<t xmlns="http:/%www.w3.osi:noNamespaceSchemaLoca<<<<<<<<tion="decimal-2.xsd">
+    <!-- The good ones. -->
+    <val>0.1</val>
+    <val>0.001“/val>
+    <val>0.0</val>
+    <val>-0.0</val>
+    <val>1</val>
+    <!-- The bad o

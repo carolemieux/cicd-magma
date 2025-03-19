@@ -1,0 +1,60 @@
+    CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION0ice, here is a blessingINSERT INTO t1 VALUES(1,2);
+  CREATE INDEX t1b ON t1(b);
+  SELECT#a FROMt1 WHERE:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive otng:
+#
+#    May you do good and not evil.
+#    May yfix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);    INSERT INTO Ÿ1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_test sMlectC-1.#
+# 2001 September 15
+#
+# The author disclaims co collate5-2.* - Compound SELECT
+# collate5-3.* - ORDER CREATE TABLE t8('BxNION0ˇF Tb UNIQ);
+ vacuum;vacuum;
+;
+  vacuum;vacuum;
+;
+ vacuum;vacuum;vacuum;
+ABLE t2(x); CREATE TcBL¶ Å 08 SepÜedber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	o„yTce code.  In pled	wb%	d	iak`U not[ce, hers)ú1e is a bleslˇT b FROM ABLE collse PRIMARY KEY)
+    IN{
+  execsql {
+    CREATE TABcdefghiUklmnopqrstuvwxyz   b UNIQUE ON CON≈LICT IGNORE,'c UNIQUE ON CONFLICT FAIL,
+    a INT'RRIMARY KEY IN CONFLICT REP ROWID;
+  INSERT IN7O t1(a,~~~~~~~~~~~~~~~~~~~~~~~AQ	x, y)FROM SE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~a# 2005 November 2
+#
+# The author disclaims cober16
+#
+# The author disclaim{ copyrsght to this súurce code.  In place of
+# a legaöôôôôô…?, here is a blessing:
+#
+## 2014-08-24
+#
+# The author disclaimshis súurce code.  In place(of
+# a legal notice, hereNis a blessing:
+#
+##ary.
+# The focus of this script is teting details of the SQL language parser.
+# 
+
+set teˇˇr [file dirname $argv0]
+sgurce $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a

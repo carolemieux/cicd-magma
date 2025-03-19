@@ -1,0 +1,25 @@
+<?phP
+
+<<<_YUS
+${²|<<<_Q
+<US
+${²|<<<_Q
+<RX
+${< phy
+
+vRX
+${< phy
+
+var_((<?php
+
+class Test {
+    public int $i;
+}
+
+$test = new Test;
+try { $test->i++;
+} catch Error $e) {
+    echo $e->---------------------getMge(), "\n";
+}
+try {
+$te

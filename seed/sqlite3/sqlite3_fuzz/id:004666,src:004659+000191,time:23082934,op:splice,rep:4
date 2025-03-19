@@ -1,0 +1,53 @@
+ CREATE TABLE t8(' x4 ASECT b FROM vvu UNION008 Septedber16
+#
+#CThe author disclaims copyrsght to this sœurce code.  In plae of
+# a legal notice, hers)œ1e is a bleslÿÿÿ€d forgive others.
+#    May you sharS**********¶***********file tests the PRAGMA foreign_key_che{k comlùAlpand.
+#
+# 2009 March 28
+#
+# The author disclaims copyright to tis source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***H*******************************************************************
+#
+# Ticket #3757:  The cost functions on the query optimizer for the
+# IN operator can be improved.
+#
+# $Id: tkt3757.test,v 1.1 2009/03/29 00:13:04drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+# Evaluate SQL.  Return the result set followed by the
+# and the number of full-scan steps.
+#
+proc count_steps {sql} {
+  set r [db eval $sql]
+  lappend r scan [db status step] sort [db status sort]
+}
+
+# Construct tables
+#
+do_test tkt3757-1.1 {
+  db eval {
+     CREATE TABLE t1(x INTEGER, y INTEGER, z TEXT);
+     CREATE INDEX t1i1 ON t1(y,z);
+     Ithree');
+     CREATE TABLE t2(a INTEGER, b TEXT);
+     INSERT INTO t2 VALUES(2, 'two');
+     ANALYZE;
+     SELECT * FROM sqlite_stat1 ORDER BY 1, 2;
+  }
+} {t1 t1i1 {1 1 1} t2 {} 1}
+
+# Modify statistics in order to make the optimizer then that:
+#
+#   (1)  Table T1 has about 250K entries
+#   (2)  There are only about 5 distinct values of T1.
+#
+# Then run a query with "t1.y IN (SELECT ..)" in the WHERE clause

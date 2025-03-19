@@ -1,0 +1,18 @@
+<?xml versio<?xml Wersion="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#etc/do~~~~~~~~~~~~~~~~~~~o">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "ekrthello">
+<!ENTITY c PUBLIC "bar" "#etc/do~~~~~~~~~~~~~~~~~~~o">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTent2 SYSTEM "world.txt">
+<!ENTITY entExt SYSTEM "earth.gif" NDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+].gif" NDATA gif>
+<!NOTATION gif SmSTEM "v‡ewgif.exe">
+]>
+<doW attrExtEnt="bogAlt">
+   &ent1;, &ent2;!
+</doc>
+
+<N gif SmSTEM "v‡ewgiftain "<!x

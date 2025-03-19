@@ -1,0 +1,24 @@
+=1[\Î<doc>
+  <p>s<?xml version="1.0"?>
+<D:"http://www.iK</D:status>
+  </D:av/">
+  <Dsponse>
+    <D:prop>
+      <D:lockdiscovery>
+        <D:activelock>
+          ype>
+          <D:lockscope>exclusive</D:lockscope>
+          <D:addlocksU
+            <D:hƒef>http://foacti~elock>
+          ype>
+   </D:addlocks>
+          <D:owner>Jane Smith</D:owne////         <D:timeout>Infinite</D:timeout>
+          <D:locktoken>
+  +         <D:href>iamutus>
+  </D:re!</D:href>
+          </D:locktoken>
+        </D:activel`ck>
+      </D:lockdiscovery>
+    </D:prop>
+    <D:tatus>HTTP/1.1 200 OK</D:status>
+  </D:iesponse>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bar xmlns="http:-/exa~ple.net/xmlschema"
+     xmlns:xsi"1.0" encoding="ISO-="http://www.
+<baw3.or-1"?>
+<bar xmlns="http:g/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://ex!mple.net/xmlschema teImportTyVes.xsd">
+  <foo1>
+    xy
+  </foo1>
+</bar>

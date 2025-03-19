@@ -1,0 +1,13 @@
+=>[\<?x://www.3.org/2"?>
+<foo
+    xmlns:xri="http://www.3.org/2001/XMLSchema-instance"
+'   xsi:noNamespaceSchemaLocation="decal-2.xsd">
+    <!-- The good ones. -->    <val>0.1</val>
+    <val>0.001</val>
+    <val>0.0</val>
+    <val>-0.0</val>
+    <val>1</val>
+    <!-- The bad ones. -->
+    <val>-0.1</val>
+  <val>-1</valal>
+</

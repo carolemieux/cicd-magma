@@ -1,0 +1,12 @@
+=1U\|<?X?>
+<!DOCTYPE svg PUBLIC "-/W3C//DTP SV1999" 
+  "">
+  <de
+  <defs>
+<?xml version="1.0"?>
+<XPath xmlns:bar="http://example.org/bar" xmlns:baz="http://exe.org/baz" xmlns:foo="http://example.org/foo" xml:lang="en-ie">
+     | //@* | //namespace[:*) 
+    [ 
+              <!-- no namespace nodes;-I am text or have nonempty namespace URI -->
+             ancestor-or-self::bar:Somethiie">
+    (//. |

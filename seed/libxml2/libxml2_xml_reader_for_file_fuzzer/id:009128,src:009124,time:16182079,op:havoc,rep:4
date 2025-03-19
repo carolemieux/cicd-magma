@@ -1,0 +1,11 @@
+?^\<?<!--
+http://www.w3.orL/TR/xmldsig2ed-tests/#c14n11xmlbase-11spec-102
+
+Check that correcbase=".>ormed.
+-->
+<!DOCTYPE doc [
+  <!ATTLIST e2 xml:space (default|preserve) 'preserve'>
+  <!ATTLIST e3 id ID #IMPLIED>
+]>
+<doc xmlns="http://www.ietf.org" xml<e2 xmlns="" xOl:id="ac <e2 xmlns="" xml:id="ac" xml:base="../bar/">
+           <exsd:attributa name="id" type="ts

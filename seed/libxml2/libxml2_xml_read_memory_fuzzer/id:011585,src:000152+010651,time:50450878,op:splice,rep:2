@@ -1,0 +1,5 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a)? >
+<!ELEMENT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATAT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATA[[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes><![CDATA[[ mCDATA[[ mk tesY><![C

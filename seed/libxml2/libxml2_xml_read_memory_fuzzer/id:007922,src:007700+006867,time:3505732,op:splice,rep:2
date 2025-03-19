@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='ISO-8853-5' standalo<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a xmlns:s CDATA NT b EMPTY>
+<!ATTLIST b xmlns:s CDATA #IMPLIED>
+<!ELEMENT s:b EMPTY>
+<!ATTLIST s:e	kwzns:s CDATA #IMPLIED>{{{{{{{{{{{{{{{{{{{{{{/some.test.ns/a">
+  Some t

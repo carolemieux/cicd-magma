@@ -1,0 +1,24 @@
+      PRAGMA cache_spill(-25);
+      PRAGMA main.cache_spill;
+      BEGIN;
+      UPDATE t1 SET c=c+1;
+      PRAGMA lock_status;
+    }
+  } {50 main exclusive temp unwn} ll cache spill -> exclusive lock
+}
+
+
+# Verify that newly attached databases inherit the cache_spill=OFF
+# setting.
+#
+do_execsql_test pragma2-4.6 {
+  ROLLBACK;
+  PRAGMA cache_spill=OFF;
+  ATTACH 'test2.db' AS aux1;
+  PRAGMA aux1.cache_size=50;
+  BEGIN;
+  UPDATE t2 SET c=c+1;
+  PRAGMA lock_status;
+} {main unlocked temp unknown aux1 reserved}
+do_execsql_test pragma2-4.7 {
+  CO

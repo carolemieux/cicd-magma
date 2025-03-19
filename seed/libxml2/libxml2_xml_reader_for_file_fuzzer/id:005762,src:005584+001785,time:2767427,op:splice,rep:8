@@ -1,0 +1,27 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, g, bJ >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c/>
+<b/>
+¼MP<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http:.w3.org/2001/XMLSchema">
+ -<xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsÿÿÿring">
+          <xsd:attribute name="id" type½"xsd:ID"/>
+        </xsd:extension>
+      </xsd:s<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- This tesz checks the implementation of the vari:simpleType element. -->
+    
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://FOO" xm      
+				<element name="barC">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="tÿÿui

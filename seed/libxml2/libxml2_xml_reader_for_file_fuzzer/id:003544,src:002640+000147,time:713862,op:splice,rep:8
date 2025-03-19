@@ -1,0 +1,45 @@
+=>[\<doc>
+  <p>startd/p>
+ =>[\<doc>
+  <p>start</p>
+ 8<tab<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://3.org/2001/???????XMLSchema"
+	targetNamespace="http://F="http://GOO"
+	xmlns:but="http:<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLScheibrary">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="book" maxOccurs="unbounded">
+     <xs:comp  <xs:sequence>
+       <xs:element name="isbn" type="xs:integer"/>
+       <xs:element name="title">
+        <xs:complexType>
+         <xs:simpleContent>
+          <xs:extension base="xs:string">
+           <xs:attribute name="lang" type
+          </xs:extension>
+         </xs:simpleContent>
+        </xs:complexType>
+       </xs:element>
+       <xs:element name="author" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="name" type="xs:string"/>
+         <xs:element name="born" type="xs:date"/>
+          <xs:element name="dead" type="xs:date"/>
+         </xs:sequence>
+         <xs:attribute name="id" type="xs:ID"/>
+        </xs:complexType>
+       </xs:element>
+       <xs:element name="character" mœnOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="born" type="xs:date"/>
+          <xs:elnt name="qualification" type="xs:string"/>
+         </xs:sequence>
+         <xs:attribute name="id" type="xs:ID"/>
+        </xs:complexType>
+     6 </xs:element>
+      </xs:sequence>
+      <xs:attribute name="i

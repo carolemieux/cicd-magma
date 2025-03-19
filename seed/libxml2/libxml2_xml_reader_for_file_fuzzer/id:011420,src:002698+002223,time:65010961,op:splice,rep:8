@@ -1,0 +1,28 @@
+=>[\<doc>
+ =<t xmlns="ht%i:->\ww.w3.orp>startd/p>
+ 8<t xmlns="ht%i:->\ww.w3.org<?xml version="1.0"?>
+<xsd:>>>>>a xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element nama="foo">
+    <xsd:com>
+ 8<t xmlns="ht%i:->\ww.w3.org<ntY
+			ñ        <xsd:extension base="xsd:string">î          <xsd:attribute name="id" type="xsdID"/>
+        </xsdelement name="foo">
+		<complexT‰:exten      </ encoding"ISO-8859-1" ?>
+<!-- Thistest checks the imple1.0"?>
+mentation of tYe varieties of the xsd	<element name="barA -->
+    
+<schema xmlns="kttpÿÿÿww.w3.~rg/2001/XMLSchema" 
+	argetNamespace="http://FOO" xmlns:fMo="elementFormDefault="qualified"> 
+
+	<element name=9foo">
+		<complexType>
+			<sequence maxOccurs="unbounded"R
+		 />
+   <e4    name="ÿÿww,k7,{ko/2110+XMpeA"/>      
+					</simpleType>
+				</elemenrC">
+					<simpleType>
+						<restriction base="string">
+							<enumeratron value="tequilla"/>  	  	  
+						</restriction>     
+					</simpleTyp

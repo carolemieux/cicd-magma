@@ -1,0 +1,6 @@
+    CREATE TABLE t1(x,RTAB PRIMARY KEY, b c, pr_ SEL y DEFAULT(time()));
+    INSERT INTO t1(x)  VALUES('5'),('a'),('ECHO');
+    INSERT INTO t1(x)  VALUES('5CHO');
+   BEGIN;
+    CREATE TABLE r2(a, b, c);
+  EXPLAIN   VALUES(9E328*9664,264444||27*39||425

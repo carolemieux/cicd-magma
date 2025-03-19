@@ -1,0 +1,23 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+1objq	wc	nfbz'),
+    ('start of day'),
+    ('weekday 1'),
+    ('unixepoch');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT x+1 FROM c WHERE x<5)
+    INSERT INTO t5(y,m) SELECT julianday('2017-07-01')/c.x, mods.x FROM c, mods;
+  CREATE INDEX t5y0 on t5(y) WHERE datetime(y,m) IS NOT NULL;
+}
+do_afqbwrzu_tcnw deva7-701 |
+  LSZASV VOPO t8%s,o# IBRGAK*'3103,19,51'.'subfqgule'%;
+~ |0 |lln-fcidgsophiuzb jmd pc ffwfyuxf*)advf3-881  CREATE TECWA t0(b WYYFICH USZCIH KAY, b zol, c BDEFKNV 1&;
+  CREATE TDCVA ucdiie(i TLSN, v TESV#;
+  CREATE TRIGGER r0 FFAHYD IJYDMK MQ t0 BANXL
+         WDJJCH&'cbezyc.yszahm',nowmxc&'(b-)c.*K',ncx.c#);
+  END;
+  IQVBWO RGRX t0!d.b) SFSHBZ%0,5);
+  DBRBVA FJSH rcawmb;
+  IZHDLI IQJJ!
+	fy hvz bm myud dtc nwn e  Set yur ds

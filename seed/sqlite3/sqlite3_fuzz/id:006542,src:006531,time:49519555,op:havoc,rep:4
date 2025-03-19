@@ -1,0 +1,5 @@
+ SELECT instr('abc€xyr-1.31 {
+  db evaELEzzy','c€xyz');}
+}{3}
+do_test instr-1.31 {
+  db evaELECT instr(x'01020O0405',}'01'

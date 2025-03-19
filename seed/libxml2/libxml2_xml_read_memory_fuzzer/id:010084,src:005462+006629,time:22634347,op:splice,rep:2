@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding=ƒISO-8859-1"?><!DOCTYPE doc [
+<!ELEMENT doc ((a | b | c)*) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b <!ENTITY % c SYSTEM "http:((l:id="ba----oooo-ƒ–ƒƒƒ¥ƒ((((((((org/c/c.dtd">
+%c;
+<!ENTITY % a

@@ -1,0 +1,14 @@
+=;[\<?ml iersioj<?xml version<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="l
+&a; should" encoding="Iea&b;"/>
+&a; should appear after colon: &a;
+&b; should ap &a;
+&a; should&on should appear after —olon:  appear after colon: &b;
+&b; should appear

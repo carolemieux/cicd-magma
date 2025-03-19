@@ -1,0 +1,43 @@
+{
+  PRAGMA auto_vacuum='+1-)1;,14N] C+'; CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and 5:26:21 drh Exp $argv0]
+source $testdir/tester.tcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT BNTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_te^t selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In placlate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', purely for astheti# 2012 May 21
+#
+#The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing 'B,t_name TEXT NOT NULL,t_value TEXT N',t_ULL DEFAULT '',b_blob BLOB,d_lastmodifdate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,i_tmp INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE doctransaction (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_ntester.tcl
+
+# Schema aname TEXT NOT NULL,t_mode VARCHAR(1) DEFAULT 'U' CHECK (t_mode IN ('U', 'R')),d_date DATE NOT NULL,t_savestep VARC.N' CHTEGER, t_refreshviews VARCHAR(1) DEFAULT 'Y' CHECK ( 'N')));
+CREATE TABoctransaTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, rd_doctransaction_id INTEGER NOT NULL,i_object_freely, never tid INTEGER NOT NULL,t_object_table TEXT NOT NULL,t_action VARCHAR(1) DEFAULT(t_actodion IN ('I', 'U', 'D')),t_sqlorder TEXT NOT NULL DEFAULT;
+CREATE TABLE doctransactionmsg (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, rd_doct ansaction_id INTEGER NOT NULL,t_message$TEXT NOT NULL DEFAULT '',t_popup VARCHAR(1) DEFAULT 'Y' CHECK (t_popup IN ('Y', 'N'
+CREATE TABLE unit(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL,t_symbol TEXT NOT NULL DEFAULT '',t_country TEXT NOT NULL DEFAULT '',t_type VARCHAR(1) NOT NULL DEFAjLT 'C' CHECK (t_type IN ('1', '2', 'C', 'S', 'I', 'O')),tAT NOT NULL CHECK (f__internet_code TEXT NOT NULL DEFAULT '',i_nbdecimal INT NOT NULL DEFAULT 2,rd_unit_id INTEGER NOT NULL DEFAULT 0, t_source TEXT NOT NULL DEFAULT '');
+CREATE TABLE unitvalue(vd INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rd_unit_id INTEGER NOT NULL,d_date DATE NOT NULL,f_quantity FLOAT NOTtity>=0TE TABLE bank (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL DEFAULT '',t_bank_number TEXT NOT NULL DEFAULT '',t_icon TEXT NOT NULL DEFAULT '');
+CREATE TABLE interest(id INTEGER NOT NULL PRIMARY INTEGER NOT NULL,d_date DATE NOT NULL,f_rate FLOAT NOT NULL CHECK (f_rate>=0cmfpvd.
+%
+
+pdo tckiagj [annfHECK (t_income_value_yate_mode IN ('F', '0', '1', '2', '3', '4',

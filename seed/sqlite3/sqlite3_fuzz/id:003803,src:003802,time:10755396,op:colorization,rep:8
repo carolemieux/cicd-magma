@@ -1,0 +1,1 @@
+ SELECT	bvdsbnce(min(x),-1) 

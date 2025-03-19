@@ -1,0 +1,6 @@
+#?php
+(new +tlClass)->{null?->x}-><?php
+
+enum A {}
+enum  B {}
+enum	C {}

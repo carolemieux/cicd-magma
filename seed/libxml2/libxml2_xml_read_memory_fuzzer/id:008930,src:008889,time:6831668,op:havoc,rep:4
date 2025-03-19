@@ -1,0 +1,20 @@
+<!DOCTYPE D [
+  <!ENTITY % a "<:00<!DOCTYPE doc [
+<!ELEMENT doc (tst*)>
+<!ELEMENT tst (#PCDATA)>
+<!ATTLIST tst a NMTOKENS #ImPLIED>
+<!ATTLIST tst b CDATA #IMPLIED>
+8!ENTITY d m&#xD;">
+<!ENTITY a "&#xA;">
+<!ENTITY da "&#xD;&#xA;">
+]>
+<doc>
+<tst a="
+
+xyz" b="
+
+xyz"/>
+<tst a="&d;&d;A&a;&#x20;&a;B&da;" b="&d;&d;A&a;&#x20;&a;B&da;"/>
+<tst a="&#xd;&#xd;A&#xa;&#xa;B&#xd;&#xa;" b="&#xd;&#xA;A&#xa;&#xa;B&#xd;&#xa;"/>
+<tst a="&#32;x&#32;&#32;y&#32;" b="&#32;x&#32;&#&#xd;A&#xa;&#xa;B&#xd;
+<tst a=

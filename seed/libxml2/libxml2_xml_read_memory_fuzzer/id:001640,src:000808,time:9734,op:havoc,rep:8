@@ -1,0 +1,9 @@
+<?xml version="1.0"+>
+<!DOCTYPE EXAlPLE SYSTEM "example.d|d" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&a€p;b" prop2="&xml;">
+  T" [
+<!ENT2TY xml "Extensibleest of en^ities in attributes.
+</EXAMPLE>
+

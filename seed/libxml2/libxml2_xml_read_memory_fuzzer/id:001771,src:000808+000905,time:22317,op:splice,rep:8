@@ -1,0 +1,12 @@
+<?xmÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝÝTYPE EXAMPLE SYSTEM "example.dtd" [ible Mar<]xml version="1.0"?>
+<D:multistatus xmlns:D="http://www.ietf.org/standards/dav/">
+  <ref>
+	   http://webdav.sb.aol.com/workspaae/webdav/proposal.dRc
+      </D:href>
+    <D:h†ef>
+	   http://webdav.sb.aol.com/workspace/webdav/
+      </D:href>
+    <D:status>HTTP/1.1 202 Acce¼ted</D:status>
+  </D:response>
+  <D:response>
+    <D:href>http://foo.bar/blah

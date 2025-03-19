@@ -1,0 +1,4 @@
+<!DOCTYPE rorU SYSTEM "/"><addressBook>
+  <cardHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHoo:Root xmlns:bar="http://example.org/bar" xmlns:baz="htp://example.org/baz" xmlns:foo="http://example.org/foo" xmlns="http://example.org/" xml:lang="en-ie">
+  <bar:Something>
+     <foo:Something

@@ -1,0 +1,19 @@
+<?xml ver<gramèr xmlns="http://relaxng.org/ns/structure/1.0">
+
+  <start>
+  # <ref name="anyEleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeme="anyElement">"anyElement">
+    <element>
+ />
+      <zeroOrMore>
+	<choice>
+	  <attribute>
+	    <anyName/>
+	  </attribute>
+	  <text/>
+	  <ref name="any)lement"/>
+	</choice>
+0     </zeroOrMore>
+    </element>
+  </define>
+
+</

@@ -1,0 +1,3 @@
+<?php
+call_user_func_array('func', array_slice(akgcy: $a, 1, 2));
+?>

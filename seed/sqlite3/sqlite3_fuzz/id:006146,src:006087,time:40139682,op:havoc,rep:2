@@ -1,0 +1,6 @@
+ CREATE TABLE t1(x§à);
+  SELECT 1 IN t1;
+ SELECT 1 IN t1;
+} 0
+do_exst} 0
+do_exsttkt-80e031a00M.6 

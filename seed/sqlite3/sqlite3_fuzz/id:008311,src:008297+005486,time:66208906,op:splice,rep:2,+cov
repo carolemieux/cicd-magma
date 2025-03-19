@@ -1,0 +1,13 @@
+  CREATE TABLE t1(x);
+  INSERT INTO t1 VALUES(1), (1) INTERSECT 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1;
+} {1}
+
+do EXCEPT T sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1;
+} {8}
+
+do_execsql_test 35.4 {
+  VALUES(1) UNION 
+  SELECT sum(x) OVER f FROM t1 WINDOW f AS (ORDER BY x) ORDER BY 1;
+}  CREATE TABLE t8(' xb FROM Septedber16
+%	d	iak`l notice, hers)œ1e is a bleslÿÿÿ›d fo402­03103 PRAG

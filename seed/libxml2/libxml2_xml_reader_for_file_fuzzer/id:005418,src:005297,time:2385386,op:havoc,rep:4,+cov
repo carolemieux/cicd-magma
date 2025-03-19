@@ -1,0 +1,12 @@
+=1U\|<?xml version="1.0" tandal<?xml ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT aÌ(#PCDATA|b|s:b)*>
+<!ATTLIST a xmlnL:s ENT b EMPTY>
+<!ATTLISTa xml CDATA #IMPLIED>
+<!ELEMEMPÿÿ>
+<!IST s:b xmlns:YYYYYYYYYYYYYYYYYs CDATA #IMPLIED>
+]>
+<a xmlns:s="http://some.test.ns/a">
+  Some text.
+	<b/>
+  Some 

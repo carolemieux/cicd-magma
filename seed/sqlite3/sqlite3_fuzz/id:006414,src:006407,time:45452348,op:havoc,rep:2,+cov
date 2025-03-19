@@ -1,0 +1,4 @@
+
+  SELECT count(*) F FROM (SELECT 'Fred','student',163);
+  ITO p('Ginny','student');
+  INSERT INTO people VALUES('Haroldle,'st* 

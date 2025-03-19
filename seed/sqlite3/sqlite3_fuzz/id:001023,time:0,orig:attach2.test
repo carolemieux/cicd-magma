@@ -1,0 +1,210 @@
+# 2003 July 1
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this script is testing the ATTACH and DETACH commands
+# and related functionality.
+#
+# $Id: attach2.test,v 1.38 2007/12/13 21:54:11 drh Exp $
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+ifcapable !attach {
+  finish_test
+  return
+}
+
+# Ticket #354
+#
+# Databases test.db and test2.db contain identical schemas.  Make
+# sure we can attach test2.db from test.db.
+#
+do_test attach2-1.1 {
+  db eval {
+    CREATE TABLE t1(a,b);
+    CREATE INDEX x1 ON t1(a);
+  }
+  forcedelete test2.db
+  forcedelete test2.db-journal
+  sqlite3 db2 test2.db
+  db2 eval {
+    CREATE TABLE t1(a,b);
+    CREATE INDEX x1 ON t1(a);
+  }
+  catchsql {
+    ATTACH 'test2.db' AS t2;
+  }
+} {0 {}}
+
+# Ticket #514
+#
+proc db_list {db} {
+  set list {}
+  foreach {idx name file} [execsql {PRAGMA database_list} $db] {
+    lappend list $idx $name
+  }
+  return $list
+}
+db eval {DETACH t2}
+do_test attach2-2.1 {
+  # lock test2.db then try to attach it.  This is no longer an error because
+  # db2 just RESERVES the database.  It does not obtain a write-lock until
+  # we COMMIT.
+  db2 eval {BEGIN}
+  db2 eval {UPDATE t1 SET a = 0 WHERE 0}
+  catchsql {
+    ATTACH 'test2.db' AS t2;
+  }
+} {0 {}}
+ifcapable schema_pragmas {
+do_test attach2-2.2 {
+  # make sure test2.db did get attached.
+  db_list db
+} {0 main 2 t2}
+} ;# ifcapable schema_pragmas
+db2 eval {COMMIT}
+
+do_test attach2-2.5 {
+  # Make sure we can read test2.db from db
+  catchsql {
+    SELECT name FROM t2.sqlite_master;
+  }
+} {0 {t1 x1}}
+do_test attach2-2.6 {
+  # lock test2.db and try to read from it.  This should still work because
+  # the lock is only a RESERVED lock which does not prevent reading.
+  #
+  db2 eval BEGIN
+  db2 eval {UPDATE t1 SET a = 0 WHERE 0}
+  catchsql {
+    SELECT name FROM t2.sqlite_master;
+  }
+} {0 {t1 x1}}
+do_test attach2-2.7 {
+  # but we can still read from test1.db even though test2.db is locked.
+  catchsql {
+    SELECT name FROM main.sqlite_master;
+  }
+} {0 {t1 x1}}
+do_test attach2-2.8 {
+  # start a transaction on test.db even though test2.db is locked.
+  catchsql {
+    BEGIN;
+    INSERT INTO t1 VALUES(8,9);
+  }
+} {0 {}}
+do_test attach2-2.9 {
+  execsql {
+    SELECT * FROM t1
+  }
+} {8 9}
+do_test attach2-2.10 {
+  # now try to write to test2.db.  the write should fail
+  catchsql {
+    INSERT INTO t2.t1 VALUES(1,2);
+  }
+} {1 {database is locked}}
+do_test attach2-2.11 {
+  # when the write failed in the previous test, the transaction should
+  # have rolled back.
+  # 
+  # Update for version 3: A transaction is no longer rolled back if a
+  #                       database is found to be busy.
+  execsql {rollback}
+  db2 eval ROLLBACK
+  execsql {
+    SELECT * FROM t1
+  }
+} {}
+do_test attach2-2.12 {
+  catchsql {
+    COMMIT
+  }
+} {1 {cannot commit - no transaction is active}}
+
+# Ticket #574:  Make sure it works using the non-callback API
+#
+do_test attach2-3.1 {
+  set DB [sqlite3_connection_pointer db]
+  set rc [catch {sqlite3_prepare $DB "ATTACH 'test2.db' AS t2" -1 TAIL} VM]
+  if {$rc} {lappend rc $VM}
+  sqlite3_step $VM
+  sqlite3_finalize $VM
+  set rc
+} {0}
+do_test attach2-3.2 {
+  set rc [catch {sqlite3_prepare $DB "DETACH t2" -1 TAIL} VM]
+  if {$rc} {lappend rc $VM}
+  sqlite3_step $VM
+  sqlite3_finalize $VM
+  set rc
+} {0}
+
+db close
+for {set i 2} {$i<=15} {incr i} {
+  catch {db$i close}
+}
+
+# A procedure to verify the status of locks on a database.
+#
+proc lock_status {testnum db expected_result} {
+  # If the database was compiled with OMIT_TEMPDB set, then 
+  # the lock_status list will not contain an entry for the temp
+  # db. But the test code doesn't know this, so its easiest 
+  # to filter it out of the $expected_result list here.
+  ifcapable !tempdb {
+    set expectendle 'db2' reserves file2.
+  execsql {BEGIN} db2
+  execsql {INSERT INTO file2.t1 VALUES(1, 2)} db2
+  # Lock status:
+  #    db  -n unlocked temp closed file2 reserved}
+
+do_test attach2-4.7 {
+  # Ensure handle 'db' retains the lock on the main file after
+  #ade the handle 'db' lock.
+  catchsql {
+    INSERT INTO t1 VALUES(1, 2)
+  }
+} {1 {database is locked}}
+
+lock_status 4.9.1 db {maiis deleted
+# correctly when a multi-file transaction is committed or rolled back.
+#
+# Update: It's not actually created if a rollback occurs, so that test
+# doesn't really prove too much.
+foreach f [glob test.db*] {forcedelete $f}
+do_test attach2-5.1 {
+  sqlite3 db test.db
+  execsql {
+    ATTACH 'test.db2' AS aux;
+  }
+} {}
+do_test attach2-5.2 {
+  execsql {
+    BEGIN;
+    CREATE TABtransaction.
+do_test attach2-6.1 {
+  execsql {
+    BEGIN;
+  }
+} {}
+do_test attach2-6.2 {
+  catchsql {
+    ATTACH 'test3.db' as a
+  catchsql {
+    DETACH aux;
+  }
+} {0 {}}
+
+db close
+
+finish_tes

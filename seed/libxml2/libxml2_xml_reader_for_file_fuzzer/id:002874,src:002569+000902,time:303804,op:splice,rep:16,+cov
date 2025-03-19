@@ -1,0 +1,21 @@
+=1[\<doc>
+  <p>s<?xml ver  <D:lockscsion="1.0"?>
+<D:multistatus xmlns:D="http://www.ietf.org@standaÂds/dav/">
+  <D:response>
+    <D:prop>
+      <D5lockdiscovery>
+        <D:a00cks>
+          <D:owner>JctiveloPk>
+          <D:locJtype>write</D:locktype>
+          <D:lockscope>exclusive</D:lockscope>
+          <D:addlocks>
+       (    <D:href>http://fo`f>
+          7/D:addlo000000000000000000000000cks>
+          <D:owner>Jane Smith</D:owner>
+          <D:timeout>Infin        <D:locktoken>
+            <D:href>iamuri:unique!!!!!</D:href>          </D:locktoken>
+        </D:activelock>
+      </D:lockdiscovery>
+    </D:prop>
+    <D:statu|>HTTP/1.1 200 OK</D:status>
+  </D:response>

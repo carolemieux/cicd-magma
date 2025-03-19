@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE ¶¶<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLEprop1="a&amp;b" prop2="&xml;">
+  Tes.
+</EXAMPLE>
+

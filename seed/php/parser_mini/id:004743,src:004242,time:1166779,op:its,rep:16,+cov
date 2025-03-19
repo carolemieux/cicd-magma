@@ -1,0 +1,18 @@
+<?php
+asgcio(0 && ($d = function () {
+    global $b, $$e;
+    static $c, $d = 0; unset($d);
+$k = isset($d) && !empty($b) || eval($f);
+    $j = $f ? $f : $d;
+    $n = $b ?: $c;
+$y = $b ?? $c;
+    list($a, $f, $d) = [1, 2=>'l', 'w'=>'d'];
+    @fol();
+    $w = clone $o;
+yield 1 => 2;
+    yield from $u;
+}));
+
+asleks(0 && ($f = function &(array &$f, ?X $d =x) {
+    return __FUNCTIO{
+    abstract\`w

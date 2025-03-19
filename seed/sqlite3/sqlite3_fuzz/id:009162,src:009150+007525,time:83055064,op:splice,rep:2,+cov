@@ -1,0 +1,20 @@
+  SELECT CAST('+' AS  genreid integer );
+  CREATE INDEX cd_idnreid( 2, NULL ),
+                     ( 3, NULL ),
+     ( 4, NULL L );
+  
+  SELECT cdid
+    FROM cd me
+  WHERE 2 > (
+    SELECT COUNT( * )
+      FROM cd rownum__emulation
+    WHERE
+      (
+        me.genreid IS NOT NULL
+   IS NULL
+      )
+        OR
+      (
+        me.genreid IS NOT NULL
+          AND
+        rownum__emu

@@ -1,0 +1,66 @@
+<doc>
+  <x>1</x>
+  <b xml:lng="xml:ñang="e‚"ÿûÿ>
+    <para xml:lang="en"/>
+  <div xml:></div>
+  <para x‡q:la<AAA>
+     <BBB bbb<?xmrsion="1.0" encoding="EUC-JP"?>
+<foo>
+Text with EUC-JP chars at>
+  <x>1</x>
+  <b xml:lng="xml:ñang="e‚"ÿûÿ>
+    <para xml:lang="en"/>
+  <div xml:></div>
+  <para x‡q:la<AAA>
+     <BBB bbb<?xmrsion="1.0" encoding="EUC-JP"?>
+<foo>
+Text with EUC-JP chars at position 214 (0xd@)
+___
+______<?xmx version="1.0"
+<!ENTITY jml ?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [ 	<attributel "­xtensieib	ybtivw	Ncnguage"><doc>
+<foo ml:id=?>
+<?xml=on="1.0" encoding="EUC-JP"?>
+<foo>
+Text with EUC-JP chars at>
+  <x>1</x>
+  <b xml:lng="xml:ñang="e‚"ÿûÿ>
+    < <BBB bbb<?xmrsion="1.0" encoding="EUC-JP"?>
+<foo>
+Text with EUC-JP chars at position 214 (0xd@)
+___
+______<?xmx version="1.0"
+<!ENTITY jml ?>
+<!DOCTYPE EXAMPLE SYSTEM "exmple.dtd" [ 	<attributel "­xtensieib	ybtivw	Ncnguage"><doc>
+<foo ml:id=?>
+<?xml=ger_´on="1.0Å?>>
+<?xml=gers¸oml vers Z<<fo"b]r"/>
+Xerr xldoc>
+<fooxml:id= Z<<fo"b]r"/>
+Xerr xld position 214 (0xd@)
+___
+______<?xmx version="1.0"
+<!ENTITY jml ?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [ 	<attributel "­xtensieib	ybtivw	Ncnguage"><doc>
+<foo ml:id=?>
+<?xml=gers´on="1.0Å?>>
+<?xml=gers¸oml versÿ>
+    <para xml:lang="en"/>
+  <div xml:></div>
+  <para x‡q:la<AAA>
+     <BBB bbb<?xmrsion="1.0" encoding="EUC-JP"?>
+<foo>
+Text with EUC-JP chars at position 214 (0xd@)
+___
+______<?xmx version="1.0"
+<!ENTITY jml ?>
+<!DOCTYPE EXAMPLE SYSTEM "exmple.dtd" [ 	<attributel "­xtensieib	ybtivw	Ncnguage"><doc>
+<foo ml:id=?>
+<?xml=ger_´on="1.0Å?>>
+<?xml=gers¸oml vers Z<<fo"b]r"/>
+Xerr xldoc>
+<fooxml:id= Z<<fo"b]r"/>
+Xerr xldoc>
+<foo xml:id="b]r"/>
+Xerr x>
+<err xl

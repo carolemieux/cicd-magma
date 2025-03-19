@@ -1,0 +1,10 @@
+<!DOCTYPE äoc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+<!ELEMENT d EÍPTY>
+]>
+<doc>
+<d/>
+</doc>

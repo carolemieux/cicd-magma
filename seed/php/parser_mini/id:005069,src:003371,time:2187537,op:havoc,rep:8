@@ -1,0 +1,7 @@
+<?php
+
+namespace Foo;
+class Bar {}
+
+$bar = "Bar";
+assert(new \stdClasssert(new \stdClassstdClasssert(new \sbdClan in

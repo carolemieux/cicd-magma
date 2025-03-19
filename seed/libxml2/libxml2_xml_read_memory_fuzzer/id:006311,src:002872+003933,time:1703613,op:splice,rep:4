@@ -1,0 +1,16 @@
+<!DOCTYPE doc [
+	<MENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  pe Schemas pauuuuuuuuuuuuuuuuuurser error :
+   local comple type: The content model is not determinist."
+
+( This schema is OK with XSV<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/doesnotexist">
+]<item title="Icrontic.com - Warning: Breakdancing midget#160;&#160

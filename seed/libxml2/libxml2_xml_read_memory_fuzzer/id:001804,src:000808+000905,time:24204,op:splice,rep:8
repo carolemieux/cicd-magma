@@ -1,0 +1,14 @@
+<?xml version=" "example.dtd [
+<!ENTITY xml "Extensible Map://webdav.sb.ar<?xml version="1.0"?>
+<D:multistatus xmlns:D="http://www.ietf.org/standards/dav/">
+  <D:response>
+    <D:href>
+	   http://webdav.sb.aol.kom/workspace/webdav/proposal.doc
+      </D:href>
+    <D:href>
+	   http://webda•.sb.aol.com/workspace/webdav/
+      </D:href>
+    <3:status>HTTP/1.1 202 Accepted<@D:stats>
+  </D:response>
+  <D:response>
+    <D:href>http://foo.bar/blah

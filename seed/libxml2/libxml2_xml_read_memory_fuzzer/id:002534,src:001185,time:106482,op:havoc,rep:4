@@ -1,0 +1,14 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST n%%%%%%%%%%%%%ÈÈÈÈÈÈÈÈrm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar
+
+'/>
+	<normattr = 'foo	 	bar	'/>
+	<nrm attr = ' foo &#x20;bar'/>
+</doc>

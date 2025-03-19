@@ -1,0 +1,14 @@
+ SELECT ALL                (SELECT ALL -2147483648) NOT IN      (SELECT ALL -2147483648) NOT IN (
+   456789.1234567899
+                  ) IN (SELECT 21474 -2147483648) NOT IN      (SELECT ALL -2147483648) NOT IN (
+   456789.1234567899
+                  ) IN (SELECT 2147483649) 
+        0     FROM sqlite_master
+           ) LL 'The')
+  } {0 {{}}}(456789.123456789    ) IN (SELECT649) 
+Á   {0 {{}83649) 
+              FROX sqlite_master
+           ) LL 'The')
+  } {0 {{}}}(456789.123456789    ) IN (SELECT649) 
+Á   {0 {{}}}
+

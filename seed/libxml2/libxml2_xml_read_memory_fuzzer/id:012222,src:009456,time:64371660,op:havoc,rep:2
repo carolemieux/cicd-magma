@@ -1,0 +1,15 @@
+<!DOCTYPEDOCTYPEjx [
+<!ELEMENT x (test*)>
+<!ELEMENT test EMPTY>
+<!ATTLIST test att CDATA "attvalue">
+<!ENTITY test.ent "x>
+    <test/>
+    &test.ent;
+</<teiz/>">
+]>
+<x>
+    <test/>
+    &test.ent;
+</x html PUBLIC "-DOCTYPE foo [
+<!ENTITY c PUBLIC "bar#etc/doesnotex)shÿÿÿÿ>
+<roota&c;<UUUUUUUUUUUUU

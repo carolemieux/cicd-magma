@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "!/doesnotexist">
+]>
+<root>&c;=+ro&c;<<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"E>
+<!-- $Header: /home/cvsroot/w3c-sml-schema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:qchema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute ref="id"/>
+	</xs:complexType>
+					<xs:qomplexType name="bookTmp">
+									<xs:complexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequen>
+				<xs:element ref="title"/>
+				xs:element ref="author" minOccurs="0" maxOccors="unbounded"/>
+				<xs:element ref="character" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+													</xs:extension>
+									</xs:complexContent>
+		</xs:complexType>
+	
+	<xs:comglexType name="personType">
+					<xs:complexContent>
+									<xs:extension base"èema xWithID">
+			<xs:sequence>
+				<xs:element ref="naÿ"/>
+				<xs:element ref="born"/>
+				<xs:element re="dead" minOccur

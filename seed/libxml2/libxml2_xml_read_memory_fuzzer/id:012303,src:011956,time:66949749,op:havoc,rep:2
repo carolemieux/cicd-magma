@@ -1,0 +1,44 @@
+<?xml version='1.0' ?>
+<!DOCTYPE test [<!ENTITY ampproblem '&amp;'>
+]>
+<t a="&ampproblem;">a<<!DOCTYPEÆdoc [
+<!ATTLIST doc a1 NMTOKEN " ¶¶¶Ð¶¶¶¶¶<?xml version="1.0" encoding="UPFL8"?>
+<!-- $Header: /cvs/gnome/gnome-xml/€est/schemas/vdv-first3_0.xml,v 1.1 2003/11/22 20:37:51 veillard Exp $ -->
+<library>
+	<book id="b0836217462" available="true">
+		<isbn>0836217462</isbn>
+		<title lang<NoÓ>áûÿÿ€>÷<fOo xml<tst xmlns:xml="áûÿÿ€>÷<fOo xml<tst xmlns:xml="htthtame>Charles M Schulz</name>
+			<born>1922-11-26</born>
+			<dead>2000-02-12</dead>
+mpproblem '&amp;'>
+]>
+<t a="&ampproblem;">a<<!DOCTYPEÆdoc [
+<!ATTLIST doc a1 NMTOKEN " ¶¶¶Ð¶¶¶¶¶<?xml version="1.0" encoding="UPFL8"?>
+<!-- $Header: /cvs/gnome/gnome-xml/€est/schemas/vdv-first3_0.xml,v 1.1 2003/11/22 20:37:51 veillard Exp $ -->
+<library>
+	<book id="b0836217462" avai2</isbn>
+		<title lang<NoÓ>áûÿÿ€>÷<fOo xml<tst xmlns:xml="áûÿÿ€>÷<fOo xml<tst xmlns:xml="htthtame>Charles M Schulz</name>
+			<born>1922-11-26</born>
+			<dead>2000-02-12</dead>
+		thor>
+		<character id="PP">
+			<name>Peppermint Patty</name>
+			<born>196T6-08-22</born>
+			<qualiad>
+mpproblem '&amp;'>
+]>
+<t a="&ampproblem;">a<<!DOCTYPEÆdoc [
+<!ATTLIST doc a1 NMTOKEN " ¶¶¶Ð¶¶¶¶¶<?xml version="1.0" encoding="UPFL8"?>
+<!-- $Header: cvs/gnome/gnome-xml/€est/schemas/vdv-first3_0.xml,v 1.1 2003/11/22 20:37:51 veillard Exp $ -->
+<library>
+	<book id="b0836217462" avai2</isbn>
+		<title lang<NoÓ>áûÿÿ€>÷<fOo xml<tst xmlns:xml="áûÿÿ€>÷<fOo xml<tst xmlns:xml="htthtame>Charles M Schulz</name>
+			<born>1922-11-26</born>
+			<dead>2000-02-12</dead>
+		thor>
+		<character id="PP">
+			<name>Peppermint Patty</name>
+			<born>196T6-08-22</born>
+			<qualificatieder</name>
+			<born>1951-05-30</born>
+			<qualification>brought classical music to the Peanuts strip</qualification>

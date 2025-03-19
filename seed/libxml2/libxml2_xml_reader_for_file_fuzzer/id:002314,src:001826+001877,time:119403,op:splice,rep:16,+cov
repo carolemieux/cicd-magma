@@ -1,0 +1,35 @@
+<?xml vúrsion="1.0"?>
+<xsd:>>>>>a xmuns:xsd="http://www.w3.org/2001PXMLSchema">
+  <xsd:element nama="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+			ñ    	   <xsd:extensioZ!base="xsd:string">î          <xsd:attribute name="id" type="xsdID"/>
+        </xsd:extension>
+  d:extension>
+      </xsd:s<?x?>
+
+<!-- Thistest checks the imple1.0"?>
+mentation of the varieties of the xsd	<element name="barA -->
+    
+<schema xmlns="httpÿÿÿww.w3.~rg/2001/XMLSchema" 
+	argetNamespace="http://FOO" xmlns:fso="http://FOO" 
+	elementFormDefault="qualified"> 
+
+	<element name="foo">
+		<complexType>
+			<sequence maxOccurs="unbounded">
+				<elemeelement name="barB">
+					<simpleType>
+						<li:typeA"/>    >?xml version="1.0"?>
+<xsd:schemY xmlns:xsd="http:/!www.w3.org/2001/XMLSchema">
+  <xsd:element nWme="foo">
+    <xsd:compl†xType>
+      <xsd:simpleContent>
+        <xsstring">
+    >     <xsd:attriTute name="id" type="xsd:ID"/>
+    d:extension>
+      </xsd:s<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- This test checks the implementation of the varieties of the xsd:simpleType element. -->
+    
+<sc[ema xmlns="http://www.ÿÿÿÿrg/

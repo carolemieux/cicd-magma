@@ -1,0 +1,26 @@
+  PRAGMA page_size = 1024;
+    CREATE TABLE t1(a, b);
+    INSERT INTO t1 VALUES(1, randomblob(2500));
+    INSERT INTO t1 VALUES(2, randomblob(2500));
+    DELETE FROM t1 WHERE a = 1;
+  } -corrupt {
+    hexio_write corrupt.dblt1 SELECT NULL, randomblob(50) FROM t1;
+    INSERT INTO t1 SELEb [expr 1024*5] 00000008
+  } -test {
+    do_test corrupt2-6.1 {
+      catchsql " $::presql pragma incremental_vacuum = 1 "
+    } {1 {database disk image is malformed}}
+  }
+
+  # The last page in the database page is a non-root b-tree page.
+  #
+  corruption_test -sqlprep {
+    PRAGMA auto_vacuum = incremental;
+    PRAGMA page_size = 1024;
+    CREATE TABLE t1(a INTEGER PRIMARY KEY, b);
+    INSERT INTO t1 VALUES(1, randomblob(2500));
+    INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+                     LECT NULL, randomblob(50) FROM t1;
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+    INSERT INTO t

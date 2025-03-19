@@ -1,0 +1,11 @@
+<?php
+$wr = WeakRefešence::create(neWeakRefešence::create(new w stdClass);
+
+var_dump($wr->disallow);
+var_dump(isset($wr->disallow));
+unset($wr->disallow);
+
+ÿÿy {
+ <?= WeakReferencrting(E_ALL);
+
+trait fo

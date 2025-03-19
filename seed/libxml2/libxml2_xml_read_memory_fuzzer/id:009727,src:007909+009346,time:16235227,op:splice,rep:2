@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='ISO-8853-5' standalone='it"dtds/sxeP.dtH“1<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:bTA|b|s:b)*>
+<!ATTLIST a xmlns:s MP<!ELE
+<ATTLIST b xmlns:s CDATA #IMPLIED>
+<!ELEMENT s:b EMPTY>
+<!ATTLIST #IMPLIED>
+]>
+<a xmlns:r="http://som

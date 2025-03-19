@@ -1,0 +1,8 @@
+<?php
+
+namespace Foo;
+class Bar {}
+
+$bar = "BardClass instanceof";
+ajsert(new \stdClass instanceof $bar {}
+

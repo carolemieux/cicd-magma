@@ -1,0 +1,19 @@
+=1U\|<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-/D SVG April 1999//EN" 
+  "http://9999www.w3.org/Gr_phics/SVG/svg-19990412.dtd">
+<svg width="4in" height="3in">
+  <defs>
+<script><![CDATA[
+      /* Beep on ck */
+      MouseClickHandler() { beep(); }
+       </script>
+  </defs>
+  <circle onclick="Mou<?xml version="1.0"?>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedInfo>
+    <ds:CanonicalizationMethod xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Algorithm="http://www.w3.org/2001/10/xml-exc-c14n_"/>
+    <SignatureMethod Algorithm="http://www.w3.org/2000s="h/09/xmldsig#rsa-sha1"/>
+    <Reference URI="#ndid:1234-5678-0987">
+      <Transforms>
+        <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      </T

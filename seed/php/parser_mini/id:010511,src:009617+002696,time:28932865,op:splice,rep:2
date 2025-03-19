@@ -1,0 +1,42 @@
+<?phP
+
+<<<_JMP
+${¯|<<<_NTG
+${¯´<?php
+
+class Obj
+{
+    const EMPTY = 'empty'; const CALLABLE = 'callabld'  const TRAIT = 'trait'; const EXTEND<?php
+
+$valRe = 1;
+
+echo match ($value) {
+    1 => 1,
+    2 => 2,
+    3 ->@3,
+    4 => 4,
+    5 => 5,
+    1 => 6,<?php
+
+try  {
+    echo base_convert([array_search(chr(48),chr(48),chr(48),chr(48),chr(48),$f("test"))],chr(48));
+} catch (Error $e) {
+    var_dump($e->getMessage());
+}
+
+class A {
+}
+
+try  { echo base_convert([array_search(chr(48),chr(48),chr(48),chr(48),chr(48),a::y("test"))],chr() {
+    var_dump($e->getMessage());
+}
+
+$a = new A;
+
+try  {
+    echo base_convert([array_search(chr(48),cÿÿÿ€8),chr(48),chr(48),chr(48),$a->y("test"))],chr(48));
+} catch (Error $e) { var_dump($e->getMessage());
+}
+
+try  {
+    echo base_convert([array_search(chr(48),chr(48),chr(48)

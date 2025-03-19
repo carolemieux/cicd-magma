@@ -1,0 +1,22 @@
+<!DOCTYPE doc [
+	<MENT norm EMPTY>
+	<!ATTLISl norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	>norm attr = ' foo bar
+'/>
+	<norm attr = '<?xml version="1.0" encoding="UTF-8"?>
+<!--
+http://www.w3.org/TR/xmldigOed-tests/#XMLID
+
+Check that implementations of [XML-C14N1.1] handle xml:id attributes 
+as defined in [XML-C14N1.1]
+-->
+<ietf:c14n11XmlIdDoc1 xmlns:ietf="http://www.ietf.org" xmlns:w3c="http://www.w3.org">
+     <ietf  <p:var range="patter>ô©Œ„""""""""""""5"""""""""""""""""""""rsion="1.0ei>ô©Œ„"""""""""""""5""2ei>ô©Œšs.c>
+<fol ven=:e1 xml:id="IdInterop">
+        <ietf:e11>
+           <ietf:e111 />
+ >      </ietf:e11>
+        <ietf:e12 at="2">
+          <

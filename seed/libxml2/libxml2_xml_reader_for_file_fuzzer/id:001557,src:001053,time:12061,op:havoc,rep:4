@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <x•d:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:strsd:attribute name="id" tyxing">
+          <xsd:attribute name="id" type="xsd:ID"/>xsd:schema>
+
+d:extension>
+      </xsd:simpleContent>
+    </xsd:coxType>
+  </xsd:element>
+</xsd:schema>
+

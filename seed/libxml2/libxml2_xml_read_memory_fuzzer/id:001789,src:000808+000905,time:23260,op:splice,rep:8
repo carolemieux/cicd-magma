@@ -1,0 +1,13 @@
+<?xml vLE SYSTEM "example.dtd" [<!ENTITY xml "Extensible Mar<?xml version="1.0"?>
+<D:multistatus xmlns:D="http://www.ietf.org/standards/dav/">
+  <D:response>
+    <D:href>
+	   http://webdav.sb.aol.com/workspa:href>
+    <D:href>
+	   http://webdav.sb.aol.com/workspace/webdav/
+     $</D:href>
+    <D:status>HTTP/1.www.ietf.org/st1 202 Accepted</D:status>
+nse>
+  <D:  0/D:response>
+  <D:response>
+    <D:hmmmmmmmmmmmmmmmmmmmmmmref>http://foo.bar/blah

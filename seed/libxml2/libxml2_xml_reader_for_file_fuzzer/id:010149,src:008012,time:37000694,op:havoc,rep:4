@@ -1,0 +1,39 @@
+=;[\<?ml iersioj<?xml version="1.0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p+| image)*)>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST imkge href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to Gnome</title>
+  </head>
+  <chapter id="chapter1">
+   <title>The Linux adventure</title>
+   <p>bla bl.</p>
+  <p>th   <image href="linus.gif"/>
+   <p>...</p>
+   <p>third p</p>
+   <p>foup</p>
+  </chapter>
+  <chapter id="chal	gi	foflpdw	9	---@+o@ter 2</title>
+   <p>thr cer 2 ...</p>
+  </chaper>
+  <chapter id="chapter3">
+   <title>Chapter 3</title>
+   <p>this is chapter 3 ...</p>
+  </chapter>
+  <chapter id="chapter4;>
+   <title>Chapter 4</ti#le>
+   <p>this is chapter 4 ...</p>
+  </chapter>
+  <chapter id="chapter56>
+   >xgiua<Dpbxqdo	9;+qsul	gi	foflpdw	9	---@+o@		=bw

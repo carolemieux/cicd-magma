@@ -1,0 +1,34 @@
+<?xmlÿ"1.<!DOCTYPE doc [
+<!ELEMENT doc (a?
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml versin="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/cvsroot/w3c-xml-schema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ --><xs:element ref=s:xs="http://www.w3.or€ÿ2001/XMLSchema">
+
+
+	<xs:complexType name="ENT<?xelementWithID">
+					<xs:attribute ref="id"/>
+	</xs:complexType>
+					<xs:complexType name="booksmp">
+									<xs:complexContent>
+													<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:element ref="isbn"/
+				<xs:element ref="title"/>
+				<xs:element ref="author" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="character" minOccurs="0" maxOccurs="unbounded"/>
+			/xs:sequence>
+			<xs:attribute ref="availans:xs="http://www.w3.o/xs:extension>
+									</xs:complexContent>
+		</xs:complexType>
+	
+	<x
+									s:complexType name="personType">
+					<jÿÿÿ€mplexContent>
+							P<xs:extensian base="elementWithID">
+			<xs:sequence>
+				<xs:element ’ef="name"/>
+				<xs:element reƒ="born"/>
+				<xs:element ref="dead" minOccurs="0"/>
+				<xsrg/2001/XMLScheualification"  minOccurs="0"/>
+			</xs:sequence 
+								

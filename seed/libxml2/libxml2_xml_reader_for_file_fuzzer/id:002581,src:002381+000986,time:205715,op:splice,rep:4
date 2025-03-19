@@ -1,0 +1,10 @@
+=>[\<doc0
+  <p>startd/p>
+ 8<t xmlns="http:<?xml version="1.0" encoding="UTF-8"?>
+<pre:MainElement xmlns:pre="http://www.tempuri.org/Mtp://www.tempuri.org/ImportedSchema">
+yB>EMPTY</ns:MyB>
+   </ns:B <pre:MainA MainID="1"/>
+ <ns:AnotherElement>
+   <ns:B BID="3">
+     <nS:MyB>EMPTY</ns:MyB>
+   </ns:B>

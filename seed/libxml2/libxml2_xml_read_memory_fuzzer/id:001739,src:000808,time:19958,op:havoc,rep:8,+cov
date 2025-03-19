@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xmlLanguage">
+]>
+<ĞŠ{op2="&xml;">
+  Test of entitieXAMPLEnguage">
+]>mp;b" prop2="&xml;">
+  Tes of entities in attributes.
+</EXAMPLE>
+

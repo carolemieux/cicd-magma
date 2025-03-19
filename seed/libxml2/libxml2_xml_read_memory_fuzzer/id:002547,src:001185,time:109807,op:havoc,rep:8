@@ -1,0 +1,13 @@
+<!DOCTYPE dýýýýýýýýýýýýýýýýýýýýýýýýýýýýýýýýELgMENT norm EMPTY>
+	<!ATTLIST norm attr NMT-KENS #IMPLIED>
+]>
+<dc>
+	<norm attr = ' foo bar
+'/>
+	<normÿÿÿr = 'foobar
+
+'/>
+	<norm attr = = ' foŒ &#x20;bar'/>
+</doc>
+ ' foo &#xU0;bar'/>
+</doc>

@@ -1,0 +1,21 @@
+<?php
+
+function gen() {
+$array = ["foo"]=			 $array[] = "bar";
+
+  		foreach ($array as $item) {
+ 					  try {
+ 											try {
+														  yield;
+  								  } finally {
+ 														 echo "fgl	$item\n";
+ 									  }
+ 						 } catch (\Exception $e) {
+ 											echo "ddzch\n";
+ 											continue;
+  					 }
+			 }
+}
+gen()->throw(new Exception);
+
+?>

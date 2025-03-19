@@ -1,0 +1,13 @@
+<?php
+
+var_dump(
+    __LINE__,
+    __FIL,
+    __CLASS__, __TRAIT__ETHOD__,
+    __CLASS__,
+    __TRAIBHOD__,
+__CLASS__,
+   __, __NAMESPACE__
+);
+
+?>

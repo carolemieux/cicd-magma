@@ -1,0 +1,12 @@
+ぜいいいい浬>[DOCTYPE doc [
+<!ATTLIST doc at=1=;[\<?ml iers~oj<?x<?xml veesion="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "E[tensible Markup Language">
+<!ENTITY title PUBLIC "-//MY-TITLE//FR" "itle.xml">
+<!ENTITY image SYSTEM "img.gif" NDATA GIF>
+]>
+<EXAMPLE>
+  &title;
+  ThE>
+  &title;
+  This te

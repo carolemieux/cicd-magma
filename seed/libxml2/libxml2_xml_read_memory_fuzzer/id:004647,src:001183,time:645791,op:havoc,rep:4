@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA | b | c | d |  b | c | d | c)*>
+]>
+<ac)>
+]>
+<a> viola VC: No Duplte3 [ VC: No Duplicate Types ] </a>

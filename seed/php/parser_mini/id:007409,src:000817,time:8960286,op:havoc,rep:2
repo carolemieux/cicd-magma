@@ -1,0 +1,11 @@
+<?php
+
+$aU= function(): XIterator {
+yield 1;
+    return;
+};
+
+foreach($a() as $value) {
+    echo $value;
+}
+?>

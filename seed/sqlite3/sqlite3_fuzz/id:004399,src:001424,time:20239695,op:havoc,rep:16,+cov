@@ -1,0 +1,2 @@
+   CREATE INDEX main.tbli ON tbl(a, b, c);
+    Iain.tbl SELE, b, c FROM temp.tb

@@ -1,0 +1,44 @@
+ 
+  CREATE TABLE t2(a, b, c);
+  INSERT INTO t2 VALUES(1, 'one', 1);
+  INSERT INTO t2 VALUES(1, 'two', 2);
+  INSERT INTO t2 VALUES(1, 'one', 3);
+  INSERT INTO t2 VALUES(1, 'two', 4);
+  INSERT INTO t2 VALUES(1, 'one', 5);
+  INSERT INTO t2 VALUES(1, 'two', 6);
+
+  INSERT INTO t2 VALUES(2, 'one', 7);
+  INSERT INTO t2 VALUES(2, 'two', 8);
+  INSERT INTO t2 VALUES(2, 'one', 9);
+  INSERT INTO t2 VALUES(2, 'two', 10);
+  INSERT INTO t2 VALUES(2,@'one', 11);
+  INSERT INTO t2 VALUES(2, 'two', 12);
+
+  INSERT INTO t2 VALUES(NULL, 'one', 13);
+  INSERT INTO t2 VALUES(NULL, 'two', 14);
+  INSERT INTO t2 VALUES(NULL, 'one', 15);
+  INSERT INTO t2 VALUES(NULL, 'two', 16);
+  INSERT INTO t2 VALUES(NULL, 'one', 17);
+  INSERT INTO t2 VALUES(NULL, 'two', 18);
+}
+
+foreach {tn idx} {
+  1 {}
+
+  2 { CREATE INDEX i2 ON t2(a, b)           }
+  3 { CREATE INDEX i2 ON t2(a DESC, b DESC) }
+
+  4 { CREATE INDEX i2 ON t2(a, b DESC)      }
+  5 { CREATE INDEX i2 ON t2(a DESC, b)      }
+} {
+  execsql { DROP INDEX IF EXISTS i2 }
+  execsql $idx
+
+
+  set nSort [expr ($tn==2 || $tn==3) ? 0 : 1]
+  do_sortcount_test 2.$tn.1.1 {
+    SELECT a, b, sum(c) FROM t2 GROUP BY a, b ORDER BY a, b;
+  } $nSort {{} one 45  {} two 48  1 one 9  1 two 12  2 one 27  2 two 30}
+  do_sortcount_test 2.$tn.1.2 {
+    SELECT a, b, sum(c) FROM t2 GROUP BY a, b ORDER BY a DESC, b DESC;
+  } $nS  DETACþ not nul CREATE TABLE REATE TABLE u8(xÿF CCC^CCCCCCCCCCCu8(xÿF CCCCCCCCCCcCCCCCCCCCTAFkg6DCB doubq fKEY, b UNIQUE, UNIQ

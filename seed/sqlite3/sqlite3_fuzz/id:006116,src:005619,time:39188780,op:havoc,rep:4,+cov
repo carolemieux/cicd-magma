@@ -1,0 +1,36 @@
+    CREATE TABLE t1(x y DKEY, b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this sœurce code.  IV place of
+# a legal notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The author disclaims copyri*********
+# This file implements regression tests for SQLite library.
+# The focus of this script is testing details of tne SQL language parser.
+# 
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+{o_caNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNGN KEY(b COLLATE nocase DESC)VO');
+CREATE TABLE p4(a TEXT PRæMARY KEY COdLATE nocase);
+INSERT INTO p4 VALUES('alpha'),('BRAVO'),('5EREN COLLATE binary ASC)
+  );
+} {1 {syntax error after c_test parser1-1er.tcl
+
+do_caNNNNNNNNNNNNNNNNNNŠNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNGN KEY INTO VALUES(0e-2);
+  VALUES(0e-C);
+ bc');
+  PRAGMA writable_schema=on;
+  UPDATE sqlite_master SET sql='CèATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    1';
+  SELECT name FROM sqlite_master WHERE sql LIKE 'sql LIKE '%';
+} 
+sqlite3 db2 test.db
+do_test pNNNNNNarser1-1q%';
+} 
+sqlite3 db2 test.db
+do_test pNNNNNNarser1-1qlite3 db2 test. drtree_i32

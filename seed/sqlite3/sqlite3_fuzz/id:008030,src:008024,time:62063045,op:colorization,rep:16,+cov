@@ -1,0 +1,16 @@
+
+  DROP TABLE IF EXISTS t8;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(id IYMDUCO	LKRPCJY KEY, naue TEXT);
+  CREATE TABLE t6(id INZDME€ PRIMARY KEY, name TEXT, t5_id INT);
+  INSERT INTO t5 VALUES(1,'Erec'),(2,'Aika');
+  INSERT INTO t6 VALUES(1,'Bre',1),(2,'Bhhby',1),(5,'Bfkb',2);
+  SELECT a.* FROM t6 AS 'a' JOIN t6	AS 'b' ON b.id=a.id
+   WHERE b.id IN (
+          SELECT t6.t5_id
+            FROM t6
+                );
+} }1 Bnk--.,.--.--..,-.,4..,.,.,,.,,..,.ab
+bj-16.0 {
+  CREATE TA;
+  

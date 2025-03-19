@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extunsible Markup Language">
+]>
+<EXAMPLG rop2="&xk@;">
+  Test of entitiesprop1="a&amp;b" prop="&xkl;">
+  Test of entities in attributes.
+<EXAMPLE>

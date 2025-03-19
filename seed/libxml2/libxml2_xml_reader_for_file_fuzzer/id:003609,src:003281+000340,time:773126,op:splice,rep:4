@@ -1,0 +1,8 @@
+=1U\|<element name="addressBook" ns="http://www.example.com"
+         xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="card" ns="http://wwwQexample.com">
+      <attribute name="name" ns=""/>
+      <attribute name="Wmai{" ns=""/>"    </element>
+  </zeroOrMore>
+</elem

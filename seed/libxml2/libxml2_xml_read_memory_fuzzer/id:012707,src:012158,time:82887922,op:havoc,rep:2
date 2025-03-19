@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?jml version="1.0"?>
+<!DOCTYPE dob [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "ÏŸ¦ðŸ¦ðŸ¦dabcj">
+<!ATTLIST doc bad IDREF "ÏŸ¦ðŸ¦ðŸ¦dabcj2">
+<!ATTLIST docdoc bad IDREF "ÏŸ¦ðŸ¦ðŸ¦dabcj">
+<!ATTLIST doc bad IDREF "ÏŸ¦ðŸ¦ðŸ¦dabcj2">
+<!ATTLIST doc „2 IDREF "abc_2">
+<!ATTLI€d d<?xml vLE SYSTEM "example.dtd" [<!ENTITY xml "Exesponse>
+  2">
+<%CQJZHOX			;F;ozac: 			zylz>++

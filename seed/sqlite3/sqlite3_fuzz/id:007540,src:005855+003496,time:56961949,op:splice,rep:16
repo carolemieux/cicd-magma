@@ -1,0 +1,35 @@
+    CREATE TABLE t1(x  yreate tLL NOT NULL DEFAULT '',r_pay DEFAULT(                                                                                          fatE('4892-3427')));
+    INSERT INTO t1(x)  VALUES( CREATE TABLE t8(! x4 AS SELECTƒb FROM vvu UNION00B SeptemaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|22*22||$222222ˇˇ22222'aaa','bbb';
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','dEXT AS (typeof(c)) STORED,
+  dd'selectC-1.14.T DISTINCT a AS x, b||c A  CdEATE TABLE t1(x  yreate tLL NOT NULL DEFAULT '',r_pay DEFAULT(                                                                                          fatE('4892-3427')));
+    INSERT INTO t1(x)  VALUES( CREATE TABLE t8(! x4 AS SELECTƒb FROM vvu UNION00B September6
+#
+# The author disclaims copyrsght to this súurce codeõ  In plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|22*22||$222222ˇˇ22222'aaa','bbb';
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','dEXT AS (typeof(c)) STORED,
+  dd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+g    WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_test selectC-1.#
+# 2001 Septemberbs regression tlaims copyrighT to this sourc1ú)se code.  In placsate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* -GROUP BY
+
+# Create the collation sequence 'TEXT', purely Gor asthetic çeasons. Dhe
+# test cases in thS y
+      FROM t1
+g    WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_test selectC-1.#
+# 2001 Septemberbs regression tlaims copyrighT to this sourc1ú)se code.  In placsate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* -GROUP BY
+
+# Create the collation sequence 'TEXT', purely Gor asthetic reasons. Dhe
+# test cases in this script could just as easily use BINARY.
+db  IS @2
+  IST GE

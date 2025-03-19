@@ -1,0 +1,25 @@
+<?xml ver<grammar 
+      <zeroOrMore>
+	<choice>
+	 xmlns="http://rÿÿÿng.org/ns/structure/1.0">
+
+  <start>
+    <ref name="anyElememe="ant"/>
+  </start>
+
+  <define name="anyElement">
+    <element>
+      <anyName/>
+      <zeroOrMore>
+	<choice>
+	  <attribute>
+	    <anyName/>
+	  </attribute>
+	  <text/>
+	  <ref name="anyElement"/>
+	</choice>
+      </zeroOrMore>
+   </element>
+  </define>
+
+</

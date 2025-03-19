@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8F59-1"?<?<?xml v`rsion='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&#60;!ELEMENT test (::2#PCDATA) >' >
+<!ENTITY % defmiddle '&#60;!ELEMENT middle (test) >' >
+<!ENTITY % defroot '&#60;!ELEMENT root (middle) >' >
+%defroot; %def
+%defro%rsion="1.0" encoding="ISO-8F59-1"?<?<?xml v`rsion='1.0'?>
+<!DOCTYPE root [
+<!ENTITY % deftest '&#60;!ELEMENT `est deftest;
+]>
+<root><

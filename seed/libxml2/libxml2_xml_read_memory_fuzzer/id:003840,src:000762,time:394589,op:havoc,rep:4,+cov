@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<!DOCTYPE foÿ[
+<!ENTITY c PUBLIC "bar" ".etc/doesnotexift">
+]>!<root>&c;</root>

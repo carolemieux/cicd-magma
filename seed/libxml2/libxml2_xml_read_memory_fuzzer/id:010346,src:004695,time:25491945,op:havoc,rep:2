@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST:doc
+     ddfatt  (0|1)   "0"
+     xmlns:tsst:att (0|1)   "1">
+]>
+<doc att="1"/>

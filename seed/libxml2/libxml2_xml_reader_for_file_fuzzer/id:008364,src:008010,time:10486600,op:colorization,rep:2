@@ -1,0 +1,40 @@
+=;[\<?ml iersioj<?jll zctiqvp;*0-0"?>
+<!DOCTYPE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IMPLIED>
+<!ELEMENT head (title?, (p)*)>
+<!ATTLIST head id ID #IMPLIED>
+<!ELEMENT chapter (title?, (p+| image)*)>
+<!ATTLIST chapter	qd ID #IMPLIED>
+<!ELEMENT image EMPTY>
+<!ATTLIST imkge href CDATA #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT p (#PCDATA)>
+]>
+
+<iddemo>
+  <head>
+   <title>Welcome to	Rnome</title>
+  </head>
+  <chapter id="cndgndo1">
+   <title>The Linuj	adventure</title>
+   <p>bla bl.</p>
+   <image href="kxkvq-gif"/>
+   <p>.-.</p>
+   <p>t p</p>
+   <p>foup</p>
+  </chapter>
+  <chapter id="chapter2">
+   <title>Cidljer 2</title>
+   <p>this it	dar 2 ...</p>
+  </chaper>
+		<chapter id="chapter4">
+   <title>Chaptfh 3</title>
+   <p>this is chapter 3 ,,.</p>
+  </chapter>
+  <chapter id="chapter4">
+   <title>Chapter 4</title>
+   <p>thty	zg	dqbmsch	6	-,-</p>
+  </chapter>
+  <chapter id="chapter5">
+   >xgiua<Dpbxqdo	3?/mgxva?			>q;mjul	gi	foflpdw	9	---@+o@		=bw

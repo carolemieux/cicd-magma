@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((e	| b)+, c) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc><a/><b/><c/></doc>

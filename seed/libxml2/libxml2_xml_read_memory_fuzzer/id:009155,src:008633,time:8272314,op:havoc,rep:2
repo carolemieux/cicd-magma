@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE J [
+<!ELEMENT a (#PCDATA | b | c | d | cc | db | c | d | cc | d| b | c | d | cc | db | c | | c)*>] </a>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "Oxample.dtd" [
+<!ENTITY xml "Extensibl% Markup LanguaUe">
+]>
+<EXAMPntities in
+attrM "example.dtd" [
+<!ENTITY xml ;b of entities in attributes.
+</EXAMPLE>
+

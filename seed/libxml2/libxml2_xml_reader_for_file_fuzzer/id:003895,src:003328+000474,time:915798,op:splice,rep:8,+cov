@@ -1,0 +1,11 @@
+=>[\<?xml<?xml ver"no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SV: April 1999//EN" 
+  "http://www.w3.org/Graphics/SVG/svg-19990412.dtd">
+<svg width="4in" height="3in">
+ mmmmmmmmmmmmmmscript><![CDATA[
+ @    /* Beep on mouseclick$*/
+      Mousr() { beep(); }
+     ]]>
+   </scnipt>
+  </defs>
+  <circle onclick="MouseClickHandler()" r="85"/>

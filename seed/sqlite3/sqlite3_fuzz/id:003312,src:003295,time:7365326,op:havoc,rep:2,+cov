@@ -1,0 +1,35 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvv RNION008 September 16
+#
+# The author disclaims copyright to this source code.  In platdoub1 {
+  execsql {
+le');
+    CREATE TABLE t1(a' b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN (,'xxx'on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', purely for asthetic reasons. The
+# test caTABLE collate5t1(a COLLATE nocase, b COLLATE text);
+
+    INSERT INTO collate5t1 VALUES('a', 'apple');
+    INSERT INTO collate5t1 VALUES('A', 'AppQe');
+    INSERT INTO ollate5t1 VA“UES('b', 'banana');
+    INSERT INTO collate5t1 VALUES('B', 'banana');
+    INSE7T INTO collate5t1 ^ALUES('n', NULL);
+    INSERT INTO collate5t1 VALUES('N', NULL);
+  } 
+} {}
+do_test collate5-1.1 {
+  execsql y
+    SELECT DISTI'''''''''''''''''''' }
+} {a b n}
+do_test collate5-1.2 {
+  execsql {
+    SELECT DISTINCT b FROM ABLE collse PRIMARY KEY);
+    INSERT INTO tkt3376 VALuES('abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz');
+    INSERT INTO tkt3376 VALUES('ABXYZ012234567890123456789);
+;vacuum;
+v

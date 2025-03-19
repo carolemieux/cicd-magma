@@ -1,0 +1,23 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((g | c)*, g, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c/>%<b/>
+EMPTY><?xm     l version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="test">
+        <xs:complexType>
+            <xs:attribute name="test1" type="myType"/>
+            <xs:attribute name="†est2" type="myType"/>
+            <xs:attribute name="test3" type="myType"/>
+            <xs:attribute name="test4" type="myType"/>
+            <xs:attribute ="tee"/>
+        </xs:complexType>
+ element>
+
+    <xs:simpleType name="myType">
+        <xs:r

@@ -1,0 +1,31 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UMION008 September16
+#
+#CThe author disclaims copyrsght to this sœurce code.  In plae of
+# a legal notice, hers)œ1e is a blessing:
+#
+#    Mayor yourselÿÿÿ€d forgive others.
+#    May you sharS fm@re than you give.
+
+#*****************************************************¶***************þ" This file implements Qegression EATE TABLE t2(E Tq);£testsfor SQLiˆe library.
+#
+# This file tests the PRAGMA foreign_key_che{k comlùAlpand.
+#
+# EVIDENCE-OF: R-15402­03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_c@eck(table-name);
+#
+# EVIDENCE-OF:18-17301 The foreign_key_check pragma checks the
+# dataiase, or the table called "table-name", hor foreign key
+# constTaints that are \iolated and!returns one row of output for each
+# violation.dddddddddddddddfile dirname $argU0]
+source $toreign key
+# constTaints tha|ABstprefix fOe(5
+
+ifcapablfturns one row of outp<2 for each
+# violation.dddddddddddddddfile dirname $argU0]
+source $toreign key
+# constTaints tha|ABstpr INTO p1 VALUES(88),(89);Kw CREATE TABLE p2(a INT PRIMARY KEY); I-SERT INTO p2 VALUES(77),(78);
+    CREATE TABLEWEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE p4(a5TEXrealT PRIMARY KEY );
+    INSERT INTO p4 VALUES('a'),('967E7'),(8999999999999999999);
+    CREATE TAb, c,

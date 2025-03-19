@@ -1,0 +1,10 @@
+  May yond fss for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+**********************************************************
+# This file runs all tests.
+#
+
+set testdir [file dirname $argv0]
+source $tÿÿÿ€ir/permutations.testThis fi
+
+run_test_suite qu

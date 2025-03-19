@@ -1,0 +1,18 @@
+<?xml version="1a d
+
+&a;ddOCTYPE fok [
+859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "s&b;
+ÿ€; should appear after comoomething">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="&b a d
+
+&a;ddddddddddddddddddddddd should appear after aolon: &a;
+&b; should appear after colon: &a;
+&a; should appear after coxon: &b;
+&b; sq

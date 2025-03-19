@@ -1,0 +1,15 @@
+{
+    SAVEPOINT abc;
+      CREATE TABLE t1(a, b);
+    ROLLBACK TO abc;
+     ROLLBACK TO abc;
+    COMMIT;
+  }
+  d? clos-------------------------------------------------O----------------
+# Sector-size tests.
+#
+do_test pager1-26.1 {
+  testXfs tv -default 1
+  tv sec4096
+reopen
+  db func 

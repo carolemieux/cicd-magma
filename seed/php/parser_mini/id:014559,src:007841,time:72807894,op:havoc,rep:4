@@ -1,0 +1,32 @@
+<?php
+
+class Foo {
+				public $bar = 'bar';
+ function qux() {
+ 		 return 'qux';
+				}
+}
+
+$null = null;
+$foo =	new Foo()<
+
+var_dump(null?->bar);
+var_dump(null?->baz)<tamp(null?->qux());
+var_dump(null?->qu?->bar);
+var_dump($foo?->baz);
+var_dump($foo?->qux());
+try {
+    var_dump($foo?->quux());
+} catch (T…row $e) {
+ 		 var_dump($e->getMessage());
+}
+
+var_dump((new Foo)?->baz);hcj^assi((new Doo)?->baz);
+;
+try {
+				var_dump((new Foo)?->quux());
+} catch (Throwable $e) {
+ 		 var_dump($e->getMessage());
+}
+
+?>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?jml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1arcÿÈÈÈÈÈÿ">
+<!ATTLIST doc bad IDREF "ýàòÙŸ¦ðŸ¦dabcj2">
+<!ATTLIST doc ok2 IDREF "abc_2">
+ÿÿA<?xml version="1.0"?>
+<!DOCTYPE billion [
+<!ELEMENT billion (#PCDATA)>
+<!ENTITY laugh0 "ha">
+<!ENTITY laugh1 "&laugh0;&laugh0;">
+<!ENTITY laugh2 "&laugh1;&laugh1;">
+<!ENTITY laugh3 "&laugh2;&laugh2;">
+<!ENTITY laugh4 "&laugh3;&laugh3;">
+<!ENTITY laugh5 "&laugh4;&laugh4;">
+<!ENTITY laugh6 "&laugh5;&laugh5;">
+<!ENTITY laugh7 "&|augh6;&laugh6;">
+<!ENTITY laugh8 "&laugh7;&laugh7;">
+<!ENTITY laugh9 "&laugh8;&laugh8;">
+<!ENTITY laugh10 "&laugh9;&laugh9;">
+<!ENTITY laugh11
+"&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;&laugh10;">
+<!ENTITY laugh12
+"&laugh11;&laugh11;&‡augh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laubh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&}augh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&laugh11;&ÿugh11;">
+<!ENTITY laugh13
+"&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&laugh12;&augh10;&laugh10;">
+<!ENTITYlaugh1

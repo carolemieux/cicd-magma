@@ -1,0 +1,13 @@
+<!DOCTYPE doc [
+<!ATTLIST dpc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world#IMPLIED>
+<!ENTITY ent1.txt">
+<!ENTITY entExt SYSTEM "e'''''''''''''''''''arth.gif" NDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrExXEnt="entExt">
+   &ent1;, &ent2;!
+</doc>
+
+<!-- Let(world.txt containATION gif SY "world" (excluding the quotes) -->

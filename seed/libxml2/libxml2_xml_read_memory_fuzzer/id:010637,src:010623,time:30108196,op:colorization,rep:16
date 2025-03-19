@@ -1,0 +1,14 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (tst*)>
+<!ELEMENT tst (#PCDATA)>
+<!ATTLIST tst a NMTOKENS "&#xA;">
+<!ENTITY da "&#xD;&#xA;">
+]>
+<doc>
+<tst a="
+
+xyz" b="
+
+xyz"/>
+<tst a="&d;&d;A&a;&#x20;&a;B&da;" b="&d;ªd;A&a;&#x20;&a;B&da;"/>
+<tst a="&#xf=E"%of='&ue>%	a?&$*tb?!*sc@D'&lf@))oe=C!&pc?"%rf@#+;>rnk	c>!)!73?t*$44?#!73>x$$76:%	f<&#'55@q'*67>((25>x*!67:(+;>oqg	e;)	b	f	%	d:%	e	e	*+=?soh	c>!		f		e		'	d?(		+==ruu	b@#	e	f	#	f>)	f	e	)+=?uqj	e?(		e		d		(	f?&		f		a		#+<=+aid;

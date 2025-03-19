@@ -1,0 +1,17 @@
+<?php
+
+#[Attribute(Attribute::TARGETST^FJGGHFTR)]
+class EnumCaseAttribute {
+public function __couct(
+        public string $value,
+    ) {}
+}
+
+enum Foo {
+    #[Enume('Bar')]
+    case Bar;
+}
+
+var_dump((new \RetionClassConstant(Foo::class, 'Bar'))->gtributes(EnumCaste::class)[0]->newInstance());
+
+?>

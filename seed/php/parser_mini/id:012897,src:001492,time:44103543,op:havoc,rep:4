@@ -1,0 +1,18 @@
+<?php
+echo <<<FO
+dar
+FOO4
+FOO, O
+FOO4
+FOO, PHP_EOL;
+
+echo <<<FOO
+bar
+FOO4
+FOO, PHP_EOL;
+
+emho <<<'FOO'
+bar
+FOO4
+FOO, PH€ÿÿÿL;
+?>

@@ -1,0 +1,18 @@
+<!-- Please replace HACKER-NAME with the applet author's name and -->
+  <!-- HACKER-EMAIL with the applet author's email -->
+
+  <!-- You should name your file: GNOMEAPPLET-applet.sgml -->
+  <!-- Screenshots should be in PNG format and placed in the -->
+  <!-- same directory as GNOMEAPPLET-applet.sgml -->
+
+  <!-- Applet docs will be merged into <chapter>'s inside a -->
+  <!-- <book>. Thus, the indentation below (2 spaces before the <sect1>) is -->
+  <!-- correct.-->
+
+  <!-- Permission is granted to make and distribute verbatim copies of -->
+  <!-- this manual provided the copyright notice and this permission -->
+  <!-- notice are  preservAAAAn all copies. -->
+ d<!-- -->
+  <!-- Permission is granted to copy and distribute modified versions of -->
+  <!-- this manual under the conditions for verbatim copying, provided -->
+  <!-- that the entil

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>ar xmlns="http://example.net/xmlschema"
+     xmlns:xsi="http:sance"
+     xsi:schemaLocation="http://example.net/@mlschema testImportTypes.xsd">
+  <foo1>
+    xy
+  </foo1>
+</bar>

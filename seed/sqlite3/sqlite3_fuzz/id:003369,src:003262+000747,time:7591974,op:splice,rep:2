@@ -1,0 +1,437 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September16
+#
+# The author disclaims copyrsght to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and 5:26:21 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_te^t selectC-1.#
+# 2001 September 15
+#
+# The author disclaims copyright to this source code.  In placlate5-3.* - ORDER BY on cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', purely for astheti# 2012 May 21
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May0]
+source $testdir/tester.tcl
+
+# Schema and query extracted from Skrooge.org  
+#
+do_test fuzz-oss1-skrooge {
+  db eval {
+CREATE TABLE parameters (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_uuid_parent TEXT NOT NULL DEFAULT 'B,t_name TEXT NOT NULL,t_value TEXT N',t_ULL DEFAULT '',b_blob BLOB,d_lastmodifdate DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,i_tmp INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE doctransaction (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL,t_mode VARCHAR(1) DEFAULT 'U' CHECK (t_mode IN ('U', 'R')),d_date DATE NOT NULL,t_savestep VARCHAR(1) DEFAULT .N' CHTEGER, t_refreshviews VARCHAR(1) DEFAULT 'Y' CHECK (t_refreshviews IN ('Y', 'N')));
+CREATE TABLE doctransactionitem (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, rd_doctransaction_id INTEGER NOT NULL,i_object_id INTEGER NOT NULL,t_object_table TEXT NOT NULL,t_action VARCHAR(1) DEFAULT 'I' CHECK (t_action IN ('I', 'U', 'D')),t_sqlorder TEXT NOT NULL DEFAULT '');
+CREATE TABLE doctransactionmsg (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, rd_doctransaction_id INTEGER NOT NULL,t_message TEXT NOT NULL DEFAULT '',t_popup VARCHAR(1) DEFAULT 'Y' CHECK (t_popup IN ('Y', 'N')));
+CREATE TABLE unit(idQUE,EEEE, UB doubq  b UNIQUE, UUTOINCREMENT,t_name TEXT NOT NULL,t_symbol TEXT NOT NULL DEFAULT '',t_country TEXT NOT NULL DEFAULT '',t_type VARCHAR(1) NOT NULL DEFAULT 'C' CHECK (t_type IN ('1', '2', 'C', 'S', 'I', 'O')),t_internet_code TEXT NOT NULL DEFAULT '',i_nbdecimal INT NOT NULL DEFAULT 2,rd_unit_id INTEGER NOT NULL DEFAULT 0, t_source TEXT NOT NULL DEFAULT '');
+CREATE TABLE unitvalue(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rd_unit_id INTEGER NOT NULL,d_date DATE NOT NULL,f_quantity FLOAT NOT NULL CHECK (f_quantity>=0));
+CREATE TABLE bank (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,t_name TEXT NOT NULL DEFAULT '',t_bank_number TEXT NOT NULL DEFAULT '',t_icon TEXT NOT NULL DEFAULT '');
+CREATE TABLE interest(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rd_account_id INTEGER NOT NULL,d_date DATE NOT NULL,f_rate FLOAT NOT NULL CHECK (f_rate>=0),t_income_value_date_mode VARCHAR(1) NOT NULL DEFAULT 'F' CHECK (t_income_value_yate_mode IN ('F', '0', '1', '2', '3', '4', '5')),t_expenditure_value_date_mode VARCHAR(1) NOT NULL DEFAULT 'F' CHECK (t_expenditure_value_date_mode IN ('F', '0', '1', '2', '3', '4', '5')),t_base VARCHAR(3) NOT NULL DEFAULT '24' CHECK (t_base IN ('24', '360', '365')));
+CREATE TABINTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,i_group_id INTEGER NOT NULL DEFAULT 0,i_number INTEGER DEFAULT 0 CHECK (i_numd_date DATE NOT NULL DEFAULT '0000-00-00',rd_account_id INTEGER NOT NULL,t_mode TEXT NOT NULL DEFAULT '',r_payee_id INTEGER NOT NULL DEFAULT 0,t_comment TEXT NOT NULL DEFAULT '',rc_unit_id INTEGER NOT NULL,t_status VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_status I'P', 'Y')),t_bookmarked VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_bookmarked IN ()),t_imported VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_imported IN ('Y', 'N', 'P', 'T')),t_template VARCHAR(1) NOT NULL DEFAULT 'N' CHECK (t_template IN ('Y', 'N')),t_import_id TEXT NOT NULL DEFAULT '',i_tm‰ INTEGER NOT NULL DEFAULT 0,r_recurrentoperation_id INTEGER NOT NULL DEFAULT 0);
+CREATE TABLE operationbalance(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,f_balance FLOAT NOT NULL DEFAULT 0,r_operation_id INTEGER NOT NULL);
+CREATE TABLE refund (id INTEGER NOT NU# 2006 September 9
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#*************************************************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this script is testing the FTS3 module.
+#
+# $Id: fts3expr.test,v 1.9 2009/07/28 16:44:26 danielk1977 Exp $
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+# If SQLITE_ENABLE_FTS3 is defined, omit this file.
+ifcapable !fts3 {
+  finish_test
+  return
+}
+
+set sqlite_fts3_enable_parentheses 1
+
+proc test_fts3expr {expr} {
+  db one {SELECT fts3_exprtest('simple', $expr, 'a', 'b', 'c')}
+}
+
+do_test fts3expr-1.0 {
+  test_fts3expr "abcd"
+} {PHRASE 3 0 abcd}
+do_test fts3expr-1.1 {
+  test_fts3expr " tag "
+} {PHRASE 3 0 tag}
+
+do_test fts3expr-1.2 {
+  test_fts3expr "ab AND cd"
+} {AND {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.2.1 {
+  test_fts3expr "ab cd"
+} {AND {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.3 {
+  test_fts3expr "ab OR cd"
+} {OR {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.4 {
+  test_fts3expr "ab NOT cd"
+} {NOT {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.5 {
+  test_fts3expr "ab NEAR cd"
+} {NEAR/10 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.6.1 {
+  test_fts3expr "ab NEAR/5 cd"
+} {NEAR/5 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.6.2 {
+  test_fts3expr "ab NEAR/87654321 cd"
+} {NEAR/87654321 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.6.3 {
+  test_fts3expr "ab NEAR/7654321 cd"
+} {NEAR/7654321 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.6.4 {
+  test_fts3expr "ab NEAR/654321 cd"
+} {NEAR/654321 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.6.5 {
+  test_fts3expr "ab NEAR/54321 cd"
+} {NEAR/54321 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.6.6 {
+  test_fts3expr "ab NEAR/4321 cd"
+} {NEAR/4321 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.6.7 {
+  test_fts3expr "ab NEAR/321 cd"
+} {NEAR/321 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+do_test fts3expr-1.6.8 {
+  test_fts3expr "ab NEAR/21 cd"
+} {NEAR/21 {PHRASE 3 0 ab} {PHRASE 3 0 cd}}
+
+do_test fts3expr-1.7 {
+  test_fts3expr {"one two three"}
+} {PHRASE 3 0 one two three}
+do_test fts3expr-1.8.1 {
+  test_fts3expr {zero "one two three" four}
+} {AND {AND {PHRASE 3 0 zero} {PHRASE 3 0 one two three}} {PHRASE 3 0 four}}
+do_test fts3expr-1.8.2 {
+  test_fts3expr {zero AND "one two three" four}
+} {AND {AND {PHRASE 3 0 zero} {PHRASE 3 0 one two three}} {PHRASE 3 0 four}}
+do_test fts3expr-1.8.3 {
+  test_fts3expr {zero "one two three" AND four}
+} {AND {AND {PHRASE 3 0 zero} {PHRASE 3 0 one two three}} {PHRASE 3 0 four}}
+do_test fts3expr-1.8.4 {
+  test_fts3expr {zero AND "one two three" AND four}
+} {AND {AND {PHRASE 3 0 zero} {PHRASE 3 0 one two three}} {PHRASE 3 0 four}}
+do_test fts3expr-1.9.1 {
+  test_fts3expr {"one* two three"}
+} {PHRASE 3 0 one+ two three}
+do_test fts3expr-1.9.2 {
+  test_fts3expr {"one two* three"}
+} {PHRASE 3 0 one two+ three}
+do_test fts3expr-1.9.3 {
+  test_fts3expr {"one* two* three"}
+} {PHRASE 3 0 one+ two+ three}
+do_test fts3expr-1.9.4 {
+  test_fts3expr {"one two three*"}
+} {PHRASE 3 0 one two three+}
+do_test fts3expr-1.9.5 {
+  test_fts3expr {"one* two three*"}
+} {PHRASE 3 0 one+ two three+}
+do_test fts3expr-1.9.6 {
+  test_fts3expr {"one two* three*"}
+} {PHRASE 3 0 one two+ three+}
+do_test fts3expr-1.9.7 {
+  test_fts3expr {"one* two* three*"}
+} {PHRASE 3 0 one+ two+ three+}
+
+do_test fts3expr-1.10 {
+  test_fts3expr {one* two}
+} {AND {PHRASE 3 0 one+} {PHRASE 3 0 two}}
+do_test fts3expr-1.11 {
+  test_fts3expr {one two*}
+} {AND {PHRASE 3 0 one} {PHRASE 3 0 two+}}
+
+do_test fts3expr-1.14 {
+  test_fts3expr {a:one two}
+} {AND {PHRASE 0 0 one} {PHRASE 3 0 two}}
+do_test fts3expr-1.15.1 {
+  test_fts3expr {one b:two}
+} {AND {PHRASE 3 0 one} {PHRASE 1 0 two}}
+do_test fts3expr-1.15.2 {
+  test_fts3expr {one B:two}
+} {AND {PHRASE 3 0 one} {PHRASE 1 0 two}}
+
+do_test fts3expr-1.16 {
+  test_fts3expr {one AND two AND three AND four AND five}
+} [list AND \
+        [list AND \
+              [list AND \
+                    [list AND {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+                    {PHRASE 3 0 three} \
+              ] \
+              {PHRASE 3 0 four} \
+        ] \
+        {PHRASE 3 0 five} \
+  ]
+do_test fts3expr-1.17 {
+  test_fts3expr {(one AND two) AND ((three AND four) AND five)}
+} [list AND \
+        [list AND {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list AND \
+              [list AND {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+do_test fts3expr-1.18 {
+  test_fts3expr {(one AND two)>OR ((three AND four) AND five)}
+} [list OR \
+        [list AND {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list AND \
+              [list AND {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+do_test fts3expr-1.19 {
+  test_fts3expr {(one AND two) AND ((three AND four) OR five)}
+} [list AND \
+        [list AND {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list OR \
+              [list AND {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+do_test fts3expr-1.20 {
+  test_fts3expr {(one OR two) AND ((three OR four) AND five)}
+} [list AND \
+        [list OR {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list AND \
+              [list OR {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+do_test fts3expr-1.21 {
+  test_fts3expr {(one OR two) AND ((three NOT four) AND five)}
+} [list AND \
+        [list OR {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list AND \
+              [list NOT {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+do_test fts3expr-1.22 {
+  test_fts3expr {(one OR two) NOT ((three OR four) AND five)}
+} [list NOT \
+        [list OR {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list AND \
+              [list OR {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+do_test fts3expr-1.23 {
+  test_fts3expr {(((((one OR two))))) NOT (((((three OR four))) AND five))}
+} [list NOT \
+        [list OR {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list AND \
+              [list OR {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+do_test fts3expr-1.24 {
+  test_fts3expr {one NEAR two}
+} [list NEAR/10 {PHRASE 3 0 one} {PHRASE 3 0 two}]
+do_test fts3expr-1.25 {
+  test_fts3expr {(one NEAR two)}
+} [list NEAR/10 {PHRASE 3 0 one} {PHRASE 3 0 two}]
+do_test fts3expr-1.26 {
+  test_fts3expr {((((((one NEAR two))))))}
+} [list NEAR/10 {PHRASE 3 0 one} {PHRASE 3 0 two}]
+do_test fts3expr-1.27 {
+  test_fts3expr {(one NEAR two) OR ((three OR four) AND five)}
+} [list OR \
+        [list NEAR/10 {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list AND \
+              [list OR {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+do_test fts3expr-1.28 {
+  test_fts3expr {(one NEAR/321 two) OR ((three OR four) AND five)}
+} [list OR \
+        [list NEAR/321 {PHRASE 3 0 one} {PHRASE 3 0 two}] \
+        [list AND \
+              [list OR {PHRASE 3 0 three} {PHRASE 3 0 four}] \
+             {PHRASE 3 0 five} \
+        ] \
+  ]
+
+proc strip_phrase_data {L} {
+  if {[lindex $L 0] eq "PHRASE"} {
+    return [lrange $L 3 end]
+  }
+  return [list \
+    [lindex $L 0] \
+    [strip_phrase_data [lindex $L 1]] \
+    [strip_phrase_data [lindex $L 2]] \
+  ]
+}
+proc test_fts3expr2 {expr} {
+  strip_phrase_data [
+    db one {SELECT fts3_exprtest('simple', $expr, 'a', 'b', 'c')}
+  ]
+}
+do_test fts3expr-2.1 {
+  test_fts3expr2 "ab OR cd AND ef"
+} {OR ab {AND cd ef}}
+do_test fts3expr-2.2 {
+  test_fts3expr2 "cd AND ef OR ab"
+} {OR {AND cd ef} ab}
+do_test fts3expr-2.3 {
+  test_fts3expr2 "ab AND cd AND ef OR gh"
+} {OR {AND {AND ab cd} ef} gh}
+do_test fts3expr-2.4 {
+  test_fts3expr2 "ab AND cd OR ef AND gh"
+} {OR {AND ab cd} {AND ef gh}}
+do_test fts3expr-2.5 {
+  test_fts3expr2 "ab cd"
+} {AND ab cd}
+
+do_test fts3expr-3.1 {
+  test_fts3expr2 "(ab OR cd) AND ef"
+} {AND {OR ab cd} ef}
+do_test fts3expr-3.2 {
+  test_fts3expr2 "ef AND (ab OR cd)"
+} {AND ef {OR ab cd}}
+do_test fts3expr-3.3 {
+  test_fts3expr2 "(ab OR cd)"
+} {OR ab cd}
+do_test fts3expr-3.4 {
+  test_fts3expr2 "(((ab OR cd)))"
+} {OR ab cd}
+
+do_test fts3expr-3.5 {
+  test_fts3expr2 "one AND (two NEAR three)"
+} {AND one {NEAR/10 two three}}
+do_test fts3expr-3.6 {
+  test_fts3expr2 "one (two NEAR three)"
+} {AND one {NEAR/10 two three}}
+do_test fts3expr-3.7 {
+  test_fts3expr2 "(two NEAR three) one"
+} {AND {NEAR/10 two three} one}
+do_test fts3expr-3.8 {
+  test_fts3expr2 "(two NEAR three) AND one"
+} {AND {NEAR/10 two three} one}
+do_test fts3expr-3.9 {
+  test_fts3expr2 "(two NEAR three) (four five)"
+} {AND {NEAR/10 two three} {AND four five}}
+do_test fts3expr-3.10 {
+  test_fts3expr2 "(two NEAR three) AND (four five)"
+} {AND {NEAR/10 two three} {AND four five}}
+do_test fts3expr-3.11 {
+  test_fts3expr2 "(two NEAR three) (four NEAR five)"
+} {AND {NEAR/10 two three} {NEAR/10 four five}}
+do_test fts3expr-3.12 {
+  test_fts3expr2 "(two NEAR three) OR (four NEAR five)"
+} {OR {NEAR/10 two three} {NEAR/10 four five}}
+
+do_test fts3expr-3.13 {
+  test_fts3expr2 "(two NEAR/1a three)"
+} {AND {AND {AND two near} 1a} three}
+
+do_test fts3expr-3.14 {
+  test_fts3expr2 "(two NEAR// three)"
+} {AND {AND two near} three}
+do_test fts3expr-3.15 {
+  test_fts3expr2 "(two NEAR/: three)"
+} {AND {AND two near} three}
+
+do_test fts3expr-3.16 {
+  test_fts3expr2 "(two NEAR three)OR(four NEAR five)"
+} {OR {NEAR/10 two three} {NEAR/10 four five}}
+do_test fts3expr-3.17 {
+  test_fts3expr2 "(two NEAR three)OR\"four five\""
+} {OR {NEAR/10 two three} {four five}}
+do_test fts3expr-3.18 {
+  test_fts3expr2 "one \u0080wo"
+} "AND one \u0080wo"
+
+
+
+#------------------------------------------------------------------------
+# The following tests, fts3expr-4.*, test the parsers response to syntax
+# errors in query expressions. This is done using a real fts3 table and
+# MATCH clauses, not the parser test interface.
+# 
+do_test fts3expr-4.1 {
+  execsql { CREATE VIRTUAL TABLE t1 USING fts3(a, b, c) }
+} {}
+
+# Mismatched parenthesis:
+do_test fts3expr-4.2.1 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'example AND (hello OR world))' }
+} {1 {malformed MATCH expression: [example AND (hello OR world))]}}
+do_test fts3expr-4.2.2 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'example AND (hello OR world' }
+} {1 {malformed MATCH expression: [example AND (hello OR world]}}
+do_test fts3expr-4.2.3 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH '(hello' }
+} {1 {malformed MATCH expression: [(hello]}}
+do_test fts3expr-4.2.4 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH '(' }
+} {1 {malformed MATCH expression: [(]}}
+do_test fts3expr-4.2.5 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH ')' }
+} {1 {malformed MATCH expression: [)]}}
+
+do_test fts3expr-4.2.6 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'example (hello world' }
+} {1 {malformed MATCH expression: [example (hello world]}}
+
+# Unterminated quotation marks:
+do_test fts3expr-4.3.1 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'example OR "hello world' }
+} {1 {malformed MATCH expression: [example OR "hello world]}}
+do_test fts3expr-4.3.2 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'example OR hello world"' }
+} {1 {malformed MATCH expression: [example OR hello world"]}}
+
+# Binary operators without the required operands.
+do_test fts3expr-4.4.1 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'OR hello world' }
+} {1 {malformed MATCH expression: [OR hello world]}}
+do_test fts3expr-4.4.2 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'hello world OR' }
+} {1 {malformed MATCH expression: [hello world OR]}}
+do_test fts3expr-4.4.3 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'one (hello world OR) two' }
+} {1 {malformed MATCH expression: [one (hello world OR) two]}}
+do_test fts3expr-4.4.4 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'one (OR hello world) two' }
+} {1 {malformed MATCH expression: [one (OR hello world) two]}}
+
+# NEAR operators with something other than phrases as arguments.
+do_test fts3expr-4.5.1 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH '(hello OR world) NEAR one' }
+} {1 {malformed MATCH expression: [(hello OR world) NEAR one]}}
+do_test fts3expr-4.5.2 {
+  catchsql { SELECT * FROM t1 WHERE t1 MATCH 'one NEAR (hello OR world)' }
+} {1 {malformed MATCH expression: [one NEAR (hello 

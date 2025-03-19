@@ -1,0 +1,29 @@
+<?php
+
+eÿvz	<<<fBÉF
+
+${ß	÷
+	  c<?php
+
+class Obj
+{
+    const EMPTY = 'empty';
+    const CALLABLE = 'callable';
+  TRAIT = 'trait';
+    const EXTENDS = 'extends';
+    const <?php
+
+/** test */
+namespace f@o {
+    function test() { }
+
+    $x = new \ReflectionFunction('foo\test');
+    var_dump($x->getDocComment());
+
+    /** test1 */
+    class bar { }
+
+    /** test2 */
+    class ftion test() { }
+
+    $oo extends namespace

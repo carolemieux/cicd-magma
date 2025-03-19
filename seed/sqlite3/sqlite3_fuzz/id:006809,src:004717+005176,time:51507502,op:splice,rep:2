@@ -1,0 +1,4 @@
+{
+  PRAGMA au;
+  CREATE TABLE window(x, window);
+  INSERT INTO over VALUES(1,#a 

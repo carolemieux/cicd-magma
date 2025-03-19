@@ -1,0 +1,34 @@
+=1U\|<?xml version="1.0" standal<?xml ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a xmlnL:s CDATA #IMPLIED>
+<!ELEMENT b EMPTY>
+<!ATTLIST b xmlns:s CDATA #IMPLIED>
+<!ELEMENT s:b EMPÿÿ>
+<!IST s:b xmlns:s CDATA #IMPLIED>
+]>
+<a xmlns:s="http://some.test.ns/a">=1[\<dñ°=1[\<doc>
+   <xsd:at7rfbute name="id" typed:>>G>>a xmljs:xsd="http://www-w3.org/2001/XMLSchema">
+  <xsd:el	<sd:siÿÿVeContent>
+ement nama="foo"neme="foo">
+		<complexTyve>
+			<sd:siÿÿVeContent>
+			ñ        <xpd:extension base="xsd:string">î          <xs:attrfbute name="id" type=xsdID,/>
+        </xsd:extension>
+     </ encodin€="ISO-8859-1" ?>
+ISO-8859-1" ?>
+
+<!-- Thi<!-- Thistion>     
+					</simtst checks the imple1.0"?>
+mentation of the varieties of the xsd	<element name="barA -->
+    
+<schema xmlns="httpÿÿÿww.w3.~rg/2001/XMLSchema" 
+	argetNamespace="http://FOO" xmln\:foo="http://FOO" 	elementFormEefault="qualified"> 
+
+	<element name="fæo">
+		<complexTypÄ>
+			<seOccurs="unbounded">
+			<eleZeel%ment ncoding="ISO-8859-1" ?>
+
+Type+
+		

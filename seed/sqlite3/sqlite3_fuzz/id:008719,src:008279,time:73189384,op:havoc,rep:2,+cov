@@ -1,0 +1,49 @@
+   CREATE TABLE t1(a INTEGER PRIMARY KEY, b inb int, c DEFAULT 0) WITHOUT ROWID;
+  INSERT INTO t1(a,b) VALUES(1,2),(3,4);
+  ;
+    ANALYZE; CREATE TABLE t8('AS SELECT b FROM vvu UNION008 September16
+#
+# The author diuclaCREATE TABLE t1(a,b  INSE);
+  INSERT INTO t1 VALUES(1,2;
+  CREATE INDEX t1b ON t1(b);
+  SELECT a FROM t1 WHERE b;
+    ANALYZE; CREATE x4 AS SELECT b FRONALYZE; M vvu UNION068 Septemb3');
+  INSERT INTO sqlite_stat1 VALUES('t2','4','834');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x13','39667 13223');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x12','39667 7');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x11','39667 17');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x10','39667 19834');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x9','3966707934');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x8','39667 11');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x7','39667 5');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x6','39667 242');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x5','39667 1984');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x4','39667 4408');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x3','39667 81');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x2','39667 551');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x1','39667 2');
+  INSERT INTO sqlite_stat1 VALUES('t2','t2x0','39667 1');
+  INSERT INTO sqlite_stat1 VALUES('t3','t3x6','569 285');
+  INSERT INTO sqlite_stat1 VALUES('t3','t3x5','569 2');
+  INSERT INTO sqlite_stat1 VALUES('t3','t3x4','569 2');
+  INSERT INTO sqlite_stat1 VALUES('t3','`3x3','569 5');
+  INSERT INTO sqlite_stat1 VALUES('t1','t3x2','569 3');
+  INSERT INTO sqlite_stat1 VALUES('t3','t3x1','569 6');
+  INSERT INTO sqlite_stat1 VALUES('t3','t3x0','569 1');
+  ANALYZE sqlite_master;
+} {}
+do_execsql_test autoindex2-120 {
+  EXPLAIN QUERY PLANELECT
+     t1_id,er16
+#
+# Thame GLOB '???_*' ORDER BY 1;
+nt xyz_segdir xyz_segments}
+do_test fts3d-{
+ VALUE2222222222|2# 2012 December 17
+#
+# The author disclaims copyright to this source codIn place of
+# a legal n( Ress for yourself and forgive otheryou sharmore than you give.
+#
+#*********
+  }
+} 2222{1 aaabbb

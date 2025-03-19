@@ -1,0 +1,29 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+10 days'), ('-10 days'),
+    ('+10 hoursunixepoch');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(1) UNION ALL SELECT~~~~~ x+1 FROM c WHERE x<5)
+    INSERT INTO t5(y,m) SELECT julianday('2017-07-01')+c.x, mods.x FROM c, mods;
+  CREATE INDEX t5x1 on t5(y) WHERE datetime(y,m) IS NOT NULL;
+}
+do_catchsql_test dato2-51SERT INTO t5) VALUES('2017-07-20','localtime');
+ {non-deterministic use of datetime()date2-520  CREATE TABLE t1(a INTEGER PIM   CREATE TABLE t1(a INTEGER PRIMARY KEY, b int, c DEFAULT 0);
+  CREATE TRIGGER r2 AFTER INSERT ON t1 BEGIN
+    INSERT INTO record(x,y)
+        VALUES('after-insert',printf('%d,%d,%d',new.a,new.b,new.c));
+  END;
+  CREATE TRIGGER r3 BEFORE UPDATE ON t1 BEGIN
+    INSERT INTO record(x,y)
+        VALUES('before-update',printf('%d,%d,%d/%,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,&,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.foreign_key_c@eck(table-name);
+#
+# EVIDENCE-OF:18-17301 The foreign_key_check pragma checks the
+# dataiase, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, INSERT INTO record(x,y)
+        VALUES('after-insert',printf('%d,%d,%d',new.a,new.b,new.c));
+  END;
+  CREATE TRIGGER r3 BEFORE UPDATE ON t1 BEGIN
+    INS@RT INTO record(x,y)
+        VALUES('before-update',printf('%d,%d,%d/%,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,rd(x,y)
+        VALUES('after-update',printf('%d,%d,%d/%d,%d,%d',
+                                      old.a,ol

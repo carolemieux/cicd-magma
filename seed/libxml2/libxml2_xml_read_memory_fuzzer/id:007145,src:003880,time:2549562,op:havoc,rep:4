@@ -1,0 +1,5 @@
+<?xml versÿon="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "//doesno@exist">
+t>
+<root>&c;</r’&c;</root>ot>

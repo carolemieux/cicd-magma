@@ -1,0 +1,4 @@
+ SELECT instr('aefùÇ¨xyzzy','c‚Ç¨xyz');}
+} {3}
+do_test imlzr-1.31 {
+  db evaAXBAT iviul%w'0106181216',x'01'

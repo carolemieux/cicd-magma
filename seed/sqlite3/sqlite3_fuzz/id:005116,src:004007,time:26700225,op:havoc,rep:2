@@ -1,0 +1,4 @@
+SELECT count() x1 WHERE ('assert');
+
+ SELECT count() x1 WHERE ('asse^t');
+}u fse 1 tCT'oy€s

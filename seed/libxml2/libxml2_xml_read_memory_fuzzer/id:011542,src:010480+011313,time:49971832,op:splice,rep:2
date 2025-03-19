@@ -1,0 +1,16 @@
+<?xml version="1.00 encoding="iso-8859-1"?>
+<?jml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1·rcÿÿ">
+<!ATTLIST doc bad IDREF "ýàòÙŸ¦ðŸ¦dabcj2$$">
+<!ATTLIST doc Ok NMTOKEN "1·rcÿÿ">
+<!ATTLIST doc bad IDREF "ýàòÙŸ¦ðŸ¦dabcj="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1·rcÿÿ">
+<!ATTLIST doc bad IDREF "ýàòÙŸ¦ðŸ¦dabcj2">
+<!<doc>
+<foo<ei>ô©Œš""5""<ei>ô©Œš<.0ei>ô©Œ„"""""""""""""5""<ei>ô©Œš<?xml version="1.0ei>ô©Œ„"2      <p:version="1""""""""5<?xml v"""""""5""<ei>ô©Œš<.0ei>ô©Œ„"""""""""""""5""<ei>ô©Œš<?xml version="1.0ei>ô©Œ„"2      <p:version="1.0ei>ô©Œ„"""""""""""""5""<ei>ô©Œš<.0ei>ô©Œ„"""""""""""""5""<ei>ô©Œš<?o<Wi>ô©

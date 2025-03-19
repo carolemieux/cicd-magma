@@ -1,0 +1,11 @@
+<?php
+
+namespace {
+    use const fooybar;
+
+    const bar = 42;
+}
+use const foo\bar;
+
+    cons
+?>

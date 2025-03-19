@@ -1,0 +1,210 @@
+<!DOCTYPE doc [<!ATTLIST normId attr NMTOKENS #IMPLIED>]>
+<doc>
+  <!-- no normalization -->
+  <norm attr='   d/>
+  <norm attr='
+  foo bar   SYSTEM "Rxample.dtd" [<!ENTITY xml "Extensible Mar<?xml version="1.0"?>
+<D:multirm attr='
+  foo&amp;bar   '/>
+  <norm attr='
+
+foobar&amp;'/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&€ÿ;'/>
+  <norm attr='&lt;foo bar
+'/>
+  <norm attr='foobar
+
+&lt;'/>doc [<!ATTLIST normId attr NMTOKENS #IMPLIED>]>
+<doc>
+  <!-- no normalization -->
+  <norm attr='   '/>
+  <norm attr='
+  foo bar   '/>
+  <norm attr='
+
+foobar'/>
+f <norm afoobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attr='
+  foo&amp;bar   '/>
+  <norm attr='
+
+foobar&amp;'/>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attp='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&€ÿ;'/>
+  <norm att;bar r='&lt;foo bar
+'/>
+  <norm attr='foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- normalization -->
+  <normId attr='   '/>
+  <normId attr='
+ '/>
+  <normId attr='
+
+foobar'/>
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp; '/>
+  <noˆmId attr='
+  foo&amp;bar   '/>
+   <n
+  <norm attr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- norm bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foo&lt;bar   '/>
+  <normId attr='
+
+foobar&lt;'/>
+  <normId attr='&lt;foo bar
+'/>
+  <normId attr='foobar
+
+&lt;'/="http://example.com/" xmlns:a="http:'/>
+  <n
+  <norm attr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- normalization -->
+  <normId attr='   '/>
+  <normId attr='
+ '/>
+  <normId attr='
+
+foobar'/>
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId at <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobarlt;foo bar
+'/>
+  <norm attr='foobar
+
+&lt;'/>doc [<!ATTLIST normId attr NMTOKENS #IMPLIED>]>
+<doc>
+  <!-- no normalization -->
+  <norm attr='   '/>
+  <norm attr='
+  foor'/>
+f <norm afoobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attr='
+  foo&amp;bar   '/>
+  <norm attr='
+
+foobar&amp;'/> foo="bar" xce="d
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attp='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&€ÿ;'/>
+  <norm att;bar r='&lt;foo bar
+'/>
+  <norm attr='foobar
+
+&lt;'/>
+  <norm attr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- normalization -->
+  <normId attr='   '/>
+  <normId attr='
+ '/>
+  <normId attr='
+
+foobar'/>
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp; '/>
+  <noˆmId attr='
+  foo&amp;bar   '/>
+   <n
+  <norm attr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- norm bar
+'/>
+  <normId attr='foobar
+
+&amp;'/>
+  <normId attr=' &lt; '/>
+  <normId attr='
+  foo&lt;bar   '/>
+  <normId attr='
+
+foobar&lt;'/>
+  <normId attr='&lt;foo bar
+'/>
+  <normId attr='foobar
+
+&lt;'/="http://example.com/" xmlns:a="http:'/>
+  <n
+  <norm attr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- normalization -->
+  <normId attr='   '/>
+  <normId attr='
+ '/>
+  <normId attr='
+
+foobar'/>
+
+foobar'/>
+  <normId attr=' foo bar
+'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp; '/>
+  <nŽˆmId attr='
+  foo&amp;bar   '/>
+  <normId attr='
+
+fooba''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''' '/>
+  <normId attr='
+  foo&lt;bar   '/>
+  <normId attr='
+
+foobar&lt;'/>
+  <normId attr='&lt;foo bar
+'/>
+  <normId attr='foobar
+
+&lt;'/="http://example.com/" xmlns:a="http:'/>
+  <normId attr=' &#13;&#xa;&#9; '/> <!-- PBM serializing back -->
+</doc>

@@ -1,0 +1,4 @@
+;
+    ANALYZE;
+ CREATE TABLE  x AS SELECT-1;
+  SELECT~~ (SELECT~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sum(8)) <~ •um(8) _)

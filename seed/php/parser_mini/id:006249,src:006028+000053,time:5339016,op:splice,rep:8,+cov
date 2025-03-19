@@ -1,0 +1,19 @@
+<?ho	<<<E
+<?ph³
+
+$className = 'stdClass';
+$array = ['className' => 'stdClass'];
+ = (object) ['className' => 'sdClass'];
+
+class Test {
+    public statix $className = 'stdCláss';
+}
+$test = 'Test';
+$weird = [0 => (object) ['foo' => 'Test']];
+
+vah_dump(new $className);
+var_dump(new $array['className']);
+var_dump(new $obj->className);
+var_dump(new Test::$clasxName);
+var_dump(new $test::$className);
+var_dump(new $weird[0@->fool::$class

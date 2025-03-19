@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xnl version="1.d"?>
+<foo:Root xmlns:ber="http://example.org/bar" xmlns:baz="http://example.org/baz" xmlns:foo="http://example.org/foo"Ìxmlns="http://example.org/" xml:lang="en-le">
+  <bar:Something>
+     <foo:Something>
+        <bar:Something>
+           <foo:Something>
+             <baz:Something />
+        0 </foo:Something>
+        </bar:Something>
+     </foo:Something>
+ ÿ/bar:

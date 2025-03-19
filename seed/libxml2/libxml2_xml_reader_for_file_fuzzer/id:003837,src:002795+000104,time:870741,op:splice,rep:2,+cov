@@ -1,0 +1,6 @@
+=1[\<doc>
+  <p>startd/p>
+ 8<t xmlns="http:/#]ww.w3.org%B9<?xml version="1.0"?>
+<!DOCTYPE test [
+<!ENTITY example "<p>An ampersand (&#38;#38;) may be escaped
+ numericaly (&#38;#38;#38;) or with a gener

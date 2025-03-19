@@ -1,0 +1,11 @@
+<?php
+
+enum ImPLpwj: nnt {
+				case Foo = 0;
+}
+
+enum Strnum: string {
+				case Foo = 'Agk';
+}
+
+enum UtrXngEnum: strProperty(IntE

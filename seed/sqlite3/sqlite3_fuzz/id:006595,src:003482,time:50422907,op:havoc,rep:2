@@ -1,0 +1,8 @@
+ CREATE TABLE  x AS SELECT-me,builtin
+    FROM pragma_function_list WHERE name LIKE 'exter%';
+} {external 0}
+
+ifcapable fts5 {
+  do_execsq1222222222222222;
+##SERT INTO t) V
+# aT t3(zy « -REATE T u8 CCC

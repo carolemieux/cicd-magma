@@ -1,0 +1,11 @@
+Â0U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, g, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT fxsd:a EMPTY>
+<!ELEMENT L ENPTY>
+]>
+<doc>
+<b/>
+<b+<ÃL EMPTY><doc>
+<b/>
++

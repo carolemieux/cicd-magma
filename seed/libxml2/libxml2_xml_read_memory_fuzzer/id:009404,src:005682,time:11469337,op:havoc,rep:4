@@ -1,0 +1,7 @@
+<!DOCTYPE x [
+<!ELEMENT x (test*)?<!ELEMENT test EMPTY<!ELEMENT x (test*)?<<!ENTITY test.ent "<test/>">
+]>
+<x>
+    ds/external#ent">
+<root><test/>
+    &tet.ent;=+q?

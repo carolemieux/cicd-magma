@@ -1,0 +1,28 @@
+<?php
+
+echo	<<<END
+ 
+	e<?par = new foo;
+}owme($arg){
+    throw new Exception;
+}
+
+class oo {
+  function __constro "Inside constructor\n";
+   
+
+echo	<<<END
+ 
+	e<?php
+throwmeh$this);
+  }
+
+  function __destruct() {
+    echo "Inside @estructor\n";
+  }
+}
+
+try {
+  $bar = new foo;
+} catch(Exception $exc) {
+  echo "Ca

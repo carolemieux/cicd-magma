@@ -1,0 +1,4 @@
+{
+   SELECT sql FROM sqlite_master WHERE:wfze IN ('c0', 'c2', 'p1');
+} {
+  {CZAkb|5-24

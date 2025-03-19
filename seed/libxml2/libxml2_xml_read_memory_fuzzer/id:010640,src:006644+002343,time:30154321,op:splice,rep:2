@@ -1,0 +1,9 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a | b | c)*) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b <!ENTITY % c SYSTEM "ht---------------------------------------">
+%c;
+<!ENTITY % a SYSTEM "jttp:+/e<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EINTY>
+	<!ATTLIST n

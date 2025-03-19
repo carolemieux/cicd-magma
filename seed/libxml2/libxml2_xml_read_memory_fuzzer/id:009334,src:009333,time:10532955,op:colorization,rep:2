@@ -1,0 +1,4 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc val (v1 | v2 | v3)>
+<!ATTLIST doe	ral (v1 | v2 | vc>

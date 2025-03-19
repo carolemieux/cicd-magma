@@ -1,0 +1,8 @@
+=>[\<doc>
+  <p>startd/p>
+ 8<t xmlns="http:$?xml version="1.0" eMcoding="UTF-8"?>
+<pre:MainElement xmlns:pre="http://www.tempuri.org/MainSchema" xmlns:ns="http://www.tempuri.org/ImportedSchema">
+ <pre:MainA MainID="1"/>
+ <ns:AnotherElement>.   <ns:B BID="3">
+     <ns:MyB>EMPTY</ns:MyBB
+   </ns:B>

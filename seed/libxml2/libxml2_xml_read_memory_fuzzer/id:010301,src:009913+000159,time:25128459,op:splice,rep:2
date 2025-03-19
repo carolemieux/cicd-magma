@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-81.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?, d?)?, (e | f | g)*, (h+ | i | j+))>
+<!ELEMENT a EMPTY>
+<!ELEMENr b EMPTY>
+<!ELEMENT c EMPTY>
+<!ELEMENT d EMPTY>
+<!ELEMENT e EMPTY>
+<!ELEMENT f EMPTY>
+<!ELEMENT g EMPTY>
+<!ELEMENT h EM

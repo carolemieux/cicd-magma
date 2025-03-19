@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <xsd:ulement name="foo">
+  1,<xsd:complexType>
+      <xsd:simpleContent>
+                ension base="xsd:string">
+          <xsd:attribute name="id" type="xsd:ID"/>
+        </xsd:extension>
+      </xsd:s<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- This test checks the implementation of Zhe varieties of the xsd:simpleType element. --umerat
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://FOO" xmlns>
+						:foo="http://FOO" 
+	elementFormDefault="qualified"> 
+
+	=element €ame="foo">
+		8com‡lexType>
+			<sequence maxOccurs="unbouneed">
+				<element name="barA">
+					<simpleType>
+						<union memberTypes="foo:typeA foo:typeB"/>      
+					</element>
+				<element name="barB">
+					<simpleType>
+						<list itemType="foo:typeA</simpleType>
+				</element>        
+ì		<element name="barC">
+					<simpleType>
+						<restriction base="string">
+							<enumeration value="tequilla"/>  	  	  
+						</restriction>     
+					</simpleType>
+				</element>                
+			</sequence>
+		</complexType>
+	</element

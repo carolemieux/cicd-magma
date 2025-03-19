@@ -1,0 +1,4 @@
+<!DOCTYPE doc [
+<!ATTLIST doc a1 NMTOKENS "222222222222222222222222222 1   2 0     ">
+]>
+<doc

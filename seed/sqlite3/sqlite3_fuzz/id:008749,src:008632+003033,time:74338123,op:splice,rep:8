@@ -1,0 +1,31 @@
+   CREATE TABLE t3(a, b, UNIQUE(a, b));
+    ALTER TABLE t3 ADD COLUMN c VARCHAR(10, 20);
+    SELECT sql FROM sqlite_master WHERE tbl_name = 't3' AND type = 'table';
+  }
+} {{CREATE TABLE t3(a, b, c VARCHAR(10, 20), UNIQUE(a, b))}}
+do_test alter3-1.99 {
+  catchsql {
+    # May not exist if foriegn-keys are omitted at compile time.
+    DROP TABLE t2; 
+  }
+  execsql {
+    DROPÿTABLE abc; 
+    DROP TABLE t1; 
+    DROP TABLE t3; 
+  }
+} {}
+
+do_test alter3-2.1 {
+  execsql {
+    CREATE TABLE t1(a, b);
+  }
+  catchsql {
+    ALTER TABLE t1 ADD c PRIMARY KEY;
+  }
+} {1 {Cannot add a PRIMARY KEY column}}
+do_test alter3-2.2 {
+  catchsql {
+    ALTER TABLE t1 ADD c UNIQUE
+  }
+} {1 {Cannot add a UNIQUE column}}
+do_test alter3-2.

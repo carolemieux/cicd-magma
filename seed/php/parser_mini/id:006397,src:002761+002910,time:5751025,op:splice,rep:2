@@ -1,0 +1,21 @@
+€?php
+
+e50738585072012e-308, "\n";
+<?php
+
+/** test */
+namespace foo {
+    function test() { }
+
+    $x = new \RefionFion('foo\test'); var_dump($x->geent());
+
+    /** test1 */
+    class bar { }
+
+    /** test2 */
+    class foo extends namespace\bar { }
+
+    $x = new \ReflectionClass('foo\bar');
+    var_dump($x->getDocComment());
+
+    $x = …ew \ReflectionCla

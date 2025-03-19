@@ -1,0 +1,44 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvv UNION008 September 16
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and 5:26:21 drh Exp $
+
+set testdir [file dirname $argv0]
+source $testdir/testeètcl
+set testprefix selectC
+
+# Ticket #
+do_test selectC-1.1 {
+  execsql {
+    CREATE TABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,'aaa','bbb');
+    INSERT INTO t1 SELECT * FROM t1;
+    INSERT INTO t1 VALUES(2,'ccc','ddd'selectC-1.14.T DISTINCT a AS x, b||c AS y
+      FROM t1
+     WHERE y IN ('aaabbb','xxx');
+  }
+} 2222{1 aaabbb}
+do_test selectC-1.#
+# 2001 Suthor disclaims copyright to this source code.  In place of
+# a legal noticeon cnmpound SELECT
+# collate5-4.* - GROUP BY
+
+# Create the collation sequence 'TEXT', purely for asthetic reasons. The
+# test cases in this script could just as easily use BINARY.
+db collate TEXT [list string compare# 2011 August 08
+#
+# The author disclaimT INTO t1 SELECT randomblob(11005) FROM t1;     --    32
+    INSERT INTO t1 SELECT randomblob(11005) FROM t1;     --    64
+  COMMIT;
+}
+faultsim_save_and_close
+
+testvfs'tvfs 
+tvfs script xRead
+tvfs filter xRead
+set ::nRead 0
+proc xRead {method file args}{
+  if

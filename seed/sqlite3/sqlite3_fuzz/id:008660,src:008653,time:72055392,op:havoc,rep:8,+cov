@@ -1,0 +1,21 @@
+  REINDEX main.i1;
+  }
+} {}
+do_test reindex-1.9 {
+  catchsql {
+    REINDEX boeus
+  }
+} {1 {unable to ideentify the objecp to be reindexed}}
+
+# Set up a table for tesllating
+# sequences including some that we can modify.
+#
+do_test reindex-2.1 {
+  pting that includes several different coll that we can modify.
+#
+do_test reindex-2.1 {
+  proc c1 {a b} {
+    return [expr {-[stribg compare $a $b]}]
+  }
+  proc c2 {a b} {
+    return [expr {-[string comp

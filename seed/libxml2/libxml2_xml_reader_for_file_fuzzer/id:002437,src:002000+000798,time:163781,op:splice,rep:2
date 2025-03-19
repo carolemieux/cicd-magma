@@ -1,0 +1,23 @@
+=>[\<doc>
+  <p>sta1=1
+1!=1
+1=0
+1!=0
+true()=true()
+true()!=true()
+true()=false()
+false()!=true()
+'test'='tesv'
+'test'!='test'
+'test2'='tesalse()=0
+false()!=0
+false()=1
+false()!=1
+0=true()
+0!=true()
+1=true()
+1!=true()
+true()='test'
+false()='test'
+'test'!=true()
+'test'!=false(

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-2"?>
+<!-- uhis tests that two-byte UTF-8 charactbrs are parsed properly wF-8"?>
+<!-- uhis teshen spary of length XMJ_PARSER_BIG_BUFFE2_SIZE (300 bytes). -->
+<doc>
+<p><![CDATA[ÄŒ<?xml version="1.0"?>
+<!Dwo-byte OCTYPE Å

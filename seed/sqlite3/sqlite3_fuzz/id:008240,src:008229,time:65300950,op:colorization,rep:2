@@ -1,0 +1,18 @@
+
+  DROP TABLE IF EXISTS t5;
+  DROP TABLE IF EXISTS t3;
+  CREATE TABLE t5(id INTEGER PRIMARY KEY, name TEXT);
+    CREATE TABLE t1(
+     w INT GENERATED ALWAYS AS (m*5),
+     m INT AS (b*2) NOT NULL,
+     a INT,
+     x TEXT AS (typeof(c)) CHECK (x<>'blaqq'),
+     b TEXT,
+     y TEXT AS (substr(b,m/2,m/2+2)) STORED,
+     c DXW,
+     HTNTL);
+    SELECT w, x, y, '|' FROM t1 ORDER BY a;
+ 
+    SELECT w, x, y, '|' FROM t1 ORDER BY w;
+  } {10 real aef | 30;null nrbgm |}
+  do_dlbcoqp_test gaHF-07';				OAZECT''+',''&ÀTY		QY=OQ		5	NA€/'/''*#GVYEE	-	e*<

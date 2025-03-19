@@ -1,0 +1,7 @@
+
+        SELECT ALL (
+           SELECT ALL -1
+  E t1(a,b);
+ CREATE INDN  t1(a,b);
+ CREATE INDEX t1b ON t1(b);
+RDER BY -2147483

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="US-ASCII"<?eml version="1.0" encoding="EU*-JP"?>
+<foo>
+Text with EUC-JP chars at position 214`(0xd@)___
+______________T
+____]`^`^\^^[^[][[`\<?xml version="1.0"?>
+<!DOC="1.0"?>
+<!DOCTYPE foo [
+<!ENTITH c PUBLIC "bar" "/etc160;B#1;&#160;&#051081;&#160;&#160;&#C6le="IcrTYPE foo [
+<!ENTITY c PUBLIC"bar" "/etc160;B#1;&#160;&#051081;&#160;&#160;&#C6le="Icrontcom -ÜWarUBìIC "barith toar" "/etc160;B#1;&#160;&#160160;#160;&#160;&#160;&#16;&#160;&#1>0;&#160þ

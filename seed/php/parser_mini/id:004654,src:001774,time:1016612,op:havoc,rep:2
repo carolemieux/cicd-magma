@@ -1,0 +1,9 @@
+<?php
+
+echo <<<'END8
+	
+	   a
+	 
+	 c
+		END;
+

@@ -1,0 +1,22 @@
+<!DOCTYPE doc [
+<!ATTLIST df>
+<!NOTATION giml 
+     PUBLIC "-/3W3C/cr" "">
+<!NOTATION ggsq	
+     PUBLIC "-r" "">
+<!NOTATION giml 
+  	
+     PUBLIC
+<!ATTLIST df>
+<!NOTATION giml 
+     PUBLIC "-/3W3C/cr" "">
+<!NOTATION ggsq	
+     PUBLIC "-r" "">
+<!NOTATION giml 
+  	
+     PUBLIC "-r" >
+<!NOTATION ggsq	
+     PUBLIC ")r" "">
+<!NOTATION giml 
+  	
+     

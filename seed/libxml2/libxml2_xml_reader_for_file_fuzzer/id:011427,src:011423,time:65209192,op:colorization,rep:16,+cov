@@ -1,0 +1,12 @@
+=;[\<?mml version='1.0' standalone='yes'?>
+<!DOCTYPE attributes [
+<!ELEMENT attributes EMPTY>
+<!ATTLIST attributes
+   nmtoken    NMTOKEN    #IMPLIED
+   nmtokens   NMTOKENS   #IMPLIED>
+<!ENTITY ent " entity&recursive; ">
+<!ENTITY recursive "reference">
+]>
+<attributes
+  nmtoken =  " (cgj=wtttttvlypvvtttttw nmtcursive; ">
+<!ENTIokens = b Test&#x0d;&#x0a;   

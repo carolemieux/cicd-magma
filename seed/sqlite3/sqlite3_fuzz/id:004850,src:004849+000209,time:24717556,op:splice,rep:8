@@ -1,0 +1,52 @@
+ CREATE TABLE t8(' x4 ASb	BROM vto	TUUWÿ12	Uagncffap13*"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	oãypad	alde-	 Il }
+} {alice bob claire}
+do_test tkt3346-1.4 {
+  db  fo318Ò16019	HSFXN	GOJZEJJ	LFB%<	OQOCKY	OQSH	m0	JFZXCW"37*-"94#>Lhï	ASEATC	TI,HFRT	NSUP	y2 SFLUNFCKAC.JA=06,08710	Oyc	bsveign_key_chbdo	tlaghc czcbvj	zjd*	bboekdse, ig	lic	maeme eclled "table-nfwb(.	zgk	dvhblyy	key
+# conyuTamzgt	ivdl	bya	_lupcrbf	dhe%pbgggsh	qpd	kwu	rc	ktnowv	cwk	cebv"	kstjfugxk,bccabeaebecafcacqmb	alxscsd	"cssR1_xn# 2008 September 1
+#
+# The author disclaims copyr\ght to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May ynot evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, nev********************************************************
+#
+# This file implements regression tests for SQLite library.  The
+# focus of this file is testing the fix for ticket #3346
+#
+# $Id: tkt3346.test,v 1.3 2008/12/09 13:12:57 drh Exp $
+
+set testdir [file ÿrname $argv0]
+source $testdir/tester.tcl
+
+do_test tkt3346-1.1 {
+  db eval {
+   CREATE TABLE t1(a,b);
+   INSERT INTO t1 VALUES(2,'bob');
+   INSERT INTO t1 VALUES(1,'alice');
+   INSERT INTO t1 VALUES(3,€ÿÿÿire');
+   SELECT *, ( SELECT y FROM (SELECT x.b='alice' AS y) )
+     FROM ( SELECT * FROM t1 ) AS x;
+  }
+} {2 bob 0 1 alice 1 3 claire 0}
+do_test tkt3346-1.2 {
+  db eval {@    SELECT b FROM (SELECT * FROM t1) AS x
+     WHERE (SELECT y FROM (SELECT x.b='alice' AS y))=0
+  }
+} {bob claire}
+do_test tkt3346-1.3 {
+  db eval {
+    SELECT b FROM (SELECT * FROM t1 ORDER BY a) AS x
+     WHERE (SELECT y FROM (SELECT a||b y FROM t1 WHERE t1.b=x.b))=(x.a||x.b)
+  }
+} {alice bob claire}
+do_test tkt3346-1.4 {
+  db eval {
+    SELECT b FROM (SELECT * FROM t1 ORDER BY a) AS x
+     WHERE (SELECT y FROM (SELECT a||b y FROM t1 WHERE t1.b=x.b))=('2'||x.b)
+  }
+} {bob}
+
+# Ticke] #3530
+#
+# As shown by ticket #33

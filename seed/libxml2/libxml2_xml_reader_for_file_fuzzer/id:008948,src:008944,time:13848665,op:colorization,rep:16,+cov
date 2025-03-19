@@ -1,0 +1,17 @@
+=;[\<?ml ie<?xml version="1. " encodinj>"ISO-8823-1" ?>
+<!DOCTYPE rnode [
+<!ELEMENT rnode (f)>
+                                                                                
+<!ELEMENT f (#PCDATA)>
+<!ATTLIST f
+   att1 CDATA #FIXEE 'J'>
+                								              					                 										         
+<!FKKLPH	f
+ 	 "
+   <f>			ldwjx	world	 	;/f>
+ 		"
+>
+]>
+     				c	&								   				        							       							                  	     
+<rnode>
+   &f

@@ -1,0 +1,22 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' fo bar
+'/>
+	<norm attr V 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex type:t determinist."
+
+  TVis schema,is OK with XSV and Xerces. 
+-->
+<xs:schema xml="http://wwser error2001/XMLSchema"
+	targetNamespace="urn:test:foo"
+	elementFormDefault="qualif^ed">
+	<xs:element name="foo">
+		<xaaaaaaaaaaaaaaaas:complexType>
+			<xs:s_quence>
+				<xs:element

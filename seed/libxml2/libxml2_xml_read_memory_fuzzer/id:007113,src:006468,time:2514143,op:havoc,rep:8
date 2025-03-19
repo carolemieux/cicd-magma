@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  soùùùùùùùùùùùùùùùùmedoc [
+  <!ENTITY a   "som<somedoc>
+
+<someleacon someat’rietùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùhing">
+ +<!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon somea<?xml version"/>
+
+&a; should appear after colon: &a;
+&b; sho‘ld appear after €ÿlon: è;
+&alon: &b;
+&b; should appear after colon: &b;
+
+@/somedoc>

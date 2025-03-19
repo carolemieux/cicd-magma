@@ -1,0 +1,13 @@
+=1[\<?xml version xmlns:xsd="Htt="1.0"?>
+<xs"foo">
+    <xsd:cod:chema xmlns:xsd="Http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexTypeŒ
+      <xsleContent>
+        <xsd:extension base="xsd:string">
+          <xsÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆÆ"id" ty’e="xsd:D">
+    </xsd:extension>
+      </xsd:simpleCon>
+    </xsd:coxTyðe>
+  </xsd:element>
+</xsd:sche

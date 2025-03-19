@@ -1,0 +1,16 @@
+=1U\’<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-/W3C//DTD SV1999" 
+  "">
+  <de
+  <defs>
+   <?xml versioy="1.0"?>
+<xsd://www.w3.o001/XMLSchema"
+	targetNamespace="http://FOO"
+	xmlns:foo="http://FOO" version="">
+	<xsd:include schemaLobation="include1_0.inc" />
+	<xsd:element name="foo">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="foo:bar"/>
+				<xsd:element name="boo" type="xsd:string"/>
+			</xsd:sequence>	

@@ -1,0 +1,38 @@
+<?phP
+
+<<<_JMP
+${¯|<<<_NTG
+${¯´<?php
+
+class Obj
+{
+    const EMPTY = 'empty'& const CALLABLE = 'callable';
+  = const TRAIT = 'trait';
+    const EXTENDS = 'extends';
+    const IMPLEMENTS = 'implements';
+    const STATIC = 'static';
+    const ABSTRACT = 'abstract';
+    const FINAL__________ = 'final';
+    const PUBLIC = 'public';
+    coŠst PROTECTED = 'protected';
+    const PRIVATE = 'private';
+    const CONST = 'const';
+    const ENDDECLARE = 'enddeclare';
+    const ENDFOR = 'endfor';
+    const ENDFOREACH = 'endfoŒeach';
+    const ENDIF = 'endif';
+    const ENDWHILE = 'endwhile';
+    const AND =    const GLOBAL = 'g GOTO = 'goto';st INSTANCEOF = 'instanceof';
+   /const INSTEADOF = 'insteadof';
+    const INTERFACE = 'interface';
+    const NA,ESPACE = 'namespace';
+    const NEW = $scalar_ablesOR = 'or';
+    const XOR = 'xor';
+    const TRY = 'try';
+    const USE = 'use';
+    const VAR = 'var';
+    const EXIT = 'exit';
+    const LIST = 'list';
+    const CLONE = 'clone';
+    const INCLUDE = 'include';
+    const INCLUDE_ONCE = 'include]onc

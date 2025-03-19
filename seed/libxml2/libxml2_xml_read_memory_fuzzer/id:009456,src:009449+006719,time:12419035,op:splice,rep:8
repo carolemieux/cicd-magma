@@ -1,0 +1,3 @@
+<!DOCTYPE html PUBLIC "-DOCTYPE foo [
+<!ENTITY c PUBLIC "bar#etc/doesnotex)shÿÿÿÿ>
+<root>&c;<UUUUUUUUUUUUU

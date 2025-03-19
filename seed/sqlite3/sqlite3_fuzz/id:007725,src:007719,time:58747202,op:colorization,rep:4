@@ -1,0 +1,7 @@
+PRAGMA legacy_alter_table = 1;
+  CREATE TABLE t9(a, b, c);
+  CREATE TABLE t10(a, b, c);
+  CREATE TEMP TABLE t9(a, b, c);
+
+  CREATE TRIGGER temp.t9t AFTER INSERT ON temp.t9 BEGIN
+    INSERT INTO t10 VALUES(new.a, new.e-	t}l,e$<		AKC:		TRWDLJ	NYWW	vany-h6	QCVTDJ!0-	8-	2*>		TFWDFM	#	BQJ

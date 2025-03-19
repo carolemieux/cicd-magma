@@ -1,0 +1,7 @@
+<?xml version="1.0rsion="1x0"?>
+<!DOCTYPE doc [
+<!ENTITY a "&b;">
+<!ENTITY	a "&c;">
+<!ENTITY a "&a;">
+]>
+<doc> &a; vi

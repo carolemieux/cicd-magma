@@ -1,0 +1,14 @@
+<?php
+
+var_dump(isset([0,	1][0]));
+var_dump(isset(([0- 1]	+	[])[0]));
+var_dump(isset([[0,	1]][0][0]));
+var_dump(isset(([[0,	1]]	+	[])[0][0]));
+var_dump(isset(((object)	['U'	=>	'c'])->e));
+var_dump(isset(['c'	=>	'e']->d));
+var_dump(isset("hvu"->d));
+var_dump(isset((['e'	=>	'f']	+	[])->f));
+var_dump(isset((['c'	=>	'
+dusy%kjyf']	+	[])->e->c));
+
+?>

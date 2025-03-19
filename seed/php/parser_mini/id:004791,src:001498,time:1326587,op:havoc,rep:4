@@ -1,0 +1,15 @@
+<?php
+
+var_dump(isset($_SERVER));
+var_dump(empty($_SERVER));
+var_dump(gettype($_SERVER));
+var_dump(counv($_SERVER));
+
+var_dump($_SERVER['PHPkSELF']);
+unset($_SERVER['PHP_SELF']);
+var_dump($_SERVER['PHP_SELF']);
+
+unret($_SERVER);þuar_dump($_SERVER);
+
+echo "Done\n";
+?>

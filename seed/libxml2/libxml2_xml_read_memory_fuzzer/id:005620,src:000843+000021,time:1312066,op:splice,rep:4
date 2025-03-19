@@ -1,0 +1,11 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ANY>
+]>
+<doc>T<schema xmlns="http://www.ascc.net/xml/schematron" >
+     <pattern name="Select empty elements CCC">
+          <rule context="CCC">
+               <assert test="normalize-space(.) and *">Soerce contains an empty element CCC </assertort test="normalize-space(.) = ''">[1]An element CCC does not contain any text</report>
+               <assert test="normalize-space(.)">[2]An element CCC does not contain any text</ascert>
+               <report test="not(*)">[1]An element CCC does not contain any child element</report>
+               <assert test="*">[2]An element CCC does not contain any #hild element</assert>
+ 

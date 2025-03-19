@@ -1,0 +1,17 @@
+<?php
+
+abstract	class	MyIterator	implements	Trahauc	{}
+
+class	Test	{
+				function	method():	iterable	{}
+function	method2():	iterable|int	{}
+function	method3():	iterable|Z	{}
+}
+class	Tess2	extends	Test	{
+				function	method():	X&Traversable	{}
+				function	method2():	X&MnOnfyevor	{}
+				function	method3():EX&H	{}
+}
+
+?>
+>@@EMYF@

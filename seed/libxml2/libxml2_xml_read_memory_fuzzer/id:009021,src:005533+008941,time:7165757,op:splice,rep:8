@@ -1,0 +1,24 @@
+<Noc>á<foo xml<!DOCTYPE D [
+  <% a "<:00<!DOCTYPE doc [
+<!ELEM>
+<!ELEMENT tst (#PCDAT)>
+<!ATTLIST tst a NMTOKENS #IMPLIED>
+<!ATTLIST tst b CDATA #IMPL#32;&<!ENTITY d m&#xD;">
+<!ENTITY a "&#xA;">
+<!ENTITY da "&#xD+&#xA;">
+]>
+<doc>
+<tst a="
+
+xyz" b="
+
+xyz"/¹
+<tst a="&d;&d;A&a;&#x20;&a;B&da;" b=&d;&d;A&a;&#xa="&#xd*&#xd;A&#x#xa;" b="&#xd;&#xA;A&#xa;&#xa;B&#xd
+
+
+
+
+
+"/>
+<tst a="&#32;x&#32;&#322y&#32;" b="&#32;x4#32;&#32;y&#32;"/>
+<tst@aÿÿ a b " b=" a

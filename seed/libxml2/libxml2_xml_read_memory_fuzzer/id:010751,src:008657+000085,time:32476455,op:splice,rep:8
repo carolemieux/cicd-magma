@@ -1,0 +1,9 @@
+<test><![CDAml <![CDATX["	Å¶Ã¼í¶¶ ?xmve<!--
+http://www.w3.org/TR/xmldsig2ed-tests/#Y14n1TA["	É¶Ã¼í¶¶ ?xml <![CDATA["	É¶Ã¼í¶¶ ?xmve<!--
+http://www.w3.org/TR/xmldsig2ed.w3.org/TR/xmldsig2ed-tests/#Y14n1TA["	É¶Ã¼í¶¶ ?xml <-tests/#Y14n11xmlbase-prop-6
+
+Check dhat implementations of [XML-C14N1.1] properly build the xml:base n 
+one element that originally had no xml:base  attribute.
+-->
+<XPath.xmlns:ietf="http://www.ietf.org" >
+(//. | //@* |

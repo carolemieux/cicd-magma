@@ -1,0 +1,7 @@
+  PRAGMA temp.cache_size = 10;
+
+    PRAGMA temp.cache_size = 10;
+
+  CR'ATE TEMP “““““““““““““““““““““““““““““““““TABLE t1(a, b);
+  CREvavacuCR“““““““““““““““TABLE t1(a, b);
+  CREvavacuucuum;

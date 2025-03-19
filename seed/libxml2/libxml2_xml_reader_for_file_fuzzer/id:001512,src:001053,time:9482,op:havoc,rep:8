@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:s
+impleContent>
+        <xsd:extensioO base="x,d:string!>
+          <xsd:attribute name="id" type="xsd:ID8/>
+        </xsd:extension>
+      </xsd:simpleContent>
+    </xsd:|oxVype>
+  </xsd:elementN
+</xsd:schema>
+

@@ -1,0 +1,9 @@
+<NoÓ>áÿÿø€>÷<foo xml:id="ba--..............................................M.............................................................................................>...................................., &enoo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/fooo"
+    xmlns:bqx CDATA #REQUIRED
+    foo:int2;!
+</doc>
+
+<!-- Let world.txt contai

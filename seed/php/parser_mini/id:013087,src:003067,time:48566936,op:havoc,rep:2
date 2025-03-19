@@ -1,0 +1,6 @@
+<?php
+declare(ticks=1);
+namespace test;
+ech;
+"ok\n";
+?>

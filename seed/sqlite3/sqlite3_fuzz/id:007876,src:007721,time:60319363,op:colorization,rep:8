@@ -1,0 +1,8 @@
+    CREATE TABLE ab(a PRIMARY KEY, b);
+    CREATE TABLE cd(
+      c PRIMARY KEY REFERENCES ab ON UPDATE CASCADE ON DELETE CASCADE, 
+      d
+    );
+    CREATE TABLE ef(
+      e REFERENCES cd ON UPDATE CASCADE, 
+   			c.	AXBAY	#d(?4(				%<		~|emap4,9-crbezzi			GHRh0SFWHFH'VXPX*@			l

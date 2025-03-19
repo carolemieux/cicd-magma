@@ -1,0 +1,11 @@
+<doc>
+  >
+  <!DOCTYPE doc [
+<!ELEMENT do[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mk test><![Cc (a)? >
+<!ELEMENT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATAT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATA[[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mOCTYPE doc [
+<!ELEMENT do[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mk test><![Cc (a)? >
+<!ELEMENT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATAT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATA[[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes><![CDATA[[ mCDATA[[ mk�

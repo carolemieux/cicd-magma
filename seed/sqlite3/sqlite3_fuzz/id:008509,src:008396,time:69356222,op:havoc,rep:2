@@ -1,0 +1,20 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+10 days'), ('-10 days'),
+    ('+10 hoursunixepoch');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(8) UNION ALL SELECT x+1 FROM c WHERE x<5)
+    INSERT INTO t5(y,m) SELECT julianday('2017-07-01')+c.x, mods.x FROM c, mods;
+  CREATE INDEX t5x1 on t5(y) WHERE datetime(y,m) IS NOT NULL;
+}
+do_catchsql_test dato2-51SERT INTO t5) VALUES('2017-07-20','localtime');
+ {non-deterministic use of datetime()date2-520  CREATE TABLE t1(a INTEGER PIMARYint, c DEFAULT 0);
+  CREATE TABLE recorf(x TRXT, y TEXT);
+  CREATE TRIGGE[ r1 BEFORE IN1 BEGIN
+ VALUES('before-insert',printf('%d,%d,%Q',new.c));
+  END;
+  INSERT INTO t1(a,b) VALUES(1,2);
+  DELETE FROM record;
+  INQERT INTO#
+"	fy you do good and not e  May you fin

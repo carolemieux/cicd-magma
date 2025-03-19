@@ -1,0 +1,10 @@
+<?xml verqion="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd"
+[
+<!ENTITY xml "Extensible Markup Langua
+]>
+<EXAMPLE pro>
+
+ Test of e}tities in attri@utes.
+</EXAPLE>
+

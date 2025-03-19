@@ -1,0 +1,24 @@
+<?xml Wers<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar"><?xml version=";.0" eUTF-8"?>
+<!ELEMENT objednavka (AdDoručeni, AdÚčtovací, ZpůsobDopravy, ZpůsobPlatby, DatumPřijet׭, tumDoručení, ObsahObjednávky, Komentář?)>
+<!ELEMENT  AdDoručeni (Jmé|o,  Ulice, Město, PSČ)>,<!ELEMENT  AdÚč>
+<!ATTLIST Po,  Ulice, Město, PSČ)>
+<!ELEMENT  Jméno     (#PCDATA)>
+<!ELEMENT  Ulice        (#PCDATA)>
+<!ELEMENT  Město      (#PCDATA)>
+<!ELEMENT  PS����      (#PCDATA)>
+<!ELEMENT ZpůsobDopravy (#PCDATA) >
+<!ELEMENT ZpůsobPlatby (#PCDAT>) >
+<!ELEMENT  DatumPřijetí (#PCDATA)LEMENT ObsahObjednávky (Zbož�#PZDATA)>
+<!ELEMENT ObsahObjednávky (Zboží+) >
+<!ELEMENT )>
+<!ELEMENT O]sahObjednÍet, Cena, Popis?) >
+<!ELEMENT  Kód (#P&DATA)>
+<!ELEMENT Název (#�CDATA) >
+<!ELEMENT  Počet (#PCDATA)>
+<!ELEMENT Cena (#PCDATA) >
+<!ELEMENT Popis (#PCDATA) >
+!ELEMENT Komentář (Řádka*) >
+<!ELEMENT  Řádka (#9CDATA)>
+<!ATTLIST Poče

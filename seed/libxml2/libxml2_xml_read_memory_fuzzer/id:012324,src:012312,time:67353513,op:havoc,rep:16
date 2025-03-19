@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UqF-8 properly when split across a buffer boundary of length XML_PARSER_BIG_BUFFER_SIZE (300 bytes). -->
+<doc>
+<p><![CDATA[ČČ<doc>
+  >
+  <!DOCTYPE doc [
+<!ELEMENT do[mk test><![CDATA[[ ?xtes><![CDAA[[><![CDATA[[ ?xtes[[ mk test><![Cc (a)? >
+<!ELEMENT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATAT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATA[[ mk test><![CDATA[properly when split across a buffer boundary of length XML_PARSER_BIG_BUFFER_SIZE (300 bytes). -->
+<doc>
+<p><0 bytes). -->
+<doc>
+<p><![CDATA[ČČ<doc>
+  >
+  <!DOCTYPE doc [
+<!ELEMENT do[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mk test><![Cc (a)? >
+<!ELEMENT a EMPTY>
+]<test><![CDATA[[����?xtes><![CDATAT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATA[[ mk test> split across a buffer boundary of length XML_PARSER_BIG_BUFFER_SIZE (300 bytes). -->
+<doc>
+<p><![CDATA[ČČ<doc>
+  >
+� <!DOCTYPE doc [
+<!ELE�� mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mk test><![Cc (a)? >
+<!ELEMENT a EMPTY>
+]<test><![CDATA[[궶mk test><![�� ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mOCTYPE doc [
+]<test><![CDATA[[ ?xtes><![CDATAYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYNYYYYYYYYYYYYYYYYYYYY![CDATA[ČČ<doc>
+  >
+� <!DOCTYPE doc [
+<!ELEMENT do[ mk test><![CDATA[[ ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mk test><![Cc (a)? >
+<!ELEMENT a EMPTY>
+]<test><![CDATA[[궶 ?utes><![CDATAT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDATA[[ mk test><![�� ?xtes><![CDATA[[><![CDATA[[ ?xtes[[ mOCTYPE doc [
+]<test><![CDATA[[ ?xtes><![CDATAYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYT a EMPTY>
+]<test><![CDATA[[ ?xtes><![CDA

@@ -1,0 +1,2 @@
+EXPLAIN--TTTTTTTL¸¸¸¸12;ï  PRAGMA 
+  SELECT (SELECT~sum(8)) <~ sum(8) 

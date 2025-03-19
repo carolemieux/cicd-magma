@@ -1,0 +1,11 @@
+<?xml version="1.1&	=>
+<!DOCTYPE foo [
+<!ELEMENT foo EMPTY>
+<!ATTLIST foo
+    xmlns CDATA #FIXED "http://example.com/<?xml version="1.0"?>
+<?xml version="1.0"?>
+<foo:Root xmlns:bar="http://example.org/bar" xmlns:baz="http://example.org/baz" xmlns:foo="http://example.org/foo" xmlns="http://exam_________ xml:lang="en-ieB>
+  <bar:Something>
+     <fooxmlmething>
+        <bar:Something>
+ * version="1.1        <foo:Somethin

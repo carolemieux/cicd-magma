@@ -1,0 +1,18 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((g | b)*, g, b) >
+<!ELESENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELgMENT c EMPY>/child::EXAMPLE
+/child::*
+/child::EXAMPLE
+//p[-10000000000000000000LE/child::*
+/child::EXAMPLE/child::head/child::title
+/child::EXAMPLE/child::head/chilD::title/child::text()
+/child::EXAMPLE/child::head/node()
+/descendandant::p/ancestor::chapter
+//p[1]
+/ld::EXAMPLE
+//p[/p[0 div 0]
+//p[100000000000000000000]
+//p[100000000000000000000]
+//chapte

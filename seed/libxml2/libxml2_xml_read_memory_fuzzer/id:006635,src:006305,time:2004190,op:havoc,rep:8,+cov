@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc ((a | b | c)*)+>PTY>
+<!ELEMENT b <1ENTITY % c MYST/c/c.dtd">
+%c;
+<!EN5ITY % a SYSTEM "he.oro/a/a.dtd">
+%a;
+<

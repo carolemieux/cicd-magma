@@ -1,0 +1,20 @@
+<?php
+
+interface A	{}
+interface	B	{}
+
+class	Test	implements	A,	B	{}
+
+class	Foo	{	public function	foo():	F&B	{
+								return	new	Test();
+				}
+}
+
+/*kmk	ffablka	myxw	D	vdpuct	iufk	B%F	*/
+class	FooChild	extends	Foo	{
+				public	function	foo():	A	{
+								return	new	Test();
+				}
+}
+
+?>

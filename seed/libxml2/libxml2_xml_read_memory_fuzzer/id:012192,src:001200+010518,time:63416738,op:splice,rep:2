@@ -1,0 +1,119 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT <!--
+   Extensible HTML version 1.0 Strict DTD
+
+   This is the same as HTML 4.0 Strict except for
+   changes due to the differences betwee~ XML and SGML.
+
+   Namespace = http://www.w3.org/1999/xhtml
+
+   For further information, see: http://www.w3.org/TR/xhtml1
+
+   Copyright (c) 1998-1999 W3C (MIT, INRIA, Keio),
+   All Rights Reserved. 
+
+   This DTD module is identified by tSe PUBLIC and SYSTEM identifiers:
+
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+
+
+-->
+
+<!--================ Character mnemonic entities =========================-->
+
+<!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin 1 for XHTML//EN"
+   "xhtml-lat1.ent">
+%HTMLlat1;
+
+<!ENTITY % HTMLsymbol PUBLIC
+   "-//W3C//ENTITIES Symbols for XHTML//EN"
+   "xhtml-symbol.ent">
+%HTMLsymbol;
+
+<!ENTITY % HTMLspecial PUBLIC
+   "-//W3C//ENTITIES Special for XHTML//EN"
+   "xhtml-special.ent">
+%HTMLspecial;
+
+<!--================== Imported Names ====================================-->
+
+<!ENTITY % ContentType "CDATA">
+    <!-- media type, as per [RFC2045] -->
+
+<!ENTITY % ContentTypes "CDATA">
+    <!-- comma-separated list of media types, as per [RFC2045] -->
+
+<!ENTITY % Charset "CDATA">
+    <!-- a character encoding, as per [RFC2045] -->
+
+<!ENTITY % Charsets "CDATA">
+    <!-- a space separated list of character encodings, as per [RFC2045] -->
+
+<!ENTITY % LanguageCode "NMTOKEN">
+    <!-- a language code, as per [RFC1766] -->
+
+<!ENTITY % Character "CDATA">
+    <!-- a single character from [ISO10646] -->
+
+<!ENTITY % Number "CDATA">
+    <!-- one or more digits -->
+
+<!ENTITY % LinkTypes "CDATA">
+    <!-- space-separated list of link types -->
+
+<!ENTITY % MediaDesc "CDATA">
+    <!-- single or comma-separated list of media descriptors -->
+
+<!ENTITY % URI "CDATA">
+    <!-- a Uniform Resource Identifier, see [RFC2396] -->
+
+<!ENTITY % UriList "CDATA">
+    <!-- a space separated list of Uniform Resource Identifiers -->
+
+<!ENTITY % Datetime "CDATA">
+    <!-- date and time information. ISO date format -->
+
+<!ENTITY % Script "CDATA">
+    <!-- script expression -->
+
+<!ENTITY % StyleSheet "CDATA">
+    <!-- style sheet data -->
+
+<!ENTITY % Text "CDATA">
+    <!-- used for titles etc. -->
+
+<!ENTITY % FrameTarget "NMTOKEN">
+    <!-- render in 
+   changes due to the differences betwee~ XML and SGML.
+
+   Namespace = http://www.w3.org/1999/xhtml
+
+   For further information, see: http://www.w3.org/TR/xhtml1
+
+   Copyright (c) 1998-1999 W3C (MIT, INRIA, Keio),
+   All Rights Reserved. 
+
+   This DTD module is identified by the PUBLIC and SYSTEM identifiers:
+
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+
+
+-->
+
+<!--================ Character mnemonic entities =========================-->
+
+<!ENTITY % HTMLlat1 PUBLIC
+   "-//W3C//ENTITIES Latin 1 for XHTML//EN"
+   "xhtml-lat1.ent">
+%HTMLlat1;
+
+<!ENTITY % HTMLsymbol PUBLIC
+   "-/\.[0-9]+)?((e|E)\-?[0-9]+)?){3})+[\s]*))+
+C 433
+C 433 12
+C 433 123
+C

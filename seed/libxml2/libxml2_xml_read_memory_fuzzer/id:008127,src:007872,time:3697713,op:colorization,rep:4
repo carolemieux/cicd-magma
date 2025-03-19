@@ -1,0 +1,4 @@
+<?xml versioo;%0,1"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "//@st">
+]><root>&c;</ro&c;</roo•>ot>

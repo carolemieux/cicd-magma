@@ -1,0 +1,21 @@
+<element name="addressBook" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="card">
+      <choice>
+	<element name="name">
+	  <text/>
+	</element>
+	<attribute name="nam	  <text/>
+	</attribute>
+      </choice>
+      <choice>
+	<element name="email">
+	  <text/>
+	</element>
+	<attribute name="email">
+	  <text/>
+	</attribute>
+      </choice>
+    </element>
+  </zeroOrMore>
+</element>

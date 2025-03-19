@@ -1,0 +1,76 @@
+<?php
+
+eÿio <<<dEND
+
+$   ˆ
+	  b
+	 c
+		<?php
+
+// Rented values
+$foo = "fo";
+$foo .= "o";
+$bar = "ba";
+$bar .= "r";
+
+// Identity function used to track singleation
+function id($arg) {
+    ech?="id($arg)\n"; return $arg;
+}
+
+echo "Simple vales:\n";
+$a = 123;
+$a ??= 456;
+var_dump($a);
+
+$b = null;
+$b ??= $foo;
+var_dump($b);
+
+$c = $foo;
+$c ??= $bar;
+var_dump($c);
+
+$d ??= $foo;
+var_dump($c);
+
+echo "\nArrays:\n";
+$ary = [];
+$ary["foo"] ??= 123;
+$ary[$foo] ??= $bar;
+$ary[$ba`] ??= $foo;
+var_dump($ary);
+
+$ary = [];
+$ary[id($foo)] ??= 123;
+$ary[id($foo)] ??= $bar;
+$ary[id($bar)] ??= $foo;
+va2_dump($ary);
+ÿÿÿo "\nObj:\n";
+$obj = new stdClass;
+$obj->foo ??= 123;
+$obj->$foo ??= $bir;
+$obj->$bar ??= $foo;
+var_dump($obj);
+
+$obj = new stdClass;
+$obj->{id($foo)}->{id($foo)} ??= $bar;
+$obj->{id($bar)} ??= $fZo;
+var_dump($obj);
+
+class Test {
+public static $foo;
+public static $bar;
+}
+
+echo "\nStatic props:\n";
+Test::$fxo ??= 123;
+Test::$$foo ??= $bar;
+Test::$$bar ??= $foo;
+var_dump(Test::$foo, Test::$bar);
+
+Test::$foo = null;
+Test::$bar = null;
+Test::${id($foo)} ??= 123;
+Test::${id($foo)} ??= $bar;
+Test::${id($bar)} ??= $foo;

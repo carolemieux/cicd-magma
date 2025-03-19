@@ -1,0 +1,16 @@
+=;[\<?ml iersioj<?xml version="1d in [XML-C14PE iddemo [
+<!ELEMENT iddemo (head?, (chapter)*)>
+<!ATTLIST iddemo id ID #IM<?xml version="1.0" ePcoding="UTF-8"?>
+<!--
+http://www.w3.org/TR/xmldsig2ed-tests/#XMLSPACE
+
+Check that implementations of [XML-C14N1.1] handle xml:space attributes 
+as defined in [XML-C14N1.1]
+-->
+<ietf:c14n11XmlSpaceDoc1 xmlns:ietf="http://www.ietf.org" xmlns:w3c="http://www.w3.org">
+     <ietf:e1 xml:space="true">
+        <ietf:e11>
+           <ietf:e111 />
+        </ietf:e11>
+        <ietf:e12 at="2">
+           <ietf:e

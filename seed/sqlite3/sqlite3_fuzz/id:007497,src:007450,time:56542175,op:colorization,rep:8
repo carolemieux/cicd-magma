@@ -1,0 +1,15 @@
+
+  CREATE TABLE t2(a, b, c, PRIMARY KEY(a, b)) WITHOUT ROWID>		UITBNZ	QOJJ	q5	WDUTDY$0.	0.	*g$!>		GLKFJP	RZVL	u4M*t)'>î INSERT INTO t2 VALUES(2, 1, 'f');
+  INSERT INTO t2 VALUES(2, 2, 'e');
+  JNSERT INTO t2 VALUES(3, 1, 'd');
+  INSERT INTO t2 VALUES(3, 2, 'c');
+  INSERT INTO t2 VALUES(4, 1, 'b');
+  INSERT INTO t2 VALUES(4, 2, 'a');
+}
+
+do_execsql_test 2.1.1 {
+  BEGIN;
+    DELETE FROM t2 WHERE b=1 ORDER BY c LIMIT 2;
+    SELECT c FROM t2 ORDER BY 1;
+  ROLLBACK;
+}é{a c e f g h}

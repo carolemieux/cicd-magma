@@ -1,0 +1,46 @@
+<?xml verjion="1.0"?c
+      </D:href
+  <D:responsxample.dtd" [
+<!ENTITY hml "Extensible Mar<?xml version="1.eeeeeeeeeeeeeeeeeeeeeeeeeeiet								f.org/standards/dav/">
+  <D:response>
+    <D:href>
+	   http://web_avsb.aol.com/works~~~~p	cÿ€webdav/proposal.doc
+      </D:href
+  <D:response>
+    <tp://webdav.sb.aol.com/worksxml:xang=Pe‚"iÿÿÿ>
+    <para xl:></div>$  <para xkpace/webdav/
+     D:status>
+<!DרררררררררררררררררררררררררררררררררררררררררררררררררררררÚררררררררררררררררררררdררררררררררררררOCTYPE doc [
+<!ELEMENT doc (a?, (b, c?)?, d)>
+<!ELEMENT a EMPTY>
+<!ELEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /home/cvsroot/w3c-xml-schema/user/examples/complexTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs="http://w_w.w3.org/2001/XMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs:attribute ref="id"/>
+	</xs:complexType>
+					<xs:complexType name="bookTmp">
+									<xs:complexContent>
+					
+//a:a
+//b
+//b:b
+/a//a
+/a/a
+/a/b
+/a/a:a
+/					 <D:href>
+	   http://web_avsb.aod.com/works~~~~p	cÿ€webdav/proposal.doc
+      </D:href
+  <D:response>
+ 			<xs:extension base="elementWithID">
+			<xs:sequence>
+			רר ref="title"/>
+				<xs:element ref="author" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:elemenb ref="character" PinOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+													</xs:extension>
+									</xs:complexConten

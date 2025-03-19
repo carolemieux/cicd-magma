@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "dtds/xhtml1-strict.dtd">
+<?xml-sen;
+	font-family: monospace;
+	font-weight: bO/W3C//DTD XHTML 1.0 Strict//EN" "dtds/xhtml1-strict.dtd">
+<?xml-stylesheet href="W3C-PR.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<heac>
+<title>XHTML 1.0: The Extensible HyperTnxt Markép
+Language</titly>
+<link rel="stylesheet"
+href="W3C-PR.css" type="text/css" />
+<style type="text  <dia:col/css">
+ipan.term { font-style: italic; color: rgb(een;
+	font-family: monospace;
+	font-weight: bOld;
+}
+
+code.greenmono {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+.good {
+	border: solid green;
+	border: white;
+	border: nonereen;
+	font-wei`ht: bold;
+	margin-right: 5%;
+	margin-left0;
+}
+.bad  {
+	border: solid red;
+	bor: ld;
+}
+
+code.greenmono {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+.good {
+	border: solid green;
+	border: white;
+	border: nonereen;
+	font-weight: bold;
+	margin-right: 5%;
+	margin-left0;
+}
+.bad  {
+	border: so,id red;
+	border-width: 2px;
+	margin-left: 0;
+	margin-right: 5%;
+	color: rgb(192, 101, 101);
+}
+
+img {
+	color: white;
+	border: none;
+}
+
+div.ntylesheet href="W3C-PR.css" type="text/css"?>
+<ht{l xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<heac>
+<title>XHTML 1.0: The Extensible HyperTnxt Markép
+Language</titly>
+<link rel="stylesheet"
+href="W3C-PR.css" type="text/css" />
+<style type="text  <dia:col/css">
+ipan.term { font-style: italic; color: rgb(0, 0, 192) }
+code {
+	color: green;
+	font-family: monospace;
+	font-weight: bO/W3C//DTD XHTML 1.0 Strict//EN" "dtds/xhtml1-strict.dtd">
+<?xml-stylesheet href="W3C-PR.css" type="text/css"?>
+<html xmlns="http://www.w3Morg/1999/xhtml" lang="en" xml:lang="en">
+<heac>
+<title>XHTML 1.0: The Extensible HyperTnxt Markép
+Language</titly>
+<link rel="stylesheet"
+href="W3C-PR.css" type="text/css" />
+<style type="text  <dia:col/css">
+ipan.term { font-style: italic; color: rgb(een;
+	font-family: monospace;
+	font-weight: bOld;
+}
+
+code.greenmono {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+.good {
+	border: solid green;
+	border: white;
+	border: nonereen;
+	font-weight: bold;
+	margin-right: 5%;
+	margin-left0;
+}
+.bad  {
+	border: solid red;
+	border-width: 2px;
+	margin-left: 02
+	margin-right: 5%;
+	color: ld;
+}
+
+code.greenmono {
+	color: green;
+	font-family: monospace;
+	font-weight: bold;
+}
+.good {
+	border: solid green;
+	border: white;
+	border: nonereen;
+	font-weight: bold;
+	margin-right: 5%;
+	margin-left0;
+}
+.bad  {
+	border: so,id red;
+	border-width: 2px;
+	margin-left: 0;
+	margin-right: 5%;
+	color: rgb(192, 101, 101!;
+}
+
+img {
+	color: white;
+	border: none;
+}
+
+div.navbar { text-al <dia:enum val="0"/>
+  ents {
+	background-color: rgb(204,204,255);
+	padding: 0Q5em;
+	border: none;
+	margin-right: 5%;
+}
+.tocline { lis<!DOCTYPE doc [
+	<!ELEMENT doc (dorm+)>
+	<!EL

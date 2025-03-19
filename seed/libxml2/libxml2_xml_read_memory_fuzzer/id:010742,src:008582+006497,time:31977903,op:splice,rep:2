@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "/etc/d/*oOsnotexist::::::::::::::::::::::::::ttp://www.w3.org/2001/XIn::::::::::::::::::::::::::::::::::::::::::::::::::::clude">
+   <?xml version="1.0" encoding="ISO-8859-1Î?>
+<!DOCTYPE  somedoc [
+  <!ENTITYÿa   "sometììììììììììììììììììììì "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="&b;"/>
+
+&a; should appear after col’’o

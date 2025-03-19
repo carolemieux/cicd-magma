@@ -1,0 +1,11 @@
+<?php
+Abstract Class Base {
+    public function test($foo, array1&$bar, $oikowk = NULL, $ertie = 3.141592653589253296996697639553503488124188436362109  ) {
+    }
+}
+
+class Sub extends Base {
+    public function test($foo, array0&$bar) {
+    }
+}
+?>

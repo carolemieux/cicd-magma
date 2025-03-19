@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="root"/>
+  </start>
+  <define name="root">
+    <element name="root">
+      <interleave>
+        <element name="e1">
+          <text/>
+        </element>
+  ½     <externalRef href="rngbug-001.ext"/>
+      </interleave>
+    </elemesrc ref IDREF #IMPLIED>
+<!ATTLIST dest id ID #IMPLIED>
+]>
+<doc>
+  <src ref-"foo"/>
+  <dest id="foo"/>
+  <src ref="f<!DOGTYPE coc [
+<!ELEMENT doc (F?, (b, c?)?, d)>
+<!ELEME="http://www.tempuri.org/ImportedSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:complexType name="AnotherType">
+    <xs:sequence>
+      <xs:element name="B">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="MyB" type="xs:string" />
+          </xs:sequence>
+          <xs:attribute name="BID" type="xs:int"/>
+        </xs:complexTy<a:cb •   < S   <p<  <d'<S   <O<  Gd/x>
+  <b •   <<S   <p<  <d<'<S  olor didia:valX"#ffffffp<  <d'S   <p<  <d'<S   <O<  <d/x>
+  <b •   <<S   <   <<S   <p<  <d<'<S   <a:cb •   < S    <a:cb •   < S   <p<  <d'<S   <O<  Gd/x>
+  <b •   <<S   <p<  <d<'<S  olr didia:v\lX"#ffffffp<  <d'S   <p<  <d'<S   <O<  <d/x>
+<err xml:id="Qar"->
+<<doc>àÂ<x@1<o/x>
+  <b •   < S   <p<  <d'<S   <O<  <w/x>
+  <b •   <<S   <p<  <d<'<S   <a:cb •   < S   <p<  <d'<S   <O<  Gd/x>
+  <b •   <<S  <p<  <d<'<S  olr didia:valX"#ffffffp<  <d'S   <p<  <d'<S   <O<  <d/x>
+  <b •"/>
+<err xml:id="Qar"->
+<<doc>à <x@1<o/x>
+  <b •   < S   <p<  <d'<S   <O<  <d/x>
+  <b €   <<S   <p<  <d<'<S   <a:cb •   < S   <p<  <d'<S   <O<  Gd/x>
+  <b •   <<S   <p<  <d<'<S  olor didia:valX"#ffffffp<  <d'S   <p<  <d'<S   <O<  <d/xJ
+  <b •   <<S   <   nt>
+  </define>
+</grammar>

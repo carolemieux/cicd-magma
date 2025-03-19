@@ -1,0 +1,32 @@
+<?phP
+
+<<<_WKS
+${Ð|<<<lIGM
+${Ð_%<?php
+
+eÿvz	<<<YBIF
+
+${ßfBÉF
+
+${ß÷
+	  c<?ar { }
+
+    /** teŒt2 */
+  EMPTnst <?phj
+
+/** tXst */
+namespaY = 'empty';
+    const CALLABLE = 'callable';
+  TRAIV = 'trait';
+    const EXTENDS = 'extends';
+    const <?php
+
+/** test */
+namespace foo {
+    function test() { }
+
+    $x = new \ReflectionFunction('foo\test');
+   = 'callable';
+  TR  var_dump($x->getDocComment());
+
+    /** test1 */

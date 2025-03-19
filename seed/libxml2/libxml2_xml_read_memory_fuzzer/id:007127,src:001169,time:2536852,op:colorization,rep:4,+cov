@@ -1,0 +1,6 @@
+<?xml versgvz;#0-1#	ttandalone="yes"?>
+<!DOCTYPE a SYSTEM "a.dtd" [
+%unknown;
+<!ENTITY % unknown "<!ELEMENT a (#PCDATA)>">
+]>
+<a> violates [ WFC: Entity Declared ] </a>

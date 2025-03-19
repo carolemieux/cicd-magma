@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<xsd:>>>>>a xmlns:xsd="http://www.w3.org+8110+HMLSchema">
+  <xsd:element nama="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+			ñ        <xsd:extension base="xsd:string">î          <xsd:attribute name="id" type="xsdID"/>
+        </xsd:extension>
+      </ encoding="ISO-8859-1" ?>
+
+<!-- Thistest checks the imple1.0"?>
+mentation of the variesufk	ve the xsd	<element name="barA -->
+    
+<schema xmlns="httpÿÿÿww.w3.~rg/2001/XMLSchema" 
+	argetNamespace="http://FOO" xmlns:foo="http://FOO" 
+	elemekjAwoiCefault="qualifiea(@	
+
+	<element name="fpu*@
+		<complexType>
+			<sequence maxOccurs="unbounded">
+				<elemeelement name="barB">
+					<simpleType>
+						<li:jzxfE*+@      
+					</simpleType>
+				</element>        
+				<element name="barC">     @inswqdInsa:						<restrictiul	edmb="string">
+	    		<enumeratron value="tequilla"/>  	  			      :+jcqoxvelkqo@					     @+nuxgidXotb?    >+d    mcpent>                
+		 ;+uequence>
+		</complexType>
+	</element

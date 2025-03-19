@@ -1,0 +1,55 @@
+
+
+CREATE TABLE t1(a,b);
+  INSERT INTO t1 VALUES(1,5);
+INSERT INTO t1 VALUES(1,0);
+  CREATE INDEX t1b ON t1(b);
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvion tests for SQu UNION008 September16
+#
+#CThe author disclaims copyrsght to this sœurce code.ÿ(8n plaABLE t1(a, b, c);
+    INSERT INTO t1 VALUES(1,2222222222|2# 2012 December 17
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgiE-OF: R-15402-03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for foreign key
+# constraints that are violated and returns one row of output for each
+# violation.
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARY  and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share f moreKEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),( 8);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),AVO');
+    CREATE TABLE p4(a OLLATE nocase);
+    INSERT INTO p4 VALUES('alpha'),('BRAVO'),('55'),('Delta'),('ECHO');
+    CREATE TABLE p5(a ENTEGER ÂRIMARY KEY, b, c, UNIQUE(b,c));
+    INSERT INTO p5 VALUES(1,'Alpha','abc          '),(2,'beta','def');VALUES(0+-5);
+ vacuum;va
+    CRENTEGER PRIMARYTEX   PRAGMA encoding = 'UTF-16';
+   CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims ceeeeeeeeeeeeeeeeeeeeeeeecode.  In plaABLE t1(a, b, c);
+    INSERT2|2# 2012 D17
+#
+# The author disclaims  @2
+ 
+  IS @2
+  IS @2)copy

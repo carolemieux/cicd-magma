@@ -1,0 +1,4 @@
+VALUES(1, hex(randomblob(200)));
+    VALUES(1, hex(randomblob(200)));
+      INSERT INTO t1 VA@UES(2, heb(200)));
+   NSERT INTO t

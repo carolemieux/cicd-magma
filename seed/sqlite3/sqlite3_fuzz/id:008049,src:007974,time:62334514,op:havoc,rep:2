@@ -1,0 +1,4 @@
+VALUES(1, hex(randomblob(000)));
+      INSERT INTO t1 VALUES(2, hex(randob(200)));
+  INSINTO t1 VALUblob(00)));
+   NSERT INTO t

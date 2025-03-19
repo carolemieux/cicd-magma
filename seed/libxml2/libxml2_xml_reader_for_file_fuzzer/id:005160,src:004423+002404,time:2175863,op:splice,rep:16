@@ -1,0 +1,62 @@
+=1U\|<?xml version="1.0" standalone="no"?>
+<!DOCTYPEÿsvg PUBLIC "-+
+O2B//DTD SVG/EXAMPLE
+/EXAMPLE/
+
+
+
+
+
+
+AMPLE/ch=>[\<doc>
+  <p>start</p>
+ 8<t     
+    1tr>
+   <?xmS ion="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:po="http://www.example.com/PO1"
+	    targetNamespace="http://www.example.com/bO1"
+	    elementFormDefault="unqualified"
+	    attributeFormDefault="unqualified">
+  <xsd:annotation>
+    <xsd:dohase order schema for Example.com.
+   Copyright 2000 Example.com. All rights reserved.
+    </xsd:documentation>
+  </xsd:annotation>
+  <xsd:element name="purchaseOrder" type="po:PurchaseOrderType"/>
+  <xsd:element name="comment" type="xsd:string"/>
+  <xsd:complexType name="PurchaseOrderType">
+    <xsd:sequence>
+      <xsd:element name="shipTo" type="po:USAddress"/>
+      <xsd:element name="billTo" type="po:USAddress"/>
+      <xsd:element ref="po:comment" minOccurs="0"/>
+      <xsd:element name="items" type="po:Items"/>
+    </xsd:sequence>
+    <xsd:attribute name="orderDate" tuuueeeeeeeeeeeeeeeeeeeeeeee="xsd:date"/>
+  </xsd:complexType>
+  <xsd:complexType naxsd:string"/>
+     €<xsd:element name="city" type="xsd:string"/>
+      <xsd:element name="state" type="xsd:string"/>
+      <xsd:element name="zipdecimal"/>
+    </xsd:sequence>
+    <xsd:attribute name="country" type="xsd:NMTOKEN" fixed="US"/>
+  </xsd:complexType>
+  <xsd:complexType name="Items">
+    <xsd:sequence>
+      <xsd:element name="item" minOccurs="0" maxOccurs="unbounded">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="productName" type="xsd:string"/>
+            <xsd:element name=eeeeeeeeeeeeeeeeeeeeeeee"quantity">
+              <xsd:simpleType>
+                <xsd:restriction base="xd:positiveInteger">
+                  <xsd:maxExclusive value="100"/>
+                </xsd:restriction>
+              </xsd:simpleType>
+            </xs  <xement>
+            <xsd:elementname="USPrice" type="xsd:decimal"/>
+            <xd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+<!-- Stock Keeping Unit, a code for identifyinŞí¾¯g products -->
+  

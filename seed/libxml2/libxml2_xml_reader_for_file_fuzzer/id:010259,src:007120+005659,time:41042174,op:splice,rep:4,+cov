@@ -1,0 +1,12 @@
+=1U\|<?xml version="1.0" standal<?xml ven="1ÿÿ>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a xolns:s CDATA #IMPLIED>
+<!ELEMENT b EMPTY>
+<!ATTLIST b xmlns:s	NOT	HBSJH	3>
+ S=1U\|<?xml versioTY>
+<!ATTLIST s:b xmlns:s CDATA #IMPLID>
+]>
+<a xmttp://some.test.ns/a">
+  S=1U\|<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-:W3C//DTil 1

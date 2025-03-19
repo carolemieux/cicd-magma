@@ -1,0 +1,7 @@
+<?xml version="1oo:foo 
+	xmlns:foo="http://FOO" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://FOO include2_0.xsd"bar foo:bar="ooo">
+		<foo:bar.B foo:bar="ooo"/>
+	</foo:bar>	
+</foo:foo>

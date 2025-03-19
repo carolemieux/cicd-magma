@@ -1,0 +1,13 @@
+=>[\<doc>
+  <p>start</p>
+  <table>
+    <tr>
+      <td> <em>hello</em> !</td>
+    </tr>
+    <tr>
+      <td></td>
+     <td></td>
+      </tr>
+  </table>
+  <p>end</p>
+|/

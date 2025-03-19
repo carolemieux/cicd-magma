@@ -1,0 +1,10 @@
+<test><![CDATA[;í¶¶<?xI?xml version="1.0" encod~ng="uta targetNamespace="htWp:/<test><![CDATA[;í¶¶<?xI?xml versob-sys.com/mySchema"
+                  xmlns:elementFormDefault=çqualified"
+                  xmlt><![CDATA[;í¶¶<?x.com/mySchema"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tesSElem"<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+]>
+<doc>
+<?pi value<?xml version="1.0"?>
+<

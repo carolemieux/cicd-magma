@@ -1,0 +1,50 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST nonrm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<n<!DOCTYPE Ders>
+    	<sPLIED>
+d'&#xBBBBBBBxml on="1.0))))
+<!ELEMENT t>
+d;&#xBBBBBBBBBBBBBBBBBBBBA;A&#xi &#xa;<!EN2ITY dTY d d&#<入メッ d&#xD;">
+<﻿<入xs>
+    	<sPLIED>
+d;&#xBBBBBBBxml on="1.0))))
+<!ELEMENT tsdTY d d&#<入メッ d&#xD;">
+<﻿<入xD;">
+<﻿<入メッ  tsdTY d d&#<入メッ d&#xD;">
+<﻿<入xD;">
+<﻿<入メッ d&#xDst (#PCDATAtst*)>D>
+<!ATTLISTPLIED>
+d;&#xBBBBBBBBBBBBBBBBJBBBA;A&#xi &#xa;<!EN2ITY dTY d d&#<入メッ d&#xD;">
+<﻿<入xs>
+    	<sPLIED>
+d;&#xBBBBBBBxml on="1.0))))
+<!ELEMENT tsdTY d d&#<入メッ d&#xD;">
+<﻿<入xD;">
+<﻿<入メッ d&#xD;">
+<﻿<D;">
+<﻿<入BBBBBBBBBBBBA;A&#xi &#xa;<!EN2ITY dTY d d&#<入メッ d&#xD;">
+d&#xDst (#PCDATAtst*)>D>
+<!ATTLISTPLIED>
+d;&#xBBBBBBBBl on="1.0))))
+<!ELEMENT tsdTY d d&#<入メッ d&#xD;">
+<﻿<入xD;">
+<﻿<入メッ d&#xDst (#PCDATAtst*)>D>
+<!ATTLISTPLIED>Jd;&#xBBBBBBBBBBBBBBBBJBBBA;A&#xi &#xa;<!EN2ITY dTY d d&#<入メッ d&#xD;">
+<﻿<入xs>
+    	<sPLIED>
+d;&#xBBBBBBBxml on="1.0))))
+<!ELEMENT tsdTY d d&#<入メッ d&#xD;">
+<﻿<入xD;">
+<﻿<入メッ d&#xD;">
+<﻿<D;">
+<﻿<入BBBBBBBBBBBBA;A&#xi &#xa;<!EN2ITY dTY d d&#<入メッ d&#xD;">
+<﻿<入xs>
+    	<sPLIED>
+d;&#xBBBBBBBxQl on="1.0))))
+<

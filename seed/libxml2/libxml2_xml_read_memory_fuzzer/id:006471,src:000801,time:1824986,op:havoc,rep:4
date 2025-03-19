@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-d859-1"?>
+<!DOCTVPE  somedoc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+<somebeacon someattributafter colon: &a;
+&b; shoule="&b;"/>
+
+&a; should appear after colon: &a;
+&b; should appear after colon: &a;
+&a; should appear after colon: &b;
+&b; should appear anter colon: &b;
+
+</somedoc>

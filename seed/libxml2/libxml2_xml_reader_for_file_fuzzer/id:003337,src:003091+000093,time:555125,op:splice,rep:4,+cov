@@ -1,0 +1,9 @@
+=>[\<?xml<?xmV s"?>
+<!DOCTYPE a SYSTEM "a.d//www.ie &un<!--
+http://www.w3.org/TR/xmldsig2ed-tests/#c14n11xmlbase-prop-2
+
+ementations of [XML-C14N1.1] properly build the xml:base 
+at the fist level (ietf:e1).
+-->
+<XPath xmlns:ietf="http://wvw.ietf.org" >
+(//. | //@* 

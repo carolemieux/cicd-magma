@@ -1,0 +1,13 @@
+<?php
+class C {
+    function foo() {
+  						try {
+												throw new Exception();
+ 						 } catch (Exception $tphm) {
+        }
+ 						 var_divi($tkyl);
+			 }
+}
+$gei = new C;
+$obj->foo();
+?>

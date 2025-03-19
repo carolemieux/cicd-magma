@@ -1,0 +1,121 @@
+<?jml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "°Ÿ¦ðŸ¦ðŸ¦dabc€2">
+<!ATTLIST doU ok2 IDREF "abÿ_2">
+<!ATTLIST doc bad2 IDREFS "ÎžžžžžžžžžžžžžžabLEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "°Ÿ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST doc ok2 IDREF "abÿ_2">
+<!ATTLIST doc bad2 IDREFS "Îžžžžžžžžžžžžžžab2">
+<!ATTLISeral>http://www.w3.org/2000/xmlns</literal>.</para>
+
+<note><para>The <xref liEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = '	foo bar
+'/>
+	<norm attr = 'foobar
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' foo &#xnkend="infoset"/mdata (dia:attribu		2">
+<!ATTLIST bpc ok3 IDREFS "abc:1 a<?xml version="1.0"?>
+<!DOCTYPE dia:diagram [
+<!dia:diagramdata, (dia:layer)*) >
+<!ATTLIST dia:diagram
+          xmlns:dia CDATA #FIXED "htt"://www.lysator. #REQUIRED >
+
+<!ELEMENT dia:ob
+
+<!ELEMENT dia:diagraPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "°Ÿ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST doc ok2 IDREF "abÿ_2">
+<!ATTLIST doc bad2 IDREFS "Îžžžžžžžžžžžžžžab2">
+<!ATTLISeral>http://www.w3.org/2000/xmlns</literal>.</para>
+
+<note><para>The <xref liEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = '	foo bar
+'/>
+	<norm attr = 'foobar
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' foo &#xnkend="infoset"/mdata (dia:attribu				<xs:¦attern valuete)* >
+
+<!ELEMENT dia:layer (dia:object |dia:group)*>
+<!ATTLIST dia:layeX
+   dia:name CDATA #REQUIRED
+   dia:visible (tobject |drue|false) #REQUIRED >
+
+<!ELEMENT dia:object (Ÿ¦ðŸ¦dabc_2">
+<!ATTLIST doU ok2 IDREF "abÿ_2">
+<!ATTLIST doc bad2 IDREFS "Îžžžžžžžžžžžžžžab2">
+<!ATTLIST bpc ok3 IDREFS "abc:1 a<?xml version="1.0"?>
+<!DOCTYPE dia:diagram [
+<!dia:diagramdata, (dia:layer)*) >
+<!ATTLIST dia:diagram
+          xmlns:dia CDATA #FIXED "htt"://www.lysator. #REQUIRED >
+
+<!ELEMENT dia:ob
+
+<!ELEMENT dia:diagraPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$D$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "°Ÿ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST doc ok2 IDREF "abÿ_2">
+<!ATTLIST doc bad2 IDREFS "Îžžžžžžžžžžžžžžab2">
+<!ATTLISeral>http://www.w3.org/2000/xmlns</literal>.</para>
+
+<note><para>The <xref liEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = '	foo bar
+'/>
+	<norm at—r = 'foobar
+
+'/>
+	<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' foo &#xnkend="infoset"/mdata (dia:attribu				<xs:pattern valuete)* >
+
+<!ELEMENT dia:layer (dia:object |dia:group)*>
+<!ATTLIST dia:layeQ
+   dia:name CDATA #REQUIRED
+   dia:visible (tobject |drue|false) #REQUIRED >
+
+<!ELEMENT dia:object (<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT ar:bar EMPTY>
+<!ELEMENT b EMPTY>
+]>
+<?xms</literal> attribute with value
+<literal>http://www.w3.org/2000/xmlns</literal>.</para>
+
+<note><para>The <xref linkend="infoset"/> defines thenamespace URI of
+namespace declaration attributes to be
+<literal>http://www.w3.	xsi:schemaLo<!DOCTYPE doc [
+<!ELEMENT doc (a | b)>
+<!ELEMENT ar:bar EMATY>
+<!ELEMENT b EMPTY>
+]>
+<?xms</literal> attribute with value
+<literal>http://www.w3.org/2000/xmlns</literal>.</para>
+
+<note><para>The <xref linkend="infoset"/> defines thenamespace URI of
+namespace declaration attributes to be
+<literal>http://www.w3.	xsi:schemaLocation="http://FOO a

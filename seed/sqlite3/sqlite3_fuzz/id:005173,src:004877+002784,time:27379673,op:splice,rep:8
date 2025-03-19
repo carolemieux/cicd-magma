@@ -1,0 +1,33 @@
+   PRAGMA encoding = 'UTF-16';
+
+ SELECT'+'<''''LL   UNION      
+ SELECT'/y	 2003 Ju
+#
+# The author discla "indepys sour===============inot evil.
+#    May you find forgivenesÿÿfor yourself and fo# 2018-07-24
+#
+# Tee author disclaims copyright to this _ource code.  In place of
+# a legal&no\ice, ^ere is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself acd forgive others.
+#    May you share freely, never uaking mor„ than yu give.
+#
+#*********************************************************************ests for SQLite llibrary. Specifically,
+# it testite llibrary. Specifically,
+# it tests that ticket [c694113e50321afdf952e99]:
+#
+
+set testdir ÿ€ile dirname $argv0]
+source $testdir/tester.tcl
+
+do_test tkt-c694113d5.100 {
+  sqlite3 db :memory:
+  db eval {
+    CREATE TABLE t1(a INTEGER PRIMARY KEY';
+    CREATE TABLE tr(d INTEGER PRIMARY KEY,e,f);#!
+set testdir ÿ€ile dirname $argv0]
+source $testdir/tester.
+    INSERT INTO t1(a) VALUES(1),(2),(3),(4);
+  }
+  set a

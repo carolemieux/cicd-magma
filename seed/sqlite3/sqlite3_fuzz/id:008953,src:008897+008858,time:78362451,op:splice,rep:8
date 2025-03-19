@@ -1,0 +1,21 @@
+O
+  PRAGMA encoding=UTF16le;
+  CREATE TABLE t1(x,a,b,c);
+  INSERT INTO t1 VALUES(1,'ab','cd',1);
+  INSERT INTO t1 VALUES(2,'gh','ef',5);
+  INSERT INTO t1 VALUES(3,'pqr','fuzzy',99);
+  INSERT INTO t1 VALUES(4,'abcdefg','xy',22);
+  INSERT INTO t1 VALUES(5,'shoe','mayer',2953);
+  SELECT x FROM t1 WHERE c=instr('abcdefg',b) OR a='abcdefg' ORDER BY +x;
+} {2 4}
+do_execsql_test func5-1.2 {
+  SELECT x FROM t1 WHERE a='abcdefg' OR c=instr('abcdefg',b) ORDER BY +x;
+} {2 4}
+
+# Verify that SQLITE_DETERMINISTIC functions get factored out of the
+# evaluation loop whereas non-deterministic functions do not.  counter1()
+# is marked as non-deterministic and so is not factored out of the loop,
+# and it really is non-deterministic, returning a different result each
+# time.  But counter2() is marked as deterministic, so it does get factored
+# out of the loop.  counter2() has the same implementation as counter1(),
+# returning a different result on each invocation, but becaus

@@ -1,0 +1,9 @@
+½1U\|<!DOCTYPE docd[
+<!ELEMENT doc ((g | b)*, g, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c/>%<b/Ô
+¼/

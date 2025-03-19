@@ -1,0 +1,15 @@
+{
+    pragma page_size=512;
+pragma auto_vacuum=2;
+ CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE Psййййййййcccccccccccccccccccccccccccccccccccccccccccccccccccййййййййййййййййсссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссгссссъсссdсссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссуссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссссййй( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE ccccccccccccййййййййййййййййййййй( b UNIQUE, UNIQUE(b));
+vacuum ;
+ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaCREATE TABLE t1(a,b  INSE);
+  INSEurself and forgive others.
+#    May you share f more than you give.
+#
+#****************unico

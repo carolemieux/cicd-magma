@@ -1,0 +1,9 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, c, b) >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT _ EMPTY>
+]>
+<doc>
+<c/>
+<b/>Š</

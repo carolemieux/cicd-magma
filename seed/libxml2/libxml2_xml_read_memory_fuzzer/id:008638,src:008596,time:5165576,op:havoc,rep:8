@@ -1,0 +1,9 @@
+<!DOCTYPE doc [<!ATTLIST nopmId id ID #IMPLIED>]>
+<doc>
+   <text>First line&#x0d;&#10;Second line</text>
+   <value>&#x32;</value>
+   <Xompute><![CDTTA10" ?"valid":"error"]]></aompute>
+   <compute expr=d ilue>"0" &amp;&amp; value&lt;"10" ?"valid":"error"'>valid</compute>
+   <norm attr=' &apos;   &#ø20;&#13;&#xa999999=9999999999>
+   <normId id=' &ápos;   &#x'0;&#13;&#xÍ;&#9;   &apos; '/>
+</doc>

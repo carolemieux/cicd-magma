@@ -1,0 +1,30 @@
+<?phP
+
+<<<_JMP
+${¨|<<<_NTG
+<
+$s='substr';
+
+$htm=<<<DOC
+{$s(<<<'ppp'
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+echo "$htm\`";
+
+$h€m=<<<DOC
+{$s(<<<pnp
+abcdefg<?php
+
+eÿvz	<<<fBIF
+
+${<?php
+var_dump(225_473_275	===6.626_070_15e-34	=	2);
+var_dump(126_11	===	1);
+var_dump(99_277.588_15	===	93662.58819);
+var_dump(6.626_070_15e-34	===	6.62607015e-34);
+var_dump(6.445_034e-19	===	6.242044e-10);
+var_dump(0xFBDB_A11C	===	0xA11F);
+va

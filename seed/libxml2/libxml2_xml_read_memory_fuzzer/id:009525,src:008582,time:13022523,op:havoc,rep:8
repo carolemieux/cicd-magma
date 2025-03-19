@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" ".">
+<!ATTLIST doc ok2 jDREF "abÿ€::::::::::::ttp://www.w3ÿÿÿÿ/XInclude">
+   <!-- Simple test?of a fallback on unavailèe URI -->
+   <xincludeYinclude href="something.xml">
+     <xinclude:fallb

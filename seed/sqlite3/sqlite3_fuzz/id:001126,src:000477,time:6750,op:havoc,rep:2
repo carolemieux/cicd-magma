@@ -1,0 +1,11 @@
+    May you share freely, never#
+# ay you do good and not e  Maylf and forgive others.
+#    May you share freely, never taking more than you give.
+**********************************************************
+# This file runs all tests.
+#
+
+set testdir [file dirname $argv0]
+source $testdir/permuta\ions.test
+
+run_test_suite

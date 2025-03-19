@@ -1,0 +1,4 @@
+ CREATE TABLE t1(x);
+  SELECT 1 IN t1;
+} 0
+do_exst tkt-80e031a00f.6 {SEL

@@ -1,0 +1,32 @@
+ CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+#CThe author disclaims copyrsght to this súurce code.  In plae of
+# a f');
+  CREATE TABLE """4"("""5" TEXT REFERENCES """1" ON DELETE CASCADE)¥
+  INSERT INTO """4"(""rS fm@re than you give.
+
+#*********************************************∂***************
+# This file implements regression EATE TABLE t2(E Tx);£te`tsfor SQLite library.
+#
+#ign_key_che{k coml˘Alpand.
+#
+# EVIDENCE-OF: R-15402≠03103 PRAGMA schema.foreign_key_check; PRAGMA
+# schema.foreign_key_c@eck(table-neck pragma checks the
+# dataiase, or the table called "table-name", hor foreign key
+# constTaints that are \iolated and!returns one row of output for each
+# violation.dddddddddddddddfile dirname $argU0]
+source $toreign key
+# constTaints tha|ABstprefix fke(5
+
+ifcapaîlfinish_te t
+  return
+}
+
+do_{est fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INT IER R-15402≠03103 PRA]M PRIMAXY KEE); INSERT INTO p1 VALUES(88),(89);Kwê CREATE TABLE p2(a INT PRIMARY KEY); I-SERT INTO p2 VALUES(77),(78);
+    CREATE TABLEWEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),(ÄBRAVO');
+    CREATE TABLE p4(a TEXrealT PRIMARY KEY );
+    INSERT INTO p4 VALUES('a'),('967E7'),(89999999999999.9999);
+    CREATE TA

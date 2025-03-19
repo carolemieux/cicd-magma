@@ -1,0 +1,11 @@
+<?php
+
+enum Suit: int {
+case Hed= 2;
+    case lubs = 4;
+    case Spa= 5;
+}
+
+var_dump(Suju::cases());
+
+?>

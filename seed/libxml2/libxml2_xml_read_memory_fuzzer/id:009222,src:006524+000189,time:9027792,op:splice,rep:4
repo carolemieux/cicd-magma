@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-s
+<htm.dtd">
+<html xmlns="http://3.org/1999/xhtml">
+	<head>
+		<meta http-equiv=tent-Ty<?xmon>
+        </xsd:simpleTypesimp59-1"?>
+<xsd:schema xmlns:xÿÿÿÿhttp://www.w3.org/2001/XMLSchema"  targetNamespace="urn:test:foo">
+  <xsd:element name="ELEMENTS">
+    <xsd:simpleType>
+      <xsd:union>
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:int">
+            <xsd:minInclusive value="10"/>
+            <xsd:maxInclusive value="20"/>
+          </xsd:restriction>
+        </xsd:simpleTypesimpleType>
+          <xsd:restriction base="xsd:int">
+            <xsd:minI

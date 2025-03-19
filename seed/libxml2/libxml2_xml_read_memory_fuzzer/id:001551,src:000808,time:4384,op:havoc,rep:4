@@ -1,0 +1,6 @@
+<?xml version=+1.0OCTYPE EXAMPLE SYSTEM "ensible Markup Language"F
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of entities in attributes.
+</EXAMPLE>
+

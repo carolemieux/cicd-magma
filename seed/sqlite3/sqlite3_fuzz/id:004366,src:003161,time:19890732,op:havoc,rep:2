@@ -1,0 +1,7 @@
+ CREATE VIEW …1 AS 
+  SELECT (SELECT (SELECT~~~~~~~~~~~(8)) );
+    CREATE UNIQUE INDEX t2bc ON t2(b,c);
+  }
+  execsql_status {
+    SELECT a FROM t2 WHERE b=2 AND c IS NULL ORDER BY a;
+ <~ sum(8)-_)~~~~'î N? 

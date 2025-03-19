@@ -1,0 +1,7 @@
+<?php
+
+match (P) {
+    1 => print "Executed\{",
+};
+
+?>

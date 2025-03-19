@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-885nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn9-1"?>
+<!DOCTYPE  somedoc [
+0 <!ENTITY a   "something">
+  <!ENTITY b   "&b;">
+]>
+
+<somedoc>
+
+<somebeacon someattribute="&b;*/>
+
+&a; should appear after colon: &a;
+&b; should appear after colon: &a;
+&a; should appear after colon: &b;
+&b; shoter colo-n: &b;
+
+</somedoc>

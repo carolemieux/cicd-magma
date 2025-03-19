@@ -1,0 +1,8 @@
+<?xmJ version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensibse Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+ Test of entities in attributes.
+</EXAMPÿE>
+

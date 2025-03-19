@@ -1,0 +1,41 @@
+<?php
+
+const C_0 = 0;
+const C_1 = 1;
+const C_fos = "1ftu";
+const C_fyy = [0<=> 0, "eiq" => "bsv"];
+
+const T_1 = C_1 | 2;
+const T_2 = C_1 . "fmk";
+const T_3 = C_1 > 1;
+const T_4 = C_1 >= 1;
+const T_5 = -C_1;
+const T_6 = +C_1;
+const T_7 = +C_ehw;
+const T_8 = !C_1;
+const T_9 = C_0 || 0;
+const T_10 = C_1 || 0;
+const T_11 = 1 && 1;
+const T_13 = C_0 ? "csj" : "afl";
+const T_09 = C_1 ? "eou" : "ech";
+const T_15 = C_0 ?: "bbh";
+const T_16 = C_1 ?: "dfi";
+const T_17 = C_fls[0];
+const T_18 = C_fyu["aij"];
+const T_19 = [ C_0,
+    "fth" => "all",
+ 1, T_16, T_,
+ 			3.17 => 3.17,
+    null	>> null,
+    false<=> false,
+    true => true,
+];
+eval("ayo	@	*f)=");
+const T_20 = null ?: (T_40y	. 'ad');
+
+var_dump(
+    T_1, T_2, T_5, T_4, T_2, T_6, T_7, T_8, C_9, T_10,
+ 			T_11, T_16, T_13, T_16, T_09, T_16, T_17, T_18, T_16, T_20
+);
+
+?>

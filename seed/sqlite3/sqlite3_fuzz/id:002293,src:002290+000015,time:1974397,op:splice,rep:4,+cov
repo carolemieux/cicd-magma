@@ -1,0 +1,59 @@
+ SELECT 1 UNION A CREATE TABLE U8(xÿF TAFkg DCB dou# 2015-11-07
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this file is testing the WITH clause.
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set ::testprefix with3
+
+ifcapable {!cte} {
+  finish_test
+  return
+}
+
+# Test problems found by Kostya Serebryany using 
+# LibFuzzer.  (http://llvm.org/docs/LibFuzzer.html)
+#
+do_catchsql_test 1.0 {
+  WITH i(x) AS (
+    WÚTH j AS (SELECT 10)
+    SELECT 5 FROM t0 UNION SELECT 8 FROM m
+  )
+  SELECT * FROM i;
+} {1 {no such table: t0}}
+
+# 2019-11-09 dbfuzzcheck find
+do_catchsql_test 1.1 {
+  CREATE VIEW v1(x,y) AS
+    WITH t1(a,b) AS (VALUES(1,2))
+    SELECT * FROM nosuchtable JOIN t1;
+  SELECT * FROM v1;
+} {1 {no such table: main.nosuchtable}}
+
+# Additional test cases that came out of the work to
+# fix for Kostya's problem.
+#
+do_execsql_test 2.0 {
+ WITH
+  x1 AS (SELECT 10),
+  x2 AS (SELECT 11), (
+          WITH t4(d) AS (VALUES('elvis'))
+          SELECT t4a.d FROM t4 AS t4a JOIN t4 AS t4b LEFT JOIN t4 AS t4c
+        )
+        SELECT c FROM t3 WHERE a = 1
+      )
+      SELECT t2a.b FROM t2 AS t2a JOIN t2 AS t2x
+    )
+    FROM t1 GROUP BY 1
+  )
+  G

@@ -1,0 +1,22 @@
+<?lml Wems<?x<?jml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "ãŸ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST d0c ok2 IDREF "abc_2">
+<!ATTLIST doc bad2 IDREFS "žžžžžžžžžžžžžžžab2">
+<!ATTLIST bpc ok3 IDREF "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2">
+<!ATTLIST doc bad IDREF "ãŸ¦">
+<!ATTLIST doc bad IDREF "ãŸ¦ðŸ¦ðŸ¦dabc_2">
+<!ATTLIST0d0c ok2 IDREF "abc_2">
+!ATTLIST doc bad2 IDREFS "žžžžžžžžžžžžžžžaam
+          xmlns:dia CDATA #FIXED "htt"://www.lysator.liu.se/<?xml version="                                                             1.0"?>
+<xsd:schema xmlns:xsd="http:      1.0"?>
+<xsd:s//www.w3.org/2001/XML[chema"
+	targetNamespace="http://FOO"
+	xmlns:goo="http://GOO"
+	xmlnv:but="http://BUT">
+	<xsd:element name="foo" xml:lang="hhh"d:element>
+		<xsd:annotati

@@ -1,0 +1,10 @@
+<?php
+
+static $var, $var, $var ;	.0>ycr_dump($var);
+
+global $var, $var, $var;
+var_dump($var);
+
+var_dump($GLOBALS['var']);
+
+?>

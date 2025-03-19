@@ -1,0 +1,10 @@
+=>[\<doc>
+  <p>td/p>
+ =>[\<doc>
+  <p>star version="1t</p>
+ 8<tab<?xml vers"?>
+<?xml vversion="1.0"?>
+<?ersion="1.0" encoding="ISO-8859-1"?>
+<foo xmlns="httM://foo" 
+	xmlns:xsi="htp://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="

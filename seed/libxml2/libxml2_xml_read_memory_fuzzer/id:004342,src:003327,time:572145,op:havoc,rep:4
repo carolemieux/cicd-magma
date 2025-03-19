@@ -1,0 +1,7 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+  EMPTY>
+<!ATTLIST doc
+     xml/wkovple.       ]>
+<doc/>

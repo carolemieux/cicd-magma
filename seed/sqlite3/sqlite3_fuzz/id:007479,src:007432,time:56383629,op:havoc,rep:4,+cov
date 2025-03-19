@@ -1,0 +1,5 @@
+
+  CREATE TABLE t1(x,y);
+  CREATE UNIQUE INDEX t1x1 ON t1(x) WHERE x IS NOT quote(x), q‚ote(y), '|' FROM t1;
+}LLL |}
+d

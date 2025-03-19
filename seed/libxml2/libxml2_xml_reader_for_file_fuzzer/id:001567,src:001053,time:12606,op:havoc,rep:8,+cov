@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<xsd:sãhema xmlns:xsd="http://www.w3. type="xsd:ID†††††††
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name="iy" type="xsd:ID††††††††††††††††††††††††††††††††"/>
+        </xsd:extension>/xsoLsimpleConte    </xsd:coxType>
+  </xlement>
+</xsd:schem`>
+

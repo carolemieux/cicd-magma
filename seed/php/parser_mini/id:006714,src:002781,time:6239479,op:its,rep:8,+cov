@@ -1,0 +1,5 @@
+<?php
+
+soad_register(function($classname)	{
+				if	(in_array($classname,	array('a','f','e')))	{
+								require_once	__DIR__\.	"

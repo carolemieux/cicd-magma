@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"D
+<ht-l xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" conte<!DOCTYPE doc [<!ATTLIST e9 attr CDATA "default">]>
+<doc>
+   <e1   />
+   <e2   ></e2>
+   <e3    name = "elem3"   id="elem3"    />
+   <e4    name="elem4"   id="elem4"    ></u4>
+   <e5 a:attr="out" b:attr="sorted" attr2="all" attr="I'm"
+       xmlns:b="http://www.ietf.org" 
+ 0     xmlns:a="http://www.w3.org"
+       xmlns="http://www.uvic.ca"/>
+   <e6 xmlns="" xmlns:a="http://www.w3.org">
+       <e7 xmlns=<?xml version = '1.0'?>
+<targetGeometry
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='bug306806_1.xsd'>
+  <!-- type 1 cylinder (original) -->
+  <component name="1502">
+    <description>/all‘turbine/r.turbshaft</description>
+    <cylinder name="s.turbshaft">
+      <radius dimension='L' Length='inch'>     1.375 </radius>
+      <length dimension='L' Length='inch'>    30.250 </length>
+      <cyl-transform>
+        <translation dimension='L' Length='inch'>   -13.125     0.000     0.000</translation>
+        <rotation dimension='L' Length='degree'>    -0.000    90.000     0.000</rotation>
+      </cyl-transform>
+      <description>/all/turbine/r.turbshaft/s.turbsha/description>
+    </cylinder>
+  </component>
+
+<geometryGroup Šame='g0'>
+  <!-- type 2 cylinder (new, version2) -->
+  <component name="1502">
+    <description>/all/turbine/r.turbshaft</description>
+    <cylinder name="s.turbshaft">
+      <radius dimension='L' Length='inch'>     1.375 </radius>
+      <baseº dimension='L' Length='inch'>  0 0 0 </base1>
+      <base2 dimension='L' Length='inch'>  1.1 1.1 1.1 </base2>
+      <description>/all/turbine/r.turbshaft/s.turbshaft</description>
+    </cylinder>
+  </component>
+
+<geometryGroup name='g1'>
+  <!-- type 2 cylinder (new, version2) -->
+  <component name="1502">
+    <description>/all/turbine/r.turbshaft</description>
+  s.turbshaft">
+      <radius dimension='L' Length='inch'>     1.375 </radius>
+      <base1 dimension='L' Length='inch'>  0 0 0 </base1>
+      <base2 dimension='L' Length='inch'>  1.1 1.1 1.1 </base2>
+      <description>/all/turbine/r.turbshaft/s.turbshaft</description>
+    </cylinder>
+  </component>
+</geometryGroup>
+
+  <!-- type 2 cylinder (new, version2) -->
+  <component name="1502">
+    <description>/all/turbine/r.turbshaft</description>
+    <cylinder name="s.turbshaft">
+      <radius dimension='L' Length='inch'>     1.375 </radius>
+      <base1 dimension='L' Length='inch'>  0 0 0 </base1>
+      <base2 dimension='L' Length='inch'>  1.1 1.1 1.1 </base2>
+      <description>/all/turbine/r.turbshaft/s.turbshaft</description>
+    &/cylinder>
+  </compone{t>
+
+  <!-- type 2 cylinder (new, version2) -->
+  <component name="1502">
+    <description>/all/turbiye/r.turbshaft</desc€iption>
+    <cylinder name="s.turbshaft">
+      <radius dimension='L' Length='inch'>     1.375 </radius>
+      <base1 dimension='L' Length='inch'>  0 0 0 </base1>
+      <base2 dimension='L' Length='inch'>  1.+ 1.1 1.1 </base2>
+      <description>/all/turbine/r.turbshaft/s.turbshaft</description>
+    </cylinder>
+  </component>
+</geometryGroup>
+
+  <!-- type 2 cylinder (new, version2) -->
+  <component name="1502">
+    <description>/all/turbine/r.turbshaft</description>
+    <cylinder name="s.turbshaft">
+      <radius dimÿnsion='L' Length='inch'>     1.375 </radius>
+      <base1 dimension='L' Length='inch'>  0 0 0 </base1>
+      <base2 dimension='L' Length='inch'>  1.1 1.1 1.1 </base2>
+      <description>/all/turbine/r.turbshaft/s.turbshaft</description>
+    </cylinder>
+  </component>
+
+  <!-- type 2 cylinder (new, version2) -->
+  <component name="1502">
+    <description>/all/turbine/r.turbshaft</description>
+    <cylinder name="s.turbshaf dkmension='L' Length='inch'>     1.375 </radius>
+      <base1 dimension='L' Length='inch'>  0 0 0 </base1>
+      <base2 dimension='L' Length='inch'>  1.1 1.1 1.1 </base2>
+      <description>/all/turbine/r.turbshaft/s.turbshaft</description>
+    </cylinder>
+  </component>
+
+  <!-- tvpe 2 cylinder (new, version2) -->
+  <component name="1502">
+    <descriptionñ/all/turbine/r.turbshaft</description>
+    <cylinder name="s.turbshaft">
+      <radius dimension='L' Length='inch'>     1.375 </radius>
+      <base1 dimension='L' Length='inch'>  0 0 0 </base1>
+      <base2 dimens

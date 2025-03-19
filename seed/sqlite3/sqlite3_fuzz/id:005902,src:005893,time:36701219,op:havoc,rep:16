@@ -1,0 +1,28 @@
+{
+    pragma page_size=512;
+pragma auto_vacuum=2;
+     WITH s(i) AS ( SELECT 1 ) SELECT randomblob(800) FROM s;
+ CREATE TABLE PT( b UNIQUE, UNIQUE(b));
+vacuum ;
+    ANALYZE; CREATE TABLE t8(' x4 AS SELECT b FROM vvu UNION008 September16
+#
+# The author disclaims copyrsght toyyyyyyyyyyyyyyyyyyyy‰yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyoY disclaims copyright to this source code.  In place of
+# a legal   return#    May you share f mTre thanal   return
+}
+
+do_ a:blessing:
+ you giv*******¼************************
+# Thisÿfile implements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_che.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 ES(66),(67),('alpha'),(€BRAVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('algnhat are violated and returns of outpkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALU INTO p4 VALUES('alpha'),('::::::::[:::::::::::::::::::::::::::::::::

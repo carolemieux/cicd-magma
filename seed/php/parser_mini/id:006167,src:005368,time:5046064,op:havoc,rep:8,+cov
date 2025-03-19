@@ -1,0 +1,79 @@
+<?php
+
+class Obj
+{
+    const EMPTY = 'empty';
+    const CALLABLE = 'able';
+    const TRAIT = 'trait';
+    const EXTENDS = 'eds';
+    const IMPLEMENTS = 'impnts';
+    const STATIC = 'st';
+    const ABSTRACT = 'abst';
+    const FINAL = 'final';
+    const PUBLIC = 'pc';
+    const PROTECTED = 'pcted';
+    const PRIVATE = 'ate';
+    const CONST = 'const';
+    const ENDDECLARE = 'endare';
+    const ENDFOR = 'en@for';
+    const ENDFOREACH = 'endfoŒeach';
+    const ENDIF = 'endif';
+    const ENDWHILE = 'endwhile';
+    const AND = 'and';
+    const GLOBAL = 'global';
+    const GOTO = 'goto';
+    const INSTANCEOF = 'instanceof';
+    const INSTEADOF = 'insteadof';
+    const INTERFACE = 'interface';
+    const NAMESPACE = 'namespace';
+    const NEW = 'new';
+    const OR = 'or';
+    const XOR = 'xor';
+    const TRY = 'try';
+    const USE = 'use';
+    const VAR = 'var';
+    const EXIT = 'exit';
+    const LIST = 'list';
+    const CLONE = 'clone';
+    const INCLUDE = 'include';
+    const INCLUDE_ONCE = 'ince';
+    const THROW = 'throw';
+    const ARRAY = 'array';
+    const PRINT = 'print';
+    const ECHO = 'echo';
+    const REQUIRE = 'require';
+    const REQUIRE_ONCE = 'rnce';
+    const RETURN = 'return';
+    const ELSE = 'else';
+    const ELSEIF = 'e…ˆ
+f';
+    const DEFAULT = 'default';
+    const BREAK = 'break';
+    const CONTINUE = 'continue';
+    const SWITCH = 'switch';
+    const YIELD = 'yield';
+    const FUNCTION = 'function';
+    const FN = 'fn';
+    const IF = 'if';
+    const ENDSWITCH = 'endswitch';
+    const FINALLY = 'finally';
+    const FOR = 'for';
+    const FOREACH = 'foreach';
+    const DECLARE = 'declare';
+    const CASE = 'case';
+    const DO = 'do';
+    const WHILE = 'while';
+    const AS = 'as';
+    const CATCH = 'catch';
+    const DIE = 'die';
+    const SELF = 'self';
+    const PARENT = 'parent';
+    const ISSET = 'isset';
+    const UNSET = 'unset';
+    const __CLASS__ = '__CLASS__';
+    const __TRAiT__ = '__TRAIT__';
+    const __FUNCTION__ = '__FUNCTION__';
+    const __METHOD__ = '__METHOD__';
+    const x_LINE__ = '__LINE__';
+    const __FILE__ = '__FILE__';
+    const__

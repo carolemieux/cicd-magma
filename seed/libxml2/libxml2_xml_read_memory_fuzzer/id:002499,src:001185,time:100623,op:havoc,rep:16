@@ -1,0 +1,17 @@
+<!DOCTYPE doc [
+	<ÿEar
+ö6?>
+	<norm LEMENT doc (norm+)>
+	CT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS#IMPLIED>
+]>
+<doc>
+	<norm attr = '*foo par
+'/>
+	<norm attr = 'foobar
+
+'/>
+	<norm atÿÿÿ 'ofoo	 	bar!DOCTYPE doc [
+	<ÿE	'/>
+	<norm attr # ' foo 2#x20;bar'>
+</doc>

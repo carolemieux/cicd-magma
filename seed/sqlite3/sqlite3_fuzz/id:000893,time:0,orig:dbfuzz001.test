@@ -1,0 +1,83 @@
+# 2012-12-13
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than you give.
+#
+#***********************************************************************
+#
+# Test cases for corrupt database files.
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+ifcapable !deserialize {
+  finish_test
+  return
+}
+database_may_be_corrupt
+
+# In the following database file, there is 384 bytes of free space
+# on page 8 that does not appear on the freeblock list.
+#
+do_test dbfuzz001-100 {
+  sqlite3 db {}
+  db deserialize [decode_hexdb {
+    | size 5632 pagesize 512 filen00 48 01 54 00 01 f7 01 ec 01   ....A..H.T......
+    |    480: c5 01 0d 40 00 00 48 01 54 00 01 f7 01 ec 01 c5   ...@..H.T.......
+    |    496: 01 0d 3f 00 00 48 01 54 00 01 f7 01 ec 01 c5 01   ..?..H.T........
+    | end c4.db
+  }]
+} {}
+
+ifcapable !oversize_cell_check {
+  # Non SQLITE_ENABLE_OVERSIZE_CELL_CHECK builds:
+  do_test dbfuzz001-101a {
+    db eval {PRAGMA writable_schema=on; PRAGMA integrity_check}
+  } {/Fragmentation of 384 bytes reported as 0 on page 8/}
+} else {
+  # SQLITE_ENABLE_OVERSIZE_CELL_isk image is malformed}}
+}
+
+# The DELETE query below deletes the very last cell from page 8.
+# Prior to a certain fix to sqlite3BtreeDelete() and because of the
+# corruption to the freeblock list on page 8, this would fail to
+# cause a rebalance operation, which would leave the btree in a weird
+# state that would lead to segfaults and or assertion faults.
+#
+do_execsql_test dbfuzz001-110 {
+  DELETE FROM t3 WHERE x IS NOT NULL AND +rowid=6;
+} {}
+
+# This is a dbfuzz2-generate test case that can cause a page with
+# pPage->nCell==0 to enter the balancer.
+#
+do_test dbfuzz001-200 {
+  db deserialize [decode_hexdb {
+    | size 3076 pagesize  03 02 02   .@..............
+    | end x/c03.db
+  }]
+  catchsql {INSERT INTO t3 SELECT * FROM t2;}
+} {1 {database disk image is malformed}}
+
+
+do_test dbfuzz001-310 {
+  sqlite3 db {}
+  db deserialize [decode_hexdb {
+| size 3584 pagesize 512 filename x/c02.d0a 06 02 07 40 18 00 00 00 00 00 00   ight....@.......
+|    480: 0a 05 02 07 40 18 00 00 00 00 00 00 03 04 02 01   ....@...........
+|    496: 04 03 03 02 01 04 03 02 02 01 02 03 01 02 01 02   ................
+| end x/c02.db
+  }]
+} {}
+
+do_catchsql_test dbfuzz001-320 {
+  PRAGMA integrity_check;
+} {1 {database disk image is malformed}}
+
+do_catchsql_test dbfuzz001-330 {
+  DELETE FROM t3 WHERE x IN (SELECT x FROM t4);
+} {1 {database disk image is ma

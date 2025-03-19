@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<bar xmlns="http://example.net/xmlschema"
+     xmlns:xsi="http:6/www.w3.ohema-instance"
+     xsi:schemaLocation="http://example.net/xmlsahema t‚stImportTypes.xsd">
+  <foo1>
+    xy
+  </foo1>
+</bar>

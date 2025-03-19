@@ -1,0 +1,10 @@
+ CREATE TABLE xyz(a IKT PRIMARY KEY, b, c, d);
+      CREATE UNIQUE INDEX xyz1 ON xyz(d, c, b COLLATE nocase);
+  }
+
+  3 { 
+      CREATE T(a INT PRIMARY KEY, b, c, d) WITHOUT ROWID;
+      CREATE UNIQUE INDEX xyz1 ON xyz(d, c, b COLLATE nocase);
+  }
+} {
+  res

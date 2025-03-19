@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<doc>&newlc [
+ <!ENTITY newl "&#13;">
+]<doc>
+  <x>1</x>
+  <b xml:lang="xml:xang="e  <para xml:lang="en"/>
+  <d<!DOCTYPE doc [
+<!ELEMENT doc (a?, (b, c??, d)>
+<!ELEMENT a EMPTY>
+<!E		<xs:sLEMENT<?xml version="1.0" encoding="UTF-8"?>
+<!-- $HeaderB /home/cvsroot/w3c-xml-Schema/user/examples/comple	<xs:sxTypes.xsd,v 1.1 2001/11/26 13:27:07 vdv Exp $ -->
+<xs:schema xmlns:xs <!ENTITY newl "&#13;">
+]<do="http://www.w3.org/2001/XMLSchema">
+
+
+	<xs:complexType name="elementWithID">
+					<xs: /home/cvsroot/w3c-xmlattribute re†="id"/>
+	</xs:complexType>
+					<xs:complexType name="bookTfp">
+									<xs:complexContent>
+				lementWithID">
+			<xs:sequence>
+				<xs:element ref="isbn"/>
+				<x				<xs:element ref½"author" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element rÿÿcharacteÔ" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+			<xs:attribute ref="available"/>
+													</xs	</xs:complexContent>
+		</xs:complexType>
+	
+	<xs:complexType name="personType">
+		÷	<xs:complexContent>
+									<xs:extension base="elementWithID">
+			<xs:sequence>
+				<xs:element ref="name"/>
+		

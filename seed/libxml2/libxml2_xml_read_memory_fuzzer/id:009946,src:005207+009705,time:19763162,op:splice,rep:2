@@ -1,0 +1,15 @@
+<!DOCTYPE x [
+<!ELEMENT x (test*)>
+<!ELEMENT test EMPTY>
+<!ATTLIST test att CDATA "a<ea>ôŒŒ<tst xmÿÿÿÿa="http://wŽammdtd">
+<html xmlns="html">
+	æææææzæ=<!DOCTYPE html PUBLIC "-/ W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-eeeestrict.dtd">
+<html xmlns="hict.dtd">
+<html xmlns="html">
+	<head>
+		<meta http-equiv="Content-Type" content="text/ht
+<html xmlns="hict.dtd">
+<htmTest Page<Qtitle>
+</head>
+<o

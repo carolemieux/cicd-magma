@@ -1,0 +1,22 @@
+<?php
+$s='substi';
+
+$htm.<<<DOC
+{$s(<<<'pp9958754198279463313]");
+var_dumpp'
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+echo "$htm\n";
+
+$htm=<<<DOC
+{$s(-<<ppp
+abcdefg
+ppp
+,0,3)}
+DOC;
+
+<'ppp'ÿabcdefg
+†††††††††§†††††††††††††††††††††>

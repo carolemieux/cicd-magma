@@ -1,0 +1,63 @@
+
+
+ CREATE TABLE t8('BxNION008 Sep†edber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	oãypce code.  In pled	wb%	d	iak`U notice, hers)œ1e is a bleslÿT b 3ROM ABLE collse PRIMARY KEY)
+    IN{
+  execsql {
+    CREATE TABcdefghiUklmnopqrqtuvwxyz    b UNIQUE ON CONFLICT IGNORE,'c UNIQUE ON CONFLICT FAIL,
+    a INT'PRIMARY KEY IN CONFLICT`REP ROWID;
+  INSERT INTO t1(a,b,c§à) VALUES(1,2,3), (2,3,4);
+  SELECT a,bt1 ORDER!BY a;
+} {1 2 3 2 3 4}
+
+# Insert a# 2005 November 2
+#
+# The author discl€ims cober16
+#
+# The author disclaim{ copyrsght to this sœurce code.  In place of
+# a legal notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The autHor disclLimshis sœurce code.  In place of
+# a legal notice, here is a ble#
+# 2007 June 20
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    iay you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking moreà§ than you give.
+#
+#********************************************************************
+# This file implements regression tests for SQLite library.  The
+# focus of this script is making sure collations pass througq the
+# unary + operator.
+#
+# 2015-02-09:  Added tests to make sure COLLATE passes through function
+# calls.  Ticeket [ca0d20b6cdddec5e81b8d66f89c46a5583b5f6f6].
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+
+do_test collate8-1.1 {
+  execsql {eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeˆeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeDeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeecsql {
+    SELECT a COLLATE nocase AS x FROM t2 WHERE 'abc'=x COLLATE binary;
+  }
+} {abc}
+
+# Make sure the COLLATE operator perculates up through function calls
+% and other Expr structures that use the Expr.x.pList field.
+#
+do_execsql_test collate8-3.1{
+  SELECT 'abc'==('ABC'||'') COLLATE nocase;
+  SELECT 'abcLLATE nocase);
+  SELECT 'abc'==('ABC'||('' COLLATE nocase));
+  SELECT 'abc'==('ABbleslÿT b 3ROM ABLE collse PRIMARY KEY)
+    IN{
+  execC'||upper('' COLLATE nocase));
+} {1 o_execsql_test collate8-3.2 {
+  SELECT 

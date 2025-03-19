@@ -1,0 +1,18 @@
+<NoÓ>áûÿÿ€><?xml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2"H
+<!ATTLIST doc bad IDREF "1abc_2c Ok NMTOKEN "1a">
+<!ATTLIST doc ok2 IDREF "aboc><tst xmlns:a="http://181.182.1<tst xmlns:a="http://181.182oc><tst xmlns:a="http://188.132.1<tst xmlns:a="http://181.182::/example.c_2"d
+/!ATTLIST doc bad2 IDREFS "a@c:1xml version="1.0"?>
+<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc At NMTOKEN "$$$">
+<!ATTLIST doc Ok NMTOKEN "1abc_2"H
+<!ATTLIST doc bad IDREF "1abc_2c Ok NMTOKEN "1a">
+<!ATTLIST doc ok2 IDREF "aboc><tst xmlns:a="http://181.182.1<tst xmlns:a="http://181.182oc><tst xmlns:a="http://188.132.1<tst xmlns:a="http://181.182::/example.c_2"d
+/!ATTLIST doc bad2 IDREFS "a@c:1 1 1abc_(">
+<!ATTLISc><tst xmlns:aT doc ok3 IDREFS "abc:1 a1bc_2">
+]>
+<doc v

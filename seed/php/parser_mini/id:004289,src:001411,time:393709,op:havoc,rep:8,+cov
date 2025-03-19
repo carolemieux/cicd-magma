@@ -1,0 +1,11 @@
+<?php
+
+$doubles = array(
+ 
+       00,
+       PHP + 1,
+        PHX + 1000,
+        PH0_INT_MAX * 2 + 4,
+-PHP_INT_MAX -1, -PHP_INT_MAX -2,X -1000, );
+
+for;;ea

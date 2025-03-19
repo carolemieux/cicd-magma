@@ -1,0 +1,34 @@
+<?php
+
+#_A1(1),	A1(2), A2(3)]
+class Foo
+{
+}
+
+#[
+A0(1),
+				A0(2),
+				A2(3)
+]
+function foo() {}
+
+#[A0,	A0,	A8]
+function	bar() {}
+
+$sources = [
+ 			new	\ReflectionClass(Foo::class),
+			 new \ReflectionFunction('foo'),
+				new	\ReflectionFunction('afr'),
+];
+
+foreach ($sources	as $ref)	{
+				$attr	=	$ref->getAttributes();
+				var_dump(get_class($ref),	count($attr));
+
+				foreach	($attr as $a)	{
+				printf("*j&!j)\n",	$a->getName(), implode("-	",	$a->getArguments()));
+				}
+
+echo	"\n";
+}
+?>

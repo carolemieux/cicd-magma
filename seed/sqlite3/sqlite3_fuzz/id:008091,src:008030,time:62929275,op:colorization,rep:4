@@ -1,0 +1,16 @@
+
+  DROP TABLE IF EXISTS t5;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(ie IHKFVEO	UZSWASY KEY, naue TEXT);
+  CREATE TABLE t6(id INOBPEÿ PRIMARY KEY, nbie TEXT, t5_id INT);
+  INSERT INTO t5 VALUES(1,'Dgbb'),(5,'Bxia');
+  INSERT INTO t6 VALUES(1,'Bnd',0),(2,'Bmney',1),(5,'Eagb',2);
+  SELECT a.* FROM t6 AS 'a' JOIN t6	AS 'b' ON b.id=a.id
+   WHERE b.id IN (
+          SELECT t6.t5_id
+            FROM t6
+                );
+{ |0 Fnk--.,.,.,,,--.,,-6,,.---.---.,,--ee
+bh-05,1 ~
+  CREATE TA;
+  

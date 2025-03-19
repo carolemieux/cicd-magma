@@ -1,0 +1,153 @@
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     xefatt  (0|1)   "0"
+<?xml version="1.0" encoding="utf-8"?>
+<testSuite>
+  <testSuite>
+    <documentation>Datatype dateTime</documentation>
+    <tehtCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="dateTime"/>
+        </element>
+      </correct>
+      <valid>
+        <doc>2001-12-01T19:45:00</doc>
+      </valid>
+      <valid>
+        <doc>2001-12-01T19:45:00Z</doc>
+      </valid>
+      <valid>
+        <doc>2001-12-01T19:45:00-11:59</doc>
+      </valid>
+      <valid>
+        <doc>0001-01-12T00:00:00+12:00</doc>
+      </valid>
+      <invalid>
+        <doc>2001-12-1T19:45:00+24:00</doc>
+      </invalid>
+      <invalid>
+        <doc>2001-12-1T19:45:00</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="dateTime">2001-12-01T19:45:00</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>2001-12-01T19:45:00.00</doc>
+      </valid>
+      <invalid>
+        <doc>2001-12-01T19:45:00Z</doc>
+      </invalid>
+      <invalid>
+        <doc>2001-12-01T19:45:00.00Z</doc>
+      </invalid>
+      <invalid>
+        <doc>2001-12-01T20:45:00+01:00</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="dateTime">2001-12-01T19:45:00Z</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>2001-12-01T19:45:00.00Z</doc>
+      </valid>
+      <valid>
+        <doc>2001-12-01T20:45:00+01:00</doc>
+      </valid>
+      <invalid>
+        <doc>2001-12-01T19:45:00</doc>
+      </invalid>
+      <invalid>
+        <doc>2001-12-01T19:45:00.00</doc>
+      </invalid>
+    </testCase>
+  </testSuite>
+  <testSuite>
+    <documentation>Datatype anyURI</documentation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="anyURI"/>
+        </element>
+      </correct>
+      <valid>
+        <doc>foobar</doc>
+      </valid>
+      <valid>
+        <doc>http://www.example.com</doc>
+      </valid>
+      <valid>
+        <doc>http://ji%6d@www.example.com</doc>
+      </valid>
+      <valid>
+        <doc>http://www.example.co%6d</doc>
+      </valid>
+      <valid>
+        <doc>nosuchscheme:stuff</doc>
+      </valid>
+      <invalid>
+        <doc>foo$bar:stuff</doc>
+      </invalid>
+      <invalid>
+        <doc>f%oobar</doc>
+      </invalid>
+    </testCase>
+  </testSuite>
+  <testSuite>
+    <documentation>Datatype integer</documentation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="integer"/>  <valid>
+        <doc>+0</doc>
+      </valid>
+      <valid>
+        <doc>-0</doc>
+      </valid>
+      <valid>
+        <doc>00</doc>
+      </valid>
+      <invalid>
+        <doc>10</doc<?xml version="1.0"?>
+<!DOCTYP"http://relaxng.E dia:diagram [
+<!ELEMENT dia:diagram (dia:diagramdata, (dia:layer)*) >
+<!ATTLIST dia:diagram
+          xmlns:dia CDATA #FIXED "http://www.lysator.liu.se/~alla/dia/">
+          
+
+<!ELEMENT dia:diagramdata (dia:attribute)* >
+
+<!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangl

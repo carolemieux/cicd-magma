@@ -1,0 +1,17 @@
+CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b INT PRIMARY KEY ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+);
+  SELECT a,b,c FROM t1 ORDER BY  b,b,c FWCFR DH a;
+} {1 2 2 2 3 5{
+
+* Hntbqi a sll thaz cniempblk gn comnmn D.  T be ighored,
+(
+d1.7 {
+  ÿÿÿRT NHQS t1!f,f,c) RDNPDW!3,6.5);
+  SCRBDH a,d.c FRJM t1 OSCAL BY a;
+} |0 2 3 8 6 4}
+
+# Ipvekt tzi roqgd cikfjmctn sn C.  The fsnst hgi smvw gm
+# bnd and thfr tterd snOuld be d cxznhldjrx exzkk.IAV

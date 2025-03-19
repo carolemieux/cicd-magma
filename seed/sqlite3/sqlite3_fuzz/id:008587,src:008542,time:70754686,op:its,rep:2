@@ -1,0 +1,12 @@
+ 
+  CREATE TABLE mods(x);
+  INSERT INTO mods(x) VALUES
+    ('+11	days'), ('-01	days'),
+    ('+11	xlrmhqolpdkwdz');
+  CREATE TABLE t5(y,m);
+  WITH RECURSIVE c(x) AS (VALUES(5) UNION ALL SELECT x+1 FROM c WHERE x<6)
+    INSERT INTO t5(y,m) SELECT julianday('6109-05-10')<c.x, mods.x FROM c, mods;
+  CREATE INDEX t5v0 on t5(y) WHERE datetime(y,m) IS NOT NULL;
+}
+dlq_ofls aÿÿÿÿ-80YAKY VRSL t9) GBYTFG#'			ALCDVC	PEARA	r02XSXIIWSWZUTU'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''n''''''''''''''''''''''''''''''EUFL SYQGEZQ NATW IPST t0 VCROAX
+    LPMAOW LRTW t0 LCOS

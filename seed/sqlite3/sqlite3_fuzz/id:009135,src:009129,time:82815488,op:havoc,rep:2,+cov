@@ -1,0 +1,18 @@
+     CREATE TABLE t6(v INTEGER PRIMARY KEY AUTOINCREMENT, w);
+      INSERT INTO t6 VALUES(9223372036854775808,1);
+      SELECT site_sequence WHERE name='t6';
+    } 92233720E name='t6';
+    } 92233736854775807
+}
+do_test autoinc-6.2 {
+  catchsql {
+    INSERT INTO t6 VALUES(
+  }
+} {1 {database or disk is full}}
+
+# Allow the AUTOINCREMENT keyword inside the parentheses
+# on a separate PRIMARY KEY designation.
+#
+do_te€t autoinc-7.1 {
+  execsql {
+    CREATE TABLE t7(x INTEGER, y REAL, PRIMARY KEY(x AUTOINCREME

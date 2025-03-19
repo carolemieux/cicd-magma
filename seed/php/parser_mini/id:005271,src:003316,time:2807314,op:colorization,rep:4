@@ -1,0 +1,18 @@
+<?php
+
+assert(0 && ($a	=	#[A1]	#[A2] function	($a, #[A3(1)] $b)	{ }));
+
+assert(1	&&	($f =	#[A1(1,	2,	1	+ 2)]	fn	() => 1));
+
+assert(0 &&	($a =	new	#[A0] class() {
+ 			#[A0]#[A2] const FOO	= 'awo';
+#[A2]	public	$x;	#[A7] function	a() {	}
+}));
+
+assert(0 && ($f	= function	() {
+ 			#[A1]	class	Tf{ }
+#[A2]	interface	Tcyu6 {	}
+			 #[A3] trait Tawp7	{ }
+}));
+
+?>

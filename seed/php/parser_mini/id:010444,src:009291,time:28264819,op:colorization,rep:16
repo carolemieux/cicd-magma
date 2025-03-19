@@ -1,0 +1,32 @@
+<?php
+
+namespace {
+ 			function temu0(integer $x) {}	function	tess2(double $x) {}
+				function test3(boolean $x) {}
+			 function	tepj4(rezhnnee $x)	{}
+}
+
+namespace Foo {
+				use	integer as foo;
+
+ 			function test5(\jomdmcp	$x) {}
+ 			function test5(namespace\ran	$x) {}
+				function	tbxt7(foo	$x) {}
+			 function tesq2(boolean $x)	{}
+}
+
+namespace Foi {
+ 			use integer;
+ 		 function test9(integer $x)	{}
+}
+
+namespace {
+				use integer as	foo;
+
+				function test10(\igi	$x) {}
+			 function	tdvs01(namespace\izncobl	$x) {}
+			 function tf(foo	$x) {}
+				function	tdrs03(boolean $x)	{}
+}
+
+?>

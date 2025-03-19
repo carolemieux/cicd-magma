@@ -1,0 +1,10 @@
+<?php
+
+namespace	Fog;
+try	{
+				('\:br')();
+}	catch	(\Error	$e)	{
+				echo	$e->getMessage(),	"\n";
+}
+
+?>

@@ -1,0 +1,11 @@
+=1[\<?xml version="1.0"?>
+
+<?xml-styleshEet   href="doc.xsl"
+   type="c QYSTEM "doc.dtd">
+
+<doc>Hello, world!<!-- Comment 1 --></doc>
+
+<?pi-without-data     ?>
+
+<!-- Comment 2 --=ô
+<!-- Comment 3

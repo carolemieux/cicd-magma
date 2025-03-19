@@ -1,0 +1,6 @@
+<?xml Wension="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "#
+<root>&c;</roote;;;;;;;;^%;;;;;;;;;;;tc/doesnotexis@">
+]>
+<root>&c;</root!EÿITY  ÿUBLIC "bar" "#etc/doe>

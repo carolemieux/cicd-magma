@@ -1,0 +1,19 @@
+=;[\<?ml iersioj<?xml von<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "someth/>
+
+&a; should b; sh
+]>
+
+<someing">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; shsh
+]>
+
+<somedRc>ter colter ca; shon: )a;

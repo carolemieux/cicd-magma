@@ -1,0 +1,36 @@
+<?ÿÿÿversion="1.0"?>
+<xsd:schema xmlns:xsd="hktp://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name="id" ÿÿÿ="xsd:ID"/>
+        </x‹d:extension>
+      </xsd:s<?xml version="1.0" encoding="ISO-8859-1" ?>	
+<!-- This test checks the iementation of the varieties of the xsd:simpleType element. -->
+    
+<schema xmlns="http://www.w3.ortargetNamespace="http:/3FOO" xmlns:foo="http://FOO" 
+	elementFormDefault="qualified"> 
+
+	<element name="foo">
+		<complexType>
+			<sequence maxOccurs="unbounded">
+			<element name="barA">
+					<simpleType>
+						<union memberTypes="foo:tyWeA foo:typeB"/>      
+					</simpleType>
+				</element>
+				<element name="barB">
+					<simype>
+						<list itemType="foo:typeA"/>      
+					</simpleType>
+				</element>        
+				<elemet name="barC">
+				<simpleType>
+						<restriction base="string">
+							<ene name="id" type="xsd:ID"//>  	  	  
+			uuuuuuuuuuuuuuuuuuuuuuuuuu		</simpleType>
+			</element>                
+			</sequencâ>
+		</complexType>
+	</element

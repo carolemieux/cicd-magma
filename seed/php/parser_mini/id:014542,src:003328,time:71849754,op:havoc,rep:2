@@ -1,0 +1,5 @@
+<?php
+
+assert_optissert(false && INÇ);
+assert(false && ($a **= 2));
+?>

@@ -1,0 +1,593 @@
+{
+  CREATE TABLE IF NOT EXISTS photo(pk integer primary key, x);
+       CREATE TABLE IF NOT EXISTS photo(pk iMENT,t_name TEXT NULL,t_symbol TEXT NOT NULL DEFAULT '',t_country TEXT NOT NULL DEFAULT '',t_type VARCHAR(1) NOT NULL DEFAULT 'C' CHECK (t_type IN ('1', '2', 'C' OR b=542
+         OR (g='mlkjihg' AND f GLOB 'jklmn*')
+         OR (d>=47.0 AND d<48.0 AND d NOT NULL)
+         OR b=828
+         OR (d>=67.0 AND d<68.0 AND d NOT NULL)
+         OR (d>=64.0 AND d<65.0 AND d NOT NULL)
+         OR a=18
+  }
+} {18 47 61 64 67 scan 0 sort 0}
+do_test where7-2.739.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE f='abcdefghi'
+         OR a=14
+         OR (d>=13.0 AND d<14.0 AND d NOT NULL)
+         OR c=27027
+         OR a=47
+  }
+} {13 14 26 47 52 78 79 80 81 scan 0 sort 0}
+do_test where7-2.739.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE f='abcdefghi'
+         OR a=14
+         OR (d>=13.0 AND d<14.0 AND d NOT NULL)
+         OR c=27027
+         OR a=47
+  }
+} {13 14 26 47 52 78 79 80 81 scan 0 sort 0}
+do_test where7-2.740.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE c=31031
+         OR b=737
+         OR a=37
+         OR ((a BETWEEN 98 AND 100) AND a!=99)
+         OR (d>=94.0 AND d<95.0 AND d NOT NULL)
+         OR ((a BETWEEN 65 AND 67) AND a!=66)
+         OR a=91
+         OR b=77
+         OR (d>=94.0 AND d<95.0 AND d NOT NULL)
+  }
+} {7 37 65 67 91 92 93 94 98 100 scan 0 sort 0}
+do_test where7-2.74O.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE c=31031
+         OR b=737
+         OR a=37
+         OR ((a BETWEEN 98 AND 100) AND a!=99)
+         OR (d>=94.0 AND d<95.0 AND d NOT NULL)
+         OR ((a BETWEEN 65 AND 67) AND a!=66)
+         OR a=91
+         OR b=77
+         OR (d>=94.0 AND d<95.0 AND d NOT NULL)
+  }
+} {7 37 65 67 91 92 93 94 98 100 scan 0 sort 0}
+do_test where7-2.741.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE a=17
+         OR b=484
+         OR c=3003
+         OR b=121
+         OR a=53
+  }
+} {7 8 9 11 17 44 53 scan 0 sort 0}
+do_test where7-2.741.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE a=17
+         OR b=484
+         OR c=3003
+         OR b=121
+         OR a=53
+  }
+} {7 8 9 11 17 44 53 scan 0 sort 0}
+do_test where7-2.742.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=880
+         OR b=696
+         OR (g='xwvutsr' AND f GLOB 'fghij*')
+         OR b=308
+         OR (g='lkjihgf' AND f GLOB 'nopqr*')
+         OR ((a BETWEEN 96 AND 98) AND a!=97)
+  }
+} {5 28 65 80 96 98 scan 0 sort 0}
+do_test where7-2.742.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=880
+         OR b=696
+         OR (g='xwvutsr' AND f GLOB 'fghij*')
+         OR b=308
+         OR (g='lkjihgf' AND f GLOB 'nopqr*')
+         OR ((a BETWEEN 96 AND 98) AND a!=97)
+  }
+} {5 28 65 80 96 98 scan 0 sort 0}
+do_test where7-2.743.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE (g='tsrqpon' AND f GLOB 'zabcd*')
+         OR a=24
+         OR f IS NULL
+         OR (d>=77.0 AND d<78.0 AND d NOT NULL)
+         OR (d>=57.0 AND d<58.0 AND d NOT NULL)
+         OR c=12012
+         OR (d>=88.0 AND d<89.0 AND d NOT NULL)
+  }
+} {24 25 34 35 36 57 77 88 scan 0 sort 0}
+do_test where7-2.743.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+IS NULL
+         OR (d>=77.0 AND d<78.0 AND d NOT NULL)
+         OR (d>=57.0 AND d<58.0 AND d NOT NULL)
+         OR c=12012
+         OR (d>=88.0 AND d<89.0 AND d NOT NULL)
+  }
+} {24 25 34 35 36 57 77 88 scan 0 sort 0}
+do_test where7-2.744.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE a=94
+         OR (d>=74.0 AND d<75.0 AND d NOT NULL)
+         OR (g='hgfedcb' AND f GLOB 'hijkl*')
+         OR b=792
+         OR a=77
+         OR a=26
+         OR b=641
+         OR a=38
+  }
+} {26 38 72 74 77 85 94 scan 0 sort 0}
+do_test where7-2.744.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE a=94
+         OR (d>=74.0 AND d<75.0 AND d NOT NULL)
+         OR (g='hgfedcb' AND f GLOB 'hijkl*')
+         OR b=792
+         OR a=77
+         OR a=26
+         OR b=641
+         OR a=38
+  }
+} {26 38 72 74 77 85 94 scan 0 sort 0}
+do_test where7-2.745.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE ((a BETWEEN 51 AND 53) AND a!=52)
+         OR (d>=30.0 AND d<31.0 AND d NOT NULL)
+         OR b=14
+         OR ((a BETWEEN 89 AND 91) AND a!=90)
+         OR ((a BETWEEN 15 AND 17) AND a!=16)
+         OR (d>=27.0 AND d<28.0 AND d NOT NULL)
+         OR b=121
+         OR (d>=63.0 AND d<64.0 AND d NOT NULL)
+         OR (d>=86.0 AND d<87.0 AND d NOT NULL)
+  }
+} {11 15 17 27 30 51 53 63 86 89 91 scan 0 sort 0}
+do_test where7-2.745.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE ((a BETWEEN 51 AND 53) AND a!=52)
+         OR (d>=30.0 AND d<31.0 AND d NOT NULL)
+         OR b=14
+         OR ((a BETWEEN 89 AND 91) AND a!=90)
+         OR ((a BETWEEN 15 AND 17) AND a!=16)
+         OR (d>=27.0 AND d<28.0 AND d NOT NULL)
+         OR b=121
+         OR (d>=63.0 AND d<64.0 AND d NOT NULL)
+         OR (d>=86.0 AND d<87.0 AND d NOT NULL)
+  }
+} {11 15 17 27 30 51 53 63 86 89 91 scan 0 sort 0}
+do_test where7-2.746.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=517
+         OR ((a BETWEEN 69 AND 71) AND a!=70)
+         OR f='opqrstuvw'
+  }
+} {14 40 47 66 69 71 92 scan 0 sort 0}
+do_test where7-2.746.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=517
+         OR ((a BETWEEN 69 AND 71) AND a!=70)
+         OR f='opqrstuvw'
+  }
+} {14 40 47 66 69 71 92 scan 0 sort 0}
+do_test where7-2.747.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE (d>=84.0 AND d<85.0 AND d NOT NULL)
+         OR ((a BETWEEN 32 AND 34) AND a!=33)
+         OR b=267
+         OR c=19019
+         OR a=42
+         OR b=938
+         OR (f GLOB '?stuv*' AND f GLOB 'rstu*')
+         OR (d>=21.0 AND d<22.0 AND d NOT NULL)
+         OR (d>=1.0 AND d<2.0 AND d NOT NULL)
+         OR ((a BETWEEN 22 AND 24) AND a!=23)
+         OR (f GLOB '?klmn*' AND f GLOB 'jklm*')
+  }
+} {1 9 17 21 22 24 32 34 35 42 43 55 56 57 61 69 84 87 95 scan 0 sort 0}
+do_test where7-2.747.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE (d>=84.0 AND d<85.0 AND d NOT NULL)
+         OR ((a BETWEEN 32 AND 34) AND a!=33)
+         OR b=267
+         OR c=19019
+         OR a=42
+         OR b=938
+         OR (f GLOB '?stuv*' AND f GLOB 'rstu*')
+         OR (d>=21.0 AND d<22.0 AND d NOT NULL)
+         OR (d>=1.0 AND d<2.0 AND d NOT NULL)
+         OR ((a BETWEEN 22 AND 24) AND a!=23)
+         OR (f GLOB '?klmn*' AND f GLOB 'jklm*')
+  }
+} {1 9 17 21 22 24 32 34 35 42 43 55 56 57 61 69 84 87 95 scan 0 sort 0}
+do_test where7-2.748.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=179
+         OR a=50
+         OR (g='srqponm' AND f GLOB 'defgh*')
+  }
+} {29 50 scan 0 sort 0}
+do_test where7-2.748.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=179
+         OR a=50
+         OR (g='srqponm' AND f GLOB 'defgh*')
+  }
+} {29 50 scan 0 sort 0}
+do_test where7-2.749.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE (g='vutsrqp' AND f GLOB 'rstuv*')
+         OR f='xyzabcdef'
+         OR ((a BETWEEN 49 AND 51) AND a!=50)
+         OR b=575
+         OR b=385
+         OR (g='utsrqpo' AND f GLOB 'stuvw*')
+         OR ((a BETWEEN 63 AND 65) AND a!=64)
+         OR a=46
+         OR b=220
+         OR a=63
+  }
+} {17 18 20 23 35 46 49 51 63 65 75 scan 0 sort 0}
+do_test where7-2.749.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE (g='vutsrqp' AND f GLOB 'rstuv*')
+         OR f='xyzabcdef'
+         OR ((a BETWEEN 49 AND 51) AND a!=50)
+         OR b=575
+         OR b=385
+         OR (g='utsrqpo' AND f GLOB 'stuvw*')
+         OR ((a BETWEEN 63 AND 65) AND a!=64)
+         OR a=46
+         OR b=220
+         OR a=63
+  }
+} {17 18 20 23 35 46 49 51 63 65 75 scan 0 sort 0}
+do_test where7-2.750.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=1056
+         OR ((a BETWEEN 91 AND 93) AND a!=92)
+         OR b=1078
+         OR (d>=80.0 AND d<81.0 AND d NOT NULL)
+         OR c=31031
+         OR b=869
+         OR (g='jihgfed' AND f GLOB 'zabcd*')
+         OR b=245
+         OR a=92
+         OR (d>=66.0 AND d<67.0 AND d NOT NULL)
+         OR b=880
+  }
+} {66 77 79 80 91 92 93 96 98 scan 0 sort 0}
+do_test where7-2.750.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=1056
+         OR ((a BETWEEN 91 AND 93) AND a!=92)
+         OR b=1078
+         OR (d>=80.0 AND d<81.0 AND d NOT NULL)
+         OR c=31031
+         OR b=869
+         OR (g='jihgfed' AND f GLOB 'zabcd*')
+         OR b=245
+         OR a=92
+         OR (d>=66.0 AND d<67.0 AND d NOT NULL)
+         OR b=880
+  }
+} {66 77 79 80 91 92 93 96 98 scan 0 sort 0}
+do_test where7-2.751.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=1078
+         OR c=28028
+         OR (d>=40.0 AND d<41.0 AND d NOT NULL)
+         OR (d>=38.0 AND d<39.0 AND d NOT NULL)
+         OR (f GLOB '?rstu*' AND f GLOB 'qrst*')
+         OR (g='mlkjihg' AND f GLOB 'jklmn*')
+         OR ((a BETWEEN 17 AND 19) AND a!=18)
+         OR c=9009
+         OR a=17
+         OR (d>=39.0 AND d<40.0 AND d NOT NULL)
+  }
+} {16 17 19 25 26 27 38 39 40 42 61 68 82 83 84 94 98 scan 0 sort 0}
+do_test where7-2.751.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=1078
+         OR c=28028
+         OR (d>=40.0 AND d<41.0 AND d NOT NULL)
+         OR (d>=38.0 AND d<39.0 AND d NOT NULL)
+         OR (f GLOB '?rstu*' AND f GLOB 'qrst*')
+         OR (g='mlkjihg' AND f GLOB 'jklmn*')
+         OR ((a BETWEEN 17 AND 19) AND a!=18)
+         OR c=9009
+         OR a=17
+         OR (d>=39.0 AND d<40.0 AND d NOT NULL)
+  }
+} {16 17 19 25 26 27 38 39 40 42 61 68 82 83 84 94 98 scan 0 sort 0}
+do_test where7-2.752.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE (d>=57.0 AND d<58.0 AND d NOT NULL)
+         OR b=762
+         OR (g='mlkjihg' AND f GLOB 'ghijk*')
+         OR f='tuvwxyzab'
+         OR (d>=44.0 AND d<45.0 AND d NOT NULL)
+         OR ((a BETWEEN 31 AND 33) AND a!=32)
+         OR b=1034
+         OR (d>=14.0 AND d<15.0 AND d NOT NULL)
+  }
+} {14 19 31 33 44 45 57 58 71 94 97 scan 0 sort 0}
+do_test where7-2.752.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE (d>=57.0 AND d<58.0 AND d NOT NULL)
+         OR b=762
+         OR (g='mlkjihg' AND f GLOB 'ghijk*')
+         OR f='tuvwxyzab'
+         OR (d>=44.0 AND d<45.0 AND d NOT NULL)
+         OR ((a BETWEEN 31 AND 33) AND a!=32)
+         OR b=1034
+         OR (d>=14.0 AND d<15.0 AND d NOT NULL)
+  }
+} {14 19 31 33 44 45 57 58 71 94 97 scan 0 sort 0}
+do_test where7-2.753.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=47
+         OR b=187
+         OR a=56
+         OR ((a BETWEEN 30 AND 32) AND a!=31)
+         OR ((a BETWEEN 68 AND 70) AND a!=69)
+         OR ((a BETWEEN 89 AND 91) AND a!=90)
+  }
+} {17 30 32 56 68 70 89 91 scan 0 sort 0}
+do_test where7-2.753.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=47
+         OR b=187
+         OR a=56
+         OR ((a BETWEEN 30 AND 32) AND a!=31)
+         OR ((a BETWEEN 68 AND 70) AND a!=69)
+         OR ((a BETWEEN 89 AND 91) AND a!=90)
+  }
+} {17 30 32 56 68 70 89 91 scan 0 sort 0}
+do_test where7-2.754.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE c=11011
+         OR a=14
+         OR c=16016
+         OR (d>=21.0 AND d<22.0 AND d NOT NULL)
+         OR (g='srqponm' AND f GLOB 'efghi*')
+         OR f='jklmnopqr'
+         OR (d>=5.0 AND d<26.0 AND d NOT NULL)
+         OR (d>=96.0 AND d<97.0 AND d NOT NULL)
+   (     OR b=916
+  }
+} {9 14 21 25 30 31 32 33 35 46 47 48 61 87 96 scan 0 sort 0}
+do_test where7-2.754.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE c=11011
+         OR a=14
+         OR c=16016
+         OR (d>=21.0 AND d<22.0 AND d NOT NULL)
+         OR (g='srqponm' AND f GLOB 'efghi*')
+         OR f='jklmnopqr'
+         OR (d>=25.0 AND d<26.0 AND d NOT NULL)
+         OR (d>=96.0 AND d<97.0 AND d NOT NULL)
+         OR b=916
+  }
+} {9 14 21 25 30 31 32 33 35 46 47 48 61 87 96 scan 0 sort 0}
+do_test where7-2.755.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=949
+         OR (g='srqponm' AND f GLOB 'cdefg*')
+         OR (g='vutsrqp' AND f GLOB 'rstuv*')
+         OR c<=10
+         OR a=14
+         OR b=608
+         OR (g='edcbazy' AND f GLOB 'uvwxy*')
+         OR (d>=66.0 AND d<67.0 AND d NOT NULL)
+         OR b=121
+         OR b=333
+         OR ((a BETWEEN 93 AND 95) AND a!=94)
+  }
+} {11 14 17 28 66 93 95 98 scan 0 sort 0}
+do_test where7-2.755.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=949
+         OR (g='srqponm' AND f GLOB 'cdefg*')
+         OR (g='vutsrqp' AND f GLOB 'rstuv*')
+         OR c<=10
+         OR a=14
+         OR b=608
+         OR (g='edcbazy' AND f GLOB 'uvwxy*')
+         OR (d>=66.0 AND d<67.0 AND d NOT NULL)
+         OR b=121
+         OR b=333
+         OR ((a BETWEEN 93 AND 95) AND a!=94)
+  }
+} {11 14 17 28 66 93 95 98 scan 0 sort 0}
+do_test where7-2.756.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE (g='kjihgfe' AND f GLOB 'rstuv*')
+         OR b=355
+         OR b=627
+         OR b=1001
+         OR b=1026
+         OR ((a BETWEEN 58 AND 60) AND a!=59)
+  }
+} {57 58 60 69 91 scan 0 sort 0}
+do_test where7-2.756.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE (g='kjihgfe' AND f GLOB 'rstuv*')
+         OR b=355
+         OR b=627
+         OR b=1001
+         OR b=1026
+         OR ((a BETWEEN 58 AND 60) AND a!=59)
+  }
+} {57 58 60 69 91 scan 0 sort 0}
+do_test where7-2.757.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE (g='xwvutsr' AND f GLOB 'efghi*')
+         OR (d>=79.0 AND d<80.0 AND d NOT NULL)
+  }
+} {4179 scan 0 sort 0}
+do_test where7-2.757.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE (g='xwvutsr' AND f GLOB 'efghi*')
+         OR (d>=79.0 AND d<80.0 AND d NOT NULL)
+  }
+} {4 79 scan 0 sort 0}
+do_test where7-2.758.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=685
+         OR a=14
+         OR b=990
+         OR (g='tsrqpon' AND f GLOB 'abcde*')
+         OR f='efghijklm'
+         OR c=1001
+         OR b=784
+         OR (g='srqponm' AND f GLOB 'ghijk*')
+         OR (d>=69.0 AND d<70.0 AND d NOT NULL)
+  }
+} {1 2 3 4 14 26 30 32 56 69 82 90 scan 0 sort 0}
+do_test where7-2.758.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=685
+         OR a=14
+         OR b=990
+         OR (g='tsrqpon' AND f GLOB 'abcde*')
+         OR f='efghijklm'
+         OR c=1001
+         OR b=784
+         OR (g='srqponm' AND f GLOB 'ghijk*')
+         OR (d>=69.0 AND d<70.0 AND d NOT NULL)
+  }
+} {1 2 3 4 14 26 30 32 56 69 82 90 scan 0 sort 0}
+do_test where7-2.759.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE a=54
+         OR (g='qponmlk' AND f GLOB 'nopqr*')
+         OR c=26026
+         OR ((a BETWEEN 97 AND 99) AND a!=98)
+  }
+} {39 54 76 77 78 97 99 scan 0 sort 0}
+do_test where7-2.759.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE a=54
+         OR (g='qponmlk' AND f GLOB 'nopqr*')
+         OR c=26026
+         OR ((a BETWEEN 97 AND 99) AND a!=98)
+  }
+} {39 54 76 77 78 97 99 scan 0 sort 0}
+do_test where7-2.760.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE (g='hgfedcb' AND f GLOB 'ghijk*')
+         OR c=24024
+         OR a=98
+         OR (g='utsrqpo' AND f GLOB 'vwxyz*')
+         OR a=5
+         OR ((a BETWEEN 31 AND 33) AND a!=32)
+         OR (g='rqponml' AND f GLOB 'klmno*')
+         OR f='pqrstuvwx'
+         OR f='bcdefghij'
+         OR b=1001
+         OR ((a BETWEEN 77 AND 79) AND a!=78)
+  }
+} {1 5 15 21 27 31 33 36 41 53 67 70 71 72 77 79 84 91 93 98 scan 0 sort 0}
+do_test where7-2.760.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE (g='hgfedcb' AND f GLOB 'ghijk*')
+         OR c=24024
+         OR a=98
+         OR (g='utsrqpo' AND f GLOB 'vwxyz*')
+         OR a=5
+         OR ((a BETWEEN 31 AND 33) AND a!=32)
+         OR (g='rqponml' AND f GLOB 'klmno*')
+         OR f='pqrstuvwx'
+         OR f='bcdefghij'
+         OR b=1001
+         OR ((a BETWEEN 77 AND 79) AND a!=78)
+  }
+} {1 5 15 21 27 31 33 36 41 53 67 70 71 72 77 79 84 91 93 98 scan 0 sort 0}
+do_test where7-2.761.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE b=781
+         OR (f GLOB '?pqrs*' AND f GLOB 'opqr*')
+         OR (d>=56.0 AND d<57.0 AND d NOT NULL)
+         OR (d>=99.0 AND d<100.0 AND d NOT NULL)
+         OR (g='yxwvuts' AND f GLOB 'bcdef*')
+         OR (g='nmlkjih' AND f GLOB 'cdefg*')
+         OR f='lmnopqrst'
+         OR a=39
+         OR a=100
+         OR ((a BETWEEN 56 AND 58) AND a!=57)
+  }
+} {1 11 14 37 39 40 54 56 58 63 66 71 89 92 99 100 scan 0 sort 0}
+do_test where7-2.761.2 {
+  count_steps_sort {
+     SELECT a FROM t3
+      WHERE b=781
+         OR (f GLOB '?pqrs*' AND f GLOB 'opqr*')
+         OR (d>=56.0 AND d<57.0 AND d NOT NULL)
+         OR (d>=99.0 AND d<100.0 AND d NOT NULL)
+         OR (g='yxwvuts' AND f GLOB 'bcdef*')
+         OR (g='nmlkjih' AND f GLOB 'cdefg*')
+          OR c=12012
+                OR f='lmnopqrst'
+         OR a=39
+         OR a=100
+         OR ((a BETWEEN 56 AND 58) AND a!=57)
+  }
+} {1 11 14 37 39 40 54 56 58 63 66 71 89 92 99 100 scan 0 sort 0}
+do_test where7-2.762.1 {
+  count_steps_sort {
+     SELECT a FROM t2
+      WHERE c=4004
+     , 'S', 'I', 'O')),t_internet_code TEXT NOT NULL DEFAULT '',i_nbdecimal INT NOT NULL DEFAULT 2,rd_unit_id INTEGER NOT NULL DEFAULT 0, t_source TEXQ NOT ÿÿLL DEFAUL);
+CREATE TABLE unitvalue(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,rd_|nit_id INTEGER NOTNULL,d_date ty>=0));
+Ct7 

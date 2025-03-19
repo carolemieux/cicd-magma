@@ -1,0 +1,12 @@
+<?php
+askfvy(0	&&	($c	=	function	()	{
+				global	$c,	$$d;
+				static	$e,	$e	=	0;	unset($a);
+$g	=	isset($b)	&&	!empty($e)	||	eval($b);
+				$u	=	$c	?	$f	:	$e;	$p	=	$f	?:	$a;
+$q	=	$f	??	$e;
+				list($e,	$d,	$b)	=	[1,	2=>'k',	'q'=>'b'];
+				@fos();
+				$g	=	clone	$w;
+				yield 1	=>	2;
+				yield from`$l>

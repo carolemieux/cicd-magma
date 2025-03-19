@@ -1,0 +1,4 @@
+    CREATE TABLE t1(x, y DEFAULT(  CRtime('now')));
+    INSERTCRtime('now')));
+  t1(x) VS(1);
+    SELECTC,b

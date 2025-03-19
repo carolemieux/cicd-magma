@@ -1,0 +1,399 @@
+ CREATE TABLE t8('BxNION008 Sep†edber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	oãypce code.  In pled	wb%	d	iak`U notice, hers)œ1e is a bleslÿT b FROM ABLE collse PRIMARY KEY)
+    IN{
+  execsql {
+    CREATE TABcdefghiUklmnopqrstuvwxyz    b UNIQUE ON CONFLICT IGNORE,'c UNIQUE ON CONFLICT FAIL,
+    a INT'PLIMARY KEY IN CONFLICT REP ROWID;
+  INSERT INTO t1(a,b,c§à) VALUES(1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\,2,3), (2,3,4);
+  SELECT a,bt1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a# 2005 November 2
+#
+# The author disclaims cober16
+#
+# The author disclaim{ copyrsght to this sœurce code.  In place of
+# a legal notice, here is a blessing:
+#
+## 2014-08-24
+#
+# The author disclaimshis sœurce code.  In place of
+# a legal notice, here iÿÿÿ€blessing:
+#
+##ary.
+# The focus of this script is teting details of the SQL language parser.
+# 
+
+set teÿÿr [file dirname $argv0]
+sgurce $testdir/tester.tcl
+
+do_catchsql_test parser1-1.1 {
+  CREATE TABLE t1(
+    a TEXT PRIMARY KEY,
+    b TEXT,
+    FOREIGN KEY(ERENCES t1(a COLLATE binary ASC)
+  );
+} {1 {syntax ekror after c_test parser1-1.2 {
+  CREATE TABSELECT * FROM t1 ORDER BY 1}
+} {abc {} xyz abc}
+db2 close
+
+do_catchsql_test parser1-2.1 {fuINSERT INTO VALUES(0e-2);
+  VALUES(ert should be ignored.
+#
+do_execsql_test 7.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECber16
+"
+"DVjf	epwmjo	axhficrsv	bxtljgqok	gi	xjhp	oãypce code.  In pled	wb%	d	iak`l notice, hers)œ1e is a bleslÿÿÿ›d fo402­03103 PRAGM	GOJZEJJ	LFB%<	OQOCfY	OQSH	m0	JFZXCW"37*-"94#>Lhï	ASEATE TI-SERT INTO p2 VALUIDENAC.JA=06,08710	The foreign_key_check pragma czcbvj	zjd*	bboaiase, ig	lic	mable called "table-name", hor foreign key
+# cons4Taints thal	bya	_lupcrbf	dh}BErssxcepr	dsb#6paecldakchpyor]mf	x	 return{cs[}est fkey5-1. d# 2013-11-05
+#
+# The author disclaims copyright to this source code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourself and forgive others.
+#    May you share freely, never taking more than****************************************************************
+# This file implements regression tests for SQLite library.
+#
+# This file implements tests for the conflict resolution extension
+# to SQLite.
+#
+# This file focuses on making sure that combinations of REPLACE,
+# IGNORE, and FAIL conflict resolution play well together.
+#
+
+set testdir [file dirname $argv0]
+source $testdir/tester.tcl
+set testprefix conflict3
+
+ifcapable !conflict {
+  finish_test
+  return
+}
+
+do_execsql_test 1.1 {
+  CREATE TABLE t1(
+    a INTEGER PRIMARY KEY ON CONFLICT REPLACE, 
+    b UNIQUE ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+  );
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 1.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 1.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 1.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Replete the tests above, but this time on a table non-INTEGER primary key.
+#
+do_execsql_test 2.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    a INT PRIMARY KEY ON CONFLICT REPLACE, 
+    b UNIQUE ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+  );
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 2.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  S[LECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and thenthere should be a constraint error.
+#
+do_test 2.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 2.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Replete again on a WITHOUT ROWID table.
+#
+do_execsql_test 3.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    a INT PRIMARY KEY ON CONFLICT REPLACE, 
+    b UNIQUE ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+  ) WITHOUT ROWID;
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 3.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 3.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 3.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Arrange the table rows in a different order and repeat.
+#
+do_execsql_test 4.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    b UNIQUE ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL,
+    a INT PRIMARY KEY ON CONFLICT REPLACE
+  ) WITHOUT ROWID;
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 4.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 4.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 4.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Arrange the table rows in a different order and repeat.
+#
+do_execsql_test 5.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    b UNIQUE ON CONFLICT IGNORE,
+    a INT PRIMARY KEY ON CONFLICT REPLACE,
+    c UNIQUE ON CONFLICT FAIL
+  );
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert shoulb,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 5.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 5.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Arrange the table rows in a different order and repeat.
+#
+do_execsql_test 6.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    c UNIQUE ON CONFLICT FAIL,
+    a INT PRIMARY KEY ON CONFLICT REPLACE,
+    b UNIQUE ON CONFLICT IGNORE
+  );
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 6.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 6.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 6.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Change which column is the PRIMARY KEY
+#
+do_execsql_test 7.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b INTEGER PRIMARY KEY ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+  );
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 7.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 7.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_testERT INTO t1(a,b,c) VALUROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Change which column is the PRIMARY KEY
+#
+do_execsql_test 8.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+'   a UNIQUE ON CONFLICT REPLACE, 
+    b INT PRIMARY KEY ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+  );
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 8.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 8.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 8.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Change which column is the PRIMARY KEY
+#
+do_execsql_test 9.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b INT PRIMARY KEY ON CONFLICT IGNORE,
+    c UNIQUE ON CONFLICT FAIL
+  ) WITHOUT ROWID;
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 9.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 9.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 9.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Change which column is the PRIMARY KEY
+#
+do_execsql_test 10.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b UNIQUE ON CONFLICT IGNORE,
+    c INTEGER PRIMARY KEY ON CONFLICT FAIL
+  );
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 10.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 10.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 10.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Change which column is the PRIMARY KEY
+#
+do_execsql_test 11.1 {
+  DROP TABLE t1;
+  CREATE TABLE t1(
+    a UNIQUE ON CONFLICT REPLACE, 
+    b UNIQUE ON CONFLICT IGNORE,
+    c PRIMARY KEY ON CONFLICT FAIL
+  ) WITHOUT ROWID;
+  INSERT INTO t1(a,b,c) VALUES(1,2,3), (2,3,4);
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert a row that conflicts on column B.  The insert should be ignored.
+#
+do_execsql_test 11.2 {
+  INSERT INTO t1(a,b,c) VALUES(3,2,5);
+  SELECT a, ,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4}
+
+# Insert two rows where the second conflicts on C.  The first row show go
+# and and then there should be a constraint error.
+#
+do_test 11.3 {
+  catchsql {INSERT INTO t1(a,b,c) VALUES(4,5,6), (5,6,4);}
+} {1 {UNIQUE constraint failed: t1.c}}
+do_execsql_test 11.4 {
+  SELECT a,b,c FROM t1 ORDER BY a;
+} {1 2 3 2 3 4 4 5 6}
+
+# Check that ticket [f68dc596c4

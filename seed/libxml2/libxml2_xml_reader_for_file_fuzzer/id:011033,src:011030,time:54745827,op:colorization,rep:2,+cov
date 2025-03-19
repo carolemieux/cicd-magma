@@ -1,0 +1,7 @@
+>=\w<!DOCTYPE doc [
+<!ENTITY lt     "&#38;)91>"> 
+<!ENTITY gt     "&#62;"> 
+<!ENTITY amp    "&#38;#38;"> 
+<!ENTITY apos   "&#34;"> 
+]>
+<do

@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+<!ATTLIST doc atÉ†ExtEnt ENnnTITY #IMPLIEDD
+<!ENMITY nt1 "Hello">
+<!ENTITY ent2 SYSTEM "wrrld.txt">
+<!ENTITY entExt SYSTEMNDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe"c attrExtEnt="entE>
+ €€€€€€€€€€€€nt2;!
+//doc>
+
+<---->

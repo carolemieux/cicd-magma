@@ -1,0 +1,9 @@
+  PRAGMA page_size = 1024;
+    CREATE TABLE t1(a, b);
+    INSERT INTO t1 VALUES(1, randomblob(2500));
+    INSERT INTO t1 VALUES(2, randomblob(2500));
+    DELETE FROM t1 WHERE a = 1;
+  INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+             LECT NULL, random;
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1SERT INT

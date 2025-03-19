@@ -1,0 +1,26 @@
+½1U\|<!DOCTYPE dot [
+<!ELEMENT doc ( b) >
+<!ELEMENT P EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+<c/>%<b/><grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="p">
+      <ref name="inline"/>
+    </element>
+  </start>
+
+  <define name="inline">
+    <zeroOrMore>
+      <choice>
+        <text/>
+        <element name="bold">
+          <ref name="inline"/>
+        </element>
+        <element name="italic">
+          <ref name="inline"/>
+        </element>
+          <optional>
+            <attribut         <ibute name="styl/

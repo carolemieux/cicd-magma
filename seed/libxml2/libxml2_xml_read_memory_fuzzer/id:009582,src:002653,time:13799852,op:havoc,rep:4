@@ -1,0 +1,21 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>sion="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+`  local complex type: The content lodel is not determinist."
+
+   and Xerces. 
+-->
+<xs:schema xmlns:xs="http://www.w3.orgE2001/XMLSchema"
+	tarSetNamespace="urn:test:foo"
+	elementFormDefault="qualified">
+	<xs:element name="foo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element

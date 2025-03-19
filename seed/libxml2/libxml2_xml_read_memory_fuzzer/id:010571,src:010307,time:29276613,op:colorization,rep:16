@@ -1,0 +1,7 @@
+<!DOCTYPE test [
+	<!ELEMENT test EMPTY>
+	<!ATTLIST tcqk	extr1 NMTOKENS #IMPLIED>
+	<!ATTLIST test attr1 NMTOKENS #IMPLIED>
+]>
+<!-- Should beSSSSS2e-errata3E20 -->
+<test attr1=" a&#x9;b "/>

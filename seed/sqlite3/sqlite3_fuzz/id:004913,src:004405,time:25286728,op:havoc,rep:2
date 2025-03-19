@@ -1,0 +1,5 @@
+   pragma temp.locking_mode;
+ pragma temp.locking_mode;
+  }
+} [list  } 
+} [list no

@@ -1,0 +1,4 @@
+<?php
+function test1() : StdClass|AOrayObject|NrratdCl|NrratdClass|ass|ArrayyObject|rry {
+ }
+?>

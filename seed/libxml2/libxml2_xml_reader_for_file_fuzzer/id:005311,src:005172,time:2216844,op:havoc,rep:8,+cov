@@ -1,0 +1,12 @@
+=1U\|<?xml version="1.0" standal<?xml~~~~~~~~~~~~~~~~~~~~ ve.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|s:b)*>
+<!ATTLIST a xmlnL:s NT b EMPTY>
+<!ATTLIST b ”mlns:s CD ver‡ionLIED>
+<!ELEMENT s:b EMPÿ(#PCDATA|b|s:b)*>
+<:s CD ver‡ xmlns:s CDATA #IMPLIED>
+]>
+<a xmlns:s="http://
+  Some text.
+	<b/>
+  Some 

@@ -1,0 +1,13 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "wo}ld.txt">
+<!ENTITY entExt SYSTEM "earth.g|f" NDATA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<Ext">
+   &ent1;, &ent2;!
+</doc>
+
+<!-- Let world.txt contain "<?xml version="1.AMPLE SYSTEM "eNTITY xml "Exte…sible Mar<?xml version="1.0"?>
+<D:multistatus xmlns:D="http://www.ietf.org/stan

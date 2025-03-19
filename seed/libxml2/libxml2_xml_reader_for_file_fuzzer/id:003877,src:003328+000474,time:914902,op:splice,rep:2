@@ -1,0 +1,12 @@
+=>[\<?xml<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-C//DVG April 1999//EN" 
+  "://w3.org/Graphics/SVG/svg-19990412.dtd">
+<svg width="4in" height="3in">
+  <defs>
+    <script><![CDATA[ Beep on mouseclick */
+      MouseClickHandler() { beep(); }
+     ]]>
+    </script>
+  </defs>
+  <circle onclick="MouseClickHandt>
+  </dler()" r="85"/>

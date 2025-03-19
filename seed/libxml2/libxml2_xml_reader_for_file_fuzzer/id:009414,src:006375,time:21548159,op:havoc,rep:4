@@ -1,0 +1,936 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://½1U\|<?xml version="1.0" encoding="utf-8"?>
+<testSuite>
+  <testSuite>
+    <documentation>Datatype dateTime</documentation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="dateTime"/>
+        </element>
+      </correct>
+      <valid>
+        <doc>2001-12-01T19:45:00</doc>
+      </valid>
+      <valid>
+        <doc>2001-12-01T19:45:00Z</doc>
+      </valid>
+      <valid>
+        <doc>2001-12-01T19:45:00-11:59</doc>
+      </valid>
+      <valid>
+        <doc>0001-01-12T00:00:00+12:00</doc>
+      </valid>
+      <invalid>
+        <doc>2001-12-1T19:45:00+24:00</doc>
+      </invalid>
+      <invalid>
+        <doc>2001-12-1T19:45:00</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="dateTime">2001-12-01T19:45:00</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>2001-12-01T19:45:00.00</doc>
+      </valid>
+      <invalid>
+        <doc>2001-12-01T19:45:00Z</doc>
+      </invalid>
+      <invalid>
+        <doc>2001-12-01T19:45:00.00Z</doc>
+      </invalid>
+      <invalid>
+        <doc>2001-12-01T20:45:00+01:00</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="dateTime">2001-12-01T19:45:00Z</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>2001-12-01T19:45:00.00Z</doc>
+      </valid>
+      <valid>
+        <doc>2001-12-01T20:45:00+01:00</doc>
+      </valid>
+      <invalid>
+        <doc>2001-12-01T19:45:00</doc>
+      </invalid>
+      <invalid>
+        <doc>2001-12-01T19:45:00.00</doc>
+      </invalid>
+    </testCase>
+  </testSuite>
+  <testSuite>
+    <documentation>Datatype anyURI</documentation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="anyURI"/>
+        </element>
+      </correct>
+      <valid>
+        <doc>foobar</doc>
+      </valid>
+      <valid>
+        <doc>http://www.example.com</doc>
+      </valid>
+      <valid>
+        <doc>http://ji%6d@www.example.com</doc>
+      </valid>
+      <valid>
+        <doc>http://www.example.co%6d</doc>
+      </valid>
+      <valid>
+        <doc>nosuchscheme:stuff</doc>
+      </valid>
+      <invalid>
+        <doc>foo$bar:stuff</doc>
+      </invalid>
+      <invalid>
+        <doc>f%oobar</doc>
+      </invalid>
+    </testCase>
+  </testSuite>
+  <testSuite>
+    <documentation>Datatype integer</documentation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="integer"/>
+        </element>
+      </correct>
+      <valid>
+        <doc>10</doc>
+      </valid>
+      <valid>
+        <doc>01</doc>
+      </valid>
+      <valid>
+        <doc>0123456789</doc>
+      </valid>
+      <valid>
+        <doc>+10</doc>
+      </valid>
+      <valid>
+        <doc>-10</doc>
+      </valid>
+      <invalid>
+        <doc>1.0</doc>
+      </invalid>
+      <invalid>
+        <doc>.1</doc>
+      </invalid>
+      <valid>
+        <doc>9999999999999999999999999999999</doc>
+      </valid>
+      <invalid>
+        <doc>1.</doc>
+      </invalid>
+      <invalid>
+        <doc>0.</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="integer">0</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>+0</doc>
+      </valid>
+      <valid>
+        <doc>-0</doc>
+      </valid>
+      <valid>
+        <doc>00</doc>
+      </valid>
+      <invalid>
+        <doc>10</doc>
+      </invalid>
+      <invalid>
+        <doc>+10</doc>
+      </invalid>
+      <invalid>
+        <doc>+0010</doc>
+      </invalid>
+      <invalid>
+        <doc>010</doc>
+      </invalid>
+      <invalid>
+        <doc>-10</doc>
+      </invalid>
+      <invalid>
+        <doc>-0010</doc>
+      </invalid>
+      <invalid>
+        <doc>-010</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="integer">10</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>+10</doc>
+      </valid>
+      <valid>
+        <doc>+0010</doc>
+      </valid>
+      <valid>
+        <doc>010</doc>
+      </valid>
+      <invalid>
+        <doc>0</doc>
+      </invalid>
+      <invalid>
+        <doc>+0</doc>
+      </invalid>
+      <invalid>
+        <doc>-0</doc>
+      </invalid>
+      <invalid>
+        <doc>00</doc>
+      </invalid>
+      <invalid>
+        <doc>-10</doc>
+      </invalid>
+      <invalid>
+        <doc>-0010</doc>
+      </invalid>
+      <invalid>
+        <doc>-010</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="integer">-10</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>-0010</doc>
+      </valid>
+      <valid>
+        <doc>-010</doc>
+      </valid>
+      <invalid>
+        <doc>0</doc>
+      </invalid>
+      <invalid>
+        <doc>+0</doc>
+      </invalid>
+      <invalid>
+        <doc>-0</doc>
+      </invalid>
+      <invalid>
+        <doc>00</doc>
+      </invalid>
+      <invalid>
+        <doc>10</doc>
+      </invalid>
+      <invalid>
+        <doc>+10</doc>
+      </invalid>
+      <invalid>
+        <doc>+0010</doc>
+      </invalid>
+      <invalid>
+        <doc>010</doc>
+      </invalid>
+    </testCase>
+  </testSuite>
+  <testSuite>
+    <documentation>Datatype duration</documentation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration"/>
+        </element>
+      </correct>
+      <valid>
+        <doc>P1Y</doc>
+      </valid>
+      <valid>
+        <doc>P1Y0M2DT17H5M12S</doc>
+      </valid>
+      <valid>
+        <doc>-P1Y</doc>
+      </valid>
+      <valid>
+        <doc>P60D</doc>
+      </valid>
+      <valid>
+        <doc>PT24H</doc>
+      </valid>
+      <valid>
+        <doc>PT1.2S</doc>
+      </valid>
+      <invalid>
+        <doc>P24h</doc>
+      </invalid>
+      <invalid>
+        <doc>P24H</doc>
+      </invalid>
+      <invalid>
+        <doc>P1YT</doc>
+      </invalid>
+      <invalid>
+        <doc>P</doc>
+      </invalid>
+      <invalid>
+        <doc>-P</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="duration">-P6M</value>
+        </element>
+      </correct>
+      <invalid>
+        <doc>P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>-P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y0M</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y0M0DT0H0M0.0S</doc>
+      </invalid>
+      <invalid>
+        <doc>P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1S</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1.0S</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="duration">P0Y</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>-P0Y</doc>
+      </valid>
+      <invalid>
+        <doc>-P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y0M</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y0M0DT0H0M0.0S</doc>
+      </invalid>
+      <invalid>
+        <doc>P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1S</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1.0S</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="duration">P1Y</value>
+        </element>
+      </correct>
+      <valid>
+        <doc>P001Y</doc>
+      </valid>
+      <valid>
+        <doc>P001Y0M</doc>
+      </valid>
+      <valid>
+        <doc>P1Y0M0DT0H0M0.0S</doc>
+      </valid>
+      <invalid>
+        <doc>-P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>-P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1S</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1.0S</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="duration">P6M</value>
+        </element>
+      </correct>
+      <invalid>
+        <doc>-P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>-P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y0M</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y0M0DT0H0M0.0S</doc>
+      </invalid>
+      <invalid>
+        <doc>PT6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1S</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1.0S</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="duration">PT6M</value>
+        </element>
+      </correct>
+      <invalid>
+        <doc>-P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>-P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y0M</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y0M0DT0H0M0.0S</doc>
+      </invalid>
+      <invalid>
+        <doc>P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1S</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1.0S</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <value type="duration">PT1S</value>
+        </element>
+      </correct>
+      <valid>
+  /     <doc>PT1.0S</doc>
+      </valid>
+      <invalid>
+        <doc>-P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>-P0Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P001Y0M</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y0M0DT0H0M0"0S</doc>
+      </invalid>
+      <invalid>
+        <doc>P6M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT6M</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT1M</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>PT61S</doc>
+      </valid>
+      <invalid>
+        <doc>PT1M</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT61S</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT1M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT61S</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT59S</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>PT1M</doc>
+      </valid>
+      <invalid>
+        <doc>PT59S</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT1M</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT59S</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1M</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT60S</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT1M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT60S</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">   <param name="minExclusive">PT1M</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT60S</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1M</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+      :     <param name="minExclusive">PT1H</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>PT61M</doc>
+      </valid>
+      <invalid>
+        <doc>PT1H</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT61M</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT1H</doc>
+      </invalid>
+      <invalid>
+        <doc>PT61M</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datUtypes">
+          <data type="duration">
+            <param name="minExclusive">PT59M</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>PT1H</doc>
+      </valid>
+      <invalid>
+        <doc>PT59M</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT1H</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT59M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1H</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns=ypes">
+  "http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT60M</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT1H</doc>
+      </invalid>
+      <invalid>
+        <doc>PT60M</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT1H</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT60M</doc>
+      </invalid>
+      <invalid>
+        <doc>PT1H</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P1D</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>PT25H</doc>
+      </valid>
+      <invalid>
+        <doc>P1D</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT25H</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>P1D</doc>
+      </invalid>
+      <invalid>
+        <doc>PT25H</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">PT23H</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>P1D</doc>
+      </valid>
+      <invalid>
+        <doc>PT23H</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P1D</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT23H</doc>
+      </invalid>
+      <invalid>
+        <doc>P1D</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P1D</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>PT24H</doc>
+      </invalid>
+      <invalid>
+        <doc>P1D</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration"F
+            <param name="minExclusive">PT24H</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>P1D</doc>
+      </invalid>
+      <invalid>
+        <doc>PT24H</doc>
+  "doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P1Y</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>P13M</doc>
+      </valid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P13M</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P13M</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P11M</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>P1Y</doc>
+      </valid>
+      <invalid>
+        <doc>P11="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P1Y</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>P12M</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P364D</param>
+          </data>
+        </element>
+      </correct>
+      <valid>
+        <doc>P1Y</doc>
+      </valid>
+      <invalid>
+        <doc>P364D</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P1Y</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>P364D</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P1Y</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>P365D</doc>
+      </invalid>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+    </testCase>
+    <testCase>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="duration">
+            <param name="minExclusive">P365D</param>
+          </data>
+        </element>
+      </correct>
+      <invalid>
+        <doc>P1Y</doc>
+      </invalid>
+      <invalid>
+        <doc>P365D</doc>
+      </invalid>
+    </testCase>
+      <documentation>Datatype ENTITY</documentation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="ENTITY"/>
+        </element>
+      </correct>
+      <invalid>
+        <doc></doc>
+      </invalid>
+      <invalid>
+        <doc>foo</doc>
+      </invalid>
+      <valid dtd="&#10;&lt;!DOCTYPE doc [&#10;&lt;!ENTITY foo SYSTEM 'whatever' NDATA jpeg&gt;&#10;]&gt;">
+        <doc>foo</doc>
+      </valid>
+    </testCase>
+  </testSuite>
+  <testSuite>
+    <documentation>Datatype ENTITIES</documentation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="ENTITIES"/>
+        </element>
+      </correct>
+      <invalid>
+        <doc></doc>
+      </invalid>
+      <invalid>
+        <doc>foo</doc>
+      </invalid>
+      <valid dtd="&#10;&lt;!DOCTYPE doc [&#10;&lt;!ENTITY foo SYSTEM 'whatever' NDATA jpeg&gt; &#10;&lt;!ENTITY bar SYSTEM 'whatever' NDATA jpeg&gt; &#10;]&gt;">
+        <doc> foo bar </doc>  

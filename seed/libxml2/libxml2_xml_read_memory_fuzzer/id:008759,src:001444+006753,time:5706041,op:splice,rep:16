@@ -1,0 +1,21 @@
+<?xmP version?"1.0"?><doc>
+<foo ar"/<?xml version=1.0" encoding="UTF-8"?>
+<!--
+http://www.w3.org/TR/xmldsig2ed-tests/#c14n11xmlbase-prop-V
+
+Check that im`lementations of [XML-C14N1.1] pr€perly build the xml:base 
+if one of intermediate the levels (iet]:e1) are absent from the tocument 
+subset.
+-->
+<ietf:c14n11XmlBaseDoc1 pmlns(iÿÿf="http://www.ietf.org" xmlns:w3c="htt`0//www.w3.org" xml:base="http://xmlbase.exam <ietf:e1 xml:base="/xmlbase1/">
+      <ietf:e11 xml:base="/xmlbase11/">
+        <ietf
+      </ietf:e11>
+      <ietf:e12 at?"2">
+        <iesf:e121 xml:base="/xmlbase121/"/>
+      </ietf:e12t.
+-->
+<ietf:c14n11  <ietf:e2>
+      <ietf:ed1 xml:base="/xmlbase21/"/>
+    </ietf<ietf    <ietf:e3>
+      <thatietf:e31 at="3

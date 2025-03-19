@@ -1,0 +1,16 @@
+=;[\<?ml iersioj<?xml version<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "soexType>
+			<semethind">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should acolon: &a;
+&b; sh
+]>
+
+<somedoc>ter colter ca; shon: &a;

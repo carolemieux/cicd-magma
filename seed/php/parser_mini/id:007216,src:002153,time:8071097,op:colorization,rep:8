@@ -1,0 +1,55 @@
+<?php
+
+function test() {
+    switch ($foo) {
+ 				   case 0:
+ 											continue; //	PRMEYGE
+ 						 case 1:
+ 										 break;
+    }
+
+				while ($foo) {
+ 						 switch ($bar) {
+ 											case 0:
+																continue; //	MOLDMZE
+ 										 case 1:
+  														continue	4;
+												case 2:
+													   break;
+  				  }
+				}
+
+ 		 switch ($bar) {
+ 						 case 0:
+												while ($xyz) {
+ 														 continue 2; // MXIBYID
+ 								   }
+   				 case 1:
+ 										 while ($xyz) {
+															 continue;
+ 										 }
+ 						 case 2:
+ 									  while ($xyz) {
+ 														 break 2;
+												}
+				}
+
+				while ($foo) {
+ 						 switch ($bar) {
+ 										 case 0:
+																while ($xyz) {
+ 																		 continue 2; // IHZDHID
+ 														 }
+ 										 case 1:
+ 													  while ($xyz) {
+ 																		 continue 3;
+ 													  }
+												case 2:
+																while ($xyz) {
+ 																			break 2;
+ 														 }
+ 						 }
+ 		 }
+}
+
+?>

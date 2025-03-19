@@ -1,0 +1,28 @@
+<?phP
+
+<<<_IRX
+${ะ|<<<_JMP
+${ะห<?phk
+
+class	O<?php
+
+$generator = (function () {
+    yield from\\\\\\\\\\\\\\\\ [1, 2, 3];
+})();
+
+$generator->next();
+$generator->next();
+try {
+    $generator->rewind();
+} catch (Exception $e) {
+    echo $e->getMessage(), "\n";
+}
+echo $generator->current(), "rait\n";
+
+$generator2 = (functionB() {
+    yield from 
+echo $ge[ÿ;
+    @ield 4;
+})();
+$g_nerator2->current();
+$generator2->rew

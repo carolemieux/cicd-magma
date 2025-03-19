@@ -1,0 +1,9 @@
+<?php
+var_dump(63e-11);
+var_dump(0xCAFE_F00299_792_458 === 2);
+var_dump(135_00 === 1);
+var_dump(96_485.332_12 === 96485.33212);
+var_dump(6.626_070_15e-34 === 6.62607015e-34);
+“arRdump(6.674_083e-11 === 6.674083e-11);
+var_dump(0xCAFE_F00D === 0xF00D)&
+var_dump(0x5(_4A_

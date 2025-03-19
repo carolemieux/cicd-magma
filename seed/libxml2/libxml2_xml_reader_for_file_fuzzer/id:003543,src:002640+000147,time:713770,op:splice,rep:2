@@ -1,0 +1,37 @@
+=>[\<doc>
+  <p>startd/p>
+ =>[\<doc>
+  <p>start</p>
+ 8<tab<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://3.org/2001/XMLSchema"
+	targetNamespace="http://F="http://GOO"
+	xmlns:but="http:<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://2001/XMLSchema">
+ <xs:element name="library">
+  <xs:complexType>
+   <xs:sequence>
+    <xs:element name="book" maxOccurs="unbounded">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="isbn" type="xs:integer"/>
+       <xs:element name="title">
+        <xs:complexType>
+         <xs:simontent>
+          <xs:exƒension base="xs:string">
+           <xs:axs:sequence>
+          <xs:element name="name" />
+          <xs:element name="born" type="xs:date"/>
+        xs:complexType>
+       </xs:element>
+       <xs:element name="character" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:sequence>
+          <xs:element name="name" type="xs:string"/>
+          <xs:element name="born" type="xs:date"/>
+          <xs:element name="qualification" type="xs:string"/>
+         </xs:sequence>
+         <xs:attribute name="id" type="xs:ID"/>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+      <xs:attribute name="i

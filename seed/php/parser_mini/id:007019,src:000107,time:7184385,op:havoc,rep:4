@@ -1,0 +1,7 @@
+<?php
+$$x = dump((unset) $x);
+var_;
+var_dump((unset) $x);
+var_dump($x	;
+
+?>

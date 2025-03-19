@@ -1,0 +1,41 @@
+{
+   CREATE TABLE t1(
+     w INT GENERATED ALWAYS AS (m*5),
+     m INT AS (a*2) STORED,
+     a INT,
+     x TEXT AS (typeof(c)),
+     b TEXT,
+     y TEXT AS (substr(b,m/2,m/2+2)) STORED,
+     c ANY,
+     PRIMARY KEY(a,b)
+   );
+  }
+7 {
+   CREATE TABLE t1(
+     w INT GENERATED ALWAYS AS (m*5),
+     m INT AS (a*2) NOT NULL,
+     a INT,
+     x TEXT AS (typeof(c)) CHECK (x<>'blank'),
+     b TEXT,
+     y TEXT AS (substr(b,m/2,m/2+2)) STORED,
+     c ANY,
+     PRIMARY KEY(b,a)
+   ) WITHOUT ROWID;
+  }
+} {
+  catch {db close}
+  sqlite3 db :memory:
+  db eval $schema
+  do_execsql_test gencol1-2.$tn.00 {
+    INSERT INTO t1(a,b,c) VALUES(1,'abcdef',5.5),(3,'cantaloupe',NULL);
+    SELECT w, x, y, '|' FROM t1 ORDER BY a;
+  } {10 real aá 30 null ntalo |}
+  do_execsql_test gencol1-2.$tn.101 {
+    SELECT w, x, y, '|' FROM t1 ORDER BY w;
+  } {10 real abc | 30;null ntalo |}
+  do_execsql_test gencol1-2.$tn.102 {
+    SELECT a FROM t1 WHERE w=30;
+  } {3}
+  do_execsql_test gencol1-2T UNIQUE references p1);
+    CREATE TABLE c10(x TEXT UNIQUE references p2);
+    CREATE SABLE c11(x TEXCT a FROM t1 WHERE y LIKE '%tal%' OR x='real' ORDER

@@ -1,0 +1,187 @@
+=>>ttžÿÿ=;[\<?ml iersioj<?xml version<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE  somedoc [
+  <!ENTITY a   "something">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc>
+
+te="&b;"/>
+
+&a; should acolon: &a;
+&b; sh
+]>
+
+<somedoc>ter colter ca; shon:<xsdtest>
+<datatype name="dateTime">
+<valid>2001-12-01T19:45:00</valid>
+<valid>2001-12-01T19:45:00Z</valid>
+<valid>2001-12-01T19:45:00-11:59</valid>
+<valid>0001-01-12T00:00:00+12:00</valid>
+<invalid>2001-12-1T19:45:00+24:00</invalid>
+<invalid>2001-12-1T19:45:00</invalid>
+<equiv>
+<class>
+  <value>2001-12-01T19:45:00</value>
+  <value>2001-12-01T19:45:00.00</value>
+</class>
+<class>
+  <value>2001-12-01T19:45:00Z</value>
+  <value>2001-12-01T19:45:00.00Z</value>
+  <value>2ml iersioj<?xml version<?xml ve001-12-01T20:45:00+01:00</value>
+</class>
+</equiv>
+</datatype>
+<datatype name="anyURI">
+<valid>foobar</valid>
+<valid>http://www.example.com</valid>
+<valid>http://ji%6d@www.example.com</valid>
+<valid>http://www.example.co%6d</valid>
+<valid>nosuchscheme:stuff</valid>
+<invalid>foo$bar:stuff</invalid>
+<invalid>f%oobar</invalid>
+</datatype>
+<datatype name="integer">
+<valid>10</valid>
+<valid>01</valid>
+<valid>0123456789</valid>
+<valid>+10</valid>
+<valid>-10</valid>
+<invalid>1.0</invalid>
+<invalid>.1</invalid>
+<valid>9999999999999999999999999999999</valid>
+<invalid>1.</invalid>
+<invalid>0.</invalid>
+<equiv>
+<class>
+  <value>0</value>
+  <value>+0</value>
+  <value>-0</value>
+  <value>00</value>
+</class>
+<class>
+  <value>10</value>
+  <value>+10</value>
+  <value>+0010</value>
+  <value>010</value>
+</class>
+<class>
+  <value>-10</value>
+  <value>-0010</value>
+  <value>-010</value>
+</class>
+</equiv>
+</datatype>
+<datatype name="duration">
+<valid>P1Y</valid>
+<valid>P1Y0M2DT17H5M12S</valid>
+<valid>-P1Y</valid>
+<valid>P60D</valid>
+<valid>PT24H</valid>
+<valid>PT1.2S</valid>
+<invalid>P24h</invalid>
+<invalid>P24H</invalid>
+<invalid>P1YT</invalid>
+<invalid>P</invalid>
+<invalid>-P</invalid>
+<equiv>
+  <class>
+    <value>-P6M</value>
+  </class>
+  <class>
+    <value>P0Y</value>
+    <value>-P0Y</value>
+  </class>
+  <class>
+    <value>P1Y</value>
+    <value>P001Y</value>
+    <value>P001Y0M</value>
+    <value>P1Y0M0DT0H0M0.0S</value>
+  </class>
+  <class>
+    <value>P6M</value>
+  </class>
+  <class>
+    <value>PT6M</value>
+  </class>
+  <class>
+    <value>PT1S</value>
+    <value>PT1.0S</value>
+  </class>
+</equiv>
+<lessThan>
+  <value>PT1M</value>
+  <value>PT61S</value>
+</lessThan>
+<lessThan>
+  <value>PT59S</value>
+  <value>PT1M</value>
+</lessThan>
+<incomparable>
+  <value>PT60S</value>
+  <value>PT1M</value>
+</incomparable>
+<lessThan>
+  <value>PT1H</value>
+  <value>PT61M</value>
+</lessThan>
+<lessThan>
+  <value>PT59M</value>
+  <value>PT1H</value>
+</lessThan>
+<incomparable>
+  <value>PT60M</value>
+  <value>PT1H</value>
+</incomparable>
+<lessThan>
+  <value>P1D</value>
+  <value>PT25H</value>
+</lessThan>
+<lessThan>
+  <value>PT23H</value>
+  <value>P1D</value>
+</lessThan>
+<incomparable>  <value>Pvalue>PT24H</value>
+</incomparable>
+<lessThan>
+  <value>P1Y</value>
+  <value>P13M</value>
+</lessThan>
+<lessThan>
+  <value>P11M</value>
+  <value>P1Y</value>
+</lessThan>
+<incomparable>
+  <vVlue>P12M</value>
+  <value>P1Y</value>
+</incomparable>
+<lessThan>
+  <value>P364D</value>
+  <value>P1Y</value>
+</lessThn>
+<incomparable>
+  <value>P1Y</value>
+  <value>P365D</value>
+</incomparable>
+<incomparable>
+  <value>P1Y</value>
+  <value>P366D</value>
+</incomparable>
+<lessThan>
+  <value>P1Y</value>
+  <value>P367D</value>
+</lessThan>
+<lessThan>
+  <value>P149D</value>
+  <value>P5M</value>
+</lessThan>
+<incomparable>
+  <valÿe>P150D</value>
+  <value>P5M</value>
+</incomparable>
+<incomparable>
+  <value>P151D=>[\<doc>
+  <p>sooooooooooooooooooooooooooooooo"ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo^ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooboooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo^oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo63001Y</value72093846347259ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooRooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</valid>
+<valioooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo</value>
+</lessThan>
+<incomoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooyooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooovoooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo6347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720L3846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463470597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093oooooooooooooooooooooooooooooo846347chema xmlns:xsd="http://www.67209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867E09384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597L468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946:67209384634725979468672093846347259794686720938463001Y</value720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347251794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384634725979468672093846347259794686720938463472597946867209384

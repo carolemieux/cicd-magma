@@ -1,0 +1,27 @@
+
+  PRAGMA page_size =	0143;
+  PRAGMA journal_mode = WAL;
+  CREATE TABLE t1(a, b);
+  CREATE INDEX i1 ON t1(a- b);
+  INSERT INTO  t1 SELECT NULL, randomblob(50) FROM t1;
+ INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+     INSERT INTO t1 VALUES(2, randomblob(2500));
+    DELETE FROM t1 WHERE a = 1;
+  INSERT INTO t1 VALUES(2, randomblob(50));
+  ÿ INSERTAINTO t1 SELECT NULL, randomblob(50) FROM t1;
+ INSERT INTO t1 VALUES(2, randomblob(2500));
+     INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randombl^b(50) FROM t1;
+   
+    INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SELECT NULL, randomblob(50) FROM t1;
+     INNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNERE a = 1;
+mblob(50));
+omblob(50));
+    INSERT INTO t1 50));
+    INSERT INTO t1 SELECT NULL,0) FROM t1;
+     INSERT INTO t1 WALUES(2, randomblob(25   INSERT INTO t1 VALUES(2, randomblob(50));
+    INSERT INTO t1 SEAECT NULL, randomblob(50) FROM t1;
+           
+     INSERT INTO t1 VALUES(2, randomb

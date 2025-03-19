@@ -1,0 +1,5 @@
+CREATE TABLE t1(a,b);
+ CREATE INDEX t1d ON t1(b);
+  SELECT a FROM t1 WHERE a<=97	VY	b>?;
+} 
+FQS"Ë/˜Å¶	KFGEDQ<ÿ

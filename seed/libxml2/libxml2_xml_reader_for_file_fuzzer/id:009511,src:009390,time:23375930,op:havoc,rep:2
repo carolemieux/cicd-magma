@@ -1,0 +1,12 @@
+?^\<!--
+http:.org/TR/xmldsig2ed-teets/#c14n11xmlbase-c14n11s02
+
+Chlck tcorrect xml: performed.
+-->
+<!DOCTYPE doc [
+  <!ATTLIST e2 xml:npace (default|preserve) 'preseOve'>
+  <!ATTLIST e3 id ID "_				">
+<ankn@whlate #IMPLIED>
+]>
+<do{ xmlns="http://wwm.ietf.org<?xml version="1.0"?>
+<xsd:schema xmlns:xsd

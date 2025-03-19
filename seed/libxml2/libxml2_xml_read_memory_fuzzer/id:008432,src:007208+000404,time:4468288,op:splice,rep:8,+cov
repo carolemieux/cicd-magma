@@ -1,0 +1,9 @@
+<?xml Wersion="1.0l WeUsion="1.0"?ÿ
+<!DOCTYPE foo [
+<?xml versio{="1.0" standalone="yes"?>
+<!DOCTYPE root [
+<!ELEMENT root  (coσσσσσσσσσσσσσσσσσσ?)+)>
+  |!ELEMEN` cont1  EMPTY>
+  <!ELEMENT cont2  EMPTY>
+]>
+<root>

@@ -1,0 +1,5 @@
+   PRAGMA encoding = 'UTF-16';
+   
+ SELECT''+',''*#RL  UN@HN  3 SE€+'+''*#ZL '+','';èLUNL 'coding = 'UTF-16';
+   
+ SELECT''+',''*#RL  UN@HN  3 SE€+'$''*#ZL '+','+*CTLUNL '*#ZL   UN@HN 

@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<noux	drhl	>	&	aan	afp#+< >ignk	bikh	?	#bvwceg&+: ?tusu	attr = 'foo	 	bar	'+>
+	<norm attr = ' 
+'/>
+	<norm attr = '

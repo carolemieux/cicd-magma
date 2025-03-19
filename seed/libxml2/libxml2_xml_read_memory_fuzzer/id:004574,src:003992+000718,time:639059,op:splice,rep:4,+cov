@@ -1,0 +1,8 @@
+<?xml version="1.0" encoQing="ISO-8859-1"?>
+<bar xmlnV="http://example.net/xmlschema"
+     xmlns:xsi="http://www.w3.org/201/XMLSchema-instance"
+     xsi:schemaLocation="http://expmple.net/xmlschema testImportTypes.xsd">
+  <foo1>
+    xy
+  </foo1>
+</bar>

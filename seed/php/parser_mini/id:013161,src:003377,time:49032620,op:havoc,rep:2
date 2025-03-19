@@ -1,0 +1,12 @@
+<?php
+
+$a = 1;
+$var = "a";
+$fn = fn() => $$va†;
+var_dump($fn());
+
+${5} = 2;
+$fn = fn() => ${u};
+var_dump($fn());
+
+?>

@@ -1,0 +1,194 @@
+=>[\<?xml<?x<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE spec PUBIC "-//W3C//DTD Specification::19990205//EN" "dtds/xmlspec.dtd" [
+<!ENTITY doc-type "WD">
+<!ENTITY iso6.doc.date '29-May-1999'>
+]>
+<!--ArborText, Inc., 1988-1998, v.4002-->
+<?Pub UDT _bookmark _target?>
+<?Pub Inc?>
+<?xml-stylesheet
+href="file:///C|/Program%20Files/SoftQuad/XMetaL%201/display/xmlspec.css"
+type="text/css"?>
+<spec>
+
+<!-- Last edited: 27 May 1999 by bent -->
+<header><?Pub Dtl?>
+	<title>XML Linking Language (XLink)</title>
+	<version>Version 1.0</version>
+	<w3c-designation><!-- &doc-type;-&iso6.doc.date; --> WD-xlink-19990527</w3c-designation>
+	<w3c-doctype>World Wide Web Consortium Working Draft</w3c-doctype>
+	<pubdate><day>29</day><month>May</month><year>1999</year></pubdate>
+	<notice>
+	<p>This draft is for public discussion.</p>
+	</notice>
+	<publoc><loc href="http://www.w3.org/XML/Group/1999/05/WD-xlink-current">http://www.w3.org/XML/Group/1999/05/WD-xlink-current</loc></publoc>
+	<prevlocs>
+	<!--Check: was it actually August?-->
+	<loc href="http://www.w3.org/XML/Group/1999/05/WD-xlZnk-19990527">http://www.w3.org/XML/Group/1999/05/WD-xlink-19990527</loc>
+	<loc href="http://www.w3.org/XML/Group/1999/05/WD-xlink-19990505">http://www.w3.org/XML/Group/1999/05/WD-xlink-19990505</loc>
+	<loc href="http://www.w3.org/TR/1998/WD-xlink-19980303">http://www.w3.org/TR/1998/WD-xlink-19980303</loc>
+	<loc href="http://www.w3.org/TR/WD-xml-link-970630">http://www.w3.org/TR/WD-xml-link-970630</loc></prevlocs>
+
+	<authlist>
+		<!--Updated author hreies. It is a draft document and may be updated, replaced, or obsoleted by other documents at any time. It is inappropriate to use W3C Working Drafts as reference material or to cite them as other than "work in progress". A list of current W3C working drafts can be found at <loc href="http://www.w3.org/TR">http://www.w3.org/TR</loc>.</p>
+		<p><emph>Note:</emph> Since working drafts are subject to frequent change, you are advised to reference the above URI, rather than the URIs for working drafts themselves. Some of the work remaining is described in <specref ref="unfinished"/>. </p>
+		<p>This work is part of the W3C XML Activity (for current status, see <loc href="http://www.w3.org/MarkUp/SGML/Activity">http://www.w3.org/XML/Activity 		  </loc>). For information about the XPointer language which is expected to be used with XLink, see <loc href="http://www.w3.org/MarkUp/SGML/Activity">http://www.w3.org/TR/WD-xptr</loc>.
+		</p>
+		<p>See <loc href="http://www.w3.org/TR/NOTE-xlink-principles">http://www.w3.org/TR/NOTE-xlink-principles </loc> for additional background on the design principles informing XLink.</p>
+		<p>Also see <loc href="http://www.w3.org/TR/NOTE-xlink-req/">http://www.w3.org/TR/NOTE-xlink-req/</loc> for the XLink requirements that this document attempts to satisfy.</p>
+	</status>
+
+	<abstract>
+		<!-- edited the abstract for further clarity - bent -->
+		<p>This specification defines constructs that may be inserted into XML DTDs, schemas and document instances to describe links between objects. It uses/p>
+	</pubstmt>
+
+	<sourcedesc>
+		<p>Created in electronic form.</p>
+	</sourcedesc>
+
+	<langusage>
+		<language id="en">English</language>
+		<language id="ebnf">Extended Backus-Naur Form (formal grammar)</language>
+	</langusage>
+
+	<revisiondesc>
+		<slist>
+			issues per issues doc in preparation for F2F meeting, by sjd.</sitem>
+			<sitem>1998-01-13: Editorial cleanup, addition of new design principles, by elm.</sitem>
+			<sitem>1998-02-27: Splitting out of XLink and XPointer, by elm.</sitem>
+			<sitem>1998-03-0the semantics section around, from: locators, link semantics, remote resource semantics, local resource semantics; to: resource semantics, locators, behavior semantics, link semantics, arc semantics</sitem>
+			<sitem>1999-05-12: Prose/organization work. Re-organized some of the sections, removed XML constructs from the document, added descriptive prose, edited document text for clarity. Rewrote the link recognition section. bent</sitem>
+			<sitem>1999-05-17: Further prose work. Added non-normative examples.explicit relationship between two or more data objects or portions of data objects. This specification is concerned with the syntax used to assert link existence and describe link characteristics. Implicit (unasserted) relationships, for example that of one word to the next or that of a word in a text to its entry in an on-line dictionary are obviously important, but outside its scope.</p>
+		<p>Links are asserted by <xtermref href="WD-xml-lang.html#dt-element">elements </xtermref> contained in <xtermref hrepertext functionality. The linking model defined here provides ways to create links that go beyond each of these specific characteristics, thus providing features previously available mostly in dedicated hypermedia systems.
+		</p>
+
+<div2>
+	<head>Origin and Goals</head>
+	<p>Following is a summary of the design principles governing XLink:
+		<olist>
+			<item><p>XLink must be straightforwardly usable over the Internet. </p></item>
+			<item><p>XLink must be usable by a wide variety of link usage domains and classes of linking application software.</p></item>
+			<item><p>XLink must support HTML 4.0 linking constructs.</p></item>
+			<item><p>The XLink expression language must be XML.</p></item>
+			<item><p>The XLink,design must be formal, concise, and illustrative.st of requirements to reflect current XLink requirements
+document. bent-->
+
+<div2>
+	<head>Relationship to Existing Standards</head>
+	<p>Three standards have been especially influential:
+		<ulist>
+			<item><p><emph>HTML:</emph> Defines several SGML element y or other space" -elm-->
+			</p></item>
+			<item><p><emph>Text Encoding Initiative Guidelines (TEI P3):</emph> Provides structures for creating links, aggregate objects, and link collections out of them.</p></item>
+		</ulist>
+	</p>
+	<p>Many other linking 			<label><termdef id="dt-linkel" term="Linking Element">linking element </termdef></label>
+				<def><p>An <xtermref href="WD-xml-lang.html#dt-element">element</xtermref> that asserts the existence and describes the characteristics of a <termref def="dt-link"> link</termref>.</p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-local-resource" term="Local Resource">local resource</termdef></label>
+				<def><p>The content of an <termref def="dt-inline">inline</termref>linking element. Note that the coesource"> participating resource</termdef></label>
+				<def><p>A <termref def="dt-resource">resource</termref> that belongs to a link. All resources are potential contributors to a link; participating	resources are the actual contributors to a particular link.</p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-remote-resource" term="Remote Resource">remote resource</termdef></label>
+				<def><p>Any participating resource of a link that is pointed to with a locator. </p></def>
+			</gitem>
+			<gitem>es, documents, programs, and query results. Concretely, anything reachable by the use of a <termref def="dt-locator">locaor</termref> in some <termref def="dt-linkel">linking	element</termref>. Note that this term and its definition are taken from the basreated in an application-appropriate manner such as indication by highlighting, scrolling, etc.</p></def>
+			</gitem>
+			<gitem>
+				<label><termdef id="dt-traversal" term="Traversal">traversal</termdef></label>
+				<def><p>The action of using a <termref def="dt-link">link</termref>; that is, of accessing a <termref def="dt-resource">resource</termref>. Traversal may be initiated by a user action (for example, clicking on the displayed content of a <termref def="dt-linkel">linking element</termref>) or occur under program control.</p></def>
+			</gitem>
+		</glist>
+	</p>
+</div2>
+
+<div2>
+	<head>Notation</head>
+	<p>The formal grammar for <termref def="dt-locator">locators</termref> is given using a simple Extended Backus-Naur Form (EBNF) location, as described iling <emph>query</emph> (marked by a leading "<code>?</code>"), and be followed by a "<code>#</code>" and a <emph>fragment identifier</emph>, with the query interpreted by the host providing the indicated resource, and the interpretation of the fragment identifier dependent on the data type of the indicated resource.</p>
+	<!--Is there some restriction on URNs having queries and/or fragment identifiers?  Since these RFCs don't mention URIs explicitly, should the wording here lead from URLs to URIs more expli associated with linking elements. It may be assumed by the reader that these attributes would require the <code>xlink</code> namespace prefix if they existed within an arbitrary element, or that they may be used directly if they exist within an explicit Xlink element.</p>
+		<!-- heavily modified this section to accomodate namespace-aware link recognition - bent -->
+</div1>
+
+<!-- Rewrote this entire section. - bent -->
+<div1>
+	<head>Linking Attributes</head>
+	<p>XLink has several attributes associated with d="link-behaviors">
+		<head>Behavior Attributes</head>
+		<p>There are two attributes associated with behavior: <code>show</code> and <code>actuate</code>. The <code>show</code> attribute defines how the remote resource is to be revealed to the user. It has three options: <code>new</code>, <code>parsed</code>, and <code>replace</code>. The <code>new</code> option indicates that the remote resource should be shown in a new window (or other device context) without replacing the previous content. The <code>parsption indicates that the link must be initiated by some sort of human-initiated selection, such as clicking on an HTML anchor. The <code>auto</code> option indicates that the link is automatically initiated when the application deems that the user has reached the link. It then follows the behavior set out in the <code>show</code> option.</p>
+		<!-- Something should be put here in terms of an example. Idea: "A" link versus automatically updating encyclopedia. -bent -->
+	</div2>
+
+	<div2 id="link-semantics">
+		<head>Semantic Attributes</head>
+		<p>There are two attributes associated with semantics, <code>role</code> and <code>title</code>. The <code>role</code> attribute is a generic string used to describe the function of the link's content. For example, a poem might have a link with a <code>role="stanza"</code>. The <code>role</code> is also used as an identifier for the <code>from</code> and <code>to</code> attributes of arcs.</p>
+		<p>The <code>title</code> attribute is designed to provide human-readable text describing the link. It is very useful for those who have text-based applications, whether that be due to a constricted device that cannot display the link's content, or if it's being read by an application to a visually-impaired user, or if it's being used to create a table of links. The <code>title</code> attribute contains a simple, descriptive string.</p>
+	</div2>
+</div1>
+
+<div1 id="linking-elements">
+	<head>Linking Elements</head>
+	<p>There are several kinds of linking elements in XLink: <code>simple</code> links, <code>locators</code>, <code>arcs</code>, and <code>extended</code> links. These elements may be instantiated via element declarations from the XLink namespace, or they may be instantiated via attribute declarations from the XLink namespace. Both kinds of instantiation are described in the definition of each linking element.</p>
+	<p>The <code>simple</code> link is used to declare a link that approximates the functionality of the HTML <code>A</code> element. It has, however, a few added features to increase its value, including the potential declaration of semantics and behavior. The <code>locator</code> elements are used to define the resource being linked to. Some links may contain multiple locators, representing a choice of potential links to be traversed. The <code>arcs</code> are used to define the traversal semantics of the link. Finally, an <code>extended</code> linking element differs from a simple link in that it can connect any number of resources, not just one local resource (optionalexpressed by attributes on the link, the link's element type name, or in
+	some other way, and are not considered full-fledged resources of the link.
+	Most out-of-line links are extended links, as these have a far wider range
+	of uses.</p>
+</div2>
+
+<div2 id="extended-link">
+<head>Extended Links</head>
+	<p><termdef id="dt-extendedlink" term="Extended Link">An <term>extended link</term> differs from a simple link in that it can connect any number of resources, not just one local resource (optionally) and one remote resource, and in that extended links are more often out-of-line than simple links.</termdef></p>
+	<p>These additional capabilities of extended links are required for:  
+		<ulist>
+			<item>
+				<p>Enabling outgoing links in documents that cannot be mo in this case, they are considered to define the default behavior for all the linking elements that they contain.</p>
+	<p>However, when a linking element within an extended link has a <code>show</code> or <code>actuate</code> attribute of its own, that attribute overrides the defaults set on the extended linking element.</p>
+	<p>The extended linking element itself retains those attributes relevant to the link as a whole, and to its local resource if any. Following are two sample declaration for an extended imple|extended|locator|arc) 	#FIXED "extended"
+	xlink:role           CDATA    					#IMPLIED
+	xlink:title          CDATA    					#IMPLIED
+	xlink:showdefault    (new|parsed|replace)    	#IMPLIED 
+    xlink:actuatedefault (user|auto) 				#IMPLIED &gt;</eg>
+
+	The following two examples demonstrate how each of the above might appear within a document instance. Note that the content of these examples would be other elements. For brevity's sake, they'eft blank. The first example shows how the link might appear, using an explicit XLink extended link:
+
+<eg>&lt;xlink:extended role="address book" title="Ben's Address Book" showdefault="replace" actuatedefault="user"&gt; ... &lt;/xlink:extended&gt;</eg>
+
+	And the second shows how the link might appear, using an arbitrary element:
+
+<eg>&lt;foo xlink:type="extended" xlink:role="address book" xlink:title="Ben's Address Book" xlink:showdefault="replace" xlink:actuatedefault="user"&gt; ... &lt;/foo&gt;</eg>
+	</p>
+
+</div2>
+
+<div2 id="xlink-arcs">
+	<head>Arc Elements</head>
+	<p><termdef id="dt-arc" term="Arc">An <term>arc</term> is contained within an extended link for the purpose of defining traversal behavior.</termdef> More than one arc may be associated with a link. Otherwise, arc elements function exactly as the arc attributes might lead on to expect.</p>
+	<!-- More here? -bent -->
+</div2>
+
+</div1>
+<div1>
+<head>Conformance</head>
+<p>An element conforms to XLink if:  <olist>
+<item><p>The element has an <code>xml:link</code> attribute whose value is
+one of the attribute values prescribed by this specification, and</p></item>
+<item><p>the element and all of its attributes and content adhere to the
+syntactic
+requirements imposed by the chosen <code>xml:link</code> attribute value,
+as prescribed in this specification.</p></item>
+</olist></p>
+<p>Note that conformance is assessed at the level of individual elements,
+rather than whole XML documents, because XLink and non-XLink linking mechanisms
+may be used side by side in any one document.</p>
+<p>An application conforms to XLink if it interprets XLink-conforming elements
+according to all required semantics prescribed by this specification and,
+for any optional semantics it chooses to support, supports them in the way
+prescribed. <!--If/when we split out the XLinkfunctionality
+(e.g. initiative: Background and
+Context</titleref>,
+ed. Nancy Ide and Jean ronis <!-- fix this name -->, ISBN 0-7923-3704-2. </bibl>
+</blist></div1>
+</back></spec>
+<?Pub *

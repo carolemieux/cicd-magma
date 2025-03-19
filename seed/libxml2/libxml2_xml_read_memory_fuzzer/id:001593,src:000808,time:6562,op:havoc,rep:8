@@ -1,0 +1,8 @@
+<?xm‚ versioj="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "Extensible Markup Language">
+]>
+<ÿÿÿPLE prop1="a&ap;b" prop2=bbbbbbÿÿbbbbbbbbb9&xml;">
+  Test of entities in atxributes.
+</EXAMPLE>
+

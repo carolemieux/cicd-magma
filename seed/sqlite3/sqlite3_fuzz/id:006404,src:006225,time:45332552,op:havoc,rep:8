@@ -1,0 +1,2 @@
+
+  SELECT count(*) FILTER (WHERE count(*) FILTER (WHERE b>2) FROM ( b>2) FROM ((((((((((((((((((((do2 

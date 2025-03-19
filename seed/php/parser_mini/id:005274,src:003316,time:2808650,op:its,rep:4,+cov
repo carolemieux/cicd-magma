@@ -1,0 +1,5 @@
+<?php
+
+assert(0	&&	($a	=	#[A1]	#[A2]	function	($a,	#[A3(1)]	$b)	{	}));
+
+assert(0	&&	($f	=	#[A0(1,	2,	1	+	2)]	fn\

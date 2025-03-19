@@ -1,0 +1,11 @@
+<?xml versi‡n='1.0' standalone='yes'?>
+<ENT attributes EMPTY>
+<!ATTLIST attribMENT attributes EMPTY>OKEN    #IMPLIED
+   nmtokens   NMTOKENS   #QMPLIED>
+<!ENTITY ententity&recursive; ">
+<!ENTITY recursive "reference">
+]>
+<attributes
+  nmtoken =  " &ent;   &ent; &ent; "
+  nmtokens = " Test&#x0d;&#xda;     this&#x normalization "
+/>

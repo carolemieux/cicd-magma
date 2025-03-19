@@ -1,0 +1,15 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foop  "element complexType: Schemaomplex type: The content model is not determinintent modeis schema is OKdwith XSV and Xerces. 
+-->
+<xsWschemaxmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:test:foo"
+	elementFormDefault="qualified">
+	<xs:element name="foo"s:sequence>
+				<xs:element

@@ -1,0 +1,15 @@
+<a xmlns="bbt(lude">
+   <!-- Simple test of intest><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<testinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple [est of including AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![3T a EMPTY>
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![CDAT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x f including AT![í¶¶ ?t
+ENT<?x<![C<test><![CDY>
+ENT<?x<![C<test><![3DAT![í¶¶ ?test><!mle encost><![C<test><![CD@TA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="h encost><![C<test><![CD@TA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simplettp:est><!Mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including a set of DAT![í¶¶ ?test><!mle encost><![C<test><![CD@TA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including AT![í¶¶ ?test><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http:est><!mle encost><![C<test><![CDATA[ï¶¶ ?test<x xmlns:xinclude="http://www.w3.org/2003/XInclude">
+   <!-- Simple test of including 

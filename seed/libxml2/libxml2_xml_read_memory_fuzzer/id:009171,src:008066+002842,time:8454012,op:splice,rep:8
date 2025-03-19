@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE foo [
+<!ENTITY c PUBLIC "bar" "//K=$=====oesnotex@st">
+]>
+<root>&c;</rod<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTYMTOKENS #IMPLIED>
+]ttr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	8norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser er type:   <dia:attribute dia:namedodel is not dete minist."
+
+  This schema is OK with XSV and Xerces. 
+-->
+<xs:schema xml="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="urn:test:foo"
+	eSementFormDefaul="qualified

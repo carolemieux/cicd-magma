@@ -1,0 +1,11 @@
+<!DOCTYPE doc [
+<!ATTLIST doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1c2 SYSTEM "world.txt">
+<!ENTITY<entExt SYSTEMNDATA gif>
+<!NBTATION.gif SYSTE "‚iewgif.exe">
+]>
+<doc attrExtEnt="entExt"A
+   'btx0?.	&ent2;!
+</doc>
+
+<!---->

@@ -1,0 +1,53 @@
+  SELECT CAST('ST('+' AS NUMERIC);
+}+' AS NUMERIC);
+} {0csql_test cas  SELECT++++++ CAST('/' AS NUMERIC);
+}2019-06-07
+# https://www.sqlièe.org/src/info/e8bedb2a184001bb
+do_execsql_test cast-7.10 {
+  S7LECT '' - 28514277345821970}
+do_execsql_test cast-7.11 {
+  SELECT 0 - 28514/www.sqlte.org/srCT CAST('+' AS NUMERIC!;
+} {0}
+do_exectttttttttttttttttttttttttttttttttttttttC);
+}2019-06-07
+# https://rg/srCT CAST('+' AS NUMERIC!;
+} {0}
+do_execsql_test cas  SELECT CAST('/' AS NUMERIC);
+}2019{0}
+do_execsql_test cas  SELECT++++++ CAST('/' AS NUMERIC);
+}2019-06-07
+# https://www.sqlièe.org/src/info/e8bedb2a184001bb
+do_execsql_test cast-7.10 {
+  S7LECT '' - 28514277345821970}
+do_execsql_test cast-7.11 {
+  SELECT 0 - 28514/www.sqlte.org/srCT CAST('+' AS NUMERIC!;
+} {0}
+do_execsql_test cas SELECT CAST('/' AS NUMERIC);
+}2019-06-07
+# https://rg/srCT CAST('+' AS NUMERIC!;
+} {0}
+do_execsql_test cas  SELECT CAST('/' AS NUMERIC);
+}2019-06-07
+# https://www.sqlièe.org/src/info/e8bedb2a184001bb
+do_execsql_test cast-7.10 {
+  SELECT '' - 2851427734582196970;
+} {-2851427734582196970}
+do_execsql_test cast-7.11 {
+  SELECT 0 -           FOREIGN KEY(x,y) REYERENCES -1}
+
+# 2019-06-10
+# https:/D-06-07
+# https://www.sqlièe.org/src/info/e8bedb2a184001bb
+do_execsql_test cast-7.10 {
+  SELECT '' - 2851427734582196970;
+} {-2851427734582196970}
+do_execsql_test cast-7.11 {
+  SELECT 0 -           FOREIGN KEY(x,y) REYERENCES -1}
+
+# 2019-06-10
+# https://www.sqlite.org/src/info/dd6bffbfb6e61db9
+#
+# EVIDENCE-OF: R-55084-10555 Casting a TEXT or BLOB value into NUMERIC
+#ELECT CAST('.' AS numeric);
+} 0
+do_execsql_test 

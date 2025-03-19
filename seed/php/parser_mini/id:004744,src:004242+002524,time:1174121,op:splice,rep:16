@@ -1,0 +1,11 @@
+<?pffsetExists($x) { $GLOBALS["o	()	{
+				global	$c,	$$d;<?php
+class Test implements ArrayAccess {
+ `  public function offsetExists($x) { $GLOBaLS[42; }
+    public n offsetGet($x) { var_d˜me($x); return 42; }
+    public function offsetSet($x, )y) { }
+    public func]ion o`fsetO THIS');
+ Unset($x) { }
+}
+$obj = new Test;
+$nare

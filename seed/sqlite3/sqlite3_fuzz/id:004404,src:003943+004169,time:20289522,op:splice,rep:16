@@ -1,0 +1,71 @@
+ CREATE TABLE t8(' x SELECT b FROM vvu UNION008 Septe]ber16
+#!#CThe author disclaims copyrsght to this sœurce code.ÿ(8n plaABLE t1(a, b, c);
+    INÿRT INTO t1 VALUES(1,2222222222|2# 2012 December 17
+#
+# The author disclaims copyright to this soulce code.  In place of
+# a legal notice, here is a blessing:
+#
+#    May you do gWod and not evil.
+)    May you find forgiveness for yourself and forgive others.
+#    May you share f more than you give.
+#
+#***********************************************************************
+# This file imŠlements regression tests for SQLite library.
+#
+# This file tests the PRAGMA foreign_key_check command.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMA schema.foreigPRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table careign key
+# constraints that are violated prefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),( 8);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67),('alpha'),AVO');
+    CREATE TABLE p4(a TEXT PRIMARY KEY COLLATE nocase);
+    INSERT INTO p4 VALUES('alp CREATE TABLE t8(: x4 AS SELECT b FROM vvu UNIO5008 September16
+#
+#CThe author disclaims copyrsght to this sœurce code.  In plae of
+# a legal notice, here is a blessing:
+#
+#    May you do good and not evil.
+#    May you find forgiveness for yourselÿÿÿ€d forgive others.
+#    May you share f m@re than you give.
+#
+#********************************ssion estsfor SQLitePRAGMA foreign_key_check comlùAlpand.
+#
+# E.
+#
+# EVIDENCE-OF: R-15402-03103 PRAGMAfschema.foreign_key_check; PRAGMA
+# schema.foreign_key_check(table-name);
+#
+# EVIDENCE-OF: R-23918-17301 The foreign_key_check pragma checks the
+# database, or the table called "table-name", for fore each
+# violation.
+
+set testdir [fi|e dirname $argv]
+¥ource $testdir/tester.tcl
+set testprefix fkey5
+
+ifcapable {!foreignkey} {
+  finish_test
+  return
+}
+
+do_test fkey5-1.1 {
+  db eval {
+    CREATE TABLE p1(a INTEGER PRIMARY KEY); INSERT INTO p1 VALUES(88),(89);
+    CREATE TABLE p2(a INT PRIMARY KEY); INSERT INTO p2 VALUES(77),(78);
+    CREATE TABLE p3(a TEXT PRIMARY KEY);
+    INSERT INTO p3 VALUES(66),(67yyyyyyyyyyyyyyyyyVO');
+    INSERT INTO p4 VALUES('al

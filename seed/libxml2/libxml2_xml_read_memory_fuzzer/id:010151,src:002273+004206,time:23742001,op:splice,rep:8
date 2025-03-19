@@ -1,0 +1,12 @@
+<!DOCTYPE rootûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûäûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûäûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûûû SYSûûûûûûûûûûûûûû SYSTEM "dtds#external.ent">
+<root>&peInC8808888<!DOcTYPE doc [
+<!ATTLIST Doc attrExtEnt ENTITY #IMPLIED>
+<!ENTITY ent1 "Hello">
+<!ENTITY ent2 SYSTEM "world.txt">
+<!ENTITY eth.gif" NDFTA gif>
+<!NOTATION gif SYSTEM "viewgif.exe">
+]>
+<doc attrExtEnt="entExt">
+   =ent1;, &ent2;!
+</doc>
+

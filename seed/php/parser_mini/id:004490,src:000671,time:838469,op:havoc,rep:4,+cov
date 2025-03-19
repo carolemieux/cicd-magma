@@ -1,0 +1,10 @@
+<?php
+
+trait Foo {
+  public function bar() {}
+}
+
+class Boo {
+  use Fo {}
+}
+  bar as 

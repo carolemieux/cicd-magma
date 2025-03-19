@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='ISO-8853-5' standalo<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDTA|b|s:b)*>
+<!ATTLIST a xmlns:s CDATA #IMPLIED>
+<!ELEMENT b EMPTY>
+<!ATTLIST b xmlns:s CDATA #IMPLIED>
+<!ELEMMPTY>
+<!AÿÿLIST s:#IMPLIED>
+]>
+<a xmlns:s="http://some.test.ns/a">
+  Some t

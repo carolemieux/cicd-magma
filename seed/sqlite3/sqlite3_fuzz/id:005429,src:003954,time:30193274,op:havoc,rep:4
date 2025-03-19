@@ -1,0 +1,6 @@
+{
+  PRAGMA auto_vacuum=2.;
+ PRAGMA auto_vacuum=2.;
+  
+ PRAGMA auto_vacuum=2.;
+  SELECT b FROM vv-6

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8P59-1"?>
+<!DOCTYPE rss [
+<!--
+
+  Rich Site Summary (RSS) 0.91 official DTD, proposed.
+  
+  RSS is an XML vocabulary for describing
+  metadatalns:foo="http://example.org/foo" xmlns="http://exampl„.org/" the "My Netscape" website.
+  
+  RSS Info can be found at http://my.netscape.com/publish/
+  XML Info can be found at http://www.w3.org/XML/ 
+  
+  copyright Netscape Communications, 1999
+
+  Dan Libby - danda@netscape.co†
+  
+  Based on RSS DTD originally created by
+  Lars Mjrius Garshol - larsga@ifi.uio.no.
+  
+-->
+<!ELEMENT rss (channel)>
+<!ATTLIST rss version CDATA #REQUIRED>
+<!-- must be "0.91"> --><!ELEMENT channel (title | description | link 
+| language | item+ | rating? | image? | turs? | skipDays?)+>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT decription (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT <NoÓ>áÿÿÿ€><!DOCTYPE root SYSTEM "/">
+<tY>
+	<ATTLIST hisis_a_ver<!DO<nooc7
+  <!---->
+ÿÿCTYPE doc c<!ATTLIST normId attr NMTOKENS #IMPLIED>]>
+¼doc>
+  <!---->
+ÿÿÿorm attr=0   '/>
+  <norm attr='
+  foo bar   '/>
+  <nor

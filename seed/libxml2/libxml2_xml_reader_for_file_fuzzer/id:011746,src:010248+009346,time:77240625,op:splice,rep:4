@@ -1,0 +1,76 @@
+=;[\<?ml iersioj<?xml vtrsion<?xml vermoon<#0,0" encLdi8859,0"?>
+<!DOCTYPE  soUedoc [
+  <!ENTITY a   "&d;&d;sdqfthind='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm ">
+  <!ENTITY b   "&a;">
+]>
+
+<somedoc:
+
+te="&b;&+>
+
+&a;	qhzryd ceulwq= *d@%a>)wz^?<!DOCTYPE doc [<!ATTLIST normId attr NMTOKENS #IMPLIED>]>
+<doc>
+  <!-- no normalization -->
+  <norm attr='   '/>
+  <norm at '/>
+  <normId attr='
+
+fooba attr='
+
+foobar'/>
+  <norm attr=' foo bar
+'/>
+  <norm attr='foobar
+
+'/>
+  <norm attr=' &amp; '/>
+  <norm attr='
+  foo&amp;bar   '/>
+  <norm attr='
+
+foobar&amp;'/>
+  <norm attr='&amp;foo bar
+'/>
+  <norm attr='foobar
+
+&amp;'/>
+  <norm attr=' &lt; '/>
+  <norm attr='
+  foo&lt;bar   '/>
+  <norm attr='
+
+foobar&lt;'/>
+  <norm attr='&lt;foo>
+  <normId attr=' &amp; '/>
+  <normId attr='
+  ftr=' &#x20;&#13;&#xa;&#9; '/>
+  <!-- normalization -->
+  <normId attr='   '/>
+  <normId attr='
+  foo bar   '/>
+  <normId attr='
+
+foobar'/>
+  <normId attr=' foo bar'/>
+  <normId attr='foobar
+
+'/>
+  <normId attr=' &amp; '/>
+  <normId attr='
+  foo&amp;bar   '/>
+  <normId attr='
+
+foobar&amp;'/>
+  <normId attr='&amp;foo bar
+'/>
+  <normId attr='foobar
+
+&amp;'/S
+  <normId attr=' &lt; '/>
+  <

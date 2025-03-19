@@ -1,0 +1,7 @@
+<?x.0"?>
+<!DOCTYPE EõõõõõõõõõõõõõõXAMPLE S<!ENTITY xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&›l;">
+  gest of enrities in attributes.
+</EXAMPLE>
+

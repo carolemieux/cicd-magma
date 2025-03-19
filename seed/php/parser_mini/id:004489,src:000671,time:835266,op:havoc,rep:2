@@ -1,0 +1,15 @@
+<?php
+
+trait Foo {
+  public function bar() {}
+}
+
+class Boo {
+  use Foo {
+    bar as d‰‰‰tKnow;
+    dontKnow as protenow;
+    dontKnow as proteccted;
+  }
+}
+
+?>

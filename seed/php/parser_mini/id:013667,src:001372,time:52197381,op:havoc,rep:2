@@ -1,0 +1,10 @@
+<?phoýa: print "ok!\n";
+goto c;
+declare (ticks=1) {
+b:
+   exit;
+}
+c:
+    print "ok!\n";
+    goto b;
+?>

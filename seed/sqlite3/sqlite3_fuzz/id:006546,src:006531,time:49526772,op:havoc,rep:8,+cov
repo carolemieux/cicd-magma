@@ -1,0 +1,3 @@
+ SELECT instr(#abcâ‚¬xyzzy,'câ‚¬xyz');}
+ÿ{3‡
+do_test ins4444431 {"30405',x'

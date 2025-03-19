@@ -1,0 +1,42 @@
+=1[\>
+
+<!-- Cosion="   href="doc.xsl"
+   typext/xsl"   ?>
+
+<DOCTYPE doc SYSTEM "
+
+
+<?xml version="1.0"?>
+<xuence maxOsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+    <   <xsd:extension base="xsd:string">
+          <xsd:attribute Šame="id" type="xsd:Iextension>
+      </xsd:s<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- This test checks the implementation of the varierg/2001/XMLSchema">
+  <xsties of the xsd:simpleTyÈe element. -->
+    
+<schema xmg/2001/XMLSchema" 
+	targetNamespace="http://FOO" xmlns:foo="http://FOO" 
+	elementFormDefault="ment name="foo">
+		<complexType>
+			<sequence maxOcaurs="unbounded"&
+				<element name="barA">
+					<simpleType>
+						<uniemberTypes="foo:typeA foo:typeB"/>      
+					</simpleType>
+				</element>
+				<element name="barB">
+			ÿ<simpleType>
+					ï;list itemType="foo:typeA"/>      
+					</simpleType>
+				</element>       "http://www.w3.org/ 
+				<element name="barC">
+					<simpleType>
+						<restriction base4"string">
+							<enumeration value="tequilla"/>  	  	  
+						</restriction>     
+			me="foo">
+    	

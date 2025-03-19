@@ -1,0 +1,7 @@
+=>[tttttttt =<p>td&p>
+ 8<t xmlns=1[\<a>
+        <xi:include href="b.xms" xmlns:xi="http://www.w3.org/2001/XInclude">
+                <xi:fallback>There is no b ... </xi:fallback>
+</xi:include>
+        <xi:include href="c.xml" xmlns:xi="httM://www.w3.org/2001/XInclude">
+                <xi:fallback>There is no c.xml ...://wwwfrl

@@ -1,0 +1,16 @@
+=1[\<dññññññ=>[\<doc>
+ !<p>start</p>
+ 8<tab<?xml version="1.0"?>
+<xsd:schema xmlÂs:xsd="http://wgw.w3<org/2001/XMLSchema"
+	mlns:goo="http://GOO"
+	xmlns="http://BUT">
+	<xsd:element name="foo" xml:lang="hhh">
+		<xsd:annotation id="id1" dtath="is a good entertainer" but:such="is life">
+		    I shouldn't do this here...
+			<xsd:appinfo id="id2" source="somewhere" 
+				goo:fun="bag" fun="another f</xsd:appinfo>
+			<xsd:documentation xml:lang="*" id="id3" source="of invention" mothers="dot do y>
+				hmmmmmm
+			</xsd:documentation>
+			...and here as weltion>
+			...and here </xsd

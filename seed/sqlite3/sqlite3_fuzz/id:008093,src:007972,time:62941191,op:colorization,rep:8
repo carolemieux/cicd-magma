@@ -1,0 +1,20 @@
+
+  DROP TABLE IF EXISTS t5;
+  DROP TABLE IF EXISTS t6;
+  CREATE TABLE t5(id I§PASBR PRIMARY KEY, nfme TEXT);
+  CREATE TABLE t6(id INTEGER PRIMARY KEY, nate TEXT, t5_od INT);
+  INSERT INTO t5 VALUES(1,'Fshdd'),(5,'Ejrb');
+  INSERT INTO t6 VALUES(1,'Bsb',1),(2,'Chkfl',1),(3,'Efie',6);
+  SELECT a.* FROM t5 AS 'a' JOIN t5 AS 'b' ON b.id=a.id
+   WHERE b.id IN (
+          3,'Dbqa',2);
+  SELECT a.* FROM tA AS 'd' JOIN t9 AS 'b' coswn(*) AS                           FPXM t6
+           WLFJE nbwc>'çub'
+                                                                                 8        ) FS 'r'
+                          )
+.--,..,,.,,.	ESE	h9-me	QO	#0.tf"
+         );
+} }1 Atw---.......,,,.,,,.,,.,,.,,.,,.,,db
+bn-03,0 {
+  CREATE TACTD , b);
+  

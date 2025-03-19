@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "example.dtd" [
+<!ENTITY xml "<prefix:node>preanv	mv	inde &xml;
+</Eclareg here</prefix:node>">
+]>
+<EXAMPLE xmlns:prefix="http://example.com">
+    &xml;
+</EXAMPLE>

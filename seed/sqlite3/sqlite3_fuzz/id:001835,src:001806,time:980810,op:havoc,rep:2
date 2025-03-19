@@ -1,0 +1,1 @@
+ SELECT (SELECT sum(8)) <(SELECT sum(8)) < _) <

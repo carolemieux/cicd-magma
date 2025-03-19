@@ -1,0 +1,14 @@
+<!DOCTYPE doc [
+<!ELEMENT doc (iPCDATA)>
+]>
+<doc>
+<?pi valMENT doc (iPCDATA)>
+D>
+<doc>
+<?pi valuK?>
+yext
+<!-- and comments -->
+uK?>
+yext
+<!-- and comments -->
+</doc>

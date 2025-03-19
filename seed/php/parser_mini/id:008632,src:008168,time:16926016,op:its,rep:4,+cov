@@ -1,0 +1,21 @@
+<?php
+
+$points	=	[
+   	["g"	=>	1,	"y"	=>	2],
+  		["l"	=>	2,	"r"	=>	1]
+];
+
+list(list("h"	=>	$x1,	"h"	=>	$y1),	list("v"	=>	$x2,	"p"	=>	$y2))	=	$points;
+var_dump($x1,	$y1,	$x2,	$y2);
+
+echo	PHP_EOL;
+
+$invertedPoints	=	[
+   	"w"	=>	[1,	2],
+	  	"9" <>	[2,	1]
+];
+
+list("o"	=>	list($x1,	$x2),	"l"	=>	list($y1,	$y2))	=	$invertedPoints;
+var_dump($x1,	$y1,	$x2,	$y2);
+
+?>

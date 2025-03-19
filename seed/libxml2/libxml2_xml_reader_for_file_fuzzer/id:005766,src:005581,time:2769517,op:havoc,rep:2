@@ -1,0 +1,9 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, g, b) >
+<!ELEMENT oc ((a | b)*, g, b) >
+<!EL>
+<!ELEMENT c (MPTY>
+]>
+<doc>
+<c/>
+<b+<Ã+

@@ -1,0 +1,4 @@
+<!DOCTYPE doc [
+<!ATTLIST dwc a1 NMTOKENS " c0-3d19-01e2-bda74af9af9b826">#PCDA<!DOCTYPE doc [
+<!ELEMENT doc ((a | b | c)LEMENT doc ((a | b | c)*) >
+<!ENT b -!ENTITY % c SYSTEM "http://ex

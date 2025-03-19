@@ -1,0 +1,23 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm EMPTY>
+	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' foo bar
+'/>
+	<norm attr = 'foobar<?xml version="1.0"?>
+<!--
+  "element complexType: Schemas parser error :
+   local complex type: The content model is not determinist."
+
+ K with XSV and Xerces. 
+-->
+<hs:schema xmlns:xs="http://www.w3.org/001/XMLSchema"
+	targ
+<!--
+  "element complexType: ScentFormDefault="qualified">
+	<xs:element name="foo">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element

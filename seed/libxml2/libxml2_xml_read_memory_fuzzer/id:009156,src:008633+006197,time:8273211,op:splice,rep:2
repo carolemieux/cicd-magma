@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA | b | c | d | cc | db | c | d | cc | d | |<!DOCTYPE doc [
+<!ELEMENT doc (#PCDATA | ns:a | ns:b)*>
+<!ATTLIST doc
+          attr  CDATA #REQUIRED
+          xmlns:ns CDATA #IMPLIED>
+<!ELEMENT a EMPTY>
+<!ELEMENT b (#PCDATA)>
+]>
+<ns:d|||||||||||||||||||||||||||oc ns:attr="val" xmlns:ns="„ttp://w

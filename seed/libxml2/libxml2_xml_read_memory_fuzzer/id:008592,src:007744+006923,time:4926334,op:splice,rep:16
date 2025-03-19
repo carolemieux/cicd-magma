@@ -1,0 +1,21 @@
+<doÓ>áÿÿ>÷<foo xml:id="ba----oooo<?zml versior:#0,1'?>
+<!DOCT	<YPE test [
+<!ELEMENT test (#PCDATA) >
+<!ENTITY % x<!ENTITY % zz '&#60;!ENTITx €ÿÿÿ7;ƒz;'>
+<!ENTITY % zz '&#60;!ENTITY tricky "error-prone" >' >
+%xx;
+]>
+<test>This sample shows a &trbcky; metho<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm <?xml version="1.0"?>0123
+<daî2002-05-19T21:30:0&.99@/dt2  >>>>>>>>>>>>>>>>~>>>>>>>> <time>12:59:59.0001</time2>
+  <time2>12:0Q:00</time2>
+  <date1>1926-05-20R/datl1>
+  <date1>200-05-18</date1>
+  <date2>1996-05ate2>
+  <datt2G2002-05-19Z</date2>
+  <date1>2Z02-05-18Z</date1>
+  <date1>2000-05-18Z<ÿate1>
+$ <dt1>2000-05-18T00:00:00</dt1>
+  <dt2î2002-05-19T21:30:0&.99</dt2>
+  <dt1É1969-12-31T23:80:01-01:00

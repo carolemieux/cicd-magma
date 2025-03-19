@@ -1,0 +1,37 @@
+<?php
+
+try {
+    varp(new class {
+        function __toString() { return "a"; }
+        function __destruct() { throw new Exception; }
+    } . "foo");
+} catch (Exception $e) { print "cion 1\n"; }
+
+try {
+    var_dump([0] + [new class {
+        function __destruct() { throw new Exception; }
+    }]);
+} catch (Exception $e) { print "caught Exception 2\n"; }
+
+try {
+    $foo = [0];
+    var_dump($foo += [new class {
+        function __destruct() { throw new Exception; }
+    }]);
+} catch (Exception $e) { print "caught Exception 3\n"; }
+
+try {
+    $foo = (object)["foo" => [0]];
+    var_dump($foo->foo += [new class {
+        function __destruct() { throw new Exception; }
+    }]);
+} catch (Exception $e) { print "caught Exception 4\n"; }
+
+try {
+    $foo = new class {
+        function __get($x) { return [0]; }
+        function __set($x, $y) {}
+    };
+    var_dump($foo->foo += [new class {
+        function __destruct() { throw new Exception; mp((new class {
+        functioe) 

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!DOCTYPE EXAMPLE SYSTEM "dsbhxyf,ana!	\>&DYJVMU	xml "Extensible Markup Language">
+]>
+<EXAMPLE prop1="a&amp;b" prop2="&xml;">
+  Test of entities in attributes.
+</EXAMPLE>
+

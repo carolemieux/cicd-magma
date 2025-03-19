@@ -1,0 +1,11 @@
+=>[k<?xml<?xipt><![ion=" .0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG April 1999//EN" 
+  "http://www.w3.od">
+<svg width="4in" height="3in">
+  <defs>
+    <script><![CDATA[
+      /* Beep on mouseclick */
+      MouseClmckHandler() ‚ beep(); }
+ pt>
+  </defs>
+  <circle onclicg="MouseClickHandler()" r="85"/>

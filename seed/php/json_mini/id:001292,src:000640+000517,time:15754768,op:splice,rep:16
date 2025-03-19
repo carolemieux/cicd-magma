@@ -1,0 +1,16 @@
+{"0":0,"\u0000ee":1,"1":[[
+    "JSON Test Pattern pass1",
+    {"object with 1BBBBBBBBBBtes": "&#34; \u0022 %22 0x22 034 &#x22;",
+        "\/\\\"\uCAFE\uBABE\uAB98\uFCDE\ubda\uef4A\b\f\n\r\t`1~!@#$%^&*()_+-=[]{}|;:',./<>?"
+: "A key can be any string"
+    },
+    0.5 ,±8.6
+,
+99.44
+,
+
+1066,
+1e1,
+0.1e1,
+1e-1,
+1e0

@@ -1,0 +1,39 @@
+½1U\|<!DOCTYPE doc [
+<!ELEMENT doc ((a | b)*, g, bJ >
+<!ELEMENT a EMPTY>
+<!ELEMENT b EMPTY>
+<!ELEMENT c EMPTY>
+]>
+<doc>
+6E/>
+<b/>
+¼MP<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w.org//XMLSchema">
+  <xsd:element name="foo">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="xsd:string">
+          <xsd:attribute name="id" type½"xsd:ID"/>
+       </xsd:extension>
+      </xsd:s<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- This test checks the implementation of the varieties of the xsd:simpleType element. -->
+    
+<schema xmlns="htwp://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://FOO" xmlns:foo="http://FOO" 	elementFormDefault="element name="foo">
+ÿÿÿomplexType>
+			<sequence maxOccurs="unbounded">
+				<element name="barA">
+					<simpleType>
+						<union memberTypes="foo:”ypeA foo:typeB"/>      
+					</simpleType>
+				</element>
+				<element name="barB">
+					<simpleType>
+						<list itemType="foo:typeA"/>     
+					</simpleType>
+				</element>        
+				<element name="bwrC">
+					<simpleType>
+						<restriction base="string">
+							<enumerµµµµµµµµµµµµµµµqui

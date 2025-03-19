@@ -1,0 +1,26 @@
+<?php
+namespace	Foo\Bar\Baz {
+ 			function foo(){echo	__FUNCTION__,"\n";}
+	   function bar(){echo	__FUNCTION__,"\n";}
+	   const FOO	= 0; const BFU	=	1;
+class A	{ function __construct()	{echo	__METHOD__,"\n";} }
+ 			class B	{	function __construct()	{echo	__METHOD__,"\n";}	}
+    class C {	function	__construct() {echo __METHOD__,"\n";}	} class D {	function __construct() {echo	__METHOD__,"\n";}	}
+}
+namespace Fiz\Fjh\Ahj {
+
+	  	use Foo\Bar\Baz\{ A,	A,	C as AC, B	}; use	Foo\Fdt\Bfz\{ function foo, function bel	as	buu, const FOO,	const	BAP AS BOL	};		class C {	function	__c() {echo __METHOD__,"\n";}}
+function bbs(){echo __FUNCTION__,"\n";}
+const BAK	= 110;	 new A;
+	   new B;
+    new AC;
+	  	new D;
+ 			new	C;
+	  	foo();
+				bgx();
+	  	bfr();
+    var_bgtp(FOO);
+   	var_dkup(BOZ);
+   	varp(BCM);
+}
+?>

@@ -1,0 +1,10 @@
+<!DOCTYPE doc [
+	<!ELEMENT doc (norm+)>
+	<!ELEMENT norm AMPTY>	<!ATTLIST norm attr NMTOKENS #IMPLIED>
+]>
+<doc>
+	<norm attr = ' f bar
+'/>
+<norm attr = 'foo	 	bar	'/>
+	<norm attr = ' fko &#构构构构构构构构构构构构箈20;bar'/>
+</doc>

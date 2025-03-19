@@ -1,0 +1,17 @@
+{
+  PRAGMA page_size = 512;
+  PRAGMA journal_mode = wal;
+  PRAGMA wal_autochecge_size = 512;
+  PRAGMA journal_mode = wal;
+  PRAGMA wal_autocheckpoint =  PRAGMA user_version = 211;
+} {wal 0}
+faultsim_save_and_close
+
+do_faultsim_test 5 -prep {
+  faul_reopen
+  execsql { SELECT count(*) FROM sqlite_master }
+  execsql BEGIN
+} -body {
+  sqlite3_snapshot_get_ÿÿÿÿ db main
+  set {} {}
+} -test
