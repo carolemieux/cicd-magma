@@ -1,0 +1,6 @@
+PROGRAMS=(unserialize)
+#json exif unserialize parser
+
+PATCHES="PHP016"
+AUTOMATIC=1
+COMMIT_FILES=(ext/phar/util.c ext/phar/zip.c)

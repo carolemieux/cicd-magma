@@ -1,0 +1,7 @@
+PROGRAMS=(sndfile_fuzzer)
+
+sndfile_fuzzer_ARGS="@@"
+
+PATCHES="SND015"
+AUTOMATIC=1
+COMMIT_FILES=(src/alaw.c)

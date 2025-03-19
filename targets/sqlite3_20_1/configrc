@@ -1,0 +1,5 @@
+PROGRAMS=(sqlite3_fuzz)
+
+PATCHES="SQL020"
+
+COMMIT_FILES=(src/window.c)

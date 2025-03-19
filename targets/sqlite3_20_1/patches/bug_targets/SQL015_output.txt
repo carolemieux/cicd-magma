@@ -1,0 +1,17 @@
+src/resolve.c:185
+src/resolve.c:190
+src/resolve.c:196
+src/resolve.c:198
+src/resolve.c:202
+src/resolve.c:203
+src/resolve.c:205
+src/resolve.c:206
+src/resolve.c:207
+src/resolve.c:208
+src/resolve.c:209
+src/resolve.c:210
+src/resolve.c:211
+src/resolve.c:212
+src/resolve.c:213
+src/resolve.c:214
+src/resolve.c:215

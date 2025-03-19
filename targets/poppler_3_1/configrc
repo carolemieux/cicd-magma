@@ -1,0 +1,8 @@
+PROGRAMS=(pdf_fuzzer)
+
+#pdfimages_ARGS="@@ /tmp/out"
+#pdftoppm_ARGS="-mono -cropbox @@"
+
+PATCHES="PDF003"
+AUTOMATIC=1
+COMMIT_FILES=(utils/HtmlOutputDev.cc utils/ImageOutputDev.cc poppler/GfxState.h)

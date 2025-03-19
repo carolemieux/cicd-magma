@@ -1,0 +1,6 @@
+PROGRAMS=(server)
+#asn1 asn1parse bignum server client x509
+
+PATCHES="SSL011"
+AUTOMATIC=1
+COMMIT_FILES=(crypto/pkcs7/pk7_doit.c)

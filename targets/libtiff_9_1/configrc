@@ -1,0 +1,7 @@
+PROGRAMS=(tiff_read_rgba_fuzzer)
+#tiffcp
+tiffcp_ARGS="-M @@ tmp.out"
+
+PATCHES="TIF009"
+AUTOMATIC=1
+COMMIT_FILES=(libtiff/tif_dirwrite.c)

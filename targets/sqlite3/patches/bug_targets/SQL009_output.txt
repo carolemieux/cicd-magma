@@ -1,0 +1,5 @@
+src/vdbemem.c:1229
+src/vdbemem.c:1231
+src/vdbemem.c:1232
+src/vdbemem.c:1233
+src/vdbemem.c:1234

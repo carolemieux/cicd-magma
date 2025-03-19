@@ -1,0 +1,10 @@
+src/vdbe.c:2135
+src/vdbe.c:2137
+src/vdbe.c:2138
+src/vdbe.c:2139
+src/vdbe.c:2140
+src/vdbe.c:2142
+src/vdbe.c:2144
+src/vdbe.c:2145
+src/vdbe.c:2146
+src/vdbe.c:2147

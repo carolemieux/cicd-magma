@@ -33,8 +33,11 @@ EXTRA=""
 test -n "$AR" && EXTRA="$EXTRA -DCMAKE_AR=$AR"
 test -n "$RANLIB" && EXTRA="$EXTRA -DCMAKE_RANLIB=$RANLIB"
 
+export CMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/:$CMAKE_PREFIX_PATH
+
 cmake "$TARGET/repo" \
   $EXTRA \
+  -DENABLE_DCTDECODER=libjpeg \
   -DCMAKE_BUILD_TYPE=debug \
   -DBUILD_SHARED_LIBS=OFF \
   -DFONT_CONFIGURATION=generic \
@@ -57,6 +60,9 @@ cmake "$TARGET/repo" \
   -DFREETYPE_INCLUDE_DIRS="$WORK/include/freetype2" \
   -DFREETYPE_LIBRARY="$WORK/lib/libfreetype.a" \
   -DICONV_LIBRARIES="/usr/lib/x86_64-linux-gnu/libc.so" \
+  -DJPEG_LIBRARY="/usr/lib/x86_64-linux-gnu/libjpeg.so" \
+  -DTIFF_LIBRARY="/usr/lib/x86_64-linux-gnu/libtiff.so" \
+  -DTIFF_INCLUDE_DIR="/usr/include/x86_64-linux-gnu/tiff.h" \
   -DCMAKE_EXE_LINKER_FLAGS_INIT="$LIBS"
 make -j$(nproc) poppler poppler-cpp pdfimages pdftoppm
 EXTRA=""
@@ -65,5 +71,5 @@ cp "$WORK/poppler/utils/"{pdfimages,pdftoppm} "$OUT/"
 $CXX $CXXFLAGS -std=c++11 -I"$WORK/poppler/cpp" -I"$TARGET/repo/cpp" \
     "$TARGET/src/pdf_fuzzer.cc" -o "$OUT/pdf_fuzzer" \
     "$WORK/poppler/cpp/libpoppler-cpp.a" "$WORK/poppler/libpoppler.a" \
-    "$WORK/lib/libfreetype.a" $LDFLAGS $LIBS -ljpeg -lz \
+    "$WORK/lib/libfreetype.a" $LDFLAGS $LIBS $FUZZER_LIB -ljpeg -lz \
     -lopenjp2 -lpng -ltiff -llcms2 -lm -lpthread -pthread

@@ -1,0 +1,6 @@
+PROGRAMS=(asn1parse)
+#asn1 asn1parse bignum server client x509
+
+PATCHES="SSL013"
+AUTOMATIC=1
+COMMIT_FILES=(crypto/rsa/rsa_ameth.c)

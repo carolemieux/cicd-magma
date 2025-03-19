@@ -1,0 +1,8 @@
+PROGRAMS=(pdf_fuzzer)
+
+#pdfimages_ARGS="@@ /tmp/out"
+#pdftoppm_ARGS="-mono -cropbox @@"
+
+PATCHES="PDF009"
+# AUTOMATIC=1
+COMMIT_FILES=(poppler/Parser.cc)

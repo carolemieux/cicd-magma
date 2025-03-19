@@ -1,0 +1,6 @@
+PROGRAMS=(client)
+#asn1 asn1parse bignum server client x509
+
+PATCHES="SSL018"
+AUTOMATIC=1
+COMMIT_FILES=(ssl/statem/statem_dtls.c)

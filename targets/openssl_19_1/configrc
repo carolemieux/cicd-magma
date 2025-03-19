@@ -1,0 +1,6 @@
+PROGRAMS=(asn1)
+#asn1 asn1parse bignum server client x509
+
+PATCHES="SSL019"
+AUTOMATIC=1
+COMMIT_FILES=(ssl/record/rec_layer_s3.c)

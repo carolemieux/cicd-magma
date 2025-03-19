@@ -1,0 +1,6 @@
+PROGRAMS=(asn1parse)
+#asn1 asn1parse bignum server client x509
+
+PATCHES="SSL017"
+AUTOMATIC=1
+COMMIT_FILES=(crypto/x509/x509_vfy.c)

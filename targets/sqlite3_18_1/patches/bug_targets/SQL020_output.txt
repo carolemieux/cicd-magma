@@ -1,0 +1,5 @@
+src/window.c:909
+src/window.c:911
+src/window.c:912
+src/window.c:913
+src/window.c:914

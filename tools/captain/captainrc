@@ -7,16 +7,16 @@
 ###
 
 # WORKDIR: path to directory where shared volumes will be created
-WORKDIR=./workdir
+WORKDIR=./test-afl-aflplusplus-libfuzzer-tunefuzz
 
 # REPEAT: number of campaigns to run per program (per fuzzer)
-REPEAT=3
+REPEAT=1
 
 # [WORKER_MODE]: defines the type of CPU resources to allocate (default: 1)
 # - 1: logical cores (possibly SMT-enabled)
 # - 2: physical cores
 # - 3: physical sockets (1 worker per CPU socket)
-# WORKER_MODE=1
+WORKER_MODE=2
 
 # [WORKERS]: number of worker threads (default: all cores)
 # WORKERS=3
@@ -25,12 +25,12 @@ REPEAT=3
 # WORKER_POOL="1 3 5 7 9"
 
 # [CAMPAIGN_WORKERS]: number of workers to allocate for a campaign (default: 1)
-# CAMPAIGN_WORKERS=1
+CAMPAIGN_WORKERS=1
 
 # [TIMEOUT]: time to run each campaign. This variable supports one-letter
 # suffixes to indicate duration (s: seconds, m: minutes, h: hours, d: days)
 # (default: 1m)
-TIMEOUT=24h
+TIMEOUT=1m
 
 # [POLL]: time (in seconds) between polls (default: 5)
 POLL=5
@@ -40,7 +40,7 @@ POLL=5
 # CACHE_ON_DISK=1
 
 # [NO_ARCHIVE]: if set, campaign workdirs will not be tarballed (default: unset)
-# NO_ARCHIVE=1
+NO_ARCHIVE=1
 
 # [TMPFS_SIZE]: the size of the tmpfs mounted volume. This only applies when
 # CACHE_ON_DISK is not set (default: 50g)
@@ -53,17 +53,17 @@ POLL=5
 # - 1: without fixes, with canaries
 # - 2: without fixes, without canaries
 # - 3: with fixes, without canaries
-# CANARY_MODE=3
+CANARY_MODE=1
 
 # [ISAN]: if set, build the benchmark with ISAN/fatal canaries (default: unset)
-# ISAN=1
+ISAN=1
 
 # [HARDEN]: if set, build the benchmark with hardened canaries (default: unset)
 # HARDEN=1
 
 # [POC_EXTRACT]: if set, run the extract.sh script after the campaign is done
 # (default: unset)
-# POC_EXTRACT=1
+POC_EXTRACT=1
 
 
 ###
@@ -71,7 +71,7 @@ POLL=5
 ###
 
 # FUZZERS: an array of fuzzer names (from magma/fuzzers/*) to evaluate
-FUZZERS=(afl aflfast moptafl aflplusplus fairfuzz honggfuzz)
+FUZZERS=(afl aflplusplus libfuzzer tunefuzz)
 
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array

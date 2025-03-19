@@ -1,0 +1,6 @@
+PROGRAMS=(bignum)
+#asn1 asn1parse bignum server client x509
+
+PATCHES="SSL001"
+AUTOMATIC=1
+COMMIT_FILES=(crypto/asn1/a_int.c crypto/asn1/a_type.c crypto/asn1/tasn_dec.c crypto/asn1/tasn_enc.c)

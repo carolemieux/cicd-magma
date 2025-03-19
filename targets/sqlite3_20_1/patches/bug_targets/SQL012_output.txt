@@ -1,0 +1,8 @@
+src/pragma.c:1648
+src/pragma.c:1649
+src/pragma.c:1650
+src/pragma.c:1651
+src/pragma.c:1652
+src/pragma.c:1654
+src/pragma.c:1656
+src/pragma.c:1658

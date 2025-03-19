@@ -1,1 +1,5 @@
 PROGRAMS=(libpng_read_fuzzer)
+
+PATCHES="PNG004"
+AUTOMATIC=1
+COMMIT_FILES=(pngrutil.c)
