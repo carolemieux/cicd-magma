@@ -19,6 +19,12 @@ export LIBS="$LIBS -lc++ -lc++abi $FUZZER/repo/utils/aflpp_driver/libAFLDriver.a
 # AFL++'s driver is compiled against libc++
 export CXXFLAGS="$CXXFLAGS -stdlib=libc++"
 
+
+ls -ld /magma_out /magma_out/afl
+ls -l /magma_out/afl
+whoami
+
+
 # Build the AFL-only instrumented version
 (
     export OUT="$OUT/afl"
