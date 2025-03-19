@@ -12,8 +12,8 @@ if [ ! -d "$FUZZER/repo" ]; then
 fi
 
 cd "$FUZZER/repo"
-CC=clang make -j $(nproc)
-CC=clang make -j $(nproc) -C llvm_mode
+CC=clang make
+CC=clang make -C llvm_mode
 
 # compile afl_driver.cpp
 "./afl-clang-fast++" $CXXFLAGS -std=c++11 -c "afl_driver.cpp" -fPIC -o "$OUT/afl_driver.o"

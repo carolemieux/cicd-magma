@@ -17,7 +17,7 @@ fi
 
 mkdir -p "$SHARED/findings"
 
-flag_cmplog=(-m none -c "$OUT/cmplog/$PROGRAM")
+flag_cmplog=(-c "$OUT/cmplog/$PROGRAM")
 
 export AFL_SKIP_CPUFREQ=1
 export AFL_NO_AFFINITY=1
@@ -25,6 +25,10 @@ export AFL_NO_UI=1
 export AFL_MAP_SIZE=256000
 export AFL_DRIVER_DONT_DEFER=1
 
-"$FUZZER/repo/afl-fuzz" -i "$TARGET/corpus/$PROGRAM" -o "$SHARED/findings" \
+export AFL_SKIP_CRASHES=1
+export AFL_FAST_CAL=1
+export AFL_CMPLOG_ONLY_NEW=1
+
+"$FUZZER/repo/afl-fuzz" -m none -t 10000 -i "$SEED" -o "$SHARED/findings" \
     "${flag_cmplog[@]}" -d \
     $FUZZARGS -- "$OUT/afl/$PROGRAM" $ARGS 2>&1

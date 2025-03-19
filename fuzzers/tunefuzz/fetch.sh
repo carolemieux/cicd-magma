@@ -22,4 +22,4 @@ git clone \
     cd $FUZZER/llvm/ && git checkout bf7f8d6fa6f460bf0a16ffec319cd71592216bf4 && \
     git apply $FUZZER/FishFuzz/fish_mode/llvm_patch/llvm-15.0/llvm-15-asan.diff && \
     cp $FUZZER/FishFuzz/fish_mode/llvm_patch/llvm-15.0/FishFuzzAddressSanitizer.cpp llvm/lib/Transforms/Instrumentation/
-
+    

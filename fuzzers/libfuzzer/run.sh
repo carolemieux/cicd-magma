@@ -13,7 +13,7 @@
 
 mkdir -p "$SHARED/findings"
 
-"$OUT/$PROGRAM" -rss_limit_mb=100 \
+"$OUT/$PROGRAM" -keep_seed=1 -rss_limit_mb=0 -timeout=10 \
 	-fork=1 -ignore_timeouts=1 -ignore_crashes=1 -ignore_ooms=1 \
 	-artifact_prefix="$SHARED/findings/" $FUZZARGS \
-    "$TARGET/corpus/$PROGRAM" $ARGS
+    "$TARGET/corpus/$CORPUS" $ARGS
