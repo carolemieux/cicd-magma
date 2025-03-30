@@ -21,6 +21,8 @@ def get_time_to_bug(file_path, results, fuzzer_name=None) -> dict:
             for program, p_data in t_data.items():
                 for run, r_data in p_data.items():
                     for metric, m_data in r_data.items():
+                        # print(metric)
+                        # print(m_data)
                         if fuzzer_name:
                             results[fuzzer_name][metric][int(run)] += len(m_data)
                         else:
@@ -38,8 +40,8 @@ def get_p_val_for_num_bug(result_dict: dict, fuzzers, metric, alternative, verbo
             else:
                 p = mann_whitney_u_test(result_dict[fuzzers[i]][metric], result_dict[fuzzers[j]][metric], alternative)
                 p_matrix[i][j] = p
-                if alternative == 'two-sided':
-                    p_matrix[j][i] = p
+                # if alternative == 'two-sided':
+                #     p_matrix[j][i] = p
                 if verbose:
                     print(f'{fuzzers[i]}, {fuzzers[j]}, {p}')
                     print(result_dict[fuzzers[i]][metric], result_dict[fuzzers[j]][metric])

@@ -1,6 +1,7 @@
 import os 
 import pandas as pd
 import matplotlib.pyplot as plt
+import statistics
 from statistical_test import *
 
 
@@ -114,10 +115,43 @@ def plot_sensitivity_results(output_dir, output_file_name):
     plt.savefig(output_path) 
 
 
+def plot_bug_for_all_fuzzers(results, output_dir):
+    fuzzer_lst = []
+    reached_mean = []
+    triggered_mean = []
+    reached_stdev = []
+    triggered_stdev = []
+
+    for fuzzer, f_data in results.items():
+        fuzzer_lst.append(fuzzer)
+        reached_mean.append(statistics.mean(f_data['reached']))
+        triggered_mean.append(statistics.mean(f_data['triggered']))
+        reached_stdev.append(statistics.stdev(f_data['reached']))
+        triggered_stdev.append(statistics.stdev(f_data['triggered']))
+        
+    print(reached_mean)
+    print(triggered_mean)
+    plt.figure(figsize=(8, 6))
+    plt.bar(x=fuzzer_lst, height=reached_mean, yerr=reached_stdev)
+    plt.xlabel('Fuzzer')
+    plt.ylabel('Number of Bugs Reached')
+    output_path = os.path.join(output_dir, 'num_of_bug_reached_all_fuzzers.png')
+    plt.savefig(output_path, format="png", dpi=300)
+
+    plt.clf()
+
+    plt.figure(figsize=(8, 6))
+    plt.bar(x=fuzzer_lst, height=triggered_mean, yerr=triggered_stdev)
+    plt.xlabel('Fuzzer')
+    plt.ylabel('Number of Bugs Triggered')
+    output_path = os.path.join(output_dir, 'num_of_bug_triggered_all_fuzzers.png')
+    plt.savefig(output_path, format="png", dpi=300)
+
+
 if __name__ == '__main__':
     bug_result_output_dir = '../process_data_tosem/figures'
     bug_result_json_name = 'num_of_bug_rt.json'
-    merge_bug_results(bug_result_output_dir, bug_result_json_name)
+    # merge_bug_results(bug_result_output_dir, bug_result_json_name)
 
     # read the bug results and plot the heatmap
     bug_result_file_name = os.path.join(bug_result_output_dir, bug_result_json_name)
@@ -127,15 +161,18 @@ if __name__ == '__main__':
 
     fuzzers = ['afl', 'aflplusplus', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'tunefuzz']
 
-    p_matrix_reached = get_p_val_for_num_bug(num_bug_results, fuzzers, 'reached', 'greater', True)
-    p_matrix_triggered = get_p_val_for_num_bug(num_bug_results, fuzzers, 'triggered', 'greater', True)
+    p_matrix_reached = get_p_val_for_num_bug(num_bug_results, fuzzers, 'reached', 'two-sided', True)
+    p_matrix_triggered = get_p_val_for_num_bug(num_bug_results, fuzzers, 'triggered', 'two-sided', True)
 
     # plot the heatmaps for the number of bugs reached and triggered
-    p_val_heatmap_for_num_bug(p_matrix_reached, 'P Values for the Number of Bugs Reached', '../process_data_tosem/figures/num_bug_r_greater.png', fuzzers)
-    p_val_heatmap_for_num_bug(p_matrix_triggered, 'P Values for the Number of Bugs Triggered', '../process_data_tosem/figures/num_bug_t_greater.png', fuzzers)
+    p_val_heatmap_for_num_bug(p_matrix_reached, 'P Values for the Number of Bugs Reached', '../process_data_tosem/figures/num_bug_r_two_sided.png', fuzzers)
+    p_val_heatmap_for_num_bug(p_matrix_triggered, 'P Values for the Number of Bugs Triggered', '../process_data_tosem/figures/num_bug_t_two_sided.png', fuzzers)
 
     # print out the latex tables
     format_num_bug_and_survival_time_tables('../process_data_tosem/bug_analysis', fuzzers)
 
     # # process sensitivity experiments
     # plot_sensitivity_results('../process_data_tosem/figures', 'sensitivity_num_of_bug_triggered.png')
+
+    plot_bug_for_all_fuzzers(num_bug_results, '../process_data_tosem/figures')
+    
