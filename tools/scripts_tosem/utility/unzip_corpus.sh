@@ -2,7 +2,7 @@
 set -e
 
 for i in {0..9}; do
-    dir="/Volumes/GitRepo/sensitivity/sensitivity-data/ar/*/*/*/$i"
+    dir="/Volumes/GitRepo/aflgo-other-log/missing_build_time_log_for_aflgoexp/libpng_4_1/*/$i"
     # Use a loop to handle multiple matches
     for subdir in $dir; do
         if [[ -f "$subdir/ball.tar" ]]; then

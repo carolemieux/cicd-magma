@@ -33,7 +33,8 @@ if __name__ == '__main__':
     # # select 50 random benchmarks
     # select_50_random_benchmarks()
     
-    current_working_dir = os.getcwd()
-    home_dir = current_working_dir.split('ContinuousFuzzBench')[0]
-    aflgoexp_log_path = os.path.join(home_dir, 'data/aflgoexp/log')
-    rename_aflgoexp_log_files(aflgoexp_log_path)
+    # current_working_dir = os.getcwd()
+    # home_dir = current_working_dir.split('ContinuousFuzzBench')[0]
+    # aflgoexp_log_path = os.path.join(home_dir, 'data/aflgoexp/log')
+    # rename_aflgoexp_log_files(aflgoexp_log_path)
+    pass

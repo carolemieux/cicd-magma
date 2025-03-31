@@ -1,7 +1,7 @@
 import os 
+import statistics
 import pandas as pd
 import matplotlib.pyplot as plt
-import statistics
 from statistical_test import *
 
 
@@ -148,6 +148,26 @@ def plot_bug_for_all_fuzzers(results, output_dir):
     plt.savefig(output_path, format="png", dpi=300)
 
 
+def get_instrumentation_time_for_all_fuzzers(fuzzers):
+    instrumentation_time_results = dict.fromkeys(fuzzers, {})
+
+    for fuzzer in fuzzers:
+        bug_rt_file_path = f'../process_data_tosem/bug_analysis/{fuzzer}_survival_analysis'
+        instrumentation_time_file_path = f'../process_data_tosem/build_time/{fuzzer}_build_time'
+
+        bug_rt_df = pd.read_csv(bug_rt_file_path)
+        instrumentation_time_df = pd.read_csv(instrumentation_time_file_path)
+
+        instrumentation_time_df['time'] = instrumentation_time_df['time'].apply(lambda x: x.strip('s')).astype(float)
+        rt_benchmarks = bug_rt_df['target'].values
+
+        for benchmark in rt_benchmarks:
+            instrumentation_time = instrumentation_time_df.loc[instrumentation_time_df['benchmark'] == benchmark, 'time'].iloc[0]
+            instrumentation_time_results[fuzzer][benchmark] = instrumentation_time
+
+    return instrumentation_time_results
+
+
 if __name__ == '__main__':
     bug_result_output_dir = '../process_data_tosem/figures'
     bug_result_json_name = 'num_of_bug_rt.json'
@@ -161,18 +181,28 @@ if __name__ == '__main__':
 
     fuzzers = ['afl', 'aflplusplus', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'tunefuzz']
 
-    p_matrix_reached = get_p_val_for_num_bug(num_bug_results, fuzzers, 'reached', 'two-sided', True)
-    p_matrix_triggered = get_p_val_for_num_bug(num_bug_results, fuzzers, 'triggered', 'two-sided', True)
+    # p_matrix_reached = get_p_val_for_num_bug(num_bug_results, fuzzers, 'reached', 'two-sided', True)
+    # p_matrix_triggered = get_p_val_for_num_bug(num_bug_results, fuzzers, 'triggered', 'two-sided', True)
 
-    # plot the heatmaps for the number of bugs reached and triggered
-    p_val_heatmap_for_num_bug(p_matrix_reached, 'P Values for the Number of Bugs Reached', '../process_data_tosem/figures/num_bug_r_two_sided.png', fuzzers)
-    p_val_heatmap_for_num_bug(p_matrix_triggered, 'P Values for the Number of Bugs Triggered', '../process_data_tosem/figures/num_bug_t_two_sided.png', fuzzers)
+    # # plot the heatmaps for the number of bugs reached and triggered
+    # p_val_heatmap_for_num_bug(p_matrix_reached, 'P Values for the Number of Bugs Reached', '../process_data_tosem/figures/num_bug_r_two_sided.png', fuzzers)
+    # p_val_heatmap_for_num_bug(p_matrix_triggered, 'P Values for the Number of Bugs Triggered', '../process_data_tosem/figures/num_bug_t_two_sided.png', fuzzers)
 
-    # print out the latex tables
-    format_num_bug_and_survival_time_tables('../process_data_tosem/bug_analysis', fuzzers)
+    # # print out the latex tables
+    # format_num_bug_and_survival_time_tables('../process_data_tosem/bug_analysis', fuzzers)
 
     # # process sensitivity experiments
     # plot_sensitivity_results('../process_data_tosem/figures', 'sensitivity_num_of_bug_triggered.png')
 
-    plot_bug_for_all_fuzzers(num_bug_results, '../process_data_tosem/figures')
-    
+    # plot_bug_for_all_fuzzers(num_bug_results, '../process_data_tosem/figures')
+
+    instrumentation_time_results = get_instrumentation_time_for_all_fuzzers(fuzzers)
+    print(instrumentation_time_results)
+
+    num_trial = 10
+    after_instrumentation_results = dict.fromkeys(fuzzers, {'reached': [0]*num_trial, 'triggered': [0]*num_trial})
+    for fuzzer in fuzzers:
+        bug_result_file_path = f'../process_data_tosem/bug_analysis/{fuzzer}_results.json'
+        after_instrumentation_results = results_after_counting_instrumentation_time(bug_result_file_path, after_instrumentation_results, instrumentation_time_results)
+        print(after_instrumentation_results)
+    print(after_instrumentation_results)
