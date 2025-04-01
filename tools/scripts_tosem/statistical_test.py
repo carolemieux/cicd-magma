@@ -30,27 +30,23 @@ def get_time_to_bug(file_path, results, fuzzer_name=None) -> dict:
     return results
 
 
-def results_after_counting_instrumentation_time(file_path, results, instrumentation_results, fuzzer_name=None) -> dict:
+def results_after_counting_instrumentation_time(fuzzer, file_path, instrumentation_results, fuzzer_name=None) -> dict:
+    num_trial = 10
+    results = {'reached': [0]*num_trial, 'triggered': [0]*num_trial}
     with open(file_path, 'r') as file:
         data = json.load(file).get('results', {})
-        print(data)
     for fuzzer, f_data in data.items():
         for target, t_data in f_data.items():
             for program, p_data in t_data.items():
                 for run, r_data in p_data.items():
                     for metric, m_data in r_data.items():
                         instrumentation_time = instrumentation_results[fuzzer][target]
-                        print(fuzzer, target, metric, m_data)
                         time_to_bug_lst = list(m_data.values())
                         if len(time_to_bug_lst) > 0:
                             time_to_bug = list(m_data.values())[0]
                             total_time = time_to_bug + instrumentation_time
-                            print(time_to_bug, instrumentation_time, total_time)
                             if total_time <= 600:
-                                if fuzzer_name:
-                                    results[fuzzer_name][metric][int(run)] += len(m_data)
-                                else:
-                                    results[fuzzer][metric][int(run)] += len(m_data)
+                                results[metric][int(run)] += len(m_data)
     return results
 
 

@@ -199,10 +199,12 @@ if __name__ == '__main__':
     instrumentation_time_results = get_instrumentation_time_for_all_fuzzers(fuzzers)
     print(instrumentation_time_results)
 
-    num_trial = 10
-    after_instrumentation_results = dict.fromkeys(fuzzers, {'reached': [0]*num_trial, 'triggered': [0]*num_trial})
+    
+    fuzzers = ['afl', 'aflplusplus', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'tunefuzz']
+    after_instrumentation_results = {}
+
     for fuzzer in fuzzers:
         bug_result_file_path = f'../process_data_tosem/bug_analysis/{fuzzer}_results.json'
-        after_instrumentation_results = results_after_counting_instrumentation_time(bug_result_file_path, after_instrumentation_results, instrumentation_time_results)
-        print(after_instrumentation_results)
+        after_instrumentation_results[fuzzer] = results_after_counting_instrumentation_time(fuzzer, bug_result_file_path, instrumentation_time_results)
     print(after_instrumentation_results)
+
