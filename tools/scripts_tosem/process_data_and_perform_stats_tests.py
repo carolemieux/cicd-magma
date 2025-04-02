@@ -125,23 +125,24 @@ if __name__ == '__main__':
     fuzzers = ['afl', 'aflgo', 'aflgoexp', 'aflplusplus', 'ffd', 'tunefuzz']
 
 
+    # # run the following only once
     # # process the tables for the feature last_update
     # for fuzzer in fuzzers:
-    #     log_path=f'/Volumes/GitRepo/data/{fuzzer}'
-    #     output_path = '../process_data_tosem/last_update'
+    #     log_path=f'/Volumes/GitRepo/original-experiments/data/{fuzzer}'
+    #     output_path = '../process_data_tosem/original_experiments/last_update'
     #     output_path = os.path.join(output_path, fuzzer)
     #     process_last_update_log(log_path, output_path)
 
 
     # # merge the tables to be the final_fuzzer_stats tables
-    # last_update_path = '../process_data_tosem/last_update'
-    # simple_fuzzer_stats_path = '../process_data_tosem/simple_fuzzer_stats'
-    # merge_execs_done_and_new_fuzzing_time(benchmarks, fuzzers, last_update_path, simple_fuzzer_stats_path, '../process_data_tosem/final_fuzzer_stats')
+    # last_update_path = '../process_data_tosem/original_experiments/last_update'
+    # simple_fuzzer_stats_path = '../process_data_tosem/original_experiments/simple_fuzzer_stats'
+    # merge_execs_done_and_new_fuzzing_time(benchmarks, fuzzers, last_update_path, simple_fuzzer_stats_path, '../process_data_tosem/original_experiments/final_fuzzer_stats')
     
 
     # # sanity check for any missing benchmarks
     # for fuzzer in fuzzers:
-    #     log_path = f'../process_data_tosem/final_fuzzer_stats/{fuzzer}'
+    #     log_path = f'../process_data_tosem/original_experiments/final_fuzzer_stats/{fuzzer}'
     #     for benchmark in benchmarks:
     #         pattern = f'*{benchmark}*'
     #         searched_files = list(Path(log_path).glob(pattern))
@@ -151,7 +152,7 @@ if __name__ == '__main__':
 
 
     # stats tests for mean execution counts, mean fuzzing time, and mean total coverage
-    fuzzer_stats_log_path = '../process_data_tosem/final_fuzzer_stats/'
+    fuzzer_stats_log_path = '../process_data_tosem/original_experiments/final_fuzzer_stats/'
     print('The table for the actual fuzzing time')
     perform_stats_test_and_format_table(fuzzers, benchmarks, fuzzer_stats_log_path, 'fuzzing_time')
     print('The table for the number of executions done')
@@ -159,8 +160,9 @@ if __name__ == '__main__':
 
 
     fuzzer_naming_convention2 = ['afl', 'aflpp', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'tunefuzz']
-    log_path = '../process_data_tosem/coverage/total_coverage/'
+    log_path = '../process_data_tosem/original_experiments/coverage/total_coverage/'
     # branch coverage in percentage
     feature_name = 'Cover.2'
     print('The table for coverage')
     perform_stats_test_and_format_table(fuzzer_naming_convention2, benchmarks, log_path, feature_name)
+

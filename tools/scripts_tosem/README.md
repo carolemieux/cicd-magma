@@ -12,24 +12,42 @@ Suppose we have a directory named `data` where the fuzzing data for each fuzzer 
 ```
 python3 utility.py
 ```
+* The thesis experiments include the fuzzing data for afl, afl++, aflgo, aflgoexp, ffd, and libfuzzer. However, for aflgoexp, the log for the benchmark libpng_4_1 is cached so that Docker does not record its instrumentation time. We repeat the experiments for the benchmark libpng_4_1 with aflgoexp in this complete evaluation for tosem and use this fuzzing data for evaluation. Note that the iterations need to be renamed to follow the correct iteration order.
+
+**sensitivity experiments**
+* Need to reformat the data for sensitivity experiments to be in format of `data/[fuzzer_name]/ar/[fuzzer_name]/[benchmark_name]/[program_name]...`
+* Need to rename the iteration directories for the benchmark poppler_9_1 for the fuzzer aflgo from "1 2 3 4 5 6 7 9 10" to "1 2 3 4 5 6 7 8 9".
+* We do not include the process data for the number of bugs reached and triggered with instrumentation time because the build log for some benchmarks are cached, thus lacking the information of instrumentation time.
+* We do not include the process data for fuzzer_stats and coverage values for sensitivity experiments at this time due to the different format of sensitivity log.
 
 ## Bug analysis
 Go to the directory `ContinuousFuzzBench/tools/benchd` to generate the survival analysis results.
 
 Run the file `exp2json.py` for each fuzzer, e.g.,
 ```
-mkdir ../process_data_tosem/bug_analysis
-python3 exp2json.py --workers 32 -v [path_to_data/afl] ../process_data_tosem/bug_analysis/afl_results.json
+mkdir ../process_data_tosem/original_experiments/bug_analysis
+python3 exp2json.py --workers 32 -v [path_to_data/afl] ../process_data_tosem/original_experiments/bug_analysis/afl_results.json
 ```
 
 Run the file `survival_analysis.py` to perform the survival analysis for each fuzzer, e.g.,
 ```
-python3 survival_analysis.py -n 10 -t 600 ../process_data_tosem/bug_analysis/afl_results.json > ../process_data_tosem/bug_analysis/afl_survival_analysis
+python3 survival_analysis.py -n 10 -t 600 ../process_data_tosem/original_experiments/bug_analysis/afl_results.json > ../process_data_tosem/original_experiments/bug_analysis/afl_survival_analysis
+```
+
+Extract and plot instrumentation time
+```
+./process_build_time.sh [path_to_data_dir] ../process_data_tosem/original_experiments/build_time
+python3 plot_instrumentation_time.py
 ```
 
 Run the scripts below to:
-1. Plot the heatmap for Mann-Whitney U test results for the number of bugs reached and triggered
-2. Format and print the latex tables for 1) the number of bugs reached and triggered, 2) mean survival time 
+1. Process the number of bugs reached and triggered results without instrumentation time
+2. Plot the heatmaps for the Mann-Whitney U test results for the number of bugs reached and triggered without instrumentation time
+3. Get the instrumentation time for all benchmarks by fuzzers
+4. Process the number of bugs reached and triggered results with instrumentation time
+5. Plot the heatmaps for the Mann-Whitney U test results for the number of bugs reached and triggered with instrumentation time
+6. Plot the mean number of bugs reached and triggered with and without instrumentation time
+7. Format and print the latex tables for the mean survival time with and without instrumentation time
 ```
 python3 process_bug_analysis.py 
 ```
@@ -43,21 +61,15 @@ Run the script `process_all_fuzzer_stats.sh` to process the raw `fuzzer_stats` f
 ## Coverage values
 Process the raw coverage data for all fuzzers
 ```
-./process_all_fuzzer_total_coverage.sh "process_total_coverage.sh" "[path_to_coverage_data]" "../process_data_tosem/coverage/total_coverage"
+./process_all_fuzzer_total_coverage.sh "process_total_coverage.sh" "[path_to_coverage_data]" "../process_data_tosem/original_experiments/coverage/total_coverage"
 
-./process_all_fuzzer_target_fn_coverage.sh "process_target_function_coverage.sh" "[path_to_coverage_data]" "../process_data_tosem/coverage/target_function_coverage"
+./process_all_fuzzer_target_fn_coverage.sh "process_target_function_coverage.sh" "[path_to_coverage_data]" "../process_data_tosem/original_experiments/coverage/target_function_coverage"
 ```
 
 ## Pair-wise Mann-Whitney U tests
 Perform pair-wise Mann-Whitney U tests and print the formatted latex tables for mean total coverage, mean execution counts, and mean actual fuzzing time.
 ```
 python3 process_data_and_perform_stats_tests.py
-```
-
-## Extract and plot instrumentation time
-```
-./process_build_time.sh [path_to_data_dir] ../process_data_tosem/build_time
-python3 plot_instrumentation_time.py
 ```
 
 # Steps to run the coverage experiments
@@ -87,11 +99,3 @@ USER magma:magma
 5. During the 10-iteration fuzzing campaigns in the Docker container, we notice that sometimes one run is missed or skipped so that the scripts in `CICDBench/tools/benchd` can no longer work due to index errors. We need to set up the fuzzing experiments for the missing runs or rename the directories and files to make sure that the indices are from `0` to `9` in order to use the scripts to perform the survival analysis.
 6. Need to rename the aflgoexp's fuzzing files because aflgoexp is essentially aflgo with a different config when fuzzing, so the fuzzing data is stored in files with aflgo as prefix names.
 
-# Process the sensitivity experiments
-1. Rename the iteration directories for the benchmark poppler_9_1 for the fuzzer aflgo from "1 2 3 4 5 6 7 9 10" to "1 2 3 4 5 6 7 8 9".
-2. Run the commands as below:
-```
-mkdir -p ../process_data_tosem/sensitivity/bug_analysis
-python3 exp2json.py --workers 32 -v /Volumes/GitRepo/sensitivity/sensitivity-data ../process_data_tosem/sensitivity/bug_analysis/sensitivity_results.json
-python3 survival_analysis.py -n 10 -t 600 ../process_data_tosem/sensitivity/bug_analysis/sensitivity_results.json > ../process_data_tosem/sensitivity/bug_analysis/sensitivity_survival_analysis
-```

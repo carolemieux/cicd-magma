@@ -47,6 +47,8 @@ def results_after_counting_instrumentation_time(fuzzer, file_path, instrumentati
                             total_time = time_to_bug + instrumentation_time
                             if total_time <= 600:
                                 results[metric][int(run)] += len(m_data)
+                            else:
+                                print(fuzzer, target, program, run, metric, time_to_bug, instrumentation_time, total_time)
     return results
 
 
@@ -71,7 +73,7 @@ def get_p_val_for_num_bug(result_dict: dict, fuzzers, metric, alternative, verbo
     return p_matrix
 
 
-def p_val_heatmap_for_num_bug(matrix, fig_title, file_name, fuzzers):
+def p_val_heatmap_for_num_bug(matrix, fuzzers, file_name):
     plt.figure(figsize=(10, 8))  
     mask = np.isnan(matrix)
     ax = sns.heatmap(matrix, cmap='viridis_r', mask=mask, annot=True, fmt=".6f")
@@ -79,7 +81,7 @@ def p_val_heatmap_for_num_bug(matrix, fig_title, file_name, fuzzers):
     ax.set_yticklabels(fuzzers)
     plt.xticks(rotation=30)
     plt.yticks(rotation=30)
-    plt.title(fig_title, fontsize=20)
+    # plt.title(fig_title, fontsize=20)
     plt.xticks(fontsize=16)
     plt.yticks(fontsize=16)
     # save the plot locally

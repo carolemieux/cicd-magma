@@ -13,5 +13,5 @@ declare -a fuzzers=("afl" "aflgo" "aflgoexp" "aflplusplus" "ffd" "tunefuzz")
 for fuzzer in "${fuzzers[@]}"
 do
     full_data_path="$data_dir/$fuzzer"
-    bash "$script" "$full_data_path" "../process_data_tosem/simple_fuzzer_stats"
+    bash "$script" "$full_data_path" "../process_data_tosem/original_experiments/simple_fuzzer_stats"
 done

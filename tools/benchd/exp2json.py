@@ -160,11 +160,13 @@ def process_one_campaign(path):
             os.rmdir(dumpdir)
     return fuzzer, target, program, run, df
 
-def collect_experiment_data(workdir, workers):
-    def init(*args):
+
+def init(*args):
         global tmpdir
         tmpdir, = tuple(args)
 
+
+def collect_experiment_data(workdir, workers):
     experiment = ddr()
     tmpdir = os.path.join(workdir, "tmp")
     ensure_dir(tmpdir)
