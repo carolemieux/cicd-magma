@@ -98,6 +98,8 @@ def plot_sensitivity_instrumentation_time(df, fuzzers, output_dir):
 
 if __name__ == '__main__':
     # we do not include aflgoexp because aflgoexp is the same as aflgo except for the options used for fuzzing
+
+    # plot for original experiments
     fuzzers = ['afl', 'aflplusplus', 'libfuzzer', 'aflgo', 'ffd', 'tunefuzz']
     build_time_df = concat_build_time_df('../process_data_tosem/original_experiments/build_time')
     print(build_time_df)
@@ -105,10 +107,10 @@ if __name__ == '__main__':
     os.makedirs(fig_output_dir, exist_ok=True)
     plot_instrumentation_time(build_time_df, fuzzers, fig_output_dir)
 
+    # plot for sensitivity experiments
     sensitivity_fuzzers = ['aflgo', 'ffd']
     sensitivity_build_time_df = concat_sensitivity_build_time_df('../process_data_tosem/sensitivity_experiments/build_time')
     print(sensitivity_build_time_df)
     sensitivity_fig_output_dir = '../process_data_tosem/sensitivity_experiments/figures'
     os.makedirs(sensitivity_fig_output_dir, exist_ok=True)
     plot_sensitivity_instrumentation_time(sensitivity_build_time_df, sensitivity_fuzzers, sensitivity_fig_output_dir)
-

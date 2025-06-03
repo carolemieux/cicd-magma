@@ -114,16 +114,16 @@ def perform_stats_test_and_format_table(fuzzers, benchmarks, log_path, feature_n
         mean_result = [round(np.mean(x),2) for x in result_values]
         mean_result_string = list(map(str, mean_result))
         # highlight the value with statistical significance in gray
-        mean_result_string[max_index] = '\colorbox{gray!40} {' + mean_result_string[max_index] + '}'
+        if max_index != -1:
+            mean_result_string[max_index] = '\colorbox{gray!40} {' + mean_result_string[max_index] + '}'
         formatted_result = benchmark + ' & ' + ' & '.join(mean_result_string) + ' \\\\'
         print(formatted_result)
 
 
 if __name__ == '__main__':
 
-    benchmarks = ['libpng_4_1', 'libsndfile_2_1', 'libsndfile_7_1', 'libsndfile_15_1', 'libtiff_6_1', 'libtiff_7_1', 'libtiff_9_1', 'libtiff_10_1', 'libxml2_1_2', 'libxml2_2_1', 'libxml2_8_1', 'libxml2_10_2', 'libxml2_12_2', 'libxml2_14_1', 'libxml2_15_1', 'libxml2_16_1', 'libxml2_16_2', 'openssl_1_3', 'openssl_1_5', 'openssl_4_4', 'openssl_5_1', 'openssl_6_4', 'openssl_6_5', 'openssl_6_6', 'openssl_7_2', 'openssl_7_4', 'openssl_8_1', 'openssl_9_1', 'openssl_10_5', 'openssl_11_4', 'openssl_11_6', 'openssl_12_6', 'openssl_13_2', 'openssl_16_6', 'openssl_17_2', 'openssl_17_4', 'openssl_18_5', 'openssl_19_1', 'openssl_20_3', 'openssl_20_4', 'php_4_1', 'php_6_2', 'php_11_2', 'php_15_2', 'php_16_3', 'poppler_3_1', 'poppler_9_1', 'poppler_17_1', 'sqlite3_18_1', 'sqlite3_20_1']
-    fuzzers = ['afl', 'aflgo', 'aflgoexp', 'aflplusplus', 'ffd', 'tunefuzz']
-
+    # benchmarks = ['libpng_4_1', 'libsndfile_2_1', 'libsndfile_7_1', 'libsndfile_15_1', 'libtiff_6_1', 'libtiff_7_1', 'libtiff_9_1', 'libtiff_10_1', 'libxml2_1_2', 'libxml2_2_1', 'libxml2_8_1', 'libxml2_10_2', 'libxml2_12_2', 'libxml2_14_1', 'libxml2_15_1', 'libxml2_16_1', 'libxml2_16_2', 'openssl_1_3', 'openssl_1_5', 'openssl_4_4', 'openssl_5_1', 'openssl_6_4', 'openssl_6_5', 'openssl_6_6', 'openssl_7_2', 'openssl_7_4', 'openssl_8_1', 'openssl_9_1', 'openssl_10_5', 'openssl_11_4', 'openssl_11_6', 'openssl_12_6', 'openssl_13_2', 'openssl_16_6', 'openssl_17_2', 'openssl_17_4', 'openssl_18_5', 'openssl_19_1', 'openssl_20_3', 'openssl_20_4', 'php_4_1', 'php_6_2', 'php_11_2', 'php_15_2', 'php_16_3', 'poppler_3_1', 'poppler_9_1', 'poppler_17_1', 'sqlite3_18_1', 'sqlite3_20_1']
+    # fuzzers = ['afl', 'aflgo', 'aflgoexp', 'aflplusplus', 'ffd', 'tunefuzz']
 
     # # run the following only once
     # # process the tables for the feature last_update
@@ -151,18 +151,65 @@ if __name__ == '__main__':
     #             print(searched_files)
 
 
+    # # stats tests for mean execution counts, mean fuzzing time, and mean total coverage
+    # fuzzer_stats_log_path = '../process_data_tosem/original_experiments/final_fuzzer_stats/'
+
+    # print('The table for the actual fuzzing time')
+    # perform_stats_test_and_format_table(fuzzers, benchmarks, fuzzer_stats_log_path, 'fuzzing_time')
+
+    # print('The table for the number of executions done')
+    # perform_stats_test_and_format_table(fuzzers, benchmarks, fuzzer_stats_log_path, 'execs_done')
+
+    # fuzzer_naming_convention2 = ['afl', 'aflpp', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'tunefuzz']
+    # log_path = '../process_data_tosem/original_experiments/coverage/total_coverage/'
+
+    # # branch coverage in percentage
+    # print('The table for coverage')
+    # perform_stats_test_and_format_table(fuzzer_naming_convention2, benchmarks, log_path, 'Cover.2')
+
+
+    benchmarks = ['poppler_9_1', 'php_11_2', 'libpng_4_1', 'libsndfile_7_1',
+       'sqlite3_18_1', 'sqlite3_20_1', 'openssl_1_5', 'openssl_10_5',
+       'openssl_16_6', 'openssl_20_4',
+       'libxml2_1_2', 'libxml2_8_1', 'libxml2_12_2']
+    fuzzers = ['aflgo', 'aflgoexp', 'ffd']
+
+    # # run the following only once
+    # # process the tables for the feature last_update
+    # for fuzzer in fuzzers:
+    #     log_path=f'/Volumes/GitRepo/sensitivity-experiments/sensitivity-data/{fuzzer}'
+    #     output_path = '../process_data_tosem/sensitivity_experiments/last_update'
+    #     output_path = os.path.join(output_path, fuzzer)
+    #     process_last_update_log(log_path, output_path)
+
+
+    # # merge the tables to be the final_fuzzer_stats tables
+    # last_update_path = '../process_data_tosem/sensitivity_experiments/last_update'
+    # simple_fuzzer_stats_path = '../process_data_tosem/sensitivity_experiments/simple_fuzzer_stats'
+    # merge_execs_done_and_new_fuzzing_time(benchmarks, fuzzers, last_update_path, simple_fuzzer_stats_path, '../process_data_tosem/sensitivity_experiments/final_fuzzer_stats')
+    
+
+    # # sanity check for any missing benchmarks
+    # for fuzzer in fuzzers:
+    #     log_path = f'../process_data_tosem/sensitivity_experiments/final_fuzzer_stats/{fuzzer}'
+    #     for benchmark in benchmarks:
+    #         pattern = f'*{benchmark}*'
+    #         searched_files = list(Path(log_path).glob(pattern))
+    #         if len(searched_files) != 1:
+    #             print(benchmark)
+    #             print(searched_files)
+
+
     # stats tests for mean execution counts, mean fuzzing time, and mean total coverage
-    fuzzer_stats_log_path = '../process_data_tosem/original_experiments/final_fuzzer_stats/'
+    fuzzer_stats_log_path = '../process_data_tosem/sensitivity_experiments/final_fuzzer_stats/'
+
     print('The table for the actual fuzzing time')
     perform_stats_test_and_format_table(fuzzers, benchmarks, fuzzer_stats_log_path, 'fuzzing_time')
+
     print('The table for the number of executions done')
     perform_stats_test_and_format_table(fuzzers, benchmarks, fuzzer_stats_log_path, 'execs_done')
 
-
-    fuzzer_naming_convention2 = ['afl', 'aflpp', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'tunefuzz']
-    log_path = '../process_data_tosem/original_experiments/coverage/total_coverage/'
     # branch coverage in percentage
-    feature_name = 'Cover.2'
+    log_path = '../process_data_tosem/sensitivity_experiments/coverage/total_coverage/'
     print('The table for coverage')
-    perform_stats_test_and_format_table(fuzzer_naming_convention2, benchmarks, log_path, feature_name)
-
+    perform_stats_test_and_format_table(fuzzers, benchmarks, log_path, 'Cover.2')

@@ -9,6 +9,7 @@ Suppose we have a directory named `data` where the fuzzing data for each fuzzer 
 **aflgoexp**
 * Need to rename the first subdirectory of `data/aflgoexp/ar` from `aflgo` to `aflgoexp`.
 * Need to rename all prefixes from `aflgo` to `aflgoexp` in the `*.log` files in the `data/aflgoexp/log` directory. Go to the directory `ContinuousFuzzBench/tools/scripts_tosem` and execute the `utility.py` to rename the files.
+
 ```
 python3 utility.py
 ```
@@ -25,18 +26,19 @@ Go to the directory `ContinuousFuzzBench/tools/benchd` to generate the survival 
 
 Run the file `exp2json.py` for each fuzzer, e.g.,
 ```
+# make sure the output directory exists
 mkdir ../process_data_tosem/original_experiments/bug_analysis
-python3 exp2json.py --workers 32 -v [path_to_data/afl] ../process_data_tosem/original_experiments/bug_analysis/afl_results.json
+python3 exp2json.py --workers 32 -v [path_to_data/afl] [output_directory/afl_results.json]
 ```
 
 Run the file `survival_analysis.py` to perform the survival analysis for each fuzzer, e.g.,
 ```
-python3 survival_analysis.py -n 10 -t 600 ../process_data_tosem/original_experiments/bug_analysis/afl_results.json > ../process_data_tosem/original_experiments/bug_analysis/afl_survival_analysis
+python3 survival_analysis.py -n 10 -t 600 [output_directory/afl_results.json] > [output_directory/afl_survival_analysis]
 ```
 
-Extract and plot instrumentation time
+Extract and plot instrumentation time, e.g.,
 ```
-./process_build_time.sh [path_to_data_dir] ../process_data_tosem/original_experiments/build_time
+./process_build_time.sh [path_to_data] [output_directory]
 python3 plot_instrumentation_time.py
 ```
 
@@ -53,17 +55,23 @@ python3 process_bug_analysis.py
 ```
 
 ## Fuzzer stats
-Run the script `process_all_fuzzer_stats.sh` to process the raw `fuzzer_stats` files and extract the `start_time` and `execs_done` values for each fuzzer
+Run the script `process_all_fuzzer_stats.sh` to process the raw `fuzzer_stats` files and extract the `start_time` and `execs_done` values for each fuzzer. E.g.,
 ```
-./process_all_fuzzer_stats.sh "process_simple_fuzzer_stats.sh" "[path_to_data]"
+./process_all_fuzzer_stats.sh "process_simple_fuzzer_stats.sh" "[path_to_data]" "../process_data_tosem/original_experiments/simple_fuzzer_stats"
 ```
 
 ## Coverage values
 Process the raw coverage data for all fuzzers
 ```
+# for original experiments
 ./process_all_fuzzer_total_coverage.sh "process_total_coverage.sh" "[path_to_coverage_data]" "../process_data_tosem/original_experiments/coverage/total_coverage"
 
 ./process_all_fuzzer_target_fn_coverage.sh "process_target_function_coverage.sh" "[path_to_coverage_data]" "../process_data_tosem/original_experiments/coverage/target_function_coverage"
+
+# for sensitivity experiments
+./process_total_coverage.sh [path_to_sensitivity_coverage] "../process_data_tosem/sensitivity_experiments/coverage/total_coverage"
+
+./process_target_function_coverage.sh "target_functions.csv" [path_to_sensitivity_coverage] "../process_data_tosem/sensitivity_experiments/coverage/target_function_coverage"
 ```
 
 ## Pair-wise Mann-Whitney U tests
