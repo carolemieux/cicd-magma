@@ -85,7 +85,8 @@ def plot_mean_num_of_bug_reached_and_triggered(results, output_path):
     # plotting
     x = np.arange(len(fuzzers)) 
     # the width of the bars
-    width = 0.4
+    # width = 0.4
+    width = 0.15
     multiplier = 0
 
     fig, ax = plt.subplots(layout='constrained')
@@ -214,15 +215,14 @@ def plot_and_format_bug_analysis_results(fuzzers, data_path):
     process_bug_results(fuzzers, 10, bug_analysis_output_path,  numofbug_w_instrumentation_output_path, instrumentation_time_dict)
     plot_bug_analysis_results(fuzzers, numofbug_w_instrumentation_output_path, heatmap_w_instrumentation_output_path, mean_stdev_bar_w_instrumentation_output_path)
 
-
     # print out the latex tables for survival time analysis
     format_num_bug_and_survival_time_tables(bug_analysis_output_path, fuzzers, instrumentation_time_dict)
 
 
 if __name__ == '__main__':
-    fuzzers = ['afl', 'aflplusplus', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'tunefuzz']
-    data_path = '../process_data_tosem/original_experiments'
-    plot_and_format_bug_analysis_results(fuzzers, data_path)
+    # fuzzers = ['afl', 'aflplusplus', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'tunefuzz']
+    # data_path = '../process_data_tosem/original_experiments'
+    # plot_and_format_bug_analysis_results(fuzzers, data_path)
 
     sensitivity_fuzzers = ['aflgo', 'aflgoexp', 'ffd']
     sensitivity_data_path = '../process_data_tosem/sensitivity_experiments'

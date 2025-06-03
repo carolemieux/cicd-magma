@@ -1,12 +1,12 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import statistics
 from statistical_test import *
 
 
 def plot_bug_count_comparison(data, data_to_compare, output_path):
-    categories = list(data['original'].keys())
-    num_groups = len(data)
+    categories = list(data['reached'].keys())
     num_categories = len(categories)
 
     bar_width = 0.2
@@ -14,75 +14,85 @@ def plot_bug_count_comparison(data, data_to_compare, output_path):
 
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(10, 6), sharey=True)
 
-    group_positions = np.arange(num_groups)
+    for i, metric in enumerate(['reached', 'triggered']):
 
-    ax = axes[0]
-    for i, (group_name, values) in enumerate(data.items()):
-        positions = index + group_positions[i] * bar_width
-        bar_container = ax.bar(positions, list(values.values()), bar_width, label=group_name)
-        ax.bar_label(bar_container, fmt='{:,.0f}')
+        original_data = data[metric]
+        sensitivity_data = data_to_compare[metric]
 
-    ax.set_xlabel('Fuzzers')
-    ax.set_ylabel('Number of Bugs Reached')
-    ax.set_xticks(index + bar_width * (num_groups - 1) / 2)
-    ax.set_xticklabels(categories)
+        original_mean = [statistics.mean(val) for val in original_data.values()]
+        sensitivity_mean = [statistics.mean(val) for val in sensitivity_data.values()]
+        original_stdev = [statistics.stdev(val) for val in original_data.values()]
+        sensitivity_stdev = [statistics.stdev(val) for val in sensitivity_data.values()]
+        
+        original_bar_container = axes[i].bar(index + 0 * bar_width, original_mean, bar_width, yerr=original_stdev, label='original')
+        sensitivity_bar_container = axes[i].bar(index + 1 * bar_width, sensitivity_mean, bar_width, yerr=sensitivity_stdev, label='sensitivity')
 
-    ax = axes[1]
-    for i, (group_name, values) in enumerate(data_to_compare.items()):
-        positions = index + group_positions[i] * bar_width
-        bar_container = ax.bar(positions, list(values.values()), bar_width, label=group_name)
-        ax.bar_label(bar_container, fmt='{:,.0f}')
+        axes[i].bar_label(original_bar_container, fmt='{:,.0f}')
+        axes[i].bar_label(sensitivity_bar_container, fmt='{:,.0f}')
 
-    ax.set_xlabel('Fuzzers')
-    ax.set_ylabel('Number of Bugs Triggered')
-    ax.set_xticks(index + bar_width * (num_groups - 1) / 2)
-    ax.set_xticklabels(categories)
+    axes[0].set_xlabel('Fuzzers')
+    axes[0].set_ylabel('Number of Bugs Reached')
+    axes[0].set_xticks(index + bar_width * 1/2)
+    axes[0].set_xticklabels(categories)
+
+    axes[1].set_xlabel('Fuzzers')
+    axes[1].set_ylabel('Number of Bugs Triggered')
+    axes[1].set_xticks(index + bar_width * 1/2)
+    axes[1].set_xticklabels(categories)
 
     # Show legend
     handles, labels = plt.gca().get_legend_handles_labels()
     fig.legend(handles, labels, loc='upper center', ncols=2)
+
     plt.savefig(output_path) 
 
 
+# helper function to swap the outer and inner keys of a json object
+def swap_json_keys(data):
+    swapped_json = {}
+    for outer_key, inner_dict in data.items():
+        for inner_key, value in inner_dict.items():
+            # prevent access error
+            if inner_key not in swapped_json:
+                swapped_json[inner_key] = {}
+            swapped_json[inner_key][outer_key] = value
+    return swapped_json
+
+
 if __name__ == '__main__':
-    # aflgo r-15 t-6 aflgoexp r-12 t-4 ffd r-12 t-5
-    # aflgo r-15 t-6 aflgoexp r-14 t-5 ffd r-14 t-5
 
-    reached_dict = {
-        'original': {'aflgo': 15, 'aflgoexp': 14, 'ffd': 14},
-        'sensitivity': {'aflgo': 15, 'aflgoexp': 12, 'ffd': 12},
-    }
-    triggered_dict = {
-        'original': {'aflgo': 6, 'aflgoexp': 5, 'ffd': 5},
-        'sensitivity': {'aflgo': 6, 'aflgoexp': 4, 'ffd': 5},
-    }
+    # original_file_path = '../process_data_tosem/original_experiments/figures/num_of_bugs_w_instrumentation.json'
+    # sensitivity_file_path = '../process_data_tosem/sensitivity_experiments/figures/num_of_bugs_w_instrumentation.json'
 
-    plot_bug_count_comparison(reached_dict, triggered_dict, '../process_data_tosem/original_vs_sensitivity_figures/reached_bug_count_comparison.png')
-
-
-    original_file_path = '../process_data_tosem/original_experiments/figures/num_of_bugs_w_instrumentation.json'
-    sensitivity_file_path = '../process_data_tosem/sensitivity_experiments/figures/num_of_bugs_w_instrumentation.json'
+    original_file_path = '../process_data_tosem/original_experiments/figures/num_of_bugs_wo_instrumentation.json'
+    sensitivity_file_path = '../process_data_tosem/sensitivity_experiments/figures/num_of_bugs_wo_instrumentation.json'
 
     with open(original_file_path, 'r') as json_file:
         original_num_of_bug_result = json.load(json_file)
+        original_num_of_bug_result.pop('afl')
+        original_num_of_bug_result.pop('aflplusplus')
+        original_num_of_bug_result.pop('libfuzzer')
+        original_num_of_bug_result.pop('tunefuzz')
 
     with open(sensitivity_file_path, 'r') as json_file:
         sensitivity_num_of_bug_result = json.load(json_file)
-
+    
+    # stats tests
     sensitivity_fuzzers = ['aflgo', 'aflgoexp', 'ffd']
-
     for fuzzer in sensitivity_fuzzers:
         for metric in ['reached', 'triggered']:
             original_sample = original_num_of_bug_result[fuzzer][metric]
             sensitivity_sample = sensitivity_num_of_bug_result[fuzzer][metric]
             u1, p = mannwhitneyu(original_sample, sensitivity_sample, alternative='greater')
-
-            print(fuzzer, metric)
-            print(original_sample)
-            print(sensitivity_sample)
-
             if p < 0.05:
-                print('Greater\n')
+                print('Greater')
             else:
-                print('Non-significant\n')
+                print(f'Non-significant: {fuzzer}, {metric}, {original_sample}, {sensitivity_sample}')
         
+    original_result = swap_json_keys(original_num_of_bug_result)
+    sensitivity_result = swap_json_keys(sensitivity_num_of_bug_result)
+    print(original_result)
+    print(sensitivity_result)
+
+    # plot_bug_count_comparison(original_result, sensitivity_result, '../process_data_tosem/original_vs_sensitivity_figures/original_vs_sensitivity_bug_count.png')
+    plot_bug_count_comparison(original_result, sensitivity_result, '../process_data_tosem/original_vs_sensitivity_figures/original_vs_sensitivity_bug_count_wo_instrumentation.png')
