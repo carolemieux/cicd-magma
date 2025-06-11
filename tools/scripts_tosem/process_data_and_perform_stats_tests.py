@@ -168,10 +168,7 @@ if __name__ == '__main__':
     # perform_stats_test_and_format_table(fuzzer_naming_convention2, benchmarks, log_path, 'Cover.2')
 
 
-    benchmarks = ['poppler_9_1', 'php_11_2', 'libpng_4_1', 'libsndfile_7_1',
-       'sqlite3_18_1', 'sqlite3_20_1', 'openssl_1_5', 'openssl_10_5',
-       'openssl_16_6', 'openssl_20_4',
-       'libxml2_1_2', 'libxml2_8_1', 'libxml2_12_2']
+    benchmarks = ['libpng_4_1', 'libsndfile_7_1', 'libxml2_1_2', 'libxml2_8_1', 'libxml2_12_2', 'openssl_1_5', 'openssl_10_5', 'openssl_16_6', 'openssl_20_4', 'php_11_2', 'poppler_9_1', 'sqlite3_18_1', 'sqlite3_20_1']
     fuzzers = ['aflgo', 'aflgoexp', 'ffd']
 
     # # run the following only once
