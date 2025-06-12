@@ -71,11 +71,10 @@ POC_EXTRACT=1
 
 # FUZZERS: an array of fuzzer names (from magma/fuzzers/*) to evaluate
 FUZZERS=(aflgo ffd aflplusplus afl)
-# afl aflplusplus libfuzzer 
+
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array
 # (default: all targets)
-# libpng libsndfile libtiff libxml2 openssl php poppler sqlite3 lua
 
 aflgo_TARGETS=(php_4_1 php_6_2 php_11_2 php_15_2 php_16_3)
 ffd_TARGETS=(php_4_1 php_6_2 php_11_2 php_15_2 php_16_3)

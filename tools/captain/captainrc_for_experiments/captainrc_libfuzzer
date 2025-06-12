@@ -71,7 +71,7 @@ POC_EXTRACT=1
 
 # FUZZERS: an array of fuzzer names (from magma/fuzzers/*) to evaluate
 FUZZERS=(libfuzzer)
-# libfuzzer libfuzzerplusplus libfuzzer 
+
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array
 # (default: all targets)
