@@ -1,4 +1,6 @@
 FROM ubuntu:22.04
+# This is the Dockerfile for getting coverage values
+
 # TODO remove sudo for user "magma" to avoid unwanted priv escalation from
 # other attack vectors.
 
