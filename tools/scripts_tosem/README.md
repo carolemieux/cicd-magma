@@ -80,6 +80,24 @@ Perform pair-wise Mann-Whitney U tests and print the formatted latex tables for 
 python3 process_data_and_perform_stats_tests.py
 ```
 
+## Checksum results
+
+```
+./compare_checksum.sh [path_to_checksum_before_inserting_patches] [path_to_checksum_after_inserting_patches]
+```
+
+Results
+```
+Files have the same content: libtiff_13/tiff_read_rgba_fuzzer and libtiff_13/tiff_read_rgba_fuzzer
+Files have the same content: openssl_5/asn1parse and openssl_5/asn1parse
+Files have the same content: openssl_5/bignum and openssl_5/bignum
+Files have the same content: openssl_5/x509 and openssl_5/x509
+Files have the same content: openssl_18/asn1parse and openssl_18/asn1parse
+Files have the same content: openssl_18/bignum and openssl_18/bignum
+Files have the same content: openssl_18/x509 and openssl_18/x509
+Files have the same content: sqlite3_4/sqlite3_fuzz and sqlite3_4/sqlite3_fuzz
+```
+
 # Steps to run the coverage experiments
 1. To show all available CPUs: `lscpu --extended`. Notice that the CPUs with high `MAXMHZ` value have better performance. The CPUs with the same core ID have the same physical core. To maximize the CPU usage, we use one physical core for each fuzzing campaign and we choose the `MAXMHZ` value to be as high as possible.
 2. The queue folder stores test inputs in file paths that look like `libpng_4_1/libpng_read_fuzzer/0/findings/queue` with the format `[benchmark_name]/[target_name]/[iteration_number]/findings/queue`.

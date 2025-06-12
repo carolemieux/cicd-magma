@@ -29,6 +29,9 @@ export AFL_SKIP_CRASHES=1
 export AFL_FAST_CAL=1
 export AFL_CMPLOG_ONLY_NEW=1
 
+# checksum=$(sha512sum "$OUT/afl/$PROGRAM")
+# echo $checksum > "$SHARED/checksum"
+
 "$FUZZER/repo/afl-fuzz" -m none -t 10000 -i "$SEED" -o "$SHARED/findings" \
     "${flag_cmplog[@]}" -d \
     $FUZZARGS -- "$OUT/afl/$PROGRAM" $ARGS 2>&1
