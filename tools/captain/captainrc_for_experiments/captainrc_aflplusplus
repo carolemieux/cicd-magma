@@ -7,7 +7,7 @@
 ###
 
 # WORKDIR: path to directory where shared volumes will be created
-WORKDIR=./aflpp-experiments
+WORKDIR=./aflplusplus-experiments
 
 # REPEAT: number of campaigns to run per program (per fuzzer)
 REPEAT=10

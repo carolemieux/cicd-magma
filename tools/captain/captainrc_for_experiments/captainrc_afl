@@ -7,7 +7,7 @@
 ###
 
 # WORKDIR: path to directory where shared volumes will be created
-WORKDIR=./afl-experiments-and-php
+WORKDIR=./afl-experiments
 
 # REPEAT: number of campaigns to run per program (per fuzzer)
 REPEAT=10
@@ -70,36 +70,14 @@ POC_EXTRACT=1
 ###
 
 # FUZZERS: an array of fuzzer names (from magma/fuzzers/*) to evaluate
-FUZZERS=(aflgo ffd aflplusplus afl)
+FUZZERS=(afl)
 
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array
 # (default: all targets)
 
-aflgo_TARGETS=(php_4_1 php_6_2 php_11_2 php_15_2 php_16_3)
-ffd_TARGETS=(php_4_1 php_6_2 php_11_2 php_15_2 php_16_3)
-aflplusplus_TARGETS=(php_4_1 php_6_2 php_11_2 php_15_2 php_16_3)
-
 afl_TARGETS=(libpng_4_1 libsndfile_2_1 libsndfile_7_1 libsndfile_15_1 libtiff_6_1 libtiff_7_1 libtiff_9_1 libtiff_10_1 libxml2_1_2 libxml2_2_1 libxml2_8_1 libxml2_10_2 libxml2_12_2 libxml2_14_1 libxml2_15_1 libxml2_16_1 libxml2_16_2 openssl_1_3 openssl_1_5 openssl_4_4 openssl_5_1 openssl_6_4 openssl_6_5 openssl_6_6 openssl_7_2 openssl_7_4 openssl_8_1 openssl_9_1 openssl_10_5 openssl_11_4 openssl_11_6 openssl_12_6 openssl_13_2 openssl_16_6 openssl_17_2 openssl_17_4 openssl_18_5 openssl_19_1 openssl_20_3 openssl_20_4 php_4_1 php_6_2 php_11_2 php_15_2 php_16_3 poppler_3_1 poppler_9_1 poppler_17_1 sqlite3_18_1 sqlite3_20_1)
 
-
-aflgo_php_4_1_CORPUS="php/json_mini"
-aflgo_php_6_2_CORPUS="php/exif_mini"
-aflgo_php_11_2_CORPUS="php/exif_mini" 
-aflgo_php_15_2_CORPUS="php/exif_mini" 
-aflgo_php_16_3_CORPUS="php/unserialize_mini"
-
-ffd_php_4_1_CORPUS="php/json_mini"
-ffd_php_6_2_CORPUS="php/exif_mini"
-ffd_php_11_2_CORPUS="php/exif_mini" 
-ffd_php_15_2_CORPUS="php/exif_mini" 
-ffd_php_16_3_CORPUS="php/unserialize_mini"
-
-aflplusplus_php_4_1_CORPUS="php/json_mini"
-aflplusplus_php_6_2_CORPUS="php/exif_mini"
-aflplusplus_php_11_2_CORPUS="php/exif_mini" 
-aflplusplus_php_15_2_CORPUS="php/exif_mini" 
-aflplusplus_php_16_3_CORPUS="php/unserialize_mini"
 
 afl_libpng_4_1_CORPUS="libpng/libpng_read_fuzzer"
 
