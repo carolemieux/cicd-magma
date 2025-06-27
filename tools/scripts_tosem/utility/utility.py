@@ -1,5 +1,7 @@
 import os
 import random
+import glob
+
 
 def select_50_random_benchmarks():
     benchmarks = ['libpng', 'libtiff', 'libxml2', 'poppler', 'openssl', 'sqlite3', 'php', 'libsndfile']
@@ -29,12 +31,32 @@ def rename_aflgoexp_log_files(log_path):
             print(f'Renamed {old_file_path} to {new_file_path}')
 
 
+def get_dir_size(path):
+    total_size = 0
+    for dirpath, dirnames, filenames in os.walk(path):
+        for filename in filenames:
+            file_path = os.path.join(dirpath, filename)
+            total_size += os.path.getsize(file_path)
+    return total_size
+
+
+def get_queue_size_for_initial_corpus(file_path):
+    # Example 3: Get all files in subdirectories
+    for filename in glob.glob(os.path.join(file_path, "**/**/0/findings/default/queue/*"), recursive=True):
+        print(filename)
+        
+
 if __name__ == '__main__':
     # # select 50 random benchmarks
     # select_50_random_benchmarks()
     
-    # current_working_dir = os.getcwd()
+    current_working_dir = os.getcwd()
     # home_dir = current_working_dir.split('ContinuousFuzzBench')[0]
     # aflgoexp_log_path = os.path.join(home_dir, 'data/aflgoexp/log')
     # rename_aflgoexp_log_files(aflgoexp_log_path)
+
+
+    initial_corpus_path = '/Volumes/GitRepo/initial-corpus-final/ar/aflplusplus'
+    benchmarks = ['libpng', 'libtiff', 'libxml2', 'poppler', 'openssl', 'sqlite3', 'php', 'libsndfile']
+
     pass
