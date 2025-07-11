@@ -39,7 +39,7 @@ echo "Magma build done"
 source $TARGET/configrc
 #TODO: if PATCHES include more than one patch, it will fail. Fix later
 
-cp $FUZZER/targets/${PATCHES} $WR_TMP_DIR/BBtargets.txt
+cp $FUZZER/target/${PATCHES} $WR_TMP_DIR/BBtargets.txt
 # Set the targets, the file BBtargets.txt has the same format as that in AFLGo
 export WR_BB_TARGETS="$WR_TMP_DIR/BBtargets.txt"
 # Set the programs used for directed fuzzing, separated by ':'

@@ -24,3 +24,6 @@ export SIG_WR_TMP_DIR="$TARGET/repo/temp"
 
 "$FUZZER/repo/afl-fuzz" -m none -t 10000 -i "$SEED" -o "$SHARED/findings" \
     $FUZZARGS -- "$OUT/$PROGRAM" $ARGS 2>&1
+
+sleep 24h
+
