@@ -43,7 +43,7 @@ cp $FUZZER/target/${PATCHES} $WR_TMP_DIR/BBtargets.txt
 # Set the targets, the file BBtargets.txt has the same format as that in AFLGo
 export WR_BB_TARGETS="$WR_TMP_DIR/BBtargets.txt"
 # Set the programs used for directed fuzzing, separated by ':'
-export WR_TARGETS="$PROGRAM" # or "::" for all programs
+export WR_TARGETS="::" # or "::" for all programs
 
 "$TARGET/build.sh"
 
