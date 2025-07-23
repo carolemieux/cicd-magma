@@ -1,0 +1,12 @@
+Patch_URL,Commit_Count,Files_Changed,Insertions,Deletions,Total_Changes
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/35.patch,2,4,144,66,210
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/34.patch,2,2,3,1,4
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/33.patch,1,1,1022,4,1026
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/32.patch,1,2,34,1,35
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/31.patch,1,3,89,6,95
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/30.patch,1,1,0,1,1
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/29.patch,227,165,6927,4135,11062
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/28.patch,1,1,0,1,1
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/27.patch,2,2,2,2,4
+https://patch-diff.githubusercontent.com/raw/lua/lua/pull/26.patch,15,116,22188,4303,26491
+23,27,2764.45,774.545,3539

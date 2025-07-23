@@ -1,0 +1,12 @@
+Patch_URL,Commit_Count,Files_Changed,Insertions,Deletions,Total_Changes
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/278.patch,1,1,6,1,7
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/277.patch,1,1,0,1,1
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/250.patch,1,3,4,3,7
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/247.patch,1,1,0,1,1
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/220.patch,1,1,0,4,4
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/242.patch,1,4,18,1,19
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/194.patch,1,5,711,1,712
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/235.patch,6,27,1743,116,1859
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/239.patch,1,1,0,2,2
+https://gitlab.gnome.org/GNOME/libxml2/-/merge_requests/236.patch,1,1,2,2,4
+1.36364,4.09091,225.818,12,237.818
