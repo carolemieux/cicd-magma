@@ -1,0 +1,12 @@
+Patch_URL,Commit_Count,Files_Changed,Insertions,Deletions,Total_Changes
+https://gitlab.com/libtiff/libtiff/-/merge_requests/544.patch,6,2,21,9,30
+https://gitlab.com/libtiff/libtiff/-/merge_requests/595.patch,4,2,39,12,51
+https://gitlab.com/libtiff/libtiff/-/merge_requests/545.patch,3,2,90,2,92
+https://gitlab.com/libtiff/libtiff/-/merge_requests/479.patch,1,1,2,2,4
+https://gitlab.com/libtiff/libtiff/-/merge_requests/473.patch,1,1,7,0,7
+https://gitlab.com/libtiff/libtiff/-/merge_requests/467.patch,2,2,53,19,72
+https://gitlab.com/libtiff/libtiff/-/merge_requests/472.patch,1,1,13,34,47
+https://gitlab.com/libtiff/libtiff/-/merge_requests/546.patch,1,1,15,0,15
+https://gitlab.com/libtiff/libtiff/-/merge_requests/307.patch,2,2,38,58,96
+https://gitlab.com/libtiff/libtiff/-/merge_requests/468.patch,1,2,11,5,16
+2,1.45455,26.2727,12.8182,39.0909
