@@ -3,5 +3,5 @@ PROGRAMS=(sndfile_fuzzer)
 sndfile_fuzzer_ARGS="@@"
 
 PATCHES="SND007"
-# AUTOMATIC=1
+AUTOMATIC=1
 COMMIT_FILES=(src/flac.c)
