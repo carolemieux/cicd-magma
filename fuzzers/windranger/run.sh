@@ -22,6 +22,6 @@ export AFL_FAST_CAL=1
 export WR_TMP_DIR="$TARGET/repo/temp"
 export SIG_WR_TMP_DIR="$TARGET/repo/temp"
 
-"$FUZZER/repo/afl-fuzz" -m none -t 10000 -i "$SEED" -o "$SHARED/findings" \
+"$FUZZER/repo/afl-fuzz" -c 0m -m none -t 10000+ -i "$SEED" -o "$SHARED/findings" \
     $FUZZARGS -- "$OUT/$PROGRAM" $ARGS 2>&1
 
