@@ -56,7 +56,11 @@ fi
 echo "BBtargets:"
 cat $TMP_DIR/BBtargets.txt
 
-cp $TMP_DIR/BBtargets.txt $WR_TMP_DIR/BBtargets.txt
+# Copy targets if necessary
+if [ "$TMP_DIR" != "$WR_TMP_DIR" ]; then
+  cp $TMP_DIR/BBtargets.txt $WR_TMP_DIR/BBtargets.txt
+fi
+
 # Set the targets, the file BBtargets.txt has the same format as that in AFLGo
 export WR_BB_TARGETS="$WR_TMP_DIR/BBtargets.txt"
 # Set the programs used for directed fuzzing, separated by ':'
