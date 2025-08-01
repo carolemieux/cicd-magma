@@ -7,7 +7,7 @@
 ###
 
 # WORKDIR: path to directory where shared volumes will be created
-WORKDIR=./windranger-sensitivity-experiments
+WORKDIR=./sensitivity-experiments-libtiff
 
 # REPEAT: number of campaigns to run per program (per fuzzer)
 REPEAT=10
@@ -71,11 +71,13 @@ POC_EXTRACT=1
 ## Campaigns to run
 ###
 
-FUZZERS=(windranger)
+FUZZERS=(aflgo aflgoexp ffd windranger)
 
-
-windranger_TARGETS=(libpng_4_1 libsndfile_7_1 libtiff_10_1 libtiff_7_1 libxml2_12_2 libxml2_1_2 libxml2_8_1 openssl_10_5 openssl_16_6 openssl_1_5 openssl_20_4 poppler_9_1 sqlite3_18_1 sqlite3_20_1)
 # libpng_4_1 libsndfile_2_1 libsndfile_7_1 libsndfile_15_1 libtiff_6_1 libtiff_7_1 libtiff_9_1 libtiff_10_1 libxml2_1_2 libxml2_2_1 libxml2_8_1 libxml2_10_2 libxml2_12_2 libxml2_14_1 libxml2_15_1 libxml2_16_1 libxml2_16_2 openssl_1_3 openssl_1_5 openssl_4_4 openssl_5_1 openssl_6_4 openssl_6_5 openssl_6_6 openssl_7_2 openssl_7_4 openssl_8_1 openssl_9_1 openssl_10_5 openssl_11_4 openssl_11_6 openssl_12_6 openssl_13_2 openssl_16_6 openssl_17_2 openssl_17_4 openssl_18_5 openssl_19_1 openssl_20_3 openssl_20_4 php_4_1 php_6_2 php_11_2 php_15_2 php_16_3 poppler_3_1 poppler_9_1 poppler_17_1 sqlite3_18_1 sqlite3_20_1
+aflgo_TARGETS=(libtiff_7_1 libtiff_10_1)
+aflgoexp_TARGETS=(libtiff_7_1 libtiff_10_1)
+ffd_TARGETS=(libtiff_7_1 libtiff_10_1)
+windranger_TARGETS=(libtiff_7_1 libtiff_10_1)
 
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array
@@ -95,73 +97,14 @@ windranger_TARGETS=(libpng_4_1 libsndfile_7_1 libtiff_10_1 libtiff_7_1 libxml2_1
 # [fuzzer_CAMPAIGN_WORKERS]: overrides the global CAMPAIGN_WORKERS setting
 # windranger_CAMPAIGN_WORKERS=3
 
-windranger_libpng_CORPUS="libpng/libpng_read_fuzzer"
-windranger_libpng_4_1_CORPUS="libpng/libpng_read_fuzzer"
+aflgo_libtiff_7_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+aflgo_libtiff_10_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
 
-windranger_libsndfile_CORPUS="libsndfile/sndfile_fuzzer_mini"
-windranger_libsndfile_2_1_CORPUS="libsndfile/sndfile_fuzzer_mini"
-windranger_libsndfile_7_1_CORPUS="libsndfile/sndfile_fuzzer_mini"
-windranger_libsndfile_15_1_CORPUS="libsndfile/sndfile_fuzzer_mini"
+aflgoexp_libtiff_7_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+aflgoexp_libtiff_10_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
 
-windranger_libtiff_CORPUS="libtiff/tiff_read_rgba_fuzzer"
-windranger_libtiff_6_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+ffd_libtiff_7_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+ffd_libtiff_10_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+
 windranger_libtiff_7_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
-windranger_libtiff_9_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
 windranger_libtiff_10_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
-
-windranger_libxml2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
-windranger_libxml2_1_2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
-windranger_libxml2_2_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
-windranger_libxml2_8_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
-windranger_libxml2_10_2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
-windranger_libxml2_12_2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
-windranger_libxml2_14_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
-windranger_libxml2_15_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
-windranger_libxml2_16_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
-windranger_libxml2_16_2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
-
-windranger_openssl_CORPUS="openssl/bignum_mini" 
-windranger_openssl_1_3_CORPUS="openssl/bignum_mini" 
-windranger_openssl_1_5_CORPUS="openssl/client" 
-windranger_openssl_4_4_CORPUS="openssl/server_mini" 
-windranger_openssl_5_1_CORPUS="openssl/asn1_mini"
-windranger_openssl_6_4_CORPUS="openssl/server_mini" 
-windranger_openssl_6_5_CORPUS="openssl/client"  
-windranger_openssl_6_6_CORPUS="openssl/x509_mini"
-windranger_openssl_7_2_CORPUS="openssl/asn1parse_mini"
-
-windranger_openssl_7_4_CORPUS="openssl/server_mini"  
-windranger_openssl_8_1_CORPUS="openssl/asn1_mini" 
-windranger_openssl_9_1_CORPUS="openssl/asn1_mini" 
-
-windranger_openssl_10_5_CORPUS="openssl/client" 
-windranger_openssl_11_4_CORPUS="openssl/server_mini"  
-
-windranger_openssl_11_6_CORPUS="openssl/x509_mini" 
-windranger_openssl_12_6_CORPUS="openssl/x509_mini" 
-windranger_openssl_13_2_CORPUS="openssl/asn1parse_mini" 
-
-windranger_openssl_16_6_CORPUS="openssl/x509_mini" 
-windranger_openssl_17_2_CORPUS="openssl/asn1parse_mini" 
-windranger_openssl_17_4_CORPUS="openssl/server_mini"  
-
-windranger_openssl_18_5_CORPUS="openssl/client" 
-windranger_openssl_19_1_CORPUS="openssl/asn1_mini" 
-windranger_openssl_20_3_CORPUS="openssl/bignum_mini"
-windranger_openssl_20_4_CORPUS="openssl/server_mini"  
-
-windranger_php_CORPUS="php/json_mini"
-windranger_php_4_1_CORPUS="php/json_mini"
-windranger_php_6_2_CORPUS="php/exif_mini" 
-windranger_php_11_2_CORPUS="php/exif_mini" 
-windranger_php_15_2_CORPUS="php/exif_mini" 
-windranger_php_16_3_CORPUS="php/unserialize_mini"
-
-windranger_poppler_CORPUS="poppler/pdf_fuzzer" 
-windranger_poppler_3_1_CORPUS="poppler/pdf_fuzzer" 
-windranger_poppler_9_1_CORPUS="poppler/pdf_fuzzer" 
-windranger_poppler_17_1_CORPUS="poppler/pdf_fuzzer" 
-
-windranger_sqlite3_CORPUS="sqlite3/sqlite3_fuzz" 
-windranger_sqlite3_18_1_CORPUS="sqlite3/sqlite3_fuzz" 
-windranger_sqlite3_20_1_CORPUS="sqlite3/sqlite3_fuzz"

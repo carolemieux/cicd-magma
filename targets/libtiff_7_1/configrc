@@ -3,5 +3,5 @@ PROGRAMS=(tiff_read_rgba_fuzzer)
 tiffcp_ARGS="-M @@ tmp.out"
 
 PATCHES="TIF007"
-AUTOMATIC=1
+# AUTOMATIC=1
 COMMIT_FILES=(libtiff/tif_dirread.c)
