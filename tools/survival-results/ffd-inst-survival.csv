@@ -1,0 +1,16 @@
+target,program,bug,fuzzer,survival_time_reached,survival_ci_reached,survival_time_triggered,survival_ci_triggered
+poppler_9_1,pdf_fuzzer,PDF009,ffd,74.0,0.00024079351501828482,,
+php_11_2,exif,PHP011,ffd,129.7,0.0008886673014779879,134.7,0.0005643874810006808
+libpng_4_1,libpng_read_fuzzer,PNG004,ffd,24.7,7.868706276799326e-05,,
+libsndfile_7_1,sndfile_fuzzer,SND007,ffd,77.5,1.3217251693016366e-06,122.5,6.993912199093747e-06
+sqlite3_18_1,sqlite3_fuzz,SQL018,ffd,110.5,0.00018571061748896353,115.5,6.450777148514803e-05
+openssl_1_5,client,SSL001,ffd,53.4,0.00018097743298051627,,
+openssl_10_5,client,SSL010,ffd,32.7,6.335669987521753e-05,,
+openssl_16_6,x509,SSL016,ffd,33.3,3.002382437920538e-05,,
+openssl_20_4,server,SSL020,ffd,33.3,3.002382437920538e-05,,
+libtiff_7_1,tiff_read_rgba_fuzzer,TIF007,ffd,45.5,0.0001085264343235389,50.5,0.0002440829551652696
+libtiff_10_1,tiff_read_rgba_fuzzer,TIF010,ffd,45.6,0.00016230063926306662,,
+libxml2_1_2,libxml2_xml_read_memory_fuzzer,XML001,ffd,43.1,6.496988435978238e-05,53.1,6.555543654790945e-05
+libxml2_8_1,libxml2_xml_reader_for_file_fuzzer,XML008,ffd,47.9,0.0005926106283759195,,
+libxml2_12_2,libxml2_xml_read_memory_fuzzer,XML012,ffd,47.5,5.112189653226393e-05,,
+

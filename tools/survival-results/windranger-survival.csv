@@ -1,0 +1,16 @@
+target,program,bug,fuzzer,survival_time_reached,survival_ci_reached,survival_time_triggered,survival_ci_triggered
+poppler_9_1,pdf_fuzzer,PDF009,windranger,30.0,4.673004150390625e-07,,
+libpng_4_1,libpng_read_fuzzer,PNG004,windranger,10.0,3.694334157663597e-07,,
+libsndfile_7_1,sndfile_fuzzer,SND007,windranger,10.0,3.694334157663597e-07,40.0,4.4631470979168866e-05
+sqlite3_18_1,sqlite3_fuzz,SQL018,windranger,10.0,3.694334157663597e-07,15.0,2.3365020751953125e-07
+sqlite3_20_1,sqlite3_fuzz,SQL020,windranger,591.5,28.85596645017382,591.5,28.85596645017382
+openssl_1_5,client,SSL001,windranger,30.0,4.673004150390625e-07,,
+openssl_10_5,client,SSL010,windranger,10.0,3.694334157663597e-07,,
+openssl_16_6,x509,SSL016,windranger,10.0,3.694334157663597e-07,,
+openssl_20_4,server,SSL020,windranger,10.0,3.694334157663597e-07,,
+libtiff_7_1,tiff_read_rgba_fuzzer,TIF007,windranger,10.0,3.694334157663597e-07,15.0,2.3365020751953125e-07
+libtiff_10_1,tiff_read_rgba_fuzzer,TIF010,windranger,10.0,3.694334157663597e-07,,
+libxml2_1_2,libxml2_xml_read_memory_fuzzer,XML001,windranger,10.0,3.694334157663597e-07,20.0,3.3043129232540915e-07
+libxml2_8_1,libxml2_xml_reader_for_file_fuzzer,XML008,windranger,10.0,3.694334157663597e-07,,
+libxml2_12_2,libxml2_xml_read_memory_fuzzer,XML012,windranger,10.0,3.694334157663597e-07,,
+

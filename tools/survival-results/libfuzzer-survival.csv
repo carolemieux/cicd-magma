@@ -1,0 +1,6 @@
+target,program,bug,fuzzer,survival_time_reached,survival_ci_reached,survival_time_triggered,survival_ci_triggered
+php_11_2,exif,PHP011,libfuzzer,10.0,3.694334157663597e-07,15.0,2.3365020751953125e-07
+libtiff_7_1,tiff_read_rgba_fuzzer,TIF007,libfuzzer,104.5,35.19100569703567,196.5,99.97029649887148
+libxml2_8_1,libxml2_xml_reader_for_file_fuzzer,XML008,libfuzzer,485.49999999999994,127.44686174204273,,
+libxml2_12_2,libxml2_xml_read_memory_fuzzer,XML012,libfuzzer,10.0,3.694334157663597e-07,,
+
