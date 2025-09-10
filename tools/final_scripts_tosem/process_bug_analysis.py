@@ -2,13 +2,18 @@ import os
 import sys
 import pandas as pd
 import matplotlib.pyplot as plt
-from statistical_test import *
+import json
+import numpy as np
+from statistics import mean, geometric_mean
+from scipy.stats import mannwhitneyu
 
 BASE_SURVIVAL_DIR="../survival-results"
+BASE_SURVIVAL_SENSITIVITY_DIR="../survival-sensitivity-results"
 BASE_RESULTS_DIR= "../main-results"
+BASE_SENSITIVITY_RESULTS_DIR="../sensitivity-results"
 
 fuzzers = ['afl', 'aflplusplus', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'windranger', 'tunefuzz']
-
+sensitivity_fuzzers = ['aflgo', 'aflgoexp', 'ffd', 'windranger']
 
 # adapted from survival_analysis.py
 # returns results which map a fuzzer name, benchmakr to times the bugs reached
@@ -40,15 +45,15 @@ def time_r_t_per_bug(file_path, fuzzer_name):
     return reached_results, triggered_results
 
 
-def get_result_arrays(with_inst):
+def get_result_arrays(with_inst, sensitivity=False):
     if with_inst:
         postfix="-inst.json"
     else:
         postfix=".json"
     total_reached = {}
     total_triggered = {}
-    for fuzzer in fuzzers:
-        file_name=f"{BASE_RESULTS_DIR}/{fuzzer}{postfix}"
+    for fuzzer in (sensitivity_fuzzers if sensitivity else fuzzers):
+        file_name=f"{BASE_SENSITIVITY_RESULTS_DIR if sensitivity else BASE_RESULTS_DIR}/{fuzzer}{postfix}"
         reached, triggered = time_r_t_per_bug(file_name,fuzzer)
         total_reached[fuzzer] = reached[fuzzer]
         total_triggered[fuzzer] = triggered[fuzzer]
@@ -109,15 +114,20 @@ def AFL_vs_TuneFuzz_mean_reaching_time_with_inst():
     print(f"Mean survival time triggered is {afl_survival_filtered['survival_time_triggered'].mean()} for AFL, {tunefuzz_survival_filtered['survival_time_triggered'].mean()} for TuneFuzz, excluding openssl_20_4")
 
 # Print the mean survival time tables in Latex format
-def format_survival_time_tables(with_inst: bool):
+def format_survival_time_tables(with_inst: bool, sensitivity: bool = False):
     survival_dfs = {}
     if with_inst:
         postfix="-inst-survival.csv"
     else:
         postfix="-survival.csv"
 
-    for fuzzer in fuzzers:
-        full_path = os.path.join(BASE_SURVIVAL_DIR, f"{fuzzer}{postfix}")
+    if sensitivity:
+        my_fuzzers = sensitivity_fuzzers
+    else:
+        my_fuzzers = fuzzers
+
+    for fuzzer in my_fuzzers:
+        full_path = os.path.join(BASE_SURVIVAL_SENSITIVITY_DIR if sensitivity else BASE_SURVIVAL_DIR, f"{fuzzer}{postfix}")
         if os.path.isfile(full_path):
             try:
                 df = pd.read_csv(full_path)
@@ -133,12 +143,13 @@ def format_survival_time_tables(with_inst: bool):
     # merge all dfs together with the selected columns
 
     # get the first one out to make the base dataframe
-    afl_df = survival_dfs['afl'][['target', 'survival_time_reached', 'survival_time_triggered']]
-    merged_df = afl_df.set_index('target').rename(columns={'survival_time_reached': 'afl_time_r', 'survival_time_triggered': 'afl_time_t'})
+    first_idx = 'aflgo' if sensitivity else 'afl'
+    afl_df = survival_dfs[first_idx][['target', 'survival_time_reached', 'survival_time_triggered']]
+    merged_df = afl_df.set_index('target').rename(columns={'survival_time_reached': f'{first_idx}_time_r', 'survival_time_triggered': f'{first_idx}_time_t'})
 
-    for i in range(1, len(fuzzers)):
-        df = survival_dfs[fuzzers[i]][['target', 'survival_time_reached', 'survival_time_triggered']]
-        df_renamed = df.set_index('target').rename(columns={'survival_time_reached': f'{fuzzers[i]}_time_r', 'survival_time_triggered': f'{fuzzers[i]}_time_t'})
+    for i in range(1, len(my_fuzzers)):
+        df = survival_dfs[my_fuzzers[i]][['target', 'survival_time_reached', 'survival_time_triggered']]
+        df_renamed = df.set_index('target').rename(columns={'survival_time_reached': f'{my_fuzzers[i]}_time_r', 'survival_time_triggered': f'{my_fuzzers[i]}_time_t'})
         # outer join
         merged_df = merged_df.merge(df_renamed, on='target', how='outer')
 
@@ -262,116 +273,110 @@ def print_info_about_reaching_and_triggering_probs():
                 print("The raw times w/o instrumentation:",triggered_array_w_o)
 
 
+def compare_sensitivity_results(with_inst):
+    orig_reached, orig_triggered = get_result_arrays(with_inst, False)
+    sensitivity_reached, sensitivity_triggered = get_result_arrays(with_inst, True)
+    # Print Stuff in human readable format
+    for fuzzer in sensitivity_reached:
+        for bench in sensitivity_reached[fuzzer]:
+            sen_reached = sensitivity_reached[fuzzer][bench]
+            or_reached= orig_reached[fuzzer][bench]
+            if (sen_reached != or_reached):
+                print(f"Sensitivity changes reached results for {fuzzer} on {bench}: before {or_reached} and after {sen_reached}")
+                if len(sen_reached) == len(or_reached):
+                    print(f"MWU-ne: {mannwhitneyu(or_reached, sen_reached, alternative='two-sided', method='exact').pvalue}, "
+                          f"MWU-lt: {mannwhitneyu(or_reached, sen_reached, alternative='less', method='exact').pvalue}, "
+                          f"MWU-gt: {mannwhitneyu(or_reached, sen_reached, alternative='greater', method='exact').pvalue}")
+    for fuzzer in sensitivity_triggered:
+        for bench in sensitivity_triggered[fuzzer]:
+            sen_triggered = sensitivity_triggered[fuzzer][bench]
+            or_triggered= orig_triggered[fuzzer][bench]
+            if (sen_triggered != or_triggered):
+                print(f"Sensitivity changes triggered results for {fuzzer} on {bench}: before {or_triggered} and after {sen_triggered}")
+                if len(sen_triggered) == len(or_triggered):
+                    print(f"MWU-ne: {mannwhitneyu(or_triggered, sen_triggered, alternative='two-sided', method='exact').pvalue}, "
+                          f"MWU-lt: {mannwhitneyu(or_triggered, sen_triggered, alternative='less', method='exact').pvalue}, "
+                          f"MWU-gt: {mannwhitneyu(or_triggered, sen_triggered, alternative='greater', method='exact').pvalue}")
 
-#### OLD
-def merge_bug_results(bug_result_output_dir, bug_result_json_name):
-    os.makedirs(bug_result_output_dir, exist_ok=True)
-    bug_result_file_name = os.path.join(bug_result_output_dir, bug_result_json_name)
-    # merge all bug counts into one file
-    num_trial= 10
-    results = {
-        'afl': {'reached': [0]*num_trial, 'triggered': [0]*num_trial},
-        'aflplusplus': {'reached':[0]*num_trial, 'triggered': [0]*num_trial},
-        'libfuzzer': {'reached': [0]*num_trial, 'triggered': [0]*num_trial},
-        'aflgo': {'reached': [0]*num_trial, 'triggered': [0]*num_trial},
-        'aflgoexp': {'reached': [0]*num_trial, 'triggered': [0]*num_trial},
-        'ffd': {'reached': [0]*num_trial, 'triggered': [0]*num_trial},
-        'tunefuzz': {'reached': [0]*num_trial, 'triggered': [0]*num_trial}
-    }
+    #
+    # Make a Table that summarizes the above for the paper
+    print("==================Table Comparing Sensitivity Results=================")
+    # Helper function to check whether the two things are the same. if not,
+    # do the mann whitney u test accordingly and give the p-value
+    def test_and_give_p_value(orig,sensitivity, reached_or_triggered:str):
+        def round_to_2(x):
+            from math import floor, log10
+            #return round(x, -int(floor(log10(abs(x))))+1)
+            return f'{x:.{-int(floor(log10(x)))+1}f}'
+        if len(orig) == 0 and len(sensitivity) == 0:
+            return ""
+        if orig == sensitivity:
+            return ""
+        if len(orig) == 0  and len(sensitivity)>0:
+            return f"newly {reached_or_triggered} ({len(sensitivity)} iteration)"
+        if len(orig) > 0  and len(sensitivity)==0:
+            return f"no longer {reached_or_triggered}"
+        if np.mean(orig) < np.mean(sensitivity):
+            p = mannwhitneyu(orig, sensitivity, alternative='less').pvalue
+            return f"{reached_or_triggered} {np.mean(sensitivity)-np.mean(orig)}s slower ($p={round_to_2(p)}$)"
+        elif np.mean(orig) > np.mean(sensitivity):
+            p = mannwhitneyu(orig, sensitivity, alternative='greater').pvalue
+            return f"{reached_or_triggered} {np.mean(orig)-np.mean(sensitivity)}s faster ($p={round_to_2(p)}$)"
 
-    file_paths = ['../process_data_tosem/bug_analysis/afl_results.json', 
-                  '../process_data_tosem/bug_analysis/aflplusplus_results.json',
-                  '../process_data_tosem/bug_analysis/libfuzzer_results.json',
-                  '../process_data_tosem/bug_analysis/aflgo_results.json', 
-                  '../process_data_tosem/bug_analysis/ffd_results.json',
-                  '../process_data_tosem/bug_analysis/tunefuzz_results.json']
-    
-    for path in file_paths:
-        results = get_time_to_bug(path, results)
+    # Gets d[fuzzer][benchmark] or returns []
+    def get_or_empty(d, fuzzer,benchmark):
+        if fuzzer in d:
+            if benchmark in d[fuzzer]:
+                return d[fuzzer][benchmark]
+            else:
+                return []
+        else:
+            return []
 
-    # special workaround for aflgoexp as its fuzzer name is recorded as aflgo in the fuzzing data 
-    results = get_time_to_bug('../process_data_tosem/bug_analysis/aflgoexp_results.json', results, 'aflgoexp')
-    print(results)
+    benchmarks = sorted([s for s in sensitivity_reached['aflgo'].keys()])
+    for fuzzer in sensitivity_fuzzers:
+        for bench in benchmarks:
+            out = f"{fuzzer} & {bench}".replace('_','\\_')
+            reached_original = get_or_empty(orig_reached,fuzzer,bench)
+            reached_sensitive = get_or_empty(sensitivity_reached, fuzzer,bench)
+            reached_res = test_and_give_p_value(reached_original, reached_sensitive, "reached")
+            if reached_res:
+                #out += f"&  {reached_res} & "
+                print(out+f" & {reached_res}\\\\")
+            #out += f" & {test_and_give_p_value(reached_original, reached_sensitive)}"
 
-    with open(bug_result_file_name, 'w') as json_file:
-        json.dump(results, json_file)
-    
-    return json_file
-
-    
-def format_num_bug_and_survival_time_tables(dir_path, fuzzers):
-    num_bug_result = {}
-    bug_analysis_dfs = {}
-
-    for file in os.listdir(dir_path):
-        full_path = os.path.join(dir_path, file)
-        if os.path.isfile(full_path) and 'survival_analysis' in full_path:
-            df = pd.read_csv(full_path)
-            fuzzer_name = file.split('_')[0]
-            num_bug_result[fuzzer_name] = [int(df['survival_time_reached'].count()), int(df['survival_time_triggered'].count())]
-            bug_analysis_dfs[fuzzer_name] = df
-
-    # format the table for the number of bugs 
-    num_bug_formatted_latex = ''
-    for fuzzer in fuzzers:
-        num_bug_formatted_latex += ' & '.join(map(str, num_bug_result[fuzzer])) + ' & '
-    # remove the trailing &
-    num_bug_formatted_latex = num_bug_formatted_latex.rstrip(' & ')
-    print('Formatted number of bugs reached and triggered:')
-    print(num_bug_formatted_latex)
-
-    # format the table for the survival time
-    # merge all dfs together with the selected columns
-    afl_df = bug_analysis_dfs['afl'][['target', 'survival_time_reached', 'survival_time_triggered']]
-    merged_df = afl_df.set_index('target').rename(columns={'survival_time_reached': 'afl_time_r', 'survival_time_triggered': 'afl_time_t'})
-
-    for i in range(1, len(fuzzers)):
-        df = bug_analysis_dfs[fuzzers[i]][['target', 'survival_time_reached', 'survival_time_triggered']]
-        df_renamed = df.set_index('target').rename(columns={'survival_time_reached': f'{fuzzers[i]}_time_r', 'survival_time_triggered': f'{fuzzers[i]}_time_t'})
-        # outer join
-        merged_df = merged_df.merge(df_renamed, on='target', how='outer')  
-
-    merged_df = merged_df.round(1)
-    merged_df = merged_df.fillna(' ').astype(str)
-    merged_df = merged_df.sort_index().reset_index()
-    merged_df['target'] = merged_df['target'].apply(lambda val: val.replace('_', '\_'))
-
-    print('Formatted survival time:')
-    for row in merged_df.apply(lambda x: x.map(str).str.cat(sep=' & '), axis=1):
-        print(row + ' \\\\')
-    return merged_df
+            triggered_original = get_or_empty(orig_triggered,fuzzer,bench)
+            triggered_sensitive = get_or_empty(sensitivity_triggered, fuzzer,bench)
+            triggered_res = test_and_give_p_value(triggered_original, triggered_sensitive, "triggered")
+            if triggered_res:
+                #out += f"&  {triggered_res} & "
+                print(out+f" & {triggered_res}\\\\")
 
 
-def plot_sensitivity_results(output_dir, output_file_name):
-    aflgo_original_df = pd.read_csv('../process_data_tosem/bug_analysis/aflgo_survival_analysis')
-    aflgoexp_original_df = pd.read_csv('../process_data_tosem/bug_analysis/aflgoexp_survival_analysis')
-    ffd_original_df = pd.read_csv('../process_data_tosem/bug_analysis/ffd_survival_analysis')
+def print_instrumentation_time_changes_with_sensitivity():
+    def get_instrumentation_time_dict(fuzzer, sensitivity):
+        instrumentation_file_name = f'{fuzzer}-inst.csv'
+        instrumentation_file_name = os.path.join(BASE_SENSITIVITY_RESULTS_DIR if sensitivity else BASE_RESULTS_DIR, instrumentation_file_name)
+        ret_dict = {}
+        with open(instrumentation_file_name) as f:
+            for line in f:
+                if fuzzer =='windranger' and 'php' in line:
+                    continue
+                bench, time = line.split(',')
+                ret_dict[bench] = float(time)
+        return ret_dict
 
-    df = pd.read_csv('../process_data_tosem/sensitivity/bug_analysis/sensitivity_survival_analysis')
-
-    aflgo_sensitivity_df = df[ df['fuzzer'] == 'aflgo'].reset_index()
-    aflgoexp_sensitivity_df = df[ df['fuzzer'] == 'aflgoexp'].reset_index()
-    ffd_sensitivity_df = df[ df['fuzzer'] == 'ffd'].reset_index()
-
-    sensitivity_fuzzers = ['aflgo', 'aflgoexp', 'ffd']
-    reached_feature_name = 'survival_time_reached'
-    triggered_feature_name = 'survival_time_triggered'
-
-    original_reached = [aflgo_original_df[reached_feature_name].notna().sum(), aflgoexp_original_df[reached_feature_name].notna().sum(), ffd_original_df[reached_feature_name].notna().sum()]
-    original_triggered = [aflgo_original_df[triggered_feature_name].notna().sum(), aflgoexp_original_df[triggered_feature_name].notna().sum(), ffd_original_df[triggered_feature_name].notna().sum()]
-
-    sensitivity_reahced = [aflgo_sensitivity_df[reached_feature_name].notna().sum(), aflgoexp_sensitivity_df[reached_feature_name].notna().sum(), ffd_sensitivity_df[reached_feature_name].notna().sum()]
-    sensitivity_triggered = [aflgo_sensitivity_df[triggered_feature_name].notna().sum(), aflgoexp_sensitivity_df[triggered_feature_name].notna().sum(), ffd_sensitivity_df[triggered_feature_name].notna().sum()]
-
-    index = ['aflgo', 'aflgoexp', 'ffd']
-    sensitivity_df_reached = pd.DataFrame({'original': original_reached, 'sensitivity': sensitivity_reahced}, index=index)
-    ax =  sensitivity_df_reached.plot.bar(rot=0)
-    plt.savefig('../process_data_tosem/figures/sensitivity_num_of_bug_reached.png') 
-
-    sensitivity_df_triggered = pd.DataFrame({'original': original_triggered, 'sensitivity': sensitivity_triggered}, index=index)
-    ax = sensitivity_df_triggered.plot.bar(rot=0)
-    output_path = os.path.join(output_dir, output_file_name)
-    plt.savefig(output_path) 
+    for fuzzer in sensitivity_fuzzers:
+        orig_instr_times = get_instrumentation_time_dict(fuzzer, False)
+        sens_instr_times = get_instrumentation_time_dict(fuzzer, True)
+        print(f"{fuzzer} orig times: {mean([v for k,v in orig_instr_times.items() if k in sens_instr_times])} new times: {mean(sens_instr_times.values())}")
+        times_differences = []
+        value_differences = []
+        for bench in sens_instr_times:
+            times_differences.append(sens_instr_times[bench]/orig_instr_times[bench])
+            value_differences.append(sens_instr_times[bench] - orig_instr_times[bench])
+        print(f"For fuzzer: {fuzzer}, instrumentation is {geometric_mean(times_differences)}X slower, "
+              f"or in absolute terms {mean(value_differences)}s slower on average over all benchmarks.")
 
 
 #if __name__ == '__main__':
@@ -401,6 +406,7 @@ def plot_sensitivity_results(output_dir, output_file_name):
     # # process sensitivity experiments
     # plot_sensitivity_results('../process_data_tosem/figures', 'sensitivity_num_of_bug_triggered.png')
 
+print("==============Mean Reached/Triggered Total Results (Makes Barplot)=========")
 make_reached_triggered_bug_barplots()
 print("==============Survival Time Without Instrumentation ===============")
 format_survival_time_tables(False)
@@ -410,3 +416,10 @@ print("==============Information on Exception Cases ===============")
 print_info_about_reaching_and_triggering_probs()
 print("==============AFL vs TuneFuzz Reaching Times==============")
 AFL_vs_TuneFuzz_mean_reaching_time_with_inst()
+print("-----------------------Sensitivity------------------------")
+print("==============Survival Time Without Instrumentation, Sensitivity ===============")
+format_survival_time_tables(False, True)
+print("==============Comparative Times Without Instrumentation==================")
+compare_sensitivity_results(False)
+print("==============How does instrumentation time change with sensitivity?=============")
+print_instrumentation_time_changes_with_sensitivity()
