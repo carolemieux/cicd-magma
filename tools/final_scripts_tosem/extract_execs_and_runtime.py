@@ -16,6 +16,7 @@ from tempfile import mkdtemp
 import pandas as pd
 
 ddr = lambda: defaultdict(ddr)
+
 def parse_args():
     parser = argparse.ArgumentParser(description=(
         "Collects exec info from the experiment workdir and outputs relevant."
@@ -85,14 +86,29 @@ def clear_dir(path):
 
 def extract_fuzzer_stats_and_plot_data(tarball, dest):
     clear_dir(dest)
+    ccount = None
     # get the path to fuzzer stats/plot_data inside the tarball
-    fuzzer_stats = subprocess.check_output(f'tar -tf "{tarball}" | grep "fuzzer_stats"', shell=True)
-    plot_data = subprocess.check_output(f'tar -tf "{tarball}" | grep "plot_data"', shell=True)
-    fuzzer_stats = fuzzer_stats.decode().rstrip()
-    plot_data = plot_data.decode().rstrip()
+    try:
+        fuzzer_stats = subprocess.check_output(f'tar -tf "{tarball}" | grep "fuzzer_stats"', shell=True)
+        fuzzer_stats = fuzzer_stats.decode().rstrip()
+        ccount = len(fuzzer_stats.split("/")) - 1
+    except subprocess.CalledProcessError:
+        # If fuzzer stats is missing
+        fuzzer_stats = ""
+    try:
+        plot_data = subprocess.check_output(f'tar -tf "{tarball}" | grep "plot_data"', shell=True)
+        plot_data = plot_data.decode().rstrip()
+        if ccount is None:
+            ccount = len(plot_data.split("/")) - 1
+        else:
+            # ensure that there's the same level of nesting for both files
+            assert (ccount == (len(plot_data.split("/")) - 1))
+    except subprocess.CalledProcessError:
+        plot_data = ""
+    if fuzzer_stats == "" and plot_data == "":
+        return
     # strip all path components until the fuzzer_stats/plot_data files
-    ccount = len(fuzzer_stats.split("/")) - 1
-    assert (ccount == (len(plot_data.split("/")) - 1))
+    assert ccount is not None
     os.system(f'tar -xf "{tarball}" --strip-components={ccount} -C "{dest}" {fuzzer_stats} {plot_data}')
 
 def get_fuzzer_stats_and_plot_data(dumpdir, path):
@@ -100,6 +116,7 @@ def get_fuzzer_stats_and_plot_data(dumpdir, path):
     start_time = None
     last_update = None
     run_time = None
+    execs_done = None 
 
     def get_num_from_line(line):
         """
@@ -109,6 +126,10 @@ def get_fuzzer_stats_and_plot_data(dumpdir, path):
         time_raw = time_raw.strip()
         return int(time_raw)
 
+    if not (os.path.exists(os.path.join(dumpdir, "fuzzer_stats"))) or \
+       not (os.path.exists(os.path.join(dumpdir,"plot_data"))):
+        return "NaN", "NaN"
+
     with open(os.path.join(dumpdir, "fuzzer_stats"), "r") as f:
             for line in f:
                 if "start_time" in line:
@@ -117,35 +138,39 @@ def get_fuzzer_stats_and_plot_data(dumpdir, path):
                     last_update = get_num_from_line(line)
                 if "run_time" in line:
                     run_time = get_num_from_line(line)
+                if "execs_done" in line:
+                    execs_done = get_num_from_line(line)
 
-    if run_time is not None:
-        # aflpp-style, no need for shenanigans
-        return "runtime is (aflpp-style) {run_time}"
+    # if we have a non-None runtime, just take that. otherwise
+    # need to go look at plot_data
+    if run_time is None:
+        plot_data_start_time = None
+        cur_time = None
+        plot_data_end_time = None
+        with open(os.path.join(dumpdir, "plot_data"), "r") as f:
+            for line in f:
+                if line.startswith("#"):
+                    start = True
+                    continue
+                if start:
+                    plot_data_start_time = int(line.split(',')[0])
+                    start = False
+                cur_time = int(line.split(',')[0])
+            plot_data_end_time = cur_time
 
-    plot_data_start_time = None
-    cur_time = None
-    plot_data_end_time = None
-    with open(os.path.join(dumpdir, "plot_data"), "r") as f:
-        for line in f:
-            if line.startswith("#"):
-                start = True
-                continue
-            if start:
-                plot_data_start_time = line.split(',')[0]
-                start = False
-            cur_time = line.split(',')[0]
-        plot_data_end_time = cur_time
+        if plot_data_start_time is None:
+            run_time = 0
+        else:
+            run_time = last_update - plot_data_start_time
 
-    if plot_data_start_time is None:
-        return "plot data empty, runtime 0"
-
-    return f"runtime is (afl-style) {last_update - plot_data_start_time}"
+    return execs_done, run_time
 
 
 
 
 def process_one_campaign(path):
     logging.info("Processing %s", path)
+    logging.info(path_split_last(path, 4))
     _, fuzzer, target, program, run = path_split_last(path, 4)
 
     tarball = os.path.join(path, "ball.tar")
@@ -158,16 +183,27 @@ def process_one_campaign(path):
     else:
         #dumpdir should be the path that includes plot_data and fuzzer_stats;
         # differs for AFL-style vs AFLPP-style
-        fuzzer_stats_path = subprocess.check_output(f'find {path} -name "fuzzer_stats"', shell=True)
-        fuzzer_stats_dir = os.path.dirname(fuzzer_stats_path.decode().rstrip())
-        plot_data_path = subprocess.check_output(f'find {path} -name "plot_data"', shell=True)
-        plot_data_dir = os.path.dirname(plot_data_path.decode().rstrip())
+        try:
+            fuzzer_stats_path = subprocess.check_output(f'find {path} -name "fuzzer_stats"', shell=True)
+            fuzzer_stats_dir = os.path.dirname(fuzzer_stats_path.decode().rstrip())
+        except subprocess.CalledProcessError:
+            fuzzer_stats_dir = None
+        try:
+            plot_data_path = subprocess.check_output(f'find {path} -name "plot_data"', shell=True)
+            plot_data_dir = os.path.dirname(plot_data_path.decode().rstrip())
+        except subprocess.CalledProcessError:
+            plot_data_dir = None
+        if fuzzer_stats_dir is None:
+            # if both are none... we can't read anything
+            assert( plot_data_dir is not None)
+            fuzzer_stats_dir = plot_data_dir
         assert (fuzzer_stats_dir == plot_data_dir)
         dumpdir = fuzzer_stats_dir
 
-    dumpinfo = ""
+    execs_done = ""
+    run_time =""
     try:
-        info = get_fuzzer_stats_and_plot_data(dumpdir, path)
+        execs_done, run_time = get_fuzzer_stats_and_plot_data(dumpdir, path)
     except Exception as ex:
         name = f"{fuzzer}/{target}/{program}/{run}"
         logging.exception("Encountered exception when processing %s. Details: "
@@ -176,21 +212,23 @@ def process_one_campaign(path):
         if istarball:
             clear_dir(dumpdir)
             os.rmdir(dumpdir)
-    return fuzzer, target, program, run, info
+    return fuzzer, target, program, run, execs_done, run_time
 
 def collect_experiment_data(workdir, workers=0):
-    def init(*args):
-        global tmpdir
-        tmpdir, = tuple(args)
+    #def init(*args):
+       # global tmpdir
+     #   tmpdir, = tuple(args)
 
+    global tmpdir
     experiment = ddr()
     tmpdir = os.path.join(workdir, "tmp")
     ensure_dir(tmpdir)
 
+    line_out = "#fuzzer,benchmark,driver,run,execs_done,fuzz_time\n"
     for path in find_campaigns(workdir):
-        print(path)
-        fuzzer, target, program, run, info = process_one_campaign(path)
-        print(info)
+        fuzzer, target, program, run, execs_done, fuzz_time = process_one_campaign(path)
+        logging.debug(f"{fuzzer},{target},{program},{run},{execs_done},{fuzz_time}")
+        line_out += f"{fuzzer},{target},{program},{run},{execs_done},{fuzz_time}\n"
     # with Pool(processes=workers, initializer=init, initargs=(tmpdir,)) as pool:
     #     results = pool.starmap(process_one_campaign,
     #                            ((path,) for path in find_campaigns(workdir))
@@ -202,7 +240,7 @@ def collect_experiment_data(workdir, workers=0):
     #             # TODO add an empty df so that the run is accounted for
     #             name = f"{fuzzer}/{target}/{program}/{run}"
     #             logging.warning("%s has been omitted!", name)
-    #return experiment
+    return line_out
 
 
 def configure_verbosity(level):
@@ -218,7 +256,7 @@ def configure_verbosity(level):
 def main():
     args = parse_args()
     configure_verbosity(args.verbose)
-    collect_experiment_data(args.workdir, int(args.workers))
+    ret_file_contents = collect_experiment_data(args.workdir, int(args.workers))
     # summary = get_experiment_summary(experiment)
     #
     # output = {
@@ -227,11 +265,12 @@ def main():
     # }
     #
     # data = json.dumps(output).encode()
-    # if args.outfile == "-":
-    #     sys.stdout.buffer.write(data)
-    # else:
-    #     with open(args.outfile, "wb") as f:
-    #         f.write(data)
+    if args.outfile == "-":
+         sys.stdout.buffer.write(ret_file_contents)
+    else:
+         with open(args.outfile, "w") as f:
+             f.write(ret_file_contents)
 
 if __name__ == '__main__':
     main()
+

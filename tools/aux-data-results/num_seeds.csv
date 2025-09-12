@@ -1,0 +1,18 @@
+# cd to to $repo_root/seed and run: for bench_dir in */*; do harness=$(basename $bench_dir); seeds=$(ls -1 $bench_dir | wc -l); echo "$harness,$seeds"; done
+libpng_read_fuzzer,1659
+sndfile_fuzzer_mini,1787
+tiff_read_rgba_fuzzer,4454
+libxml2_xml_reader_for_file_fuzzer,12340
+libxml2_xml_read_memory_fuzzer,12781
+asn1_mini,2472
+asn1parse_mini,400
+bignum_mini,366
+client,3109
+server_mini,1562
+x509_mini,1937
+exif_mini,824
+json_mini,676
+parser_mini,5870
+unserialize_mini,467
+pdf_fuzzer,14468
+sqlite3_fuzz,9230
