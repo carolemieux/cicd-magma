@@ -1,6 +1,6 @@
 target,program,bug,fuzzer,survival_time_reached,survival_ci_reached,survival_time_triggered,survival_ci_triggered
-php_11_2,exif,PHP011,libfuzzer,85.3,0.000667323317930633,90.3,0.0004622751493928001
-libtiff_7_1,tiff_read_rgba_fuzzer,TIF007,libfuzzer,125.69999999999999,35.197234141249815,215.57999999999998,96.34597811256175
-libxml2_8_1,libxml2_xml_reader_for_file_fuzzer,XML008,libfuzzer,498.96,130.49993652237748,,
-libxml2_12_2,libxml2_xml_read_memory_fuzzer,XML012,libfuzzer,39.5,0.00017972546495788788,,
+php_11_2,exif,PHP011,libfuzzer,80.3,6.547544208669377e-05,85.3,0.000667323317930633
+libtiff_7_1,tiff_read_rgba_fuzzer,TIF007,libfuzzer,120.69999999999999,35.201965944943204,211.07999999999998,97.19398758481275
+libxml2_8_1,libxml2_xml_reader_for_file_fuzzer,XML008,libfuzzer,496.96,131.99305623945165,,
+libxml2_12_2,libxml2_xml_read_memory_fuzzer,XML012,libfuzzer,34.5,6.317376222152238e-05,,
 
