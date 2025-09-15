@@ -19,6 +19,8 @@ def happened_before_fuzzing_started(bug_time, pure_fuzz_time):
     :param bug_time: time bug was reached/triggered
     :param pure_fuzz_time: time spend fuzzing
     :return:
+    >>> happened_before_fuzzing_started(5, 600)
+    'maybe (600s of fuzzing)'
     >>> happened_before_fuzzing_started(5, 599)
     'maybe (if happened in 1s rather than 5s)'
     >>> happened_before_fuzzing_started(5, 596)
@@ -39,6 +41,8 @@ def happened_before_fuzzing_started(bug_time, pure_fuzz_time):
         return 'yes'
     elif bug_time - poll < when_finished_queue:
         return f'maybe (if happened in {when_finished_queue}s rather than {bug_time}s)'
+    elif when_finished_queue == 0 and bug_time < poll + 1:
+        return f'maybe ({timeout}s of fuzzing)'
     else:
         return 'no'
 
@@ -64,6 +68,7 @@ for fuzzer in fuzzers:
             if true_fuzzing_time == 'NaN':
                 print(f'reached,{fuzzer},{benchmark},{i},NaN')
                 continue
+            # TODO: do we subtract 5 here or earlier??
             res = happened_before_fuzzing_started(int(reached_time) - 5 , int(true_fuzzing_time))
             print(f'reached,{fuzzer},{benchmark},{i},{res}')
     for benchmark in total_triggered[fuzzer]:
@@ -78,6 +83,32 @@ for fuzzer in fuzzers:
             if true_fuzzing_time == 'NaN':
                 print(f'triggered,{fuzzer},{benchmark},{i},NaN')
                 continue
+            # TODO: do we subtract 5 here or earlier??
             res = happened_before_fuzzing_started(int(triggered_time) - 5 , int(true_fuzzing_time))
             print(f'triggered,{fuzzer},{benchmark},{i},{res}')
         #triggered_times = total_triggered[fuzzer][benchmark]
+
+# special handling for libfuzzer. because of fork=1 setting, there
+# is not a defined queue-traversal time. We assume fuzzing starts for real 2s
+# in, as this is the first time listed in nearly all libfuzzer logs (some
+# logs list 1 or 3 seconds, but this won't affect our analysis due to the
+# 5-second poll time)
+fuzzer = "libfuzzer"
+for benchmark in total_reached[fuzzer]:
+    reached_times = total_reached[fuzzer][benchmark]
+    true_fuzzing_time = 598
+    if 0 < len(reached_times) < 10:
+        print("!!printing out the deets: {fuzzer}, {benchmark}")
+        print("!!", reached_times)
+    for i, reached_time in enumerate(reached_times):
+        res = happened_before_fuzzing_started(int(reached_time)- 5, true_fuzzing_time)
+        print(f'reached,{fuzzer},{benchmark},{i},{res}')
+for benchmark in total_triggered[fuzzer]:
+    triggered_times = total_triggered[fuzzer][benchmark]
+    true_fuzzing_time = 598
+    if 0 < len(triggered_times) < 10:
+        print("!!printing out the deets: {fuzzer}, {benchmark}")
+        print("!!", triggered_times)
+    for i, triggered_time in enumerate(triggered_times):
+        res = happened_before_fuzzing_started(int(triggered_time)- 5, true_fuzzing_time)
+        print(f'triggered,{fuzzer},{benchmark},{i},{res}')

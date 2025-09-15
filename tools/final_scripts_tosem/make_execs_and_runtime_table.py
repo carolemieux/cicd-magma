@@ -1,6 +1,6 @@
 import os
 from math import isnan
-from statistics import mean, geometric_mean
+from statistics import median
 import sys
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -159,8 +159,8 @@ def write_table_with_fuzzers(fuzzers=fuzzers, print_seeds = False):
     Writes a LaTeX table where:
     - first column is the driver name
     - second column is the number of seeds, in k (if print_seeds)
-    - next len(fuzzers) columns are the average execs for each fuzzer
-    - next len(fuzzers) columns are the average real fuzz time for each fuzzer
+    - next len(fuzzers) columns are the median execs for each fuzzer
+    - next len(fuzzers) columns are the median real fuzz time for each fuzzer
     :param fuzzers: list of fuzzers to consider
     :param print_seeds: whether or not to print
     :return: none, prints to studout
@@ -198,7 +198,7 @@ def write_table_with_fuzzers(fuzzers=fuzzers, print_seeds = False):
                 print("Cannot find number of seeds for driver " + driver, file=sys.stderr)
                 exit(1)
             out_str += f" & {round_to_millions_or_thousands(int(seeds))}"
-        # Now print all the mean execs columns
+        # Now print all the median execs columns
         fuzzer_to_highlight = to_highlight_execs.get(benchmark, "")
         for fuzzer in fuzzers:
             # PHP is missing ofr windranger
@@ -212,10 +212,10 @@ def write_table_with_fuzzers(fuzzers=fuzzers, print_seeds = False):
                 print(f"For {fuzzer}, {benchmark}, we have some NaN execs. Averaging over {len(execs_as_floats)} values",file=sys.stderr)
             if len(execs_as_floats) == 0:
                 print(f"For {fuzzer}, {benchmark}, we have no execs", file=sys.stderr)
-                mean_execs= ""
+                median_execs= ""
             else:
-                mean_execs = mean(execs_as_floats)
-            rendered_execs = round_to_millions_or_thousands(mean_execs)
+                median_execs = median(execs_as_floats)
+            rendered_execs = round_to_millions_or_thousands(median_execs)
             if fuzzer == fuzzer_to_highlight:
                 out_str += "& "+ highlight_text +"{" + rendered_execs +"}"
             else:
@@ -237,8 +237,8 @@ def write_table_with_fuzzers(fuzzers=fuzzers, print_seeds = False):
                 print(f"For {fuzzer}, {benchmark}, we have no fuzz_times", file=sys.stderr)
                 rendered_fuzz_times= ""
             else:
-                mean_fuzz_times = mean(fuzztimes_as_floats)
-                rendered_fuzz_times = int(mean_fuzz_times)
+                median_fuzz_times = median(fuzztimes_as_floats)
+                rendered_fuzz_times = int(median_fuzz_times)
             if fuzzer == fuzzer_to_highlight:
                 out_str += "& "+ highlight_text +"{" + str(rendered_fuzz_times) +"}"
             else:
