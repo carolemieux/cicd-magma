@@ -30,12 +30,12 @@ def time_r_t_per_bug(file_path, fuzzer_name):
             assert len(b_data) == 1 # check only one fuzz target
             for fuzz_target, ft_data in b_data.items():
                 for iteration, it_data in ft_data.items():
-                    if len(it_data["reached"]) > 0:
+                    if len(it_data.get("reached",[])) > 0:
                         # each benchmark in our case is a single bug injected
                         assert(len(it_data["reached"]) == 1)
                         # so it_data["reached"] looks like {bug_id: time_reached}
                         reached_arr.append(next(iter(it_data["reached"].items()))[1])
-                    if len(it_data["triggered"]) > 0:
+                    if len(it_data.get("triggered",[])) > 0:
                         # each benchmark in our case is a single bug injected
                         assert(len(it_data["triggered"]) == 1)
                         # so it_data["triggered"] looks like {bug_id: time_triggered}
@@ -46,6 +46,12 @@ def time_r_t_per_bug(file_path, fuzzer_name):
 
 
 def get_result_arrays(with_inst, sensitivity=False):
+    """
+    Mappings of fuzzer -> targets -> results
+    :param with_inst:
+    :param sensitivity:
+    :return:
+    """
     if with_inst:
         postfix="-inst.json"
     else:
@@ -114,7 +120,7 @@ def AFL_vs_TuneFuzz_mean_reaching_time_with_inst():
     print(f"Mean survival time triggered is {afl_survival_filtered['survival_time_triggered'].mean()} for AFL, {tunefuzz_survival_filtered['survival_time_triggered'].mean()} for TuneFuzz, excluding openssl_20_4")
 
 # Print the mean survival time tables in Latex format
-def format_survival_time_tables(with_inst: bool, sensitivity: bool = False):
+def format_survival_time_tables(with_inst: bool, sensitivity: bool = False, highlight = False):
     survival_dfs = {}
     if with_inst:
         postfix="-inst-survival.csv"
@@ -139,6 +145,7 @@ def format_survival_time_tables(with_inst: bool, sensitivity: bool = False):
             print(f"Cannot find {full_path}", file=sys.stderr)
             exit(1)
 
+
     # format the table for the survival time
     # merge all dfs together with the selected columns
 
@@ -153,8 +160,36 @@ def format_survival_time_tables(with_inst: bool, sensitivity: bool = False):
         # outer join
         merged_df = merged_df.merge(df_renamed, on='target', how='outer')
 
+    # figure out what to highlight
+    if highlight == True and not sensitivity:
+        total_reached, total_triggered = get_result_arrays(with_inst, sensitivity=sensitivity)
+        uwave_reached = [( bench,f"{f}_time_r") for f in my_fuzzers for bench, v in total_reached[f].items() if 0< len(v) < 10]
+        uwave_triggered = [( bench, f"{f}_time_t") for f in my_fuzzers for bench, v in total_triggered[f].items() if 0< len(v) < 10]
+        uwave_idxs = uwave_reached + uwave_triggered
+        # reached minimums
+        colorbox_idxs = []
+        for r_t in ['time_r', 'time_t']:
+            for row_idx in range(len(merged_df)):
+                reached_triggered_vals = merged_df.iloc[row_idx].iloc[[i for i, r in enumerate(merged_df) if r_t in r]]
+                if reached_triggered_vals.isnull().all():
+                    continue
+                min_reached_in_row = reached_triggered_vals.min(skipna=True)
+                if (reached_triggered_vals == min_reached_in_row).sum() > 1:
+                    continue
+                min_col_name = reached_triggered_vals.idxmin(skipna=True)
+                colorbox_idxs.append((merged_df.index[row_idx],min_col_name))
+    if sensitivity and highlight != False:
+        uwave_idxs = []
+        colorbox_idxs = highlight
+
     merged_df = merged_df.round(0)
     merged_df = merged_df.fillna(' ').astype(str)
+    if highlight:
+        for row, col in uwave_idxs:
+            merged_df.loc[row, col] = "\\uwave{"+ merged_df.loc[row, col] + "}"
+        for row, col in colorbox_idxs:
+            merged_df.loc[row, col] = "\\colorbox{gray!20}{"+ merged_df.loc[row, col] + "}"
+
     merged_df = merged_df.sort_index().reset_index()
     merged_df['target'] = merged_df['target'].apply(lambda val: val.replace('_', '\_'))
 
@@ -298,6 +333,7 @@ def compare_sensitivity_results(with_inst):
                           f"MWU-lt: {mannwhitneyu(or_triggered, sen_triggered, alternative='less', method='exact').pvalue}, "
                           f"MWU-gt: {mannwhitneyu(or_triggered, sen_triggered, alternative='greater', method='exact').pvalue}")
 
+
     #
     # Make a Table that summarizes the above for the paper
     print("==================Table Comparing Sensitivity Results=================")
@@ -334,6 +370,7 @@ def compare_sensitivity_results(with_inst):
             return []
 
     benchmarks = sorted([s for s in sensitivity_reached['aflgo'].keys()])
+    to_highlight_in_table = []
     for fuzzer in sensitivity_fuzzers:
         for bench in benchmarks:
             out = f"{fuzzer} & {bench}".replace('_','\\_')
@@ -342,6 +379,7 @@ def compare_sensitivity_results(with_inst):
             reached_res = test_and_give_p_value(reached_original, reached_sensitive, "reached")
             if reached_res:
                 #out += f"&  {reached_res} & "
+                to_highlight_in_table.append((bench, f"{fuzzer}_time_r"))
                 print(out+f" & {reached_res}\\\\")
             #out += f" & {test_and_give_p_value(reached_original, reached_sensitive)}"
 
@@ -350,7 +388,9 @@ def compare_sensitivity_results(with_inst):
             triggered_res = test_and_give_p_value(triggered_original, triggered_sensitive, "triggered")
             if triggered_res:
                 #out += f"&  {triggered_res} & "
+                to_highlight_in_table.append((bench, f"{fuzzer}_time_t"))
                 print(out+f" & {triggered_res}\\\\")
+    return to_highlight_in_table
 
 
 def print_instrumentation_time_changes_with_sensitivity():
@@ -410,17 +450,17 @@ if __name__ == "__main__":
     print("==============Mean Reached/Triggered Total Results (Makes Barplot)=========")
     make_reached_triggered_bug_barplots()
     print("==============Survival Time Without Instrumentation ===============")
-    format_survival_time_tables(False)
+    format_survival_time_tables(False, False, True)
     print("==============Survival Time With Instrumentation ===============")
-    format_survival_time_tables(True)
+    format_survival_time_tables(True, False, True)
     print("==============Information on Exception Cases ===============")
     print_info_about_reaching_and_triggering_probs()
     print("==============AFL vs TuneFuzz Reaching Times==============")
     AFL_vs_TuneFuzz_mean_reaching_time_with_inst()
     print("-----------------------Sensitivity------------------------")
-    print("==============Survival Time Without Instrumentation, Sensitivity ===============")
-    format_survival_time_tables(False, True)
     print("==============Comparative Times Without Instrumentation==================")
-    compare_sensitivity_results(False)
+    to_highlight = compare_sensitivity_results(False)
+    print("==============Survival Time Without Instrumentation, Sensitivity ===============")
+    format_survival_time_tables(False, True, to_highlight)
     print("==============How does instrumentation time change with sensitivity?=============")
     print_instrumentation_time_changes_with_sensitivity()

@@ -59,7 +59,7 @@ def check_if_poll_and_update(value, name):
                         f"This suggests off-by-POLL adjustment has already happened, or the file does not have "
                         f"off-by-POLL error to start with. Exiting. To update anyway, use arg -f to force.")
         exit(1)
-    return value - POLL
+    return round(value - POLL, 1)
 
 def add_to_dict_path(d, path, value):
     """
