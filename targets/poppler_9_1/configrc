@@ -4,5 +4,5 @@ PROGRAMS=(pdf_fuzzer)
 #pdftoppm_ARGS="-mono -cropbox @@"
 
 PATCHES="PDF009"
-# AUTOMATIC=1
+AUTOMATIC=1
 COMMIT_FILES=(poppler/Parser.cc)

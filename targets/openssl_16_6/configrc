@@ -2,5 +2,5 @@ PROGRAMS=(x509)
 #asn1 asn1parse bignum server client x509
 
 PATCHES="SSL016"
-# AUTOMATIC=1
+AUTOMATIC=1
 COMMIT_FILES=(crypto/bn/bn_gf2m.c)

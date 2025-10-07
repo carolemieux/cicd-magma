@@ -11,6 +11,7 @@ set -e
 ##
 # Requires the tmp dir
 mkdir -p $TARGET/repo/temp
+
 export WR_TMP_DIR="$TARGET/repo/temp"
 export SIG_WR_TMP_DIR="$TARGET/repo/temp"
 
@@ -39,7 +40,27 @@ echo "Magma build done"
 source $TARGET/configrc
 #TODO: if PATCHES include more than one patch, it will fail. Fix later
 
-cp $FUZZER/target/${PATCHES} $WR_TMP_DIR/BBtargets.txt
+# Set targets for specified bugs
+# additional workaround for windranger 
+export TMP_DIR="$WR_TMP_DIR"
+
+echo "Setting targets"
+$FUZZER/fetchtargets.sh
+
+if [[ ! -f $TMP_DIR/BBtargets.txt ]] ; then
+    echo "File BBtargets.txt not found, aborting."
+    exit 1
+fi
+
+# Print extracted targets.
+echo "BBtargets:"
+cat $TMP_DIR/BBtargets.txt
+
+# Copy targets if necessary
+if [ "$TMP_DIR" != "$WR_TMP_DIR" ]; then
+  cp $TMP_DIR/BBtargets.txt $WR_TMP_DIR/BBtargets.txt
+fi
+
 # Set the targets, the file BBtargets.txt has the same format as that in AFLGo
 export WR_BB_TARGETS="$WR_TMP_DIR/BBtargets.txt"
 # Set the programs used for directed fuzzing, separated by ':'

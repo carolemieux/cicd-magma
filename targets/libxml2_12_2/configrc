@@ -3,5 +3,5 @@ PROGRAMS=(libxml2_xml_read_memory_fuzzer)
 #xmllint_ARGS="--valid --oldxml10 --push --memory @@"
 
 PATCHES="XML012"
-# AUTOMATIC=1
+AUTOMATIC=1
 COMMIT_FILES=(parser.c)
