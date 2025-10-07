@@ -8,7 +8,7 @@ import json
 import numpy as np
 from scipy.stats import mannwhitneyu
 
-BASE_DATA_DIR="../aux-data-results"
+BASE_DATA_DIR= "../tosem-results/aux-data-results"
 
 fuzzers = ['afl', 'aflplusplus', 'aflgo', 'aflgoexp', 'ffd','windranger', 'tunefuzz']
 
