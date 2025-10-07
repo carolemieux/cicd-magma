@@ -1,0 +1,11 @@
+pngget.c:1154
+pngget.c:1195
+pngget.c:1201
+pngget.c:1208
+pngget.c:1215
+pngget.c:1224
+pngget.c:1230
+pngset.c:1329
+pngset.c:1636
+pngset.c:1652
+pngset.c:1660

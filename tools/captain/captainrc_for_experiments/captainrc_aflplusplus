@@ -1,0 +1,153 @@
+# This file contains the configuration for the run.sh script. It follows the
+# Bash syntax and is sourced by the script to access the variables. Variables
+# are mandatory unless marked with [brackets].
+
+###
+## Configuration parameters
+###
+
+# WORKDIR: path to directory where shared volumes will be created
+WORKDIR=./aflplusplus-experiments
+
+# REPEAT: number of campaigns to run per program (per fuzzer)
+REPEAT=10
+
+# [WORKER_MODE]: defines the type of CPU resources to allocate (default: 1)
+# - 1: logical cores (possibly SMT-enabled)
+# - 2: physical cores
+# - 3: physical sockets (1 worker per CPU socket)
+WORKER_MODE=2
+
+# [WORKERS]: number of worker threads (default: all cores)
+# WORKERS=3
+
+# [WORKER_POOL]: a space-separated list of logical cores to allocate
+WORKER_POOL="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31"
+
+# [CAMPAIGN_WORKERS]: number of workers to allocate for a campaign (default: 1)
+CAMPAIGN_WORKERS=1
+
+# [TIMEOUT]: time to run each campaign. This variable supports one-letter
+# suffixes to indicate duration (s: seconds, m: minutes, h: hours, d: days)
+# (default: 1m)
+TIMEOUT=10m
+
+# [POLL]: time (in seconds) between polls (default: 5)
+POLL=5
+
+# [CACHE_ON_DISK]: if set, the cache workdir is mounted on disk instead of
+# in-memory (default: unset)
+# CACHE_ON_DISK=1
+
+# [NO_ARCHIVE]: if set, campaign workdirs will not be tarballed (default: unset)
+# NO_ARCHIVE=1
+
+# [TMPFS_SIZE]: the size of the tmpfs mounted volume. This only applies when
+# CACHE_ON_DISK is not set (default: 50g)
+# TMPFS_SIZE=16g
+
+# [MAGMA]: path to magma root (default: ../../)
+# MAGMA=/path/to/magma/
+
+# [CANARY_MODE]: defines the mode of canaries at compile time (default: 1)
+# - 1: without fixes, with canaries
+# - 2: without fixes, without canaries
+# - 3: with fixes, without canaries
+CANARY_MODE=1
+
+# [ISAN]: if set, build the benchmark with ISAN/fatal canaries (default: unset)
+ISAN=1
+
+# [HARDEN]: if set, build the benchmark with hardened canaries (default: unset)
+# HARDEN=1
+
+# [POC_EXTRACT]: if set, run the extract.sh script after the campaign is done
+# (default: unset)
+POC_EXTRACT=1
+
+###
+## Campaigns to run
+###
+
+# FUZZERS: an array of fuzzer names (from magma/fuzzers/*) to evaluate
+FUZZERS=(aflplusplus)
+
+# [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
+# `fuzzer`. The `fuzzer` prefix is a fuzzer listed in the FUZZERS array
+# (default: all targets)
+
+aflplusplus_TARGETS=(libpng_4_1 libsndfile_2_1 libsndfile_7_1 libsndfile_15_1 libtiff_6_1 libtiff_7_1 libtiff_9_1 libtiff_10_1 libxml2_1_2 libxml2_2_1 libxml2_8_1 libxml2_10_2 libxml2_12_2 libxml2_14_1 libxml2_15_1 libxml2_16_1 libxml2_16_2 openssl_1_3 openssl_1_5 openssl_4_4 openssl_5_1 openssl_6_4 openssl_6_5 openssl_6_6 openssl_7_2 openssl_7_4 openssl_8_1 openssl_9_1 openssl_10_5 openssl_11_4 openssl_11_6 openssl_12_6 openssl_13_2 openssl_16_6 openssl_17_2 openssl_17_4 openssl_18_5 openssl_19_1 openssl_20_3 openssl_20_4 php_4_1 php_6_2 php_11_2 php_15_2 php_16_3 poppler_3_1 poppler_9_1 poppler_17_1 sqlite3_18_1 sqlite3_20_1)
+
+
+aflplusplus_libpng_4_1_CORPUS="libpng/libpng_read_fuzzer"
+
+aflplusplus_libsndfile_2_1_CORPUS="libsndfile/sndfile_fuzzer_mini"
+aflplusplus_libsndfile_7_1_CORPUS="libsndfile/sndfile_fuzzer_mini"
+aflplusplus_libsndfile_15_1_CORPUS="libsndfile/sndfile_fuzzer_mini"
+
+aflplusplus_libtiff_6_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+aflplusplus_libtiff_7_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+aflplusplus_libtiff_9_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+aflplusplus_libtiff_10_1_CORPUS="libtiff/tiff_read_rgba_fuzzer"
+
+aflplusplus_libxml2_1_2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
+aflplusplus_libxml2_2_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
+aflplusplus_libxml2_8_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
+aflplusplus_libxml2_10_2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
+aflplusplus_libxml2_12_2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
+aflplusplus_libxml2_14_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
+aflplusplus_libxml2_15_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
+aflplusplus_libxml2_16_1_CORPUS="libxml2/libxml2_xml_reader_for_file_fuzzer"
+aflplusplus_libxml2_16_2_CORPUS="libxml2/libxml2_xml_read_memory_fuzzer"
+
+aflplusplus_openssl_1_3_CORPUS="openssl/bignum_mini" 
+aflplusplus_openssl_1_5_CORPUS="openssl/client" 
+aflplusplus_openssl_4_4_CORPUS="openssl/server_mini" 
+aflplusplus_openssl_5_1_CORPUS="openssl/asn1_mini"
+aflplusplus_openssl_6_4_CORPUS="openssl/server_mini" 
+aflplusplus_openssl_6_5_CORPUS="openssl/client"  
+aflplusplus_openssl_6_6_CORPUS="openssl/x509_mini"
+aflplusplus_openssl_7_2_CORPUS="openssl/asn1parse_mini"
+
+aflplusplus_openssl_7_4_CORPUS="openssl/server_mini"  
+aflplusplus_openssl_8_1_CORPUS="openssl/asn1_mini" 
+aflplusplus_openssl_9_1_CORPUS="openssl/asn1_mini" 
+aflplusplus_openssl_10_5_CORPUS="openssl/client" 
+aflplusplus_openssl_11_4_CORPUS="openssl/server_mini"  
+aflplusplus_openssl_11_6_CORPUS="openssl/x509_mini" 
+aflplusplus_openssl_12_6_CORPUS="openssl/x509_mini" 
+aflplusplus_openssl_13_2_CORPUS="openssl/asn1parse_mini" 
+aflplusplus_openssl_16_6_CORPUS="openssl/x509_mini" 
+aflplusplus_openssl_17_2_CORPUS="openssl/asn1parse_mini" 
+aflplusplus_openssl_17_4_CORPUS="openssl/server_mini"  
+aflplusplus_openssl_18_5_CORPUS="openssl/client" 
+aflplusplus_openssl_19_1_CORPUS="openssl/asn1_mini" 
+aflplusplus_openssl_20_3_CORPUS="openssl/bignum_mini"
+aflplusplus_openssl_20_4_CORPUS="openssl/server_mini"  
+
+aflplusplus_php_4_1_CORPUS="php/json_mini"
+aflplusplus_php_6_2_CORPUS="php/exif_mini"
+aflplusplus_php_11_2_CORPUS="php/exif_mini" 
+aflplusplus_php_15_2_CORPUS="php/exif_mini" 
+aflplusplus_php_16_3_CORPUS="php/unserialize_mini"
+
+aflplusplus_poppler_3_1_CORPUS="poppler/pdf_fuzzer" 
+aflplusplus_poppler_9_1_CORPUS="poppler/pdf_fuzzer" 
+aflplusplus_poppler_17_1_CORPUS="poppler/pdf_fuzzer" 
+
+aflplusplus_sqlite3_18_1_CORPUS="sqlite3/sqlite3_fuzz" 
+aflplusplus_sqlite3_20_1_CORPUS="sqlite3/sqlite3_fuzz"
+
+# [fuzzer_target_PROGRAMS]: an array of program names (from
+# magma/targets/target/configrc) to use as execution drivers when fuzzing the
+# `target`
+# afl_libtiff_PROGRAMS=(tiffcp)
+
+# [fuzzer_target_FUZZARGS]: a string containing fuzzer/target-specific arguments
+# when fuzzing `target` with `fuzzer`
+# afl_libpng_FUZZARGS="-x /magma_shared/png.dict"
+# llvm_cov_libpng_CORPUS=""
+# todo: allow for a separate corpus folder
+
+# [fuzzer_CAMPAIGN_WORKERS]: overrides the global CAMPAIGN_WORKERS setting
+# afl_CAMPAIGN_WORKERS=3

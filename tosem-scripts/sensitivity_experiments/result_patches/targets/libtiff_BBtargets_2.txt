@@ -1,0 +1,10 @@
+libtiff/tif_dirwrite.c:3678
+libtiff/tif_dirwrite.c:3679
+libtiff/tif_dirwrite.c:3680
+libtiff/tif_dirwrite.c:3681
+libtiff/tif_dirwrite.c:3682
+libtiff/tif_dirwrite.c:3683
+libtiff/tif_dirwrite.c:3684
+libtiff/tif_dirwrite.c:3685
+libtiff/tif_dirwrite.c:3686
+libtiff/tif_dirwrite.c:3687

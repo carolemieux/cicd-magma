@@ -11,27 +11,17 @@
 # - env FUZZARGS: extra arguments to pass to the fuzzer
 ##
 
-if nm "$OUT/afl/$PROGRAM" | grep -E '^[0-9a-f]+\s+[Ww]\s+main$'; then
-    ARGS="-"
-fi
-
 mkdir -p "$SHARED/findings"
-
-flag_cmplog=(-c "$OUT/cmplog/$PROGRAM")
 
 export AFL_SKIP_CPUFREQ=1
 export AFL_NO_AFFINITY=1
-export AFL_NO_UI=1
-export AFL_MAP_SIZE=256000
-export AFL_DRIVER_DONT_DEFER=1
 
 export AFL_SKIP_CRASHES=1
 export AFL_FAST_CAL=1
-export AFL_CMPLOG_ONLY_NEW=1
 
-# checksum=$(sha512sum "$OUT/afl/$PROGRAM")
-# echo $checksum > "$SHARED/checksum"
+export WR_TMP_DIR="$TARGET/repo/temp"
+export SIG_WR_TMP_DIR="$TARGET/repo/temp"
 
 "$FUZZER/repo/afl-fuzz" -m none -t 10000 -i "$SEED" -o "$SHARED/findings" \
-    "${flag_cmplog[@]}" -d \
-    $FUZZARGS -- "$OUT/afl/$PROGRAM" $ARGS 2>&1
+    $FUZZARGS -- "$OUT/$PROGRAM" $ARGS 2>&1
+
