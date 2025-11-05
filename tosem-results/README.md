@@ -5,7 +5,8 @@ in the "Directed or Undirected: Investigating Fuzzing Strategies in a CI/CD Setu
 
 These results are created from the raw results using scripts in the `tosem-scripts` folder.
 
-Directory Structure:
+## Directory Structure
+
 ```
 aux-data-results: contains auxiliary data analyzed in section 4.5 in the paper, 
                   including # of execs, true fuzz time, total and target coverage.
@@ -60,5 +61,11 @@ main-results: the main bug reaching/triggering results used in the paper
                        (Section 4.4 of the paper), i.e. patches with additional noise
 - survival-sensitivity-results: the analogue of survival-results, but for sensitivity-results
                                 rather than main-results.
-             
+- x-preparation-artifacts: artifacts from perparing the experiments, notably:
+    - sensitivity-patches: the original target lists and augmented (i.e., noisy) 
+      target lists passed to directed fuzzers in our sensitivity experiments.                
+    - corpus_minimization_results.md: minimization results for the seed corpuses
+      used in our experiments.
 ```
+
+## Data Preparation Steps
