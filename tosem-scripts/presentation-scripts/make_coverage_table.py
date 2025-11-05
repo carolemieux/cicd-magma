@@ -3,7 +3,7 @@ from scipy.stats import mannwhitneyu
 from statistics import median
 import sys
 
-BASE_RESULTS_DIR= '../tosem-results/aux-data-results'
+BASE_RESULTS_DIR= '../../tosem-results/aux-data-results'
 
 
 def retrieve_lowest_or_highest_for_each_benchmark(data, lowest_or_highest: str, target_coverage):

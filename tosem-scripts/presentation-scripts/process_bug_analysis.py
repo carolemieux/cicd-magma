@@ -7,10 +7,10 @@ import numpy as np
 from statistics import mean, geometric_mean
 from scipy.stats import mannwhitneyu
 
-BASE_SURVIVAL_DIR= "../tosem-results/survival-results"
-BASE_SURVIVAL_SENSITIVITY_DIR= "../tosem-results/survival-sensitivity-results"
-BASE_RESULTS_DIR= "../tosem-results/main-results"
-BASE_SENSITIVITY_RESULTS_DIR= "../tosem-results/sensitivity-results"
+BASE_SURVIVAL_DIR= "../../tosem-results/survival-results"
+BASE_SURVIVAL_SENSITIVITY_DIR= "../../tosem-results/survival-sensitivity-results"
+BASE_RESULTS_DIR= "../../tosem-results/main-results"
+BASE_SENSITIVITY_RESULTS_DIR= "../../tosem-results/sensitivity-results"
 
 fuzzers = ['afl', 'aflplusplus', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'windranger', 'tunefuzz']
 sensitivity_fuzzers = ['aflgo', 'aflgoexp', 'ffd', 'windranger']

@@ -66,6 +66,8 @@ main-results: the main bug reaching/triggering results used in the paper
       target lists passed to directed fuzzers in our sensitivity experiments.                
     - corpus_minimization_results.md: minimization results for the seed corpuses
       used in our experiments.
+    - compare_checksum.sh: used to compare binary checksums before/after adding the
+      patches, to filter trivially unreachable bugs.
 ```
 
 ## Data Preparation Steps

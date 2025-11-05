@@ -4,7 +4,7 @@ import os
 import matplotlib.pyplot as plt
 
 
-BASE_RESULTS_DIR= "../tosem-results/main-results"
+BASE_RESULTS_DIR= "../../tosem-results/main-results"
 
 fuzzers = ['afl', 'aflplusplus', 'libfuzzer',  'aflgoexp', 'aflgo', 'ffd', 'windranger', 'tunefuzz']
 legend_items = ['AFL', 'AFL++', 'libFuzzer', 'AFLGoE', 'AFLGo', 'FFD', 'WindRanger', 'TuneFuzz']
