@@ -160,7 +160,6 @@ Run
 $ ./extract_execs_and_runtime.py ${fuzzer-results} fuzzer_execs_and_fuzz_time.csv
 ```
 
-
 #### Number of seeds
 
 We don't report this number in the paper in the end, but you can create `num_seeds.csv` as follows,
