@@ -7,6 +7,11 @@ import numpy as np
 from statistics import mean, geometric_mean
 from scipy.stats import mannwhitneyu
 
+"""
+This script powers the creation of tables for the main bug analysis and sensitivity experiments in the paper 
+(Sections 4.1, 4.2, 4.4).
+"""
+
 BASE_SURVIVAL_DIR= "../../tosem-results/survival-results"
 BASE_SURVIVAL_SENSITIVITY_DIR= "../../tosem-results/survival-sensitivity-results"
 BASE_RESULTS_DIR= "../../tosem-results/main-results"
@@ -447,20 +452,20 @@ def print_instrumentation_time_changes_with_sensitivity():
     # plot_sensitivity_results('../process_data_tosem/figures', 'sensitivity_num_of_bug_triggered.png')
 
 if __name__ == "__main__":
-    print("==============Mean Reached/Triggered Total Results (Makes Barplot)=========")
+    print("==============Mean Reached/Triggered Total Results (Figure 1)=========")
     make_reached_triggered_bug_barplots()
-    print("==============Survival Time Without Instrumentation ===============")
+    print("==============Survival Time Without Instrumentation (Table 3) ===============")
     format_survival_time_tables(False, False, True)
-    print("==============Survival Time With Instrumentation ===============")
+    print("==============Survival Time With Instrumentation (Table 4) ===============")
     format_survival_time_tables(True, False, True)
-    print("==============Information on Exception Cases ===============")
+    print("==============Information on Likelihood of Reaching/Triggering (Wavy Underlines in Table 3/4) ===============")
     print_info_about_reaching_and_triggering_probs()
-    print("==============AFL vs TuneFuzz Reaching Times==============")
+    print("==============AFL vs TuneFuzz Reaching Times (Discussed on Page 16) ==============")
     AFL_vs_TuneFuzz_mean_reaching_time_with_inst()
     print("-----------------------Sensitivity------------------------")
-    print("==============Comparative Times Without Instrumentation==================")
+    print("==============Comparative Times Without Instrumentation (Table 6)==================")
     to_highlight = compare_sensitivity_results(False)
-    print("==============Survival Time Without Instrumentation, Sensitivity ===============")
+    print("==============Survival Time Without Instrumentation, Sensitivity (Table 5) ===============")
     format_survival_time_tables(False, True, to_highlight)
-    print("==============How does instrumentation time change with sensitivity?=============")
+    print("==============How does instrumentation time change with sensitivity? (Top of Page 21)=============")
     print_instrumentation_time_changes_with_sensitivity()

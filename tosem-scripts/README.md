@@ -12,6 +12,9 @@ processing-scripts
 - adjust_results_for_poll_error.py: to remove POLL seconds from bug reaching/triggering times
 - create_results_with_instrumentation_time.py: to add instrumentation time to the Magma results json
 - extract_build_times.sh: to extract the instrumentation time from raw Magma logs
+- extract_coverage_to_csv.sh: extracts a coverage csv from coverage txt files
+- extract_execs_and_runtime.py: extract the number of executions and true fuzz time from fuzzing results
+- extract_target_coverage_to_csv.sh: extract a coverage csv for only targeted functions from coverage txt files
 ```
 
 ### Processing Instructions
@@ -171,5 +174,40 @@ $ for bench_dir in */*; do harness=$(basename $bench_dir); seeds=$(ls -1 $bench_
 
 ## Data Presentation Scripts
 
-Directory structure of `presentation-scripts`:
+Directory structure of `presentation-scripts` is as follows. Refer to processing instructions
+below for details and usage examples. Each script also contains usage instructions.
 
+```
+presentation-scripts
+- figures: subdirectory where generated figures will go
+- make_coverage_table.py: creates the LaTeX-formatted coverage tables from the paper (Table 7, Table 8)
+- make_execs_and_runtime_table.py: creates the LaTeX-formatted execution number and true fuzz time table (Table 9)
+- plot_instrumentation_time.py: creates figure showing instrumentation time for each benchmark and fuzzer (Figure 2)
+- print_if_bugs_were_reached_triggered_before_fuzzing.py: data used in the text on page 27, 28, describing
+  whether bugs were found while loading seeds or after
+- process_bug_analysis.py: Creates Figure 1, Tables 3,4,5,6, and prints data analyzed on pages 16 and 21
+```
+
+All of these scripts use a hard-coded relative directory for loading data:
+```python
+BASE_SURVIVAL_DIR= "../../tosem-results/survival-results"
+BASE_SURVIVAL_SENSITIVITY_DIR= "../../tosem-results/survival-sensitivity-results"
+BASE_RESULTS_DIR= "../../tosem-results/main-results"
+BASE_SENSITIVITY_RESULTS_DIR= "../../tosem-results/sensitivity-results"
+BASE_DATA_DIR= "../../tosem-results/aux-data-results"
+```
+Change the paths in each script (`make_coverage_table.py` and `make_execs_and_runtime_table.py` use `BASE_DATA_DIR`,
+`process_bug_analysis.py` uses all other dirs, `plot_instrumentation_time.py` and `print_if_bugs_were_reached_triggered_before_fuzzing.py`
+import data using `process_bug_analysis.py`) if you want to use them on different data.
+
+### Invocation
+
+For all scripts, use `python3 script_name.py`.
+
+`make_coverage_table.py`: prints table to stdout.
+`make_execs_and_runtime_table.py`: prints table to stdout.
+`plot_instrumentation_time.py`: writes to figures/instrumentation_time.pdf.
+`print_if_bugs_were_reached_triggered_before_fuzzing.py`: prints a csv to stdout; the csv was subsequently analyzed 
+in the text on pages 27/28.
+`process_bug_analysis.py`: mostly prints to stdout, with indications as to which data is used in which table/section. 
+Also writes to figures/reached_triggered_barplot.pdf.

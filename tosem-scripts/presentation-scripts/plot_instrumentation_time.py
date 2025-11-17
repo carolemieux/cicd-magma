@@ -3,6 +3,10 @@ import numpy as np
 import os
 import matplotlib.pyplot as plt
 
+"""
+Creates a plot of instrumentation time per fuzzer, per benchmark. (Figure 2 in the paper)
+"""
+
 
 BASE_RESULTS_DIR= "../../tosem-results/main-results"
 

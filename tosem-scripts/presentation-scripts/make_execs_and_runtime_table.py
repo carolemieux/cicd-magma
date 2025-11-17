@@ -8,6 +8,11 @@ import json
 import numpy as np
 from scipy.stats import mannwhitneyu
 
+"""
+Creates table of total executions done and true fuzz time (Table 9 in the paper)
+"""
+
+
 BASE_DATA_DIR= "../../tosem-results/aux-data-results"
 
 fuzzers = ['afl', 'aflplusplus', 'aflgo', 'aflgoexp', 'ffd','windranger', 'tunefuzz']

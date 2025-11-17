@@ -3,7 +3,12 @@ from scipy.stats import mannwhitneyu
 from statistics import median
 import sys
 
-BASE_RESULTS_DIR= '../../tosem-results/aux-data-results'
+BASE_DATA_DIR= '../../tosem-results/aux-data-results'
+
+"""
+Creates tables of total coverage and target function coverage. (Tables 7,8 in the paper)
+"""
+
 
 
 def retrieve_lowest_or_highest_for_each_benchmark(data, lowest_or_highest: str, target_coverage):
@@ -71,7 +76,7 @@ def write_table_with_fuzzers(fuzzers, target_coverage = False):
     highlight_text = "\\underline"
 
     data = {}
-    with open(os.path.join(BASE_RESULTS_DIR, 'processed_target_coverage.csv' if target_coverage
+    with open(os.path.join(BASE_DATA_DIR, 'processed_target_coverage.csv' if target_coverage
                 else 'processed_coverage.csv'), 'r') as f:
         for line in f:
             split_line = line.strip().split(',')
@@ -116,7 +121,7 @@ def write_table_with_fuzzers(fuzzers, target_coverage = False):
             print(out_str)
 
 if __name__ == "__main__":
-    print("=================median total project coverage====================")
+    print("=================median total project coverage (Table 7) ====================")
     write_table_with_fuzzers(['afl', 'aflpp', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'windranger', 'tunefuzz'])
-    print("==============median (non-zero) target file coverage==============")
+    print("==============median (non-zero) target file coverage (Table 8) ==============")
     write_table_with_fuzzers(['afl', 'aflpp', 'libfuzzer', 'aflgo', 'aflgoexp', 'ffd', 'windranger', 'tunefuzz'], True)

@@ -1,8 +1,11 @@
-#!/bin/bash
-
 from make_execs_and_runtime_table import get_technique_full_info, fuzzers
 from process_bug_analysis import get_result_arrays
 import sys
+
+"""
+Creates a csv showing whether bugs were reached/triggered while loading seeds or after (supporting
+textual analysis in Section 4.5.2)
+"""
 
 timeout = 600
 poll = 5
@@ -94,28 +97,3 @@ for fuzzer in fuzzers:
             res = happened_before_fuzzing_started(int(triggered_time), int(true_fuzzing_time), "triggered")
             print(f'triggered,{fuzzer},{benchmark},{i},{res}')
         #triggered_times = total_triggered[fuzzer][benchmark]
-
-# special handling for libfuzzer. because of fork=1 setting, there
-# is not a defined queue-traversal time. We assume fuzzing starts for real 2s
-# in, as this is the first time listed in nearly all libfuzzer logs (some
-# logs list 1 or 3 seconds, but this won't affect our analysis due to the
-# 5-second poll time)
-# fuzzer = "libfuzzer"
-# for benchmark in total_reached[fuzzer]:
-#     reached_times = total_reached[fuzzer][benchmark]
-#     true_fuzzing_time = 598
-#     if 0 < len(reached_times) < 10:
-#         print("!!printing out the deets: {fuzzer}, {benchmark}")
-#         print("!!", reached_times)
-#     for i, reached_time in enumerate(reached_times):
-#         res = happened_before_fuzzing_started(int(reached_time)- 5, true_fuzzing_time)
-#         print(f'reached,{fuzzer},{benchmark},{i},{res}')
-# for benchmark in total_triggered[fuzzer]:
-#     triggered_times = total_triggered[fuzzer][benchmark]
-#     true_fuzzing_time = 598
-#     if 0 < len(triggered_times) < 10:
-#         print("!!printing out the deets: {fuzzer}, {benchmark}")
-#         print("!!", triggered_times)
-#     for i, triggered_time in enumerate(triggered_times):
-#         res = happened_before_fuzzing_started(int(triggered_time)- 5, true_fuzzing_time, "triggered")
-#         print(f'triggered,{fuzzer},{benchmark},{i},{res}')
