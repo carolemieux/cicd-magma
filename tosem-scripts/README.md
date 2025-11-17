@@ -123,7 +123,31 @@ or `tosem-results/sensitivity-results`!
 
 
 #### Coverage
- TODO
+
+This assumes that `COVERAGE_DIR` contains all the `[...]_total_coverage.txt` and `[...]_target_file_coverage.txt` you
+are interested in analyzing.
+
+###### Getting the total_cov/target_file_cov files
+If you are using our packaged results from zenodo, these can be found in the **TODO** directory.
+
+If you are using our `llvm_cov` "fuzzer" to calculate new coverage data, and its results directory is `NEW_COV_RES`,
+you can find these files at the following path:
+```
+$NEW_COV_RES/ar/llvm_cov/[benchmark_name]/[driver_name]/[iteration_name]/coverage
+```
+You may have to untar the `ball.tar` found at `$NEW_COV_RES/ar/llvm_cov/[benchmark_name]/[driver_name]/[iteration_name]`
+to get these files. 
+
+##### Extracting Coverage Data
+
+To get total coverage processed results:
+```
+$ ./extract_coverage_to_csv.sh $COVERAGE_DIR > processed_coverage.csv
+```
+To get target coverage processed results:
+```
+$ ./extract_target_coverage_to_csv.sh $COVERAGE_DIR > processed_target_coverage.csv
+```
 
 #### Execs and runtime
 

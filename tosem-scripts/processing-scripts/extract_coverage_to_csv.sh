@@ -4,6 +4,9 @@ coverage_dir=$1
 
 if [ "$#" -ne 1 ]; then
   echo "Usage: $0 coverage_results_directory"
+  echo "This script outputs to stdout."
+	echo "coverage_results_directory should contain all the [...]_total_coverage.txt"
+	echo "you are interested in analyzing. (this script will ignore [...]_target_file_coverage.txt)"
   exit 1
 fi
 
