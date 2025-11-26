@@ -16,6 +16,14 @@ data, and (b) present the processed data in the manner presented in the paper.
 Raw data from our evaluation can be found at https://zenodo.org/uploads/17664060. Note the whole size of the raw data is huge:
 271GB for the main experiment data, 50GB for the sensitivity experiments, and 0.6GB for the coverage data. 
 
+## Running New Experiments
+
+Refer to [RUNNING](./RUNNING.md) for more details.
+
+## Collecting Coverage for Experiments
+
+Refer to [COVERAGE](./COVERAGE.md) for more details.
+
 ---
 
 For any Magma-specific documentation, refer to [the Magma homepage](https://hexhive.epfl.ch/magma).
