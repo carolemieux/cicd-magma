@@ -204,10 +204,10 @@ import data using `process_bug_analysis.py`) if you want to use them on differen
 
 For all scripts, use `python3 script_name.py`.
 
-`make_coverage_table.py`: prints table to stdout.
-`make_execs_and_runtime_table.py`: prints table to stdout.
-`plot_instrumentation_time.py`: writes to figures/instrumentation_time.pdf.
-`print_if_bugs_were_reached_triggered_before_fuzzing.py`: prints a csv to stdout; the csv was subsequently analyzed 
+- `make_coverage_table.py`: prints table to stdout.
+- `make_execs_and_runtime_table.py`: prints table to stdout.
+- `plot_instrumentation_time.py`: writes to figures/instrumentation_time.pdf.
+- `print_if_bugs_were_reached_triggered_before_fuzzing.py`: prints a csv to stdout; the csv was subsequently analyzed 
 in the text on pages 27/28.
-`process_bug_analysis.py`: mostly prints to stdout, with indications as to which data is used in which table/section. 
-Also writes to figures/reached_triggered_barplot.pdf.
+- `process_bug_analysis.py`: mostly prints to stdout, with indications as to which data is used in which table/section. 
+Also writes to `figures/reached_triggered_barplot.pdf`.

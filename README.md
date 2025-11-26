@@ -13,7 +13,7 @@ The `tosem-results` directory contains processed data from our evaluation. The R
 each data file is in detail. The `tosem-scripts` directory contains script to (a) process raw data into this processed
 data, and (b) present the processed data in the manner presented in the paper.
 
-Raw data from our evaluation can be found at [TODO: include zenodo link]. Note the whole size of the raw data is huge:
+Raw data from our evaluation can be found at https://zenodo.org/uploads/17664060. Note the whole size of the raw data is huge:
 271GB for the main experiment data, 50GB for the sensitivity experiments, and 0.6GB for the coverage data. 
 
 ---
