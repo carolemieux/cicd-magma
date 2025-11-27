@@ -92,7 +92,8 @@ with a custom saturated corpus. The corpus to use for each `fuzzer`, `target` pa
 The `captainrc_for_experiments` contains example captainrc files for each fuzzer, which specifes all these CORPUS
 variables. The default `captainrc` in the repository is the one to run `aflgoexp` (AFLGo with time-to-exploit set to 0m).
 
-
+The `WORKDIR` variable is where results will be stored. This `WORKDIR` is the equivalent to `main-experiment-raw-data/fuzzer`
+or `sensitivity-experiment-raw-data/fuzzer` in our raw results distributed on Zenodo. 
 
 
 
