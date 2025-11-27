@@ -18,9 +18,9 @@ the `configrc` file, `targets/BENCH_NAME/configrc`.
 If you want to use the benchmarks from our TOSEM paper, you
 can directly use these configurations. If you would like to create new configurations, read on.
 
-### ConfigRC details
+### Target configrc details
 
-A regular magma configrc file sets the `PROGRAMS` environment variable to all the fuzz drivers to fuzz, and any 
+A regular magma target configrc file sets the `PROGRAMS` environment variable to all the fuzz drivers to fuzz, and any 
 project-specific environment variables. For openssl, Magma's configrc contains simply:
 
 ```bash
@@ -68,6 +68,31 @@ and ensure that the fuzzing targets (a file where each line is `filename:lineno`
 for the patches of interest (i.e., `SSL020` above) and the `DIRECTED_FUZZER` of interest (e.g., aflgo/aflgoexp, ffd, windranger).
 
 For our sensitivity experiments, comment out `AUTOMATIC=1` as above for each benchmark in the sensitivity experiment, 
-and replace the contents of the `targets` directory for each directed fuzzer with the contents of `targets_for_sensitivity`.
+and replace the contents of the `targets` directory for each directed fuzzer with the contents of `targets_for_sensitivity`
+for each patch of interest. Then, running the experiments on this benchmark will pass these adjusted target files to the
+directed fuzzers.
+
+## Running Experiments 
+
+To run experiments, go to the `tools/captain` folder and run: 
+
+```
+$ ./run.sh
+```
+
+This will run experiments according to the specification in `tools/captain/captainrc`.
+
+Most of the `captainrc` variables are identical to those in Magma; refer to the comments in the `captainrc` or the
+[Magma documentation](https://hexhive.epfl.ch/magma/docs/config.html) for more detail. 
+
+Unique to `cicd-magma` is the manual specification of corpus directories. This is so that we could run our experiments 
+with a custom saturated corpus. The corpus to use for each `fuzzer`, `target` pair must be specified in the variable
+`fuzzer_target_CORPUS`. The corpus directory is relative to the top-level `seed` directory.
+
+The `captainrc_for_experiments` contains example captainrc files for each fuzzer, which specifes all these CORPUS
+variables. The default `captainrc` in the repository is the one to run `aflgoexp` (AFLGo with time-to-exploit set to 0m).
+
+
+
 
 
