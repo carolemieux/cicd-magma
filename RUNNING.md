@@ -82,6 +82,11 @@ $ ./run.sh
 
 This will run experiments according to the specification in `tools/captain/captainrc`.
 
+Note that our integration of `tunefuzz` and `windranger` requires some changes to the base `Dockerfile`. These
+can be found under `Dockerfile_tunefuzz` and `Dockerfile_windranger` in the `docker` folder. Thus, while other fuzzer
+runs can be specified in the same `captainrc` spec, you will need to manually change the contents of `Dockerfile`
+before running `tunefuzz`/`windranger`. It may be possible to automate this, but we do not support it at this time. 
+
 Most of the `captainrc` variables are identical to those in Magma; refer to the comments in the `captainrc` or the
 [Magma documentation](https://hexhive.epfl.ch/magma/docs/config.html) for more detail. 
 
@@ -94,6 +99,8 @@ variables. The default `captainrc` in the repository is the one to run `aflgoexp
 
 The `WORKDIR` variable is where results will be stored. This `WORKDIR` is the equivalent to `main-experiment-raw-data/fuzzer`
 or `sensitivity-experiment-raw-data/fuzzer` in our raw results distributed on Zenodo. 
+
+
 
 
 
