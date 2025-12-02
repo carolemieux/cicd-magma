@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 # TODO remove sudo for user "magma" to avoid unwanted priv escalation from
 # other attack vectors.
@@ -58,12 +58,12 @@ ENV FUZZER 	${MAGMA_R}/${fuzzer_path}
 USER root:root
 RUN mkdir -p ${FUZZER} && chown magma:magma ${FUZZER}
 COPY --chown=magma:magma ${magma_root}/${fuzzer_path} ${FUZZER}/
-RUN ${FUZZER}/preinstall.sh
 
-USER magma:magma
-# changed the order to be run after USER magma:magma due to folder permission errors when running afl++
+RUN ${FUZZER}/preinstall.sh
 RUN ${FUZZER}/fetch.sh
 RUN ${FUZZER}/build.sh
+# changed the user 
+USER magma:magma
 
 ARG target_name
 ARG target_path=targets/${target_name}
