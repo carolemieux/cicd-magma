@@ -79,6 +79,10 @@ FUZZERS=(libfuzzer)
 libfuzzer_TARGETS=(libpng_4_1 libsndfile_2_1 libsndfile_7_1 libsndfile_15_1 libtiff_6_1 libtiff_7_1 libtiff_9_1 libtiff_10_1 libxml2_1_2 libxml2_2_1 libxml2_8_1 libxml2_10_2 libxml2_12_2 libxml2_14_1 libxml2_15_1 libxml2_16_1 libxml2_16_2 openssl_1_3 openssl_1_5 openssl_4_4 openssl_5_1 openssl_6_4 openssl_6_5 openssl_6_6 openssl_7_2 openssl_7_4 openssl_8_1 openssl_9_1 openssl_10_5 openssl_11_4 openssl_11_6 openssl_12_6 openssl_13_2 openssl_16_6 openssl_17_2 openssl_17_4 openssl_18_5 openssl_19_1 openssl_20_3 openssl_20_4 php_4_1 php_6_2 php_11_2 php_15_2 php_16_3 poppler_3_1 poppler_9_1 poppler_17_1 sqlite3_18_1 sqlite3_20_1)
 
 
+# [fuzzer_target_CORPUS]: the custom corpus directory to use when running
+# `fuzzer` on `target`. Specify directory relative to the top-level `seed`
+# directory.
+
 libfuzzer_libpng_4_1_CORPUS="libpng/libpng_read_fuzzer"
 
 libfuzzer_libsndfile_2_1_CORPUS="libsndfile/sndfile_fuzzer_mini"
