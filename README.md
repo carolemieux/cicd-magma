@@ -9,7 +9,8 @@ The initial report was published in FUZZING'24:
 > in a CI/CD Setup (Registered Report). In Proceedings of the 3rd ACM International Fuzzing Workshop (FUZZING 2024). 
 > Association for Computing Machinery, New York, NY, USA, 33–41. https://doi.org/10.1145/3678722.3685532
 
-The full paper is just accepted at TOSEM, citation will be added when available.
+The full paper is published in ACM TOSEM:
+> Madonna Huang and Caroline Lemieux. 2026. Directed or Undirected: Investigating Fuzzing Strategies in a CI/CD Setup. ACM Trans. Softw. Eng. Methodol. (January 2026). https://doi.org/10.1145/3723159
 
 The `tosem-results` directory contains processed data from our evaluation. The README in that folder describes what
 each data file is in detail. The `tosem-scripts` directory contains script to (a) process raw data into this processed
